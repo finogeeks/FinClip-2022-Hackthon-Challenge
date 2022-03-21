@@ -1,0 +1,106 @@
+<van-search value="{{ name }}" placeholder="请输入搜索关键词" shape="round" bind:search="bindconfirm" />
+<view class="main">
+  <scroll-view class="category-container" scroll-y="true" scroll-with-animation="true" scroll-into-view="{{ aaa }}">
+    <van-sidebar custom-class="sidebar-l" active-key="{{ activeCategory }}">
+      <van-sidebar-item wx:if="{{item.level == 1}}" id="category{{item.id}}" wx:for="{{firstCategories}}" wx:key="id" data-idx="{{index}}" bindtap="onCategoryClick" title="{{ item.name }}" />
+    </van-sidebar>
+  </scroll-view>
+  <scroll-view class="goods-container" scroll-y="true" scroll-top="{{scrolltop}}" wx:if='{{onLoadStatus}}' bindscrolltolower="goodsGoBottom">
+    <van-tabs wx:if="{{ categoryMod != 2 && categorySelected.childs && categorySelected.childs.length > 0 }}" custom-class="llargada" bind:change="onSecondCategoryClick" ellipsis="{{ false }}">
+      <van-tab title="全部"></van-tab>
+      <van-tab wx:for="{{categorySelected.childs}}" wx:key="id" title="{{ item.name }}"></van-tab>
+    </van-tabs>
+    <van-empty wx:if="{{categoryMod != 2 &&  !currentGoods}}" description="暂无商品" />
+    <block wx:if="{{ categoryMod == 2 }}">
+      <van-cell title="{{ categorySelected.name }}" is-link url="/pages/goods/list?categoryId={{ categorySelected.id }}" />
+      <image wx:if="{{ adPosition }}" class="adPosition" mode="aspectFill" src="{{adPosition.val}}" mode="widthFix" data-url="{{adPosition.url}}" bindtap="adPositionClick"></image>
+      <view class="small-category-box">
+        <navigator wx:for="{{categorySelected.childs}}" wx:key="id" url="/pages/goods/list?categoryId={{item.id}}">
+          <view class="small-category">
+            <image mode="aspectFill" src="{{item.icon}}" mode="aspectFill"></image>
+            <view>{{item.name}}</view>
+          </view>
+        </navigator>
+      </view>
+    </block>
+    <!-- 三级级分类展示 -->
+    <!-- <view wx:for="{{categories}}" wx:key="id" wx:if="{{item.pid == categorySelected.id}}">
+      <navigator url="/pages/goods/list?categoryId={{item.id}}">
+        <view class="no-data medium-category">
+          <view class="line"></view>
+          <view class="txt">{{item.name}}</view>
+          <view class="line"></view>
+        </view>
+      </navigator>
+      <view class="small-category-box">
+        <navigator wx:for="{{categories}}" wx:for-item="small" wx:key="id" wx:if="{{small.pid == item.id}}" url="/pages/goods/list?categoryId={{small.id}}">
+          <view class="small-category">
+            <image mode="aspectFill" src="{{small.icon}}"></image>
+            <view>{{small.name}}</view>
+          </view>
+        </navigator>
+      </view>
+    </view> -->
+    <!-- 显示右侧商品 -->
+    <wxs module="goodsDetailPage">
+    module.exports = {
+      url : function(item) {
+        if (item.supplyType == 'cps_jd') {
+          return '/packageCps/pages/goods-details/cps-jd?id=' + item.id
+        } else if (item.supplyType == 'vop_jd') {
+          return '/pages/goods-details/vop?id=' + item.yyId + '&goodsId=' + item.id
+        } else if (item.supplyType == 'cps_pdd') {
+          return '/packageCps/pages/goods-details/cps-pdd?id=' + item.id
+        } else if (item.supplyType == 'cps_taobao') {
+          return '/packageCps/pages/goods-details/cps-taobao?id=' + item.id
+        } else {
+          return '/pages/goods-details/index?id=' + item.id
+        }
+      }
+    }
+    </wxs>
+    <van-card
+      wx:for="{{currentGoods}}" wx:key="id"
+      price="{{item.minPrice}}"
+      desc="{{item.numberSells ? '已售' + item.numberSells : ''}}"
+      tag="{{item.gotScore ? item.gotScore + '积分' : ''}}"
+      title="{{item.name}}"
+      thumb="{{item.pic}}"
+      thumb-link="{{ goodsDetailPage.url(item) }}"
+    >
+      <view class="goods-btn" slot="footer">
+        <van-icon wx:if="{{ item.propertyIds || item.hasAddition }}" name="add" color="#e64340" size="48rpx" data-id="{{item.id}}" bind:click="addShopCar" />
+        <van-icon wx:else name="shopping-cart-o" color="#e64340" size="48rpx" data-id="{{item.id}}" bind:click="addShopCar" />
+      </view>
+    </van-card>
+  </scroll-view>
+</view>
+
+<van-popup
+  show="{{ skuCurGoodsShow }}"
+  position="bottom"
+  round
+  custom-style="padding-top:32rpx;max-height: 80%;"
+  bind:close="closeSku"
+>
+  <van-card
+    centered
+    price="{{ selectSizePrice }}"
+    origin-price="{{ selectSizePrice != selectSizePrice ? selectSizeOPrice : '' }}"
+    title="{{ skuCurGoods.basicInfo.name }}"
+    thumb="{{ skuGoodsPic }}"
+  />
+  <view class="sku-container">
+    <view class="sku" wx:for="{{skuCurGoods.properties}}" wx:key="id">
+      <view class="t">{{item.name}}</view>
+      <view class="items">
+        <text class="{{small.active? 'active' : ''}}" wx:for="{{item.childsCurGoods}}" wx:for-item="small" wx:key="id" data-pid="{{small.propertyId}}" data-id="{{small.id}}" bindtap="skuSelect">{{small.name}}</text>
+      </view>
+    </view>
+    <view class="num">
+      <view class="t">购买数量</view>
+      <van-stepper value="{{ skuCurGoods.basicInfo.storesBuy }}" bind:plus="storesJia" bind:minus="storesJian" />
+    </view>
+  </view>
+  <van-button type="danger" block bind:click="addCarSku">加入购物车</van-button>
+</van-popup>

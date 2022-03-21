@@ -1,0 +1,136 @@
+<view class="jpage">
+<van-sticky style=" border-bottom: 1rpx solid #d4d4d4;">
+    <navbar></navbar>
+       
+    <view class="nav_footer" style="margin-top:{{bnavHeight}}px;">
+      <image src="https://www.mlito.com/wp-content/uploads/lite-back-50-50.svg" bindtap="fanhui" class="nav_footer_goback"></image>
+
+      <!-- <view class="nav_footer_title">{{navTitle}}</view> -->
+
+      <image mode="heightFix" wx:if="{{topbj}}" src="{{topbj}}" bindtap="toliebiao" data-id="{{tagid}}" class="nav_footer_left"></image>
+
+
+
+      <image mode="heightFix" bindtap="drawSharePic" src="https://www.mlito.com/wp-content/uploads/mlito-lite-xqy-fx.svg" class="nav_footer_right"></image>
+
+
+      
+    </view>
+</van-sticky>
+
+
+
+<scroll-view with-animation='true' scroll-top='{{ topNum }}'>
+<view class="zdy" style="margin-top:{{navHeight}}px;border-top: 1rpx solid #d4d4d4">
+
+  <!-- <view class="xx_bt">{{xx.title.rendered}}</view> -->
+
+  <!-- 广告 -->
+  <view class="gg">
+
+
+
+
+
+
+    <!-- <rich-text nodes="{{xx.metadata.a-ad?xx.metadata.a-ad:mrad}}"></rich-text> -->
+
+    <span class="span1"><image mode="widthFix" src="{{ad.ad1}}" data-url="{{ad.ad1h}}" /></span>
+    <span  class="span2"><image mode="widthFix" src="{{ad.ad2}}" data-url="{{ad.ad2h}}" /></span>
+    <p>
+    <span  class="span3"><image mode="widthFix" class="xt" src="{{ad.ad3}}" data-url="{{ad.ad3h}}" /></span>
+    <span  class="span4"><image mode="widthFix" class="xt" src="{{ad.ad4}}" data-url="{{ad.ad4h}}" /></span>
+    </p>
+  </view>
+
+
+  <view class="xx" >
+     <rich-text nodes="{{info}}"></rich-text>
+  </view>
+
+  <view class="cnxx"  wx:if="{{xx.goodsList}}">相关产品</view>
+  <view class="cnxx_xgcp" wx:if="{{xx.goodsList}}">
+
+        <view class="xgcp" wx:for="{{xx.goodsList}}" bindtap="toshangping" data-id="{{item.id}}" wx:key="index">
+          <image mode="aspectFill" src="{{item.pic}}" />
+          <p>{{item.name}}</p>
+          <span>￥{{item.minPrice}}</span>
+        </view>
+
+  </view>
+
+  <view class="cnxx"  wx:if="{{lcsj}}">相关生态</view>
+
+  <view class="cnxx_b" wx:if="{{lcsj}}">
+
+
+
+
+      <view class="jp scroll_box scroll_box2">
+
+        <scroll-view scroll-x>
+
+          <block wx:if="{{lcsj}}">
+              <view class="jpb item_list item_list2" wx:for="{{lcsj}}" bindtap="{{item.income?'toliebiao':'toxiangqing'}}" data-id="{{item.income?item.income:item.id}}"  data-ids="{{item.income?item.income:item.ids}}"  wx:key="index">
+                <p class="{{item.income?'ysvg':'wsvg'}} {{item.abk=='a'?'ybk':'wbk'}}">
+                  <image lazy-load='true'  mode="{{item.income?'widthFix':'heightFix'}}" src="{{item.pic}}" />
+                </p>
+                <span>{{item.title}}</span>
+                <em>{{item.descript}}</em>
+              </view>
+          </block>
+
+
+        
+          </scroll-view>
+
+        </view>
+
+
+
+        <!-- <view class="jpb" wx:for="{{lcsj}}" bindtap="{{item.income?'toliebiao':'toxiangqing'}}" data-id="{{item.income?item.income:item.id}}"  data-ids="{{item.income?item.income:item.ids}}"  wx:key="index">
+          <p class="{{item.income?'ysvg':'wsvg'}}  {{item.abk=='a'?'ybk':'wbk'}}" >
+            <image mode="heightFix" src="{{item.pic}}" />
+          </p>
+        </view> -->
+
+
+
+
+  </view>
+ <image lazy-load='true' class="jdbgg" bindtap="jdbgg" mode="widthFix" src="https://www.mlito.com/wp-content/uploads/mlito-lite-di-info.svg" />
+  <view class="kongdi"></view>
+
+  
+
+</view>
+</scroll-view>
+
+
+
+<view class="jf">
+  <view class="jft"><span wx:for="{{keywords}}" bindtap="toliebiao" wx:key="index" data-id="{{item}}">{{item}}</span></view>
+  <view class="jff">{{xx.info.title}}</view>
+</view>
+
+</view>
+
+
+
+<block wx:if="{{posterShow}}">
+  <view class="poster-mask"></view>
+  <view class="poster">
+    <canvas class="canvas" style="{{canvasstyle}}" canvas-id="firstCanvas"></canvas>
+  </view>
+  <view class="poster-btn">
+    <button type="primary" class="poster-btn1" size="mini" bindtap='_saveToMobile'> 保存图片 </button>
+    <button type="warn"  class="poster-btn2" size="mini" bindtap='closePop'> 关闭 </button>
+  </view>
+</block>
+
+<poster id="poster" config="{{posterConfig}}" bind:success="onPosterSuccess" bind:fail="onPosterFail"></poster>
+<view wx:if="{{showposterImg}}" class="popup-mask"></view>
+<view wx:if="{{showposterImg}}" class="posterImg-box">
+  <image mode="widthFix" class="posterImg" src="{{posterImg}}"></image>
+  <view class="btn-create" bindtap="savePosterPic">保存到相册</view>
+</view>

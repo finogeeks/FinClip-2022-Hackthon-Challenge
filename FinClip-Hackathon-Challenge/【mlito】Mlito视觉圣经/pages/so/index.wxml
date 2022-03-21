@@ -1,0 +1,201 @@
+<view class="jpage indexa" style="background-image: url({{topbj?topbj:content.topbj}});background-color:{{bjcolor?bjcolor:content.bjcolor}}">
+
+
+<van-sticky>
+   <navbar navColor="{{xlys}}" isWhite="{{aisWhite}}"></navbar>
+   <view class="nav_footer " style="background:{{xlys}};  margin-top:{{bnavHeight}}px;"><view class="gb {{aisWhite?'gb2':''}}" bindtap="fanhui"></view></view>
+</van-sticky>
+
+
+  
+
+
+<view class="zdy" style="margin-top:{{navHeight}}px;">
+
+   <view class="so">
+
+      <view class="so_box">
+         <input bindinput="xginp" class="input" value="{{couponPwd}}"  placeholder="请输入" bindconfirm="goSearch"/>
+         <image src="https://www.mlito.com/wp-content/uploads/lite-so-50-50.svg" class="nav_top_search" bindtap="goSearch" mode="heightFix" ></image>
+      </view>
+
+
+      <view class="xl_c">
+         <block wx:for="{{ssbt?ssbt:content.main}}" wx:key="index">
+            <image src="{{item.img}}" bindtap="toliebiao" data-id="{{item.id}}" class="xl_cb" mode="widthFix"></image>
+         </block>
+      </view>
+
+   
+   <view class="wu">
+
+      <view class="wu_t"  wx:if="{{ss}}">搜索的内容不存在，为你推荐</view>
+      
+
+      <view class="wu_b wu_bt" wx:if="{{ssq1}}" >
+            <view class="wu_ti"><span>搜出来的生态</span><em>我想被推荐</em><button class="lxkf" open-type="contact" bindcontact="handleContact"></button></view>
+            <view class="sst">
+
+               <image lazy-load='true' bindtap="toliebiao"  data-id="{{jcontent.info.title}}" class="sst1" mode="widthFix" src="{{jcontent.extJson.topimg}}" />
+
+               <image lazy-load='true' class="sst2" mode="widthFix" bindtap="toliebiao"  data-id="{{jcontent.extJson.soada}}"  src="{{jcontent.extJson.soad}}" />
+
+
+               <p>{{jcontent.extJson.info}}</p>
+        
+            </view>
+      </view>
+
+
+      <view class="wu_b wu_b1" wx:if="{{ssq}}">
+         <view class="wu_ti"><span>推荐的生态</span><em >我想被推荐</em><button class="lxkf" open-type="contact" bindcontact="handleContact"></button></view>
+         <view>
+            <view class="wu_bc">
+
+                <block wx:for="{{jdata1}}" wx:key="index">
+                  <view class="wu_bca"  bindtap="{{item.income?'toliebiao':'toxiangqing'}}" data-vip="{{item.audio?item.audio:''}}" data-id="{{item.income?item.income:item.id}}" >
+                     <view class="{{item.income?'ysvg':'wsvg'}} {{item.abk=='a'?'ybk':'wbk'}}">
+                        <image lazy-load='true'  mode="{{item.income?'widthFix':'heightFix'}}" src="{{item.pic}}" />
+                     </view>
+                  </view>
+                </block>
+        
+               <view class="wu_bcb"  bindtap="toliebiao"  data-id="推荐的生态"><span>阅读更多</span></view>
+            </view>
+         </view>
+      </view>
+
+
+
+
+      <view class="wu_b wu_b2" wx:if="{{ssq2}}">
+         <view class="wu_ti"><span>搜索出来的灵感</span><button class="lxkf" open-type="contact" bindcontact="handleContact"></button></view>
+         <view>
+            <view class="wu_bc wu_bc2">
+
+               <block wx:for="{{jdata2s}}" wx:key="index">
+
+                  <view class="wu_bca"  bindtap="{{item.income?'toliebiao':'toxiangqing'}}" data-vip="{{item.audio?item.audio:''}}" data-id="{{item.income?item.income:item.id}}" >
+
+                     <view class="{{item.income?'ysvg':'wsvg'}} {{item.abk=='a'?'ybk':'wbk'}}">
+                        <image  lazy-load='true'  mode="{{item.income?'widthFix':'heightFix'}}" src="{{item.pic}}" />
+                     </view>
+
+                     <p>{{item.title}}</p>
+                  </view>
+
+              </block>
+
+               <view class="wu_bcb wu_bcb22" bindtap="toliebiao"  data-id="{{couponPwd}}"><span>阅读更多</span></view>
+            </view>
+         </view>
+      </view>
+
+      <view class="wu_b wu_b2" wx:else>
+         <view class="wu_ti"><span>推荐的灵感</span><em >我想被推荐</em><button class="lxkf" open-type="contact" bindcontact="handleContact"></button></view>
+         <view>
+            <view class="wu_bc wu_bc2">
+
+               <block wx:for="{{jdata2}}" wx:key="index">
+
+                  <view class="wu_bca"  bindtap="{{item.income?'toliebiao':'toxiangqing'}}" data-vip="{{item.audio?item.audio:''}}" data-id="{{item.income?item.income:item.id}}" >
+
+                     <view class="{{item.income?'ysvg':'wsvg'}} {{item.abk=='a'?'ybk':'wbk'}}">
+                        <image  lazy-load='true'  mode="{{item.income?'widthFix':'heightFix'}}" src="{{item.pic}}" />
+                     </view>
+
+                     <p>{{item.title}}</p>
+                  </view>
+
+              </block>
+
+               <view class="wu_bcb wu_bcb22" bindtap="toliebiao"  data-id="推荐的灵感"><span>阅读更多</span></view>
+            </view>
+         </view>
+      </view>
+
+
+      <view class="wu_b wu_b2">
+         <view class="wu_ti"><span>{{ssq3?"搜索出来的好物":"推荐的好物"}}</span><em wx:if="{{!ssq3}}">我想被推荐</em><button class="lxkf" open-type="contact" bindcontact="handleContact"></button></view>
+         <view>
+            <view class="wu_bc wu_bc2 wu_bc3">
+              
+              
+
+              <block wx:for="{{jdata}}" wx:key="index">
+              <view class="splb" bindtap="toDetailsTap" data-id="{{item.id}}" >
+              
+                  <view class="splbt">
+                        <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.id}}" src="{{item.pic}}" />
+                        <view class="splb_l">
+                        <span wx:if="{{item.subName}}">{{item.subName}}</span>
+                        <em  wx:if="{{item.purchaseNotes}}">{{item.purchaseNotes}}</em>
+                        </view>
+
+                        <view class="splb_r">
+                        <block wx:if="{{item.tags}}">
+                           <span wx:for="{{item.tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+                        </block>
+                        </view>
+                  </view>
+                  
+                  <view class="splbf">
+                        <view class="spbt">{{item.name}}</view>
+                        <view class="spjg">
+                        <view class="spjgl"><span>￥{{item.minPrice}}</span><em>￥{{item.originalPrice}}</em></view>
+                        <view class="spjgr">
+                              <block wx:if="{{item.characteristic}}">
+                              <span wx:for="{{item.characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+                              </block>
+                              <block wx:else>
+                              <i></i>
+                              </block>
+                        </view>
+                        </view>
+                  </view>
+
+               </view>
+
+               </block>
+
+
+               <view class="wu_bcb wu_bcb3" bindtap="sptoliebiao"><span>购买更多</span></view>
+            </view>
+         </view>
+      </view>
+
+
+      <view class="soad" wx:if="{{ssq1}}" >
+
+               <image lazy-load='true'  bindtap="toliebiao"  data-id="{{couponPwd}}" class="soad" mode="widthFix" src="https://www.mlito.com/wp-content/uploads/mlito-lite-so-700-150-ad.svg" />
+               <!-- <button class="lxkf" open-type="contact" bindcontact="handleContact"></button> -->
+     
+      </view>
+
+
+      
+
+
+
+   </view>
+
+   
+
+
+   <view class="xl_ad">
+       <block wx:for="{{content.admain}}" wx:key="index">
+       <image src="{{item.img}}" bindtap="toliebiao" data-id="{{item.id}}" class="xl_adb" mode="widthFix"></image>
+       </block>
+    </view>
+    
+
+      
+   </view>
+
+
+</view>
+
+
+
+
+</view>

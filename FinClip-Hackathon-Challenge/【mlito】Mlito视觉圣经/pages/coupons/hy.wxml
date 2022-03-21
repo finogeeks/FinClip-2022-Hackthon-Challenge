@@ -1,0 +1,1378 @@
+<view class="jpage">
+  <van-sticky>
+    <navbar></navbar>
+    <view class="nav_footer" style="margin-top:{{bnavHeight}}px;">
+      <!-- <image src="https://www.mlito.com/wp-content/uploads/lite-back-50-50.svg" bindtap="fanhui" class="nav_footer_goback"></image> -->
+      <!-- <view class="nav_footer_title">{{navTitle}}</view> -->
+      <image mode="heightFix" src="https://www.mlito.com/wp-content/uploads/lite-vip-tl.svg" class="nav_footer_left" ></image>
+      <image mode="heightFix" src="https://www.mlito.com/wp-content/uploads/lite-vip-tr.svg" class="nav_footer_right"></image>
+      <view class="nav_footer_rt">
+        <span>我的收藏</span>
+        <span>我的会员</span>
+        <!-- <span wx:for="{{jdata.top.lj}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">
+          {{item.nr}}
+        </span> -->
+      </view>
+    </view>
+  </van-sticky>
+  <div class="zdy" style="margin-top:{{navHeight}}px;">
+
+
+<view class="bxs">
+    <!-- 顶部按钮 -->
+  <view class="vip {{vip_id==1?'vip1':''}} {{vip_id==2?'vip2':''}} {{vip_id==3?'vip3':''}}">
+    <view class="vip_zf" bindtap="vip_zf" data-id="{{vip_id}}"></view>
+    <view class="vip_bt vip_bt1" bindtap="vip_bt" data-id="1"></view>
+    <view class="vip_bt vip_bt2" bindtap="vip_bt" data-id="2"></view>
+    <view class="vip_bt vip_bt3" bindtap="vip_bt" data-id="3"></view>
+  </view>
+
+  <view class="topicon"> 
+     <image wx:for="{{topicon}}" mode="widthFix" src="{{item}}" wx:key="index" />
+  </view>
+
+
+
+
+
+
+<!-- -1楼层 -->
+    <block wx:if="{{jdata.ac1}}">
+      <view class="tt tt111" data-id="" data-zhf="{{jdata.ac1.zh.zhf}}" data-zht="{{jdata.ac1.zh.zht}}" data-zh="{{jdata.ac1.zh.zh}}" data-bh="-1">
+        <image style="border:none" mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.ac1.db.link}}" src="{{jdata.ac1.db.nr}}" />
+      </view>
+
+
+  <view class="jp scroll_box">
+
+	<scroll-view scroll-x>
+
+    <block wx:if="{{ac1}}">
+        <view class="jpb item_list" wx:for="{{ac1}}" bindtap="{{item.income?'toliebiao':'toxiangqing'}}" data-vip="{{item.audio?item.audio:''}}" data-id="{{item.income?item.income:item.id}}" wx:key="index" >
+          <p class="{{item.income?'ysvg':'wsvg'}} {{item.abk=='a'?'ybk':'wbk'}}">
+          <image lazy-load='true'  mode="{{item.income?'widthFix':'heightFix'}}" src="{{item.pic}}" />
+          </p>
+          <span wx:if="{{!item.income}}">{{item.title}}</span>
+        </view>
+    </block>
+
+    <view class="qb qb2 item_list" bindtap="toliebiao"  data-id="{{lc1gd}}">
+      <view class="jzz"  wx:if="{{ac1==''}}">
+        <image lazy-load='true'  mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+        <em>文章加载中</em>
+      </view>
+      <p>阅读全部</p>
+      <span>{{jdata.ac1.shuliang}}</span>
+    </view>
+
+    <view class="ff ff2 item_list">
+      <em>{{ac1a.zht}}</em>
+      <p><span  wx:for="{{ac1a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">{{item.nr}}</span></p>
+      <i>{{ac1a.zhf}}</i>
+    </view>
+    <view class="kdd item_list">
+    </view>
+  	</scroll-view>
+
+  </view>
+
+      <div class="gg  ggac">
+        <image mode="widthFix" wx:for="{{jdata.ac1.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="-1" data-nr="{{item.link}}" />
+      </div>
+    </block>
+<!-- /-1楼层 -->
+
+  </view>
+
+
+
+
+
+
+
+<!-- -2楼层 大熊猫-->
+    <block wx:if="{{jdata.ac2}}">
+      <view class="tt tt222" data-id="" data-zhf="{{jdata.ac2.zh.zhf}}" data-zht="{{jdata.ac2.zh.zht}}" data-zh="{{jdata.ac2.zh.zh}}" data-bh="-2">
+        <image style="border:none" mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.ac2.db.link}}" src="{{jdata.ac2.db.nr}}" />
+      </view>
+
+
+  <view class="jp scroll_box scroll_box2">
+
+	<scroll-view scroll-x>
+
+    <block wx:if="{{ac2}}">
+        <view class="jpb item_list item_list2" wx:for="{{ac2}}" bindtap="{{item.income?'toliebiao':'toxiangqing'}}" data-vip="{{item.audio?item.audio:''}}" data-id="{{item.income?item.income:item.id}}" wx:key="index" >
+          <p class="{{item.income?'ysvg':'wsvg'}} {{item.abk=='a'?'ybk':'wbk'}}">
+          <image lazy-load='true'  mode="{{item.income?'widthFix':'heightFix'}}" src="{{item.pic}}" />
+          </p>
+          <span>{{item.title}}</span>
+          <em>{{item.descript}}</em>
+        </view>
+    </block>
+
+    <view class="qb qb2 item_list" bindtap="toliebiao"  data-id="{{lc2gd}}">
+      <view class="jzz"  wx:if="{{ac2==''}}">
+        <image lazy-load='true'  mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+        <em>文章加载中</em>
+      </view>
+      <p>阅读全部</p>
+      <span>{{jdata.ac2.shuliang}}</span>
+    </view>
+
+    <view class="ff ff2 item_list">
+      <em>{{ac2a.zht}}</em>
+      <p><span  wx:for="{{ac2a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">{{item.nr}}</span></p>
+      <i>{{ac2a.zhf}}</i>
+    </view>
+    <view class="kdd item_list">
+    </view>
+  	</scroll-view>
+
+  </view>
+
+      <div class="gg  ggac">
+        <image mode="widthFix" wx:for="{{jdata.ac2.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="-2" data-nr="{{item.link}}" />
+      </div>
+    </block>
+<!-- /-2楼层 -->
+
+
+
+
+
+    
+
+
+
+
+
+
+<view class="bxs" >
+
+
+
+    <!-- 楼层 -->
+    <block wx:if="{{jdata.lc1}}">
+      <view class="tt" data-id="" data-zhf="{{jdata.lc1.zh.zhf}}" data-zht="{{jdata.lc1.zh.zht}}" data-zh="{{jdata.lc1.zh.zh}}" data-bh="1">
+        <image style="border:none" mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.lc1.db.link}}" src="{{jdata.lc1.db.nr}}" />
+      </view>
+      <!-- <view class="jtag">
+          <span  wx:for="{{jdata.lc1.lj}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}"  data-zhf="{{item.zhf}}" data-zht="{{item.zht}}" data-zh="{{item.zh}}" data-bh="1">{{item.nr}}</span>
+  </view> -->
+
+      <view class="hy">
+        <!-- 文章 -->
+        <block wx:if="{{lc1}}">
+
+          <p class="hyp">
+            <em class="{{lc1[0].income?'ysvg2':'wsvg2'}} {{lc1[0].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc1[0].income?'widthFix':'aspectFill'}}" bindtap="{{lc1[0].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc1[0].audio?lc1[0].audio:''}}" data-id="{{lc1[0].income?lc1[0].income:lc1[0].id}}" src="{{lc1[0].pic}}" />
+            </em>
+            <em class="{{lc1[1].income?'ysvg2':'wsvg2'}} {{lc1[1].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc1[1]}}" mode="{{lc1[1].income?'widthFix':'aspectFill'}}" bindtap="{{lc1[1].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc1[1].audio?lc1[1].audio:''}}" data-id="{{lc1[1].income?lc1[1].income:lc1[1].id}}" src="{{lc1[1].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc1[2]}}">
+            <em class="{{lc1[2].income?'ysvg2':'wsvg2'}} {{lc1[2].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc1[2].income?'widthFix':'aspectFill'}}" bindtap="{{lc1[2].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc1[2].audio?lc1[2].audio:''}}" data-id="{{lc1[2].income?lc1[2].income:lc1[2].id}}" src="{{lc1[2].pic}}" />
+            </em>
+            <em class="{{lc1[3].income?'ysvg2':'wsvg2'}} {{lc1[3].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc1[3]}}" mode="{{lc1[3].income?'widthFix':'aspectFill'}}" bindtap="{{lc1[3].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc1[3].audio?lc1[3].audio:''}}" data-id="{{lc1[3].income?lc1[0].income:lc1[3].id}}" src="{{lc1[3].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc1[4]}}">
+            <em class="{{lc1[4].income?'ysvg2':'wsvg2'}} {{lc1[4].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc1[4].income?'widthFix':'aspectFill'}}" bindtap="{{lc1[4].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc1[4].audio?lc1[4].audio:''}}" data-id="{{lc1[4].income?lc1[4].income:lc1[4].id}}" src="{{lc1[4].pic}}" />
+            </em>
+            <em class="{{lc1[5].income?'ysvg2':'wsvg2'}} {{lc1[5].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc1[5]}}" mode="{{lc1[5].income?'widthFix':'aspectFill'}}" bindtap="{{lc1[5].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc1[5].audio?lc1[5].audio:''}}" data-id="{{lc1[5].income?lc1[5].income:lc1[5].id}}" src="{{lc1[5].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc1[6]}}">
+            <em class="{{lc1[6].income?'ysvg2':'wsvg2'}} {{lc1[6].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc1[6].income?'widthFix':'aspectFill'}}"  bindtap="{{lc1[6].income?'toliebiao':'toxiangqing'}}" data-id="{{lc1[6].income?lc1[6].income:lc1[6].id}}" src="{{lc1[6].pic}}" />
+            </em>
+            <em class="{{lc1[7].income?'ysvg2':'wsvg2'}} {{lc1[7].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc1[7]}}" mode="{{lc1[7].income?'widthFix':'aspectFill'}}"  bindtap="{{lc1[7].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc1[7].audio?lc1[7].audio:''}}" data-id="{{lc1[7].income?lc1[7].income:lc1[7].id}}" src="{{lc1[7].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc1[8]}}">
+            <em class="{{lc1[8].income?'ysvg2':'wsvg2'}} {{lc1[8].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc1[8].income?'widthFix':'aspectFill'}}" bindtap="{{lc1[8].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc1[8].audio?lc1[8].audio:''}}" data-id="{{lc1[8].income?lc1[8].income:lc1[8].id}}" src="{{lc1[8].pic}}" />
+            </em>
+            <em class="{{lc1[9].income?'ysvg2':'wsvg2'}} {{lc1[9].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc1[9]}}" mode="{{lc1[9].income?'widthFix':'aspectFill'}}" bindtap="{{lc1[9].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc1[9].audio?lc1[9].audio:''}}" data-id="{{lc1[9].income?lc1[9].income:lc1[9].id}}" src="{{lc1[9].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc1[10]}}">
+            <em class="{{lc1[10].income?'ysvg2':'wsvg2'}} {{lc1[10].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc1[10].income?'widthFix':'aspectFill'}}" bindtap="{{lc1[10].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc1[10].audio?lc1[10].audio:''}}" data-id="{{lc1[10].income?lc1[10].income:lc1[10].id}}" src="{{lc1[10].pic}}" />
+            </em>
+            <em class="{{lc1[11].income?'ysvg2':'wsvg2'}} {{lc1[11].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc1[11]}}" mode="{{lc1[11].income?'widthFix':'aspectFill'}}" bindtap="{{lc1[11].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc1[11].audio?lc1[11].audio:''}}" data-id="{{lc1[11].income?lc1[11].income:lc1[11].id}}"  src="{{lc1[11].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc1[12]}}">
+            <em class="{{lc1[12].income?'ysvg2':'wsvg2'}} {{lc1[12].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc1[12].income?'widthFix':'aspectFill'}}" bindtap="{{lc1[12].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc1[12].audio?lc1[12].audio:''}}" data-id="{{lc1[12].income?lc1[12].income:lc1[12].id}}"  src="{{lc1[12].pic}}" />
+            </em>
+            <em class="{{lc1[13].income?'ysvg2':'wsvg2'}} {{lc1[13].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc1[13]}}" mode="{{lc1[13].income?'widthFix':'aspectFill'}}" bindtap="{{lc1[12].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc1[13].audio?lc1[13].audio:''}}" data-id="{{lc1[13].income?lc1[13].income:lc1[13].id}}"  src="{{lc1[13].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc1[14]}}">
+            <em class="{{lc1[14].income?'ysvg2':'wsvg2'}} {{lc1[14].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc1[14].income?'widthFix':'aspectFill'}}" bindtap="{{lc1[14].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc1[14].audio?lc1[14].audio:''}}" data-id="{{lc1[14].income?lc1[14].income:lc1[14].id}}"  src="{{lc1[14].pic}}" />
+            </em>
+            <em class="{{lc1[15].income?'ysvg2':'wsvg2'}} {{lc1[15].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc1[15]}}" mode="{{lc1[15].income?'widthFix':'aspectFill'}}" bindtap="{{lc1[15].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc1[15].audio?lc1[15].audio:''}}" data-id="{{lc1[15].income?lc1[15].income:lc1[15].id}}"  src="{{lc1[15].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc1[16]}}">
+            <em class="{{lc1[16].income?'ysvg2':'wsvg2'}} {{lc1[16].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc1[16].income?'widthFix':'aspectFill'}}" bindtap="{{lc1[16].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc1[16].audio?lc1[16].audio:''}}" data-id="{{lc1[16].income?lc1[16].income:lc1[16].id}}"  src="{{lc1[16].pic}}" />
+            </em>
+            <em class="{{lc1[17].income?'ysvg2':'wsvg2'}} {{lc1[17].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc1[17]}}" mode="{{lc1[17].income?'widthFix':'aspectFill'}}" bindtap="{{lc1[17].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc1[17].audio?lc1[17].audio:''}}" data-id="{{lc1[17].income?lc1[17].income:lc1[17].id}}"  src="{{lc1[17].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc1[18]}}">
+            <em class="{{lc1[18].income?'ysvg2':'wsvg2'}} {{lc1[18].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc1[18].income?'widthFix':'aspectFill'}}" bindtap="{{lc1[18].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc1[18].audio?lc1[18].audio:''}}"data-id="{{lc1[18].income?lc1[18].income:lc1[18].id}}"  src="{{lc1[18].pic}}" />
+            </em>
+            <em class="{{lc1[19].income?'ysvg2':'wsvg2'}} {{lc1[19].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc1[19]}}" mode="{{lc1[19].income?'widthFix':'aspectFill'}}" bindtap="{{lc1[19].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc1[19].audio?lc1[19].audio:''}}"data-id="{{lc1[19].income?lc1[19].income:lc1[19].id}}"  src="{{lc1[19].pic}}" />
+            </em>
+          </p>
+        </block>
+        <view class="qb">
+          <view class="jzz" wx:if="{{lc1==''}}">
+            <image mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+            <em>文章加载中</em>
+          </view>
+          <p>阅读全部</p>
+          <span>{{jdata.lc1.shuliang}}</span>
+        </view>
+        <!-- tag -->
+        <view class="ff ff2">
+          <em>{{lc1a.zht}}</em>
+          <p>
+            <span wx:for="{{lc1a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">
+              {{item.nr}}
+            </span>
+          </p>
+          <i>{{lc1a.zhf}}</i>
+        </view>
+        <view class="kdd"></view>
+      </view>
+      <div class="gg">
+        <image mode="widthFix" wx:for="{{jdata.lc1.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="1" data-nr="{{item.link}}" />
+      </div>
+    </block>
+    <!-- /楼层 -->
+    <!-- 楼层 -->
+    <block wx:if="{{jdata.lc2}}">
+      <view class="tt" data-id="" data-zhf="{{jdata.lc2.zh.zhf}}" data-zht="{{jdata.lc2.zh.zht}}" data-zh="{{jdata.lc2.zh.zh}}" data-bh="2">
+        <image mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.lc2.db.link}}" src="{{jdata.lc2.db.nr}}" />
+      </view>
+      <!-- <view class="jtag">
+          <span  wx:for="{{jdata.lc2.lj}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}"  data-zhf="{{item.zhf}}" data-zht="{{item.zht}}" data-zh="{{item.zh}}" data-bh="1">{{item.nr}}</span>
+  </view> -->
+      <view class="hy">
+        <!-- 文章 -->
+   <block wx:if="{{lc2}}">
+
+          <p class="hyp">
+            <em class="{{lc2[0].income?'ysvg2':'wsvg2'}} {{lc2[0].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc2[0].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[0].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[0].audio?lc2[0].audio:''}}" data-id="{{lc2[0].income?lc2[0].income:lc2[0].id}}" src="{{lc2[0].pic}}" />
+            </em>
+            <em class="{{lc2[1].income?'ysvg2':'wsvg2'}} {{lc2[1].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc2[1]}}" mode="{{lc2[1].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[1].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[1].audio?lc2[1].audio:''}}" data-id="{{lc2[1].income?lc2[1].income:lc2[1].id}}" src="{{lc2[1].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc2[2]}}">
+            <em class="{{lc2[2].income?'ysvg2':'wsvg2'}} {{lc2[2].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc2[2].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[2].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[2].audio?lc2[2].audio:''}}" data-id="{{lc2[2].income?lc2[2].income:lc2[2].id}}" src="{{lc2[2].pic}}" />
+            </em>
+            <em class="{{lc2[3].income?'ysvg2':'wsvg2'}} {{lc2[3].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc2[3]}}" mode="{{lc2[3].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[3].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[3].audio?lc2[3].audio:''}}" data-id="{{lc2[3].income?lc2[0].income:lc2[3].id}}" src="{{lc2[3].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc2[4]}}">
+            <em class="{{lc2[4].income?'ysvg2':'wsvg2'}} {{lc2[4].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc2[4].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[4].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[4].audio?lc2[4].audio:''}}" data-id="{{lc2[4].income?lc2[4].income:lc2[4].id}}" src="{{lc2[4].pic}}" />
+            </em>
+            <em class="{{lc2[5].income?'ysvg2':'wsvg2'}} {{lc2[5].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc2[5]}}" mode="{{lc2[5].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[5].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[5].audio?lc2[5].audio:''}}" data-id="{{lc2[5].income?lc2[5].income:lc2[5].id}}" src="{{lc2[5].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc2[6]}}">
+            <em class="{{lc2[6].income?'ysvg2':'wsvg2'}} {{lc2[6].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc2[6].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[6].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[6].income?lc2[6].income:lc2[6].id}}" src="{{lc2[6].pic}}" />
+            </em>
+            <em class="{{lc2[7].income?'ysvg2':'wsvg2'}} {{lc2[7].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc2[7]}}" mode="{{lc2[7].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[7].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[7].audio?lc2[7].audio:''}}" data-id="{{lc2[7].income?lc2[7].income:lc2[7].id}}" src="{{lc2[7].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc2[8]}}">
+            <em class="{{lc2[8].income?'ysvg2':'wsvg2'}} {{lc2[8].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc2[8].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[8].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[8].audio?lc2[8].audio:''}}" data-id="{{lc2[8].income?lc2[8].income:lc2[8].id}}" src="{{lc2[8].pic}}" />
+            </em>
+            <em class="{{lc2[9].income?'ysvg2':'wsvg2'}} {{lc2[9].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc2[9]}}" mode="{{lc2[9].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[9].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[9].audio?lc2[9].audio:''}}" data-id="{{lc2[9].income?lc2[9].income:lc2[9].id}}" src="{{lc2[9].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc2[10]}}">
+            <em class="{{lc2[10].income?'ysvg2':'wsvg2'}} {{lc2[10].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc2[10].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[10].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[10].audio?lc2[10].audio:''}}" data-id="{{lc2[10].income?lc2[10].income:lc2[10].id}}" src="{{lc2[10].pic}}" />
+            </em>
+            <em class="{{lc2[11].income?'ysvg2':'wsvg2'}} {{lc2[11].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc2[11]}}" mode="{{lc2[11].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[11].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[11].audio?lc2[11].audio:''}}" data-id="{{lc2[11].income?lc2[11].income:lc2[11].id}}"  src="{{lc2[11].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc2[12]}}">
+            <em class="{{lc2[12].income?'ysvg2':'wsvg2'}} {{lc2[12].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc2[12].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[12].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[12].audio?lc2[12].audio:''}}" data-id="{{lc2[12].income?lc2[12].income:lc2[12].id}}"  src="{{lc2[12].pic}}" />
+            </em>
+            <em class="{{lc2[13].income?'ysvg2':'wsvg2'}} {{lc2[13].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc2[13]}}" mode="{{lc2[13].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[12].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[13].audio?lc2[13].audio:''}}" data-id="{{lc2[13].income?lc2[13].income:lc2[13].id}}"  src="{{lc2[13].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc2[14]}}">
+            <em class="{{lc2[14].income?'ysvg2':'wsvg2'}} {{lc2[14].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc2[14].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[14].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[14].audio?lc2[14].audio:''}}" data-id="{{lc2[14].income?lc2[14].income:lc2[14].id}}"  src="{{lc2[14].pic}}" />
+            </em>
+            <em class="{{lc2[15].income?'ysvg2':'wsvg2'}} {{lc2[15].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc2[15]}}" mode="{{lc2[15].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[15].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[15].audio?lc2[15].audio:''}}" data-id="{{lc2[15].income?lc2[15].income:lc2[15].id}}"  src="{{lc2[15].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc2[16]}}">
+            <em class="{{lc2[16].income?'ysvg2':'wsvg2'}} {{lc2[16].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc2[16].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[16].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[16].audio?lc2[16].audio:''}}" data-id="{{lc2[16].income?lc2[16].income:lc2[16].id}}"  src="{{lc2[16].pic}}" />
+            </em>
+            <em class="{{lc2[17].income?'ysvg2':'wsvg2'}} {{lc2[17].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc2[17]}}" mode="{{lc2[17].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[17].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[17].audio?lc2[17].audio:''}}" data-id="{{lc2[17].income?lc2[17].income:lc2[17].id}}"  src="{{lc2[17].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc2[18]}}">
+            <em class="{{lc2[18].income?'ysvg2':'wsvg2'}} {{lc2[18].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc2[18].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[18].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[18].audio?lc2[18].audio:''}}"data-id="{{lc2[18].income?lc2[18].income:lc2[18].id}}"  src="{{lc2[18].pic}}" />
+            </em>
+            <em class="{{lc2[19].income?'ysvg2':'wsvg2'}} {{lc2[19].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc2[19]}}" mode="{{lc2[19].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[19].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[19].audio?lc2[19].audio:''}}"data-id="{{lc2[19].income?lc2[19].income:lc2[19].id}}"  src="{{lc2[19].pic}}" />
+            </em>
+          </p>
+        </block>
+        <view class="qb">
+          <view class="jzz" wx:if="{{lc2==''}}">
+            <image mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+            <em>文章加载中</em>
+          </view>
+          <p>阅读全部</p>
+          <span>{{jdata.lc2.shuliang}}</span>
+        </view>
+        <!-- tag -->
+        <view class="ff ff2">
+          <em>{{lc2a.zht}}</em>
+          <p>
+            <span wx:for="{{lc2a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">
+              {{item.nr}}
+            </span>
+          </p>
+          <i>{{lc2a.zhf}}</i>
+        </view>
+        <view class="kdd"></view>
+      </view>
+      <div class="gg">
+        <image mode="widthFix" wx:for="{{jdata.lc2.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="2" data-nr="{{item.link}}" />
+      </div>
+    </block>
+    <!-- /楼层 -->
+    <!-- 楼层 -->
+    <block wx:if="{{jdata.lc3}}">
+      <view class="tt" data-id="" data-zhf="{{jdata.lc3.zh.zhf}}" data-zht="{{jdata.lc3.zh.zht}}" data-zh="{{jdata.lc3.zh.zh}}" data-bh="3">
+        <image mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.lc3.db.link}}" src="{{jdata.lc3.db.nr}}" />
+      </view>
+      <!-- <view class="jtag">
+          <span  wx:for="{{jdata.lc3.lj}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}"  data-zhf="{{item.zhf}}" data-zht="{{item.zht}}" data-zh="{{item.zh}}" data-bh="1">{{item.nr}}</span>
+  </view> -->
+      <view class="hy">
+        <!-- 文章 -->
+           <block wx:if="{{lc3}}">
+
+          <p class="hyp">
+            <em class="{{lc3[0].income?'ysvg2':'wsvg2'}} {{lc3[0].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc3[0].income?'widthFix':'aspectFill'}}" bindtap="{{lc3[0].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc3[0].audio?lc3[0].audio:''}}" data-id="{{lc3[0].income?lc3[0].income:lc3[0].id}}" src="{{lc3[0].pic}}" />
+            </em>
+            <em class="{{lc3[1].income?'ysvg2':'wsvg2'}} {{lc3[1].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc3[1]}}" mode="{{lc3[1].income?'widthFix':'aspectFill'}}" bindtap="{{lc3[1].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc3[1].audio?lc3[1].audio:''}}" data-id="{{lc3[1].income?lc3[1].income:lc3[1].id}}" src="{{lc3[1].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc3[2]}}">
+            <em class="{{lc3[2].income?'ysvg2':'wsvg2'}} {{lc3[2].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc3[2].income?'widthFix':'aspectFill'}}" bindtap="{{lc3[2].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc3[2].audio?lc3[2].audio:''}}" data-id="{{lc3[2].income?lc3[2].income:lc3[2].id}}" src="{{lc3[2].pic}}" />
+            </em>
+            <em class="{{lc3[3].income?'ysvg2':'wsvg2'}} {{lc3[3].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc3[3]}}" mode="{{lc3[3].income?'widthFix':'aspectFill'}}" bindtap="{{lc3[3].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc3[3].audio?lc3[3].audio:''}}" data-id="{{lc3[3].income?lc3[0].income:lc3[3].id}}" src="{{lc3[3].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc3[4]}}">
+            <em class="{{lc3[4].income?'ysvg2':'wsvg2'}} {{lc3[4].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc3[4].income?'widthFix':'aspectFill'}}" bindtap="{{lc3[4].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc3[4].audio?lc3[4].audio:''}}" data-id="{{lc3[4].income?lc3[4].income:lc3[4].id}}" src="{{lc3[4].pic}}" />
+            </em>
+            <em class="{{lc3[5].income?'ysvg2':'wsvg2'}} {{lc3[5].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc3[5]}}" mode="{{lc3[5].income?'widthFix':'aspectFill'}}" bindtap="{{lc3[5].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc3[5].audio?lc3[5].audio:''}}" data-id="{{lc3[5].income?lc3[5].income:lc3[5].id}}" src="{{lc3[5].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc3[6]}}">
+            <em class="{{lc3[6].income?'ysvg2':'wsvg2'}} {{lc3[6].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc3[6].income?'widthFix':'aspectFill'}}"  bindtap="{{lc3[6].income?'toliebiao':'toxiangqing'}}" data-id="{{lc3[6].income?lc3[6].income:lc3[6].id}}" src="{{lc3[6].pic}}" />
+            </em>
+            <em class="{{lc3[7].income?'ysvg2':'wsvg2'}} {{lc3[7].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc3[7]}}" mode="{{lc3[7].income?'widthFix':'aspectFill'}}"  bindtap="{{lc3[7].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc3[7].audio?lc3[7].audio:''}}" data-id="{{lc3[7].income?lc3[7].income:lc3[7].id}}" src="{{lc3[7].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc3[8]}}">
+            <em class="{{lc3[8].income?'ysvg2':'wsvg2'}} {{lc3[8].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc3[8].income?'widthFix':'aspectFill'}}" bindtap="{{lc3[8].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc3[8].audio?lc3[8].audio:''}}" data-id="{{lc3[8].income?lc3[8].income:lc3[8].id}}" src="{{lc3[8].pic}}" />
+            </em>
+            <em class="{{lc3[9].income?'ysvg2':'wsvg2'}} {{lc3[9].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc3[9]}}" mode="{{lc3[9].income?'widthFix':'aspectFill'}}" bindtap="{{lc3[9].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc3[9].audio?lc3[9].audio:''}}" data-id="{{lc3[9].income?lc3[9].income:lc3[9].id}}" src="{{lc3[9].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc3[10]}}">
+            <em class="{{lc3[10].income?'ysvg2':'wsvg2'}} {{lc3[10].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc3[10].income?'widthFix':'aspectFill'}}" bindtap="{{lc3[10].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc3[10].audio?lc3[10].audio:''}}" data-id="{{lc3[10].income?lc3[10].income:lc3[10].id}}" src="{{lc3[10].pic}}" />
+            </em>
+            <em class="{{lc3[11].income?'ysvg2':'wsvg2'}} {{lc3[11].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc3[11]}}" mode="{{lc3[11].income?'widthFix':'aspectFill'}}" bindtap="{{lc3[11].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc3[11].audio?lc3[11].audio:''}}" data-id="{{lc3[11].income?lc3[11].income:lc3[11].id}}"  src="{{lc3[11].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc3[12]}}">
+            <em class="{{lc3[12].income?'ysvg2':'wsvg2'}} {{lc3[12].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc3[12].income?'widthFix':'aspectFill'}}" bindtap="{{lc3[12].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc3[12].audio?lc3[12].audio:''}}" data-id="{{lc3[12].income?lc3[12].income:lc3[12].id}}"  src="{{lc3[12].pic}}" />
+            </em>
+            <em class="{{lc3[13].income?'ysvg2':'wsvg2'}} {{lc3[13].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc3[13]}}" mode="{{lc3[13].income?'widthFix':'aspectFill'}}" bindtap="{{lc3[12].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc3[13].audio?lc3[13].audio:''}}" data-id="{{lc3[13].income?lc3[13].income:lc3[13].id}}"  src="{{lc3[13].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc3[14]}}">
+            <em class="{{lc3[14].income?'ysvg2':'wsvg2'}} {{lc3[14].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc3[14].income?'widthFix':'aspectFill'}}" bindtap="{{lc3[14].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc3[14].audio?lc3[14].audio:''}}" data-id="{{lc3[14].income?lc3[14].income:lc3[14].id}}"  src="{{lc3[14].pic}}" />
+            </em>
+            <em class="{{lc3[15].income?'ysvg2':'wsvg2'}} {{lc3[15].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc3[15]}}" mode="{{lc3[15].income?'widthFix':'aspectFill'}}" bindtap="{{lc3[15].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc3[15].audio?lc3[15].audio:''}}" data-id="{{lc3[15].income?lc3[15].income:lc3[15].id}}"  src="{{lc3[15].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc3[16]}}">
+            <em class="{{lc3[16].income?'ysvg2':'wsvg2'}} {{lc3[16].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc3[16].income?'widthFix':'aspectFill'}}" bindtap="{{lc3[16].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc3[16].audio?lc3[16].audio:''}}" data-id="{{lc3[16].income?lc3[16].income:lc3[16].id}}"  src="{{lc3[16].pic}}" />
+            </em>
+            <em class="{{lc3[17].income?'ysvg2':'wsvg2'}} {{lc3[17].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc3[17]}}" mode="{{lc3[17].income?'widthFix':'aspectFill'}}" bindtap="{{lc3[17].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc3[17].audio?lc3[17].audio:''}}" data-id="{{lc3[17].income?lc3[17].income:lc3[17].id}}"  src="{{lc3[17].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc3[18]}}">
+            <em class="{{lc3[18].income?'ysvg2':'wsvg2'}} {{lc3[18].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc3[18].income?'widthFix':'aspectFill'}}" bindtap="{{lc3[18].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc3[18].audio?lc3[18].audio:''}}"data-id="{{lc3[18].income?lc3[18].income:lc3[18].id}}"  src="{{lc3[18].pic}}" />
+            </em>
+            <em class="{{lc3[19].income?'ysvg2':'wsvg2'}} {{lc3[19].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc3[19]}}" mode="{{lc3[19].income?'widthFix':'aspectFill'}}" bindtap="{{lc3[19].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc3[19].audio?lc3[19].audio:''}}"data-id="{{lc3[19].income?lc3[19].income:lc3[19].id}}"  src="{{lc3[19].pic}}" />
+            </em>
+          </p>
+        </block>
+        <view class="qb">
+          <view class="jzz" wx:if="{{lc3==''}}">
+            <image mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+            <em>文章加载中</em>
+          </view>
+          <p>阅读全部</p>
+          <span>{{jdata.lc3.shuliang}}</span>
+        </view>
+        <!-- tag -->
+        <view class="ff ff2">
+          <em>{{lc3a.zht}}</em>
+          <p>
+            <span wx:for="{{lc3a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">
+              {{item.nr}}
+            </span>
+          </p>
+          <i>{{lc3a.zhf}}</i>
+        </view>
+        <view class="kdd"></view>
+      </view>
+      <div class="gg">
+        <image mode="widthFix" wx:for="{{jdata.lc3.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="3" data-nr="{{item.link}}" />
+      </div>
+    </block>
+    <!-- /楼层 -->
+    <!-- 楼层 -->
+    <block wx:if="{{jdata.lc4}}">
+      <view class="tt" data-id="" data-zhf="{{jdata.lc4.zh.zhf}}" data-zht="{{jdata.lc4.zh.zht}}" data-zh="{{jdata.lc4.zh.zh}}" data-bh="4">
+        <image mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.lc4.db.link}}" src="{{jdata.lc4.db.nr}}" />
+      </view>
+      <!-- <view class="jtag">
+          <span  wx:for="{{jdata.lc4.lj}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}"  data-zhf="{{item.zhf}}" data-zht="{{item.zht}}" data-zh="{{item.zh}}" data-bh="1">{{item.nr}}</span>
+  </view> -->
+      <view class="hy">
+        <!-- 文章 -->
+          <block wx:if="{{lc4}}">
+
+          <p class="hyp">
+            <em class="{{lc4[0].income?'ysvg2':'wsvg2'}} {{lc4[0].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc4[0].income?'widthFix':'aspectFill'}}" bindtap="{{lc4[0].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[0].audio?lc4[0].audio:''}}" data-id="{{lc4[0].income?lc4[0].income:lc4[0].id}}" src="{{lc4[0].pic}}" />
+            </em>
+            <em class="{{lc4[1].income?'ysvg2':'wsvg2'}} {{lc4[1].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc4[1]}}" mode="{{lc4[1].income?'widthFix':'aspectFill'}}" bindtap="{{lc4[1].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[1].audio?lc4[1].audio:''}}" data-id="{{lc4[1].income?lc4[1].income:lc4[1].id}}" src="{{lc4[1].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc4[2]}}">
+            <em class="{{lc4[2].income?'ysvg2':'wsvg2'}} {{lc4[2].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc4[2].income?'widthFix':'aspectFill'}}" bindtap="{{lc4[2].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[2].audio?lc4[2].audio:''}}" data-id="{{lc4[2].income?lc4[2].income:lc4[2].id}}" src="{{lc4[2].pic}}" />
+            </em>
+            <em class="{{lc4[3].income?'ysvg2':'wsvg2'}} {{lc4[3].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc4[3]}}" mode="{{lc4[3].income?'widthFix':'aspectFill'}}" bindtap="{{lc4[3].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[3].audio?lc4[3].audio:''}}" data-id="{{lc4[3].income?lc4[0].income:lc4[3].id}}" src="{{lc4[3].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc4[4]}}">
+            <em class="{{lc4[4].income?'ysvg2':'wsvg2'}} {{lc4[4].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc4[4].income?'widthFix':'aspectFill'}}" bindtap="{{lc4[4].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[4].audio?lc4[4].audio:''}}" data-id="{{lc4[4].income?lc4[4].income:lc4[4].id}}" src="{{lc4[4].pic}}" />
+            </em>
+            <em class="{{lc4[5].income?'ysvg2':'wsvg2'}} {{lc4[5].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc4[5]}}" mode="{{lc4[5].income?'widthFix':'aspectFill'}}" bindtap="{{lc4[5].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[5].audio?lc4[5].audio:''}}" data-id="{{lc4[5].income?lc4[5].income:lc4[5].id}}" src="{{lc4[5].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc4[6]}}">
+            <em class="{{lc4[6].income?'ysvg2':'wsvg2'}} {{lc4[6].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc4[6].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[6].income?'toliebiao':'toxiangqing'}}" data-id="{{lc4[6].income?lc4[6].income:lc4[6].id}}" src="{{lc4[6].pic}}" />
+            </em>
+            <em class="{{lc4[7].income?'ysvg2':'wsvg2'}} {{lc4[7].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc4[7]}}" mode="{{lc4[7].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[7].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[7].audio?lc4[7].audio:''}}" data-id="{{lc4[7].income?lc4[7].income:lc4[7].id}}" src="{{lc4[7].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc4[8]}}">
+            <em class="{{lc4[8].income?'ysvg2':'wsvg2'}} {{lc4[8].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc4[8].income?'widthFix':'aspectFill'}}" bindtap="{{lc4[8].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[8].audio?lc4[8].audio:''}}" data-id="{{lc4[8].income?lc4[8].income:lc4[8].id}}" src="{{lc4[8].pic}}" />
+            </em>
+            <em class="{{lc4[9].income?'ysvg2':'wsvg2'}} {{lc4[9].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc4[9]}}" mode="{{lc4[9].income?'widthFix':'aspectFill'}}" bindtap="{{lc4[9].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[9].audio?lc4[9].audio:''}}" data-id="{{lc4[9].income?lc4[9].income:lc4[9].id}}" src="{{lc4[9].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc4[10]}}">
+            <em class="{{lc4[10].income?'ysvg2':'wsvg2'}} {{lc4[10].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc4[10].income?'widthFix':'aspectFill'}}" bindtap="{{lc4[10].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[10].audio?lc4[10].audio:''}}" data-id="{{lc4[10].income?lc4[10].income:lc4[10].id}}" src="{{lc4[10].pic}}" />
+            </em>
+            <em class="{{lc4[11].income?'ysvg2':'wsvg2'}} {{lc4[11].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc4[11]}}" mode="{{lc4[11].income?'widthFix':'aspectFill'}}" bindtap="{{lc4[11].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[11].audio?lc4[11].audio:''}}" data-id="{{lc4[11].income?lc4[11].income:lc4[11].id}}"  src="{{lc4[11].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc4[12]}}">
+            <em class="{{lc4[12].income?'ysvg2':'wsvg2'}} {{lc4[12].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc4[12].income?'widthFix':'aspectFill'}}" bindtap="{{lc4[12].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[12].audio?lc4[12].audio:''}}" data-id="{{lc4[12].income?lc4[12].income:lc4[12].id}}"  src="{{lc4[12].pic}}" />
+            </em>
+            <em class="{{lc4[13].income?'ysvg2':'wsvg2'}} {{lc4[13].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc4[13]}}" mode="{{lc4[13].income?'widthFix':'aspectFill'}}" bindtap="{{lc4[12].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[13].audio?lc4[13].audio:''}}" data-id="{{lc4[13].income?lc4[13].income:lc4[13].id}}"  src="{{lc4[13].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc4[14]}}">
+            <em class="{{lc4[14].income?'ysvg2':'wsvg2'}} {{lc4[14].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc4[14].income?'widthFix':'aspectFill'}}" bindtap="{{lc4[14].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[14].audio?lc4[14].audio:''}}" data-id="{{lc4[14].income?lc4[14].income:lc4[14].id}}"  src="{{lc4[14].pic}}" />
+            </em>
+            <em class="{{lc4[15].income?'ysvg2':'wsvg2'}} {{lc4[15].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc4[15]}}" mode="{{lc4[15].income?'widthFix':'aspectFill'}}" bindtap="{{lc4[15].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[15].audio?lc4[15].audio:''}}" data-id="{{lc4[15].income?lc4[15].income:lc4[15].id}}"  src="{{lc4[15].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc4[16]}}">
+            <em class="{{lc4[16].income?'ysvg2':'wsvg2'}} {{lc4[16].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc4[16].income?'widthFix':'aspectFill'}}" bindtap="{{lc4[16].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[16].audio?lc4[16].audio:''}}" data-id="{{lc4[16].income?lc4[16].income:lc4[16].id}}"  src="{{lc4[16].pic}}" />
+            </em>
+            <em class="{{lc4[17].income?'ysvg2':'wsvg2'}} {{lc4[17].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc4[17]}}" mode="{{lc4[17].income?'widthFix':'aspectFill'}}" bindtap="{{lc4[17].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[17].audio?lc4[17].audio:''}}" data-id="{{lc4[17].income?lc4[17].income:lc4[17].id}}"  src="{{lc4[17].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc4[18]}}">
+            <em class="{{lc4[18].income?'ysvg2':'wsvg2'}} {{lc4[18].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc4[18].income?'widthFix':'aspectFill'}}" bindtap="{{lc4[18].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[18].audio?lc4[18].audio:''}}"data-id="{{lc4[18].income?lc4[18].income:lc4[18].id}}"  src="{{lc4[18].pic}}" />
+            </em>
+            <em class="{{lc4[19].income?'ysvg2':'wsvg2'}} {{lc4[19].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc4[19]}}" mode="{{lc4[19].income?'widthFix':'aspectFill'}}" bindtap="{{lc4[19].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[19].audio?lc4[19].audio:''}}"data-id="{{lc4[19].income?lc4[19].income:lc4[19].id}}"  src="{{lc4[19].pic}}" />
+            </em>
+          </p>
+        </block>
+        <view class="qb">
+          <view class="jzz" wx:if="{{lc4==''}}">
+            <image mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+            <em>文章加载中</em>
+          </view>
+          <p>阅读全部</p>
+          <span>{{jdata.lc4.shuliang}}</span>
+        </view>
+        <!-- tag -->
+        <view class="ff ff2">
+          <em>{{lc4a.zht}}</em>
+          <p>
+            <span wx:for="{{lc4a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">
+              {{item.nr}}
+            </span>
+          </p>
+          <i>{{lc4a.zhf}}</i>
+        </view>
+        <view class="kdd"></view>
+      </view>
+      <div class="gg">
+        <image mode="widthFix" wx:for="{{jdata.lc4.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="4" data-nr="{{item.link}}" />
+      </div>
+    </block>
+    <!-- /楼层 -->
+    <!-- 楼层 -->
+    <block wx:if="{{jdata.lc5}}">
+      <view class="tt" data-id="" data-zhf="{{jdata.lc5.zh.zhf}}" data-zht="{{jdata.lc5.zh.zht}}" data-zh="{{jdata.lc5.zh.zh}}" data-bh="5">
+        <image mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.lc5.db.link}}" src="{{jdata.lc5.db.nr}}" />
+      </view>
+      <!-- <view class="jtag">
+          <span  wx:for="{{jdata.lc5.lj}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}"  data-zhf="{{item.zhf}}" data-zht="{{item.zht}}" data-zh="{{item.zh}}" data-bh="1">{{item.nr}}</span>
+  </view> -->
+      <view class="hy">
+        <!-- 文章 -->
+         <block wx:if="{{lc5}}">
+
+          <p class="hyp">
+            <em class="{{lc5[0].income?'ysvg2':'wsvg2'}} {{lc5[0].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc5[0].income?'widthFix':'aspectFill'}}" bindtap="{{lc5[0].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[0].audio?lc5[0].audio:''}}" data-id="{{lc5[0].income?lc5[0].income:lc5[0].id}}" src="{{lc5[0].pic}}" />
+            </em>
+            <em class="{{lc5[1].income?'ysvg2':'wsvg2'}} {{lc5[1].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc5[1]}}" mode="{{lc5[1].income?'widthFix':'aspectFill'}}" bindtap="{{lc5[1].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[1].audio?lc5[1].audio:''}}" data-id="{{lc5[1].income?lc5[1].income:lc5[1].id}}" src="{{lc5[1].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc5[2]}}">
+            <em class="{{lc5[2].income?'ysvg2':'wsvg2'}} {{lc5[2].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc5[2].income?'widthFix':'aspectFill'}}" bindtap="{{lc5[2].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[2].audio?lc5[2].audio:''}}" data-id="{{lc5[2].income?lc5[2].income:lc5[2].id}}" src="{{lc5[2].pic}}" />
+            </em>
+            <em class="{{lc5[3].income?'ysvg2':'wsvg2'}} {{lc5[3].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc5[3]}}" mode="{{lc5[3].income?'widthFix':'aspectFill'}}" bindtap="{{lc5[3].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[3].audio?lc5[3].audio:''}}" data-id="{{lc5[3].income?lc5[0].income:lc5[3].id}}" src="{{lc5[3].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc5[4]}}">
+            <em class="{{lc5[4].income?'ysvg2':'wsvg2'}} {{lc5[4].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc5[4].income?'widthFix':'aspectFill'}}" bindtap="{{lc5[4].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[4].audio?lc5[4].audio:''}}" data-id="{{lc5[4].income?lc5[4].income:lc5[4].id}}" src="{{lc5[4].pic}}" />
+            </em>
+            <em class="{{lc5[5].income?'ysvg2':'wsvg2'}} {{lc5[5].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc5[5]}}" mode="{{lc5[5].income?'widthFix':'aspectFill'}}" bindtap="{{lc5[5].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[5].audio?lc5[5].audio:''}}" data-id="{{lc5[5].income?lc5[5].income:lc5[5].id}}" src="{{lc5[5].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc5[6]}}">
+            <em class="{{lc5[6].income?'ysvg2':'wsvg2'}} {{lc5[6].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc5[6].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[6].income?'toliebiao':'toxiangqing'}}" data-id="{{lc5[6].income?lc5[6].income:lc5[6].id}}" src="{{lc5[6].pic}}" />
+            </em>
+            <em class="{{lc5[7].income?'ysvg2':'wsvg2'}} {{lc5[7].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc5[7]}}" mode="{{lc5[7].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[7].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[7].audio?lc5[7].audio:''}}" data-id="{{lc5[7].income?lc5[7].income:lc5[7].id}}" src="{{lc5[7].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc5[8]}}">
+            <em class="{{lc5[8].income?'ysvg2':'wsvg2'}} {{lc5[8].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc5[8].income?'widthFix':'aspectFill'}}" bindtap="{{lc5[8].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[8].audio?lc5[8].audio:''}}" data-id="{{lc5[8].income?lc5[8].income:lc5[8].id}}" src="{{lc5[8].pic}}" />
+            </em>
+            <em class="{{lc5[9].income?'ysvg2':'wsvg2'}} {{lc5[9].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc5[9]}}" mode="{{lc5[9].income?'widthFix':'aspectFill'}}" bindtap="{{lc5[9].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[9].audio?lc5[9].audio:''}}" data-id="{{lc5[9].income?lc5[9].income:lc5[9].id}}" src="{{lc5[9].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc5[10]}}">
+            <em class="{{lc5[10].income?'ysvg2':'wsvg2'}} {{lc5[10].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc5[10].income?'widthFix':'aspectFill'}}" bindtap="{{lc5[10].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[10].audio?lc5[10].audio:''}}" data-id="{{lc5[10].income?lc5[10].income:lc5[10].id}}" src="{{lc5[10].pic}}" />
+            </em>
+            <em class="{{lc5[11].income?'ysvg2':'wsvg2'}} {{lc5[11].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc5[11]}}" mode="{{lc5[11].income?'widthFix':'aspectFill'}}" bindtap="{{lc5[11].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[11].audio?lc5[11].audio:''}}" data-id="{{lc5[11].income?lc5[11].income:lc5[11].id}}"  src="{{lc5[11].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc5[12]}}">
+            <em class="{{lc5[12].income?'ysvg2':'wsvg2'}} {{lc5[12].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc5[12].income?'widthFix':'aspectFill'}}" bindtap="{{lc5[12].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[12].audio?lc5[12].audio:''}}" data-id="{{lc5[12].income?lc5[12].income:lc5[12].id}}"  src="{{lc5[12].pic}}" />
+            </em>
+            <em class="{{lc5[13].income?'ysvg2':'wsvg2'}} {{lc5[13].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc5[13]}}" mode="{{lc5[13].income?'widthFix':'aspectFill'}}" bindtap="{{lc5[12].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[13].audio?lc5[13].audio:''}}" data-id="{{lc5[13].income?lc5[13].income:lc5[13].id}}"  src="{{lc5[13].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc5[14]}}">
+            <em class="{{lc5[14].income?'ysvg2':'wsvg2'}} {{lc5[14].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc5[14].income?'widthFix':'aspectFill'}}" bindtap="{{lc5[14].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[14].audio?lc5[14].audio:''}}" data-id="{{lc5[14].income?lc5[14].income:lc5[14].id}}"  src="{{lc5[14].pic}}" />
+            </em>
+            <em class="{{lc5[15].income?'ysvg2':'wsvg2'}} {{lc5[15].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc5[15]}}" mode="{{lc5[15].income?'widthFix':'aspectFill'}}" bindtap="{{lc5[15].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[15].audio?lc5[15].audio:''}}" data-id="{{lc5[15].income?lc5[15].income:lc5[15].id}}"  src="{{lc5[15].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc5[16]}}">
+            <em class="{{lc5[16].income?'ysvg2':'wsvg2'}} {{lc5[16].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc5[16].income?'widthFix':'aspectFill'}}" bindtap="{{lc5[16].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[16].audio?lc5[16].audio:''}}" data-id="{{lc5[16].income?lc5[16].income:lc5[16].id}}"  src="{{lc5[16].pic}}" />
+            </em>
+            <em class="{{lc5[17].income?'ysvg2':'wsvg2'}} {{lc5[17].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc5[17]}}" mode="{{lc5[17].income?'widthFix':'aspectFill'}}" bindtap="{{lc5[17].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[17].audio?lc5[17].audio:''}}" data-id="{{lc5[17].income?lc5[17].income:lc5[17].id}}"  src="{{lc5[17].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc5[18]}}">
+            <em class="{{lc5[18].income?'ysvg2':'wsvg2'}} {{lc5[18].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc5[18].income?'widthFix':'aspectFill'}}" bindtap="{{lc5[18].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[18].audio?lc5[18].audio:''}}"data-id="{{lc5[18].income?lc5[18].income:lc5[18].id}}"  src="{{lc5[18].pic}}" />
+            </em>
+            <em class="{{lc5[19].income?'ysvg2':'wsvg2'}} {{lc5[19].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc5[19]}}" mode="{{lc5[19].income?'widthFix':'aspectFill'}}" bindtap="{{lc5[19].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[19].audio?lc5[19].audio:''}}"data-id="{{lc5[19].income?lc5[19].income:lc5[19].id}}"  src="{{lc5[19].pic}}" />
+            </em>
+          </p>
+        </block>
+        <view class="qb">
+          <view class="jzz" wx:if="{{lc5==''}}">
+            <image mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+            <em>文章加载中</em>
+          </view>
+          <p>阅读全部</p>
+          <span>{{jdata.lc5.shuliang}}</span>
+        </view>
+        <!-- tag -->
+        <view class="ff ff2">
+          <em>{{lc5a.zht}}</em>
+          <p>
+            <span wx:for="{{lc5a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">
+              {{item.nr}}
+            </span>
+          </p>
+          <i>{{lc5a.zhf}}</i>
+        </view>
+        <view class="kdd"></view>
+      </view>
+      <div class="gg">
+        <image mode="widthFix" wx:for="{{jdata.lc5.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="5" data-nr="{{item.link}}" />
+      </div>
+    </block>
+    <!-- /楼层 -->
+    <!-- 楼层 -->
+    <block wx:if="{{jdata.lc6}}">
+      <view class="tt" data-id="" data-zhf="{{jdata.lc6.zh.zhf}}" data-zht="{{jdata.lc6.zh.zht}}" data-zh="{{jdata.lc6.zh.zh}}" data-bh="6">
+        <image mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.lc6.db.link}}" src="{{jdata.lc6.db.nr}}" />
+      </view>
+      <!-- <view class="jtag">
+          <span  wx:for="{{jdata.lc6.lj}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}"  data-zhf="{{item.zhf}}" data-zht="{{item.zht}}" data-zh="{{item.zh}}" data-bh="1">{{item.nr}}</span>
+  </view> -->
+      <view class="hy">
+        <!-- 文章 -->
+        <block wx:if="{{lc6}}">
+
+          <p class="hyp">
+            <em class="{{lc6[0].income?'ysvg2':'wsvg2'}} {{lc6[0].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc6[0].income?'widthFix':'aspectFill'}}" bindtap="{{lc6[0].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[0].audio?lc6[0].audio:''}}" data-id="{{lc6[0].income?lc6[0].income:lc6[0].id}}" src="{{lc6[0].pic}}" />
+            </em>
+            <em class="{{lc6[1].income?'ysvg2':'wsvg2'}} {{lc6[1].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc6[1]}}" mode="{{lc6[1].income?'widthFix':'aspectFill'}}" bindtap="{{lc6[1].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[1].audio?lc6[1].audio:''}}" data-id="{{lc6[1].income?lc6[1].income:lc6[1].id}}" src="{{lc6[1].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc6[2]}}">
+            <em class="{{lc6[2].income?'ysvg2':'wsvg2'}} {{lc6[2].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc6[2].income?'widthFix':'aspectFill'}}" bindtap="{{lc6[2].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[2].audio?lc6[2].audio:''}}" data-id="{{lc6[2].income?lc6[2].income:lc6[2].id}}" src="{{lc6[2].pic}}" />
+            </em>
+            <em class="{{lc6[3].income?'ysvg2':'wsvg2'}} {{lc6[3].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc6[3]}}" mode="{{lc6[3].income?'widthFix':'aspectFill'}}" bindtap="{{lc6[3].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[3].audio?lc6[3].audio:''}}" data-id="{{lc6[3].income?lc6[0].income:lc6[3].id}}" src="{{lc6[3].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc6[4]}}">
+            <em class="{{lc6[4].income?'ysvg2':'wsvg2'}} {{lc6[4].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc6[4].income?'widthFix':'aspectFill'}}" bindtap="{{lc6[4].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[4].audio?lc6[4].audio:''}}" data-id="{{lc6[4].income?lc6[4].income:lc6[4].id}}" src="{{lc6[4].pic}}" />
+            </em>
+            <em class="{{lc6[5].income?'ysvg2':'wsvg2'}} {{lc6[5].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc6[5]}}" mode="{{lc6[5].income?'widthFix':'aspectFill'}}" bindtap="{{lc6[5].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[5].audio?lc6[5].audio:''}}" data-id="{{lc6[5].income?lc6[5].income:lc6[5].id}}" src="{{lc6[5].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc6[6]}}">
+            <em class="{{lc6[6].income?'ysvg2':'wsvg2'}} {{lc6[6].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc6[6].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[6].income?'toliebiao':'toxiangqing'}}" data-id="{{lc6[6].income?lc6[6].income:lc6[6].id}}" src="{{lc6[6].pic}}" />
+            </em>
+            <em class="{{lc6[7].income?'ysvg2':'wsvg2'}} {{lc6[7].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc6[7]}}" mode="{{lc6[7].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[7].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[7].audio?lc6[7].audio:''}}" data-id="{{lc6[7].income?lc6[7].income:lc6[7].id}}" src="{{lc6[7].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc6[8]}}">
+            <em class="{{lc6[8].income?'ysvg2':'wsvg2'}} {{lc6[8].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc6[8].income?'widthFix':'aspectFill'}}" bindtap="{{lc6[8].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[8].audio?lc6[8].audio:''}}" data-id="{{lc6[8].income?lc6[8].income:lc6[8].id}}" src="{{lc6[8].pic}}" />
+            </em>
+            <em class="{{lc6[9].income?'ysvg2':'wsvg2'}} {{lc6[9].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc6[9]}}" mode="{{lc6[9].income?'widthFix':'aspectFill'}}" bindtap="{{lc6[9].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[9].audio?lc6[9].audio:''}}" data-id="{{lc6[9].income?lc6[9].income:lc6[9].id}}" src="{{lc6[9].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc6[10]}}">
+            <em class="{{lc6[10].income?'ysvg2':'wsvg2'}} {{lc6[10].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc6[10].income?'widthFix':'aspectFill'}}" bindtap="{{lc6[10].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[10].audio?lc6[10].audio:''}}" data-id="{{lc6[10].income?lc6[10].income:lc6[10].id}}" src="{{lc6[10].pic}}" />
+            </em>
+            <em class="{{lc6[11].income?'ysvg2':'wsvg2'}} {{lc6[11].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc6[11]}}" mode="{{lc6[11].income?'widthFix':'aspectFill'}}" bindtap="{{lc6[11].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[11].audio?lc6[11].audio:''}}" data-id="{{lc6[11].income?lc6[11].income:lc6[11].id}}"  src="{{lc6[11].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc6[12]}}">
+            <em class="{{lc6[12].income?'ysvg2':'wsvg2'}} {{lc6[12].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc6[12].income?'widthFix':'aspectFill'}}" bindtap="{{lc6[12].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[12].audio?lc6[12].audio:''}}" data-id="{{lc6[12].income?lc6[12].income:lc6[12].id}}"  src="{{lc6[12].pic}}" />
+            </em>
+            <em class="{{lc6[13].income?'ysvg2':'wsvg2'}} {{lc6[13].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc6[13]}}" mode="{{lc6[13].income?'widthFix':'aspectFill'}}" bindtap="{{lc6[12].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[13].audio?lc6[13].audio:''}}" data-id="{{lc6[13].income?lc6[13].income:lc6[13].id}}"  src="{{lc6[13].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc6[14]}}">
+            <em class="{{lc6[14].income?'ysvg2':'wsvg2'}} {{lc6[14].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc6[14].income?'widthFix':'aspectFill'}}" bindtap="{{lc6[14].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[14].audio?lc6[14].audio:''}}" data-id="{{lc6[14].income?lc6[14].income:lc6[14].id}}"  src="{{lc6[14].pic}}" />
+            </em>
+            <em class="{{lc6[15].income?'ysvg2':'wsvg2'}} {{lc6[15].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc6[15]}}" mode="{{lc6[15].income?'widthFix':'aspectFill'}}" bindtap="{{lc6[15].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[15].audio?lc6[15].audio:''}}" data-id="{{lc6[15].income?lc6[15].income:lc6[15].id}}"  src="{{lc6[15].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc6[16]}}">
+            <em class="{{lc6[16].income?'ysvg2':'wsvg2'}} {{lc6[16].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc6[16].income?'widthFix':'aspectFill'}}" bindtap="{{lc6[16].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[16].audio?lc6[16].audio:''}}" data-id="{{lc6[16].income?lc6[16].income:lc6[16].id}}"  src="{{lc6[16].pic}}" />
+            </em>
+            <em class="{{lc6[17].income?'ysvg2':'wsvg2'}} {{lc6[17].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc6[17]}}" mode="{{lc6[17].income?'widthFix':'aspectFill'}}" bindtap="{{lc6[17].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[17].audio?lc6[17].audio:''}}" data-id="{{lc6[17].income?lc6[17].income:lc6[17].id}}"  src="{{lc6[17].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc6[18]}}">
+            <em class="{{lc6[18].income?'ysvg2':'wsvg2'}} {{lc6[18].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc6[18].income?'widthFix':'aspectFill'}}" bindtap="{{lc6[18].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[18].audio?lc6[18].audio:''}}"data-id="{{lc6[18].income?lc6[18].income:lc6[18].id}}"  src="{{lc6[18].pic}}" />
+            </em>
+            <em class="{{lc6[19].income?'ysvg2':'wsvg2'}} {{lc6[19].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc6[19]}}" mode="{{lc6[19].income?'widthFix':'aspectFill'}}" bindtap="{{lc6[19].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[19].audio?lc6[19].audio:''}}"data-id="{{lc6[19].income?lc6[19].income:lc6[19].id}}"  src="{{lc6[19].pic}}" />
+            </em>
+          </p>
+        </block>
+        <view class="qb">
+          <view class="jzz" wx:if="{{lc6==''}}">
+            <image mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+            <em>文章加载中</em>
+          </view>
+          <p>阅读全部</p>
+          <span>{{jdata.lc6.shuliang}}</span>
+        </view>
+        <!-- tag -->
+        <view class="ff ff2">
+          <em>{{lc6a.zht}}</em>
+          <p>
+            <span wx:for="{{lc6a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">
+              {{item.nr}}
+            </span>
+          </p>
+          <i>{{lc6a.zhf}}</i>
+        </view>
+        <view class="kdd"></view>
+      </view>
+      <div class="gg">
+        <image mode="widthFix" wx:for="{{jdata.lc6.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="6" data-nr="{{item.link}}" />
+      </div>
+    </block>
+    <!-- /楼层 -->
+    <!-- 楼层 -->
+    <block wx:if="{{jdata.lc7}}">
+      <view class="tt" data-id="" data-zhf="{{jdata.lc7.zh.zhf}}" data-zht="{{jdata.lc7.zh.zht}}" data-zh="{{jdata.lc7.zh.zh}}" data-bh="7">
+        <image mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.lc7.db.link}}" src="{{jdata.lc7.db.nr}}" />
+      </view>
+      <!-- <view class="jtag">
+          <span  wx:for="{{jdata.lc7.lj}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}"  data-zhf="{{item.zhf}}" data-zht="{{item.zht}}" data-zh="{{item.zh}}" data-bh="1">{{item.nr}}</span>
+  </view> -->
+      <view class="hy">
+        <!-- 文章 -->
+           <block wx:if="{{lc7}}">
+
+          <p class="hyp">
+            <em class="{{lc7[0].income?'ysvg2':'wsvg2'}} {{lc7[0].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc7[0].income?'widthFix':'aspectFill'}}" bindtap="{{lc7[0].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[0].audio?lc7[0].audio:''}}" data-id="{{lc7[0].income?lc7[0].income:lc7[0].id}}" src="{{lc7[0].pic}}" />
+            </em>
+            <em class="{{lc7[1].income?'ysvg2':'wsvg2'}} {{lc7[1].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc7[1]}}" mode="{{lc7[1].income?'widthFix':'aspectFill'}}" bindtap="{{lc7[1].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[1].audio?lc7[1].audio:''}}" data-id="{{lc7[1].income?lc7[1].income:lc7[1].id}}" src="{{lc7[1].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc7[2]}}">
+            <em class="{{lc7[2].income?'ysvg2':'wsvg2'}} {{lc7[2].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc7[2].income?'widthFix':'aspectFill'}}" bindtap="{{lc7[2].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[2].audio?lc7[2].audio:''}}" data-id="{{lc7[2].income?lc7[2].income:lc7[2].id}}" src="{{lc7[2].pic}}" />
+            </em>
+            <em class="{{lc7[3].income?'ysvg2':'wsvg2'}} {{lc7[3].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc7[3]}}" mode="{{lc7[3].income?'widthFix':'aspectFill'}}" bindtap="{{lc7[3].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[3].audio?lc7[3].audio:''}}" data-id="{{lc7[3].income?lc7[0].income:lc7[3].id}}" src="{{lc7[3].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc7[4]}}">
+            <em class="{{lc7[4].income?'ysvg2':'wsvg2'}} {{lc7[4].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc7[4].income?'widthFix':'aspectFill'}}" bindtap="{{lc7[4].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[4].audio?lc7[4].audio:''}}" data-id="{{lc7[4].income?lc7[4].income:lc7[4].id}}" src="{{lc7[4].pic}}" />
+            </em>
+            <em class="{{lc7[5].income?'ysvg2':'wsvg2'}} {{lc7[5].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc7[5]}}" mode="{{lc7[5].income?'widthFix':'aspectFill'}}" bindtap="{{lc7[5].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[5].audio?lc7[5].audio:''}}" data-id="{{lc7[5].income?lc7[5].income:lc7[5].id}}" src="{{lc7[5].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc7[6]}}">
+            <em class="{{lc7[6].income?'ysvg2':'wsvg2'}} {{lc7[6].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc7[6].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[6].income?'toliebiao':'toxiangqing'}}" data-id="{{lc7[6].income?lc7[6].income:lc7[6].id}}" src="{{lc7[6].pic}}" />
+            </em>
+            <em class="{{lc7[7].income?'ysvg2':'wsvg2'}} {{lc7[7].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc7[7]}}" mode="{{lc7[7].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[7].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[7].audio?lc7[7].audio:''}}" data-id="{{lc7[7].income?lc7[7].income:lc7[7].id}}" src="{{lc7[7].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc7[8]}}">
+            <em class="{{lc7[8].income?'ysvg2':'wsvg2'}} {{lc7[8].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc7[8].income?'widthFix':'aspectFill'}}" bindtap="{{lc7[8].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[8].audio?lc7[8].audio:''}}" data-id="{{lc7[8].income?lc7[8].income:lc7[8].id}}" src="{{lc7[8].pic}}" />
+            </em>
+            <em class="{{lc7[9].income?'ysvg2':'wsvg2'}} {{lc7[9].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc7[9]}}" mode="{{lc7[9].income?'widthFix':'aspectFill'}}" bindtap="{{lc7[9].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[9].audio?lc7[9].audio:''}}" data-id="{{lc7[9].income?lc7[9].income:lc7[9].id}}" src="{{lc7[9].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc7[10]}}">
+            <em class="{{lc7[10].income?'ysvg2':'wsvg2'}} {{lc7[10].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc7[10].income?'widthFix':'aspectFill'}}" bindtap="{{lc7[10].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[10].audio?lc7[10].audio:''}}" data-id="{{lc7[10].income?lc7[10].income:lc7[10].id}}" src="{{lc7[10].pic}}" />
+            </em>
+            <em class="{{lc7[11].income?'ysvg2':'wsvg2'}} {{lc7[11].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc7[11]}}" mode="{{lc7[11].income?'widthFix':'aspectFill'}}" bindtap="{{lc7[11].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[11].audio?lc7[11].audio:''}}" data-id="{{lc7[11].income?lc7[11].income:lc7[11].id}}"  src="{{lc7[11].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc7[12]}}">
+            <em class="{{lc7[12].income?'ysvg2':'wsvg2'}} {{lc7[12].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc7[12].income?'widthFix':'aspectFill'}}" bindtap="{{lc7[12].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[12].audio?lc7[12].audio:''}}" data-id="{{lc7[12].income?lc7[12].income:lc7[12].id}}"  src="{{lc7[12].pic}}" />
+            </em>
+            <em class="{{lc7[13].income?'ysvg2':'wsvg2'}} {{lc7[13].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc7[13]}}" mode="{{lc7[13].income?'widthFix':'aspectFill'}}" bindtap="{{lc7[12].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[13].audio?lc7[13].audio:''}}" data-id="{{lc7[13].income?lc7[13].income:lc7[13].id}}"  src="{{lc7[13].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc7[14]}}">
+            <em class="{{lc7[14].income?'ysvg2':'wsvg2'}} {{lc7[14].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc7[14].income?'widthFix':'aspectFill'}}" bindtap="{{lc7[14].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[14].audio?lc7[14].audio:''}}" data-id="{{lc7[14].income?lc7[14].income:lc7[14].id}}"  src="{{lc7[14].pic}}" />
+            </em>
+            <em class="{{lc7[15].income?'ysvg2':'wsvg2'}} {{lc7[15].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc7[15]}}" mode="{{lc7[15].income?'widthFix':'aspectFill'}}" bindtap="{{lc7[15].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[15].audio?lc7[15].audio:''}}" data-id="{{lc7[15].income?lc7[15].income:lc7[15].id}}"  src="{{lc7[15].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc7[16]}}">
+            <em class="{{lc7[16].income?'ysvg2':'wsvg2'}} {{lc7[16].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc7[16].income?'widthFix':'aspectFill'}}" bindtap="{{lc7[16].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[16].audio?lc7[16].audio:''}}" data-id="{{lc7[16].income?lc7[16].income:lc7[16].id}}"  src="{{lc7[16].pic}}" />
+            </em>
+            <em class="{{lc7[17].income?'ysvg2':'wsvg2'}} {{lc7[17].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc7[17]}}" mode="{{lc7[17].income?'widthFix':'aspectFill'}}" bindtap="{{lc7[17].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[17].audio?lc7[17].audio:''}}" data-id="{{lc7[17].income?lc7[17].income:lc7[17].id}}"  src="{{lc7[17].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc7[18]}}">
+            <em class="{{lc7[18].income?'ysvg2':'wsvg2'}} {{lc7[18].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc7[18].income?'widthFix':'aspectFill'}}" bindtap="{{lc7[18].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[18].audio?lc7[18].audio:''}}"data-id="{{lc7[18].income?lc7[18].income:lc7[18].id}}"  src="{{lc7[18].pic}}" />
+            </em>
+            <em class="{{lc7[19].income?'ysvg2':'wsvg2'}} {{lc7[19].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc7[19]}}" mode="{{lc7[19].income?'widthFix':'aspectFill'}}" bindtap="{{lc7[19].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[19].audio?lc7[19].audio:''}}"data-id="{{lc7[19].income?lc7[19].income:lc7[19].id}}"  src="{{lc7[19].pic}}" />
+            </em>
+          </p>
+        </block>
+        <view class="qb">
+          <view class="jzz" wx:if="{{lc7==''}}">
+            <image mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+            <em>文章加载中</em>
+          </view>
+          <p>阅读全部</p>
+          <span>{{jdata.lc7.shuliang}}</span>
+        </view>
+        <!-- tag -->
+        <view class="ff ff2">
+          <em>{{lc7a.zht}}</em>
+          <p>
+            <span wx:for="{{lc7a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">
+              {{item.nr}}
+            </span>
+          </p>
+          <i>{{lc7a.zhf}}</i>
+        </view>
+        <view class="kdd"></view>
+      </view>
+      <div class="gg">
+        <image mode="widthFix" wx:for="{{jdata.lc7.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="7" data-nr="{{item.link}}" />
+      </div>
+    </block>
+    <!-- /楼层 -->
+    <!-- 楼层 -->
+    <block wx:if="{{jdata.lc8}}">
+      <view class="tt" data-id="" data-zhf="{{jdata.lc8.zh.zhf}}" data-zht="{{jdata.lc8.zh.zht}}" data-zh="{{jdata.lc8.zh.zh}}" data-bh="8">
+        <image mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.lc8.db.link}}" src="{{jdata.lc8.db.nr}}" />
+      </view>
+      <!-- <view class="jtag">
+          <span  wx:for="{{jdata.lc8.lj}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}"  data-zhf="{{item.zhf}}" data-zht="{{item.zht}}" data-zh="{{item.zh}}" data-bh="1">{{item.nr}}</span>
+  </view> -->
+      <view class="hy">
+        <!-- 文章 -->
+          <block wx:if="{{lc8}}">
+
+          <p class="hyp">
+            <em class="{{lc8[0].income?'ysvg2':'wsvg2'}} {{lc8[0].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc8[0].income?'widthFix':'aspectFill'}}" bindtap="{{lc8[0].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc8[0].audio?lc8[0].audio:''}}" data-id="{{lc8[0].income?lc8[0].income:lc8[0].id}}" src="{{lc8[0].pic}}" />
+            </em>
+            <em class="{{lc8[1].income?'ysvg2':'wsvg2'}} {{lc8[1].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc8[1]}}" mode="{{lc8[1].income?'widthFix':'aspectFill'}}" bindtap="{{lc8[1].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc8[1].audio?lc8[1].audio:''}}" data-id="{{lc8[1].income?lc8[1].income:lc8[1].id}}" src="{{lc8[1].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc8[2]}}">
+            <em class="{{lc8[2].income?'ysvg2':'wsvg2'}} {{lc8[2].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc8[2].income?'widthFix':'aspectFill'}}" bindtap="{{lc8[2].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc8[2].audio?lc8[2].audio:''}}" data-id="{{lc8[2].income?lc8[2].income:lc8[2].id}}" src="{{lc8[2].pic}}" />
+            </em>
+            <em class="{{lc8[3].income?'ysvg2':'wsvg2'}} {{lc8[3].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc8[3]}}" mode="{{lc8[3].income?'widthFix':'aspectFill'}}" bindtap="{{lc8[3].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc8[3].audio?lc8[3].audio:''}}" data-id="{{lc8[3].income?lc8[0].income:lc8[3].id}}" src="{{lc8[3].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc8[4]}}">
+            <em class="{{lc8[4].income?'ysvg2':'wsvg2'}} {{lc8[4].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc8[4].income?'widthFix':'aspectFill'}}" bindtap="{{lc8[4].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc8[4].audio?lc8[4].audio:''}}" data-id="{{lc8[4].income?lc8[4].income:lc8[4].id}}" src="{{lc8[4].pic}}" />
+            </em>
+            <em class="{{lc8[5].income?'ysvg2':'wsvg2'}} {{lc8[5].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc8[5]}}" mode="{{lc8[5].income?'widthFix':'aspectFill'}}" bindtap="{{lc8[5].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc8[5].audio?lc8[5].audio:''}}" data-id="{{lc8[5].income?lc8[5].income:lc8[5].id}}" src="{{lc8[5].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc8[6]}}">
+            <em class="{{lc8[6].income?'ysvg2':'wsvg2'}} {{lc8[6].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc8[6].income?'widthFix':'aspectFill'}}"  bindtap="{{lc8[6].income?'toliebiao':'toxiangqing'}}" data-id="{{lc8[6].income?lc8[6].income:lc8[6].id}}" src="{{lc8[6].pic}}" />
+            </em>
+            <em class="{{lc8[7].income?'ysvg2':'wsvg2'}} {{lc8[7].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc8[7]}}" mode="{{lc8[7].income?'widthFix':'aspectFill'}}"  bindtap="{{lc8[7].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc8[7].audio?lc8[7].audio:''}}" data-id="{{lc8[7].income?lc8[7].income:lc8[7].id}}" src="{{lc8[7].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc8[8]}}">
+            <em class="{{lc8[8].income?'ysvg2':'wsvg2'}} {{lc8[8].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc8[8].income?'widthFix':'aspectFill'}}" bindtap="{{lc8[8].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc8[8].audio?lc8[8].audio:''}}" data-id="{{lc8[8].income?lc8[8].income:lc8[8].id}}" src="{{lc8[8].pic}}" />
+            </em>
+            <em class="{{lc8[9].income?'ysvg2':'wsvg2'}} {{lc8[9].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc8[9]}}" mode="{{lc8[9].income?'widthFix':'aspectFill'}}" bindtap="{{lc8[9].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc8[9].audio?lc8[9].audio:''}}" data-id="{{lc8[9].income?lc8[9].income:lc8[9].id}}" src="{{lc8[9].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc8[10]}}">
+            <em class="{{lc8[10].income?'ysvg2':'wsvg2'}} {{lc8[10].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc8[10].income?'widthFix':'aspectFill'}}" bindtap="{{lc8[10].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc8[10].audio?lc8[10].audio:''}}" data-id="{{lc8[10].income?lc8[10].income:lc8[10].id}}" src="{{lc8[10].pic}}" />
+            </em>
+            <em class="{{lc8[11].income?'ysvg2':'wsvg2'}} {{lc8[11].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc8[11]}}" mode="{{lc8[11].income?'widthFix':'aspectFill'}}" bindtap="{{lc8[11].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc8[11].audio?lc8[11].audio:''}}" data-id="{{lc8[11].income?lc8[11].income:lc8[11].id}}"  src="{{lc8[11].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc8[12]}}">
+            <em class="{{lc8[12].income?'ysvg2':'wsvg2'}} {{lc8[12].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc8[12].income?'widthFix':'aspectFill'}}" bindtap="{{lc8[12].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc8[12].audio?lc8[12].audio:''}}" data-id="{{lc8[12].income?lc8[12].income:lc8[12].id}}"  src="{{lc8[12].pic}}" />
+            </em>
+            <em class="{{lc8[13].income?'ysvg2':'wsvg2'}} {{lc8[13].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc8[13]}}" mode="{{lc8[13].income?'widthFix':'aspectFill'}}" bindtap="{{lc8[12].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc8[13].audio?lc8[13].audio:''}}" data-id="{{lc8[13].income?lc8[13].income:lc8[13].id}}"  src="{{lc8[13].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc8[14]}}">
+            <em class="{{lc8[14].income?'ysvg2':'wsvg2'}} {{lc8[14].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc8[14].income?'widthFix':'aspectFill'}}" bindtap="{{lc8[14].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc8[14].audio?lc8[14].audio:''}}" data-id="{{lc8[14].income?lc8[14].income:lc8[14].id}}"  src="{{lc8[14].pic}}" />
+            </em>
+            <em class="{{lc8[15].income?'ysvg2':'wsvg2'}} {{lc8[15].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc8[15]}}" mode="{{lc8[15].income?'widthFix':'aspectFill'}}" bindtap="{{lc8[15].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc8[15].audio?lc8[15].audio:''}}" data-id="{{lc8[15].income?lc8[15].income:lc8[15].id}}"  src="{{lc8[15].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc8[16]}}">
+            <em class="{{lc8[16].income?'ysvg2':'wsvg2'}} {{lc8[16].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc8[16].income?'widthFix':'aspectFill'}}" bindtap="{{lc8[16].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc8[16].audio?lc8[16].audio:''}}" data-id="{{lc8[16].income?lc8[16].income:lc8[16].id}}"  src="{{lc8[16].pic}}" />
+            </em>
+            <em class="{{lc8[17].income?'ysvg2':'wsvg2'}} {{lc8[17].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc8[17]}}" mode="{{lc8[17].income?'widthFix':'aspectFill'}}" bindtap="{{lc8[17].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc8[17].audio?lc8[17].audio:''}}" data-id="{{lc8[17].income?lc8[17].income:lc8[17].id}}"  src="{{lc8[17].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc8[18]}}">
+            <em class="{{lc8[18].income?'ysvg2':'wsvg2'}} {{lc8[18].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc8[18].income?'widthFix':'aspectFill'}}" bindtap="{{lc8[18].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc8[18].audio?lc8[18].audio:''}}"data-id="{{lc8[18].income?lc8[18].income:lc8[18].id}}"  src="{{lc8[18].pic}}" />
+            </em>
+            <em class="{{lc8[19].income?'ysvg2':'wsvg2'}} {{lc8[19].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc8[19]}}" mode="{{lc8[19].income?'widthFix':'aspectFill'}}" bindtap="{{lc8[19].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc8[19].audio?lc8[19].audio:''}}"data-id="{{lc8[19].income?lc8[19].income:lc8[19].id}}"  src="{{lc8[19].pic}}" />
+            </em>
+          </p>
+        </block>
+        <view class="qb">
+          <view class="jzz" wx:if="{{lc8==''}}">
+            <image mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+            <em>文章加载中</em>
+          </view>
+          <p>阅读全部</p>
+          <span>{{jdata.lc8.shuliang}}</span>
+        </view>
+        <!-- tag -->
+        <view class="ff ff2">
+          <em>{{lc8a.zht}}</em>
+          <p>
+            <span wx:for="{{lc8a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">
+              {{item.nr}}
+            </span>
+          </p>
+          <i>{{lc8a.zhf}}</i>
+        </view>
+        <view class="kdd"></view>
+      </view>
+      <div class="gg">
+        <image mode="widthFix" wx:for="{{jdata.lc8.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="8" data-nr="{{item.link}}" />
+      </div>
+    </block>
+    <!-- /楼层 -->
+    <!-- 楼层 -->
+    <block wx:if="{{jdata.lc9}}">
+      <view class="tt" data-id="" data-zhf="{{jdata.lc9.zh.zhf}}" data-zht="{{jdata.lc9.zh.zht}}" data-zh="{{jdata.lc9.zh.zh}}" data-bh="9">
+        <image mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.lc9.db.link}}" src="{{jdata.lc9.db.nr}}" />
+      </view>
+      <!-- <view class="jtag">
+          <span  wx:for="{{jdata.lc9.lj}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}"  data-zhf="{{item.zhf}}" data-zht="{{item.zht}}" data-zh="{{item.zh}}" data-bh="1">{{item.nr}}</span>
+  </view> -->
+      <view class="hy">
+        <!-- 文章 -->
+         <block wx:if="{{lc9}}">
+
+          <p class="hyp">
+            <em class="{{lc9[0].income?'ysvg2':'wsvg2'}} {{lc9[0].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc9[0].income?'widthFix':'aspectFill'}}" bindtap="{{lc9[0].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc9[0].audio?lc9[0].audio:''}}" data-id="{{lc9[0].income?lc9[0].income:lc9[0].id}}" src="{{lc9[0].pic}}" />
+            </em>
+            <em class="{{lc9[1].income?'ysvg2':'wsvg2'}} {{lc9[1].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc9[1]}}" mode="{{lc9[1].income?'widthFix':'aspectFill'}}" bindtap="{{lc9[1].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc9[1].audio?lc9[1].audio:''}}" data-id="{{lc9[1].income?lc9[1].income:lc9[1].id}}" src="{{lc9[1].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc9[2]}}">
+            <em class="{{lc9[2].income?'ysvg2':'wsvg2'}} {{lc9[2].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc9[2].income?'widthFix':'aspectFill'}}" bindtap="{{lc9[2].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc9[2].audio?lc9[2].audio:''}}" data-id="{{lc9[2].income?lc9[2].income:lc9[2].id}}" src="{{lc9[2].pic}}" />
+            </em>
+            <em class="{{lc9[3].income?'ysvg2':'wsvg2'}} {{lc9[3].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc9[3]}}" mode="{{lc9[3].income?'widthFix':'aspectFill'}}" bindtap="{{lc9[3].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc9[3].audio?lc9[3].audio:''}}" data-id="{{lc9[3].income?lc9[0].income:lc9[3].id}}" src="{{lc9[3].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc9[4]}}">
+            <em class="{{lc9[4].income?'ysvg2':'wsvg2'}} {{lc9[4].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc9[4].income?'widthFix':'aspectFill'}}" bindtap="{{lc9[4].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc9[4].audio?lc9[4].audio:''}}" data-id="{{lc9[4].income?lc9[4].income:lc9[4].id}}" src="{{lc9[4].pic}}" />
+            </em>
+            <em class="{{lc9[5].income?'ysvg2':'wsvg2'}} {{lc9[5].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc9[5]}}" mode="{{lc9[5].income?'widthFix':'aspectFill'}}" bindtap="{{lc9[5].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc9[5].audio?lc9[5].audio:''}}" data-id="{{lc9[5].income?lc9[5].income:lc9[5].id}}" src="{{lc9[5].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc9[6]}}">
+            <em class="{{lc9[6].income?'ysvg2':'wsvg2'}} {{lc9[6].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc9[6].income?'widthFix':'aspectFill'}}"  bindtap="{{lc9[6].income?'toliebiao':'toxiangqing'}}" data-id="{{lc9[6].income?lc9[6].income:lc9[6].id}}" src="{{lc9[6].pic}}" />
+            </em>
+            <em class="{{lc9[7].income?'ysvg2':'wsvg2'}} {{lc9[7].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc9[7]}}" mode="{{lc9[7].income?'widthFix':'aspectFill'}}"  bindtap="{{lc9[7].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc9[7].audio?lc9[7].audio:''}}" data-id="{{lc9[7].income?lc9[7].income:lc9[7].id}}" src="{{lc9[7].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc9[8]}}">
+            <em class="{{lc9[8].income?'ysvg2':'wsvg2'}} {{lc9[8].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc9[8].income?'widthFix':'aspectFill'}}" bindtap="{{lc9[8].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc9[8].audio?lc9[8].audio:''}}" data-id="{{lc9[8].income?lc9[8].income:lc9[8].id}}" src="{{lc9[8].pic}}" />
+            </em>
+            <em class="{{lc9[9].income?'ysvg2':'wsvg2'}} {{lc9[9].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc9[9]}}" mode="{{lc9[9].income?'widthFix':'aspectFill'}}" bindtap="{{lc9[9].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc9[9].audio?lc9[9].audio:''}}" data-id="{{lc9[9].income?lc9[9].income:lc9[9].id}}" src="{{lc9[9].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc9[10]}}">
+            <em class="{{lc9[10].income?'ysvg2':'wsvg2'}} {{lc9[10].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc9[10].income?'widthFix':'aspectFill'}}" bindtap="{{lc9[10].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc9[10].audio?lc9[10].audio:''}}" data-id="{{lc9[10].income?lc9[10].income:lc9[10].id}}" src="{{lc9[10].pic}}" />
+            </em>
+            <em class="{{lc9[11].income?'ysvg2':'wsvg2'}} {{lc9[11].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc9[11]}}" mode="{{lc9[11].income?'widthFix':'aspectFill'}}" bindtap="{{lc9[11].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc9[11].audio?lc9[11].audio:''}}" data-id="{{lc9[11].income?lc9[11].income:lc9[11].id}}"  src="{{lc9[11].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc9[12]}}">
+            <em class="{{lc9[12].income?'ysvg2':'wsvg2'}} {{lc9[12].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc9[12].income?'widthFix':'aspectFill'}}" bindtap="{{lc9[12].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc9[12].audio?lc9[12].audio:''}}" data-id="{{lc9[12].income?lc9[12].income:lc9[12].id}}"  src="{{lc9[12].pic}}" />
+            </em>
+            <em class="{{lc9[13].income?'ysvg2':'wsvg2'}} {{lc9[13].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc9[13]}}" mode="{{lc9[13].income?'widthFix':'aspectFill'}}" bindtap="{{lc9[12].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc9[13].audio?lc9[13].audio:''}}" data-id="{{lc9[13].income?lc9[13].income:lc9[13].id}}"  src="{{lc9[13].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc9[14]}}">
+            <em class="{{lc9[14].income?'ysvg2':'wsvg2'}} {{lc9[14].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc9[14].income?'widthFix':'aspectFill'}}" bindtap="{{lc9[14].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc9[14].audio?lc9[14].audio:''}}" data-id="{{lc9[14].income?lc9[14].income:lc9[14].id}}"  src="{{lc9[14].pic}}" />
+            </em>
+            <em class="{{lc9[15].income?'ysvg2':'wsvg2'}} {{lc9[15].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc9[15]}}" mode="{{lc9[15].income?'widthFix':'aspectFill'}}" bindtap="{{lc9[15].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc9[15].audio?lc9[15].audio:''}}" data-id="{{lc9[15].income?lc9[15].income:lc9[15].id}}"  src="{{lc9[15].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc9[16]}}">
+            <em class="{{lc9[16].income?'ysvg2':'wsvg2'}} {{lc9[16].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc9[16].income?'widthFix':'aspectFill'}}" bindtap="{{lc9[16].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc9[16].audio?lc9[16].audio:''}}" data-id="{{lc9[16].income?lc9[16].income:lc9[16].id}}"  src="{{lc9[16].pic}}" />
+            </em>
+            <em class="{{lc9[17].income?'ysvg2':'wsvg2'}} {{lc9[17].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc9[17]}}" mode="{{lc9[17].income?'widthFix':'aspectFill'}}" bindtap="{{lc9[17].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc9[17].audio?lc9[17].audio:''}}" data-id="{{lc9[17].income?lc9[17].income:lc9[17].id}}"  src="{{lc9[17].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc9[18]}}">
+            <em class="{{lc9[18].income?'ysvg2':'wsvg2'}} {{lc9[18].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc9[18].income?'widthFix':'aspectFill'}}" bindtap="{{lc9[18].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc9[18].audio?lc9[18].audio:''}}"data-id="{{lc9[18].income?lc9[18].income:lc9[18].id}}"  src="{{lc9[18].pic}}" />
+            </em>
+            <em class="{{lc9[19].income?'ysvg2':'wsvg2'}} {{lc9[19].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc9[19]}}" mode="{{lc9[19].income?'widthFix':'aspectFill'}}" bindtap="{{lc9[19].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc9[19].audio?lc9[19].audio:''}}"data-id="{{lc9[19].income?lc9[19].income:lc9[19].id}}"  src="{{lc9[19].pic}}" />
+            </em>
+          </p>
+        </block>
+        <view class="qb">
+          <view class="jzz" wx:if="{{lc9==''}}">
+            <image mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+            <em>文章加载中</em>
+          </view>
+          <p>阅读全部</p>
+          <span>{{jdata.lc9.shuliang}}</span>
+        </view>
+        <!-- tag -->
+        <view class="ff ff2">
+          <em>{{lc9a.zht}}</em>
+          <p>
+            <span wx:for="{{lc9a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">
+              {{item.nr}}
+            </span>
+          </p>
+          <i>{{lc9a.zhf}}</i>
+        </view>
+        <view class="kdd"></view>
+      </view>
+      <div class="gg">
+        <image mode="widthFix" wx:for="{{jdata.lc9.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="9" data-nr="{{item.link}}" />
+      </div>
+    </block>
+    <!-- /楼层 -->
+    <!-- 楼层 -->
+    <block wx:if="{{jdata.lc10}}">
+      <view class="tt" data-id="" data-zhf="{{jdata.lc10.zh.zhf}}" data-zht="{{jdata.lc10.zh.zht}}" data-zh="{{jdata.lc10.zh.zh}}" data-bh="10">
+        <image mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.lc10.db.link}}" src="{{jdata.lc10.db.nr}}" />
+      </view>
+      <!-- <view class="jtag">
+          <span  wx:for="{{jdata.lc10.lj}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}"  data-zhf="{{item.zhf}}" data-zht="{{item.zht}}" data-zh="{{item.zh}}" data-bh="1">{{item.nr}}</span>
+  </view> -->
+      <view class="hy">
+        <!-- 文章 -->
+        <block wx:if="{{lc10}}">
+
+          <p class="hyp">
+            <em class="{{lc10[0].income?'ysvg2':'wsvg2'}} {{lc10[0].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc10[0].income?'widthFix':'aspectFill'}}" bindtap="{{lc10[0].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc10[0].audio?lc10[0].audio:''}}" data-id="{{lc10[0].income?lc10[0].income:lc10[0].id}}" src="{{lc10[0].pic}}" />
+            </em>
+            <em class="{{lc10[1].income?'ysvg2':'wsvg2'}} {{lc10[1].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc10[1]}}" mode="{{lc10[1].income?'widthFix':'aspectFill'}}" bindtap="{{lc10[1].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc10[1].audio?lc10[1].audio:''}}" data-id="{{lc10[1].income?lc10[1].income:lc10[1].id}}" src="{{lc10[1].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc10[2]}}">
+            <em class="{{lc10[2].income?'ysvg2':'wsvg2'}} {{lc10[2].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc10[2].income?'widthFix':'aspectFill'}}" bindtap="{{lc10[2].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc10[2].audio?lc10[2].audio:''}}" data-id="{{lc10[2].income?lc10[2].income:lc10[2].id}}" src="{{lc10[2].pic}}" />
+            </em>
+            <em class="{{lc10[3].income?'ysvg2':'wsvg2'}} {{lc10[3].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc10[3]}}" mode="{{lc10[3].income?'widthFix':'aspectFill'}}" bindtap="{{lc10[3].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc10[3].audio?lc10[3].audio:''}}" data-id="{{lc10[3].income?lc10[0].income:lc10[3].id}}" src="{{lc10[3].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc10[4]}}">
+            <em class="{{lc10[4].income?'ysvg2':'wsvg2'}} {{lc10[4].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc10[4].income?'widthFix':'aspectFill'}}" bindtap="{{lc10[4].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc10[4].audio?lc10[4].audio:''}}" data-id="{{lc10[4].income?lc10[4].income:lc10[4].id}}" src="{{lc10[4].pic}}" />
+            </em>
+            <em class="{{lc10[5].income?'ysvg2':'wsvg2'}} {{lc10[5].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc10[5]}}" mode="{{lc10[5].income?'widthFix':'aspectFill'}}" bindtap="{{lc10[5].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc10[5].audio?lc10[5].audio:''}}" data-id="{{lc10[5].income?lc10[5].income:lc10[5].id}}" src="{{lc10[5].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc10[6]}}">
+            <em class="{{lc10[6].income?'ysvg2':'wsvg2'}} {{lc10[6].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc10[6].income?'widthFix':'aspectFill'}}"  bindtap="{{lc10[6].income?'toliebiao':'toxiangqing'}}" data-id="{{lc10[6].income?lc10[6].income:lc10[6].id}}" src="{{lc10[6].pic}}" />
+            </em>
+            <em class="{{lc10[7].income?'ysvg2':'wsvg2'}} {{lc10[7].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc10[7]}}" mode="{{lc10[7].income?'widthFix':'aspectFill'}}"  bindtap="{{lc10[7].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc10[7].audio?lc10[7].audio:''}}" data-id="{{lc10[7].income?lc10[7].income:lc10[7].id}}" src="{{lc10[7].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc10[8]}}">
+            <em class="{{lc10[8].income?'ysvg2':'wsvg2'}} {{lc10[8].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc10[8].income?'widthFix':'aspectFill'}}" bindtap="{{lc10[8].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc10[8].audio?lc10[8].audio:''}}" data-id="{{lc10[8].income?lc10[8].income:lc10[8].id}}" src="{{lc10[8].pic}}" />
+            </em>
+            <em class="{{lc10[9].income?'ysvg2':'wsvg2'}} {{lc10[9].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc10[9]}}" mode="{{lc10[9].income?'widthFix':'aspectFill'}}" bindtap="{{lc10[9].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc10[9].audio?lc10[9].audio:''}}" data-id="{{lc10[9].income?lc10[9].income:lc10[9].id}}" src="{{lc10[9].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc10[10]}}">
+            <em class="{{lc10[10].income?'ysvg2':'wsvg2'}} {{lc10[10].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc10[10].income?'widthFix':'aspectFill'}}" bindtap="{{lc10[10].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc10[10].audio?lc10[10].audio:''}}" data-id="{{lc10[10].income?lc10[10].income:lc10[10].id}}" src="{{lc10[10].pic}}" />
+            </em>
+            <em class="{{lc10[11].income?'ysvg2':'wsvg2'}} {{lc10[11].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc10[11]}}" mode="{{lc10[11].income?'widthFix':'aspectFill'}}" bindtap="{{lc10[11].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc10[11].audio?lc10[11].audio:''}}" data-id="{{lc10[11].income?lc10[11].income:lc10[11].id}}"  src="{{lc10[11].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc10[12]}}">
+            <em class="{{lc10[12].income?'ysvg2':'wsvg2'}} {{lc10[12].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc10[12].income?'widthFix':'aspectFill'}}" bindtap="{{lc10[12].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc10[12].audio?lc10[12].audio:''}}" data-id="{{lc10[12].income?lc10[12].income:lc10[12].id}}"  src="{{lc10[12].pic}}" />
+            </em>
+            <em class="{{lc10[13].income?'ysvg2':'wsvg2'}} {{lc10[13].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc10[13]}}" mode="{{lc10[13].income?'widthFix':'aspectFill'}}" bindtap="{{lc10[12].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc10[13].audio?lc10[13].audio:''}}" data-id="{{lc10[13].income?lc10[13].income:lc10[13].id}}"  src="{{lc10[13].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc10[14]}}">
+            <em class="{{lc10[14].income?'ysvg2':'wsvg2'}} {{lc10[14].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc10[14].income?'widthFix':'aspectFill'}}" bindtap="{{lc10[14].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc10[14].audio?lc10[14].audio:''}}" data-id="{{lc10[14].income?lc10[14].income:lc10[14].id}}"  src="{{lc10[14].pic}}" />
+            </em>
+            <em class="{{lc10[15].income?'ysvg2':'wsvg2'}} {{lc10[15].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc10[15]}}" mode="{{lc10[15].income?'widthFix':'aspectFill'}}" bindtap="{{lc10[15].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc10[15].audio?lc10[15].audio:''}}" data-id="{{lc10[15].income?lc10[15].income:lc10[15].id}}"  src="{{lc10[15].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc10[16]}}">
+            <em class="{{lc10[16].income?'ysvg2':'wsvg2'}} {{lc10[16].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc10[16].income?'widthFix':'aspectFill'}}" bindtap="{{lc10[16].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc10[16].audio?lc10[16].audio:''}}" data-id="{{lc10[16].income?lc10[16].income:lc10[16].id}}"  src="{{lc10[16].pic}}" />
+            </em>
+            <em class="{{lc10[17].income?'ysvg2':'wsvg2'}} {{lc10[17].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc10[17]}}" mode="{{lc10[17].income?'widthFix':'aspectFill'}}" bindtap="{{lc10[17].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc10[17].audio?lc10[17].audio:''}}" data-id="{{lc10[17].income?lc10[17].income:lc10[17].id}}"  src="{{lc10[17].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc10[18]}}">
+            <em class="{{lc10[18].income?'ysvg2':'wsvg2'}} {{lc10[18].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc10[18].income?'widthFix':'aspectFill'}}" bindtap="{{lc10[18].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc10[18].audio?lc10[18].audio:''}}"data-id="{{lc10[18].income?lc10[18].income:lc10[18].id}}"  src="{{lc10[18].pic}}" />
+            </em>
+            <em class="{{lc10[19].income?'ysvg2':'wsvg2'}} {{lc10[19].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc10[19]}}" mode="{{lc10[19].income?'widthFix':'aspectFill'}}" bindtap="{{lc10[19].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc10[19].audio?lc10[19].audio:''}}"data-id="{{lc10[19].income?lc10[19].income:lc10[19].id}}"  src="{{lc10[19].pic}}" />
+            </em>
+          </p>
+        </block>
+        <view class="qb">
+          <view class="jzz" wx:if="{{lc10==''}}">
+            <image mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+            <em>文章加载中</em>
+          </view>
+          <p>阅读全部</p>
+          <span>{{jdata.lc10.shuliang}}</span>
+        </view>
+        <!-- tag -->
+        <view class="ff ff2">
+          <em>{{lc10a.zht}}</em>
+          <p>
+            <span wx:for="{{lc10a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">
+              {{item.nr}}
+            </span>
+          </p>
+          <i>{{lc10a.zhf}}</i>
+        </view>
+        <view class="kdd"></view>
+      </view>
+      <div class="gg">
+        <image mode="widthFix" wx:for="{{jdata.lc10.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="10" data-nr="{{item.link}}" />
+      </div>
+    </block>
+    <!-- /楼层 -->
+
+
+</view>
+
+
+    <view class="tt" data-id="" data-zhf="{{jdata.lc1.zh.zhf}}" data-zht="{{jdata.lc1.zh.zht}}" data-zh="{{jdata.lc1.zh.zh}}" data-bh="1">
+      <image mode="widthFix" bindtap="toliebiao" data-id="{{item.link}}" src="{{jdata.top.ysj.nr}}" class="nav_footer_left"></image>
+    </view>
+    <div class="wz">
+      <span wx:for="{{datasj}}" wx:key="index" wx:for-item="itemName">{{itemName}}</span>
+    </div>
+  </div>
+</view>
+<!-- miniprogram/custom-tab-bar/index.wxml -->
+<!-- <cover-view class="tab-bar {{isIphoneX?'isIPX':''}}">
+  <cover-view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+    <cover-image class="ytp {{selected === index ? 'xz' : 'bxz'}}" src="{{selected === index ? item.selectedIconPath : item.iconPath}}"></cover-image>
+    <cover-view style="color: {{selected === index ? selectedColor : color}}" class="wzz">
+      {{item.text}}
+    </cover-view>
+  </cover-view>
+
+</cover-view> -->

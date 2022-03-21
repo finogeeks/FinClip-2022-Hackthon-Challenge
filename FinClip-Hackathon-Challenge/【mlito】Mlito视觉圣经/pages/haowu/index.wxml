@@ -1,0 +1,843 @@
+<view class="jpage">
+  <van-sticky>
+    <navbar ></navbar>
+    <view class="nav_footer" style="margin-top:{{bnavHeight}}px;">
+      <!-- <image src="https://www.mlito.com/wp-content/uploads/lite-back-50-50.svg" bindtap="fanhui" class="nav_footer_goback"></image> -->
+      <!-- <view class="nav_footer_title">{{navTitle}}</view> -->
+      <image mode="heightFix" src="https://www.mlito.com/wp-content/uploads/mlito-lite-haowu-logo.svg" class="nav_footer_left" ></image>
+      <!-- bindtap="more" -->
+      <image mode="heightFix" src="https://www.mlito.com/wp-content/uploads/lite-vip-tr.svg"   class="nav_footer_right"></image>
+      <view class="nav_footer_rt">
+        <!-- <span>发现</span>
+        <span>购物车</span>
+        <span>我的</span> -->
+        <!-- <span wx:for="{{jdata.top.lj}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">
+          {{item.nr}}
+        </span> -->
+      </view>
+    </view>
+  </van-sticky>
+
+
+<div class="zdy" style="margin-top:{{navHeight}}px;">
+
+<view class="bxs">
+
+<wxs module="goodsDetailPage">
+module.exports = {
+  url : function(item) {
+    if (item.supplyType == 'cps_jd') {
+      return '/packageCps/pages/goods-details/cps-jd?id=' + item.goodsId
+    } else if (item.supplyType == 'vop_jd') {
+      return '/pages/goods-details/vop?id=' + item.yyId + '&goodsId=' + item.id
+    } else if (item.supplyType == 'cps_pdd') {
+      return '/packageCps/pages/goods-details/cps-pdd?id=' + item.goodsId
+    } else if (item.supplyType == 'cps_taobao') {
+      return '/packageCps/pages/goods-details/cps-taobao?id=' + item.goodsId
+    } else {
+      return '/pages/goods-details/index?id=' + item.goodsId
+    }
+  }
+}
+</wxs>
+
+  <div class="gg gg2 ">
+    <image lazy-load='true'  mode="heightFix"  wx:for="{{jdata.top.zsj}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" />
+  </div>
+
+
+
+<view class="swiper-container">
+  <swiper class="swiper1" indicator-dots="true" indicator-active-color="#fff" autoplay circular>
+    <swiper-item wx:for="{{banners}}" wx:key="id">
+      <image mode="aspectFill" bindtap="tapBanner" data-url="{{item.linkUrl}}" src="{{item.picUrl}}" />
+    </swiper-item>
+  </swiper>
+</view>
+
+
+
+
+
+
+
+<!-- -1楼层 -->
+<block wx:if="{{jdata.ac1}}">
+
+  <block wx:for="{{jdata.ac1}}"  wx:key="aaindex"  wx:for-index="aaindex">
+      <view class="tt tt111" data-id="" data-zhf="{{item.zh.zhf}}" data-zht="{{item.zh.zht}}" data-zh="{{item.zh.zh}}" data-bh="{{aaindex}}">
+        <image style="border:none" mode="widthFix" bindtap="toxiangqing" data-id="{{item.db.link}}" src="{{item.db.nr}}" />
+      </view>
+
+
+  <view class="jp scroll_box">
+
+	<scroll-view scroll-x>
+
+
+
+    <block wx:if="{{item.sp}}">
+
+      <!-- <block  wx:for="{{item.sp}}"  wx:for-item="itemsp" wx:key="index" > -->
+
+        <view class="splbs">
+
+            <view class="splb" bindtap="toDetailsTap" data-id="{{item.sp[0].id}}" >
+              
+              <view class="splbt">
+                  <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.sp[0].id}}" src="{{item.sp[0].pic}}" />
+                  <view class="splb_l">
+                    <span wx:if="{{item.sp[0].subName}}">{{item.sp[0].subName}}</span>
+                    <em  wx:if="{{item.sp[0].purchaseNotes}}">{{item.sp[0].purchaseNotes}}</em>
+                  </view>
+
+                  <view class="splb_r">
+                    <block wx:if="{{item.sp[0].tags}}">
+                      <span wx:for="{{item.sp[0].tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+                    </block>
+                  </view>
+              </view>
+              
+              <view class="splbf">
+                  <view class="spbt">{{item.sp[0].name}}</view>
+                  <view class="spjg">
+                    <view class="spjgl"><span>￥{{item.sp[0].minPrice}}</span><em>￥{{item.sp[0].originalPrice}}</em></view>
+                    <view class="spjgr">
+                        <block wx:if="{{item.sp[0].characteristic}}">
+                          <span wx:for="{{item.sp[0].characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+                        </block>
+                        <block wx:else>
+                          <i></i>
+                        </block>
+                    </view>
+                  </view>
+              </view>
+
+            </view>
+
+            <view class="splb"  wx:if="{{item.sp[1]}}" bindtap="toDetailsTap" data-id="{{item.sp[1].id}}" >
+              <view class="splbt">
+                  <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.sp[1].id}}" src="{{item.sp[1].pic}}" />
+                  <view class="splb_l">
+                    <span wx:if="{{item.sp[1].subName}}">{{item.sp[1].subName}}</span>
+                    <em  wx:if="{{item.sp[1].purchaseNotes}}">{{item.sp[1].purchaseNotes}}</em>
+                  </view>
+
+                  <view class="splb_r">
+                    <block wx:if="{{item.sp[1].tags}}">
+                      <span wx:for="{{item.sp[1].tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+                    </block>
+                  </view>
+              </view>
+              
+              <view class="splbf">
+                  <view class="spbt">{{item.sp[1].name}}</view>
+                  <view class="spjg">
+                    <view class="spjgl"><span>￥{{item.sp[1].minPrice}}</span><em>￥{{item.sp[1].originalPrice}}</em></view>
+                    <view class="spjgr">
+                        <block wx:if="{{item.sp[1].characteristic}}">
+                          <span wx:for="{{item.sp[1].characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+                        </block>
+                        <block wx:else>
+                          <i></i>
+                        </block>
+                    </view>
+                  </view>
+              </view>
+
+            </view>
+
+
+
+
+        </view>
+
+       <view class="splbs" wx:if="{{item.sp[2]}}">
+  
+
+          <view class="splb" bindtap="toDetailsTap" data-id="{{item.sp[2].id}}" >
+              
+              <view class="splbt">
+                  <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.sp[2].id}}" src="{{item.sp[2].pic}}" />
+                  <view class="splb_l">
+                    <span wx:if="{{item.sp[2].subName}}">{{item.sp[2].subName}}</span>
+                    <em  wx:if="{{item.sp[2].purchaseNotes}}">{{item.sp[2].purchaseNotes}}</em>
+                  </view>
+
+                  <view class="splb_r">
+                    <block wx:if="{{item.sp[2].tags}}">
+                      <span wx:for="{{item.sp[2].tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+                    </block>
+                  </view>
+              </view>
+              
+              <view class="splbf">
+                  <view class="spbt">{{item.sp[2].name}}</view>
+                  <view class="spjg">
+                    <view class="spjgl"><span>￥{{item.sp[2].minPrice}}</span><em>￥{{item.sp[2].originalPrice}}</em></view>
+                    <view class="spjgr">
+                        <block wx:if="{{item.sp[2].characteristic}}">
+                          <span wx:for="{{item.sp[2].characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+                        </block>
+                        <block wx:else>
+                          <i></i>
+                        </block>
+                    </view>
+                  </view>
+              </view>
+
+            </view>
+
+
+
+
+<view class="splb"  wx:if="{{item.sp[3]}}" bindtap="toDetailsTap" data-id="{{item.sp[3].id}}" >
+              
+    <view class="splbt">
+        <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.sp[3].id}}" src="{{item.sp[3].pic}}" />
+        <view class="splb_l">
+          <span wx:if="{{item.sp[3].subName}}">{{item.sp[3].subName}}</span>
+          <em  wx:if="{{item.sp[3].purchaseNotes}}">{{item.sp[3].purchaseNotes}}</em>
+        </view>
+
+        <view class="splb_r">
+          <block wx:if="{{item.sp[3].tags}}">
+            <span wx:for="{{item.sp[3].tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+          </block>
+        </view>
+    </view>
+    
+    <view class="splbf">
+        <view class="spbt">{{item.sp[3].name}}</view>
+        <view class="spjg">
+          <view class="spjgl"><span>￥{{item.sp[3].minPrice}}</span><em>￥{{item.sp[3].originalPrice}}</em></view>
+          <view class="spjgr">
+              <block wx:if="{{item.sp[3].characteristic}}">
+                <span wx:for="{{item.sp[3].characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+              </block>
+              <block wx:else>
+                <i></i>
+              </block>
+          </view>
+        </view>
+    </view>
+
+  </view>
+
+
+
+</view>
+
+
+
+<view class="splbs" wx:if="{{item.sp[4]}}">
+  <view class="splb" bindtap="toDetailsTap" data-id="{{item.sp[4].id}}" >
+              
+    <view class="splbt">
+        <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.sp[4].id}}" src="{{item.sp[4].pic}}" />
+        <view class="splb_l">
+          <span wx:if="{{item.sp[4].subName}}">{{item.sp[4].subName}}</span>
+          <em  wx:if="{{item.sp[4].purchaseNotes}}">{{item.sp[4].purchaseNotes}}</em>
+        </view>
+
+        <view class="splb_r">
+          <block wx:if="{{item.sp[4].tags}}">
+            <span wx:for="{{item.sp[4].tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+          </block>
+        </view>
+    </view>
+    
+    <view class="splbf">
+        <view class="spbt">{{item.sp[4].name}}</view>
+        <view class="spjg">
+          <view class="spjgl"><span>￥{{item.sp[4].minPrice}}</span><em>￥{{item.sp[4].originalPrice}}</em></view>
+          <view class="spjgr">
+              <block wx:if="{{item.sp[4].characteristic}}">
+                <span wx:for="{{item.sp[4].characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+              </block>
+              <block wx:else>
+                <i></i>
+              </block>
+          </view>
+        </view>
+    </view>
+
+  </view>
+
+
+<view class="splb"  wx:if="{{item.sp[5]}}" bindtap="toDetailsTap" data-id="{{item.sp[5].id}}" >
+              
+    <view class="splbt">
+        <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.sp[5].id}}" src="{{item.sp[5].pic}}" />
+        <view class="splb_l">
+          <span wx:if="{{item.sp[5].subName}}">{{item.sp[5].subName}}</span>
+          <em  wx:if="{{item.sp[5].purchaseNotes}}">{{item.sp[5].purchaseNotes}}</em>
+        </view>
+
+        <view class="splb_r">
+          <block wx:if="{{item.sp[5].tags}}">
+            <span wx:for="{{item.sp[5].tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+          </block>
+        </view>
+    </view>
+    
+    <view class="splbf">
+        <view class="spbt">{{item.sp[5].name}}</view>
+        <view class="spjg">
+          <view class="spjgl"><span>￥{{item.sp[5].minPrice}}</span><em>￥{{item.sp[5].originalPrice}}</em></view>
+          <view class="spjgr">
+              <block wx:if="{{item.sp[5].characteristic}}">
+                <span wx:for="{{item.sp[5].characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+              </block>
+              <block wx:else>
+                <i></i>
+              </block>
+          </view>
+        </view>
+    </view>
+
+  </view>
+</view>
+
+
+
+<view class="splbs" wx:if="{{item.sp[6]}}">
+   <view class="splb" bindtap="toDetailsTap" data-id="{{item.sp[6].id}}" >
+              
+    <view class="splbt">
+        <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.sp[6].id}}" src="{{item.sp[6].pic}}" />
+        <view class="splb_l">
+          <span wx:if="{{item.sp[6].subName}}">{{item.sp[6].subName}}</span>
+          <em  wx:if="{{item.sp[6].purchaseNotes}}">{{item.sp[6].purchaseNotes}}</em>
+        </view>
+
+        <view class="splb_r">
+          <block wx:if="{{item.sp[6].tags}}">
+            <span wx:for="{{item.sp[6].tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+          </block>
+        </view>
+    </view>
+    
+    <view class="splbf">
+        <view class="spbt">{{item.sp[6].name}}</view>
+        <view class="spjg">
+          <view class="spjgl"><span>￥{{item.sp[6].minPrice}}</span><em>￥{{item.sp[6].originalPrice}}</em></view>
+          <view class="spjgr">
+              <block wx:if="{{item.sp[6].characteristic}}">
+                <span wx:for="{{item.sp[6].characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+              </block>
+              <block wx:else>
+                <i></i>
+              </block>
+          </view>
+        </view>
+    </view>
+
+  </view>
+
+    <view class="splb"  wx:if="{{item.sp[7]}}" bindtap="toDetailsTap" data-id="{{item.sp[7].id}}" >
+              
+    <view class="splbt">
+        <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.sp[7].id}}" src="{{item.sp[7].pic}}" />
+        <view class="splb_l">
+          <span wx:if="{{item.sp[7].subName}}">{{item.sp[7].subName}}</span>
+          <em  wx:if="{{item.sp[7].purchaseNotes}}">{{item.sp[7].purchaseNotes}}</em>
+        </view>
+
+        <view class="splb_r">
+          <block wx:if="{{item.sp[7].tags}}">
+            <span wx:for="{{item.sp[7].tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+          </block>
+        </view>
+    </view>
+    
+    <view class="splbf">
+        <view class="spbt">{{item.sp[7].name}}</view>
+        <view class="spjg">
+          <view class="spjgl"><span>￥{{item.sp[7].minPrice}}</span><em>￥{{item.sp[7].originalPrice}}</em></view>
+          <view class="spjgr">
+              <block wx:if="{{item.sp[7].characteristic}}">
+                <span wx:for="{{item.sp[7].characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+              </block>
+              <block wx:else>
+                <i></i>
+              </block>
+          </view>
+        </view>
+    </view>
+
+  </view>
+</view>
+
+
+<view class="splbs" wx:if="{{item.sp[8]}}">
+<view class="splb" bindtap="toDetailsTap" data-id="{{item.sp[8].id}}" >
+              
+    <view class="splbt">
+        <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.sp[8].id}}" src="{{item.sp[8].pic}}" />
+        <view class="splb_l">
+          <span wx:if="{{item.sp[8].subName}}">{{item.sp[8].subName}}</span>
+          <em  wx:if="{{item.sp[8].purchaseNotes}}">{{item.sp[8].purchaseNotes}}</em>
+        </view>
+
+        <view class="splb_r">
+          <block wx:if="{{item.sp[8].tags}}">
+            <span wx:for="{{item.sp[8].tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+          </block>
+        </view>
+    </view>
+    
+    <view class="splbf">
+        <view class="spbt">{{item.sp[8].name}}</view>
+        <view class="spjg">
+          <view class="spjgl"><span>￥{{item.sp[8].minPrice}}</span><em>￥{{item.sp[8].originalPrice}}</em></view>
+          <view class="spjgr">
+              <block wx:if="{{item.sp[8].characteristic}}">
+                <span wx:for="{{item.sp[8].characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+              </block>
+              <block wx:else>
+                <i></i>
+              </block>
+          </view>
+        </view>
+    </view>
+
+  </view>
+
+<view class="splb"  wx:if="{{item.sp[9]}}" bindtap="toDetailsTap" data-id="{{item.sp[9].id}}" >
+              
+    <view class="splbt">
+        <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.sp[9].id}}" src="{{item.sp[9].pic}}" />
+        <view class="splb_l">
+          <span wx:if="{{item.sp[9].subName}}">{{item.sp[9].subName}}</span>
+          <em  wx:if="{{item.sp[9].purchaseNotes}}">{{item.sp[9].purchaseNotes}}</em>
+        </view>
+
+        <view class="splb_r">
+          <block wx:if="{{item.sp[9].tags}}">
+            <span wx:for="{{item.sp[9].tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+          </block>
+        </view>
+    </view>
+    
+    <view class="splbf">
+        <view class="spbt">{{item.sp[9].name}}</view>
+        <view class="spjg">
+          <view class="spjgl"><span>￥{{item.sp[9].minPrice}}</span><em>￥{{item.sp[9].originalPrice}}</em></view>
+          <view class="spjgr">
+              <block wx:if="{{item.sp[9].characteristic}}">
+                <span wx:for="{{item.sp[9].characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+              </block>
+              <block wx:else>
+                <i></i>
+              </block>
+          </view>
+        </view>
+    </view>
+
+  </view>
+</view>
+
+
+<view class="splbs" wx:if="{{item.sp[10]}}">
+<view class="splb"  bindtap="toDetailsTap" data-id="{{item.sp[10].id}}" >
+              
+    <view class="splbt">
+        <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.sp[10].id}}" src="{{item.sp[10].pic}}" />
+        <view class="splb_l">
+          <span wx:if="{{item.sp[10].subName}}">{{item.sp[10].subName}}</span>
+          <em  wx:if="{{item.sp[10].purchaseNotes}}">{{item.sp[10].purchaseNotes}}</em>
+        </view>
+
+        <view class="splb_r">
+          <block wx:if="{{item.sp[10].tags}}">
+            <span wx:for="{{item.sp[10].tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+          </block>
+        </view>
+    </view>
+    
+    <view class="splbf">
+        <view class="spbt">{{item.sp[10].name}}</view>
+        <view class="spjg">
+          <view class="spjgl"><span>￥{{item.sp[10].minPrice}}</span><em>￥{{item.sp[10].originalPrice}}</em></view>
+          <view class="spjgr">
+              <block wx:if="{{item.sp[10].characteristic}}">
+                <span wx:for="{{item.sp[10].characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+              </block>
+              <block wx:else>
+                <i></i>
+              </block>
+          </view>
+        </view>
+    </view>
+
+  </view>
+
+<view class="splb"  wx:if="{{item.sp[11]}}"  bindtap="toDetailsTap" data-id="{{item.sp[11].id}}" >
+              
+    <view class="splbt">
+        <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.sp[11].id}}" src="{{item.sp[11].pic}}" />
+        <view class="splb_l">
+          <span wx:if="{{item.sp[11].subName}}">{{item.sp[11].subName}}</span>
+          <em  wx:if="{{item.sp[11].purchaseNotes}}">{{item.sp[11].purchaseNotes}}</em>
+        </view>
+
+        <view class="splb_r">
+          <block wx:if="{{item.sp[11].tags}}">
+            <span wx:for="{{item.sp[11].tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+          </block>
+        </view>
+    </view>
+    
+    <view class="splbf">
+        <view class="spbt">{{item.sp[11].name}}</view>
+        <view class="spjg">
+          <view class="spjgl"><span>￥{{item.sp[11].minPrice}}</span><em>￥{{item.sp[11].originalPrice}}</em></view>
+          <view class="spjgr">
+              <block wx:if="{{item.sp[11].characteristic}}">
+                <span wx:for="{{item.sp[11].characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+              </block>
+              <block wx:else>
+                <i></i>
+              </block>
+          </view>
+        </view>
+    </view>
+
+  </view>
+</view>
+
+
+
+<view class="splbs" wx:if="{{item.sp[12]}}">
+  <view class="splb"  bindtap="toDetailsTap" data-id="{{item.sp[12].id}}" >
+              
+    <view class="splbt">
+        <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.sp[12].id}}" src="{{item.sp[12].pic}}" />
+        <view class="splb_l">
+          <span wx:if="{{item.sp[12].subName}}">{{item.sp[12].subName}}</span>
+          <em  wx:if="{{item.sp[12].purchaseNotes}}">{{item.sp[12].purchaseNotes}}</em>
+        </view>
+
+        <view class="splb_r">
+          <block wx:if="{{item.sp[12].tags}}">
+            <span wx:for="{{item.sp[12].tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+          </block>
+        </view>
+    </view>
+    
+    <view class="splbf">
+        <view class="spbt">{{item.sp[12].name}}</view>
+        <view class="spjg">
+          <view class="spjgl"><span>￥{{item.sp[12].minPrice}}</span><em>￥{{item.sp[12].originalPrice}}</em></view>
+          <view class="spjgr">
+              <block wx:if="{{item.sp[12].characteristic}}">
+                <span wx:for="{{item.sp[12].characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+              </block>
+              <block wx:else>
+                <i></i>
+              </block>
+          </view>
+        </view>
+    </view>
+
+  </view>
+
+
+<view class="splb"  wx:if="{{item.sp[13]}}" bindtap="toDetailsTap" data-id="{{item.sp[13].id}}" >
+              
+    <view class="splbt">
+        <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.sp[13].id}}" src="{{item.sp[13].pic}}" />
+        <view class="splb_l">
+          <span wx:if="{{item.sp[13].subName}}">{{item.sp[13].subName}}</span>
+          <em  wx:if="{{item.sp[13].purchaseNotes}}">{{item.sp[13].purchaseNotes}}</em>
+        </view>
+
+        <view class="splb_r">
+          <block wx:if="{{item.sp[13].tags}}">
+            <span wx:for="{{item.sp[13].tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+          </block>
+        </view>
+    </view>
+    
+    <view class="splbf">
+        <view class="spbt">{{item.sp[13].name}}</view>
+        <view class="spjg">
+          <view class="spjgl"><span>￥{{item.sp[13].minPrice}}</span><em>￥{{item.sp[13].originalPrice}}</em></view>
+          <view class="spjgr">
+              <block wx:if="{{item.sp[13].characteristic}}">
+                <span wx:for="{{item.sp[13].characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+              </block>
+              <block wx:else>
+                <i></i>
+              </block>
+          </view>
+        </view>
+    </view>
+
+  </view>
+
+</view>
+
+
+
+<view class="splbs" wx:if="{{item.sp[14]}}">
+   <view class="splb" bindtap="toDetailsTap" data-id="{{item.sp[14].id}}" >
+              
+    <view class="splbt">
+        <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.sp[14].id}}" src="{{item.sp[14].pic}}" />
+        <view class="splb_l">
+          <span wx:if="{{item.sp[14].subName}}">{{item.sp[14].subName}}</span>
+          <em  wx:if="{{item.sp[14].purchaseNotes}}">{{item.sp[14].purchaseNotes}}</em>
+        </view>
+
+        <view class="splb_r">
+          <block wx:if="{{item.sp[14].tags}}">
+            <span wx:for="{{item.sp[14].tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+          </block>
+        </view>
+    </view>
+    
+    <view class="splbf">
+        <view class="spbt">{{item.sp[14].name}}</view>
+        <view class="spjg">
+          <view class="spjgl"><span>￥{{item.sp[14].minPrice}}</span><em>￥{{item.sp[14].originalPrice}}</em></view>
+          <view class="spjgr">
+              <block wx:if="{{item.sp[14].characteristic}}">
+                <span wx:for="{{item.sp[14].characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+              </block>
+              <block wx:else>
+                <i></i>
+              </block>
+          </view>
+        </view>
+    </view>
+
+  </view>
+   <view class="splb"  wx:if="{{item.sp[15]}}" bindtap="toDetailsTap" data-id="{{item.sp[15].id}}" >
+              
+    <view class="splbt">
+        <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.sp[15].id}}" src="{{item.sp[15].pic}}" />
+        <view class="splb_l">
+          <span wx:if="{{item.sp[15].subName}}">{{item.sp[15].subName}}</span>
+          <em  wx:if="{{item.sp[15].purchaseNotes}}">{{item.sp[15].purchaseNotes}}</em>
+        </view>
+
+        <view class="splb_r">
+          <block wx:if="{{item.sp[15].tags}}">
+            <span wx:for="{{item.sp[15].tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+          </block>
+        </view>
+    </view>
+    
+    <view class="splbf">
+        <view class="spbt">{{item.sp[15].name}}</view>
+        <view class="spjg">
+          <view class="spjgl"><span>￥{{item.sp[15].minPrice}}</span><em>￥{{item.sp[15].originalPrice}}</em></view>
+          <view class="spjgr">
+              <block wx:if="{{item.sp[15].characteristic}}">
+                <span wx:for="{{item.sp[15].characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+              </block>
+              <block wx:else>
+                <i></i>
+              </block>
+          </view>
+        </view>
+    </view>
+
+  </view>
+</view>
+
+
+<view class="splbs" wx:if="{{item.sp[16]}}">
+ <view class="splb" bindtap="toDetailsTap" data-id="{{item.sp[16].id}}" >
+              
+    <view class="splbt">
+        <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.sp[16].id}}" src="{{item.sp[16].pic}}" />
+        <view class="splb_l">
+          <span wx:if="{{item.sp[16].subName}}">{{item.sp[16].subName}}</span>
+          <em  wx:if="{{item.sp[16].purchaseNotes}}">{{item.sp[16].purchaseNotes}}</em>
+        </view>
+
+        <view class="splb_r">
+          <block wx:if="{{item.sp[16].tags}}">
+            <span wx:for="{{item.sp[16].tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+          </block>
+        </view>
+    </view>
+    
+    <view class="splbf">
+        <view class="spbt">{{item.sp[16].name}}</view>
+        <view class="spjg">
+          <view class="spjgl"><span>￥{{item.sp[16].minPrice}}</span><em>￥{{item.sp[16].originalPrice}}</em></view>
+          <view class="spjgr">
+              <block wx:if="{{item.sp[16].characteristic}}">
+                <span wx:for="{{item.sp[16].characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+              </block>
+              <block wx:else>
+                <i></i>
+              </block>
+          </view>
+        </view>
+    </view>
+
+  </view>
+
+<view class="splb"  wx:if="{{item.sp[17]}}" bindtap="toDetailsTap" data-id="{{item.sp[17].id}}" >
+              
+    <view class="splbt">
+        <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.sp[17].id}}" src="{{item.sp[17].pic}}" />
+        <view class="splb_l">
+          <span wx:if="{{item.sp[17].subName}}">{{item.sp[17].subName}}</span>
+          <em  wx:if="{{item.sp[17].purchaseNotes}}">{{item.sp[17].purchaseNotes}}</em>
+        </view>
+
+        <view class="splb_r">
+          <block wx:if="{{item.sp[17].tags}}">
+            <span wx:for="{{item.sp[17].tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+          </block>
+        </view>
+    </view>
+    
+    <view class="splbf">
+        <view class="spbt">{{item.sp[17].name}}</view>
+        <view class="spjg">
+          <view class="spjgl"><span>￥{{item.sp[17].minPrice}}</span><em>￥{{item.sp[17].originalPrice}}</em></view>
+          <view class="spjgr">
+              <block wx:if="{{item.sp[17].characteristic}}">
+                <span wx:for="{{item.sp[17].characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+              </block>
+              <block wx:else>
+                <i></i>
+              </block>
+          </view>
+        </view>
+    </view>
+
+  </view>
+</view>
+
+
+<view class="splbs" wx:if="{{item.sp[18]}}">
+  <view class="splb" bindtap="toDetailsTap" data-id="{{item.sp[18].id}}" >
+              
+    <view class="splbt">
+        <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.sp[18].id}}" src="{{item.sp[18].pic}}" />
+        <view class="splb_l">
+          <span wx:if="{{item.sp[18].subName}}">{{item.sp[18].subName}}</span>
+          <em  wx:if="{{item.sp[18].purchaseNotes}}">{{item.sp[18].purchaseNotes}}</em>
+        </view>
+
+        <view class="splb_r">
+          <block wx:if="{{item.sp[18].tags}}">
+            <span wx:for="{{item.sp[18].tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+          </block>
+        </view>
+    </view>
+    
+    <view class="splbf">
+        <view class="spbt">{{item.sp[18].name}}</view>
+        <view class="spjg">
+          <view class="spjgl"><span>￥{{item.sp[18].minPrice}}</span><em>￥{{item.sp[18].originalPrice}}</em></view>
+          <view class="spjgr">
+              <block wx:if="{{item.sp[18].characteristic}}">
+                <span wx:for="{{item.sp[18].characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+              </block>
+              <block wx:else>
+                <i></i>
+              </block>
+          </view>
+        </view>
+    </view>
+
+  </view>
+
+<view class="splb" wx:if="{{item.sp[19]}}"  bindtap="toDetailsTap" data-id="{{item.sp[19].id}}" >
+              
+    <view class="splbt">
+        <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.sp[19].id}}" src="{{item.sp[19].pic}}" />
+        <view class="splb_l">
+          <span wx:if="{{item.sp[19].subName}}">{{item.sp[19].subName}}</span>
+          <em  wx:if="{{item.sp[19].purchaseNotes}}">{{item.sp[19].purchaseNotes}}</em>
+        </view>
+
+        <view class="splb_r">
+          <block wx:if="{{item.sp[19].tags}}">
+            <span wx:for="{{item.sp[19].tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+          </block>
+        </view>
+    </view>
+    
+    <view class="splbf">
+        <view class="spbt">{{item.sp[19].name}}</view>
+        <view class="spjg">
+          <view class="spjgl"><span>￥{{item.sp[19].minPrice}}</span><em>￥{{item.sp[19].originalPrice}}</em></view>
+          <view class="spjgr">
+              <block wx:if="{{item.sp[19].characteristic}}">
+                <span wx:for="{{item.sp[19].characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+              </block>
+              <block wx:else>
+                <i></i>
+              </block>
+          </view>
+        </view>
+    </view>
+
+  </view>
+</view>
+
+
+      <!-- </block> -->
+
+    </block>
+
+
+
+    <view class="qb qb2 item_list" bindtap="toliebiao"  data-id="{{lc1gd}}">
+
+      <!-- <view class="jzz" wx:if="{{item.sp}}">
+        <image lazy-load='true'  mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+        <em>文章加载中</em>
+      </view> -->
+
+      <p>全部商品</p>
+      <span>{{item.shuliang}}</span>
+    </view>
+
+    <view class="ff ff2 item_list">
+      <em>{{item.zh.zht}}</em>
+      <image lazy-load='true'  mode="widthFix" src="{{item.zh.zhfgg}}" class="zhfgg" />
+      <p><span  wx:for="{{item.zh.zh}}" wx:for-item="items" bindtap="zhankai" wx:key="index" data-id="{{items.link}}" data-bh="{{aaindex}}" data-nr="{{items.link}}" >{{items.nr}}</span></p>
+      <i>{{item.zh.zhf}}</i>
+    </view>
+    <view class="kdd item_list">
+    </view>
+  	</scroll-view>
+
+  </view>
+
+
+
+      <div class="gg gg2">
+        <image mode="heightFix" wx:for="{{item.gg}}" bindtap="zhankai" wx:for-item="items2" wx:key="index" data-id="{{items2.link}}" src="{{items2.nr}}" data-bh="{{aaindex}}" data-nr="{{items2.link}}" />
+      </div>
+
+  </block>
+
+</block>
+<!-- /-1楼层 -->
+
+
+
+
+
+
+  </view>
+
+   
+  </div>
+
+
+</view>
+
+

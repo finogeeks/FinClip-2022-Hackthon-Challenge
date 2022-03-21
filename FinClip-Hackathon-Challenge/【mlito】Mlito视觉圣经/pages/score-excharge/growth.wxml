@@ -1,0 +1,20 @@
+<view class="score">
+  <view>当前可用积分</view>
+  <view>{{score}}</view>
+</view>
+<view class="container">
+  <form bindsubmit="bindSave">
+    <view class="form-box">
+      <view class="row-wrap">
+        <view class="label">兑换积分</view>
+        <view class="label-right">
+          <input name="score" class="input" type="text" placeholder="你希望用多少积分来兑换成长值" />
+        </view>
+      </view>
+    </view>
+    <button type="warn" class="save-btn" formType="submit">立即兑换</button>
+  </form>
+</view>
+<van-cell-group wx:if="{{deductionRules}}" title="兑换规则：">
+  <van-cell wx:for="{{deductionRules}}" wx:key="id" title="获得 {{ item.money }} 成长值" value="{{ item.loop? '每满': '满' }} {{ item.score }} 积分即可兑换" />
+</van-cell-group>

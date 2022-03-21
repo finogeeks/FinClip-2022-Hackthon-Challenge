@@ -1,0 +1,272 @@
+<view class="jpage">
+  <van-sticky>
+    <navbar ></navbar>
+    <view class="nav_footer" style="margin-top:{{bnavHeight}}px;">
+      <image src="https://www.mlito.com/wp-content/uploads/lite-back-50-50.svg" bindtap="fanhui" class="nav_footer_goback"></image>
+      <!-- <view class="nav_footer_title">{{navTitle}}</view> -->
+      <!-- <image mode="heightFix" src="https://www.mlito.com/wp-content/uploads/好物商城logo.svg" class="nav_footer_left" ></image> -->
+      <image mode="heightFix" src="https://www.mlito.com/wp-content/uploads/lite-vip-tr-zz.svg"  bindtap="more" class="nav_footer_right"></image>
+
+      <view class="nav_footer_rt">
+        <span class="active">分类</span>
+        <span bindtap="go_brand">品牌</span>
+        <span bindtap="go_shop">店面</span>
+        <span bindtap="go_designer">设计师</span>
+        <!-- <span wx:for="{{jdata.top.lj}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">
+          {{item.nr}}
+        </span> -->
+      </view>
+    </view>
+  </van-sticky>
+
+<div class="zdy" style="margin-top:{{navHeight}}px;">
+
+<view class="bxs">
+
+
+
+<wxs module="goodsDetailPage">
+module.exports = {
+  url : function(item) {
+    if (item.supplyType == 'cps_jd') {
+      return '/packageCps/pages/goods-details/cps-jd?id=' + item.goodsId
+    } else if (item.supplyType == 'vop_jd') {
+      return '/pages/goods-details/vop?id=' + item.yyId + '&goodsId=' + item.id
+    } else if (item.supplyType == 'cps_pdd') {
+      return '/packageCps/pages/goods-details/cps-pdd?id=' + item.goodsId
+    } else if (item.supplyType == 'cps_taobao') {
+      return '/packageCps/pages/goods-details/cps-taobao?id=' + item.goodsId
+    } else {
+      return '/pages/goods-details/index?id=' + item.goodsId
+    }
+  }
+}
+</wxs>
+
+
+<view class="ss">
+        <input type="text" placeholder="搜 索 栏 目"/>
+        <image src="https://www.mlito.com/wp-content/uploads/mlito-lite-hw-so.svg" bindtap="go_ss" ></image>
+</view>
+
+
+<view class="ic_a">
+  <span class="active">家居</span>
+  <span >家居</span>
+  <span >家居</span>
+  <span >家居</span>
+  <span >家居</span>
+  <span >家居</span>
+</view>
+
+
+
+
+
+  <view class="hy scroll_box">
+
+
+
+	<scroll-view scroll-x>
+      <!-- 文章 -->
+      <block >
+          <p class="hyp">
+            <!-- <em class="{{lc2[0].income?'ysvg2':'wsvg2'}} {{lc2[0].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  mode="{{lc2[0].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[0].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[0].audio?lc2[0].audio:''}}"  data-id="{{lc2[0].income?lc2[0].income:lc2[0].id}}" src="{{lc2[0].pic}}" />
+            </em> -->
+            <em class="ysvg2 wbk2">
+              <image lazy-load='true' mode="widthFix"  bindtap="toxiangqing" src="https://dcdn.it120.cc/2021/12/07/30642c00-23f9-4f6a-9531-455b4e830daf.svg" />
+            </em>
+            <em class="ysvg2 wbk2">
+              <image lazy-load='true' mode="widthFix"  bindtap="toxiangqing" src="https://dcdn.it120.cc/2021/12/07/30642c00-23f9-4f6a-9531-455b4e830daf.svg" />
+            </em>
+          </p>
+
+
+          <p class="hyp">
+            <em class="ysvg2 wbk2">
+              <image lazy-load='true' mode="widthFix"  bindtap="toxiangqing" src="https://dcdn.it120.cc/2021/12/07/30642c00-23f9-4f6a-9531-455b4e830daf.svg" />
+            </em>
+            <em class="ysvg2 wbk2">
+              <image lazy-load='true' mode="widthFix"  bindtap="toxiangqing" src="https://dcdn.it120.cc/2021/12/07/30642c00-23f9-4f6a-9531-455b4e830daf.svg" />
+            </em>
+          </p>
+
+          <p class="hyp">
+            <em class="ysvg2 wbk2">
+              <image lazy-load='true' mode="widthFix"  bindtap="toxiangqing" src="https://dcdn.it120.cc/2021/12/07/30642c00-23f9-4f6a-9531-455b4e830daf.svg" />
+            </em>
+            <em class="ysvg2 wbk2">
+              <image lazy-load='true' mode="widthFix"  bindtap="toxiangqing" src="https://dcdn.it120.cc/2021/12/07/30642c00-23f9-4f6a-9531-455b4e830daf.svg" />
+            </em>
+          </p>
+
+          <p class="hyp">
+            <em class="ysvg2 wbk2">
+              <image lazy-load='true' mode="widthFix"  bindtap="toxiangqing" src="https://dcdn.it120.cc/2021/12/07/30642c00-23f9-4f6a-9531-455b4e830daf.svg" />
+            </em>
+            <em class="ysvg2 wbk2">
+              <image lazy-load='true' mode="widthFix"  bindtap="toxiangqing" src="https://dcdn.it120.cc/2021/12/07/30642c00-23f9-4f6a-9531-455b4e830daf.svg" />
+            </em>
+          </p>
+
+          <p class="hyp">
+            <em class="ysvg2 wbk2">
+              <image lazy-load='true' mode="widthFix"  bindtap="toxiangqing" src="https://dcdn.it120.cc/2021/12/07/30642c00-23f9-4f6a-9531-455b4e830daf.svg" />
+            </em>
+            <em class="ysvg2 wbk2">
+              <image lazy-load='true' mode="widthFix"  bindtap="toxiangqing" src="https://dcdn.it120.cc/2021/12/07/30642c00-23f9-4f6a-9531-455b4e830daf.svg" />
+            </em>
+          </p>
+          
+      </block> 
+
+     
+   </scroll-view>
+  </view>
+
+
+
+
+
+
+  <view class="gg gg2">
+        <!-- <image lazy-load='true'  mode="heightFix"  wx:for="{{jdata.lc3.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" /> -->
+    <image lazy-load='true' mode="heightFix"  bindtap="toliebiao" src="https://dcdn.it120.cc/2021/12/11/8dfe586f-a36f-4475-836d-6f7b4bc44043.svg" />
+    <image lazy-load='true' mode="heightFix"  bindtap="toliebiao" src="https://dcdn.it120.cc/2021/12/11/8dfe586f-a36f-4475-836d-6f7b4bc44043.svg" />
+
+    <image lazy-load='true' mode="heightFix"  bindtap="toliebiao" src="https://dcdn.it120.cc/2021/12/11/8dfe586f-a36f-4475-836d-6f7b4bc44043.svg" />
+
+    <image lazy-load='true' mode="heightFix"  bindtap="toliebiao" src="https://dcdn.it120.cc/2021/12/11/8dfe586f-a36f-4475-836d-6f7b4bc44043.svg" />
+
+    <image lazy-load='true' mode="heightFix"  bindtap="toliebiao" src="https://dcdn.it120.cc/2021/12/11/8dfe586f-a36f-4475-836d-6f7b4bc44043.svg" />
+    <image lazy-load='true' mode="heightFix"  bindtap="toliebiao" src="https://dcdn.it120.cc/2021/12/11/8dfe586f-a36f-4475-836d-6f7b4bc44043.svg" />
+
+    <image lazy-load='true' mode="heightFix"  bindtap="toliebiao" src="https://dcdn.it120.cc/2021/12/11/8dfe586f-a36f-4475-836d-6f7b4bc44043.svg" />
+    <image lazy-load='true' mode="heightFix"  bindtap="toliebiao" src="https://dcdn.it120.cc/2021/12/11/8dfe586f-a36f-4475-836d-6f7b4bc44043.svg" />
+    <image lazy-load='true' mode="heightFix"  bindtap="toliebiao" src="https://dcdn.it120.cc/2021/12/11/8dfe586f-a36f-4475-836d-6f7b4bc44043.svg" />
+    <image lazy-load='true' mode="heightFix"  bindtap="toliebiao" src="https://dcdn.it120.cc/2021/12/11/8dfe586f-a36f-4475-836d-6f7b4bc44043.svg" />
+
+  </view>
+
+  <!-- <view class="zdytp">
+    <image lazy-load='true' mode="widthFix"  bindtap="toliebiao" src="https://dcdn.it120.cc/2021/12/11/8dfe586f-a36f-4475-836d-6f7b4bc44043.svg" />
+  </view>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- -1楼层 -->
+<block wx:if="{{jdata.ac1}}">
+
+  <block wx:for="{{jdata.ac1}}"  wx:key="index">
+      <view class="tt tt111" data-id="" data-zhf="{{item.zh.zhf}}" data-zht="{{item.zh.zht}}" data-zh="{{item.zh.zh}}" data-bh="{{index}}">
+        <image style="border:none" mode="widthFix" bindtap="toxiangqing" data-id="{{item.db.link}}" src="{{item.db.nr}}" />
+      </view>
+
+
+  <view class="jp scroll_box">
+
+	<scroll-view scroll-y>
+
+
+
+    <block wx:if="{{item.sp}}">
+
+      <block  wx:for="{{item.sp}}"  wx:for-item="item" wx:key="index" >
+
+
+
+
+       
+
+            <view class="splb" bindtap="toDetailsTap" data-id="{{item.id}}" >
+              
+              <view class="splbt">
+                  <image lazy-load='true' class="splb_bj"  mode="aspectFill"  bindtap="toxiangqing" data-id="{{item.id}}" src="{{item.pic}}" />
+                  <view class="splb_l">
+                    <span wx:if="{{item.subName}}">{{item.subName}}</span>
+                    <em  wx:if="{{item.purchaseNotes}}">{{item.purchaseNotes}}</em>
+                  </view>
+
+                  <view class="splb_r">
+                    <block wx:if="{{item.tags}}">
+                      <span wx:for="{{item.tags}}" wx:for-item="itemsp" wx:key="index" >{{itemsp}}</span>
+                    </block>
+                  </view>
+              </view>
+              
+              <view class="splbf">
+                  <view class="spbt">{{item.name}}</view>
+                  <view class="spjg">
+                    <view class="spjgl"><span>￥{{item.minPrice}}</span><em>￥{{item.originalPrice}}</em></view>
+                    <view class="spjgr">
+                        <block wx:if="{{item.characteristic}}">
+                          <span wx:for="{{item.characteristic}}"  wx:for-item="itemspx" wx:key="index" style="background:#{{itemspx}}" ></span>
+                        </block>
+                        <block wx:else>
+                          <i></i>
+                        </block>
+                    </view>
+                  </view>
+              </view>
+
+            </view>
+
+
+    
+
+
+
+
+
+
+      </block>
+
+    </block>
+
+
+  	</scroll-view>
+
+  </view>
+
+
+
+
+
+      <div class="gg  gg2">
+        <image mode="heightFix" wx:for="{{item.gg}}" bindtap="zhankai" wx:for-item="items2" wx:key="index" data-id="{{items2.link}}" src="{{items2.nr}}" data-bh="-1" data-nr="{{items2.link}}" />
+      </div>
+
+  </block>
+
+</block>
+<!-- /-1楼层 -->
+
+
+
+
+
+
+  </view>
+
+   
+  </div>
+
+
+</view>
+
+

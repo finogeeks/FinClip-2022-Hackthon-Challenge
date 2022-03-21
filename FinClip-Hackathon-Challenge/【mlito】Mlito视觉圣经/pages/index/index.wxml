@@ -1,0 +1,60 @@
+<view class="jpage indexa">
+
+
+<van-sticky>
+   <navbar ></navbar>
+       <view class="nav_footer" style="margin-top:{{bnavHeight}}px;"></view>
+    <!-- <view class="nav_footer" style="margin-top:{{bnavHeight}}px;">
+      <image src="https://www.mlito.com/wp-content/uploads/lite-back-50-50.svg" class="nav_footer_goback"></image>
+
+      <view class="nav_footer_title">{{navTitle}}</view>
+
+      <image mode="heightFix" src="https://www.mlito.com/wp-content/uploads/lite-back-50-50.svg" class="nav_footer_left"></image>
+
+      <image mode="heightFix" src="https://www.mlito.com/wp-content/uploads/lite-topic-50-50.svg" class="nav_footer_right"></image>
+      
+      <view class="nav_footer_rt">
+        <span>空间</span>
+        <span>全球</span>
+        <span>国家</span>
+      </view>
+      
+    </view> -->
+</van-sticky>
+
+
+
+
+
+
+<view class="zdy" style="margin-top:{{bnavHeight}}px;">
+
+    <swiper class='swiperClass' autoplay indicator-color="rgba(0,0,0,0)" indicator-active-color="rgba(0,0,0,0)" indicator-dots  interval="30000" duration="300" previous-margin="30px" next-margin="30px" circular bindchange="bindchange" style="height: {{clientHeight?clientHeight+'px':'auto'}}" >
+
+      <block wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item class="jswiper-item "  >
+
+        <view class="jswiper-itemb {{swiperIndex == index ? 'active' : 'quiet'}}">
+          <image src="{{item.tp1}}" bindtap="index_more" data-sj="{{item.wz}}" data-id="{{index+1}}" class="slide-image slide-image1" mode="widthFix"></image>
+          <image src="{{item.tp2}}" bindtap="index_more" data-sj="{{item.wz}}"data-id="{{index+1}}" class="slide-image slide-image2 " mode='widthFix'></image>
+          <div class="wz">
+            <span wx:for="{{item.wz}}" wx:key="index" wx:for-item="itemName" bindtap="toliebiao"data-id="{{itemName.link}}">{{itemName.name}}</span>
+          </div>
+         
+        </view>
+         <div class="fwz">
+            <span wx:for="{{item.fwz}}" wx:key="index" wx:for-item="fitemName">{{fitemName}}</span>
+          </div>
+
+      </swiper-item>
+      </block>
+
+    </swiper>
+
+
+</view>
+
+
+
+
+</view>

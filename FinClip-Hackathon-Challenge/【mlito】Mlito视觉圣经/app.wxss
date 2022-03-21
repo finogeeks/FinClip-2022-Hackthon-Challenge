@@ -1,0 +1,111 @@
+@import "/miniprogram_npm/@vant/weapp/common/index.wxss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.space {
+  height:20rpx;
+  background-color: #F2f2f2;
+}
+.safeAreaOldPaddingBttom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.safeAreaNewPaddingBttom{
+  padding-bottom: constant(safe-area-inset-bottom);  
+}
+
+.safeAreaOldMarginBttom {
+  margin-bottom: env(safe-area-inset-bottom);
+}
+.safeAreaNewMarginBttom{
+  margin-bottom: constant(safe-area-inset-bottom);  
+}
+
+.no-data {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.no-data .line {
+  width:132rpx;
+  height:2rpx;
+  background: #999;
+}
+.no-data .txt {
+  font-size:26rpx;
+  color:rgba(153,153,153,1);
+  margin: 0 16rpx;
+}
+.ad-img {
+  width: 100vw;
+}
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 6rpx;
+  color: #fff;
+  font-size: 18rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e64340;
+  border: 1rpx solid #fff;
+  border-radius: 50%;
+}
+.vw100 {
+  width: 100vw !important;
+}
+
+page {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica,
+    Segoe UI, Arial, Roboto, 'PingFang SC', 'miui', 'Hiragino Sans GB', 'Microsoft Yahei',
+    sans-serif;
+}
+.block-btn {
+  padding: 0 32rpx;
+}
+
+.safe-bottom-box {
+  position: fixed;
+  bottom: calc(env(safe-area-inset-bottom) / 2);
+  left: 0;
+  width: 100vw;
+}
+.characteristic {
+  padding: 0 24rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+
+.nav_footer{  width: 100%; height: auto; display: block; float: left; position: relative; z-index: 9999999;
+  /* border-top: 1rpx solid #d4d4d4;  */
+}
+.nav_footer_goback{ width: 80rpx; height: 80rpx; display: block; float: left;margin-right: 10rpx;margin-top: 10rpx; margin-left: 0rpx; }
+.nav_footer_title{width: auto; height: 50rpx; line-height: 50rpx; display: block; float: left; font-size: 30rpx;color: #000; margin-top: 15rpx; }
+
+.nav_footer_right{width: auto; height: 50rpx;  display: block; float: right; margin: 25rpx 40rpx 0 20rpx;}
+.nav_footer_left{width: auto; height: 80rpx; display: block; float: left; margin: 10rpx 0 0 0;}
+.nav_footer_rt{width: 400rpx; height: 50rpx;  display: block; float: right; margin: 25rpx 0 0 0; line-height: 50rpx;overflow-y: auto;font-size: 30rpx;color: #000;    white-space: nowrap;text-align: right;}
+.nav_footer_rt span{ margin-right: 40rpx; text-align: right;}
+
+
+::-webkit-scrollbar {
+  display: none; 
+}
+
+.jdbgg{ width: 100%; height: auto; display: block; float: left; margin: 20rpx 0 0;}
+
+.vtt{
+   width: 380rpx; height: 380rpx; position: fixed; top: 30%; left:185rpx; z-index: 99999999; background: url("https://www.mlito.com/wp-content/uploads/new-vip-lite-gopay.svg") no-repeat; background-size: 380rpx 380rpx;
+}
+
+
+/* .indexa .nav_top{border: 0px !important;} */

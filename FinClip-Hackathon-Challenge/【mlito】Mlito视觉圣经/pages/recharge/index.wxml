@@ -1,0 +1,16 @@
+<van-field
+  label="充值金额"
+  model:value="{{ amount }}"
+  size="large"
+  type="digit"
+  focus
+  clearable
+  required
+  placeholder="请输入充值金额"
+/>
+<van-grid custom-class="rechargeSendRules" wx:if="{{ rechargeSendRules }}" column-num="3" square gutter="{{ 10 }}" clickable>
+  <van-grid-item wx:for="{{ rechargeSendRules }}" icon="balance-o" text="¥{{item.confine}}" badge="{{item.send ? '送 ¥' + item.send : ''}}" bind:click="rechargeAmount" data-confine="{{item.confine}}" data-send="{{item.send}}" />
+</van-grid>
+<view class="block-btn">
+  <van-button type="primary" block round bind:click="bindSave">立即充值</van-button>
+</view>
