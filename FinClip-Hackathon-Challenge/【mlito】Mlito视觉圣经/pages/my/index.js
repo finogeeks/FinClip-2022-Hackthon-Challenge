@@ -31,7 +31,7 @@ Page({
 	},
   onShow() {
     const _this = this
-    
+    console.log("onShowonShow");
     AUTH.checkHasLogined().then(isLogined => {
       console.log("isLoginedisLogined",isLogined);
       if (isLogined) {
@@ -49,7 +49,7 @@ Page({
         console.log(234324324);
         
         wx.navigateTo({
-          url:"/pages/login/index"
+          url:"/pages/login/login"
         })
 
         // AUTH.authorize().then(res => {

@@ -38,7 +38,7 @@
 
 <block wx:if="{{ userInfoStatus == 2 }}">
   <view class="header-box">
-    <image class="avatar" src="{{ apiUserInfoMap.base.avatarUrl }}" mode="aspectFill"></image>
+    <image class="avatar" src="{{ apiUserInfoMap.base.avatarUrl?apiUserInfoMap.base.avatarUrl:'https://dcdn.it120.cc/2022/02/28/78204382-4f1a-431f-bb63-78cb5379c726.png' }}" mode="aspectFill"></image>
     <view class="r">
       <view class="uid">用户ID: {{ apiUserInfoMap.base.id }}</view>
       <view class="nick">{{ apiUserInfoMap.base.nick }}</view>
