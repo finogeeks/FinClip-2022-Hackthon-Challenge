@@ -1,0 +1,34 @@
+<view class="guest-photos-container">
+    <view class="guest-photos-header">
+        <view class="guset-photos-title font-title">
+      100%真实客片
+    </view>
+        <view class="guset-photos-tabs">
+            <view class="guset-photos-tab" wx:if="{{tab_index<4}}" wx:for="{{packageList}}" wx:for-index="tab_index" wx:for-item="tab" wx:key="j">
+                <view bindtap="openMenuHandler" class="{{tab.selected?'guset-photos-green':''}}" data-index="{{tab_index}}">{{tab.title+tab.slogan}}</view>
+                <view class="guset-photos-subtabs" wx:if="{{tab.selected&&tab.isOpen}}">
+                    <view bindtap="filterPhotosHandler" class="guset-photos-subtab" data-index="{{index}}" data-pindex="{{tab_index}}" wx:for="{{tab.children}}" wx:key="s">
+                        <view class="{{item.selected?'guset-photos-green':''}}">{{item.title}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="guest-photos-list">
+        <view class="guest-photos-column">
+            <view bindtap="previewBigImgHandler" class="guest-photos-item" data-index="{{index}}" wx:if="{{index%2==0}}" wx:for="{{photoList}}" wx:for-item="img" wx:key="f">
+                <view class="guest-photos-img">
+                    <image mode="widthFix" src="{{img.url.raw}}" style=""></image>
+                </view>
+            </view>
+        </view>
+        <view class="guest-photos-column">
+            <view bindtap="previewBigImgHandler" class="guest-photos-item" data-index="{{index}}" wx:if="{{index%2!=0}}" wx:for="{{photoList}}" wx:for-item="img" wx:key="f">
+                <view class="guest-photos-img">
+                    <image mode="widthFix" src="{{img.url.raw}}" style=""></image>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="guset-photos-mask" wx:if="{{showMask}}"></view>
+</view>

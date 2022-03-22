@@ -1,0 +1,30 @@
+.order-login-container button {
+    width: 580rpx;
+    height: 100rpx;
+    line-height: 94rpx;
+    margin-bottom: 32rpx;
+    text-align: center;
+    display: block;
+}
+
+.order-login-container image {
+    width: 440rpx;
+    height: auto;
+    display: block;
+    margin: 120rpx auto 88rpx auto;
+}
+
+.button-auto-login {
+    width: 100%;
+    margin-top: 50rpx;
+    background-color: #07c160;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 10rpx;
+}
+
+.login-tip {
+    font-size: 28rpx;
+    margin-top: 90rpx;
+    text-align: center;
+}

@@ -1,0 +1,145 @@
+<view class="page-container" wx:if="{{loaded}}">
+    <view class="page-title">
+        我的订单
+        <!-- <button bindtap="onExitTestEnv" class="btn-debug button-filled-red" wx:if="{{isTestEnv}}">退出测试环境</button> -->
+    </view>
+    <view class="order-list">
+        <view class="empty-label" wx:if="{{loaded&&!orderList2.length}}">暂无订单</view>
+        <view bindtap="gotoOrderDetail" class="order-item" data-orderid="{{order.orderInfo.id}}" wx:for="{{orderList2}}" wx:for-index="order_index" wx:for-item="order" wx:key="o">
+            <view class="order-process" style="display:none">
+                <view class="order-process-item" style="height:20rpx;">
+                    <view class="order-process-state" wx:if="{{order.orderInfo.status == '0' && !order.orderInfo.pingtuanOpenId}}">
+                        已下单
+                    </view>
+                    <view class="order-process-state" wx:if="{{order.orderInfo.status == '0' && order.orderInfo.pingtuanOpenId}}">
+                        待支付
+                    </view>
+                    <view class="order-process-state" wx:if="{{order.orderInfo.status == '-1' && !order.orderInfo.pingtuanOpenId}}">
+                        已下单
+                    </view>
+                    <view class="order-process-state" wx:if="{{order.orderInfo.status == '-1' && order.orderInfo.pingtuanOpenId}}">
+                        已取消
+                    </view>
+                    <view class="order-process-state" wx:if="{{order.orderInfo.status == '1' && !order.orderInfo.pingtuanOpenId}}">
+                        已下单
+                    </view>
+                    <view class="order-process-state" wx:if="{{order.orderInfo.status == '1' && order.orderInfo.pingtuanOpenId}}">
+                        待拍摄
+                    </view>
+                    <view class="order-process-state" wx:if="{{order.orderInfo.status == '2'}}">
+                        已完成
+                    </view>
+                    <view class="order-process-state" wx:if="{{order.orderInfo.status == '3'}}">
+                        已完成
+                    </view>
+                    <view class="order-process-state" wx:if="{{order.orderInfo.status == '4'}}">
+                        已完成
+                    </view>
+                </view>
+            </view>
+            <view class="take-photo-info">
+                <view class="take-photo-title">订单信息</view>
+                <view class="take-photo-package">订单编号: {{order.orderInfo.id}}</view>
+                <view class="take-photo-package">下单时间: {{order.orderInfo.dateAdd}}</view>
+                <view wx:if="{{order.orderInfo.pingtuanOpenId}}">
+                    <view wx:if="{{order.goods[0].goodsId == '1xx'}}">
+                        <view class="take-photo-package">订单金额: 1111 元</view>
+                        <view class="take-photo-package">支付定金: {{order.goods[0].amount}} 元</view>
+                        <view class="take-photo-package">
+                            未付尾款: {{1111 - order.goods[0].amount}} 元
+                        </view>
+                    </view>
+                    <view wx:else>
+                        <view class="take-photo-package">订单金额: {{order.orderInfo.amount}} 元</view>
+                    </view>
+                </view>
+                <view wx:else>
+                    <view class="take-photo-package" wx:if='{{order.extJson["全款"]!=0}}'>
+                        订单金额: {{order.extJson["全款"]}}
+                    </view>
+                </view>
+                <!-- <view class="take-photo-package" wx:if="{{!order.orderInfo.pingtuanOpenId}}">支付定金: {{order.extJson["定金"]}} 元</view>
+                <view class="take-photo-package" wx:if="{{!order.orderInfo.pingtuanOpenId}}">订单余款: {{order.extJson["余款"]}} 元</view> -->
+            </view>
+            <wxs module="foo">
+            var timeChn = function (val) {
+                var aa = val.replace('套餐名称:', '');
+                return aa;
+            }
+            module.exports = {
+            timeChn: timeChn
+            }
+            </wxs>
+            <view class="take-photo-info">
+                <view class="take-photo-title">拍摄套餐</view>
+                <bolck wx:if="{{!order.orderInfo.pingtuanOpenId}}">
+                    <bolck wx:if="{{order.extJson['套餐']}}">
+                        <bolck wx:for="{{order.extJson['套餐']}}">
+                            <view class="take-photo-package">{{item}}</view>
+                        </bolck>
+                    </bolck>
+                    <bolck wx:else>
+                        <view class="take-photo-package" wx:if="{{!order.orderInfo.pingtuanOpenId}}">
+                            {{order.goods[0].goodsName}}: {{foo.timeChn(order.goods[0].property)}}
+                        </view>
+                    </bolck>
+                </bolck>
+                <!-- <view class="take-photo-package" wx:if="{{!order.orderInfo.pingtuanOpenId}}">{{order.goods[0].goodsName}}: {{foo.timeChn(order.goods[0].property)}}</view> -->
+                <view class="take-photo-package" wx:else>拼团商品: {{order.goods[0].goodsName}}</view>
+            </view>
+            <view class="take-photo-info">
+                <view class="take-photo-title">宝贝信息</view>
+                <view class="take-photo-package">宝贝姓名: {{order.extJson["宝宝姓名"]}}</view>
+                <view wx:if="{{!order.orderInfo.pingtuanOpenId}}" class="take-photo-package">
+                    宝贝小名: {{order.extJson["宝宝小名"]}}
+                </view>
+                <view wx:if="{{!order.orderInfo.pingtuanOpenId}}" class="take-photo-package">
+                    宝贝性别: {{order.extJson["宝宝性别"]}}
+                </view>
+                <view wx:if="{{!order.orderInfo.pingtuanOpenId}}" class="take-photo-package">
+                    宝贝生日: {{order.extJson["宝宝生日"]}}
+                </view>
+                <view wx:if="{{!order.orderInfo.pingtuanOpenId}}" class="take-photo-package"></view>
+            </view>
+            <view class="take-photo-info">
+                <view class="take-photo-title">预订电话</view>
+                <view class="take-photo-package" wx:if="{{!order.orderInfo.pingtuanOpenId}}">
+                    {{order.extJson["家长称呼"]}}: {{order.extJson["手机"]}}
+                </view>
+                <view class="take-photo-package" wx:else>{{order.extJson["联系电话"]}}</view>
+            </view>
+
+            <view bindtap="pxtx" class="button-filled-green" style="text-align: center; width: 100%;background: none;border: 0;color: #099e08;" data-orderid="{{order.orderInfo.id}}" data-amount="{{order.orderInfo.amount}}" data-time="{{order.orderInfo.dateAdd}}" data-nr="{{order.goods[0].goodsName}}" data-jq="{{order.orderInfo.amount}}元" hoverClass="button-filled-green-hover" data-pingtuanOpenId="{{order.orderInfo.pingtuanOpenId}}" wx:if="{{order.orderInfo.status != '0' && order.orderInfo.status != '-1' && order.orderInfo.pingtuanOpenId && order.orderInfo.amount != '69'}}">
+                拼团详情
+            </view>
+
+            <view class="order-button-group">
+                <button catchtap="checkTipsHandler" class="button-bordered-gray" hoverClass="button-bordered-gray-hover" wx:if="{{order.orderInfo.status == '1'}}">
+                    拍摄前注意事项
+                </button>
+
+                <button catchtap="onPayOrder" class="button-filled-green button-filled-green11" data-orderid="{{order.orderInfo.id}}" data-amount="{{order.orderInfo.amount}}" data-time="{{order.orderInfo.dateAdd}}" data-nr="{{order.goods[0].goodsName}}" data-jq="{{order.orderInfo.amount}}元" hoverClass="button-filled-green-hover" wx:if="{{order.orderInfo.status == '0' && order.orderInfo.pingtuanOpenId}}">
+                    支付
+                </button>
+
+<!-- 
+                <button catchtap="onPayOrder" class="button-filled-green button-filled-green22" data-orderid="{{order.orderInfo.id}}" data-amount="{{order.orderInfo.amount}}" data-time="{{order.orderInfo.dateAdd}}" data-nr="{{order.goods[0].goodsName}}-{{foo.timeChn(order.goods[0].property)}}" data-jq="{{order.extJson['全款']}}元 (定金：{{order.extJson['定金']}}元 + 余款：{{order.extJson['余款']}}元)" hoverClass="button-filled-green-hover" wx:if="{{order.orderInfo.status == '0' && !order.orderInfo.pingtuanOpenId}}">
+                    支付定金
+                </button> -->
+
+                <view catchtap="jumpHanlder" class="label-disabled" hoverClass="button-bordered-gray-hover" wx:if="{{order.orderInfo.status == '-1'}}">
+                    订单已取消
+                </view>
+                <button catchtap="onReschedule" class="button-bordered-gray" hoverClass="button-bordered-gray-hover" wx:if="{{order.orderInfo.status == '1' && order.orderInfo.pingtuanOpenId}}">
+                    已支付
+                </button>
+                <button catchtap="onReschedule" class="button-bordered-gray" hoverClass="button-bordered-gray-hover" wx:if="{{order.orderInfo.status == '1' && !order.orderInfo.pingtuanOpenId}}">
+                    定金已支付
+                </button>
+                <view catchtap="jumpHanlder" class="label-disabled" hoverClass="button-bordered-gray-hover" wx:if="{{order.orderInfo.status == '3'}}">
+                    订单已完成
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

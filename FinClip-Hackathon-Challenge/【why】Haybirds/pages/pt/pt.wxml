@@ -1,0 +1,88 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class="order-detail-container {{isIpx?'fix-iphonex-container':''}}">
+
+    <view class="p15">
+
+        <view class="top">
+
+            <view  bindtap="bindViewTap"  class="p15_1"><image src="https://www.zhitujiu.com/wp-admin/pt/img/p15_1.png" style="width:225rpx;height:75rpx"></image></view>
+
+            <image src="https://www.zhitujiu.com/wp-admin/pt/img/p15_2.png" class="p15_2" style="width:110rpx;height:76rpx"></image>
+
+       
+
+        </view>
+            <image src="https://www.zhitujiu.com/wp-admin/pt/img/p15_6.png" class="p15_6" style="width:600rpx;height:356rpx"></image>
+            <image src="https://www.zhitujiu.com/wp-admin/pt/img/p15_3.png" class="p15_3" style="width:600rpx;height:74rpx"></image>
+
+        <form class="form" bindsubmit="onSubmit" >
+
+            <view class="f_p"><label>宝宝姓名</label><input type="text" name="宝宝姓名" placeholder="此处填写姓名" value="{{bbxm}}"></input></view>
+
+            <view class="f_p"><label>联系电话</label><input type="text" name="联系电话" placeholder="此处填写联系方式"  value="{{lxdh}}"></input></view>
+
+            <image src="https://www.zhitujiu.com/wp-admin/pt/img/p15_4.png" class="p15_4"></image>
+
+            <button class="p15_5 sub"  formType="submit">
+                <image src="https://www.zhitujiu.com/wp-admin/pt/img/p15_5.png"></image>
+            </button>
+
+        </form>
+
+        
+
+    </view>
+
+
+
+
+<!-- 
+    
+    <view class="font-title order-detail-title">确认订单</view>
+    <view class="order-infos">
+        <view class="order-info-list">
+            <view class="order-info-head">
+                <view>套餐</view>
+                <view>金额</view>
+            </view>
+            <view class="order-info-item">
+                <view>{{cart.xd_goods.basicInfo.name}}/{{cart.xd_propertyChildIds_name}}</view>
+                <view class="order-price">￥{{cart.xd_quankuan}}元</view>
+            </view>
+
+        </view>
+        <view class="order-already-pay">
+            <text>应付定金 </text>
+            <text class="amount">￥{{cart.xd_dingjin}}</text>
+        </view>
+        <view class="order-surplus-pay">拍摄当天支付剩余的 ￥{{cart.yukuan}}</view>
+        <view class="order-agreement">
+            <checkbox-group bindchange="checkboxChange">
+                <label class="weui-cell weui-check__label">
+                    <checkbox bindchange="checkboxChange" checked="{{aggreed}}" class="weui-check" value="true"></checkbox>
+                    <view class="weui-cell__hd weui-check__hd_in-checkbox">
+                        <icon class="weui-icon-checkbox_circle" size="23" type="circle" wx:if="{{!aggreed}}"></icon>
+                        <icon class="weui-icon-checkbox_success" size="23" type="success" wx:if="{{aggreed}}"></icon>
+                    </view>
+          您已阅读并同意
+          <view bindtap="openAgreement" style="color: #7db1f9;">《haybirds儿童摄影服务协议》</view>
+                </label>
+            </checkbox-group>
+        </view>
+        <view class="order-details-tip">
+            <view class="order-tip-title">{{title}}</view>
+            <view class="order-tip-content">
+                <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+            </view>
+        </view>
+    </view>
+    <form bindreset="formReset" bindsubmit="onSubmit" reportSubmit="true">
+        <view class="button-bottom {{isIpx?'fix-iphonex-button':''}}">
+            <button class="button {{aggreed?'':'button-disabled'}}" disabled="{{!aggreed}}" formType="submit">支付定金</button>
+        </view>
+    </form> -->
+
+
+
+    
+</view>

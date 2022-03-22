@@ -1,0 +1,147 @@
+@import "../../wuBaseWxss/0.wxss";
+@import "../../components/package-info/index.wxss";
+
+page {
+    padding-bottom: 40rpx;
+}
+
+.nico-package {
+}
+
+.nico-package .scroll-view {
+    padding: 10px 0;
+    height: 376rpx;
+    white-space: nowrap;
+}
+
+.nico-package .scroll-view-item {
+    height: 376rpx;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.nico-package .scroll-view-item image {
+    width: auto;
+    height: 376rpx;
+}
+
+.package-item {
+    margin-top: 40rpx;
+    margin-bottom: 40rpx;
+}
+
+.package-intro {
+    margin-top: 40rpx;
+    padding: 0 30rpx;
+    text-align: center;
+}
+
+.package-intro>view {
+    margin: 12rpx 0;
+}
+
+.package-title {
+    font-size: 44rpx;
+    font-weight: bold;
+    font-family: 'HelveticaNeue-Bold','Helvetica-Bold';
+}
+
+.package-subtitle {
+    font-size: 26rpx;
+}
+
+.package-promise {
+    font-size: 44rpx;
+    font-weight: lighter;
+    color: #9a9a9a;
+}
+
+.artwork-banner {
+    display: block;
+}
+
+.artwork-banner image {
+    width: 100%;
+    height: 500rpx;
+}
+
+.artwork-banner swiper {
+    height: 500rpx;
+}
+
+.package-gallery {
+}
+
+.artwork-theme-groups {
+    height: 900rpx;
+    margin-top: 20rpx;
+}
+
+.artwork-theme-groups swiper {
+    height: 100%;
+}
+
+.artwork-theme-group {
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20rpx;
+    color: #101010;
+    background: #fff;
+    margin-left: 10rpx;
+}
+
+.artwork-theme-item {
+    width: 236rpx;
+    height: 390rpx;
+    display: inline-block;
+    word-break: break-all;
+    margin: 6rpx 4rpx 20rpx;
+    font-weight: bold;
+    line-height: 46rpx;
+    border-radius: 4rpx;
+    text-align: center;
+}
+
+.artwork-theme-item image {
+    width: 236rpx;
+    height: 346rpx;
+    display: block;
+    margin-bottom: 10rpx;
+    background: #F8F8FA;
+}
+
+.bday-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    text-align: center;
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+}
+
+.bday-modal image {
+    width: 664rpx;
+    height: 896rpx;
+    margin: 100rpx auto;
+    border-radius: 24rpx;
+}
+
+.bday-banner {
+    text-align: center;
+    height: 340rpx;
+}
+
+.bday-banner image {
+    width: 650rpx;
+    height: 300rpx;
+    margin: 30rpx 0;
+}
+

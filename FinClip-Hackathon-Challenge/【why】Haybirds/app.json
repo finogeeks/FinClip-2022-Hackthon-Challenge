@@ -1,0 +1,71 @@
+{
+  "pages": [
+    "pages/artworks/artworks",
+    "pages/ages/ages",
+    "pages/kf/faq",
+    "pages/login/login",
+    "pages/goods-details/index",
+    "pages/goods-details/poster",
+    "pages/goodsdetails/goodsdetails",
+    "pages/goodsdetails/poster",
+    "pages/agreement2/agreement",
+    "pages/pt2/pt",
+    "pages/webview_pt/webview_pt",
+    "pages/stores/stores",
+    "pages/pt/pt",
+    "pages/agreement/agreement",
+    "pages/product-detail/product-detail",
+    "pages/orders/orders",
+    "pages/themes/themes",
+    "pages/guest-photos/guest-photos",
+    "pages/order-detail/order-detail",
+    "pages/order-confirm/order-confirm",
+    "pages/faq/faq",
+    "pages/order-info/order-info",
+    "pages/photos/photos",
+    "pages/webview/webview",
+    "pages/index/index",
+    "pages/zx/zx",
+    "pages/order-info2/order-info",
+    "pages/order-confirm2/order-confirm"
+  ],
+  "window": {
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#6d6e71",
+    "color": "#bbbbbd",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/artworks/artworks",
+        "text": "预定拍摄",
+        "iconPath": "assets/icon-camera-active.png",
+        "selectedIconPath": "assets/icon-camera.png"
+      },
+      {
+        "pagePath": "pages/goods-details/index",
+        "text": "拼团抢购",
+        "iconPath": "assets/icon-pt-active.png",
+        "selectedIconPath": "assets/icon-pt.png"
+      },
+      {
+        "pagePath": "pages/orders/orders",
+        "text": "我的订单",
+        "iconPath": "assets/icon-orders-active.png",
+        "selectedIconPath": "assets/icon-orders.png"
+      },
+      {
+        "pagePath": "pages/kf/faq",
+        "text": "咨询客服",
+        "iconPath": "assets/icon-kf-active.png",
+        "selectedIconPath": "assets/icon-kf.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

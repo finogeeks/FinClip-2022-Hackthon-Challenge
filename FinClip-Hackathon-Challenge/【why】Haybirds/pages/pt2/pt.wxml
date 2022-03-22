@@ -1,0 +1,98 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class="order-detail-container {{isIpx?'fix-iphonex-container':''}}">
+
+    <view class="p15">
+
+        <view class="top">
+
+            <!-- <view  bindtap="bindViewTap"  class="p15_1"><image src="https://api.mlito.com/pt/img/pb.png" style="width:225rpx;height:75rpx"></image></view> -->
+
+            <!-- <image src="https://api.mlito.com/pt/img/p15_2.png" class="p15_2" style="width:110rpx;height:76rpx"></image> -->
+
+
+
+        </view>
+            <image wx:if="{{wr}}" src="https://api.mlito.com/haybirds/pt5.png?112" class="p15_6" style="width:600rpx;height:356rpx"></image>
+            <image  wx:if="{{!wr}}"src="https://api.mlito.com/haybirds/pt8.png?1123" class="p15_6" style="width:600rpx;height:356rpx"></image>
+            <image src="https://api.mlito.com/haybirds/p15_3.png?123223413123" class="p15_3" style="width:600rpx;height:74rpx"></image>
+
+        <form class="form" bindsubmit="onSubmit" >
+
+            <view class="f_p"><label>宝宝姓名</label><input type="text" name="宝宝姓名" placeholder="此处填写姓名" value="{{bbxm}}"></input></view>
+
+            <view class="f_p"><label>宝宝性别</label>
+            
+            <!-- <input type="text" name="宝宝性别" placeholder="此处填写性别" value="{{bbxb}}"></input> -->
+            
+            
+                    <view class="weui-cell__bd radio-group weui-input xbxz">
+                        <radio-group bindchange="bindRadioChange">
+                            <label class=" weui-check__label" wx:for="{{radioItems}}" wx:key="value">
+                                <radio checked="{{item.checked}}" class="weui-check" name="宝宝性别" value="{{item.value}}"></radio>
+                                <view class="weui-cell__hd weui-check__hd_in-checkbox">
+                                    <icon class="weui-icon-checkbox_circle" size="23" type="circle" wx:if="{{!item.checked}}"></icon>
+                                    <icon class="weui-icon-checkbox_success" color="#ffba19" size="23" type="success" wx:if="{{item.checked}}"></icon>
+                                </view>
+                                <view class="weui-label">{{item.name}}</view>
+                            </label>
+                        </radio-group>
+                    </view>
+
+            </view>
+
+            <view class="f_p"><label>宝宝生日</label>
+            <!-- <input type="text" name="宝宝年龄" placeholder="此处填写年龄" value="{{bbnl}}"></input> -->
+                    <view class="weui-cell__bd box_sr">
+                        <picker bindchange="bindDateChange" mode="date" name="宝宝生日" start="2000-01-01" value="{{bbsr}}">
+                            <view class="weui-input">{{bbsr||'请选择生日'}}</view>
+                        </picker>
+                    </view>
+            
+            </view>
+
+            <view class="f_p"><label>联系电话</label><input type="text" name="联系电话" maxlength="11"  placeholder="此处填写联系方式"  value="{{lxdh}}"></input></view>
+
+            <view class="order-infos">
+                        <view class="order-agreement">
+                                <checkbox-group bindchange="checkboxChange">
+                                    <label class="weui-cell weui-check__label">
+                                        <checkbox bindchange="checkboxChange" checked="{{aggreed}}" class="weui-check" value="true"></checkbox>
+                                        <view class="weui-cell__hd weui-check__hd_in-checkbox" style="margin:10rpx 10rpx 0 0">
+                                            <icon class="weui-icon-checkbox_circle" size="23" type="circle" wx:if="{{!aggreed}}"></icon>
+                                            <icon class="weui-icon-checkbox_success" color="#ffba19" size="23" type="success" wx:if="{{aggreed}}"></icon>
+                                        </view>您已阅读并同意<view bindtap="openAgreement" style="color: #ffffff;">《haybirds儿童摄影服务协议》</view>
+                                    </label>
+                                </checkbox-group>
+                            </view>
+            </view>
+
+            
+
+
+              <view class="button-bottom {{isIpx?'fix-iphonex-button':''}}">
+                    <button class="button {{aggreed?'':'button-disabled'}}" disabled="{{!aggreed}}" formType="submit">付款</button>
+              </view>
+
+
+
+        </form>
+
+        
+
+    </view>
+
+
+
+
+
+    
+
+ 
+    <!-- <form bindreset="formReset" bindsubmit="onSubmit" reportSubmit="true">
+      
+    </form> -->
+
+
+
+    
+</view>

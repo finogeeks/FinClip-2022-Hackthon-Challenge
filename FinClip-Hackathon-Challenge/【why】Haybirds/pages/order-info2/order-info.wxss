@@ -1,0 +1,119 @@
+@import "../../wuBaseWxss/2.wxss";
+
+.page-container {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 100rpx;
+    box-sizing: border-box;
+}
+
+.nico-order-info {
+    padding-right: 0;
+}
+
+.weui-cell_input {
+    padding-left: 30rpx;
+}
+
+.weui-cells_after-title {
+    margin-top: 20rpx;
+}
+
+.weui-cells_after-title:before,.weui-cells_after-title:after {
+    border: none;
+}
+
+.weui-agree {
+    margin-top: 30rpx;
+}
+
+.weui-cells__title {
+    margin-top: 40rpx;
+}
+
+.weui-btn-area {
+    margin: 20rpx 0 0;
+}
+
+.weui-btn-area .weui-btn {
+    border-radius: 0;
+}
+
+.weui-cell__bd input.weui-input {
+}
+
+.weui-label {
+    width: 200rpx;
+}
+
+checkbox-group {
+    display: flex;
+}
+
+checkbox-group .weui-check__label {
+    flex: 1;
+    display: flex;
+}
+
+checkbox-group .weui-check__label .weui-check__hd_in-checkbox {
+    flex: 1;
+}
+
+checkbox-group .weui-check__label .weui-check__hd_in-checkbox icon {
+    margin-bottom: 8rpx;
+    line-height: 1;
+}
+
+radio-group {
+    display: flex;
+}
+
+radio-group .weui-check__label {
+    flex: 1;
+    display: flex;
+}
+
+radio-group .weui-check__label .weui-check__hd_in-checkbox {
+    flex: 1;
+}
+
+radio-group .weui-check__label .weui-check__hd_in-checkbox icon {
+    margin-bottom: 8rpx;
+    line-height: 1;
+}
+
+radio-group .weui-label {
+    width: 100%;
+}
+
+.shipping_address {
+    font-size: 12px;
+    padding-bottom: 20rpx;
+}
+
+.shipping_address text {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.btn-shipping_address {
+    padding-top: 20rpx;
+}
+
+.weui-btn-area {
+    margin: 20rpx 0 0;
+    background-color: #fff;
+}
+
+.btn-submit {
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    border-radius: 0;
+    color: #fff;
+    background: #09bb07;
+    font-size: 36rpx;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

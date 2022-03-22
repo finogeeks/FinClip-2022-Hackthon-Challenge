@@ -1,0 +1,59 @@
+@import "../../wuBaseWxss/0.wxss";
+
+.nico-package {
+    margin-top: 220rpx;
+}
+
+.nico-package .scroll-view {
+    padding: 10px 0;
+    height: 376rpx;
+    white-space: nowrap;
+}
+
+.nico-package .scroll-view-item {
+    height: 376rpx;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.nico-package .scroll-view-item image {
+    width: auto;
+    height: 376rpx;
+}
+
+.package-item {
+    margin-bottom: 80rpx;
+}
+
+.package-intro {
+    margin-top: 34rpx;
+    padding: 0 30rpx;
+    text-align: center;
+}
+
+.package-intro>view {
+    margin: 10rpx 0;
+}
+
+.package-title {
+    font-size: 44rpx;
+    font-weight: bold;
+    font-family: 'HelveticaNeue-Bold','Helvetica-Bold';
+}
+
+.package-subtitle {
+    font-size: 26rpx;
+}
+
+.package-promise {
+    font-size: 44rpx;
+    font-weight: lighter;
+    color: #9a9a9a;
+}
+
+.artwork-tabs {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}

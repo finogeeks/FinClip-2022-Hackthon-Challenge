@@ -1,0 +1,12 @@
+<view class="order-login-container">
+    <image src="https://api.mlito.com/haybirds/logo.jpg" mode="widthFix"></image>
+    <!-- <view class="login-tip">登录后继续操作</view> -->
+     <!-- <button  class="button-filled-green button-auto-login" type="primary" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">微信快捷登录</button>
+     -->
+
+        <button  class="button-filled-green button-auto-login" type="primary" bindtap="updateUserInfo">微信快捷登录</button>
+
+
+    
+    <!-- <button bindtap="loginByPhone" class="button-bordered-gray button-login">手机验证登录</button> -->
+</view>

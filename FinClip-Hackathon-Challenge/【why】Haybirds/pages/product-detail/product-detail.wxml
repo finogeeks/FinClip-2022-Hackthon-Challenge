@@ -1,0 +1,178 @@
+<view class="page-container {{isIpx?'fix-iphonex-container':''}}" wx:if="{{packageLoaded}}">
+
+    <!-- 分类 -->
+    <view class="artwork-tabs" wx:if="{{brandType==='nj'}}">
+
+        <view bindtap="onSwitchTab" class="artwork-tab bg-color {{item.active?'artwork-tab-active':''}}" data-type="{{brandType}}" data-categoryid="{{item.id}}" wx:for="{{artworkTabs}}" wx:for-index="tab_index" wx:key="j" style="background:#{{item.barCode}};">
+            <view class="artwork-tab-item-title">{{item.tags}}</view>
+            <view class="artwork-tab-item-subtitle">{{item.name}}</view>
+        </view>
+
+    </view>
+
+    <!-- 幻灯片 -->
+    <view class="artwork-banner" wx:if="{{defaultBanners.length}}" >
+
+        <swiper autoplay="true" duration="400" indicatorDots="{{defaultBanners.length>1?true:false}}" interval="5000">
+            <swiper-item wx:for="{{defaultBanners}}" wx:key="item">
+                <image bindtap="gotoBannerLink" class="slide-image" data-link="{{item.linkUrl}}" lazyLoad="true" src="{{item.picUrl}}" style="width: 750rpx; height: 270rpx"></image>
+            </swiper-item>
+        </swiper>
+        
+    </view>
+
+    <!-- vip图片 -->
+    <view class="vip-banner">
+        <image lazyLoad="true" mode="aspectFit" src="{{vipBanner}}"></image>
+    </view>
+
+
+
+
+
+    <view class="package-list-container nico-package">
+        <view class="package-list">
+
+
+
+            <!-- 内容 -->
+            <view class="package-item package-item-dz" wx:for="{{categories}}" wx:for-index="categoryIndex" wx:for-item="category" wx:key="p" >
+                <view class="package-intro" wx:if="{{duozhu}}">
+                    <view class="package-title">{{category.basicInfo.name}}</view>
+                    <view class="package-subtitle">{{category.basicInfo.characteristic}}</view>
+                    <view class="package-promise">{{category.basicInfo.videoId}}</view>
+                </view>
+
+                <view class="package-intro" wx:if="{{!duozhu}}">
+                    <view class="package-title">{{category.name}}</view>
+                    <view class="package-subtitle">{{category.characteristic}}</view>
+                    <view class="package-promise">{{category.videoId}}</view>
+                </view>
+
+
+
+                <!-- 套餐 -->
+                <view class="package-info">
+
+                                <view class="package-choose">请选择套餐</view>
+
+                                <view class="package-options" style="display:block;width:90%;float: left;padding: 0;margin: 0 5% 20rpx;">
+                                        <view bindtouchstart="onSelectPackage" data-ps="{{package.propertyChildIds}}" data-bt="{{package.title}}" data-dingjin="{{package.price}}" data-quankuan="{{package.quankuan}}"  class="package-option {{package.id===packageId?'active':''}}" data-categoryid="{{categoryId}}" data-packageid="{{package.id}}"  wx:for="{{packages}}" wx:for-index="packageIndex" wx:for-item="package" wx:key="p"  style="width:48%;margin: 0 1% 10rpx;float:left; {{package.id===packageId?'background-color:#'+color+' !important;border:1px solid #'+color+'!important;':''}}">
+
+                                                <view class="package-option-checkbox">
+                                                    <image class="checkbox" src="../../assets/checkbox.png" wx:if="{{package.id===packageId}}"></image>
+                                                </view>
+
+                                                <view class="package-option-title">{{package.title}}</view>
+
+                                                <view class="package-option-content">
+                                                    <span class="price">{{package.quankuan}}</span>
+                                                    <span class="label">元</span>
+                                                    
+                                                    <view class="kyth" wx:if="{{package.originalPrice!=0}}"><span class="kyth1">{{package.originalPrice}}元</span><span class="kyth2">多组优惠</span></view>
+                                                </view>
+
+                                        </view>
+                                </view>
+
+                    
+                                <view class="package-feature" style="float: left;margin-left:5%;" wx:if="{{package.id===packageId}}" wx:for="{{packages}}" wx:for-index="packageIndex" wx:for-item="package" wx:key="p">
+
+                                    <view class="package-feature-items">
+                                        <view class="package-feature-item vi-border-{{className}}" wx:for="{{package.options}}" wx:for-index="optionIndex" wx:for-item="option" wx:key="o" style="border: 1rpx solid #{{color}};">
+                                            <view class="package-feature-item-title vi-bg-{{className}}" style="background-color: #{{color}};">{{option.title}}</view>
+                                            <view class="package-feature-item-content">{{option.content}}</view>
+                                        </view>
+                                    </view>
+
+                                    <view class="package-description vi-border-{{className}}" style="border: 1rpx solid  #{{color}};">
+                                        <view class="package-description-title vi-bg-{{className}}" style="background-color: #{{color}};">特别说明</view>
+                                        <view class="package-description-content">
+                                            <text>{{package.description}}</text>
+                                        </view>
+                                    </view>
+
+
+                                </view>
+
+                    </view>
+
+
+                <view class="package-intro">
+                    <view class="package-title package-title-ddddd">100%真实客片</view>
+                </view>
+
+                
+                <!-- 多组照片 -->
+                <block wx:if="{{category_packages.length>0}}" wx:for="{{category_packages}}" wx:for-index="packageIndex" wx:for-item="package" wx:key="pkg" wx:if="{{duozhu}}">
+           
+               
+                        
+                        <view class="package-intro" wx:for="{{package}}"  wx:for-index="idx2" wx:key="pg2"  wx:for-item="package2" wx:if="{{package2.remark}}">
+                            <view class="package-title">{{package2.title}}</view>
+                            <view class="package-subtitle" wx:if="{{package2.remark}}" >{{package2.remark}}</view>
+                        </view>
+
+
+                        <view class="package-gallery">
+                            <scroll-view class="scroll-view" scrollX="true" style="width: 100%">
+                                <view class="scroll-view-item" wx:for="{{package}}" wx:for-index="idx" wx:key="pg" wx:for-item="item">
+
+                                    <image data-lj="{{item.linkUrl}}"  bindtap="imgYu" data-list="{{package}}" data-category="{{item.id}}" data-package="{{item.businessId}}" data-url="{{item.picUrl}}"  mode="aspectFit" src="{{item.picUrl}}"  bindload="imageLoad" data-index="{{ idx }}"  style="width: {{376*1620/1080}}rpx" wx:if="{{idx!==item.length && item.linkUrl == 'h'}}" data-src="{{item.picUrl}}">></image>
+
+                                    <image data-lj="{{item.linkUrl}}"  bindtap="imgYu" data-list="{{package}}" data-category="{{item.id}}" data-package="{{item.businessId}}" data-url="{{item.picUrl}}"  mode="aspectFit" src="{{item.picUrl}}"  bindload="imageLoad" data-index="{{ idx }}"  style="width: {{376*1280/1920}}rpx" wx:if="{{idx!==item.length && item.linkUrl != 'h'}}" data-src="{{item.picUrl}}">></image>
+
+                                    
+                                </view>
+                            </scroll-view>
+                            <view class="dots">
+                                <view class="dot"></view>
+                                <view class="dot"></view>
+                                <view class="dot"></view>
+                            </view>
+                        </view>
+
+                     
+  
+
+                </block>
+
+
+                <!-- 单组照片 -->
+                <view class="package-gallery" wx:if="{{!duozhu}}">
+
+                    <scroll-view class="scroll-view" scrollX="true" style="width: 100%">
+                        <view class="scroll-view-item" wx:if="{{category.bannerlist}}" wx:for="{{category.bannerlist}}" wx:for-index="idx" wx:key="cg">
+                            <!-- <image bindtap="imgYu" data-list="{{category.bannerlist}}" data-category="{{item.id}}" data-package="{{category.id}}" data-url="{{item.picUrl}}" lazyLoad="false" mode="aspectFit" src="{{item.picUrl}}" style="width: {{imgwidth}}rpx" bindload="imageLoad"  wx:if="{{idx!==item.length}}" data-src="{{item.picUrl}}"></image> -->
+
+                             <image bindtap="imgYu" data-list="{{category.bannerlist}}" data-category="{{item.id}}" data-package="{{category.id}}" data-url="{{item.picUrl}}" lazyLoad="false" mode="aspectFit" src="{{item.picUrl}}"bindload="imageLoad"  style="width: {{376*1620/1080}}rpx" wx:if="{{idx!==item.length && item.linkUrl == 'h'}}" data-src="{{item.picUrl}}"></image>
+
+
+                              <image bindtap="imgYu" data-list="{{category.bannerlist}}" data-category="{{item.id}}" data-package="{{category.id}}" data-url="{{item.picUrl}}" lazyLoad="false" mode="aspectFit" src="{{item.picUrl}}"bindload="imageLoad"  style="width: {{376*1280/1920}}rpx" wx:if="{{idx!==item.length && item.linkUrl != 'h'}}"  data-src="{{item.picUrl}}"></image>
+
+                   
+
+
+
+                        </view>
+                    </scroll-view>
+
+                    <view class="dots">
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                        <view class="dot"></view>
+                    </view>
+                </view>
+
+            </view>
+
+        </view>
+
+    </view>
+
+    
+    <!-- 下一步 -->
+    <view class="button-bottom {{isIpx?'fix-iphonex-button':''}}">
+        <button bindgetuserinfo="onGotUserInfo" class="button" lang="zh_CN" openType="getUserInfo">下一步</button>
+    </view>
+</view>

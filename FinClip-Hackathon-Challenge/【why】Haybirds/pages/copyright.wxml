@@ -1,0 +1,13 @@
+<template name="copyright">
+    <view class="page__bd nico-brand">
+        <view class="nico-brand-logo">
+            <image mode="aspectFit" src="https://api.mlito.com/haybirds/a5c8129c-e2f5-4e3c-8de8-2cb43233798a.png"></image>
+        </view>
+        <view class="nico-brand-copyright">
+    由<b>haybirds</b>强力驱动
+    </view>
+        <view class="nico-brand-copyright">
+    POWERED BY haybirds
+    </view>
+    </view>
+</template>

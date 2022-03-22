@@ -1,0 +1,29 @@
+<import src="../copyright.wxml"></import>
+<import src="../artwork-tabs.wxml"></import>
+<scroll-view scrollY="true" wx:if="{{packageLoaded}}">
+    <template is="artwork-tabs" data="{{artworkTabs:artworkTabs}}"></template>
+    <view class="package-list-container nico-package">
+        <view class="package-list">
+            <view class="package-item" wx:if="{{category.packages.length&&category.hasSubItems}}" wx:for="{{categories}}" wx:for-index="categoryIndex" wx:for-item="category" wx:key="p">
+                <view class="package-intro">
+                    <view class="package-title">小主题</view>
+                    <view class="package-subtitle">适合年龄：23个月以上，提供服装/可自带衣服</view>
+                    <view class="package-promise">100%保证客片效果/丰富主题选择</view>
+                </view>
+                <block wx:if="{{package.gallery.length>0}}" wx:for="{{category.packages}}" wx:for-index="packageIndex" wx:for-item="package" wx:key="pkg">
+                    <view class="package-intro">
+                        <view class="package-title">{{package.title}}</view>
+                    </view>
+                    <view class="package-gallery">
+                        <scroll-view class="scroll-view" scrollX="true" style="width: 100%">
+                            <view class="scroll-view-item" wx:for="{{package.gallery}}" wx:for-index="idx" wx:key="pg">
+                                <image bindtap="onPreviewSlides" data-category="{{category.id}}" data-package="{{package.id}}" data-url="{{item.url.raw}}" lazyLoad="true" mode="aspectFit" src="{{item.url.raw}}?x-oss-process=style/h752" style="width: {{376*item.meta.width/item.meta.height}}rpx" wx:if="{{idx!==package.gallery.length-1}}"></image>
+                            </view>
+                        </scroll-view>
+                    </view>
+                </block>
+            </view>
+        </view>
+        <template is="copyright" data></template>
+    </view>
+</scroll-view>

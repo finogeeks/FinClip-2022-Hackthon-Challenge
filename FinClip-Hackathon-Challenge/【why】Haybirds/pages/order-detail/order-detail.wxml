@@ -1,0 +1,67 @@
+<view class="order-detail-container" wx:if="{{loaded}}">
+    <view class="font-title order-detail-title">订单信息</view>
+    <view class="order-infos">
+        <view class="order-info-list">
+            <view class="order-info-head">
+                <view>套餐</view>
+                <view>金额</view>
+            </view>
+            <view class="order-info-item" wx:for="{{order.order_items}}">
+                <view>{{item.item.title}}</view>
+                <view class="order-price">￥{{item.item.price}}元</view>
+            </view>
+            <view class="order-info-item" wx:if="{{order.coupon&&order.coupon.id==='bday1810'}}">
+                <view>优惠</view>
+                <view class="order-price">88折生日特惠</view>
+            </view>
+        </view>
+        <view class="order-already-pay" wx:if="{{order.state==='created'}}">
+            <text>应付定金 </text>
+            <text class="amount">￥{{order.prepaid_amount}}</text>
+            <view class="order-surplus-pay" wx:if="{{order.payment_state==='unpaid'}}">
+        拍摄当天支付剩余的 ￥{{order.actual_amount-order.prepaid_amount}}
+      </view>
+        </view>
+        <view class="order-already-pay" wx:if="{{order.state==='revoked'}}">
+            <text>订单已取消</text>
+            <view class="order-remind" wx:if="{{order.payment_state==='refund_issued'}}">
+      退款处理中，通常在1-3个工作日内原路退回。
+      </view>
+            <view class="order-remind" wx:if="{{order.payment_state==='refund_settled'}}">
+      退款已到账，请查收款项。
+      </view>
+        </view>
+        <view class="order-already-pay" wx:if="{{order.state==='closed'}}">
+            <text>订单已关闭</text>
+        </view>
+        <view class="order-already-pay" wx:if="{{order.state==='finished'}}">
+            <text>订单服务完毕</text>
+        </view>
+        <view class="order-already-pay" wx:if="{{order.state==='confirmed'&&order.payment_state==='prepaid'}}">
+            <text>已付定金 </text>
+            <text style="color: #09bb07;">￥{{order.prepaid_amount}}</text>
+        </view>
+        <view class="order-surplus-pay" wx:if="{{order.state==='confirmed'}}">
+            <block wx:if="{{order.payment_state==='prepaid'}}">
+      拍摄当天支付剩余的 ￥{{order.payable_amount}}
+      </block>
+            <view style="color: #09bb07;" wx:if="{{order.payment_state==='paid_in_full'}}">已付清全款</view>
+        </view>
+        <view class="order-agreement">
+      您已阅读并同意
+      <view bindtap="openAgreement" style="color: #7db1f9;">《haybirds儿童摄影服务协议》</view>
+        </view>
+        <view class="order-details-tip">
+            <view class="order-tip-title">温馨提示</view>
+            <view class="order-tip-content">
+                <view>- 每位预定成功的客人，都会有一次免费更改档期的机会； </view>
+                <view>- 从第二次开始，需支付定金的 50% 作为改期手续费； </view>
+                <view>- 修改的档期只能安排工作日拍摄，望谅解； </view>
+                <view>- 离拍摄日期三天内（包含拍摄当天）更改档期需全额定金作为档期空缺的费用。</view>
+            </view>
+        </view>
+    </view>
+    <view bindtap="onPayOrder" class="button-bottom {{isIpx?'fix-iphonex-button':''}}" wx:if="{{prepay_action}}">
+        <button class="button" type="button">支付定金</button>
+    </view>
+</view>

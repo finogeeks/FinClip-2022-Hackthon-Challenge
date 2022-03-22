@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "haybirds儿童摄影",
+    "usingComponents": {
+        "cs-qr": "../../components/cs-qr/index"
+    }
+}

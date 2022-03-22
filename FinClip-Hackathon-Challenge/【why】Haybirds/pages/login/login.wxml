@@ -1,0 +1,15 @@
+<view class="order-login-container">
+    <image src="https://api.mlito.com/haybirds/logo.jpg" class="logo" mode="widthFix"></image>
+
+    <view class="in">
+        <view class="inl">用户名</view>
+        <input type="text" class="inr"  bindinput="yhh" placeholder="请输入手机号/邮箱"/>
+    </view>
+    <view class="in">
+        <view class="inl">密码</view>
+        <input type="safe-password" password maxlength="20"  bindinput="mm" class="inr"  placeholder="请输入数字或字母密码"/>
+    </view>
+
+    <view  class="bt" bindtap="jlogin">登录/注册</view>
+
+</view>

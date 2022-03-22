@@ -1,0 +1,8 @@
+<template name="artwork-tabs">
+    <view class="artwork-tabs">
+        <view bindtap="onSwitchTab" class="artwork-tab bg-color-{{item.className}} {{item.active?'artwork-tab-active':''}}" data-brand="{{brandType}}" data-categoryid="{{item.category_id}}" wx:for="{{artworkTabs}}" wx:for-index="tab_index" wx:key="j" style="background:{{item.color}};">
+            <view class="artwork-tab-item-title">{{item.category_title}}</view>
+            <view class="artwork-tab-item-subtitle">{{item.category_slogan}}</view>
+        </view>
+    </view>
+</template>

@@ -1,0 +1,59 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class="order-detail-container {{isIpx?'fix-iphonex-container':''}}">
+    <view class="font-title order-detail-title">确认订单</view>
+    <view class="order-infos">
+        <view class="order-info-list">
+            <view class="order-info-head">
+                <view>套餐</view>
+                <!-- <view>金额</view> -->
+            </view>
+
+
+            <view class="order-info-item" wx:for="{{cart}}" wx:key="index">
+                <view>{{item.category.name}}/{{item.basicInfo.name}}</view>
+                <!-- <view class="order-price">￥{{item.basicInfo.minPrice}}元</view> -->
+            </view>
+
+        </view>
+
+        <!-- <view class="order-already-pay">
+            <text>应付定金</text>
+            <text class="amount">￥{{dj}}</text>
+        </view> -->
+
+        <view class="order-surplus-pay" style="color:#20b922;font-size:30rpx;">拍下主题后请联系客服选择套餐付定约档</view>
+
+        <!-- <view class="order-surplus-pay" wx:if="{{zj==0}}">拍下主题后请联系客服选择套餐付定约档</view>
+        <view class="order-surplus-pay" wx:else>拍摄当天支付剩余的 ￥{{wk}}</view> -->
+
+        <!-- <view class="order-surplus-pay">拍摄当天支付剩余的 ￥{{wk}} <i wx:if="{{yh!=0}}">(已优惠{{yh}}元)</i></view> -->
+
+        <view class="order-agreement">
+            <checkbox-group bindchange="checkboxChange">
+                <label class="weui-cell weui-check__label">
+                    <checkbox bindchange="checkboxChange" checked="{{aggreed}}" class="weui-check" value="true"></checkbox>
+                    <view class="weui-cell__hd weui-check__hd_in-checkbox">
+                        <icon class="weui-icon-checkbox_circle" size="23" type="circle" wx:if="{{!aggreed}}"></icon>
+                        <icon class="weui-icon-checkbox_success" size="23" type="success" wx:if="{{aggreed}}"></icon>
+                    </view>
+          您已阅读并同意
+          <view bindtap="openAgreement" style="color: #7db1f9;">《haybirds儿童摄影服务协议》</view>
+                </label>
+            </checkbox-group>
+        </view>
+
+        <view class="order-details-tip">
+            <view class="order-tip-title">{{title}}</view>
+            <view class="order-tip-content">
+                  <rich-text nodes="{{xxnr}}"></rich-text>
+
+            </view>
+        </view>
+
+    </view>
+    <form bindreset="formReset" bindsubmit="onSubmit" reportSubmit="true">
+        <view class="button-bottom {{isIpx?'fix-iphonex-button':''}}">
+            <button class="button {{aggreed?'':'button-disabled'}}" disabled="{{!aggreed}}" formType="submit">立即下单</button>
+        </view>
+    </form>
+</view>

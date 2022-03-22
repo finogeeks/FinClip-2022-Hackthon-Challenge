@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "选择套餐",
+    "navigationBarBackgroundColor": "#e5e5e5",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cs-qr": "../../components/cs-qr/index"
+    }
+}
