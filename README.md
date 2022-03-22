@@ -9,7 +9,7 @@
 
 ## 项目介绍
 
-[Issue 链接](https://github.com/finogeeks/FinClip-2022-Hackthon-Challenge/issues/xxx)
+[Issue 链接](https://github.com/jsjjl/FinClip-2022-Hackthon-Challenge)
 
 以博学的态度，客观的传递富有灵感的美好元素。
 
@@ -30,5 +30,5 @@ Mlito视觉圣经是全球领先的视觉门户和视觉产品及家居提供商
 
 
 ## 应用场景
+![img](https://mlito.com/fc/1.jpg) ![img](https://mlito.com/fc/2.jpg) ![img](https://mlito.com/fc/3.jpg) ![img](https://mlito.com/fc/4.jpg) ![img](https://mlito.com/fc/5.jpg) ![img](https://mlito.com/fc/6.jpg) ![img](https://mlito.com/fc/7.jpg) ![img](https://mlito.com/fc/8.jpg)
 
-可以对参赛作品在一些场景中进行演示（可以为GIF、截图、视频等）
