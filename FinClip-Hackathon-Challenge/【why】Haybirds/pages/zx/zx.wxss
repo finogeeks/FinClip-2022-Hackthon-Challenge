@@ -1,0 +1,244 @@
+@import "../../wuBaseWxss/0.wxss";
+
+@import "../../components/package-info/index.wxss";
+
+zx {
+    width: 100%;
+    height: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background: #ffffff;
+}
+
+.zxl{
+    width: 150rpx;
+    height: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background: #e5e5e5;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-bottom: 190rpx;
+    padding-top: 20rpx;
+}
+
+.zxr{
+    width: 600rpx;
+    height: 100%;
+    position: fixed; 
+    top: 0;
+    right: 0;
+    background: #ffffff;
+    z-index: 2;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-bottom: 190rpx;
+}
+
+.zxf{
+    width: 750rpx;
+    height:190rpx;
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    /* background: #797979; */
+    z-index: 3;
+}
+.zxfb{
+    width: 750rpx;
+    height:190rpx;
+    display: block;
+    float: left;
+    position: relative;
+    z-index: 99;
+}
+
+
+.zxla{ width: 140rpx; height: 65rpx; text-align:center;display: block; color: #000; float: right; font-size: 23rpx; line-height: 65rpx; border-radius: 10rpx 0 0 10rpx; }
+.zxla.active{ background: #ffffff;}
+
+.zxrb{ width: 260rpx; height: auto; display: block; float: left; margin: 30rpx 0 0 30rpx;}
+.zxrb1{ width: 260rpx; height: 390rpx; display: block; float: left; margin: 0 0 15rpx 0;}
+.zxrb2{ width: 100%; height: 40rpx; line-height: 40rpx; overflow: hidden;  text-overflow: ellipsis;display: block; float: left; margin: 0 0 15rpx 0; text-align: center; font-size: 25rpx; color: #000;white-space:nowrap;}
+.zxrb3{ width: 50rpx; height: 50rpx; display: block; float: left; margin: 5rpx 105rpx 0;}
+
+
+
+
+.zxft{
+    width: 750rpx;
+    height:55rpx;
+    display: block;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background: #f7f9fb;
+}
+
+
+.zxff{
+    width: 750rpx;
+    height:135rpx;
+    display: block;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    background: #797979;
+}
+
+
+.zxftr{ width: auto; height: auto; display: block; float: right;}
+.zxftr span{width: auto; height: auto; display: block; float: left; color: #000; font-size: 20rpx; margin: 16rpx 0rpx 0 0;}
+.zxftr em{width: auto; height: auto; display: block; float: left;  color: #02c104;font-size: 28rpx; font-weight: bold; margin: 10rpx 5rpx 0 0;}
+.zxftr b{width: auto; height: auto; display: block; float: left;  color: #000;font-size: 28rpx; font-weight: bold; margin: 10rpx 20rpx 0 0;}
+.zxftr i{width: auto; height: auto; display: block; float: left;  color: #ff0000; font-size: 28rpx; font-weight: bold; margin: 10rpx 20rpx 0 -10rpx;}
+.zxftl{ width: auto; height: auto; display: block; float: left; margin: 15rpx 0 0 175rpx;  color: #000; font-size: 20rpx; }
+.zxftl em{ color: #02c104; font-size: 25rpx; font-weight: bold; margin: 0 5rpx;}
+
+.zxffl{ width: 110rpx; height: 110rpx;display: block; float: left; position: relative; z-index: 9; margin: -30rpx 0 0 30rpx;}
+.zxffl1{width: 110rpx; height: 110rpx;display: block; float: left; position: absolute; top: 0; left: 0; z-index: 1;}
+.zxffl2{width: 40rpx; height: 40rpx;display: block; float: left; background: #ff0000; border: 3rpx solid #ffffff;  position: absolute; top: 0; right:-20rpx; z-index: 1; text-align: center; line-height: 40rpx; color: #ffffff; border-radius: 40rpx; font-size: 28rpx;}
+
+.zxffc{ width: 300rpx; height: 90rpx; display: block; float: left; margin: 20rpx 0 0 50rpx; font-size: 19rpx; color: #ffffff; line-height: 30rpx; overflow: hidden;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+    font-family: "Bitstream";
+}
+
+.zxffr{ width: 190rpx; height: 70rpx; display: block; float: right; border-radius: 10rpx; background: #949494; text-align: center; font-size: 30rpx; color: #d4d4d4; line-height: 70rpx; margin: 20rpx 20rpx 0 0; }
+.zxffr.active{ background: #02c104; color: #ffffff; }
+
+
+
+
+
+
+.tcc{
+    width: 100%; height: 100%; display: block; float: left; position:fixed; top: 0; left: 0; z-index: 99999999999;
+}
+.tccbg{
+    width: 100%; height: 100%; display: block; float: left; position:fixed; top: 0; left: 0; z-index: 99999999999;background: rgba(0,0,0,.8);
+}
+
+.tccb{
+    width: 710rpx; height: 1190rpx; display: block; float: left; position:relative; margin: 20rpx 20rpx 0; z-index: 9999999999999;background: #3a3a3a;
+    border-radius: 20rpx;
+}
+
+.tccb1{
+    width: 100%; height: auto; display: block; float: left; position:relative; margin: 20rpx 0 20rpx ;   text-align: center;
+}
+.tccb1 span{
+    width: 100%; height: auto; display: block; float: left; position:relative; font-size: 50rpx ;color: #ffffff; 
+}
+
+.tccb1 p{
+    width: 100%; height: auto; display: block; float: left; position:relative; font-size: 22rpx ;color: #ffffff; margin: 10rpx 0 0 0;
+}
+
+.zxfflgb{
+    width: 50rpx; height: 50rpx; display: block; float: left; position:absolute; top: 20rpx; right: 20rpx; z-index:99999999999999;
+}
+
+
+.tccb2{ width: 100%; height: 380rpx; display: block; float: left; background: #fff;}
+
+.gdt{width: 100%; height: 380rpx; display: block; float: left; background: #fff; overflow-x: scroll ;  white-space:nowrap;       /*第二层设置  不换行  */
+    overflow-y:hidden;     display: flex;
+    display: -webkit-box;
+    flex-direction: column; }
+.gdttp{width: 253rpx; height: 380rpx;  display: inline-block;  }
+
+
+
+.tccb3{ width: 100%; height: auto; display: block; float: left;     margin-top: 50rpx;}
+.tccb31{
+    width: 100%; height: auto; display: block; float: left; position:relative; text-align: center; font-size: 20rpx ;color: #00c200; margin: 10rpx 0 0 0;
+    padding-bottom: 20rpx;
+}
+
+.tccb32{
+    width: 350rpx; height: auto; display: table; float: none ;  margin: 0 auto 0;
+    position: relative;
+    border: 2rpx solid #00c200; color: #fff;
+}
+.tccb321{
+    width: 100%; height: 60rpx; line-height:40rpx; display: block; float: left ; padding:10rpx 5rpx 0 ; border-bottom:1rpx solid #898989; font-size: 32rpx;
+}
+
+.tccb322{
+    width: 100%; height: 45rpx; display: block; float: left ; padding:0 0 0 ; border-bottom: 1rpx solid #898989; font-size: 20rpx;
+}
+.tccb322 span{ width: 30%; padding: 0 5rpx; height: 45rpx; line-height: 45rpx; display: block; float: left ; overflow: hidden;border-right: 1rpx solid #898989; }
+.tccb322 span:last-child{border:0}
+.tccb323{
+    width: 100%; height: 45rpx; line-height: 45rpx; display: block; float: left ; padding:0 5rpx 0 ; font-size: 20rpx;
+}
+
+.xz{
+    width: 50rpx; height: 50rpx; display: block; float: left ;  position: absolute; top: -25rpx; right: -25rpx; z-index: 99999;
+}
+
+.tccb4{ width:660rpx; height: auto; display: block; float: left;  margin: 20rpx 25rpx; border-top: 2rpx solid #858585; padding: 20rpx; }
+
+
+.tccb41{
+    width: 140rpx; height: auto; display: block; float: left ; font-size: 28rpx; color: #ffffff; 
+}
+
+.tccb42{
+    width: 480rpx; height: auto; display: block; float: right ; font-size: 22rpx; color: #d0d0d0;  line-height: 30rpx; margin-top: 5rpx;
+}
+
+.jgw{
+    width: 290rpx; height: 80rpx; border-radius: 15rpx; margin: 25rpx 210rpx 0; display: block; float: left ; font-size: 30rpx; color: #ffffff;  background: #00c200; text-align: center; line-height: 80rpx;
+}
+
+.t2{ width: 100%; height: auto; display: block; position:absolute; left: 0; bottom:190rpx; background: #ffffff; z-index: 99;}
+.t2t{
+    width: 100%; height: 70rpx; display: block; float: left; background: #f8f8f8;
+}
+
+.t2t span{
+    width:auto; height: 70rpx; display: block; float: left; background: #f8f8f8; font-size: 30rpx;line-height: 70rpx; color: #000; margin:  0 0 0 20rpx;
+}
+.t2t p{
+    width:auto; height: 70rpx; display: block; float: right; background: #f8f8f8; font-size: 25rpx;line-height: 70rpx; color: #737373; margin:  0 20rpx 0 0;
+}
+
+.t2bj{ width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 1; background: rgba(0,0,0,.5);}
+.t2c{ width:100%; height: auto; display: block; float: left;  }
+
+.t2cp{ width:100%; height: 90rpx; display: block; float: left; border-bottom: 1px solid #f4f4f4;  }
+
+.t2cp span{ width:auto; height: 90rpx;  line-height: 90rpx; display: block; float: left; margin: 0 0 0 20rpx; font-size: 28rpx; color: #000000;  }
+
+.t2cp p{ width:auto; height: 90rpx; line-height: 90rpx; display: block; float: right; margin: 0 20rpx 0 0 ; font-size: 28rpx; color: #000000;  }
+
+.t2cp p image{width:30rpx; height: 30rpx; display: block; float: right; margin: 30rpx 0 0 20rpx; }
+
+.myou{ width: 100%; height: auto; display: block;float: left; text-align: center; margin: 100rpx 0 0 0; color: #d0d0d0; }
+
+.zx{
+    font-family: "Bitstream" !important;
+}
+
+.tccb3my{ margin-top: 250rpx;}
+
+.jgw{ margin-bottom: 100rpx;margin-top: 110rpx;}
+.jgwy222{ margin-bottom: 40rpx;margin-top: 50rpx;}
+
+.tccb322x{ margin-top:60rpx;}

@@ -1,0 +1,22 @@
+<view class="store-choose-container" wx:if="{{loaded}}">
+    <view class="store-choose-title font-title">选择室内外拍摄</view>
+    <view class="store-choose-subtitle">我们将为您展示不同套系的拍摄风格</view>
+    <view class="store-list">
+
+
+        <view bindtap="itemTapHandler" class="store-item border-color-{{index}}" data-index="{{index}}" data-storeid="{{item.id}}" data-type="{{item.type}}" wx:for="{{items}}" wx:key="store" wx:if="{{item.id == 99029||item.id == 99030 }}">
+            <view class="title">
+                <view class="store-active-name {{item.location?'':'item-center'}}">{{item.name}}</view>
+                <view class="store-active-info" wx:if="{{item.location}}">{{item.location}}</view>
+            </view>
+            <view class="subtitle {{item.icon_new?'has-icon-new':''}}">
+                <view>{{item.key}}</view>
+                <i class="icon-new" wx:if="{{item.icon_new}}"></i>
+            </view>
+        </view>
+        
+    </view>
+    <!-- <view style="display:none;">
+        <image mode="aspectFit" src="https://nitro-prod.oss-cn-hangzhou.aliyuncs.com/public/bday1810-mp-splash.png"></image>
+    </view> -->
+</view>

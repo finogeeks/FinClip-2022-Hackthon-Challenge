@@ -1,0 +1,12 @@
+.artwork-banner {
+    display: block;
+}
+
+.artwork-banner image {
+    width: 100%;
+    height: 270rpx;
+}
+
+.artwork-banner swiper {
+    height: 270rpx;
+}

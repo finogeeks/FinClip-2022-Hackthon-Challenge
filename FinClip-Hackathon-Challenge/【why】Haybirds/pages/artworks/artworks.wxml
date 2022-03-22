@@ -1,0 +1,135 @@
+<scroll-view wx:if="{{packageLoaded}}">
+
+    <!-- 幻灯片 -->
+    <view class="artwork-banner" wx:if="{{defaultBanners.length}}">
+
+        <swiper autoplay="true" duration="400" indicatorDots="{{defaultBanners.length>1?true:false}}" interval="5000">
+            <swiper-item wx:for="{{defaultBanners}}" wx:key="item">
+                <image bindtap="gotoBannerLink" class="slide-image" data-link="{{item.linkUrl}}" lazyLoad="true" src="{{item.picUrl}}" style="width: 750rpx; height: 500rpx"></image>
+            </swiper-item>
+        </swiper>
+        
+    </view>
+
+
+    <!-- 分类 -->
+    <!-- <view class="artwork-tabs">
+
+        <view bindtap="onSwitchTab" class="artwork-tab bg-color {{item.active?'artwork-tab-active':''}}" data-type="nj" data-categoryid="{{item.id}}" wx:for="{{artworkTabs}}" wx:for-index="tab_index" wx:key="j" style="background:#{{item.barCode}};">
+            <view class="artwork-tab-item-title">{{item.tags}}</view>
+            <view class="artwork-tab-item-subtitle">{{item.name}}</view>
+        </view>
+
+    </view> -->
+
+
+    <view class="package-list-container nico-package" bindtap="gotozx">
+
+        <view class="package-list">
+            <!-- 小主题 -->
+            <view class="package-item  " wx:if="{{category.hasSubItems}}" wx:for="{{categories}}" data-type="nj" wx:for-index="categoryIndex" wx:for-item="category" wx:key="p">
+                <view class="package-intro">
+                    <view class="package-title">{{category.name}}系列</view>
+                    <view class="package-subtitle">{{category.characteristic}}</view>
+                    <view class="package-promise">{{category.videoId}}</view>
+                </view>
+
+                <view class="package-gallery artwork-theme-groups">
+                    <swiper autoplay="true" duration="400" indicatorDots="true" interval="5000">
+
+
+                        <swiper-item wx:for="{{themeGroups}}" wx:for-index="themeGroupIndex" wx:for-item="items" wx:key="i">
+                            <div class="artwork-theme-group">
+                                <div bindtap="gotoProductDetail" class="artwork-theme-item" data-categoryid="{{category.id}}" data-type="nj" wx:for="{{items}}" wx:key="it">
+                                    <image lazyLoad="{{themeGroupIndex<3}}" mode="aspectFill" src="{{item.picUrl}}"></image>
+                                    <text>{{item.title}}</text>
+                                </div>
+                            </div>
+                        </swiper-item>
+
+                    </swiper>
+                </view>
+
+            </view>
+
+            <!-- 其他 -->
+            <view class="package-item  " wx:if="{{category.bannerlist.length&&!category.hasSubItems}}" wx:for="{{categories}}" data-type="nj" wx:for-index="categoryIndex" wx:for-item="category" wx:key="p">
+
+                <view class="package-intro">
+                    <view class="package-title">{{category.name}}系列</view>
+                    <view class="package-subtitle">{{category.characteristic}}</view>
+                    <view class="package-promise">{{category.videoId}}</view>
+                </view>
+
+                <view class="package-gallery">
+                    <scroll-view class="scroll-view" scrollX="true" style="width: 100%">
+
+                        <view bindtap="gotoProductDetail" class="scroll-view-item" data-categoryid="{{category.id}}" data-type="nj" wx:for="{{category.bannerlist}}" wx:for-index="idx" wx:key="cg">
+
+                            <image data-package="{{category.id}}" data-url="{{item.picUrl}}" lazyLoad="false" mode="aspectFit" src="{{item.picUrl}}" bindload="imageLoad" style="width: {{376*1620/1080}}rpx" wx:if="{{idx!==item.length && item.linkUrl == 'h'}}"></image>
+
+                            <image data-package="{{category.id}}" data-url="{{item.picUrl}}" lazyLoad="false" mode="aspectFit" src="{{item.picUrl}}" bindload="imageLoad" style="width: {{376*1280/1920}}rpx" wx:if="{{idx!==item.length && item.linkUrl != 'h'}}"></image>
+
+                        </view>
+                        
+                    </scroll-view>
+
+                    
+                </view>
+                <view class="dots">
+                    <view class="dot"></view>
+                    <view class="dot"></view>
+                    <view class="dot"></view>
+                </view>
+            </view>
+            
+        </view>
+
+
+
+         <!-- <view class="package-list">
+
+            <view class="package-item" wx:if="{{category.packages.length&&category.hasSubItems}}" wx:for="{{categories}}" wx:for-index="categoryIndex" wx:for-item="category" wx:key="p">
+                <view class="package-intro">
+                    <view class="package-title">小主题系列</view>
+                    <view class="package-subtitle">适合年龄：10个月以上，提供服装/可自带衣服</view>
+                    <view class="package-promise">100%保证客片效果/丰富主题选择</view>
+                </view>
+                <view class="package-gallery artwork-theme-groups">
+                    <swiper autoplay="true" duration="400" indicatorDots="true" interval="5000">
+                        <swiper-item wx:for="{{themeGroups}}" wx:for-index="themeGroupIndex" wx:for-item="items" wx:key="i">
+                            <div class="artwork-theme-group">
+                                <div bindtap="gotoProductDetail" class="artwork-theme-item" data-categoryid="{{item.category_id}}" wx:for="{{items}}" wx:key="it">
+                                    <image lazyLoad="{{themeGroupIndex<3}}" mode="aspectFill" src="{{item.cover}}?x-oss-process=style/h752"></image>
+                                    <text>{{item.title}}</text>
+                                </div>
+                            </div>
+                        </swiper-item>
+                    </swiper>
+                </view>
+            </view>
+
+            <view class="package-item" wx:if="{{category.packages.length&&!category.hasSubItems}}" wx:for="{{categories}}" wx:for-index="categoryIndex" wx:for-item="category" wx:key="p">
+                <view class="package-intro">
+                    <view class="package-title">{{category.title}}</view>
+                    <view class="package-subtitle">{{category.mp_info.subtitle}}</view>
+                    <view class="package-promise">{{category.mp_info.slogan}}</view>
+                </view>
+                <view class="package-gallery">
+                    <scroll-view class="scroll-view" scrollX="true" style="width: 100%">
+                        <view bindtap="gotoProductDetail" class="scroll-view-item" data-categoryid="{{category.id}}" wx:if="{{category.publish}}" wx:for="{{category.gallery}}" wx:for-index="idx" wx:key="cg">
+                            <image data-package="{{package.id}}" data-url="{{item.url.raw}}" lazyLoad="false" mode="aspectFit" src="{{item.url.raw}}?x-oss-process=style/h752" style="width: {{376*item.meta.width/item.meta.height}}rpx"></image>
+                        </view>
+                    </scroll-view>
+                </view>
+                <view class="dots">
+                    <view class="dot"></view>
+                    <view class="dot"></view>
+                    <view class="dot"></view>
+                </view>
+            </view>
+            
+        </view> -->
+        <!-- <template is="copyright" data></template> -->
+    </view>
+</scroll-view>

@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/ages/ages",
+    "pages/webview_pt/webview_pt",
+    "pages/stores/stores",
+    "pages/pt/pt",
+    "pages/artworks/artworks",
+    "pages/agreement/agreement",
+    "pages/product-detail/product-detail",
+    "pages/orders/orders",
+    "pages/themes/themes",
+    "pages/guest-photos/guest-photos",
+    "pages/order-detail/order-detail",
+    "pages/order-confirm/order-confirm",
+    "pages/faq/faq",
+    "pages/login/login",
+    "pages/order-info/order-info",
+    "pages/photos/photos",
+    "pages/webview/webview",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#6d6e71",
+    "color": "#bbbbbd",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/ages/ages",
+        "text": "预定拍摄",
+        "iconPath": "assets/icon-camera-active.png",
+        "selectedIconPath": "assets/icon-camera.png"
+      },
+      {
+        "pagePath": "pages/webview_pt/webview_pt",
+        "text": "拼团抢购",
+        "iconPath": "assets/icon-pt-active.png",
+        "selectedIconPath": "assets/icon-pt.png"
+      },
+      {
+        "pagePath": "pages/orders/orders",
+        "text": "我的订单",
+        "iconPath": "assets/icon-orders-active.png",
+        "selectedIconPath": "assets/icon-orders.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

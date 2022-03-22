@@ -1,0 +1,48 @@
+<template name="package-info">
+    <view class="package-info">
+        <view class="package-choose">请选择套餐</view>
+
+        <view class="package-options">
+
+            <view bindtouchstart="onSelectPackage" class="package-option {{package.id===packageId?'active vi-bg-'+className+' vi-border-'+className:''}}" data-categoryid="{{categoryId}}" data-packageid="{{package.id}}" wx:for="{{packages}}" wx:for-index="packageIndex" wx:for-item="package" wx:key="p">
+                <view class="package-option-checkbox">
+                    <image class="checkbox" src="../../assets/checkbox.png" wx:if="{{package.id===packageId}}"></image>
+                </view>
+                <view class="package-option-title">
+        {{package.title}}
+      </view>
+                <view class="package-option-content">
+                    <span class="price">{{package.price}}</span>
+                    <span class="label">元</span>
+                </view>
+            </view>
+        </view>
+        
+        <view class="package-feature" wx:if="{{package.id===packageId}}" wx:for="{{packages}}" wx:for-index="packageIndex" wx:for-item="package" wx:key="p">
+            <view class="package-feature-items">
+                <view class="package-feature-item vi-border-{{className}}" wx:for="{{package.options}}" wx:for-index="optionIndex" wx:for-item="option" wx:key="o">
+                    <view class="package-feature-item-title vi-bg-{{className}}">
+        {{option.title}}
+        </view>
+                    <view class="package-feature-item-content">
+        {{option.content}}
+        </view>
+                </view>
+            </view>
+
+
+            <view class="package-description vi-border-{{className}}">
+                <view class="package-description-title vi-bg-{{className}}">特别说明</view>
+                <view class="package-description-content">
+                    <text>{{package.description}}</text>
+                </view>
+            </view>
+
+
+        </view>
+    </view>
+
+
+
+
+</template>

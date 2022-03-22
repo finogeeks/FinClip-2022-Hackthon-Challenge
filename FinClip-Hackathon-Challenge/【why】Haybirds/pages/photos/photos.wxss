@@ -1,0 +1,63 @@
+@import "../../wuBaseWxss/0.wxss";
+
+page {
+    width: 100vw;
+    background: #fff;
+}
+
+.photos-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.photos-title {
+    color: #353535;
+    font-weight: bold;
+    padding: 20rpx 0 50rpx 0;
+    position: relative;
+}
+
+.photos-header {
+    width: 100%;
+    padding: 0 30rpx 24rpx 30rpx;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.photos-list {
+    width: 100%;
+    padding: 20rpx 0rpx 0rpx;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.photos-column {
+    width: calc((100% - 10rpx) / 2);
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.photos-item {
+    width: 100%;
+    align-self: center;
+    margin-bottom: 14rpx;
+}
+
+.photos-img {
+    width: 100%;
+    border: 0 solid #efefef;
+    padding: 8rpx 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photos-img>image {
+    width: 94%;
+}

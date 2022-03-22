@@ -1,0 +1,72 @@
+.artwork-tabs {
+    width: 100%;
+    height: 150rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24rpx;
+    color: #101010;
+    background: #fff;
+}
+
+.artwork-mask {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 90;
+}
+
+.artwork-tab-active {
+    color: #09BB07;
+}
+
+.artwork-tab {
+    width: 100%;
+    height: 150rpx;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    transition: all .1s ease-in-out;
+}
+
+.artwork-tab-active::after {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    content: " ";
+}
+
+.artwork-tab:active {
+    transform: scale(1.1);
+    z-index: 999;
+}
+
+.artwork-tab-item-title {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'STHeitiSC-Light';
+    align-self: center;
+    padding-top: 10rpx;
+}
+
+.artwork-tab-item-subtitle {
+    color: #fff;
+    padding-top: 4rpx;
+    font-size: 10px;
+    text-align: center;
+    align-self: center;
+}

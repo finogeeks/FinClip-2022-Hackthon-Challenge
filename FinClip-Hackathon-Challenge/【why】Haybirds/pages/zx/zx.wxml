@@ -1,0 +1,142 @@
+<view class="zx">
+
+
+    <view class="zxl">
+        <view class="zxla {{tcid == 0?'active':''}}" data-id="0" bindtap="tc">全部</view>
+        <block wx:for="{{zxlb}}" wx:key="index">
+            <view class="zxla {{tcid == item.id?'active':''}}" data-id="{{item.id}}"  bindtap="tc">{{item.name}}</view>
+        </block>
+    </view>
+
+
+
+    <view class="zxr" wx:if="{{splb.length>0}}">
+
+        <view class="zxrb" wx:for="{{splb}}" wx:key="index" >
+            <image src="{{item.pic}}" class="zxrb1" data-id="{{item.id}}" bindtap="spxx"></image>
+            <span class="zxrb2" data-id="{{item.id}}" bindtap="spxx">{{item.name}}</span>
+            <image src="https://api.mlito.com/haybirds/j.png" class="zxrb3" data-id="{{item.id}}" bindtap="spxx" wx:if="{{!item.xz}}"></image>
+            <image src="https://api.mlito.com/haybirds/j2.png" class="zxrb3" data-id="{{item.id}}" wx:if="{{item.xz}}" data-jg="{{item.minPrice}}" data-name="{{item.name}}" bindtap="scgwc"></image>
+        </view>
+
+    </view>
+
+    <view class="zxr" wx:else>
+        <view class="myou">暂无套餐，敬请期待</view>
+    </view>
+
+
+
+
+
+    <view class="zxf">
+<view class="t2bj" wx:if="{{t2}}" bindtap="gb2"></view>
+        <view class="zxfb">
+
+            <view class="t2" wx:if="{{t2}}">
+                <view class="t2t">
+                    <span>已选拍摄清单</span>
+                    <p bindtap="qk">清空</p>
+                </view>
+                <view class="t2c">
+
+                    <view class="t2cp" wx:for="{{lid}}" wx:key="index">
+                        <span>{{lmc[index]}}</span>
+                        <p><em>{{ldj[index]}}元</em><image src="https://api.mlito.com/haybirds/j2.png" data-id="{{lid[index]}}"  data-jg="{{ldj[index]}}" data-name="{{lmc[index]}}" bindtap="scgwc"></image></p>
+                    </view>
+
+                </view>
+            </view>
+
+            <view class="zxft" wx:if="{{lid.length>0}}">
+                <view class="zxftl">
+                    已选<em>{{lid.length}}</em>商品
+                </view>
+                <view class="zxftr">
+                    <span>总计：</span>
+                    <em>{{zj}}</em>
+                    <b>元</b>
+                    <!-- <i wx:if="{{yh!=0}}">(已优惠{{yh}}元)</i> -->
+                </view>
+            </view>
+
+            <view class="zxff">
+                <view class="zxffl" bindtap="tc2">
+                    <image src="https://api.mlito.com/haybirds/tb.png?234" class="zxffl1"></image>
+                    <em class="zxffl2"  wx:if="{{lid.length>0}}">{{lid.length}}</em>
+                </view>
+                
+                <!-- <view class="zxffc">
+                    PSP都i发PSP都i发PSP都i发PSP都i发<br/>
+                    PSP都i发PSP都i发PSP都i发PSP都i发<br/>
+                    PSP都i发PSP都i发PSP都i发PSP都i发
+                </view> -->
+
+                <rich-text class="zxffc" nodes="{{zdydb}}"></rich-text>
+
+                <view class="zxffr active" wx:if="{{lid.length>0}}" bindtap="xhl">选好了</view>
+                <view class="zxffr" wx:else>选好了</view>
+            </view>
+
+
+        </view>
+
+    </view>
+</view>
+
+
+<!-- 弹出层 -->
+<view class="tcc" wx:if="{{tcc}}">
+    <view class="tccbg" bindtap="gbtcc"></view> 
+    <view class="tccb">
+
+       <view class="tccb1">
+           <span>{{spxx.basicInfo.name}}</span>
+           <p>{{spxx.extJson["副标题"]}}</p>
+       </view>
+
+       <image src="https://api.mlito.com/haybirds/gb.png" class="zxfflgb" bindtap="gbtcc"></image>
+
+       <view class="package-gallery"  wx:if="{{gdtplength>1}}">
+            <!-- <scroll-view class="scroll-view" scrollX="true" style="width: 100%"> -->
+                <view class="scroll-view-item gdt" >
+                    <block wx:for="{{gdtp}}" wx:for-index="idx" wx:key="pg" wx:for-item="itemtp">
+                    <image data-lj="{{itemtp.pic}}" bindtap="imgYu" data-list="{{gdtp}}" data-category="{{itemtp.id}}" data-package="{{item.businessId}}" data-url="{{itemtp.pic}}" mode="heightFix" src="{{itemtp.pic}}" class="gdttp" data-index="{{ idx }}" data-src="{{itemtp.pic}}"></image>
+                    </block>
+                </view>
+            <!-- </scroll-view> -->
+            <view class="dots">
+                <view class="dot"></view>
+                <view class="dot"></view>
+                <view class="dot"></view>
+            </view>
+        </view>
+
+       <view class="tccb3  {{gdtplength>1?'':'tccb3my'}}  {{gdtplength>1 && spxx.extJson['表格1']?'tccb322x':''}}" >
+           <!-- <view class="tccb31">左右滑动查看客片</view> -->
+
+
+           <view class="tccb32" wx:if='{{spxx.extJson["表格1"]}}'>
+               <view class="tccb321">{{spxx.extJson["表格1"]}}</view>
+               <view class="tccb322">
+                   <span >{{spxx.extJson["表格2a"]}}</span>
+                   <span >{{spxx.extJson["表格2b"]}}</span>
+                   <span >{{spxx.extJson["表格2c"]}}</span>
+               </view>
+               <view class="tccb323" >{{spxx.extJson["表格3"]}}</view>
+               <image src="https://api.mlito.com/haybirds/xz.png" class="xz"></image>
+           </view>
+       </view>
+
+       <view class="jgw {{gdtplength>1?'jgwy':''}} {{gdtplength>1 && spxx.extJson['表格1']?'jgwy222':''}}" bindtap="jrgwc" data-id="{{spxx.basicInfo.id}}" data-zxx="{{spxx}}" data-tc="{{spxx.category.name+': '+spxx.basicInfo.name}}"  data-jg="{{spxx.basicInfo.minPrice}}"  data-name="{{spxx.basicInfo.name}}">加入拍摄清单</view>
+
+       <view class="tccb4  ">
+           <view class="tccb41">
+           注意事项：
+            </view>
+            <rich-text class="tccb42" nodes="{{spxx.extJson['注意事项']}}"></rich-text>
+       </view>
+
+    </view>
+
+</view>

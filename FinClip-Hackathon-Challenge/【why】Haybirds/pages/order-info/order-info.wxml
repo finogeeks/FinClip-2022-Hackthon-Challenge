@@ -1,0 +1,90 @@
+<view class="page page-container nico-order-info {{isIpx?'fix-iphonex-container':''}}" scrollY="true">
+
+    <form bindreset="formReset" bindsubmit="formSubmit">
+        <view class="page__hd">
+            <view class="page0-title page-title">预定信息</view>
+        </view>
+        <view class="page__bd" style="padding-bottom: 120rpx;">
+            <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示</view>
+            <view class="weui-cells__title">联系方式</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">家长称呼</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" name="家长称呼" placeholder="请填写" value="{{form.contact.name}}"></input>
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">手机</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" name="手机" placeholder="请填写" value="{{form.contact.mobile}}"></input>
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">Email</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" name="Email" placeholder="用于接收选片通知" value="{{form.contact.email}}"></input>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-cells__title">宝宝信息</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">姓名</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" name="宝宝姓名" placeholder="宝宝姓名" value="{{form.child.name}}"></input>
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">小名</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input class="weui-input" name="宝宝小名" placeholder="宝宝小名" value="{{form.child.nickname}}"></input>
+                    </view>
+                </view>
+
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">性别</view>
+                    </view>
+                    <view class="weui-cell__bd radio-group weui-input">
+                        <radio-group bindchange="bindRadioChange">
+                            <label class=" weui-check__label" wx:for="{{radioItems}}" wx:key="value">
+                                <radio checked="{{item.checked}}" class="weui-check" name="宝宝性别" value="{{item.value}}"></radio>
+                                <view class="weui-cell__hd weui-check__hd_in-checkbox">
+                                    <icon class="weui-icon-checkbox_circle" size="23" type="circle" wx:if="{{!item.checked}}"></icon>
+                                    <icon class="weui-icon-checkbox_success" size="23" type="success" wx:if="{{item.checked}}"></icon>
+                                </view>
+                                <view class="weui-label">{{item.name}}</view>
+                            </label>
+                        </radio-group>
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_input">
+                    <view class="weui-cell__hd">
+                        <view class="weui-label">生日</view>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <picker bindchange="bindDateChange" mode="date" name="宝宝生日" start="2000-01-01" value="{{form.child.birthday}}">
+                            <view class="weui-input">{{form.child.birthday||'请选择生日'}}</view>
+                        </picker>
+                    </view>
+                </view>
+                
+            </view>
+          
+        </view>
+        <view bindtap="openModal" class="button-bottom {{isIpx?'fix-iphonex-button':''}} ">
+            <button class="button" formType="submit" type="primary">下一步</button>
+        </view>
+    </form>
+</view>

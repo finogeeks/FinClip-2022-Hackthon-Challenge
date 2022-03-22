@@ -1,0 +1,9 @@
+<view class="artwork-banner" wx:if="{{items.length}}">
+
+    <swiper autoplay="true" duration="400" indicatorDots="{{items.length>1?true:false}}" interval="5000">
+        <swiper-item wx:for="{{items}}" wx:key="item">
+            <image bindtap="gotoBannerLink" class="slide-image" data-link="{{item.link}}" lazyLoad="true" src="{{item.url}}" style="width: 750rpx; height: 270rpx"></image>
+        </swiper-item>
+    </swiper>
+    
+</view>

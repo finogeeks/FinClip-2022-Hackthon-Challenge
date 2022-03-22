@@ -1,0 +1,380 @@
+@import "../../wuBaseWxss/0.wxss";
+
+@import "../../components/package-info/index.wxss";
+
+page {
+    padding-bottom: 40rpx;
+}
+
+.page-container {
+    margin-bottom: 68rpx;
+    position: relative;
+}
+
+.nico-package {
+    padding-bottom: 120rpx;
+}
+
+.nico-package .scroll-view {
+    padding: 10px 0 0;
+    height: 376rpx;
+    white-space: nowrap;
+}
+
+.nico-package .scroll-view-item {
+    height: 376rpx;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.nico-package .scroll-view-item image {
+    width: auto;
+    height: 376rpx;
+}
+
+.groupon-banner {
+    width: 100%;
+}
+
+.groupon-banner image {
+    width: 100%;
+    height: 138rpx;
+}
+
+.groupon-status {
+    text-align: center;
+    font-size: 24rpx;
+    display: flex;
+    justify-content: center;
+}
+
+.groupon-status .highlight {
+    color: #20b922;
+    font-weight: 800;
+}
+
+.package-item {
+    margin-top: 40rpx;
+    margin-bottom: 40rpx;
+}
+
+.package-intro {
+    margin-top: 34rpx;
+    padding: 0 30rpx;
+    text-align: center;
+}
+
+.package-intro>view {
+    margin: 10rpx 0;
+}
+
+.package-title {
+    font-size: 44rpx;
+    font-weight: bold;
+    font-family: 'HelveticaNeue-Bold','Helvetica-Bold';
+}
+
+.package-subtitle {
+    font-size: 26rpx;
+}
+
+.package-promise {
+    font-size: 44rpx;
+    font-weight: lighter;
+    color: #9a9a9a;
+}
+
+/* .artwork-banner {
+    display: block;
+}
+
+.artwork-banner image {
+    width: 100%;
+    height: 150px;
+} */
+
+
+.artwork-banner {
+    display: block;
+}
+
+.artwork-banner image {
+    width: 100%;
+    height: 270rpx;
+}
+
+.artwork-banner swiper {
+    height: 270rpx;
+}
+
+
+
+.package-gallery {
+}
+
+.artwork-theme-groups {
+    height: 900rpx;
+    margin-top: 20rpx;
+}
+
+.artwork-theme-groups swiper {
+    height: 100%;
+}
+
+.artwork-theme-group {
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20rpx;
+    color: #101010;
+    background: #fff;
+    margin-left: 10rpx;
+}
+
+.artwork-theme-item {
+    width: 236rpx;
+    height: 390rpx;
+    display: inline-block;
+    word-break: break-all;
+    margin: 6rpx 4rpx 20rpx;
+    font-weight: bold;
+    line-height: 46rpx;
+    border-radius: 4rpx;
+    text-align: center;
+}
+
+.artwork-theme-item image {
+    width: 236rpx;
+    height: 346rpx;
+    display: block;
+    margin-bottom: 10rpx;
+    background: #F8F8FA;
+}
+
+
+
+
+
+
+
+.vi-bg-undefined,.vi-bg-default,.vi-bg-baby {
+    background-color: #d3bd55!important;
+}
+
+.vi-bg-life {
+    background-color: #acc6db!important;
+}
+
+.vi-border-default,.vi-border-undefined,.vi-border-baby {
+    border-color: #d3bd55!important;
+}
+
+.vi-border-life {
+    border-color: #acc6db!important;
+}
+
+.vi-bg-face {
+    background-color: #f04a8c!important;
+}
+
+.vi-border-face {
+    border-color: #f04a8c!important;
+}
+
+.vi-bg-look {
+    background-color: #50239e!important;
+}
+
+.vi-border-look {
+    border-color: #50239e!important;
+}
+
+.vi-bg-theme {
+    background-color: #96d1b7!important;
+}
+
+.vi-border-theme {
+    border-color: #96d1b7!important;
+}
+
+.package-info {
+    padding: 0 30rpx;
+}
+
+.package-options {
+    display: flex;
+    flex-direction: row;
+    padding: 0 10rpx;
+}
+
+.package-option {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #cccccc;
+    color: #b3b3b3;
+    border-radius: 10rpx;
+    margin: 0 10rpx 50rpx;
+    height: 140rpx;
+    position: relative;
+}
+
+.package-option.active {
+    color: #fff;
+}
+
+.package-option-checkbox {
+    position: absolute;
+    top: -28rpx;
+    right: -16rpx;
+}
+
+.package-option-checkbox .checkbox {
+    width: 68rpx;
+    height: 68rpx;
+}
+
+.package-option-title {
+    width: 100%;
+    height: 50rpx;
+    flex: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 52rpx;
+    font-weight: bold;
+    font-family: 'HelveticaNeue','Helvetica';
+    padding-top: 24rpx;
+}
+
+.package-option-content {
+    flex: 4;
+    width: 100%;
+    align-self: flex-start;
+    font-size: 54rpx;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.package-option-content span.price {
+    font-size: 38rpx;
+}
+
+.package-option-content span.label {
+    font-size: 32rpx;
+    padding: 4rpx;
+}
+
+.kyth{
+width: 40%;
+display: block;
+float: right;
+font-size: 22rpx;
+padding-top: 18rpx;
+line-height: 22rpx;
+text-align: left;
+}
+
+.kyth1{
+font-size: 20rpx;
+width:100%;
+height: auto;
+display: block;float: left;
+text-decoration: line-through;
+}
+
+.package-option.active .kyth2{color:yellow;}
+
+
+.package-choose {
+    padding: 36rpx 0;
+    font-size: 26rpx;
+    text-align: center;
+}
+
+.package-feature {
+    font-size: 12px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.package-feature-items {
+    display: flex;
+    flex-direction: row;
+}
+
+.package-feature-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1rpx solid #d3bd55;
+    border-radius: 10rpx;
+    margin: 0 4rpx 8rpx;
+    height: 120rpx;
+    overflow: hidden;
+}
+
+.package-feature-item-title {
+    flex: 4;
+    color: #fff;
+    background-color: #d3bd55;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50rpx;
+}
+
+.package-feature-item-content {
+    flex: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36rpx;
+    font-weight: lighter;
+}
+
+.package-description {
+    margin-top: 10rpx;
+    margin-bottom: 90rpx;
+    border: 1rpx solid #d3bd55;
+    border-radius: 10rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.package-description-title {
+    width: 100%;
+    height: 60rpx;
+    flex: 4;
+    color: #fff;
+    background-color: #d3bd55;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.package-description-content {
+    flex: 6;
+    display: block;
+    align-items: left;
+    justify-content: left;
+    font-family: 'HelveticaNeue-Bold','Helvetica-Bold';
+    width: 100%;
+}
+
+.package-description text {
+    flex: 1;
+    display: block;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    padding: 30rpx 20rpx;
+    font-size: 12px;
+    line-height: 1.75;
+}

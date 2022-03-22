@@ -1,0 +1,241 @@
+@import "../../wuBaseWxss/2.wxss";
+@import "/wxParse/wxParse.wxss";
+
+page {
+    width: 100vw;
+    background: #fff;
+}
+
+.order-agreement {
+    font-size: 24rpx;
+    text-align: center;
+    padding: 40rpx 0 0 30rpx;
+}
+
+.order-agreement view,.order-agreement checkbox {
+    display: inline-block;
+}
+
+.order-agreement checkbox {
+    width: 24rpx;
+    height: 24rpx;
+}
+
+.order-detail-container {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 0 30rpx 120rpx 30rpx;
+    color: #000;
+}
+
+.order-info-list {
+    width: 100%;
+}
+
+.order-info-head {
+    font-size: 24rpx;
+    display: flex;
+    width: 100%;
+    background-color: #b0b0b0;
+    color: #fff;
+    margin: 0 auto 40rpx;
+    padding: 4rpx 20rpx;
+}
+
+.order-info-head view:first-child {
+    flex: 1;
+    text-align: left;
+    padding-left: 40rpx;
+}
+
+.order-info-head view:last-child {
+    flex: 1;
+    text-align: right;
+    padding-right: 40rpx;
+}
+
+.order-info-item {
+    width: 90%;
+    height: 88rpx;
+    display: flex;
+    font-size: 38rpx;
+    color: #101010;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 0 20rpx;
+}
+
+.order-detail-title {
+    font-weight: bold;
+    padding: 40rpx 10rpx;
+}
+
+.take-photos-title {
+    font-size: 40rpx;
+    color: #353535;
+    font-weight: bold;
+    margin-bottom: 40rpx;
+}
+
+.take-photos-detail {
+    width: 100%;
+    padding: 0 10rpx;
+    margin-top: 50rpx;
+}
+
+.take-photos-info {
+    display: flex;
+    align-items: center;
+    font-size: 28rpx;
+    margin-bottom: 20rpx;
+}
+
+.take-photos-info>view:first-child {
+    color: #8C8C8C;
+    width: 180rpx;
+}
+
+.take-photos-info>view:last-child {
+    color: #101010;
+}
+
+view.take-photos-date {
+    font-weight: bold;
+}
+
+.order-infos {
+    width: 100%;
+    margin-top: 50rpx;
+    padding: 10rpx;
+}
+
+.order-info-list {
+    width: 100%;
+    border-bottom: 2rpx solid #ebebeb;
+}
+
+.order-info-item {
+    width: 100%;
+    height: 68rpx;
+    display: flex;
+    font-size: 28rpx;
+    color: #101010;
+}
+
+.order-info-item:not(:last-child) {
+    margin-bottom: 26rpx;
+}
+
+.order-info-img {
+    width: 88rpx;
+    height: 88rpx;
+    margin-right: 40rpx;
+}
+
+.order-info-img image {
+    width: 100%;
+    height: 100%;
+}
+
+.order-price {
+    margin-left: auto;
+}
+
+.order-amount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 24rpx 0;
+    font-size: 28rpx;
+}
+
+.order-amount>view:first-child,.order-coupon>view:first-child {
+    color: #878787;
+}
+
+.order-coupon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 24rpx 0;
+    font-size: 28rpx;
+}
+
+.order-real-pay {
+    text-align: right;
+    color: #E51C23;
+    font-size: 28rpx;
+    box-sizing: initial;
+    padding-top: 26rpx;
+    border-top: 1rpx solid #ebebeb;
+}
+
+.order-real-pay>text:first-child {
+    font-weight: bold;
+    margin-right: 10rpx;
+}
+
+.order-already-pay {
+    font-size: 44rpx;
+    text-align: center;
+    margin-top: 50rpx;
+    color: #65c855;
+    font-weight: bold;
+    font-family: 'HelveticaNeue-Bold','Helvetica-Bold';
+}
+
+.order-already-pay>text:first-child {
+    color: #101010;
+}
+
+.order-surplus-pay {
+    font-size: 24rpx;
+    margin-top: 22rpx;
+    color: #969696;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'HelveticaNeue-Bold','Helvetica-Bold';
+}
+
+.order-surplus-pay i{
+    color: #ff0000; 
+}
+
+.order-details-tip {
+    margin-top: 100rpx;
+    margin-bottom: 100rpx;
+}
+
+.order-tip-title {
+    color: #8C8C8C;
+    font-size: 28rpx;
+    padding-left: 10rpx;
+    margin-bottom: 46rpx;
+}
+
+.order-tip-content {
+    width: 100%;
+    word-break: break-all;
+    white-space: pre-line;
+    font-size: 24rpx;
+    color: #101010;
+}
+
+.order-tip-content>view {
+    line-height: 34rpx;
+    margin-top: 10rpx;
+}
+
+.order-pay-btn {
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    border-radius: 0;
+    color: #fff;
+    background: #09bb07;
+    font-size: 36rpx;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

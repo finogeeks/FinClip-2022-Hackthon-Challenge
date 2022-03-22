@@ -1,0 +1,191 @@
+button::after {
+    border: none;
+    outline: none;
+}
+
+.button-filled-green {
+    min-width: 320rpx;
+    height: 88rpx;
+    color: #fff;
+    background: #09bb07;
+    font-size: 32rpx;
+    display: inline-block;
+}
+
+.button-filled-green-hover {
+    background: #099e08;
+}
+
+.button-bordered-gray {
+    min-width: 320rpx;
+    height: 88rpx;
+    background: #fff;
+    color: #c2a469;
+    border: 1px solid #c2a469;
+    font-size: 32rpx;
+    display: inline-block;
+}
+
+.button-bordered-gray-hover {
+    background: #f7f5f5;
+}
+
+.login-mask {
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.login-content {
+    width: 600rpx;
+    height: 426rpx;
+    text-align: center;
+    background: #fff;
+    position: fixed;
+    top: 232rpx;
+    left: 0;
+    right: 0;
+    border-radius: 8rpx;
+    overflow: hidden;
+    margin: auto;
+}
+
+.login-step1 {
+    padding: 52rpx 0 70rpx 0;
+}
+
+.login-step1 .login-title {
+    font-size: 32rpx;
+    line-height: 46rpx;
+}
+
+.login-step2 .login-title {
+    font-size: 32rpx;
+    line-height: 46rpx;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.login-step3 .login-title {
+    font-size: 32rpx;
+    line-height: 46rpx;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.back-wrapper {
+    width: 88rpx;
+    height: 88rpx;
+    padding: 22rpx;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.login-title-text {
+    width: 100%;
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+}
+
+.back-wrapper image {
+    width: 44rpx;
+    height: 44rpx;
+}
+
+.button-auto-login {
+    width: 320rpx;
+    line-height: 86rpx;
+    font-size: 40rpx;
+    margin-top: 50rpx;
+}
+
+.button-login {
+    font-size: 40rpx;
+    line-height: 86rpx;
+    margin-top: 32rpx;
+}
+
+.login-input-wrapper {
+    padding: 80rpx 94rpx 60rpx 94rpx;
+}
+
+.phone-input {
+    padding: 0 40rpx 20rpx 40rpx;
+    font-size: 56rpx;
+    border-bottom: 1rpx solid #d6d6d6;
+    margin-bottom: 30rpx;
+}
+
+.button-send-code {
+    line-height: 86rpx;
+    font-size: 40rpx;
+}
+
+.authcode-container {
+    position: relative;
+}
+
+.authcode-tip {
+    margin: 36rpx 0 40rpx 0;
+    font-size: 28rpx;
+}
+
+.authcode-input-wrapper {
+    padding: 0 80rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.authcode-input-wrapper input {
+    width: 84rpx;
+    height: 100rpx;
+    border-radius: 8rpx;
+    overflow: hidden;
+    font-size: 56rpx;
+    line-height: 98rpx;
+    text-align: center;
+    border: 1px solid rgba(187,187,187,1);
+}
+
+.authcode-raw-input {
+    width: 100%;
+    height: 100rpx;
+    padding: 0 80rpx;
+    position: absolute;
+    z-index: 100000;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+
+.authcode-raw-input input {
+    width: 100%;
+    height: 100rpx;
+}
+
+.send-again {
+    margin-top: 34rpx;
+    font-size: 24rpx;
+    color: #878787;
+}
+
+.send-again text {
+    color: #cfbaa7;
+}
+
+.close-login {
+    position: absolute;
+    padding: 10rpx;
+    right: 20rpx;
+    top: 0;
+}

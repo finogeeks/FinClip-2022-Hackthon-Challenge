@@ -1,0 +1,9 @@
+<view class="store-choose-container" wx:if="{{loaded}}">
+    <view class="store-choose-title font-title">选择门店</view>
+    <view class="store-list">
+        <view bindtap="storeTapHandler" class="store-item border-color-{{index}}" data-index="{{index}}" data-storeid="{{item.id}}" wx:for="{{stores}}" wx:key="store">
+            <view class="store-active-name">{{item.name}}</view>
+            <view class="store-active-info">{{item.location}}</view>
+        </view>
+    </view>
+</view>

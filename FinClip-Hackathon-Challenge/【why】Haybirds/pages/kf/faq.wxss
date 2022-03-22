@@ -1,0 +1,39 @@
+@import "/wxParse/wxParse.wxss";
+
+page {
+    width: 100vw;
+    background: #e5e5e5;
+    line-height: 1.75;
+}
+
+.faq-container {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.faq-container image {
+    width: 100% !important;
+    height:auto;
+}
+
+.faq-title {
+    font-weight: bold;
+    padding: 20rpx 0 50rpx 0;
+}
+
+.faq-subtitle {
+    font-size: 36rpx;
+    font-weight: bold;
+}
+
+.faq-tip {
+    font-size: 28rpx;
+    margin-bottom: 36rpx;
+}
+
+.faq-subtip {
+    margin-top: 30rpx;
+    overflow: auto;
+}

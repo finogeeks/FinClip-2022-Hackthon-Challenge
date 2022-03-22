@@ -1,0 +1,45 @@
+<view class="login-container" wx:if="{{open}}">
+    <view class="login-mask"></view>
+    <view class="login-content login-step1" wx:if="{{loginStep==1}}">
+        <view bindtap="closeLogin" class="close-login">x</view>
+        <view class="login-title">登陆后继续</view>
+        <button class="button-filled-green button-auto-login">微信快捷登陆</button>
+        <button bindtap="bindPhoneHandler" class="button-bordered-gray button-login">手机号登录</button>
+    </view>
+    <view class="login-content login-step2" wx:if="{{loginStep==2}}">
+        <view bindtap="closeLogin" class="close-login">x</view>
+        <view class="login-title">
+            <view bindtap="loginChoose" class="back-wrapper">
+                <image src="../../assets/icon-back.svg"></image>
+            </view>
+            <view class="login-title-text">手机号登录</view>
+        </view>
+        <view class="login-input-wrapper">
+            <input class="phone-input" placeholder="请输入手机号"></input>
+            <button bindtap="sendCodeHandler" class="button-filled-green button-send-code">发送验证码</button>
+        </view>
+    </view>
+    <view class="login-content login-step3" wx:if="{{loginStep==3}}">
+        <view bindtap="closeLogin" class="close-login">x</view>
+        <view class="login-title">
+            <view bindtap="bindPhoneHandler" class="back-wrapper">
+                <image src="../../assets/icon-back.svg"></image>
+            </view>
+            <view class="login-title-text">输入验证码</view>
+        </view>
+        <view class="authcode-tip">验证码已发送至 18600012345</view>
+        <view class="authcode-container">
+            <view class="authcode-input-wrapper">
+                <input value="{{code1}}"></input>
+                <input value="{{code2}}"></input>
+                <input value="{{code3}}"></input>
+                <input value="{{code4}}"></input>
+            </view>
+            <view class="authcode-raw-input">
+                <input bindinput="rawInputHandler" type="number" value="{{rawInputValue}}"></input>
+            </view>
+        </view>
+        <view class="send-again">没收到验证短信？<text bindtap="sendAgain">重发验证码</text>
+        </view>
+    </view>
+</view>

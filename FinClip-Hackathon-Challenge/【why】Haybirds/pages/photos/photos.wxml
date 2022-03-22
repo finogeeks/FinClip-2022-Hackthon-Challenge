@@ -1,0 +1,25 @@
+<import src="../copyright.wxml"></import>
+<import src="../artwork-tabs.wxml"></import>
+<view class="photos-container">
+    <template is="artwork-tabs" data="{{artworkTabs:artworkTabs}}"></template>
+    <view>
+        <view class="photos-list">
+            <view class="photos-column">
+                <view bindtap="previewImageHandler" class="photos-item" data-index="{{index}}" wx:if="{{index%2==0}}" wx:for="{{photos}}" wx:for-item="img" wx:key="f">
+                    <view class="photos-img">
+                        <image mode="widthFix" src="{{img.url.raw}}" style=""></image>
+                    </view>
+                </view>
+            </view>
+            <view class="photos-column">
+                <view bindtap="previewImageHandler" class="photos-item" data-index="{{index}}" wx:if="{{index%2!=0}}" wx:for="{{photos}}" wx:for-item="img" wx:key="f">
+                    <view class="photos-img">
+                        <image mode="widthFix" src="{{img.url.raw}}" style=""></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="photos-mask" wx:if="{{showMask}}"></view>
+        <template is="copyright" data></template>
+    </view>
+</view>

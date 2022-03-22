@@ -1,0 +1,48 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/ages/ages",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/zx/zx",
+          "pathName": "pages/zx/zx",
+          "query": "tab= 243315",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/orders/orders",
+          "query": "pages/orders/orders",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/webview_pt/webview_pt",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/goods-details/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

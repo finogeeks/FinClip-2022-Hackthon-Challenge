@@ -1,0 +1,5 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class="faq-container">
+    <view class="faq-title font-title">{{title}}</view>
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+</view>
