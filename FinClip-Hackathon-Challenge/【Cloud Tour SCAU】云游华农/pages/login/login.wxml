@@ -1,0 +1,6 @@
+<!--pages/login/login.wxml-->
+<view class="cover"></view>
+<view class="logo"><image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/logo/logo.jpg?sign=c9233cf6753a51e9e76cb8b3f715e689&t=1649755926" mode="heightFix"></image>
+<view class="text">云游华农</view>
+<view class="else">带你走进华农校园</view></view>
+<view class="box"><navigator class="login iconfont icon-weixin" url="../homepage/homepage" open-type="switchTab"> 欢迎使用</navigator></view>

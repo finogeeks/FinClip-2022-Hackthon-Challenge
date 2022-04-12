@@ -1,0 +1,43 @@
+<!--pages/question/question.wxml-->
+<view class="all">
+  <view class="top"><image mode="widthFix" src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%AD%94%E9%A2%98%E8%83%8C%E6%99%AF.jpg?sign=a28acd5399f26b7968531fc9919f2423&t=1649756235"></image></view>
+  <view class="question">
+    <view class="main">
+      <view class="question-top" >
+      {{index}}.{{dati}}
+      </view>
+      <view bindtap="onxuan" disabled="ishide" data-xuan="a" class="label {{isa==true?'shake':''}}">
+        <view class="option {{fA==true?'false':''}} {{tA==true?'true':''}} " >A</view>
+        <text>{{a}}</text>
+        <text class="{{tA?'correct':'tx'}}"> √</text>
+        <text class="{{fA?'wrong':'fx'}}"> ×</text>
+      </view>
+      <view class="border"></view>
+      <view bindtap="onxuan" data-xuan="b" class="label {{isb==true?'shake':''}}">
+        <view class="option {{fB==true?'false':''}} {{tB==true?'true':''}} " >B</view>
+        <text>{{b}}</text>
+        <text class="{{tB?'correct':'tx'}}"> √</text>
+        <text class="{{fB?'wrong':'fx'}}"> ×</text>
+      </view>
+      <view class="border"></view>
+      <view bindtap="onxuan"  data-xuan="c" class="label {{isc==true?'shake':''}}">
+        <view class="option {{fC==true?'false':''}} {{tC==true?'true':''}} ">C</view>
+        <text>{{c}}</text>
+        <text class="{{tC?'correct':'tx'}}"> √</text>
+        <text class="{{fC?'wrong':'fx'}}"> ×</text>
+      </view>
+      <view class="border"></view>
+      <view bindtap="onxuan"  data-xuan="d" class="label {{isd==true?'shake':''}}">
+        <view class="option {{fD==true?'false':''}} {{tD==true?'true':''}} ">D</view>
+        <text>{{d}}</text>
+        <text class="{{tD?'correct':'tx'}}"> √</text>
+        <text class="{{fD?'wrong':'fx'}}"> ×</text>
+      </view>
+    </view>
+  </view>
+</view>
+  <view class="question-bottom">
+      <view class="back" bindtap="onshang" wx:if="{{index>1}}">上一题</view>
+      <view class="next" bindtap="onxia" wx:if="{{index<10}}">下一题</view>
+      <view class="next" bindtap="onsubmit" wx:else>提交</view>
+  </view>

@@ -1,0 +1,4 @@
+{
+  "usingComponents": {"Tabs":"../../components/Tabs/Tabs"},
+  "navigationBarTitleText": "华农食堂"
+}

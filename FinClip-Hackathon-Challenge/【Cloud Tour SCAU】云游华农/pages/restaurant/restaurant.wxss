@@ -1,0 +1,107 @@
+/* pages/restaurant/restaurant.wxss */
+page{
+  background: white;
+}
+.image{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.image>image{
+  width: 700rpx;
+  height: 481rpx;
+  border-radius: 20rpx;
+}
+.board{
+  width: 100vw;
+  text-align: center;
+  margin-top: 30rpx;
+  /* background: white; */
+}
+.board>image{
+  width: 600rpx;
+}
+.title{
+  width: 100vw;
+  height: 65rpx;
+  line-height: 65rpx;
+  border-left: 8rpx solid #d2a564;
+  font-size: 28rpx;
+  padding-left: 20rpx;
+  margin-top: 25rpx;
+  color: #d2a564;
+  border-bottom: 1rpx solid rgb(226, 226, 226);
+  background: white;
+}
+.text{
+  margin-bottom: 10rpx;
+  color: rgb(65, 65, 65);
+  text-align: center;
+}
+.iconfont{
+  margin: 20rpx 10rpx 10rpx 10rpx;
+  font-size: 27rpx;
+  color: gray;
+}
+.view{
+  width: 200rpx;
+  height: auto;
+  margin: 20rpx;
+  padding: 20rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  box-shadow: 2px 5px 7px  darkgrey;
+  display: inline-block;
+}
+.food{
+  width: 180rpx;
+  margin: 10rpx;
+  background-color: white;
+}
+.contain{
+  height: 400rpx;
+  white-space: nowrap;/*容器必须添加这两个属性，高度和文本不自动换行*/
+  background: #f7f7f7;
+  padding-bottom: 30rpx;
+  overflow: hidden;
+}
+.tip{
+  margin: 30rpx 0;
+  width: 100vw;
+  background: rgb(248, 227, 187);
+  display: flex;
+  overflow: hidden;
+  border: 1px solid rgb(240, 164, 71);
+  border-left: none;
+}
+.warm{
+  height: 50rpx;
+  font-size:25rpx;
+  line-height: 50rpx;
+  color: rgb(68, 68, 68);
+  animation: move 7s linear infinite;
+}
+
+@keyframes move{
+  0%{
+    transform: translate(100vw);
+  }
+  100%{
+    transform: translate(-700rpx);
+  }
+}
+.loud{
+  width: 55rpx;
+  height: 50rpx;
+  background: rgb(248, 227, 187);
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  box-shadow: 10rpx 0 10rpx  rgb(248, 227, 187);
+}
+.loud image{
+  height: 40rpx;
+  width: 43rpx;
+  margin:5rpx 0 0 10rpx;
+}

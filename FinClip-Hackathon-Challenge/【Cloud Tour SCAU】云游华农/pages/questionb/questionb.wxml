@@ -1,0 +1,8 @@
+<view class="why">
+  <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%AD%94%E9%A2%98%E6%B4%BB%E5%8A%A8.png?sign=c1eef0c712c59c0de99b217e28f332dd&t=1649756119" mode="heightFix"></image>
+  <view class="text">华农知多少</view>
+  <view class="else"> 关于华农的知识点你知道多少呢？</view>
+  <view class="enter">
+    <navigator url="../question/question">开始答题</navigator>
+  </view>
+</view>

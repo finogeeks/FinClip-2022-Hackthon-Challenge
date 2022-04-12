@@ -1,0 +1,52 @@
+/* pages/yogurt/yogurt.wxss */
+page{
+  background: white;
+}
+.items{
+  width: 100vw;
+  margin: 15rpx 0;
+}
+.items:first-child{
+  margin-top: 0;
+}
+.items:last-child{
+  margin-bottom: 30rpx;
+}
+.img{
+  text-align: center;
+}
+.img>image{
+  width: 600rpx;
+}
+.content{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.content>.content-in{
+  width: 650rpx;
+  background:white;
+  border-radius: 20rpx;
+  box-shadow: 7rpx 10rpx 10rpx  rgb(209, 209, 209);
+}
+.content>.content-in>.name{
+  padding: 17rpx 0 10rpx 35rpx;
+  border-bottom: 7rpx solid rgb(221, 221, 221);
+}
+.content>.content-in>.name>text{
+  font-size: 27rpx;
+  color: #b72621;
+  font-weight: 600;
+  border-bottom: 7rpx solid #b72621;
+  padding-bottom: 10rpx;
+}
+.content>.content-in>.word{
+  font-size: 26rpx;
+  padding: 17rpx 20rpx 20rpx 30rpx;
+  box-sizing: border-box;
+  line-height: 45rpx;
+  color: #515b69;
+}
+.noShow{
+  hover-class:none;
+}

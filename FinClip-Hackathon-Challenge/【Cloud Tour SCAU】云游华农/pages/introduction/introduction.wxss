@@ -1,0 +1,103 @@
+/* pages/introduction/introduction.wxss */
+.contain{
+  background: white;
+  margin-bottom: 30rpx;
+}
+.top{
+  width: 100vw;
+  height: 480rpx;
+  overflow: hidden;
+}
+.logo{
+  padding-left: 50rpx;
+  display: flex;
+  border-bottom: 2rpx solid rgb(211, 211, 211);
+}
+.logo .position{
+  flex: 2;
+}
+.logo .position image{
+  width: 50rpx;
+  height: 100rpx;
+  margin-top: 22rpx;
+  padding-right: 30rpx;
+  float: right;
+}
+.iconfont{
+  font-size: 160rpx;
+  height: 160rpx;
+  color: green;
+  border: 5rpx solid white;
+  width: 160rpx;
+  border-radius: 50%;
+  margin-top: -90rpx;
+  background: white;
+  margin-bottom: 20rpx;
+}
+.name{
+  font-size: 40rpx;
+  color:gray;
+  margin:15rpx 20rpx 20rpx 20rpx;
+}
+.center{
+  font-size: 26rpx;
+  color: gray;
+  line-height: 50rpx;
+  margin-top: 20rpx;
+  padding-bottom:20rpx ;
+}
+.center>view>image{
+  width: 35rpx;
+  height: 35rpx;
+  margin:0rpx 20rpx;
+  vertical-align:top;
+}
+.center>.site>image{
+  width: 55rpx;
+  margin-right:10rpx;
+  margin-left: 10rpx;
+}
+.nav{
+  width: 100vw;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color:rgb(24, 24, 24);
+  padding-left: 30rpx;
+  box-sizing: border-box;
+  border-left: 10rpx solid #2ac47c;
+  background: white;
+  border-bottom: 1rpx solid gainsboro;
+}
+.content{
+  background: white;
+  font-size: 27rpx;
+  color: rgb(53, 53, 53);
+  padding: 20rpx 30rpx;
+  line-height: 50rpx;
+}
+.content>view{
+  margin-top: 10rpx;
+}
+.content>.goal{
+  line-height: 60rpx;
+  border-radius: 20rpx;
+  /* background: whitesmoke; */
+  margin-top: 20rpx;
+}
+.map{
+  width: 100%;
+  background: white;
+  padding: 30rpx 0;
+  display: flex;
+  justify-content: center;
+}
+.map-in{
+  /* height: 500rpx; */
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.map>.map-in>map{
+  width: 80vw;
+  height: 550rpx;
+}

@@ -1,0 +1,22 @@
+page{
+  background: #fff;
+}
+.img{
+  width: 100vw;
+  text-align: center;
+  margin-top: 180rpx;
+  animation: rubberBand 2s linear 1 .2s;
+}
+.img>image{
+  width: 350rpx;
+}
+button{
+  height: 100rpx;
+  width: 430rpx !important;
+  line-height: 70rpx !important;
+  margin-top: 540rpx;
+  background: #1fb8a1;
+  color: whitesmoke;
+  border-radius: 50rpx !important;
+  box-shadow: 5rpx 5rpx 10rpx rgb(184, 184, 184);
+}

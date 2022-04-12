@@ -1,0 +1,44 @@
+<view class="contain">
+<view class="top">
+  <image class="top" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2271928109,782199038&fm=26&gp=0.jpg" mode="widthFix"></image>
+</view>
+<view class="nav"><text>基本信息</text></view> 
+<view class="center">
+  <view class="photo">
+    <image bindtap="call" src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E7%94%B5%20%E8%AF%9D.png?sign=03e676b832da592651c2f4ff36a54501&t=1649753562" mode="aspectFill"></image>
+    <text bindtap="call">{{photo}}</text>
+  </view>
+  <view class="site">
+    <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E5%AE%9A%E4%BD%8D.png?sign=59a6bc15efeac32005e939c117d69a00&t=1649753581" mode="widthFix"></image>
+    <text>广州市天河区五山华南农业大学</text>
+  </view>
+</view>
+</view>
+<view class="nav"><text>简介</text></view> 
+<view class="content">
+  <view>  
+    <text decode="true"> &nbsp;&nbsp;&nbsp;&nbsp;华南农业大学是全国重点大学，广东省和农业部共建211工程大学，广东省高水平大学重点建设高校。学校设有98个本科专业，是一所农林学科优势突出，理工学科和人文管理学科实力强劲，艺术学科异军突起的全面发展的综合性大学。
+  </text>
+</view>
+<view>  
+    <text decode="true"> &nbsp;&nbsp;&nbsp;&nbsp;US News 2020世界大学排行榜中，学校位列全球高校第879名，中国内地高校第74名，广东高校第5名。校园坐落在素有"花城"美誉的广州市，粤港澳大湾区核心地带。
+  </text>
+</view>
+<view>  
+    <text decode="true"> &nbsp;&nbsp;&nbsp;&nbsp;学校致力于打造"五湖一海一片林的紫荆校园"，环境优美，景色宜人，集绿化、美化、香化、文化于一体，古典建筑与现代风格交融、自然景色与人文景观辉映，富有浓郁的学习和生活气息。
+  </text>
+</view>
+<view class="goal">  
+    <text decode="true"><text style="font-weight:bold">发展目标：</text><br/>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020年-2025年:全力争取进入国家"双一流"建设行列<br/>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2025年-2035年:初步建成特色鲜明的世界一流农业大学<br/>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2035年-2050年:基本建成农业特色世界一流大学
+  </text>
+</view>
+</view>
+<view class="nav"><text>学校位置</text></view> 
+<view class="map">
+  <view class="map-in">
+  <map longitude="113.358254" latitude="23.157975" scale="12" min-scale="14"></map>
+</view>
+</view>

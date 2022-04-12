@@ -1,0 +1,93 @@
+page{
+  background: white;
+}
+.user{
+  display: flex;
+  width: 100vw;
+  background:url("https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/fecaed70-1a4d-455d-8ce0-456f4233baeb.png") no-repeat center center/cover;
+  font:25rpx "微软雅黑";
+  height: 350rpx;
+}
+.night{
+  background:url("https://ftp.bmp.ovh/imgs/2021/05/9869c2a9ff6fe44e.jpg") no-repeat center center/cover;
+}
+.user .left{
+  margin:70rpx 0 0 60rpx;
+}
+.user .left image{
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 50%;
+  border: 7rpx solid white;
+  background: white;
+}
+.user .right{
+  margin:60rpx 0 0 27rpx;
+}
+.user .right .user_name{
+  font-size: 40rpx;
+  padding-top: 35rpx;
+}
+.white{
+  color: rgb(205, 205, 205);
+}
+.user .right .timer{
+  padding: 10rpx;
+  border-radius:10rpx;
+  background: rgba(255,255,255,0.7);
+  margin-top: 30rpx;
+  color: rgb(104, 104, 104);
+}
+.content{
+  background: white;
+  padding-left: 16rpx;
+  box-sizing: border-box;
+  width: 100vw;
+  border-radius:30rpx 30rpx 0 0 ;
+  margin-top: -60rpx;
+}
+.content>navigator{
+  height: 60rpx;
+  border-bottom: 1px solid rgb(209, 209, 209);
+  line-height:50rpx;
+  padding: 15rpx 20rpx 20rpx 20rpx;
+}
+.content>navigator:first-child{
+  padding-top: 30rpx;
+}
+.content>navigator text{
+  font-size:29rpx;
+  color: gray;
+  line-height: 70rpx;
+  padding-left:20rpx;
+  vertical-align: text-bottom;
+}
+.content>navigator image{
+  height: 45rpx;
+  width: 45rpx;
+}
+.iconfont{
+  float: right;
+  line-height: 80rpx;
+  font-size: 25rpx;
+}
+button{
+  padding: 0 !important;
+  border-radius: 0 !important;
+  width: 25px !important;
+  background: white;
+}
+.notShow{
+  hover-class:none;
+}
+.dunlogin{
+  font-size: 35rpx !important;
+  color: rgb(94, 93, 93);
+  margin-top: 14rpx;
+  letter-spacing:5rpx
+}
+.nunlogin{
+  font-size: 35rpx !important;
+  color: black;
+  margin-top: 35rpx;
+}

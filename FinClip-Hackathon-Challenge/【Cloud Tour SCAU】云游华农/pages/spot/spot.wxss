@@ -1,0 +1,67 @@
+/* pages/emm/emm.wxss */
+page{
+  background: white;
+}
+.top-img{
+  margin: 20rpx;
+  width: 95%;
+  height: 550rpx;
+  border:1rpx solid #efefef;
+  border-radius: 20rpx;
+  box-shadow: 1rpx 1rpx 15rpx #ddd;
+  overflow: hidden;
+}
+.top-img image{
+  width: 100%;
+  height: 100%;
+  animation:fadeIn 2s linear;
+}
+.center{
+  margin: 20rpx;
+  width: 95%;
+}
+.selece-img{
+  font-size: 26rpx ;
+  color:red;
+}
+.center button{
+  margin-top: 30rpx;
+}
+.info{
+  margin: 20rpx;
+  width: 95%;
+  border:1rpx solid #efefef;
+  border-radius: 20rpx;
+  box-shadow: 1rpx 1rpx 15rpx #ddd;
+  background: white;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+
+.img{
+  float: left;
+  margin-right: 32rpx;
+}
+.img image{
+  padding-top: 10rpx;
+  height: 200rpx;
+}
+.text{
+  line-height: 45rpx;
+  font-size: 25rpx;
+  color: rgb(71, 71, 71);
+}
+.false{
+  text-align: center;
+  background: white;
+}
+.false image{
+  height: 600rpx;
+}
+button{
+  background: #96ddbf;
+  color: white;
+}
+button:last-child{
+  background: #49d393;
+}

@@ -1,0 +1,156 @@
+/* pages/tianqi/tianqi.wxss */
+
+
+.weather-top{
+  text-align:center
+}
+.date{
+  font-size: 30rpx;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  color: gray;
+  margin: 20rpx 0;
+}
+.date text{
+  margin-right: 20rpx;
+  font-size: 40rpx;
+  font-weight: 600;
+  color: rgb(73, 73, 73);
+}
+
+
+.weather image {
+  width: 60rpx;
+  height: 50rpx;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin: 60rpx 0 35rpx -10rpx;
+}
+.location text{
+  width:50rpx;
+  height:50rpx;
+  margin-right: 30rpx;
+  font:50rpx/50rpx "微软雅黑" ;
+  color: #07a94f;
+}
+
+.temperature {
+  display: flex;
+  justify-content: center;
+  font-size: 150rpx;
+  font-weight: light;
+  color: #333;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.info > view {
+  margin: 30rpx;
+}
+
+.info .air {
+  padding: 5rpx 15rpx;
+  border-radius: 10rpx;
+  font-weight: bolder;
+  color: white;
+}
+
+.other {
+  display: flex;
+  justify-content: center;
+  margin-left:35rpx;
+}
+
+.other > text {
+  margin: 20rpx;
+  font-size: 30rpx;
+  color: #444;
+}
+.other .icon-PM1{
+  font-size: 40rpx;
+  margin: 18rpx 0 0 20rpx;
+}
+.center{
+  width: 100%;
+  height: 450rpx;
+  background: #000;
+    background: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01b0d857b1a34d0000012e7e87f5eb.gif&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1620796034&t=dc6beacbf693e40f7304e089b6e138d3") no-repeat center center;
+  background-size: cover;
+}
+
+.future {
+  height: 165rpx;
+  margin-top: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 20rpx 20rpx 20rpx 5rpx;
+}
+.future .icon-icon17{
+  margin-top: 64rpx;
+  color: rgb(92, 91, 91);
+  font-size: 30rpx;
+}
+.future .icon-yueliang1{
+  margin-top: 20rpx;
+  color: rgb(102, 102, 102);
+  font-size: 27rpx;
+}
+
+.vertical-line {
+  height: 100%;
+  border: 1rpx solid #aaa;
+}
+
+.future .day {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding:20rpx;
+}
+
+.day .weather{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.weather>text{
+  width: 50%;
+  color: rgb(88, 88, 88);
+  font-size: 28rpx;
+  margin-top: 7rpx;
+}
+
+.day > view {
+  display: flex;
+  justify-content: space-between;
+  margin: 10rpx 0;
+}
+
+.green {
+  background-color: #07a94f ;
+}
+
+.yellow {
+  background-color: #ffca28 ;
+}
+
+.red {
+  background-color: red ;
+}
+
+.purple {
+  background-color: purple ;
+}

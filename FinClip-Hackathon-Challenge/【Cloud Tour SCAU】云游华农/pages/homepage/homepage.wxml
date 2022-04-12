@@ -1,0 +1,63 @@
+<swiper autoplay="true" indicator-dots="true" indicator-color="#fff" indicator-active-color="#a5e8d1" interval="5000"
+  circular="true">
+  <block wx:for="{{imgUrls}}" wx:key="imgUrls" >
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" bindtap="onpicture" mode="aspectFill"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="contain">
+  <view class="top">
+    <view class="yogurt">
+      <navigator hover-class="noShow" url="../introduction/introduction">
+        <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E5%BB%BA%E7%AD%91.png?sign=c8c59450c252e32e192328fab9c9870f&t=1649749998" mode="heightFix">
+        </image>
+        <view class="text">学校概况</view>
+        <view class="else">华南农业大学</view>
+      </navigator>
+    </view>
+    <text></text>
+    <view class="information">
+      <navigator hover-class="noShow" url="../information/information">
+        <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/card.png?sign=da03075678e2f026443f7bb8dd4699e8&t=1649750329" mode="heightFix">
+        </image>
+        <view class="text">信息门户</view>
+        <view class="else">关于学校</view>
+      </navigator>
+    </view>
+  </view>
+  <view class="nav">
+    <view class='NameZh'>云游华农</view>
+    <view class='NameEn'>Cloud Tour 一 SCAU</view>
+</view>
+  <navigator class="bottom" hover-class="noShow" url="../yogurt/yogurt">
+    <view class="box">
+      <image class="excel" src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/f6e0de85-142a-45a7-b6be-7d6009470c7e.png" mode="heightFix">
+      </image>
+      <view class="text">
+        <view class="word">华农酸奶</view>
+        <view class="into">华农特产酸奶</view>
+      </view>
+    </view>
+  </navigator>
+  <navigator class="bottom" hover-class="noShow" url="../weather/weather">
+    <view class="box">
+      <image class="special" src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E5%A4%A9%E6%B0%94(1).png?sign=c106f96d3d2129565a36ed3cb2783a13&t=1649750398" mode="heightFix">
+      </image>
+      <view class="text">
+        <view class="word">{{now.temp}}°C - {{now.text}}</view>
+        <view class="into">{{now.obsTime}} 更新</view>
+      </view>
+    </view>
+  </navigator>
+  <navigator class="bottom" hover-class="noShow" url="../restaurant/restaurant">
+    <view class="box">
+      <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E9%A3%9F%E5%A0%82%E6%9C%8D%E5%8A%A1.png?sign=f1c8bd43432038fce33fd304faf8aaec&t=1649750366" mode="widthFix">
+      </image>
+      <view class="text">
+        <view class="word">华农食堂</view>
+        <view class="into">六大食堂 の 秘密</view>
+      </view>
+    </view>
+  </navigator>
+</view>

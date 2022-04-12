@@ -1,0 +1,29 @@
+<!-- 图片展示 -->
+<view class="top-img">
+  <image src="{{image}}"></image>
+</view>
+
+
+<!-- 选择图片及植物识别 -->
+<view class="center">
+  <text class="selece-img" wx:if="{{isShow}}">请先选择您的图片！</text>
+  <button bindtap="imgSelect" class="iconfont icon-jingdian" hover-class="noShow"><text decode>&nbsp;&nbsp; 拍摄照片</text></button>
+  <button class="iconfont icon-sousuo" bindtap="plant" hover-class="noShow"> <text decode>&nbsp;&nbsp; 识别植物</text></button>
+</view>
+
+<!-- 识别结果 -->
+<view class="bottom" wx:if="{{result.length!=0}}">
+  <view class="info" wx:if="{{isTrue}}">
+    <view wx:if="{{hasImg}}">
+      <view class="img">
+        <image src="{{flower}}" mode="heightFix"></image>
+      </view>
+      <view class="text">{{text}}</view>
+    </view>
+    <view wx:if="{{!hasImg}}">预测结果为：{{result}}</view>
+  </view>
+  <!-- <view class="false" wx:if="{{!isTrue}}">
+    <image src="cloud://ykf-1gf4ci0r28637c7c.796b-ykf-1gf4ci0r28637c7c-1305480306/false.png" mode="heightFix">
+    </image>
+  </view> -->
+</view>

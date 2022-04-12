@@ -1,0 +1,7 @@
+<view class="logo">
+  <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/logo/logo.png?sign=3e5e5ae2a9a44a38522699466c244785&t=1649750073" mode="heightFix"></image>
+  <view class="text">云游华农</view>
+  <view class="text-else">SCAU</view>
+  <view class="edition">版本：2.0.6</view>
+  <view class="club">云游华农工作组</view>
+</view>
