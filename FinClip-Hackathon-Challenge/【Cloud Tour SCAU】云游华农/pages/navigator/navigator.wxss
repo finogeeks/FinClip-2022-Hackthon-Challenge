@@ -1,0 +1,80 @@
+page{
+  width: 750rpx;
+  background:#eeeeee;
+  }
+  map{
+    width: 100%;
+    height:650rpx;
+    position: fixed;
+    top: 0;
+  }
+  
+  .nav{
+    height: 50rpx;
+    width: 100vw;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26rpx;
+    color: gray;
+    position: fixed;
+    top: 650rpx;
+    border-bottom: 7rpx solid #51d469;
+    border-radius: 0 0 30rpx 30rpx;
+  }
+  .nav>view{
+    width: 150rpx;
+    height: 40rpx;
+    margin-top: 3rpx;
+  }
+  
+  .map-bottom{
+    margin-top: 700rpx;
+  }
+  scroll-view{
+    margin-top: 7rpx;
+    height: calc(100vh - 707rpx);
+  }
+  .position{
+    width: 680rpx;
+    height: 175rpx;
+    padding: 20rpx;
+    margin:15rpx;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 30rpx;
+    box-shadow: 9rpx 8rpx 10rpx rgb(153, 153, 153);
+    overflow: hidden;
+  }
+  .position image{
+    width: 200rpx;
+    animation:flipInX 1s linear 1 .5s;
+  }
+  .position .content{
+   flex: 3;
+   color: black;
+   font-size: 28rpx;
+   margin-left: 30rpx;
+  }
+  .position .content .block{
+    margin-top: 40rpx;
+    font-size: 25rpx;
+    color: #a1a1a1;
+  }
+  .position .btn{
+    flex:1;
+    width: 100rpx;
+    height: 40rpx;
+    border-radius: 10rpx;
+    background: #51d469;
+    color:white;
+    font-size: 20rpx;
+    text-align: center;
+    line-height:40rpx;
+    box-shadow: 0 0 4px green;
+    margin-right: 20rpx;
+  }
+  

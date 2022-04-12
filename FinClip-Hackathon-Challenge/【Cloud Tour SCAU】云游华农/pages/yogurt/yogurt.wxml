@@ -1,0 +1,78 @@
+<!--pages/yogurt/yogurt.wxml-->
+<view class="items">
+  <view class="img">
+    <image src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/17fff75c-815d-449d-934e-33daa6f2653b.png" mode="widthFix"></image>
+  </view>
+  <view class="content">
+    <view class="content-in">
+      <view class="name"><text style="color:#00813d; border-color:#00813d;">原味酸牛奶</text></view>
+      <view class="word">原味酸奶杯身采用“华农绿”, 杯内添加嗜热链球菌、保加利亚乳杆菌、嗜酸乳杆菌和双歧杆菌，口感丝滑的同时还能保护肠道，颜值与内涵并存，是当之无愧的“酸奶一哥”！</view>
+    </view>
+  </view>
+</view>
+<view class="items">
+  <view class="img">
+    <image src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/85827424-bb0b-416c-a099-2b392049cf7c.png" mode="widthFix"></image>
+  </view>
+  <view class="content">
+    <view class="content-in">
+      <view class="name"><text>华农学士奶</text></view>
+      <view class="word">屋顶盒装学士酸奶以生牛乳和白砂糖作主要原料,发酵后经二次均质特别制作。产品口感出众、风味独特、包装精美，凭清爽顺滑的口感常年占据酸奶柜顶层。</view>
+    </view>
+  </view>
+</view>
+<view class="items">
+  <view class="img">
+    <image src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/438dacf3-25cf-4daf-add2-96a72476909b.png" mode="widthFix"></image>
+  </view>
+  <view class="content">
+    <view class="content-in">
+      <view class="name"><text style="color:#ae9622; border-color:#ae9622;">经典酸牛奶</text></view>
+      <view class="word">经典酸牛奶采用优质生牛乳，添加益生菌，经传统工艺发酵生产而成。一口下去奶香纯正、口感稠滑，像家里做的饭菜一样经典。</view>
+    </view>
+  </view>
+</view>
+<view class="items">
+  <view class="img">
+    <image src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/83edd9c2-b1c1-4abc-9e75-bbe5c562cd05.png" mode="widthFix"></image>
+  </view>
+  <view class="content">
+    <view class="content-in">
+      <view class="name"><text style="color:#41b9e9; border-color:#41b9e9;">纯白酸牛奶</text></view>
+      <view class="word">干饭人必备！每克纯白酸牛奶中含有上亿个有益肠道的活性乳酸菌，保护你的肠道。它由生牛乳、白砂糖，添加乳酸菌制作而成，味道酸甜可口，喝完还能再干一碗饭。</view>
+    </view>
+  </view>
+</view>
+<view class="items">
+  <view class="img">
+    <image src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/3bca00d5-890b-4189-a7bd-32d5873be04a.png" mode="widthFix"></image>
+  </view>
+  <view class="content">
+    <view class="content-in">
+      <view class="name"><text style="color:#d6a3c5; border-color:#d6a3c5;">无添加糖酸奶</text></view>
+      <view class="word">减肥和控糖华农er嘴馋时的福音！无添加糖酸奶粉嫩的外表下是“最原始”的味道，是酸奶家族中的“榴莲”担当。</view>
+    </view>
+  </view>
+</view>
+<view class="items">
+  <view class="img">
+    <image src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/18d6bf65-cfa5-49e7-904f-aa9b5cb34ab0.png" mode="widthFix"></image>
+  </view>
+  <view class="content">
+    <view class="content-in">
+      <view class="name"><text style="color:#9d99d8; border-color:#9d99d8;">蓝莓果酱酸牛奶</text></view>
+      <view class="word">酸酸甜甜就是我！蓝莓果酱酸牛奶由发酵后的酸奶拌入芳香可口的蓝莓果酱制成，是酸甜口感与蓝莓芳香的结合，夏日冰柜甜品的不二之选。（预计在8月份量产上市）</view>
+    </view>
+  </view>
+</view>
+<view class="items">
+  <view class="img">
+    <image src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/b3c3e016-546a-46eb-b635-96a10d51bf8e.png" mode="widthFix"></image>
+  </view>
+  <view class="content">
+    <view class="content-in">
+      <view class="name"><text style="color:#10873d; border-color:#10873d;">鲜牛奶</text></view>
+      <view class="word">华农er的营养秘诀！经巴氏杀菌后的屋顶盒装鲜牛奶最大限度地保留了牛奶的各种营养成分，产品采用环保的纸盒包装，奶味香醇,入口爽滑。</view>
+    </view>
+  </view>
+</view>

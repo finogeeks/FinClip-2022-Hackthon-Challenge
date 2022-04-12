@@ -1,0 +1,99 @@
+<map id="map" longitude="113.353668" latitude="23.155365" scale="16" max-scale="17"  show-compass markers='{{markers}}'>
+</map>
+<view class="map-bottom">
+<view class="nav">
+  <view>  热门打卡点 </view>
+  <text class="iconfont icon-jingdian"></text>
+</view>
+<scroll-view scroll-y="true">
+<view class="position">
+  <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E5%9B%BE%E4%B9%A6%E9%A6%86.jpg?sign=a265d3564e9f51adb332daf32c372948&t=1649752718" mode="widthFix"/>
+  <view class="content">
+   <view class="name">{{items[0]}}</view> 
+   <view class="block">所处地区: 主校区</view>
+  </view>
+  <view class="btn" bindtap="getMap" data-longitude="113.353635" data-latitude="23.1575" data-text="{{items[0]}}">导航</view>
+</view>
+<view class="position">
+  <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E5%8D%8E%E5%86%9C%E5%A4%A7%E6%AD%A3%E9%97%A8.jpg?sign=6bbf531cf46f1cd164c881ca5120d8ee&t=1649752746" mode="widthFix"/>
+  <view class="content">
+   <view class="name">{{items[1]}}</view> 
+   <view class="block">所处地区: 主校区</view>
+  </view>
+  <view class="btn" bindtap="getMap" data-longitude="113.35728" data-latitude="23.152564" data-text="{{items[1]}}">导航</view>
+</view>
+<view class="position">
+  <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BA%A2%E6%BB%A1%E5%A0%82.jpg?sign=7f28270ea8dbeee0b6a0d32b2cbf24ac&t=1649752762" mode="widthFix"/>
+  <view class="content">
+   <view class="name">{{items[2]}}</view> 
+   <view class="block">所处地区: 主校区</view>
+  </view>
+  <view class="btn" bindtap="getMap" data-longitude="113.351884" data-latitude="23.156448" data-text="{{items[2]}}">导航</view>
+</view>
+<view class="position">
+  <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210406102434.jpg?sign=faae64f35422af67447ce34aef967ff4&t=1649752920" mode="widthFix"/>
+  <view class="content">
+   <view class="name">{{items[3]}}</view> 
+   <view class="block">所处地区: 东区</view>
+  </view>
+  <view class="btn" bindtap="getMap" data-longitude="113.364512" data-latitude="23.154149" data-text="{{items[3]}}">导航</view>
+</view>
+<view class="position">
+  <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E5%8D%8E%E5%86%9C%E8%A1%8C%E6%94%BF%E6%A5%BC.jpg?sign=3b281e766c99146d318e16e6da0da14a&t=1649752944" mode="widthFix"/>
+  <view class="content">
+   <view class="name">{{items[4]}}</view> 
+   <view class="block">所处地区: 主校区</view>
+  </view>
+  <view class="btn" bindtap="getMap" data-longitude="113.353668" data-latitude="23.155365" data-text="{{items[4]}}">导航</view>
+</view>
+<view class="position">
+  <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E6%A0%A1%E5%8F%B2%E9%A6%86.jpg?sign=f9638494bc44f08fe76e0c9156327948&t=1649752875" mode="widthFix"/>
+  <view class="content">
+   <view class="name">{{items[5]}}</view> 
+   <view class="block">所处地区: 主校区</view>
+  </view>
+  <view class="btn" bindtap="getMap" data-longitude="113.349511" data-latitude="23.157286" data-text="{{items[5]}}">导航</view>
+</view>
+<view class="position">
+  <image src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/2dc114c9-6c22-41ac-9cc0-e6040780b370.png" mode="widthFix"/>
+  <view class="content">
+   <view class="name">{{items[6]}}</view> 
+   <view class="block">所处地区: 东区</view>
+  </view>
+  <view class="btn" bindtap="getMap" data-longitude="113.359933" data-latitude="23.153562" data-text="{{items[5]}}">导航</view>
+</view>
+<view class="position">
+  <image src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/521414b6-f6f0-4231-873f-dc87d7766224.jpg"  style="height:151rpx"/>
+  <view class="content">
+   <view class="name">{{items[7]}}</view> 
+   <view class="block">所处地区: 华山区</view>
+  </view>
+  <view class="btn" bindtap="getMap" data-longitude="113.34578" data-latitude="23.159906" data-text="{{items[7]}}">导航</view>
+</view>
+<view class="position">
+  <image src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/150eb0ed-1bc6-44bd-8a50-ca65c8507b4a.png" style="height:130rpx"/>
+  <view class="content">
+   <view class="name">{{items[8]}}</view> 
+   <view class="block">所处地区: 启林区</view>
+  </view>
+  <view class="btn" bindtap="getMap" data-longitude="113.366739" data-latitude="23.161158" data-text="{{items[8]}}">导航</view>
+</view>
+<view class="position">
+  <image src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/39ba0107-b3ea-432f-8d55-46fba5e1fc44.png" style="height:130rpx"/>
+  <view class="content">
+   <view class="name">{{items[9]}}</view> 
+   <view class="block">所处地区: 华山区</view>
+  </view>
+  <view class="btn" bindtap="getMap" data-longitude="113.3453468" data-latitude="23.1573936" data-text="{{items[9]}}">导航</view>
+</view>
+<view class="position">
+  <image src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/bcd4a96b-c94d-4237-b612-9c51d023d66d.png" style="height:130rpx"/>
+  <view class="content">
+   <view class="name">{{items[10]}}</view> 
+   <view class="block">所处地区: 华山区</view>
+  </view>
+  <view class="btn" bindtap="getMap" data-longitude="113.3524279" data-latitude="23.1615662" data-text="{{items[10]}}">导航</view>
+</view>
+</scroll-view>
+</view>
+

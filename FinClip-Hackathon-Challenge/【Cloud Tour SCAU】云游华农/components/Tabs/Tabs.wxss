@@ -1,0 +1,25 @@
+.tabs{}
+.tabs_title{
+  display: flex;
+  flex-direction: row;
+}
+.title_item{
+  width: 50%;
+  height: 70rpx;
+  font-size: 27rpx;
+  color: rgb(136, 136, 136);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5rpx solid white;
+  margin: 15rpx;
+  transition: all .2s ease-in;
+  box-sizing: border-box;
+}
+.active{
+  color:orange;
+  border-bottom: 6rpx solid currentColor;
+  font-weight: 600;
+  font-size: 31rpx;
+}
+.tabs_content{}

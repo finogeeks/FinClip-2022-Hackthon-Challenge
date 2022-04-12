@@ -1,0 +1,77 @@
+/* pages/information/information.wxss */
+page{
+  width: 100%;
+  background: rgb(247, 245, 245);
+}
+.nav{
+  margin: 25rpx 0 0  0;
+  font-size: 33rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-left: 10rpx solid green;
+  border-bottom: 1px solid rgb(206, 206, 206);
+  padding-left:20rpx;
+  color: green;
+}
+.box{
+  margin-top: 10rpx;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.intro{
+  height: 45rpx;
+  width: 700rpx;
+  padding: 20rpx 10rpx 20rpx 20rpx;
+  border-radius: 20rpx;
+  background: white;
+  box-shadow:2rpx 2rpx 7rpx gray;
+  transition: all .2s ease-in;
+  overflow: hidden;/*需要隐藏，因为不隐藏，文字会显露出来*/
+  color: gray;
+  line-height: 40rpx;
+}
+.icon-xiaoyoushuju{
+  color: #13227a;
+  font-size: 50rpx;
+}
+.icon-building{
+  color: #3fadec;
+  font-size: 45rpx;
+}
+.icon-xiaoyouhui{
+  color: #2e9660;
+  font-size: 40rpx;
+}
+.name{
+  font-size: 30rpx;
+  color: gray;
+  vertical-align: top;
+  padding-left: 20rpx;
+}
+.icon-pointright{
+  float: right;
+  font-size: 27rpx;
+  padding: 0 20rpx;
+  transition: all .2s ease-in;
+}
+.rotate{
+  transform: rotate(180deg);
+}
+.intro-in{
+  margin-top: 20rpx;
+  font-size: 27rpx;
+  line-height: 42rpx;
+}
+.intro-in image{
+  padding: 10rpx 20rpx 5rpx 10rpx;
+  height: 200rpx;
+  float: left;
+}
+.bo{
+  margin-top:5px;
+}
+.ding{
+  margin-top:25px;
+}
+

@@ -1,0 +1,74 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/bus/bus",
+    "pages/homepage/homepage",
+    "pages/introduction/introduction",
+    "pages/questionb/questionb",
+    "pages/version/version",
+    "pages/information/information",
+    "pages/spot/spot",
+    "pages/restaurant/restaurant",
+    "pages/advise/advise",
+    "pages/contact/contact",
+    "pages/pictures/pictures",
+    "pages/yogurt/yogurt",
+    "pages/home/home",
+    "pages/navigator/navigator",
+    "pages/questionj/questionj",
+    "pages/weather/weather",
+    "pages/question/question"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "授权获取您当前的位置信息"
+    }
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "云游华农",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "list":[{
+      "pagePath":"pages/homepage/homepage",
+      "text":"首页",
+      "iconPath": "./images/_home.png",
+      "selectedIconPath": "./images/home.png"
+    },{
+      "pagePath":"pages/navigator/navigator",
+      "text":"热点",
+      "iconPath": "./images/_nav.png",
+      "selectedIconPath": "./images/nav.png"
+    },{
+      "pagePath":"pages/questionb/questionb",
+      "text":"问答",
+      "iconPath": "./images/_question.png",
+      "selectedIconPath": "./images/question.png"
+    },{
+      "pagePath":"pages/spot/spot",
+      "text":"识别",
+      "iconPath": "./images/_camera.png",
+      "selectedIconPath": "./images/camera.png"
+    },{
+      "pagePath":"pages/home/home",
+      "text":"中心",
+      "iconPath": "./images/_me.png",
+      "selectedIconPath": "./images/me.png"
+    }
+    
+  ],
+  "color": "#8298b5",
+    "selectedColor": "#aff4d3"
+  },
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.19",
+      "provider": "wx50b5593e81dd937a"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

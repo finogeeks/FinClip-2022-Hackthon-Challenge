@@ -1,0 +1,33 @@
+<view class="user">
+  <view class="left">
+    <image src="{{src}}" mode="aspectFit" />
+  </view>
+  <view class="right">
+    <view
+      class="user_name dunlogin white"> 欢迎使用 </view>
+    <view class="timer">{{timer}}</view>
+  </view>
+</view>
+<view class="content">
+  <navigator class="contact" hover-class="notShow" url="../advise/advise">
+    <image
+      src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/4b8a36f1-9835-4c6f-ae61-5dc11908a35e.png">
+    </image>
+    <text> 意见反馈</text>
+    <text class="iconfont icon-zhixiang"></text>
+  </navigator>
+  <navigator class="contact" hover-class="notShow" url="../contact/contact">
+    <image
+      src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/a093c1e7-ff01-4f53-bdc4-f2eb5fc16b54.png">
+    </image>
+    <text> 联系客服</text>
+    <text class="iconfont icon-zhixiang"></text>
+  </navigator>
+  <navigator class="contact" hover-class="notShow" url="../version/version">
+    <image
+      src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/89b8355f-ea50-460a-8caf-10586d9ab816.png">
+    </image>
+    <text> 版本信息</text>
+    <text class="iconfont icon-zhixiang" ></text>
+  </navigator>
+</view>

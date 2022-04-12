@@ -1,0 +1,231 @@
+<!--pages/restaurant/restaurant.wxml-->
+<Tabs tabs="{{tabs}}" binditemChange="handleItemChange">
+  <block wx:if="{{tabs[0].isActive}}">
+    <view class="image">
+      <image
+        src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E9%A3%9F%E5%A0%82%E7%85%A7%E7%89%87/%E8%8A%B7%E5%9B%AD.jpg?sign=ceff851ba3d4b129c094adc3e2012f5f&t=1649754435"
+         ></image>
+    </view>
+    <view class="tip">
+      <view class="loud">
+        <image src="https://ftp.bmp.ovh/imgs/2021/05/1b162425f28862b8.png" lazy-load="true"
+          ></image>
+      </view>
+      <view class="warm">温馨提示：校外人士在本校食堂进餐需额外加收20%搭伙费</view>
+    </view>
+    <view class="board">
+      <image
+        src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E9%BB%91%E6%9D%BF/%E8%8A%B7%E5%9B%AD%E9%BB%91%E6%9D%BF.png?sign=b61c2c32b713afdec89329ee49f268c5&t=1649754056"
+        mode="widthFix" ></image>
+    </view>
+    <view class="title">美食热门</view>
+    <scroll-view class="contain" scroll-x="true" show-scrollbar="false">
+      <view class="view">
+        <image class="food" src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%8A%B7%E5%9B%AD/%E8%8A%B7%E5%9B%AD-%E4%B8%89%E6%A5%BC%E5%AE%B5%E5%A4%9C%E6%91%8A.jpg?sign=ffefd346ec5496851d5be0a478fd816d&t=1649754091"
+          mode="widthFix"></image>
+        <view class="text">宵夜摊</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 25~30元</text></view>
+        <view class="type iconfont icon-fire"> 爆款美食</view>
+      </view>
+      <view class="view">
+        <image class="food" src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%8A%B7%E5%9B%AD/%E8%8A%B7%E5%9B%AD-%E5%B0%8F%E7%81%AB%E9%94%85.jpg?sign=97b1c30bdba22c2066b0c92b622b09df&t=1649754134"
+          mode="widthFix"></image>
+        <view class="text">小火锅</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 20~30元</text></view>
+        <view class="type iconfont icon-biaozhunzhu"> 现做现卖</view>
+      </view>
+      <view class="view">
+        <image class="food" src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%8A%B7%E5%9B%AD/%E8%8A%B7%E5%9B%AD-%E7%82%92%E9%A5%AD.jpg?sign=a82a40d6fa0838818dd43eb3e68ff1aa&t=1649754143"
+          mode="widthFix"></image>
+        <view class="text">炒饭</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 10~12元</text></view>
+        <view class="type iconfont icon-biaozhunzhu"> 现做现卖</view>
+      </view>
+      <view class="view">
+        <image class="food" src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%8A%B7%E5%9B%AD/%E8%8A%B7%E5%9B%AD-%E7%8C%AA%E6%9D%82%E6%B1%A4%E7%B2%89.jpg?sign=e5c3a81b655dbb5cd187ce3bd5c81de2&t=1649754160"
+          mode="widthFix"></image>
+        <view class="text">猪杂汤饭</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 13元</text></view>
+        <view class="type iconfont icon-xinpin1"> 新品宠儿</view>
+      </view>
+      <view class="view">
+        <image class="food" src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%8A%B7%E5%9B%AD/%E8%8A%B7%E5%9B%AD-%E5%B9%BF%E5%BC%8F%E8%82%A0%E7%B2%89.jpg?sign=0354a2a472155d1d5fb967e64f434abd&t=1649754174"
+          mode="widthFix"></image>
+        <view class="text">广式肠粉</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 5元</text></view>
+        <view class="type iconfont icon-zhekou1"> 优惠美味</view>
+      </view>
+      <view class="view">
+        <image class="food" src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%8A%B7%E5%9B%AD/%E8%8A%B7%E5%9B%AD-%E7%83%A7%E9%B8%A1.jpg?sign=dbfd06147cb5864906c96af34c7212b7&t=1649754188"
+          mode="widthFix"></image>
+        <view class="text">烧鸡</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 45元</text></view>
+        <view class="type iconfont icon-haoping"> 好评较多</view>
+      </view>
+      <view class="view">
+        <image class="food" src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%8A%B7%E5%9B%AD/%E8%8A%B7%E5%9B%AD-%E7%9F%B3%E9%94%85%E6%8B%8C%E9%A5%AD.jpg?sign=658b62af80df52837db63dce417fb4fd&t=1649754202"
+          mode="widthFix"></image>
+        <view class="text">石锅拌饭</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 16元</text></view>
+        <view class="type iconfont icon-biaozhunzhu"> 现做现卖</view>
+      </view>
+      <view class="view">
+        <image class="food" src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%8A%B7%E5%9B%AD/%E8%8A%B7%E5%9B%AD-%E8%B1%86%E8%85%90%E8%8A%B1.jpg?sign=fb0577ca4b6879d20572bc17d0a29ef2&t=1649754363"
+          mode="widthFix"></image>
+        <view class="text">豆腐花</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 8元</text></view>
+        <view class="type iconfont icon-zhekou1"> 优惠美味</view>
+      </view>
+      <view class="view">
+        <image class="food" src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%8A%B7%E5%9B%AD/%E8%8A%B7%E5%9B%AD-%E9%87%8D%E5%BA%86%E5%B0%8F%E9%9D%A2.jpg?sign=389aed6469499657afa3ac9f8cba9dd8&t=1649754371"
+          mode="widthFix"></image>
+        <view class="text">重庆小面</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 8元</text></view>
+        <view class="type iconfont icon-haoping"> 好评较多</view>
+      </view>
+    </scroll-view>
+  </block>
+  <block wx:if="{{tabs[1].isActive}}">
+    <view class="image">
+      <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E9%A3%9F%E5%A0%82%E7%85%A7%E7%89%87/%E8%A5%BF%E5%9B%AD.jpg?sign=0b5ed54a0fcad8ac5f62c8aae1365aa3&t=1649754664"></image>
+    </view>
+    <view class="tip">
+      <view class="loud">
+        <image src="https://ftp.bmp.ovh/imgs/2021/05/1b162425f28862b8.png" 
+          ></image>
+      </view>
+      <view class="warm">温馨提示：校外人士在本校食堂进餐需额外加收20%搭伙费</view>
+    </view>
+    <view class="board">
+      <image
+        src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E9%BB%91%E6%9D%BF/%E8%A5%BF%E5%9B%AD%E9%BB%91%E6%9D%BF.png?sign=936634600c12038e5c812630686ed9a6&t=1649754703"
+        mode="widthFix"></image>
+    </view>
+    <view class="title">美食热门</view>
+    <scroll-view class="contain" scroll-x="true" show-scrollbar="false">
+      <view class="view">
+        <image class="food" src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%A5%BF%E5%9B%AD/%E8%A5%BF%E5%9B%AD-%E5%85%B0%E5%B7%9E%E6%8B%89%E9%9D%A2.jpg?sign=d439bcbb2ff383363ade630380a682e4&t=1649754758"
+          mode="widthFix"></image>
+        <view class="text">兰州拉面</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 15元以上</text></view>
+        <view class="type iconfont icon-fire"> 爆款美食</view>
+      </view>
+      <view class="view">
+        <image class="food" src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%A5%BF%E5%9B%AD/%E8%A5%BF%E5%9B%AD-%E5%B0%8F%E7%B1%B3%E7%B1%B3.jpg?sign=c2669cb78c4b316b9036a630b37f2f15&t=1649754770"
+          mode="widthFix"></image>
+        <view class="text">小米米</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 10~15元</text></view>
+        <view class="type iconfont icon-zhekou1"> 优惠美味</view>
+      </view>
+      <view class="view">
+        <image class="food" src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%A5%BF%E5%9B%AD/%E8%A5%BF%E5%9B%AD-%E6%B8%85%E8%BF%9C%E9%B8%A1%E7%85%B2.jpg?sign=4e033f6d3f35f63f6b3b73838c0bab66&t=1649754800"
+          mode="widthFix"></image>
+        <view class="text">清远鸡煲</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 13元</text></view>
+        <view class="type iconfont icon-fire"> 爆款美食</view>
+      </view>
+      <view class="view">
+        <image class="food" src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%A5%BF%E5%9B%AD/%E8%A5%BF%E5%9B%AD-%E7%9F%B3%E9%94%85%E6%8B%8C%E9%A5%AD.jpg?sign=351d6881aefc45ada2b68196d4c3d697&t=1649754815"
+          mode="widthFix"></image>
+        <view class="text">石锅拌饭</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 14元以上</text></view>
+        <view class="type iconfont icon-biaozhunzhu"> 现做现卖</view>
+      </view>
+      <view class="view">
+        <image class="food" src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%A5%BF%E5%9B%AD/%E8%A5%BF%E5%9B%AD-%E7%AC%BC%E4%BB%94%E9%A5%AD.jpg?sign=125a7d49278239ed6cc765295f6821ec&t=1649754832"
+          mode="widthFix"></image>
+        <view class="text">竹笼饭</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 10元</text></view>
+        <view class="type iconfont icon-haoping"> 好评较多</view>
+      </view>
+      <view class="view">
+        <image class="food" src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%A5%BF%E5%9B%AD/%E8%A5%BF%E5%9B%AD-%E8%80%81%E7%81%AB%E9%9D%93%E6%B1%A4.jpg?sign=f4278937eccc1aa8ea687d66e5a11988&t=1649754841"
+          mode="widthFix"></image>
+        <view class="text">老火靓汤</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 6元</text></view>
+        <view class="type iconfont icon-zhekou1"> 优惠美味</view>
+      </view>
+    
+    </scroll-view>
+  </block>
+ 
+  <block wx:if="{{tabs[2].isActive}}">
+    <view class="image">
+      <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E9%A3%9F%E5%A0%82%E7%85%A7%E7%89%87/%E8%8D%B7%E5%9B%AD.jpg?sign=96b260528fa20a0f90269a92e43a3612&t=1649754955"
+         ></image>
+    </view>
+    <view class="tip">
+      <view class="loud">
+        <image src="https://ftp.bmp.ovh/imgs/2021/05/1b162425f28862b8.png"
+          ></image>
+      </view>
+      <view class="warm">温馨提示：校外人士在本校食堂进餐需额外加收20%搭伙费</view>
+    </view>
+    <view class="board">
+      <image
+        src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E9%BB%91%E6%9D%BF/%E8%8D%B7%E5%9B%AD%E9%BB%91%E6%9D%BF.png?sign=37153a2d8ba7a0cfcc6267f8c7448fa8&t=1649754993"
+        mode="widthFix"></image>
+    </view>
+    <view class="title">美食热门</view>
+    <scroll-view class="contain" scroll-x="true" show-scrollbar="false">
+      <view class="view">
+        <image class="food"
+          src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%8D%B7%E5%9B%AD/%E8%8D%B7%E5%9B%AD-%E9%9D%A2%E9%A3%9F.jpg?sign=105a65f1549959b0d5f993f84d8355b5&t=1649755025"
+          mode="widthFix"></image>
+        <view class="text">面食</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 7~11元</text></view>
+        <view class="type iconfont icon-fire"> 爆款美食</view>
+      </view>
+      <view class="view">
+        <image class="food"
+          src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%8D%B7%E5%9B%AD/%E8%8D%B7%E5%9B%AD-%E9%85%B8%E8%8F%9C%E9%B1%BC.jpg?sign=df625270810771f740dc10be33d875a6&t=1649755037"
+          mode="widthFix"></image>
+        <view class="text">酸菜鱼</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 12元</text></view>
+        <view class="type iconfont icon-haoping"> 好评较多</view>
+      </view>
+      <view class="view">
+        <image class="food"
+          src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%8D%B7%E5%9B%AD/%E8%8D%B7%E5%9B%AD-%E8%87%AA%E9%80%89%E5%8C%BA.jpg?sign=987fcf756b69833d06a8cb57fd7dc530&t=1649755068"
+          mode="widthFix"></image>
+        <view class="text">自选区</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 2~8元</text></view>
+        <view class="type iconfont icon-zhekou1"> 优惠美味</view>
+      </view>
+      <view class="view">
+        <image class="food"
+          src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%8D%B7%E5%9B%AD/%E8%8D%B7%E5%9B%AD-%E5%B0%8F%E5%90%83.jpg?sign=09475b64b1609e1d5ed72673aacd1434&t=1649755122"
+          mode="widthFix"></image>
+        <view class="text">小吃</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 3~8元</text></view>
+        <view class="type iconfont icon-zhekou1"> 优惠美味</view>
+      </view>
+      <view class="view">
+        <image class="food"
+          src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%8D%B7%E5%9B%AD/%E8%8D%B7%E5%9B%AD-%E6%A2%85%E5%8E%BF%E8%85%8C%E9%9D%A2.jpg?sign=c13c6aca75dc7877ec662f6c8cc08093&t=1649755132"
+          mode="widthFix"></image>
+        <view class="text">梅菜腌面</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 10元</text></view>
+        <view class="type iconfont icon-fire"> 爆款美食</view>
+      </view>
+      <view class="view">
+        <image class="food"
+          src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%8D%B7%E5%9B%AD/%E8%8D%B7%E5%9B%AD-%E8%90%A5%E5%85%BB%E5%A5%97%E9%A4%90.jpg?sign=bced2153cbdf531713a0e46b7bf49970&t=1649755145"
+          mode="widthFix"></image>
+        <view class="text">营养套餐</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 12元</text></view>
+        <view class="type iconfont icon-haoping"> 好评较多</view>
+      </view>
+      <view class="view">
+        <image class="food"
+          src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E7%BE%8E%E9%A3%9F/%E8%8D%B7%E5%9B%AD/%E8%8D%B7%E5%9B%AD-%E5%8D%A4%E6%B0%B4%E5%A5%97%E9%A4%90.jpg?sign=2775aee69c6771069611bdd3804fb8b8&t=1649755165"
+          mode="widthFix"></image>
+        <view class="text">卤水套餐</view>
+        <view class="price iconfont icon-rmb-full"><text decode="true">&nbsp; 12~18元</text></view>
+        <view class="type iconfont icon-haoping"> 好评较多</view>
+      </view>
+     
+    </scroll-view>
+  </block>
+ 
+</Tabs>

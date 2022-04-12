@@ -1,0 +1,33 @@
+page{
+  background: #ffffff;
+}
+/* .people{
+  margin-top: 50rpx;
+  width: 100vw;
+} */
+.logo{
+  margin-top: 200rpx;
+  text-align: center;
+}
+.logo image{
+  height: 400rpx;
+  animation: rubberBand 2s linear 1 .2s;
+}
+.text{
+  margin-top: 40rpx;
+  font-size: 50rpx;
+  font-weight:bold;
+}
+.text-else{
+  margin-top:25rpx;
+  font-size: 40rpx;
+  color: rgb(117, 117, 117);
+}
+.edition{
+  margin-top: 400rpx;
+  font-size: 27rpx;
+}
+.club{
+  margin-top: 20rpx;
+  font-size: 27rpx;
+}

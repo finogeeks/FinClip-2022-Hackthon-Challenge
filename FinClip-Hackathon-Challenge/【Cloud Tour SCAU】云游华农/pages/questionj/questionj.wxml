@@ -1,0 +1,55 @@
+<!--pages/questionj/questionj.wxml-->
+<view class="all">
+  <view class="picture">
+    <image wx:if="{{dui==10}}" src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/c56ba4e2-661a-444f-9783-d2da69251d8f.gif" mode="widthFix"></image>
+    <image wx:if="{{dui>=8&&dui<10}}" src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/2fa25bd4-66db-44f2-8b5d-b2ec69ff9e12.gif" mode="widthFix"></image>
+    <image wx:if="{{dui>=6&&dui<8}}" src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/5cf1bce3-f18a-4d3f-9f83-042af3cd2eff.gif" mode="widthFix"></image>
+    <image wx:if="{{dui>=4&&dui<6}}" src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/b9137ecf-df74-4e63-bdab-2fe3bdf7aa23.gif" mode="widthFix"></image>
+    <image wx:if="{{dui<4}}" src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/956bc028-8a02-4378-88ad-0f1cefcb1247.gif" mode="widthFix"></image>
+  </view>
+  <view class="contain">
+    <view class="result"><image src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/66c75668-0507-4e4c-91da-0053746d230d.png" mode="heightFix"></image></view>
+    <view class="items">
+      <text>第一题</text>
+      <text class="iconfont {{d1==true?'icon-duigou1':'icon-cuo'}}"></text>
+    </view>
+    <view class="items">
+      <text>第二题</text>
+      <text class="iconfont {{d2==true?'icon-duigou1':'icon-cuo'}}"></text>
+    </view>
+    <view class="items">
+      <text>第三题</text>
+      <text class="iconfont {{d3==true?'icon-duigou1':'icon-cuo'}}"></text>
+    </view>
+    <view class="items">
+      <text>第四题</text>
+      <text class="iconfont {{d4==true?'icon-duigou1':'icon-cuo'}}"></text>
+    </view>
+    <view class="items">
+      <text>第五题</text>
+      <text class="iconfont {{d5==true?'icon-duigou1':'icon-cuo'}}"></text>
+    </view>
+    <view class="items">
+      <text>第六题</text>
+      <text class="iconfont {{d6==true?'icon-duigou1':'icon-cuo'}}"></text>
+    </view>
+    <view class="items">
+      <text>第七题</text>
+      <text class="iconfont {{d7==true?'icon-duigou1':'icon-cuo'}}"></text>
+    </view>
+    <view class="items">
+      <text>第八题</text>
+      <text class="iconfont {{d8==true?'icon-duigou1':'icon-cuo'}}"></text>
+    </view>
+    <view class="items">
+      <text>第九题</text>
+      <text class="iconfont {{d9==true?'icon-duigou1':'icon-cuo'}}"></text>
+    </view>
+    <view class="items">
+      <text>第十题</text>
+      <text class="iconfont {{d10==true?'icon-duigou1':'icon-cuo'}}"></text>
+    </view>
+  </view>
+</view>
+
+

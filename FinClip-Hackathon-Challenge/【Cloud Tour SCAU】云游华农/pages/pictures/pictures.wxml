@@ -1,0 +1,5 @@
+<view class="contain" >
+  <view class="pictureContain item-{{index}}" wx:for="{{lazyData}}"  wx:key="index">
+    <image  src="{{item.show? item.src : loadIcon}}" data-src="{{item.src}}" class='{{item.show? "active picture" : "picture"}}'  bindtap="previewImage" mode="aspectFill"></image>
+  </view>
+</view>

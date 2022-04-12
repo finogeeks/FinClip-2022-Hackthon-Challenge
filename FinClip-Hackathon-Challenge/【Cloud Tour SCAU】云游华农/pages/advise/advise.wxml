@@ -1,0 +1,4 @@
+<view class="img">
+  <image src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/d57fc64f-e790-4dd5-8349-07c396b2f1fb.png" mode="widthFix"></image>
+</view>
+<button open-type="feedback">反馈意见</button>

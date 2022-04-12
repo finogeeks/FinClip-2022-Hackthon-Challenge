@@ -1,0 +1,19 @@
+
+.contain{
+  width: 100vw;
+  margin-top:20rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+ .pictureContain{
+  width: 200rpx;
+  height: 300rpx;
+  margin: 10rpx 0rpx 5rpx 35rpx;
+  overflow: hidden;
+  border-radius: 10rpx;
+  text-align: center;
+}
+.picture{
+  height: 300rpx;
+  width: 200rpx;
+} 

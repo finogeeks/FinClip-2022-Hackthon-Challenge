@@ -1,0 +1,6 @@
+
+<map id="busMap" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" show-compass polyline="{{polyline}}">
+<button bindtap="mapLine">线路一</button>
+<button>线路二</button>
+<button>线路三</button>
+</map>

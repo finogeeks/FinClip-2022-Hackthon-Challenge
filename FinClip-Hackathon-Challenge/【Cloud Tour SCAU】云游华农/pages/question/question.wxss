@@ -1,0 +1,148 @@
+/* pages/question/question.wxss */
+.all {
+  /* background: linear-gradient(#f5ede2 50%, #f7f6f5 60%);
+   */
+   background: #fefefe;
+}
+
+.top {
+  width: 100vw;
+  height: 490rpx;
+  overflow: hidden;
+}
+
+.top image {
+  width: 100vw;
+  animation: slideInRight 2s linear 1 .2s;
+}
+
+.question {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.question>.main {
+  width: 700rpx;
+  margin-top: 40rpx;
+  padding: 10rpx;
+  box-shadow: 0px 2px 7px rgb(170, 170, 170);
+  border-radius: 20rpx;
+  background: white;
+  color: #5e5e5e;
+  font-family: Tahoma, Helvetica, Arial, '宋体', sans-serif;
+}
+
+.question-top {
+  margin: 20rpx;
+  font-size: 35rpx;
+  line-height: 55rpx;
+}
+
+/* .label {
+  border-bottom: 1px solid #c7c7c7;
+} */
+.border{
+  border-bottom: 1rpx solid rgb(190, 190, 190);
+}
+
+.label:last-child {
+  border: none;
+}
+
+.label text {
+  font-size: 30rpx;
+  color: #757575;
+}
+
+.label .option {
+  display: inline-block;
+  height: 50rpx;
+  width: 50rpx;
+  border-radius: 50%;
+  margin: 20rpx;
+  color: white;
+  text-align: center;
+  line-height: 50rpx;
+  background: #c7c7c7;
+}
+
+.true {
+  background: #59cab5 !important;
+}
+
+.false{
+  background:#ee696d!important;
+}
+
+.shake {
+  animation: tremble .3s ease 2;
+}
+
+.question-bottom {
+  margin-top: 40rpx;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.question-bottom view {
+  height: 60rpx;
+  width: 180rpx;
+  font-size: 25rpx;
+  line-height: 70rpx;
+  text-align: center;
+  color: rgb(117, 117, 117);
+  background: #f9faff;
+  border-radius: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tx{
+  /* visibility: hidden; */
+  display: none;
+}
+.fx{
+  /* visibility: hidden; */
+  display: none;
+}
+
+.correct{
+  padding-left:20rpx;
+  color:#59cab5 !important;
+  font-size: 33rpx !important;
+}
+.wrong{
+  padding-left:20rpx;
+  color:#ee696d !important;
+  font-size: 39rpx !important;
+}
+
+@keyframes tremble {
+  0% {
+    transform: translate(0rpx);
+  }
+
+  25% {
+    transform: translate(8rpx);
+  }
+
+  50% {
+    transform: translate(0rpx);
+  }
+
+  75% {
+    transform: translate(-8rpx);
+  }
+
+  100% {
+    transform: translate(0rpx);
+  }
+}
+.hide{
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}

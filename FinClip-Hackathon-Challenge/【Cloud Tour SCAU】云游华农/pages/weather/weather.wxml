@@ -1,0 +1,58 @@
+<!--pages/tianqi/tianqi.wxml-->
+<view class="weather-top">
+<view class="location">
+  <text class="iconfon">♥</text>
+  华南农业大学
+</view>
+<view class="temperature">{{temp}}℃</view>
+<view class="info">
+  <view class="weather">{{weatherNow}}</view>
+  <text>|</text>
+  <view class="air {{airColor}}">{{aqi}} {{airRate}}</view>
+</view>
+<view class="date">
+  <text class="iconfont icon-riqi1"></text>
+  {{today.fxDate}}
+ </view>
+<view class="other">
+  <text>风力 {{wind}}级</text>
+  <text>风向 {{windDir}}</text>
+  <text class="iconfont">PM2.5</text>
+  <text>{{pm2p5}}</text>
+</view>
+</view>
+<view class="center"></view>
+<view class="future">
+  <view class="iconfont icon-icon17">
+    <view class="iconfont icon-yueliang1"></view>
+  </view>
+  <view class="day">
+    <view class="temp">
+      <view class="textbox">
+        <text>今天</text>
+      </view>
+      <view>{{today.tempMin}}/ {{today.tempMax}}°C</view>
+    </view>
+    <view class="weather">
+      <text>{{today.textDay}}</text>
+      <image wx:if="{{isTrue}}" src="cloud://ykf-1gf4ci0r28637c7c.796b-ykf-1gf4ci0r28637c7c-1305480306/天气/{{today.iconDay}}.png"></image>
+      <text>{{today.textNight}}</text>
+      <image wx:if="{{isTrue}}" src="cloud://ykf-1gf4ci0r28637c7c.796b-ykf-1gf4ci0r28637c7c-1305480306/天气/{{today.iconNight}}.png"></image>
+    </view>
+  </view>
+  <view class="vertical-line"></view>
+  <view class="day">
+    <view class="temp">
+      <view class="textbox">
+        <text>明天</text>
+      </view>
+      <view>{{tomorrow.tempMin}}/ {{tomorrow.tempMax}}°C</view>
+    </view>
+    <view class="weather">
+      <text>{{tomorrow.textDay}}</text>
+      <image wx:if="{{isTrue}}" src="cloud://ykf-1gf4ci0r28637c7c.796b-ykf-1gf4ci0r28637c7c-1305480306/天气/{{tomorrow.iconDay}}.png"></image>
+      <text>{{tomorrow.textNight}}</text>
+      <image wx:if="{{isTrue}}" src="cloud://ykf-1gf4ci0r28637c7c.796b-ykf-1gf4ci0r28637c7c-1305480306/天气/{{tomorrow.iconNight}}.png"></image>
+    </view>
+  </view>
+</view>

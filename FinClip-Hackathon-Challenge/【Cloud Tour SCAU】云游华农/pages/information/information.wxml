@@ -1,0 +1,341 @@
+<!--pages/information/information.wxml-->
+<!-- 华农院士 -->
+<view class="nav">华农院士</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="1" style="height:{{isTrue1==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-xiaoyoushuju">
+       <text class="name">丁颖院士</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue1==true?'rotate':''}}" ></view>
+    <view class="intro-in" >
+      <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E9%99%A2%E5%A3%AB/%E4%B8%81%E9%A2%96%E9%99%A2%E5%A3%AB.jpg?sign=0302fd6bd1e9e5a491bf7a99f3891a6e&t=1649751610" mode="heightFix"></image> 
+      <view><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;丁颖（1888-1964），男，字君颖，号竹铭，广东高州人。</text></view>
+      <view><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国人民优秀的农业科学家。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——周恩来</text></view>
+      <view class="ding"></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在数十年的科研路上，他身体力行地体现着矢志为民、务实求真、身教以德、敬业乐群的精神，并实现了自己“为农夫温饱尽责尽力”的誓言，无愧为蜚声国内外农业科技界的“中国稻作之父”。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——中国农科院</text></view> 
+      <view><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1955年选聘为中国科学院学部委员（院士）</text></view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="2" style="height:{{isTrue2==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-xiaoyoushuju">
+       <text class="name">陈焕镛院士</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue2==true?'rotate':''}}"></view>
+    <view class="intro-in">
+      <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E9%99%A2%E5%A3%AB/%E9%99%88%E7%84%95%E9%95%9B%E9%99%A2%E5%A3%AB.jpg?sign=0e06abca4d9bab3342b341b3cc67cb8c&t=1649751644" mode="heightFix"></image> 
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;陈焕镛(1890—1971),字文农，生于香港。1919年毕业于美国哈佛大学森林学院。著名植物学家，中国近代植物分类学的开拓者和奠基者之一，中国科学院院士，中国科学院华南植物研究所研究员、首任所长，中国科学院华南植物园的创建者。</text></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;陈焕镛毕生从事植物学研究和教学事业，中国近现代植物分类学奠基人之一。成就了中国植物学史上的多个第一：建了第一个自己的植物研究所、标本馆，编了第一本自己的植物志，建了第一个自己的植物园，并且首次在国际学会上被选为执委或副主席，奠定了我国植物学在国际上的声望与地位。</text></view>
+      <view><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1955年选聘为中国科学院学部委员（院士）</text></view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="3" style="height:{{isTrue3==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-xiaoyoushuju">
+       <text class="name">庞雄飞院士</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue3==true?'rotate':''}}"></view>
+    <view class="intro-in">
+      <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E9%99%A2%E5%A3%AB/%E5%BA%9E%E9%9B%84%E9%A3%9E%E9%99%A2%E5%A3%AB.jpg?sign=1da5de2943d2645a49fc05d1a400307d&t=1649751660" mode="heightFix"></image> 
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;庞雄飞（1930-2004）广东佛山人，昆虫学家，曾任华南农业大学教授、副校长。1997年当选为中国科学院院士。被评为突出贡献中青年专家、全国先进科技工作者。</text></view>
+      <view class="bo"></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1999年，庞雄飞根据昆虫与植物协同进化的原理，提出了作物免害工程和植物保护剂的新概念，即利用基因工程改变作物次生化合物组成，以达到驱避害虫的目的和利用异源植物次生化合物驱避害虫的新思路，并建立了植物保护剂的研究方法，开拓了植物保护研究的一个新的领域。</text></view>
+      <view><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1997年当选为中国科学院院士</text></view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="4" style="height:{{isTrue4==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-xiaoyoushuju">
+       <text class="name">赵善欢院士</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue4==true?'rotate':''}}"></view>
+    <view class="intro-in">
+      <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E9%99%A2%E5%A3%AB/%E8%B5%B5%E5%96%84%E6%AC%A2%E9%99%A2%E5%A3%AB.jpg?sign=45531e800c76a36d5062eaf1a1c01ade&t=1649751673" mode="heightFix"></image> 
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;赵善欢（1914-1999），广东省高要县人。曾任华南农学院院长、华南农业大学教授。第三届全国人大代表和第五至七届全国政协委员，1980年当选为中国科学院院士（学部委员）。</text></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1983年冬，赵善欢退出学校领导班子，担任顾问，但仍致力于培养博士研究生和承担科研攻关课题的工作。他主持的“植物性杀虫剂的开发利用研究”在国内处于领先地位，并得到了国际上有关专家的重视。</text></view>
+      <view><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1986年，赵善欢应联邦德国基森大学（Giessen University）的邀请，前往肯尼亚参加国际植物性杀虫剂（印楝）会议，并担任大会执行主席。他在会上所作的研究报告，受到了同行专家们的高度评价，为祖国争得了荣誉。</text></view>
+      <view><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1980年当选为中国科学院学部委员（院士）</text></view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="5" style="height:{{isTrue5==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-xiaoyoushuju">
+       <text class="name">蒲蛰龙院士</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue5==true?'rotate':''}}"></view>
+    <view class="intro-in">
+      <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E9%99%A2%E5%A3%AB/%E8%92%B2%E8%9B%B0%E9%BE%99%E9%99%A2%E5%A3%AB.jpg?sign=ea5365ae8bd950e5da7e7e8daf2b0649&t=1649751688" mode="heightFix"></image> 
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蒲蛰龙（1912-1997）出生于云南，广东省钦州县（今属广西）人，祖籍四川。昆虫学家，中国科学院院士，国际杰出的昆虫学家，中国害虫生物防治奠基人。</text></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1980年蒲蛰龙荣获美国明尼苏达大学最高荣誉奖“优秀成就奖”。1991年，美国有害生物综合防治杂志评价蒲蛰龙院士为“华南生物防治之父”，蒲蛰龙教授不愧是生物防治领域的一座丰碑。1997年12月31日零时45分，这位功勋卓著的一代昆虫大师因病医治无效，在广州溘然辞世，享年86岁。</text></view>
+      <view><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1980年当选为中国科学院学部委员（院士）</text></view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="6" style="height:{{isTrue6==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-xiaoyoushuju">
+       <text class="name">卢永根院士</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue6==true?'rotate':''}}"></view>
+    <view class="intro-in" >
+      <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E9%99%A2%E5%A3%AB/%E5%8D%A2%E6%B0%B8%E6%A0%B9%E9%99%A2%E5%A3%AB.jpg?sign=6f75f36a2cfafbcfa9b46a3cfe1cede4&t=1649751703" mode="heightFix"></image> 
+      <view><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;卢永根（1930—2019），男，出生于香港，作物遗传学家，中国科学院院士，华南农业大学教授、博士生导师、华南农业大学前校长。</text></view>
+      <view><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;“种得桃李满天下，心唯大我育青禾。是春风，是春蚕，更化作护花的春泥。”</text></view>
+      <view><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——“感动中国2017年度人物”颁奖辞</text></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;长期从事作物遗传学的教学和研究工作，研究领域包括稻的遗传资源、稻的经济性状遗传、稻的雄性不育遗传和栽培稻的杂种不育性遗传等方面。</text></view>
+      <view><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1993年当选为中国科学院院士</text></view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="7" style="height:{{isTrue7==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-xiaoyoushuju">
+       <text class="name">黄耀祥院士</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue7==true?'rotate':''}}"></view>
+    <view class="intro-in">
+      <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E9%99%A2%E5%A3%AB/%E9%BB%84%E8%80%80%E7%A5%A5%E9%99%A2%E5%A3%AB.jpg?sign=fd8c2d5cfe09e9e7c4f0872b63d94576&t=1649751730" mode="heightFix"></image> 
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;黄耀祥（1916-2004）广东省开平人，水稻遗传育种及其应用基础理论研究专家。1939年毕业于国立中山大学农学院。开创水稻矮化育种，促进中国籼稻矮秆化，居国际领先地位，被誉为“中国半矮秆水稻之父”。</text></view>
+      <view class="bo"></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;“水稻矮化育种”获1978年全国科学大会奖；1979年黄耀祥被国务院授予全国劳动模范称号。</text></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;“早晚兼用丛生快长型籼稻新品种双桂1号的育成及其种性研究”获1985年农牧渔业部技术改进二等奖，同年又获国家科技进步二等奖。</text></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1988年黄耀祥获广东省有突出贡献的专家称号，1989 年被国务院授予全国先进工作者称号。</text></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1995年当选为中国工程院院士</text></view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="8" style="height:{{isTrue8==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-xiaoyoushuju">
+       <text class="name">郑儒永院士</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue8==true?'rotate':''}}"></view>
+    <view class="intro-in">
+      <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E9%99%A2%E5%A3%AB/%E9%83%91%E5%84%92%E6%B0%B8%E9%99%A2%E5%A3%AB.jpg?sign=7824c4160217e4793dcaa3dd1fa35c54&t=1649751741" mode="heightFix"></image> 
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;郑儒永，1931年1月10日出生于香港，真菌学家，中国科学院院士，中国科学院微生物研究所研究员、中国科学院大学博士生导师。由于中国高等院校1952年院系调整，1952年转入华南农业大学植保系。</text></view>
+      <view class="bo"></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;截至2016年8月，郑儒永先后以第一完成人在1984、1986、1989年分别获得中国科学院科技成果二等奖、中国科学院科技进步二等奖、中国科学院自然科学二等奖，另在1987年以参加者获得中国科学院科技进步特等奖（集体项目）</text></view>
+      <view><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1999年当选为中国科学院院士</text></view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="9" style="height:{{isTrue9==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-xiaoyoushuju">
+       <text class="name">罗锡文院士</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue9==true?'rotate':''}}"></view>
+    <view class="intro-in">
+      <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E9%99%A2%E5%A3%AB/%E7%BD%97%E9%94%A1%E6%96%87%E9%99%A2%E5%A3%AB.jpg?sign=0fb1a194674b202e7cd09fce3c57732d&t=1649751756" mode="heightFix"></image> 
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;罗锡文，1945年12月2日生，男，汉族，湖南株洲人，中共党员，农业机械化工程专家，现任华南农业大学教授、南方农业机械与装备关键技术教育部重点实验室主任，兼任中国农业机械学会理事长和中国农业工程学会名誉理事长。</text></view>
+      <view class="bo"></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1970年华中工学院无线电技术专业本科毕业后在贵州省铜仁县农机厂工作9年，1982年在华南农学院获农业机械化专业硕士学位，80年代后期在美国进修2年。2009年当选为中国工程院院士。</text></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020年在广州建设成功首个水稻无人农场</text></view>
+      <view><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2009年当选为中国工程院院士</text></view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="10" style="height:{{isTrue10==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-xiaoyoushuju">
+       <text class="name">林鸿宣院士</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue10==true?'rotate':''}}"></view>
+    <view class="intro-in">
+      <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E9%99%A2%E5%A3%AB/%E6%9E%97%E9%B8%BF%E5%AE%A3%E9%99%A2%E5%A3%AB.jpg?sign=71b4e850c19eadd38e6d87d2d5a4f1a3&t=1649751769" mode="heightFix"></image> 
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;林鸿宣，1960年11月出生于海南文昌，作物遗传学家，中国科学院院士，中国科学院上海生命科学研究院植物生理生态研究所研究员、博士生导师、课题组长。</text></view>
+      <view class="bo"></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;林鸿宣长期从事水稻重要复杂性状的分子遗传机理研究。</text></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1997年8月-2001年2月在日本国立农业生物资源研究所水稻基因组计划项目（RGP）做博士后研究。2001年2月入选中国科学院“百人计划” 应聘回国工作。现任中国科学院上海生命科学研究院植物生理生态研究所课题组长。目前主要利用基因组研究获得的大量遗传信息开展作物重要性状遗传与功能基因的研究。</text></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2009年当选为中国科学院院士。</text></view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="11" style="height:{{isTrue11==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-xiaoyoushuju">
+       <text class="name">吴清平院士</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue11==true?'rotate':''}}"></view>
+    <view class="intro-in">
+      <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E9%99%A2%E5%A3%AB/%E5%90%B4%E6%B8%85%E5%B9%B3%E9%99%A2%E5%A3%AB.png?sign=02dfa8de287a82c3c03b8cfb3d288097&t=1649751795" mode="heightFix"></image> 
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;吴清平，1962年11月15日出生于广东省梅州市，食品安全科学技术专家，中国工程院院士 [1]  ，广东省微生物研究所研究员、博士生导师，所长。</text></view>
+      <view class="bo"></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;吴清平主要从事生物安全监测与控制、食用菌产业化关键技术以及微生物发酵工程领域的研究和开发工作。</text></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;截至2016年，吴清平主持和承担分析微生物学和微生物发酵工程领域国家、省部级重大科研项目22项。获国家科技进步二等奖2项，省部级一等奖5项、二等奖4项，中国专利优秀奖2项，广东省专利金奖1项。</text></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015年当选为中国工程院院士</text></view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="12" style="height:{{isTrue12==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-xiaoyoushuju">
+       <text class="name">刘耀光院士</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue12==true?'rotate':''}}"></view>
+    <view class="intro-in">
+      <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E9%99%A2%E5%A3%AB/%E5%88%98%E8%80%80%E5%85%89%E9%99%A2%E5%A3%AB.jpg?sign=e0223d61dacca805228e6314e6d6dc4c&t=1649751808" mode="heightFix"></image> 
+      <view><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;刘耀光，1954年3月出生，男，出生于广东韶关，中国科学院院士，植物遗传学家，亚热带农业生物资源保护与利用国家重点实验室副主任，九三学社广东省委院士与杰出学者委员会主任。</text></view>
+      <view class="bo"></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;作为一名华南农业大学教授，刘耀光院士主要从事植物育性发育的分子遗传和基因工程研究，在水稻细胞质雄性不育与恢复性、杂种不育与亲和性、光温敏不育性等遗传系统的基因克隆和分子作用机理方面进行了系统性、创新性的研究。</text></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017年当选为中国科学院院士</text></view>
+    </view>
+  </view>
+</view>
+<!-- 华农建筑 -->
+<view class="nav">华农建筑</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="13" style="height:{{isTrue13==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-building">
+       <text class="name">真维斯</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue13==true?'rotate':''}}"></view>
+    <view class="intro-in">
+      <image src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/150eb0ed-1bc6-44bd-8a50-ca65c8507b4a.png" mode="heightFix"></image> <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2009年真维斯公司与华农达成协议，捐资100万元支持华农教育事业。为了感谢该善举副校长王浩决定将学生活动中心冠名为“真维斯学生活动中心”。</text></view>
+      <view class="bo"></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“希望学生学习真维斯勇于创新、敢于拼搏的精神，学习杨勋先生永不言败、永不止步的创业守业精神，以及勇于担当、造福社会的崇高品德，将来为国家富强和社会进步贡献力量。”副校长王浩在揭牌仪式致辞中表达出对学生这样的期盼。</text></view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="14" style="height:{{isTrue14==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-building">
+       <text class="name">图书馆</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue14==true?'rotate':''}}"></view>
+    <view class="intro-in">
+      <image src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/8c0a8a66-23a0-4068-b7a4-5d43a31f99c7.jpg" mode="heightFix"></image> 
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;原中山大学图书馆、岭南大学农学院图书馆合并分流，并接纳广西大学农学院畜牧兽医系的藏书和设备成立华南农学院图书馆。</text></view>
+      <view class="bo"></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图书馆现设六部一室:资源建设部、特色资源部、流通阅览部、信息咨询部、阅读推广部、系统部、办公室。</text></view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="15" style="height:{{isTrue15==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-building">
+       <text class="name">博物馆</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue15==true?'rotate':''}}"></view>
+    <view class="intro-in">
+      <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E5%8D%8E%E5%8D%97%E5%86%9C%E4%B8%9A%E5%A4%A7%E5%AD%A6%E5%8D%9A%E7%89%A9%E9%A6%86.png?sign=14c665405af6456b4f99fce073975878&t=1649751540" mode="heightFix"></image> 
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019年11月9日上午，历经五年的筹备建设的华南农业博物馆开始对外开放。该农博馆是华南地区首个以华南农业与自然资源为主题的农业博物馆。</text></view>
+      <view class="bo"></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;两层展馆区域科学有序地划分为八个展区，即广东农业历史、传统农具、土壤与岩石、植物世界、动物世界、昆虫世界、南海海洋生物、林业资源与利用</text></view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="16" style="height:{{isTrue16==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-building">
+       <text class="name">红满堂</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue16==true?'rotate':''}}"></view>
+    <view class="intro-in">
+      <image src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/8847791b-4e96-4a78-849b-04560121eccd.png" mode="heightFix"></image> 
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;红满堂是华南农业大学的历史文化符号、标志性建筑。 全国首个砖拱建筑，被称为“广东壳”的红满堂，建于1958年大跃进时期。</text></view>
+      <view class="bo"></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;700多平方的大厅没用一根柱子，是全国第一个砖拱驳壳建筑。在百年校庆之际，华农决定在原址重建“红满堂”,保留了原有外观，采用了新的技术结构，以钢筋混凝土为原材料，外观与20世纪的红满堂一致。校方的出发点正是要“复苏校友记忆”。复建后的红满堂被设计为多功能活动场所,主要作为学校高端学术会议的专用场所。</text></view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="17" style="height:{{isTrue17==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-building">
+       <text class="name">校史馆</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue17==true?'rotate':''}}"></view>
+    <view class="intro-in">
+      <image src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/75f88fb1-157f-478e-8d08-946f7984bb79.jpg" mode="heightFix"></image> 
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校史馆始建于民国22年（1933年），建成于民国23年（1934年），占地面积4494平方米，是原中山大学石牌校区建筑。</text></view>
+      <view class="bo"></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;建筑通宽107米，通深42米，高三层，中为主楼，两边有副楼。如今正门门额上的的“华南农学院”，是毛泽东主席的亲笔题词，铭记着当时的历史。华南农业大学校史展览馆，是许多华农学子心目中最佳的毕业留影胜地。</text></view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="18" style="height:{{isTrue18==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-building">
+       <text class="name">树木园</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue18==true?'rotate':''}}"></view>
+    <view class="intro-in">
+      <image src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/369cca8e-488a-4ac2-bd2b-96268406b2a8.jpg" mode="heightFix"></image> 
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;华南农业大学树木园位于长岗山，占地面积24公顷。树木园分为引种试验区、树木分类区、造林实验区、育种试验区、生态恢复区及水生植物区等6个功能区。</text></view>
+      <view class="bo"></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;园内现有植物种共1065种，包括华南地区各类森林的主要构成树种、珍稀濒危植物、经济植物、园林植物、荫生植物、水生植物。</text></view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="19" style="height:{{isTrue19==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-building">
+       <text class="name">丁颖礼堂（第六教学楼）</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue19==true?'rotate':''}}" ></view>
+    <view class="intro-in">
+      <image src="https://zebra-common-system-pre.oss-cn-shanghai.aliyuncs.com/bmdev/59aff07d-07e1-4029-b516-947d37250009.jpg" mode="heightFix"></image> 
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第六教学楼共5层楼，一至三楼作为课室，第一期工程投入使用19间课室，其中2间是画室，2间为录播室。</text></view>
+      <view class="bo"></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第六教学楼位于校门牌坊旁，原为丁颖科技交流中心，但由于历史原因，一度被搁置，成为“烂尾楼”。近年来，学校对该楼进行重新规划装修，摇身变成如今的“教六”。</text></view>
+    </view>
+  </view>
+</view>
+
+<!-- 荣誉校友 -->
+<view class="nav">荣誉校友</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="20" style="height:{{isTrue20==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-xiaoyouhui">
+       <text class="name">邓植仪</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue20==true?'rotate':''}}"></view>
+    <view class="intro-in">
+      <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E6%A0%A1%E5%8F%8B/%E9%82%93%E6%A4%8D%E4%BB%AA.jpg?sign=a7035bdab671dbbe89d4f8123bae3996&t=1649751912" mode="heightFix"></image> 
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邓植仪（1888-1957），字槐庭，广东省东莞县人，著名农业教育家，土壤学家。20年代初，参与筹建广东大学和中山大学，长期担任两校教授、农学院院长、教务长之职。1930年创建广东土壤调查所，率先在广东开展分县土壤调查。1935年创建中山大学研究院土壤学部，为当时国内唯一培养土壤学科硕士研究生的机构。同年与彭家元合著《土壤学》。为广东现代高等农业教育的开创、巩固、发展作出了重要贡献。</text></view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="21" style="height:{{isTrue21==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-xiaoyouhui">
+       <text class="name">张巨伯</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue21==true?'rotate':''}}"></view>
+    <view class="intro-in">
+      <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E6%A0%A1%E5%8F%8B/%E5%BC%A0%E5%B7%A8%E4%BC%AF.jpg?sign=dd085996451499de84021431b3b54a35&t=1649751849" mode="heightFix"></image> 
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;张巨伯（1892-1951），我国著名的农业昆虫学家，农业教育家。他是中国最早的农业昆虫学教授之一，培养了我国第一批现代农业昆虫专业人才；首先用实验的方法在田间研究农业害虫问题，为我国应用昆虫学奠定了基础；参与组织我国早期害虫防治专业行政机构，对推动害虫防治技术作出了很大贡献。他是我国昆虫学术团体的创始人，曾任国际昆虫学会副主席。</text></view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="22" style="height:{{isTrue22==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-xiaoyouhui">
+       <text class="name">黄昌贤</text>
+   </text> 
+    <view class="iconfont icon-pointright {{isTrue22==true?'rotate':''}}"></view>
+    <view class="intro-in">
+      <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E6%A0%A1%E5%8F%8B/%E9%BB%84%E6%98%8C%E8%B4%A4.jpg?sign=1addbb83eb60e2eea650542a6cc8954f&t=1649751869" mode="heightFix"></image> 
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;黄昌贤（1910—1994），出生于广东汕头，1952—1992年任华南农业大学（原华南农学院）教授，1984年任园艺系主任。果树学家、园艺教育家。30年代，他首次培育出的无籽西瓜被列入1938年世界生物学成就之一。</text></view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="intro" bindtap="clickMe" data-id="23" style="height:{{isTrue23==true?realHeight:'40rpx;'}}">
+    <text class="iconfont icon-xiaoyouhui">
+       <text class="name">温思美</text>
+   </text> 
+    <view class="iconfont icon-pointleft {{isTrue23==true?'rotate':''}}"></view>
+    <view class="intro-in">
+      <image src="https://796b-ykf-1gf4ci0r28637c7c-1305480306.tcb.qcloud.la/%E9%A6%96%E9%A1%B5/%E6%A0%A1%E5%8F%8B/%E6%B8%A9%E6%80%9D%E7%BE%8E.png?sign=61d58b1e89bf2d6198b8e8dc3e2d3e1e&t=1649751883" mode="heightFix"></image> 
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;温思美，1958年1月生，四川巴中人，1985—1992年时任华南农业大学农业经济系教师，1992—1994年时任华南农业大学经济贸易学院院长。</text></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;曾任华南农业大学副校长。</text></view>
+      <view class="wen"></view>
+      <view ><text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;先后主持国际合作课题、国家自然科学基金、国家社科基金、中央部委和省级科研课题40多项，出版专著、教材、译著12部，在国内外重要刊物发表学术论文120多篇。</text></view>
+    </view>
+  </view>
+</view>
