@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/confirm/confirm",
+    "pages/my/my",
+    "pages/logs/logs",
+    "pages/community/community",
+    "pages/index/registration/registration",
+    "pages/index/sign-in/sign-in",
+    "pages/index/inquiry/inquiry",
+    "pages/index/class-schedule/class-schedule",
+    "pages/index/Community/Community",
+    "pages/index/random-draw/random-draw"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "C-H校园",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/首页.png",
+        "selectedIconPath": "images/首页_home.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "iconPath": "images/星球.png",
+        "selectedIconPath": "images/星球_planet.png",
+        "text": "社区"
+      },
+      {
+        "pagePath": "pages/confirm/confirm",
+        "iconPath": "images/学校.png",
+        "selectedIconPath": "images/学校_school.png",
+        "text": "学校"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/用户.png",
+        "selectedIconPath": "images/用户_user.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

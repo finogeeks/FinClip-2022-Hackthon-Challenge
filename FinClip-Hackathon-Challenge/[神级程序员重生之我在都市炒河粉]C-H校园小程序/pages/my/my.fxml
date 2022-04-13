@@ -1,0 +1,77 @@
+<scroll-view scroll-y class="scrollPage">
+<view class="cu-list menu-avatar margin-top shadow-wrap">
+    <view class="cu-item  padding-top cu-itema">
+      <view class="cu-avatar round lg"><image src="/images/comm-pe/Esc.jpg" /></view>
+      <view class="content">
+        <view class="text-grey">Esc</view>
+        <view class="text-gray text-sm">
+          <text class="cuIcon-search text-green">emo</text> 明知不可为而为之</view>
+      </view>
+     <button>校园卡</button>
+      </view> 
+      </view>
+  <view class="padding flex text-center text-grey bg-white shadow-warp margin-top">
+    <view class="flex flex-sub flex-direction solid-right">
+      <view class="text-xxl text-orange">{{visitTotal}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-attentionfill"></text> 帖子</view>
+    </view>
+    <view class="flex flex-sub flex-direction solid-right">
+      <view class="text-xxl text-blue">{{starCount}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-favorfill"></text> 关注</view>
+    </view>
+    <view class="flex flex-sub flex-direction">
+      <view class="text-xxl text-green">{{forksCount}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-friendaddfill"></text> 粉丝</view>
+    </view>
+  </view>
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/log/log" hover-class="none">
+        <text class="cuIcon-global text-green"></text>
+        <text class="text-grey">教务系统</text>
+      </navigator>
+    </view>
+    </view>
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/log/log" hover-class="none">
+        <text class="cuIcon-post text-blue"></text>
+        <text class="text-grey">编辑资料</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/log/log" hover-class="none">
+        <text class="cuIcon-rank text-pink"></text>
+        <text class="text-grey">我的记录</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/log/log" hover-class="none">
+        <text class="cuIcon-likefill text-red"></text>
+        <text class="text-grey">我的收藏</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <view class="content" bindtap="showQrcode">
+        <text class="cuIcon-apps text-orange"></text>
+        <text class="text-grey">app端</text>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <button class="cu-btn content" open-type="feedback">
+        <text class="cuIcon-evaluate_fill text-cyan"></text>
+        <text class="text-grey">意见反馈</text>
+      </button>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/test/list" hover-class="none">
+        <text class="cuIcon-dianhua text-purple"></text>
+        <text class="text-grey">帮助中心</text>
+      </navigator>
+    </view>
+  </view>
+  <view class="cu-tabbar-height"></view>
+</scroll-view>

@@ -1,0 +1,13 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "useOldBuilder": false
+  },
+  "compileType": "miniprogram",
+  "appid": "",
+  "projectname": "C-H校园小程序2.0",
+  "isGameTourist": false
+}

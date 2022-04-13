@@ -1,0 +1,30 @@
+.cu-avatar image{
+    height:100%;
+    width:100%;
+}
+.friend image{
+    width:100rpx;
+    height:100rpx;
+    border-radius:50rpx;
+}
+.friends{
+    display:flex;
+    background-color:white;
+    justify-content: space-between;
+    width: 100%;
+    overflow-y: scroll;
+    white-space: nowrap;     
+    border-top:1px solid #f3f3f2;
+    border-bottom:1px solid #f3f3f2;
+}
+.friend{
+
+    margin-top:20rpx;
+    margin-right:35rpx;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}
+.friendname{
+    font-size:30rpx;
+}

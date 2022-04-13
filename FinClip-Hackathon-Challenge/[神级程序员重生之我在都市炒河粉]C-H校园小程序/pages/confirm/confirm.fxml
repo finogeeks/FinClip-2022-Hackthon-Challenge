@@ -1,0 +1,46 @@
+<view class="container">
+<view class="cu-bar solid-bottom margin-top">
+    <view class="cu-list grid">
+    <view class="cen" wx:for="{{iconList}}" wx:key>
+      <view class="cuIcon-{{item.icon}} text-{{item.color}}">
+      </view>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+  </view>
+<scroll-view scroll-x class="bg-white nav margin-top">
+  <view class="flex text-center">
+    <view class="cu-item flex-sub  {{index==TabCur?'text-orange cur':''}}" wx:for="{{ties}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+      {{item.name}}
+    </view>
+  </view>
+</scroll-view>
+<view class="cu-card case">
+  <view class="cu-item shadow" wx:for="{{cards}}">
+    <view class="image">
+      <image  class="img" src="{{item.img}}" ></image>
+      <view class="cu-tag bg-blue">{{item.rank}}</view>
+      <view class="cu-bar bg-shadeBottom">
+        <text class="text-cut">{{item.pic}}</text>
+      </view>
+    </view>
+    <view class="cu-list menu-avatar">
+      <view class="cu-item m" >
+        <view class="cu-avatar round lg "><image src="{{item.aimg}}" class="round" /></view>
+        <view class="content flex-sub">
+          <view class="text-grey">{{item.aut}}</view>
+          <view class="text-gray text-sm flex justify-between">
+            {{item.time}}
+            <view class="text-gray text-sm">
+              <text class="cuIcon-attentionfill margin-lr-xs"></text> {{item.look}}
+              <text class="cuIcon-appreciatefill margin-lr-xs"></text> {{item.good}}
+              <text class="cuIcon-messagefill margin-lr-xs"></text> {{item.content}}
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
+</view>
