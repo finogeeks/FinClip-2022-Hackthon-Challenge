@@ -1,0 +1,13 @@
+{
+	"navigationBarTitleText": "通知栏",
+	"navigationBarBackgroundColor": "#07c160",
+	"usingComponents": {
+		"diy-noticebar": "/components/diy-noticebar/diy-noticebar",
+		"diy-noticebar": "/components/diy-noticebar/diy-noticebar",
+		"diy-noticebar": "/components/diy-noticebar/diy-noticebar",
+		"diy-noticebar": "/components/diy-noticebar/diy-noticebar",
+		"diy-noticebar": "/components/diy-noticebar/diy-noticebar",
+		"diy-noticebar": "/components/diy-noticebar/diy-noticebar",
+		"diy-noticebar": "/components/diy-noticebar/diy-noticebar"
+	}
+}

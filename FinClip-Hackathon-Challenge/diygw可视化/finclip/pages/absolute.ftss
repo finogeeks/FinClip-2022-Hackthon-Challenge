@@ -1,0 +1,90 @@
+.autoview-clz {
+	z-index: 1;
+	height: 200px;
+}
+
+.autoview_0 {
+	left: 170rpx;
+	top: 72rpx;
+	width: 232rpx;
+	height: 40rpx;
+	z-index: 0;
+}
+.autoview_1 {
+	left: 22rpx;
+	top: 258rpx;
+	width: 664rpx;
+	height: 84rpx;
+	z-index: 0;
+}
+.autoview_2 {
+	left: 158rpx;
+	top: 118rpx;
+	width: 188rpx;
+	height: 70rpx;
+	z-index: 0;
+}
+.autoview_3 {
+	left: 46rpx;
+	top: 74rpx;
+	width: 102rpx;
+	height: 104rpx;
+	z-index: 0;
+}
+.autoview_4 {
+	left: 636rpx;
+	top: 138rpx;
+	width: 62rpx;
+	height: 54rpx;
+	z-index: 0;
+}
+.text1-clz {
+	font-weight: bold;
+}
+.autoview1-clz {
+	z-index: 1;
+	height: 200px;
+}
+
+.autoview1_0 {
+	left: 22rpx;
+	top: 38rpx;
+	width: 340rpx;
+	height: 324rpx;
+	z-index: 0;
+}
+.autoview1_1 {
+	left: 370rpx;
+	top: 40rpx;
+	width: 340rpx;
+	height: 324rpx;
+	z-index: 0;
+}
+.autoview1_2 {
+	left: 24rpx;
+	top: 198rpx;
+	width: 338rpx;
+	height: 76rpx;
+	z-index: 0;
+}
+.autoview1_3 {
+	left: 370rpx;
+	top: 42rpx;
+	width: 340rpx;
+	height: 68rpx;
+	z-index: 0;
+}
+.text4-clz {
+	background-color: rgba(126, 126, 126, 0.64);
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+}
+.text3-clz {
+	background-color: rgba(126, 126, 126, 0.64);
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+}
+.container {
+	padding-left: 0px;
+	padding-right: 0px;
+}

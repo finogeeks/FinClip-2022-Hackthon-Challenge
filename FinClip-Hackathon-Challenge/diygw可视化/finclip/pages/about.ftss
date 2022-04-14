@@ -1,0 +1,50 @@
+.text2-clz {
+	padding-top: 10px;
+	border-bottom-left-radius: 6px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	border-top-right-radius: 6px;
+	margin-right: 10px;
+	margin-left: 10px;
+	box-shadow: 0px 1px 3px 2px rgba(31, 31, 31, 0.16);
+	overflow: hidden;
+	width: calc(100% - 10px - 10px) !important;
+	border-top-left-radius: 6px;
+	margin-top: 10px;
+	border-bottom-right-radius: 6px;
+	margin-bottom: 0px;
+	padding-right: 10px;
+}
+.list2-clz {
+	margin-left: 10px;
+	border-bottom-left-radius: 6px;
+	box-shadow: 0px 1px 3px 2px rgba(31, 31, 31, 0.16);
+	overflow: hidden;
+	width: calc(100% - 10px - 10px) !important;
+	border-top-left-radius: 6px;
+	margin-top: 10px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	margin-bottom: 0px;
+	margin-right: 10px;
+}
+.list1-clz {
+	background-color: rgba(255, 255, 255, 1);
+	margin-left: 10px;
+	border-bottom-left-radius: 6px;
+	box-shadow: 0px 1px 3px 2px rgba(31, 31, 31, 0.16);
+	overflow: hidden;
+	width: calc(100% - 10px - 10px) !important;
+	border-top-left-radius: 6px;
+	margin-top: 10px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+.modal-clz {
+	z-index: 1000000;
+}
+.container {
+	padding-bottom: 80px;
+}

@@ -1,0 +1,110 @@
+.flex-clz {
+	margin-left: 10px;
+	z-index: 1000;
+	width: calc(100% - 10px - 10px) !important;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	margin-right: 10px;
+}
+.avatar1-badge-0 {
+	right: -10rpx !important;
+	top: -10rpx !important;
+}
+.flex1-clz {
+	z-index: 1000;
+}
+.flex4-clz {
+	z-index: 1000;
+}
+.text-clz {
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-left: 10px;
+	width: calc(100% - 0px - 0px) !important;
+	padding-bottom: 0px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	padding-right: 10px;
+}
+.image-clz {
+	margin-left: 5px;
+	border-bottom-left-radius: 6px;
+	overflow: hidden;
+	width: calc(100% - 5px - 5px) !important;
+	border-top-left-radius: 6px;
+	margin-top: 5px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+.flex5-clz {
+	z-index: 1000;
+}
+.text1-clz {
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-left: 10px;
+	width: calc(100% - 0px - 0px) !important;
+	padding-bottom: 0px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	padding-right: 10px;
+}
+.flex7-clz {
+	z-index: 1000;
+}
+.image2-clz {
+	margin-left: 5px;
+	border-bottom-left-radius: 6px;
+	overflow: hidden;
+	width: calc(50% - 5px - 5px) !important;
+	border-top-left-radius: 6px;
+	margin-top: 5px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+.image4-clz {
+	margin-left: 5px;
+	border-bottom-left-radius: 6px;
+	overflow: hidden;
+	width: calc(50% - 5px - 5px) !important;
+	border-top-left-radius: 6px;
+	margin-top: 5px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+.flex2-clz {
+	z-index: 1000;
+}
+.list5-item-clz {
+	margin: 0px;
+	padding: 10px;
+}
+.list5-icon-clz {
+	width: 100px;
+	height: 100px;
+	font-size: calc(100px - 10px) !important;
+}
+.flex3-clz {
+	z-index: 1000;
+}
+.list7-item-clz {
+	margin: 0px;
+	padding: 10px;
+}
+.list7-icon-clz {
+	width: 100px;
+	height: 100px;
+	font-size: calc(100px - 10px) !important;
+}
+.container {
+	padding-left: 0px;
+	padding-right: 0px;
+}

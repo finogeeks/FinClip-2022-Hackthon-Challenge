@@ -1,0 +1,114 @@
+{
+	"pages": [
+		"pages/index",
+
+		"pages/page/page",
+
+		"pages/app/index",
+
+		"pages/app/shop",
+
+		"pages/zsff/zsff",
+
+		"pages/zsff/zsfflb",
+
+		"pages/zsff/zsffsq",
+
+		"pages/zsff/zsffgl",
+
+		"pages/layout",
+
+		"pages/button",
+
+		"pages/avatar",
+
+		"pages/tag",
+
+		"pages/title",
+
+		"pages/grid",
+
+		"pages/list",
+
+		"pages/image",
+
+		"pages/swiper",
+
+		"pages/timeline",
+
+		"pages/steps",
+
+		"pages/modal",
+
+		"pages/tab",
+
+		"pages/about",
+
+		"pages/buttons",
+
+		"pages/rate",
+
+		"pages/progress",
+
+		"pages/notice",
+
+		"pages/absolute",
+
+		"pages/collapse",
+
+		"pages/audio",
+
+		"pages/cubes",
+
+		"pages/compoment",
+
+		"pages/swipers",
+
+		"pages/forms",
+
+		"pages/floatbar",
+
+		"pages/webview"
+	],
+	"usingComponents": {
+		"diy-navbar": "/components/diy-navbar/diy-navbar",
+		"diy-noticebar": "/components/diy-noticebar/diy-noticebar"
+	},
+	"window": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "DIYGWUI",
+		"navigationBarBackgroundColor": "#07c160"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#08c261",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index",
+				"iconPath": "static/grid1c.png",
+				"selectedIconPath": "static/grid1.png",
+				"text": "元素"
+			},
+			{
+				"pagePath": "pages/compoment",
+				"iconPath": "static/grid2c.png",
+				"selectedIconPath": "static/grid2.png",
+				"text": "组件"
+			},
+			{
+				"pagePath": "pages/page/page",
+				"iconPath": "static/grid3c.png",
+				"selectedIconPath": "static/grid3.png",
+				"text": "页面"
+			},
+			{
+				"pagePath": "pages/about",
+				"iconPath": "static/grid4c.png",
+				"selectedIconPath": "static/grid4.png",
+				"text": "关于"
+			}
+		]
+	}
+}
