@@ -1,77 +1,84 @@
-# FinClip邀你来出战｜Hackthon Coding Party 一触即发
-![img](https://www.finclip.com/blog/content/images/size/w2000/2022/02/1600-900-4.png)
+## 项目名称 - DIYGW可视化
 
-本届 Hackathon 主题为「码」力集合，与众不「凡」，也是 FinClip 举办的首届 Hackathon ，将在 2022.3.1 正式起航。
+## 团队名称 - DIYGW可视化
 
-我们用 Hacking 连接更广泛的生态，给予参赛者尽情发挥的想象空间。本届 Hackathon 我们一共包含三大主题赛道（内核组、生态组、创意组），尽可能的让你们可以找到大显身手的机会，参赛者不论是 APP 开发者、小程序开发者、产品经理或者 UI 交互设计师，都可以找到适合的领域，围绕  FinClip 探索无限可能。
+队长：邓志锋
 
-![img](https://www.finclip.com/blog/content/images/2022/02/image-14.png)
+队员：邓志锋
 
-↑ 主题赛道详情
 
-FinClip Hackathon 2022 **自 3 月 1 日起正式开启报名，选手可以自行组成 1 - 5 人的参赛队伍，在参赛周期内完成作品，优胜团队将获得奖金、技术和资源上的支持。** 大赛邀请了移动开发领域知名专家、社区技术大咖、知名开源作者代表等超强阵容担当评委，对项目进行全方位点评指导，扫除知识盲点，为赛事体验保驾护航。
+## 项目介绍
 
-## 赛事亮点
-#### 1、丰厚奖金
-大赛总奖金池高达 10 万，奖项设置涵盖各个方向，突破单一的评价体系<br>
+[Issue 链接](https://github.com/html580/FinClip-2022-Hackthon-Challenge)
 
-![img](https://www.finclip.com/blog/content/images/2022/02/image-12.png)
+DIY官网可视化工具做好的可视化拖拽开发工具无须编程、零代码基础、所见即所得设计工具支持轻松在线可视化导出微信小程序、支付宝小程序、头条小程序、H5、WebApp、UNIAPP等源码 支持组件库,高颜值,卡片,列表,轮播图,导航栏,按钮,标签,表单,单选,复选,下拉选择,多层选择,级联选择,开关,时间轴,模态框,步骤条,头像,进度条等
+丰富的按钮点击事件供选择、自定义方法调用、支持API在线调试、数据动态绑定、For循环数据绑定、IF判断绑定等
+支持组件库、高颜值、卡片、列表、轮播图、导航栏、按钮、标签、表单、单选、复选、下拉选择、多层选择、级联选择、开关、时间轴、模态框、步骤条、头像、进度条、动态通知栏、进度条、星级评分等
 
-#### 2、高质量交流
-大赛邀请移动开发领域知名专家、大厂研发总监、社区技术大咖等担当评委，对项目进行深入指导让你的实力被更多人看到
+## 动机或背景
 
-#### 3、优秀作品深度曝光
-—此次黑客马拉松获奖的作品，FinClip 将在各类开发者社区、自媒体渠道、知名媒体进行全渠道曝光。
+DIY官网可视化工具打造低代码可视化一键生成导出源码工具设计一次打通设计师+产品经理+技术开发团队必备低代码可视化工具
+从想法到原型到源码，一步到位低代码生成源码工具。打造出一个业界领先的可视化快速生成FinClip小程序源码。
 
-#### 4、参赛团队专属礼包
-—只要报名参赛，即可获得由 FinClip 送出的程序员大礼包，绝对是开发者心仪的物品
+## 详细说明
 
-#### 5、惊喜盲盒
-吃瓜群众为你喜爱的参赛队伍投票打 Call，就能拥有抽取盲盒机会！Macbook 、人体工学椅等好礼你来拿！
+在线可视化制作小程序组件及在线可视化设计小程序数据源能力，在线拖拉布局助您开发并一键生成微信小程序代码
+在线提供了组件模板、页面模板、案例模板，助力开发者快速完成前端界面上线
 
-## 参赛对象
+## 应用场景
 
-参赛对象没有限制，零门槛，不管你是创客还是学生，只要你有技术、有想法，都可以报名参赛 SHOW 出你的 Code！
+FinClip在线设计器，快速生成小程序代码，助力开发者快速完成前端界面上线。
 
-#### 参赛保障
+#### 文件说明
+##### finclip -- 生成FinClip小程序原生源码
 
-- 我们为参赛者提供组队支持，尽力争取让每位报名的小伙伴都不落单；
-- 为了保障参赛体验，我们准备了丰富的参考资料和视频（也会根据大家的反馈持续迭代），同时还邀请专业导师在群内定期答疑交流；
-- 你也可以到各个社交平台捕获野生小伙伴进行组队；
+更多设计前往https://www.diygw.com 设计
 
-## 赛程安排
 
-3月1日—4月22日 组队报名
+#### 扫码体验
 
-3月1日—4月22日 确认参赛选题及作品提交
+在线演示例子：[组件库演示](https://uniapp.diygw.com) https://uniapp.diygw.com
 
-4月25日—5月4日 作品评选及大众投票
+扫码体验
 
-5月6日—  公布获奖参赛作品及对获奖作品进行全平台推广
+[![](https://libs.diygw.com/upload/uniapp.png)](https://libs.diygw.com/upload/uniapp.png)
 
-## 你可能还想了解……
+在线演示例子：[仿应用市场例子](https://uniapp.diygw.com/app/#/)  https://uniapp.diygw.com/app/#/
 
-#### 1. 我想参赛，可是没有合适的组队小伙伴怎么办？
+扫码体验
 
-A：先找找身边的同学好友组队，如果没有合适的伙伴，FinClip 官方会建立选手群让大家自由配对也会促进大家完成组队。 
+[![](https://libs.diygw.com/upload/uniapp-app.png)](https://libs.diygw.com/upload/uniapp-app.png)
 
-#### 2. 一个人也可以成队报名吗？
+小程序扫码体验
 
-A：当然可以，我们非常欢迎技能值满点的优秀个人参赛者。
+[![](https://libs.diygw.com/upload/diygwcom.jpg)](https://libs.diygw.com/upload/diygwcom.jpg)
 
-#### 3. 报名时间好长，我还\**没想好做什么项目，\**可以观望一下最后“踩点报名”吗？
 
-A：不建议“踩点报名”。可以先报名，然后从学习资料中挑选适合自己基础的模块开始学习，提前准备总没有坏处～说不定在备赛群里和大家交流讨论之后，就能获得选题启发。临近报名截止日期可能不好组队，而且前期准备不充分，到时候参赛作品容易出错哟。
+#### 项目截图
+[![](https://libs.diygw.com/upload/exporttype.png)](https://libs.diygw.com/upload/exporttype.png)
+[![](https://libs.diygw.com/upload/ok4.png)](https://libs.diygw.com/upload/ok4.png)
+[![](https://libs.diygw.com/upload/ok5.png)](https://libs.diygw.com/upload/ok5.png)
+[![](https://libs.diygw.com/upload/ok6.png)](https://libs.diygw.com/upload/ok6.png)
+[![](https://libs.diygw.com/upload/ok7.png)](https://libs.diygw.com/upload/ok7.png)
+[![](https://libs.diygw.com/upload/1.png)](https://libs.diygw.com/upload/1.png)
+[![](https://libs.diygw.com/upload/1.png)](https://libs.diygw.com/upload/1.png)
+[![](https://libs.diygw.com/upload/2.png)](https://libs.diygw.com/upload/2.png)
+[![](https://libs.diygw.com/upload/3.png)](https://libs.diygw.com/upload/3.png)
+[![](https://libs.diygw.com/upload/4.png)](https://libs.diygw.com/upload/4.png)
+[![](https://libs.diygw.com/upload/5.png)](https://libs.diygw.com/upload/5.png)
+[![](https://libs.diygw.com/upload/6.png)](https://libs.diygw.com/upload/6.png)
+[![](https://libs.diygw.com/upload/7.png)](https://libs.diygw.com/upload/7.png)
+[![](https://libs.diygw.com/upload/8.png)](https://libs.diygw.com/upload/8.png)
+[![](https://libs.diygw.com/upload/9.png)](https://libs.diygw.com/upload/9.png)
+[![](https://libs.diygw.com/upload/10.png)](https://libs.diygw.com/upload/10.png)
+[![](https://libs.diygw.com/upload/11.png)](https://libs.diygw.com/upload/11.png)
+[![](https://libs.diygw.com/upload/12.png)](https://libs.diygw.com/upload/12.png)
+[![](https://libs.diygw.com/upload/1.jpg)](https://libs.diygw.com/upload/1.jpg)
+[![](https://libs.diygw.com/upload/2.jpg)](https://libs.diygw.com/upload/2.jpg)
+[![](https://libs.diygw.com/upload/3.jpg)](https://libs.diygw.com/upload/3.jpg)
+[![](https://libs.diygw.com/upload/4.jpg)](https://libs.diygw.com/upload/4.jpg)
+[![](https://libs.diygw.com/upload/5.jpg)](https://libs.diygw.com/upload/5.jpg)
+[![](https://libs.diygw.com/upload/6.jpg)](https://libs.diygw.com/upload/6.jpg)
+[![](https://libs.diygw.com/upload/7.jpg)](https://libs.diygw.com/upload/7.jpg)
 
-#### 4、代码必须开源吗？
 
-是的，我们鼓励协力合作，为社会贡献，让创意和代码更充分地发挥社会价值。如参赛作品仅能支持部分源代码开放，可以将部分不想开放的代码构建混淆之后，推送到私有的 npm 或者 npm 私有项目，然后通过 npm 包的形式引入
-
-#### 5、参赛作品提交规范？
-
-需要遵守 Apache-2.0 许可协议，同时在项目 Readme 中有针对作品的详细介绍、操作文档等。
-
-探索和突破是人类永恒的追求，期待在代码的世界与你相遇！别犹豫啦，即刻报名吧！
-
-## 其他疑惑
-如果您对此次活动存在疑问，可添加 FinClip 官方小助手微信（ID：fino220）咨询
