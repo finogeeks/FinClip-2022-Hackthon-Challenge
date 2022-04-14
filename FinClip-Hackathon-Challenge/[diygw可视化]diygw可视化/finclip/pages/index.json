@@ -1,0 +1,9 @@
+{
+	"navigationBarTitleText": "首页",
+	"navigationBarBackgroundColor": "#07c160",
+	"navigationStyle": "custom",
+	"usingComponents": {
+		"diy-noticebar": "/components/diy-noticebar/diy-noticebar",
+		"diy-audio": "/components/diy-audio/diy-audio"
+	}
+}

@@ -1,0 +1,96 @@
+.swipers-clz {
+	margin-left: 5px;
+	border-bottom-left-radius: 6px;
+	box-shadow: 0px 1px 3px rgba(31, 31, 31, 0.16);
+	overflow: hidden;
+	width: calc(100% - 5px - 5px) !important;
+	border-top-left-radius: 6px;
+	margin-top: 5px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+.swipers1-clz {
+	margin-left: 5px;
+	border-bottom-left-radius: 6px;
+	box-shadow: 0px 1px 3px rgba(31, 31, 31, 0.16);
+	overflow: hidden;
+	width: calc(100% - 5px - 5px) !important;
+	border-top-left-radius: 6px;
+	margin-top: 5px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+.flex-clz {
+	margin-left: 8px;
+	border-bottom-left-radius: 6px;
+	box-shadow: 0px 1px 3px 3px rgba(111, 111, 111, 0.18);
+	z-index: 1000;
+	overflow: hidden;
+	width: calc(100% - 8px - 8px) !important;
+	border-top-left-radius: 6px;
+	margin-top: 8px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	margin-bottom: 8px;
+	margin-right: 8px;
+}
+.image1-clz {
+	margin-left: 5px;
+	border-bottom-left-radius: 6px;
+	overflow: hidden;
+	width: calc(33.3333333333% - 5px - 5px) !important;
+	border-top-left-radius: 6px;
+	margin-top: 5px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+.flex2-clz {
+	padding-top: 0px;
+	z-index: 1000;
+	padding-left: 5px;
+	padding-bottom: 0px;
+	padding-right: 5px;
+}
+.flex1-clz {
+	margin-left: 8px;
+	border-bottom-left-radius: 6px;
+	box-shadow: 0px 1px 3px 3px rgba(111, 111, 111, 0.18);
+	z-index: 1000;
+	overflow: hidden;
+	width: calc(100% - 8px - 8px) !important;
+	border-top-left-radius: 6px;
+	margin-top: 8px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	margin-bottom: 8px;
+	margin-right: 8px;
+}
+.image2-clz {
+	margin-left: 5px;
+	border-bottom-left-radius: 6px;
+	overflow: hidden;
+	width: calc(33.3333333333% - 5px - 5px) !important;
+	border-top-left-radius: 6px;
+	margin-top: 5px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+.flex4-clz {
+	padding-top: 0px;
+	z-index: 1000;
+	padding-left: 5px;
+	padding-bottom: 0px;
+	padding-right: 5px;
+}
+.container {
+	padding-left: 0px;
+	padding-right: 0px;
+}

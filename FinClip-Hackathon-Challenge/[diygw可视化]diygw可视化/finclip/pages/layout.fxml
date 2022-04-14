@@ -1,0 +1,99 @@
+<view class="container">
+	<view class="diygw-title flex diygw-col-24">
+		<view class="title font-normal text-green"> <text class="diy-icon-title"></text> 水平对齐 </view>
+	</view>
+	<view class="flex diygw-col-24 justify-start">
+		<view class="diygw-avatar green margin-xs radius">
+			<text class="diy-icon-pullright"></text>
+		</view>
+		<view class="diygw-avatar red margin-xs radius">
+			<text class="diy-icon-home"></text>
+		</view>
+		<view class="diygw-avatar orange margin-xs radius">
+			<text class="diy-icon-home"></text>
+		</view>
+	</view>
+	<view class="flex diygw-col-24 justify-center">
+		<view class="diygw-avatar lg olive margin-xs radius">
+			<text class="diy-icon-home"></text>
+		</view>
+		<view class="diygw-avatar lg cyan margin-xs radius">
+			<text class="diy-icon-settings"></text>
+		</view>
+		<view class="diygw-avatar lg blue margin-xs radius">
+			<text class="diy-icon-squarecheckfill"></text>
+		</view>
+	</view>
+	<view class="flex diygw-col-24 justify-end">
+		<view class="diygw-avatar blue margin-xs radius">
+			<text class="diy-icon-home"></text>
+		</view>
+		<view class="diygw-avatar purple margin-xs radius">
+			<text class="diy-icon-home"></text>
+		</view>
+		<view class="diygw-avatar mauve margin-xs radius">
+			<text class="diy-icon-activityfill"></text>
+		</view>
+	</view>
+	<view class="flex diygw-col-24 justify-between">
+		<view class="diygw-avatar mauve margin-xs radius-sm">
+			<text class="diy-icon-home"></text>
+		</view>
+		<view class="diygw-avatar pink margin-xs radius-sm">
+			<text class="diy-icon-home"></text>
+		</view>
+		<view class="diygw-avatar black margin-xs radius-sm">
+			<text class="diy-icon-home"></text>
+		</view>
+	</view>
+	<view class="flex diygw-col-24 justify-around">
+		<view class="diygw-avatar gradual-red margin-xs radius-md">
+			<view> 你 </view>
+		</view>
+		<view class="diygw-avatar gradual-orange margin-xs radius-md">
+			<view> 好 </view>
+		</view>
+		<view class="diygw-avatar gradual-green margin-xs radius-md">
+			<view> 吗 </view>
+		</view>
+	</view>
+	<view class="flex diygw-col-24">
+		<view class="diygw-pzx" style="border-bottom: 1px solid #eee"></view>
+	</view>
+	<view class="diygw-title flex diygw-col-24">
+		<view class="title font-normal text-green"> <text class="diy-icon-title"></text> 垂直对齐 </view>
+	</view>
+	<view class="flex flex-wrap diygw-col-24 flex11-clz">
+		<view class="flex diygw-col-4">
+			<view class="diygw-avatar white radius diygw-shadow">
+				<image mode="aspectFit" class="diygw-avatar-img radius" src="/static/grid1.png"></image>
+			</view>
+		</view>
+		<view class="diygw-col-19"> 顶部对齐 </view>
+	</view>
+	<view class="flex flex-wrap diygw-col-24 items-center flex12-clz">
+		<view class="flex diygw-col-4">
+			<view class="diygw-avatar gradual-purple radius diygw-shadow">
+				<text class="diy-icon-home"></text>
+			</view>
+		</view>
+		<view class="diygw-col-19"> 顶部对齐 </view>
+	</view>
+	<view class="flex flex-wrap diygw-col-24 items-end flex13-clz">
+		<view class="flex diygw-col-4">
+			<view class="diygw-avatar gradual-green radius diygw-shadow">
+				<text class="diy-icon-home"></text>
+			</view>
+		</view>
+		<view class="diygw-col-19"> 顶部对齐 </view>
+	</view>
+	<view class="flex flex-wrap diygw-col-24 flex-direction-row-reverse items-end flex10-clz">
+		<view class="flex diygw-col-4">
+			<view class="diygw-avatar gradual-green radius diygw-shadow">
+				<text class="diy-icon-home"></text>
+			</view>
+		</view>
+		<view class="diygw-col-19"> 顶部对齐 </view>
+	</view>
+	<view class="clearfix"></view>
+</view>

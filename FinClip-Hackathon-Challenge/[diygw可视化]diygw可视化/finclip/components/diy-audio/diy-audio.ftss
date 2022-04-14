@@ -1,0 +1,32 @@
+.music-play {
+  -webkit-animation: music 2s infinite linear;
+  animation: music 2s infinite linear;
+}
+
+.music-pause {
+  animation-play-state: paused;
+}
+
+@-webkit-keyframes music {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes music {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}

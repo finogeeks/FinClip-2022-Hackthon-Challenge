@@ -1,0 +1,22 @@
+.grid10-badge-0 {
+	right: 2rpx !important;
+	top: 2rpx !important;
+}
+.grid5-item-clz {
+	padding: 0px;
+}
+.grid5-icon-clz {
+	width: 50px;
+	height: 50px;
+	font-size: calc(50px - 10px) !important;
+	color: rgba(4, 173, 7, 1);
+}
+.grid4-item-clz {
+	padding: 10px;
+}
+.grid4-icon-clz {
+	width: 40px;
+	height: 40px;
+	font-size: calc(40px - 10px) !important;
+	color: rgba(251, 5, 5, 1);
+}

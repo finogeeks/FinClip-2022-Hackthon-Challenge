@@ -1,0 +1,99 @@
+<view class="container">
+	<view class="diygw-title flex diygw-col-24 gradual-purple title-clz">
+		<view class="title font-normal"> <text class="diy-icon-home"></text> 手风琴效果 </view>
+	</view>
+	<view class="flex flex-direction-column flex-sub diygw-col-24 collapse1-clz">
+		<view class="flex flex-direction-column flex-sub">
+			<view catchtap="changeCollapse1" data-index="0" class="diygw-text-md padding flex solid-bottom {{ collapse1Datas[0].isShow?'text- cur ':''}}">
+				<view class="flex-sub"> 田家元日 </view>
+				<i class="diy-icon-unfold diy-collapse-icon {{ collapse1Datas[0].isShow?'diy-collapse-active':''}}"></i>
+			</view>
+			<view wx:if="{{ collapse1Datas[0].isShow}}" class="solid-bottom">
+				<rich-text nodes="{{text4}}" class="diygw-col-24 text4-clz"></rich-text>
+			</view>
+		</view>
+		<view class="flex flex-direction-column flex-sub">
+			<view catchtap="changeCollapse1" data-index="1" class="diygw-text-md padding flex solid-bottom {{ collapse1Datas[1].isShow?'text- cur ':''}}">
+				<view class="flex-sub"> 正月十五夜灯 </view>
+				<i class="diy-icon-unfold diy-collapse-icon {{ collapse1Datas[1].isShow?'diy-collapse-active':''}}"></i>
+			</view>
+			<view wx:if="{{ collapse1Datas[1].isShow}}" class="solid-bottom">
+				<rich-text nodes="{{text5}}" class="diygw-col-24 text5-clz"></rich-text>
+			</view>
+		</view>
+		<view class="flex flex-direction-column flex-sub">
+			<view catchtap="changeCollapse1" data-index="2" class="diygw-text-md padding flex solid-bottom {{ collapse1Datas[2].isShow?'text- cur ':''}}">
+				<view class="flex-sub"> 观灯乐行 </view>
+				<i class="diy-icon-unfold diy-collapse-icon {{ collapse1Datas[2].isShow?'diy-collapse-active':''}}"></i>
+			</view>
+			<view wx:if="{{ collapse1Datas[2].isShow}}" class="solid-bottom">
+				<rich-text nodes="{{text6}}" class="diygw-col-24 text6-clz"></rich-text>
+			</view>
+		</view>
+	</view>
+	<view class="diygw-title flex diygw-col-24 gradual-green title1-clz">
+		<view class="title font-normal"> <text class="diy-icon-home"></text> 允许全部展开 </view>
+	</view>
+	<view class="flex flex-direction-column flex-sub diygw-col-24 collapse2-clz">
+		<view class="flex flex-direction-column flex-sub">
+			<view catchtap="changeCollapse2" data-index="0" class="diygw-text-md padding flex solid-bottom {{ collapse2Datas[0].isShow?'text- cur ':''}}">
+				<view class="flex-sub"> 田家元日 </view>
+				<i class="diy-icon-unfold diy-collapse-icon {{ collapse2Datas[0].isShow?'diy-collapse-active':''}}"></i>
+			</view>
+			<view wx:if="{{ collapse2Datas[0].isShow}}" class="solid-bottom">
+				<rich-text nodes="{{text2}}" class="diygw-col-24 text2-clz"></rich-text>
+			</view>
+		</view>
+		<view class="flex flex-direction-column flex-sub">
+			<view catchtap="changeCollapse2" data-index="1" class="diygw-text-md padding flex solid-bottom {{ collapse2Datas[1].isShow?'text- cur ':''}}">
+				<view class="flex-sub"> 正月十五夜灯 </view>
+				<i class="diy-icon-unfold diy-collapse-icon {{ collapse2Datas[1].isShow?'diy-collapse-active':''}}"></i>
+			</view>
+			<view wx:if="{{ collapse2Datas[1].isShow}}" class="solid-bottom">
+				<rich-text nodes="{{text9}}" class="diygw-col-24 text9-clz"></rich-text>
+			</view>
+		</view>
+		<view class="flex flex-direction-column flex-sub">
+			<view catchtap="changeCollapse2" data-index="2" class="diygw-text-md padding flex solid-bottom {{ collapse2Datas[2].isShow?'text- cur ':''}}">
+				<view class="flex-sub"> 观灯乐行 </view>
+				<i class="diy-icon-unfold diy-collapse-icon {{ collapse2Datas[2].isShow?'diy-collapse-active':''}}"></i>
+			</view>
+			<view wx:if="{{ collapse2Datas[2].isShow}}" class="solid-bottom">
+				<rich-text nodes="{{text11}}" class="diygw-col-24 text11-clz"></rich-text>
+			</view>
+		</view>
+	</view>
+	<view class="diygw-title flex diygw-col-24 gradual-orange title2-clz">
+		<view class="title font-normal"> <text class="diy-icon-home"></text> 自定义标题样式 </view>
+	</view>
+	<view class="flex flex-direction-column flex-sub diygw-col-24 collapse-clz">
+		<view class="flex flex-direction-column flex-sub">
+			<view catchtap="changeCollapse" data-index="0" class="diygw-text-md padding flex solid-bottom {{ collapseDatas[0].isShow?'bg-green cur ':''}}">
+				<view class="flex-sub"> 田家元日 </view>
+				<i class="diy-icon-unfold diy-collapse-icon {{ collapseDatas[0].isShow?'diy-collapse-active':''}}"></i>
+			</view>
+			<view wx:if="{{ collapseDatas[0].isShow}}" class="solid-bottom">
+				<rich-text nodes="{{text1}}" class="diygw-col-24 text1-clz"></rich-text>
+			</view>
+		</view>
+		<view class="flex flex-direction-column flex-sub">
+			<view catchtap="changeCollapse" data-index="1" class="diygw-text-md padding flex solid-bottom {{ collapseDatas[1].isShow?'bg-green cur ':''}}">
+				<view class="flex-sub"> 正月十五夜灯 </view>
+				<i class="diy-icon-unfold diy-collapse-icon {{ collapseDatas[1].isShow?'diy-collapse-active':''}}"></i>
+			</view>
+			<view wx:if="{{ collapseDatas[1].isShow}}" class="solid-bottom">
+				<rich-text nodes="{{text3}}" class="diygw-col-24 text3-clz"></rich-text>
+			</view>
+		</view>
+		<view class="flex flex-direction-column flex-sub">
+			<view catchtap="changeCollapse" data-index="2" class="diygw-text-md padding flex solid-bottom {{ collapseDatas[2].isShow?'bg-green cur ':''}}">
+				<view class="flex-sub"> 观灯乐行 </view>
+				<i class="diy-icon-unfold diy-collapse-icon {{ collapseDatas[2].isShow?'diy-collapse-active':''}}"></i>
+			</view>
+			<view wx:if="{{ collapseDatas[2].isShow}}" class="solid-bottom">
+				<rich-text nodes="{{text8}}" class="diygw-col-24 text8-clz"></rich-text>
+			</view>
+		</view>
+	</view>
+	<view class="clearfix"></view>
+</view>

@@ -1,0 +1,12 @@
+.modal-clz {
+	z-index: 1000;
+}
+.modal1-clz {
+	z-index: 1000;
+}
+.modal2-clz {
+	z-index: 1000;
+}
+.modal3-clz {
+	z-index: 1000;
+}

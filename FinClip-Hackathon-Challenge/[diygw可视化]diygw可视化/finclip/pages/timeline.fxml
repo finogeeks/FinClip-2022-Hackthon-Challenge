@@ -1,0 +1,12 @@
+<view class="container">
+	<view class="flex diygw-col-24">
+		<view class="diygw-timeline">
+			<view wx:for="{{timelineDatas}}" wx:for-item="item" wx:for-index="index" data-key="index" class="{{item.clazz}}" style="{{item.style}}">
+				<view class="content shadow-blur {{item.backgroundClazz}}" style="{{item.backgroundStyle}}">
+					<rich-text nodes="{{item.content}}"></rich-text>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="clearfix"></view>
+</view>

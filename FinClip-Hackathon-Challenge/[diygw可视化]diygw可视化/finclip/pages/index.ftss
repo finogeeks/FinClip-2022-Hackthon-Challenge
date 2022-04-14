@@ -1,0 +1,10 @@
+.audio-clz {
+	margin-left: 5px;
+	width: calc(100% - 5px - 5px) !important;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+.container {
+	padding-bottom: 80px;
+}

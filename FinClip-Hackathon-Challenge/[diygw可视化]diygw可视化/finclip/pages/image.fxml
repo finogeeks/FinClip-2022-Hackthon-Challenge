@@ -1,0 +1,17 @@
+<view class="container">
+	<image src="/static/pic1.jpg" class="diygw-image diygw-col-24" style="height: 150px; width: 100%" mode="aspectFit"></image>
+	<view class="diygw-col-24"> </view>
+	<view class="diygw-title flex diygw-col-24 blue title-clz">
+		<view class="title font-normal"> <text class="diy-icon-home"></text> 用户完全自定义圆角阴影 </view>
+	</view>
+	<image src="/static/pic1.jpg" class="diygw-image diygw-col-24 image3-clz" style="height: 150px; width: 100%" mode="aspectFit"></image>
+	<image src="/static/pic1.jpg" class="diygw-image diygw-col-12 image1-clz" style="height: 100px; width: 100%" mode="aspectFit"></image>
+	<image src="/static/pic1.jpg" class="diygw-image diygw-col-12 image2-clz" style="height: 100px; width: 100%" mode="aspectFit"></image>
+	<image src="/static/pic1.jpg" class="diygw-image diygw-col-12 image4-clz" style="height: 100px; width: 100%" mode="aspectFit"></image>
+	<image src="/static/pic1.jpg" class="diygw-image diygw-col-12 image5-clz" style="height: 100px; width: 100%" mode="aspectFit"></image>
+	<image src="/static/pic1.jpg" class="diygw-image diygw-col-12 image8-clz" style="height: 100px; width: 100%" mode="aspectFit"></image>
+	<image src="/static/pic1.jpg" class="diygw-image diygw-col-12 image9-clz" style="height: 100px; width: 100%" mode="aspectFit"></image>
+	<image src="/static/pic1.jpg" class="diygw-image diygw-col-12 image6-clz" style="height: 100px; width: 100%" mode="aspectFit"></image>
+	<image src="/static/pic1.jpg" class="diygw-image diygw-col-12 image7-clz" style="height: 100px; width: 100%" mode="aspectFit"></image>
+	<view class="clearfix"></view>
+</view>
