@@ -40,7 +40,12 @@ API 对用户上传物品自动识别生成标签，对信息进行分类整合�
 - 我的：个人主页，提供个人发布记录浏览与修改，通过客服与意见反馈可以联系后台
 
 ##### 交互设计
-<img src="https://golf.lucaszy.com/%E4%BD%9C%E5%93%81%E5%B1%95%E7%A4%BA.jpg" alt="交互设计" width="500" height="1500" align="bottom" />
+<!-- <img src="https://golf.lucaszy.com/%E4%BD%9C%E5%93%81%E5%B1%95%E7%A4%BA.jpg" alt="交互设计" width="500" height="1500" align="bottom" /> -->
+![交互说明1](https://golf.lucaszy.com/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1-1.jpg)
+![交互说明2](https://golf.lucaszy.com/%E4%BA%A4%E4%BA%922.jpg)
+![交互说明3](https://golf.lucaszy.com/%E4%BA%A4%E4%BA%923.jpg)
+![交互说明4](https://golf.lucaszy.com/%E4%BA%A4%E4%BA%924.jpg)
+![交互说明5](https://golf.lucaszy.com/%E4%BA%A4%E4%BA%925.jpg)
 
 ##### 系统框架
 1. 总体开发架构
