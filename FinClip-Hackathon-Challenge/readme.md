@@ -1,4 +1,5 @@
 # RFC项目设计文档
+> [完成文档请参考](https://github.com/Maifengyuan/FinClip-2022-Hackthon-Challenge/blob/main/FinClip-Hackathon-Challenge/%E3%80%90%E4%BB%8A%E5%A4%A9%E4%BD%A0%E4%B8%A2%E4%BA%BA%E4%BA%86%E5%90%97%E3%80%91%E5%AF%BB%E7%89%A9%E6%A3%AE%E6%9E%97/RFC%E6%96%87%E6%A1%A3.docx)
 ## 项目介绍
 ### 项目成员：
 
@@ -39,7 +40,7 @@ API 对用户上传物品自动识别生成标签，对信息进行分类整合�
 - 我的：个人主页，提供个人发布记录浏览与修改，通过客服与意见反馈可以联系后台
 
 #### 交互设计
-<img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1-1.jpg" alt="交互说明1" width="500" height="1400" align="center" />
+<img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1-1.jpg" alt="交互说明1" width="500" height="1600" align="center" />
 <!-- ![交互说明1](https://golf.lucaszy.com/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1-1.jpg) -->
 <img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%922.jpg" alt="交互说明2" width="500" height="1200" align="center" />
 <img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%923.jpg" alt="交互说明3" width="500" height="1200" align="center" />
