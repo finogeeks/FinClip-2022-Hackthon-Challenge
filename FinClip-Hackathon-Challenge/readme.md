@@ -40,12 +40,12 @@ API 对用户上传物品自动识别生成标签，对信息进行分类整合�
 - 我的：个人主页，提供个人发布记录浏览与修改，通过客服与意见反馈可以联系后台
 
 #### 交互设计
-<img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1-1.jpg" alt="交互说明1" width="400" height="1200" align="middle" />
+<img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1-1.jpg" alt="交互说明1" width="500" height="1200" align="center" />
 <!-- ![交互说明1](https://golf.lucaszy.com/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1-1.jpg) -->
-<img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%922.jpg" alt="交互说明2" width="400" height="1200" align="middle" />
-<img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%923.jpg" alt="交互说明3" width="400" height="1200" align="middle" />
-<img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%924.jpg" alt="交互说明4" width="400" height="1200" align="middle" />
-<img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%925.jpg" alt="交互说明5" width="400" height="1200" align="middle" />
+<img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%922.jpg" alt="交互说明2" width="500" height="1200" align="center" />
+<img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%923.jpg" alt="交互说明3" width="500" height="1200" align="center" />
+<img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%924.jpg" alt="交互说明4" width="500" height="1200" align="center" />
+<img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%925.jpg" alt="交互说明5" width="500" height="1200" align="center" />
 <!-- ![交互说明2](https://golf.lucaszy.com/%E4%BA%A4%E4%BA%922.jpg)
 ![交互说明3](https://golf.lucaszy.com/%E4%BA%A4%E4%BA%923.jpg)
 ![交互说明4](https://golf.lucaszy.com/%E4%BA%A4%E4%BA%924.jpg)
