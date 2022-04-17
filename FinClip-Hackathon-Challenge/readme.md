@@ -43,9 +43,17 @@ API 对用户上传物品自动识别生成标签，对信息进行分类整合�
 
 <div style="align: center">
 <img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1-1.jpg" alt="交互说明1" width="500" height="1600" />
+</div>
+<div style="align: center">
 <img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%922.jpg" alt="交互说明2" width="500" height="1200" />
-<img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%923.jpg" alt="交互说明3" width="500" height="1200" div align="center" />
-<img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%924.jpg" alt="交互说明4" width="500" height="1500" align="center" />
+</div>
+<div style="align: center">
+<img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%923.jpg" alt="交互说明3" width="500" height="1200" />
+</div>
+<div style="align: center">
+<img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%924.jpg" alt="交互说明4" width="500" height="1500" />
+</div>
+<div style="align: center">
 <img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%925.jpg" alt="交互说明5" width="500" height="1200" align="center" />
 </div>
 
