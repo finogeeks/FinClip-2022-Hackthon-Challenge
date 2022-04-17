@@ -42,8 +42,8 @@ API 对用户上传物品自动识别生成标签，对信息进行分类整合�
 #### 交互设计
 <img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1-1.jpg" alt="交互说明1" width="500" height="1600" align="center" />
 <!-- ![交互说明1](https://golf.lucaszy.com/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1-1.jpg) -->
-<img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%922.jpg" alt="交互说明2" width="500" height="1200" align="center" />
-<img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%923.jpg" alt="交互说明3" width="500" height="1200" align="center" />
+<img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%922.jpg" alt="交互说明2" width="500" height="1200" div align=center />
+<img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%923.jpg" alt="交互说明3" width="500" height="1200" div align="center" />
 <img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%924.jpg" alt="交互说明4" width="500" height="1500" align="center" />
 <img src="https://golf.lucaszy.com/%E4%BA%A4%E4%BA%925.jpg" alt="交互说明5" width="500" height="1200" align="center" />
 <!-- ![交互说明2](https://golf.lucaszy.com/%E4%BA%A4%E4%BA%922.jpg)
@@ -53,7 +53,9 @@ API 对用户上传物品自动识别生成标签，对信息进行分类整合�
 
 #### 系统框架
 1. 总体开发架构
-2. 功能架构设计
+![系统机构图](https://golf.lucaszy.com/xwsl_%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84.png#pic_center)
+
+3. 功能架构设计
 ![数据流程图](https://golf.lucaszy.com/%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%9B%BE3.png#pic_center)
 
 3. 用户信息流设计
