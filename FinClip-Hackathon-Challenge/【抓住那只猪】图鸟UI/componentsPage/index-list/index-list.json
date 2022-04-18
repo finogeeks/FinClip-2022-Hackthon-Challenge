@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "indexList索引列表",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "multiple-options-demo": "/libs/components/multiple-options-demo"
+  }
+}

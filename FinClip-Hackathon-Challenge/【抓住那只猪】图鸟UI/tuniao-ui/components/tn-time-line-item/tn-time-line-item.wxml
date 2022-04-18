@@ -1,0 +1,1 @@
+<view class="tn-time-line-item-class tn-time-line-item data-v-7e3138bc"><view class="data-v-7e3138bc"><slot name="content"></slot></view><view class="tn-time-line-item__node data-v-7e3138bc" style="{{$root.s0}}"><block wx:if="{{$slots.node}}"><slot name="node"></slot></block><block wx:else><view class="tn-time-line-item__node--dot data-v-7e3138bc"></view></block></view></view>

@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tn-popup": "/tuniao-ui/components/tn-popup/tn-popup",
+    "tn-number-keyboard": "/tuniao-ui/components/tn-number-keyboard/tn-number-keyboard",
+    "tn-car-keyboard": "/tuniao-ui/components/tn-car-keyboard/tn-car-keyboard"
+  }
+}

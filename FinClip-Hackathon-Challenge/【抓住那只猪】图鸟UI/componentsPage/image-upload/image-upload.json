@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "图片上传",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-image-upload": "/tuniao-ui/components/tn-image-upload/tn-image-upload",
+    "tn-button": "/tuniao-ui/components/tn-button/tn-button",
+    "dynamic-demo-template": "/libs/components/dynamic-demo-template"
+  }
+}

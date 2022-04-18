@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "swiper轮播图",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-swiper": "/tuniao-ui/components/tn-swiper/tn-swiper",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

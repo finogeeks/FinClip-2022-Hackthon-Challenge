@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["tuniao-ui/components/tn-grid/tn-grid"],{"6b62":function(t,n,e){"use strict";var r;e.d(n,"b",(function(){return a})),e.d(n,"c",(function(){return i})),e.d(n,"a",(function(){return r}));var a=function(){var t=this,n=t.$createElement;t._self._c},i=[]},"7eb1":function(t,n,e){},d49b:function(t,n,e){"use strict";e.r(n);var r=e("dec7"),a=e.n(r);for(var i in r)"default"!==i&&function(t){e.d(n,t,(function(){return r[t]}))}(i);n["default"]=a.a},dec7:function(t,n,e){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var r={name:"tn-grid",props:{col:{type:[Number,String],default:3},align:{type:String,default:"left"},hoverClass:{type:String,default:"tn-hover"}},data:function(){return{}},watch:{parentData:function(){this.children.length&&this.children.map((function(t){"function"===typeof t.updateParentData&&t.updateParentData()}))}},created:function(){this.children=[]},computed:{parentData:function(){return[this.hoverClass,this.col,this.border]},gridAlignStyle:function(){switch(this.align){case"left":return"flex-start";case"center":return"center";case"right":return"flex-end";default:return"flex-start"}}},methods:{click:function(t){this.$emit("click",t)}}};n.default=r},dfdf:function(t,n,e){"use strict";var r=e("7eb1"),a=e.n(r);a.a},f47a:function(t,n,e){"use strict";e.r(n);var r=e("6b62"),a=e("d49b");for(var i in a)"default"!==i&&function(t){e.d(n,t,(function(){return a[t]}))}(i);e("dfdf");var u,c=e("f0c5"),f=Object(c["a"])(a["default"],r["b"],r["c"],!1,null,"ea5c4920",null,!1,r["a"],u);n["default"]=f.exports}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'tuniao-ui/components/tn-grid/tn-grid-create-component',
+    {
+        'tuniao-ui/components/tn-grid/tn-grid-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("f47a"))
+        })
+    },
+    [['tuniao-ui/components/tn-grid/tn-grid-create-component']]
+]);

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "空页面",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-empty": "/tuniao-ui/components/tn-empty/tn-empty",
+    "tn-button": "/tuniao-ui/components/tn-button/tn-button",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

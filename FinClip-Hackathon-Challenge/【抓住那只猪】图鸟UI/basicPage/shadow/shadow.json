@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "阴影",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

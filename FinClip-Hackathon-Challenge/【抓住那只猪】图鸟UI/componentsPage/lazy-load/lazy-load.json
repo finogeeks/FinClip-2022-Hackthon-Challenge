@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "懒加载",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-lazy-load": "/tuniao-ui/components/tn-lazy-load/tn-lazy-load",
+    "tn-load-more": "/tuniao-ui/components/tn-load-more/tn-load-more"
+  }
+}

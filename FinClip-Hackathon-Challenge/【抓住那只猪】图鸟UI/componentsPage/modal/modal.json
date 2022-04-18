@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "模态框",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-button": "/tuniao-ui/components/tn-button/tn-button",
+    "tn-modal": "/tuniao-ui/components/tn-modal/tn-modal",
+    "tn-form": "/tuniao-ui/components/tn-form/tn-form",
+    "tn-form-item": "/tuniao-ui/components/tn-form-item/tn-form-item",
+    "tn-input": "/tuniao-ui/components/tn-input/tn-input",
+    "dynamic-demo-template": "/libs/components/dynamic-demo-template"
+  }
+}

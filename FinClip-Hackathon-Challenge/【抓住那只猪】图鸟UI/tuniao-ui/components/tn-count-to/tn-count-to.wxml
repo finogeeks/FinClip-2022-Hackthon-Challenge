@@ -1,0 +1,1 @@
+<view class="{{['tn-count-num-class','tn-count-num','data-v-549c47bb',fontColorClass]}}" style="{{'font-size:'+(fontSizeStyle||'50rpx')+';'+('font-weight:'+(bold?'bold':'normal')+';')+('color:'+(fontColorStyle||'#080808')+';')}}">{{''+displayValue+''}}</view>

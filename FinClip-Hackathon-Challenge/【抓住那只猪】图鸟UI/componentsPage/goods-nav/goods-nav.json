@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "商品导航",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-goods-nav": "/tuniao-ui/components/tn-goods-nav/tn-goods-nav",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

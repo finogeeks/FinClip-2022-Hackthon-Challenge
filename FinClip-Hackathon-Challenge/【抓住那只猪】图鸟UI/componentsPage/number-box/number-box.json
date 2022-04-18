@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "numberBox步进输入",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-number-box": "/tuniao-ui/components/tn-number-box/tn-number-box",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

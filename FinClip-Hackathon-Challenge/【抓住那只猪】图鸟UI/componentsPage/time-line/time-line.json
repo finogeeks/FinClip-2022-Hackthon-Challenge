@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "timeLine时间轴",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-time-line": "/tuniao-ui/components/tn-time-line/tn-time-line",
+    "tn-time-line-item": "/tuniao-ui/components/tn-time-line-item/tn-time-line-item"
+  }
+}

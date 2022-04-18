@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "slider滑动条",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-slider": "/tuniao-ui/components/tn-slider/tn-slider",
+    "tn-form": "/tuniao-ui/components/tn-form/tn-form",
+    "tn-form-item": "/tuniao-ui/components/tn-form-item/tn-form-item",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

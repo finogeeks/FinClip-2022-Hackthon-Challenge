@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "验证码倒计时",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-form": "/tuniao-ui/components/tn-form/tn-form",
+    "tn-form-item": "/tuniao-ui/components/tn-form-item/tn-form-item",
+    "tn-input": "/tuniao-ui/components/tn-input/tn-input",
+    "tn-button": "/tuniao-ui/components/tn-button/tn-button",
+    "tn-verification-code": "/tuniao-ui/components/tn-verification-code/tn-verification-code",
+    "dynamic-demo-template": "/libs/components/dynamic-demo-template"
+  }
+}

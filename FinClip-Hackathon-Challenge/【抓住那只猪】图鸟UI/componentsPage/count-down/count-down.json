@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "countDown倒计时",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-count-down": "/tuniao-ui/components/tn-count-down/tn-count-down",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

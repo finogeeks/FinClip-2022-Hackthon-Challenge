@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "复选框",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-checkbox": "/tuniao-ui/components/tn-checkbox/tn-checkbox",
+    "tn-checkbox-group": "/tuniao-ui/components/tn-checkbox-group/tn-checkbox-group",
+    "demo-title": "/libs/components/demo-title"
+  }
+}
