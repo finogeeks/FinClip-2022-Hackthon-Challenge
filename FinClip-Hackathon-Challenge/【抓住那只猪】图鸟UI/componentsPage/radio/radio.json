@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "单选框",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-radio-group": "/tuniao-ui/components/tn-radio-group/tn-radio-group",
+    "tn-radio": "/tuniao-ui/components/tn-radio/tn-radio",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

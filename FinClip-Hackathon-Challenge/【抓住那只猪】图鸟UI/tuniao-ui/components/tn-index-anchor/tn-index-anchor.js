@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["tuniao-ui/components/tn-index-anchor/tn-index-anchor"],{"007b":function(t,e,n){"use strict";var a;n.d(e,"b",(function(){return r})),n.d(e,"c",(function(){return u})),n.d(e,"a",(function(){return a}));var r=function(){var t=this,e=t.$createElement,n=(t._self._c,t.__get_style([t.wrapperStyle])),a=t.__get_style([t.customAnchorStyle]);t.$mp.data=Object.assign({},{$root:{s0:n,s1:a}})},u=[]},"0b09":function(t,e,n){},"2e02":function(t,e,n){"use strict";n.r(e);var a=n("b47a"),r=n.n(a);for(var u in a)"default"!==u&&function(t){n.d(e,t,(function(){return a[t]}))}(u);e["default"]=r.a},b47a:function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var a={name:"tn-index-anchor",props:{useSlot:{type:Boolean,default:!1},index:{type:String,default:""},customStyle:{type:Object,default:function(){return{}}}},computed:{customAnchorStyle:function(){return Object.assign(this.anchorStyle,this.customStyle)}},data:function(){return{elId:this.$t.uuid(),height:0,top:0,active:!1,wrapperStyle:{},anchorStyle:{}}},created:function(){this.parent=!1},mounted:function(){this.parent=this.$t.$parent.call(this,"tn-index-list"),this.parent&&(this.parent.childrens.push(this),this.parent.updateData())}};e.default=a},e8b2:function(t,e,n){"use strict";n.r(e);var a=n("007b"),r=n("2e02");for(var u in r)"default"!==u&&function(t){n.d(e,t,(function(){return r[t]}))}(u);n("ee6b");var i,c=n("f0c5"),o=Object(c["a"])(r["default"],a["b"],a["c"],!1,null,"338a7d3d",null,!1,a["a"],i);e["default"]=o.exports},ee6b:function(t,e,n){"use strict";var a=n("0b09"),r=n.n(a);r.a}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'tuniao-ui/components/tn-index-anchor/tn-index-anchor-create-component',
+    {
+        'tuniao-ui/components/tn-index-anchor/tn-index-anchor-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("e8b2"))
+        })
+    },
+    [['tuniao-ui/components/tn-index-anchor/tn-index-anchor-create-component']]
+]);

@@ -1,0 +1,1 @@
+<block wx:if="{{visibleSync}}"><view class="{{['tn-tips-class','tn-tips','data-v-4db6c95c',tipsClass]}}" style="{{$root.s0}}"><view class="{{['tn-tips__content','data-v-4db6c95c',backgroundColorClass,fontColorClass]}}" style="{{'background-color:'+(backgroundColorStyle)+';'+('color:'+(fontColorStyle)+';')}}">{{msg}}</view></view></block>

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "外卖个人",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-scroll-list": "/tuniao-ui/components/tn-scroll-list/tn-scroll-list",
+    "tn-list-cell": "/tuniao-ui/components/tn-list-cell/tn-list-cell",
+    "nav-index-button": "/libs/components/nav-index-button"
+  }
+}

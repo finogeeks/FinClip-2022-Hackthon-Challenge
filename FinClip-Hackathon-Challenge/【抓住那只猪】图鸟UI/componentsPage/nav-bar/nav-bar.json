@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "navBar导航栏",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-input": "/tuniao-ui/components/tn-input/tn-input",
+    "dynamic-demo-template": "/libs/components/dynamic-demo-template"
+  }
+}

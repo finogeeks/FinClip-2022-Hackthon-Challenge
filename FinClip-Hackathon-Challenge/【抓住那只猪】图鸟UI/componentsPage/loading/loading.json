@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "Loading加载",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-loading": "/tuniao-ui/components/tn-loading/tn-loading",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "steps步骤条",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-button": "/tuniao-ui/components/tn-button/tn-button",
+    "tn-steps": "/tuniao-ui/components/tn-steps/tn-steps",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

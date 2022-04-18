@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "头像",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-avatar": "/tuniao-ui/components/tn-avatar/tn-avatar",
+    "tn-avatar-group": "/tuniao-ui/components/tn-avatar-group/tn-avatar-group",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

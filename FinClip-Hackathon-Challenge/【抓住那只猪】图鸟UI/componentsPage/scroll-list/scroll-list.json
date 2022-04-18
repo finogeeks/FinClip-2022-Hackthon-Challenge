@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "scrollList横向滚动",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-scroll-list": "/tuniao-ui/components/tn-scroll-list/tn-scroll-list",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

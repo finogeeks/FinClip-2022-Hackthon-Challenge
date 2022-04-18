@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "操作菜单",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-button": "/tuniao-ui/components/tn-button/tn-button",
+    "tn-action-sheet": "/tuniao-ui/components/tn-action-sheet/tn-action-sheet",
+    "dynamic-demo-template": "/libs/components/dynamic-demo-template"
+  }
+}

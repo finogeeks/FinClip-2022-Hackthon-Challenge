@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "输入框",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-input": "/tuniao-ui/components/tn-input/tn-input",
+    "tn-form-item": "/tuniao-ui/components/tn-form-item/tn-form-item",
+    "tn-button": "/tuniao-ui/components/tn-button/tn-button",
+    "tn-select": "/tuniao-ui/components/tn-select/tn-select",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

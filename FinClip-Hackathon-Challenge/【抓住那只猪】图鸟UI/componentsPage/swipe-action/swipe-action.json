@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "swipeAction滑动菜单",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-swipe-action": "/tuniao-ui/components/tn-swipe-action/tn-swipe-action",
+    "tn-swipe-action-item": "/tuniao-ui/components/tn-swipe-action-item/tn-swipe-action-item",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

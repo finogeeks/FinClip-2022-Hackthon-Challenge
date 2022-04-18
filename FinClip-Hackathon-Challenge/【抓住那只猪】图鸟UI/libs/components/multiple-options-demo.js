@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["libs/components/multiple-options-demo"],{"16f1":function(t,n,i){"use strict";(function(t){Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var i={name:"multiple-options-demo",props:{list:{type:Array,default:function(){return[]}}},data:function(){return{tuniaoColorList:["red","purplered","purple","bluepurple","aquablue","blue","indigo","cyan","teal","green","orange","orangered"],listData:[]}},watch:{list:function(t){this.initList()}},created:function(){this.initList()},methods:{initList:function(){var t=this;this.listData=this.list.map((function(n,i){return n.bgColorIndex=t.getBgNum(),n.mainIcon=(null===n||void 0===n?void 0:n.mainIcon)||"computer-fill",n.subIcon=(null===n||void 0===n?void 0:n.subIcon)||"share",n}))},navOptionsPage:function(n){t.navigateTo({url:n})},getBgNum:function(){return Math.floor(Math.random()*this.tuniaoColorList.length)}}};n.default=i}).call(this,i("543d")["default"])},"417a":function(t,n,i){"use strict";var e;i.d(n,"b",(function(){return u})),i.d(n,"c",(function(){return o})),i.d(n,"a",(function(){return e}));var u=function(){var t=this,n=t.$createElement;t._self._c},o=[]},4517:function(t,n,i){},"9a68":function(t,n,i){"use strict";i.r(n);var e=i("417a"),u=i("dcc6");for(var o in u)"default"!==o&&function(t){i.d(n,t,(function(){return u[t]}))}(o);i("a0d3");var a,r=i("f0c5"),c=Object(r["a"])(u["default"],e["b"],e["c"],!1,null,"2a6225dc",null,!1,e["a"],a);n["default"]=c.exports},a0d3:function(t,n,i){"use strict";var e=i("4517"),u=i.n(e);u.a},dcc6:function(t,n,i){"use strict";i.r(n);var e=i("16f1"),u=i.n(e);for(var o in e)"default"!==o&&function(t){i.d(n,t,(function(){return e[t]}))}(o);n["default"]=u.a}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'libs/components/multiple-options-demo-create-component',
+    {
+        'libs/components/multiple-options-demo-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("9a68"))
+        })
+    },
+    [['libs/components/multiple-options-demo-create-component']]
+]);

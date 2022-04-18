@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "Progress进度条",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-line-progress": "/tuniao-ui/components/tn-line-progress/tn-line-progress",
+    "tn-circle-progress": "/tuniao-ui/components/tn-circle-progress/tn-circle-progress",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

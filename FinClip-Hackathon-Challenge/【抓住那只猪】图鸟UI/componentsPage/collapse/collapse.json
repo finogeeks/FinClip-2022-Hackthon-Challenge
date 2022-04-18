@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "collapse折叠面板",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-collapse": "/tuniao-ui/components/tn-collapse/tn-collapse",
+    "tn-collapse-item": "/tuniao-ui/components/tn-collapse-item/tn-collapse-item",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

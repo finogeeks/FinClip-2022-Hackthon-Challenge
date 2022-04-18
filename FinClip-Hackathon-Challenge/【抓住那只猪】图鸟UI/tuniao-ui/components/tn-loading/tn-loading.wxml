@@ -1,0 +1,1 @@
+<block wx:if="{{show}}"><view class="{{['tn-loading-class','tn-loading','data-v-48436cce',mode==='circle'?'tn-loading-circle':'tn-loading-flower']}}" style="{{$root.s0}}"></view></block>

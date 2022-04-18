@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "Tuniao UI",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-tabbar": "/tuniao-ui/components/tn-tabbar/tn-tabbar",
+    "basic": "/pages/basic/basic",
+    "components": "/pages/components/components",
+    "template-page": "/pages/template/template",
+    "tuniao": "/pages/tuniao/tuniao"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "骨架屏",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-skeleton": "/tuniao-ui/components/tn-skeleton/tn-skeleton"
+  }
+}

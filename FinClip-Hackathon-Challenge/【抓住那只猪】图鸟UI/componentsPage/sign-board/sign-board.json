@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "signBoard签名板",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-button": "/tuniao-ui/components/tn-button/tn-button",
+    "tn-sign-board": "/tuniao-ui/components/tn-sign-board/tn-sign-board",
+    "dynamic-demo-template": "/libs/components/dynamic-demo-template"
+  }
+}

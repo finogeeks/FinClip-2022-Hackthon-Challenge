@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "Picker选择器",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-button": "/tuniao-ui/components/tn-button/tn-button",
+    "tn-picker": "/tuniao-ui/components/tn-picker/tn-picker",
+    "dynamic-demo-template": "/libs/components/dynamic-demo-template"
+  }
+}

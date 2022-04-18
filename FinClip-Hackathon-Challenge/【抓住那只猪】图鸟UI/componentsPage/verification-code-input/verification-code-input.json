@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "验证码输入",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-verification-code-input": "/tuniao-ui/components/tn-verification-code-input/tn-verification-code-input",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

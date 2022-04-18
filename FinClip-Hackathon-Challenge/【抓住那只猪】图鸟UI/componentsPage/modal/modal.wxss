@@ -1,0 +1,1 @@
+.tn-modal-class .custom-modal-content{width:100%;height:100%;padding:40rpx;display:flex;flex-direction:column;align-items:center;justify-content:center}.tn-modal-class .custom-modal-content .icon{font-size:100rpx;margin-bottom:20rpx;color:#01beff}.tn-modal-class .custom-modal-content .text{font-size:40rpx}

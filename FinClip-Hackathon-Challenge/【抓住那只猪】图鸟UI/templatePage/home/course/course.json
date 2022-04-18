@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "课程首页",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-swiper": "/tuniao-ui/components/tn-swiper/tn-swiper",
+    "tn-avatar-group": "/tuniao-ui/components/tn-avatar-group/tn-avatar-group",
+    "nav-index-button": "/libs/components/nav-index-button"
+  }
+}

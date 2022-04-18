@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "fab悬浮按钮",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-fab": "/tuniao-ui/components/tn-fab/tn-fab",
+    "dynamic-demo-template": "/libs/components/dynamic-demo-template"
+  }
+}

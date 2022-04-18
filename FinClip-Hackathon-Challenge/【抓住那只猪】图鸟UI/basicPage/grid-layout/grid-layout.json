@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "Grid布局",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-grid": "/tuniao-ui/components/tn-grid/tn-grid",
+    "tn-grid-item": "/tuniao-ui/components/tn-grid-item/tn-grid-item",
+    "dynamic-demo-template": "/libs/components/dynamic-demo-template"
+  }
+}

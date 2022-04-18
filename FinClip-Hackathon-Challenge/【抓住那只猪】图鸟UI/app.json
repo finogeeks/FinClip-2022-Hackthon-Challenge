@@ -1,0 +1,123 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "subPackages": [
+    {
+      "root": "basicPage",
+      "pages": [
+        "flex-layout/flex-layout",
+        "grid-layout/grid-layout",
+        "color/color",
+        "icon/icon",
+        "button/button",
+        "tag/tag",
+        "border/border",
+        "shadow/shadow",
+        "badge/badge",
+        "avatar/avatar"
+      ]
+    },
+    {
+      "root": "componentsPage",
+      "pages": [
+        "list/list",
+        "popup/popup",
+        "modal/modal",
+        "toast/toast",
+        "tips/tips",
+        "form/form",
+        "action-sheet/action-sheet",
+        "picker/picker",
+        "select/select",
+        "verification-code/verification-code",
+        "loading/loading",
+        "switch/switch",
+        "progress/progress",
+        "image-upload/image-upload",
+        "rate/rate",
+        "slider/slider",
+        "number-box/number-box",
+        "keyboard/keyboard",
+        "tabs/tabs",
+        "count-down/count-down",
+        "count-to/count-to",
+        "count-scroll/count-scroll",
+        "sticky/sticky",
+        "nav-bar/nav-bar",
+        "notice-bar/notice-bar",
+        "swiper/swiper",
+        "collapse/collapse",
+        "read-more/read-more",
+        "steps/steps",
+        "time-line/time-line",
+        "index-list/index-list",
+        "index-list/base/index-list",
+        "index-list/avatar/index-list",
+        "calendar/calendar",
+        "scroll-list/scroll-list",
+        "swipe-action/swipe-action",
+        "sign-board/sign-board",
+        "fab/fab",
+        "input/input",
+        "radio/radio",
+        "check-box/check-box",
+        "lazy-load/lazy-load",
+        "load-more/load-more",
+        "skeleton/skeleton",
+        "empty/empty",
+        "landscape/landscape",
+        "verification-code-input/verification-code-input",
+        "subsection/subsection",
+        "goods-nav/goods-nav"
+      ]
+    },
+    {
+      "root": "templatePage",
+      "pages": [
+        "login/demo1/demo1",
+        "login/demo2/demo2",
+        "login/demo3/demo3",
+        "login/demo4/demo4",
+        "health/qrcode/qrcode",
+        "home/course/course",
+        "home/music/music",
+        "home/design/design",
+        "home/job/job",
+        "home/screen/screen",
+        "home/wallpaper/wallpaper",
+        "life/fullpage/fullpage",
+        "life/pano/pano",
+        "life/plus/plus",
+        "life/candle/candle",
+        "time/clock/clock",
+        "animate/loading/loading",
+        "animate/particle/particle",
+        "animate/photo/photo",
+        "animate/hollow/hollow",
+        "my/demo1/demo1",
+        "my/demo2/demo2",
+        "my/demo3/demo3"
+      ]
+    }
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Tuniao UI",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "preloadRule": {
+    "pages/index/index": {
+      "network": "all",
+      "packages": [
+        "basicPage",
+        "componentsPage",
+        "templatePage"
+      ]
+    }
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

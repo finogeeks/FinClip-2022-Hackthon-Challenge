@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "calendar日历",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-button": "/tuniao-ui/components/tn-button/tn-button",
+    "tn-calendar": "/tuniao-ui/components/tn-calendar/tn-calendar",
+    "dynamic-demo-template": "/libs/components/dynamic-demo-template"
+  }
+}

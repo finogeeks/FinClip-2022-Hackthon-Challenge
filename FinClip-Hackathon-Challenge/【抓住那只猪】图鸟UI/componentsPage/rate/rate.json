@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "rate评分",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-rate": "/tuniao-ui/components/tn-rate/tn-rate",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

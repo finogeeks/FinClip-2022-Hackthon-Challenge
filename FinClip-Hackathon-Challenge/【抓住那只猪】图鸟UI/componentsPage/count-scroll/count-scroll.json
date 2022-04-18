@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "countTo数字滚动",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-count-scroll": "/tuniao-ui/components/tn-count-scroll/tn-count-scroll",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

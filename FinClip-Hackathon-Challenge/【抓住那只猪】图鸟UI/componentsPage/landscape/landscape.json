@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "压屏窗",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-button": "/tuniao-ui/components/tn-button/tn-button",
+    "tn-landscape": "/tuniao-ui/components/tn-landscape/tn-landscape",
+    "dynamic-demo-template": "/libs/components/dynamic-demo-template"
+  }
+}

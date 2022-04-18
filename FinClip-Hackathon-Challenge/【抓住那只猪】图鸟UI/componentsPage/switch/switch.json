@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "Switch开关",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-switch": "/tuniao-ui/components/tn-switch/tn-switch",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "分段器",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-subsection": "/tuniao-ui/components/tn-subsection/tn-subsection",
+    "demo-title": "/libs/components/demo-title"
+  }
+}

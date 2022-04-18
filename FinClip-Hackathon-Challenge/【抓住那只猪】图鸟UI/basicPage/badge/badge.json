@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "微标",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tn-nav-bar": "/tuniao-ui/components/tn-nav-bar/tn-nav-bar",
+    "tn-badge": "/tuniao-ui/components/tn-badge/tn-badge",
+    "demo-title": "/libs/components/demo-title"
+  }
+}
