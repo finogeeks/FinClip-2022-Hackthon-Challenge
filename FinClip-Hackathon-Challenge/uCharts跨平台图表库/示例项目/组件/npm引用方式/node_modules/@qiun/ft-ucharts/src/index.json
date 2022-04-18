@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "qiun-error": "error",
+    "qiun-loading": "loading"
+  }
+}

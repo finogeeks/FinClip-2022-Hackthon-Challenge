@@ -1,0 +1,43 @@
+{
+  "name": "@qiun/ft-ucharts",
+  "version": "2.4.1-20220401",
+  "description": "【FinClip小程序uCharts组件】uCharts跨平台图表库，全端全平台支持的图表库，开箱即用。支持PC、H5、微信小程序、支付宝小程序、百度小程序、头条小程序、QQ小程序、360小程序、快手小程序、Vue、Taro等更多支持canvas的框架，体积小巧、调用简单方便、性能及体验极佳。",
+  "miniprogram": "src",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "uCharts",
+    "大图",
+    "大屏",
+    "可视化",
+    "图表库",
+    "饼图",
+    "圆环图",
+    "折线图",
+    "柱状图",
+    "山峰图",
+    "区域图",
+    "雷达图",
+    "圆弧进度图",
+    "仪表盘",
+    "K线图",
+    "条状图",
+    "混合图",
+    "玫瑰图",
+    "漏斗图",
+    "词云图",
+    "时序图",
+    "散点图",
+    "气泡图",
+    "地图"
+  ],
+  "homepage": "https://www.ucharts.cn",
+  "author": "秋云",
+  "license": "Apache",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
