@@ -1,0 +1,8 @@
+<!--index.ftml-->
+<view class="container">
+  <view id="{{index}}" bindtap="onProductClick" class="item" wx:for="{{products}}">
+    <image  mode="aspectFill" src="{{item.thumbnailUrl}}"/>
+    <view class="title"> {{item.title}} </view>
+    <view class="share" >分享</view>
+  </view>
+</view>

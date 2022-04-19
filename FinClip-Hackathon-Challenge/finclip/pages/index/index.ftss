@@ -1,0 +1,37 @@
+/**index.ftss**/
+
+.container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+
+.item{
+  width:48%;
+  border: gray 1px solid;
+  margin-bottom:6px;
+  position:relative;
+}
+
+.title{
+  display:flex;
+  justify-content:center;
+  font-size:80%;
+  margin-bottom:6px;
+}
+
+wx-image{
+  width:100%;
+  height: 180px;
+}
+
+.share{
+  position:absolute;
+  top:3px;
+  right:3px;
+  font-size:80%;
+  background:red;
+  color:white;
+  padding:3px 6px;
+  border-radius: 3px;
+}
