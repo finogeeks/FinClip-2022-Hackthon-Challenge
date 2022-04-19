@@ -1,0 +1,9 @@
+/**app.wxss**/
+@import "styles/weui.wxss";
+
+page {
+  height: 100%;
+  font: 15px Helvetica Neue,Luxi Sans,DejaVu Sans,Tahoma,STHeiti;
+  --themeColor:#07C160;
+  background-color: var(--weui-BG-0);
+}

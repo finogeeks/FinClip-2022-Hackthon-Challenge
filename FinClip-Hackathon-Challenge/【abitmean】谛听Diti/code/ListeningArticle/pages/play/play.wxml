@@ -1,0 +1,44 @@
+<view class="page">
+  <view class="header">
+
+  </view>
+  <view class="body">
+    <view bindtap="clickBack" class="weapp-title">
+      <!-- <i class="weui-icon-forward"></i> -->
+      <text class="weapp-title-text">听文</text>
+    </view>
+    <view class="la-brief">
+      <text bindtap="clickLink" class="la-name">{{playData.title}}</text>
+    </view>
+    <view class="la-cover-show">
+      <image class="coverImg {{isPlay?'play':''}}" mode="aspectFill" src="{{playData.cover}}"></image>
+    </view>
+  </view>
+
+  <view class="footer">
+    <view class="play_suspend">
+      <text bindtap="clickCollect" class="play-icon {{isCollect?'weui-icon-loved':'weui-icon-love'}}"></text>
+      <text bindtap="clickDownload" class="play-icon weui-icon-download"></text>
+      <text bindtap="clickSetting" class="play-icon weui-icon-setting"></text>
+      <view class="share-button-view">
+        <text class="play-icon weui-icon-share"></text>
+        <button class="share-button" hoverClass="hover-class" openType="share"></button>
+      </view>
+    </view>
+    
+    <view class="slider-view">
+      <text class="audio-current-time">{{currentTime}}</text>
+      <slider activeColor="#07C160" backgroundColor="#FFFFFF" bindchange="onSliderChange"
+        bindtouchstart="onSliderStartDrag" blockColor="#07C160" blockSize="12" class="audio-slider" max="{{duration}}"
+        min="0" value="{{sliderValue}}"></slider>
+      <text class="audio-end-time">{{durationTime}}</text>
+    </view>
+
+    <view class="play-view">
+      <i bindtap="handlePlayPrev" class="play-icon weui-icon-forward"></i>
+      <i bindtap="handlePlay" class="play-icon {{isPlay?'weui-icon-pause':'weui-icon-play'}}"></i>
+      <i bindtap="handlePlayNext" class="play-icon weui-icon-back"></i>
+    </view>
+
+  </view>
+</view>

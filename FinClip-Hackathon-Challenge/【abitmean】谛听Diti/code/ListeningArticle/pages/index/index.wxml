@@ -1,0 +1,19 @@
+<view class="page">
+    <view class="weui-search-bar weui-search-bar_focusing {{showMore? 'la-search-bar-more': 'la-search-bar'}}">
+        <form class="weui-search-bar__form">
+            <view class="weui-search-bar__box">
+                <i class="{{parseOK?'weui-icon-wechat-mp':'weui-icon-search'}}"></i>
+                <input type="text" class="weui-search-bar__input" focus="{{inputFocus}}" value="{{inputValue}}"
+                    bindinput="searchInput" maxlength="49" cursor="{{inputCursor}}"/>
+                
+                <label class="search-button" bindtap="handleSearch">
+                    <span class="search-button-text">听文</span>
+                </label>
+            </view>
+        </form>
+    </view>
+
+    <view style="margin-top:10px" bindtap="handleMore" class="{{showMore? 'la-more-hide': ''}}">
+        <i class="weui-icon-arrow la-more"></i>
+    </view>
+</view>
