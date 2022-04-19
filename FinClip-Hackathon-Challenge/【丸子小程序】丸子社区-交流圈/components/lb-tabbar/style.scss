@@ -1,0 +1,123 @@
+.lb-tabbar-content {
+  /* #ifndef APP-NVUE */
+  display: flex;
+  /* #endif */
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.lb-tabbar--fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.lb-tabbar-border {
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  transform: scaleY(0.5);
+}
+
+/* #ifndef APP-NVUE */
+lb-tabbar-item {
+  flex: 1;
+}
+
+/* #endif */
+
+.lb-tabbar-item {
+  flex: 1;
+  /* #ifndef APP-NVUE */
+  display: flex;
+  /* #endif */
+  /* #ifdef MP-TOUTIAO */
+  margin:0 45rpx;
+  
+  /* #endif */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  // justify-content: flex-end;
+}
+
+.lb-tabbar-item__text {
+  overflow: hidden;
+}
+
+.lb-tabbar-item__text--active {
+  transition-property: color;
+  transition-duration: 0.3s;
+  font-weight: bold;
+}
+
+.lb-tabbar-item__icon {
+  position: relative;
+}
+
+.lb-tabbar-icon {
+  position: relative;
+  /* #ifndef APP-NVUE */
+  line-height: 1;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  /* #endif */
+}
+
+.lb-tabbar-item__icon--active {
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+.lb-tabbar-item__icon--raisede {
+  background-color: #fff;
+  border-radius: 9999px;
+  position: relative;
+  /* #ifndef APP-NVUE */
+  z-index: 1;
+  /* #endif */
+}
+
+.lb-tabbar-item__dot--style {
+  border-radius: 9999px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.lb-tabbar-item__dot {
+  width: 8px;
+  height: 8px;
+}
+
+.lb-tabbar-item__dot--nvue {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.1s;
+}
+
+.lb-tabbar-item__dot--show {
+  opacity: 1;
+}
+
+.lb-tabbar-item__dot--info {
+  height: 14px;
+  line-height: 14px;
+  /* #ifdef APP-NVUE */
+  flex: 1;
+  /* #endif */
+  margin-top: 5px;
+  font-size: 12px;
+  padding-left: 4px;
+  padding-right: 4px;
+  text-align: center;
+  color: #fff;
+  transform: translate(50%, -50%);
+}

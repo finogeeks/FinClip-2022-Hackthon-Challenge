@@ -1,0 +1,487 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue",
+		"lb-tabbar-item": "@/components/lb-tabbar/lb-tabbar-item"
+	},
+
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/circle/circle",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/creat/creat",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/message/message",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索中心",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/circle/list/list",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/user",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/circle/creat/creat",
+			"style": {
+				"navigationBarTitleText": "创建圈子",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/rank/rank",
+			"style": {
+				"navigationBarTitleText": "积分排行",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/integral/integral",
+			"style": {
+				"navigationBarTitleText": "积分奖励",
+				"navigationBarBackgroundColor": "#7289ff",
+				"backgroundColor": "#7289ff",
+				"backgroundColorTop": "#7289ff",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	    ,{
+            "path" : "pages/message/systemmsg/systemmsg",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "系统消息",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/message/notice/notice",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "系统消息",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/message/personmsg/personmsg",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/message/detail/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/integral/intergralshop/intergralshop",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "积分商城",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/creat/topic/topic",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "发布动态",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/creat/circle/circle",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "圈子列表",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/creat/tag/tag",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/creat/video/video",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/mypost/mypost",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的动态",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+		    "path" : "pages/mine/editme/editme",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "个人资料",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/integral/exchanges/exchanges",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "订单中心",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/integral/express/express",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "快递查询",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/integral/detail/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "积分详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/mylike/mylike",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的点赞",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/myfav/myfav",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的收藏",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+		    "path" : "pages/page/page",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/mine/myfans/myfans",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的粉丝",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/myfollow/myfollow",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的关注",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/creat/voice/voice",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/creat/custom/custom",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/linkanalysis/linkanalysis",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/sticky/sticky",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "热门动态",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/category/category",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/mycircle/mycircle",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "custom",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/circle/member/member",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "圈子成员",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/circle/auditcircle/auditcircle",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "圈子审核",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/auditPost/auditPost",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "审核列表",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/integral/information/information",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "积分详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/change/change",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "切换账号",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/circle/Protocol/Protocol",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/tag/tag",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/feedback/feedback",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/feedback/complain/complain",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/shop/shop",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        
+        ,{
+            "path" : "pages/comment/comment",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#999",
+		"selectedColor": "#434343",
+		"borderStyle": "white",
+		"backgroundColor": "#fff",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/images/null.png",
+				"selectedIconPath": "static/images/null.png",
+				"text": ""
+			},
+			{
+				"pagePath": "pages/circle/circle",
+				"iconPath": "static/images/null.png",
+				"selectedIconPath": "static/images/null.png",
+				"text": ""
+			},
+
+			{
+				"pagePath": "pages/message/message",
+				"iconPath": "static/images/null.png",
+				"selectedIconPath": "static/images/null.png",
+				"text": ""
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/images/null.png",
+				"selectedIconPath": "static/images/null.png",
+				"text": ""
+			}
+		]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
