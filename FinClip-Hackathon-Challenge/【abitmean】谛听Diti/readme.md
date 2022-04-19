@@ -9,7 +9,7 @@
 
 ## 项目介绍
 
-[Issue 链接](https://github.com/finogeeks/FinClip-2022-Hackthon-Challenge/issues/xxx)
+[Issue 链接](https://github.com/ghostsf/FinClip-2022-Hackthon-Challenge/issues)
 
 谛听Diti是一个帮助用户用声音接收信息，享受美好生活的平台。
 
@@ -49,7 +49,7 @@
 ## 详细说明
 
 实现原理：
-判断文章链接或者纯文字 -> 解析文章链接html DOM节点 -> AI分析出文章各元素信息 -> 文章主体分段AI文字转音频 -> AI渲染叠加感情停顿等元素 -> 多段音频缓冲编码合成 -> 小程序段播放 
+判断文章链接或者纯文字 -> 解析文章链接html DOM节点 -> AI分析出文章各元素信息 -> 文章主体分段AI文字转音频 -> AI渲染叠加感情停顿等元素 -> 多段音频缓冲编码合成 -> 小程序端多节点播放 
 
 功能特色：
 ![功能特色](https://cdn.ghostsf.com/blog/%E8%B0%9B%E5%90%ACDiti-%E5%8A%9F%E8%83%BD%E7%89%B9%E8%89%B2.png)
