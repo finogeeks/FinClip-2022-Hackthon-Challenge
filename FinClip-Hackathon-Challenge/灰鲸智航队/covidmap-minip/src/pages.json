@@ -1,0 +1,137 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [
+		// {
+		// 	"path": "pages/index/url"
+		// },
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "灰鲸疫情地图",
+				"navigationBarBackgroundColor": "#29C5C1",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/about/index",
+			"style": {
+				//	#ifdef H5
+				"navigationStyle": "custom",
+				//#endif
+				"navigationBarTitleText": "关于我们",
+				"navigationBarBackgroundColor": "#29C5C1",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/about/company",
+			"style": {
+				//	#ifdef H5
+				"navigationStyle": "custom",
+				//#endif
+				"navigationBarTitleText": "灰鲸智航"
+			}
+		},
+		{
+			"path": "pages/url/index",
+			"style": {
+				//	#ifdef H5
+				"navigationStyle": "custom",
+				//#endif
+				"navigationBarTitleText": "灰鲸智航"
+			}
+		},
+		{
+			"path": "pages/word/index",
+			"style": {
+				//	#ifdef H5
+				"navigationStyle": "custom",
+				//#endif
+				"navigationBarTitleText": "小鲸鱼疫情百科",
+				"navigationBarBackgroundColor": "#29C5C1",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/index/detail",
+			"style": {
+				//	#ifdef H5
+				"navigationStyle": "custom",
+				//#endif
+				"navigationBarTitleText": "实时资疫情资讯详情",
+				"navigationBarBackgroundColor": "#29C5C1",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/index/city",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "省市疫情实时动态",
+				"navigationBarBackgroundColor": "#1FBABE",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/map/url"
+		}
+		//	#ifdef H5
+		,
+		{
+			"path": "pages/map/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "中高风险地区"
+			}
+		},
+		{
+			"path": "pages/map/search",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "搜索"
+			}
+		}
+		//#endif
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "灰鲸疫情地图",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#f8f8f8",
+		"pageOrientation": "portrait",
+		"app-plus": {
+			"pullToRefresh": {
+				"style": "circle",
+				"color": "#ff536f"
+			}
+		}
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#31C7C0",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/tab-index.png",
+				"selectedIconPath": "static/tabbar/tab-index-sel.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/word/index",
+				"iconPath": "static/tabbar/tab-word.png",
+				"selectedIconPath": "static/tabbar/tab-word-sel.png",
+				"text": "百科"
+			},
+			{
+				"pagePath": "pages/about/index",
+				"iconPath": "static/tabbar/tab-about.png",
+				"selectedIconPath": "static/tabbar/tab-about-sel.png",
+				"text": "关于我们"
+			}
+		]
+	}
+}
