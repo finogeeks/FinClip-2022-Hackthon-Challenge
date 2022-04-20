@@ -1,0 +1,577 @@
+
+/*skin1
+*/
+.detail_container.skin1{
+
+  background-size:100% auto;
+  background-position:0 140rpx;
+  background-repeat: no-repeat;
+  background-color: rgba(10, 50, 37, 1);
+}
+.prizeDesBox.skin1{
+  position: relative;
+  background: url('https://static.2719.cn/Uploads/box_christmas.png');
+  background-size: 710rpx 574rpx;
+  background-repeat: no-repeat;
+  background-position: center top; 
+  width: 710rpx;
+  margin: 25rpx auto 40rpx;
+  border-radius: 15rpx;
+}
+.prizeDesBox.skin1 .prizeList{
+  background: #f5ddce;
+}
+.prizeDesBox.skin1 .prizeList .prizeItem .prizeDes .tt{
+  color: #dc1a33;
+}
+.prizeDesBox.skin1 .tt {
+  color: #ffffff;
+  line-height: 50rpx;
+}
+
+.winNembers.skin1 .numberBox{
+  background: #07231a;
+}
+
+.detail_container2.skin1{
+  background: rgba(10, 50, 37, 1);
+}
+
+.panWinBox.skin1{
+  background:url('https://static.2719.cn/Uploads/pop_bg_christmas.png');
+  background-size: 671rpx 788rpx;
+}
+.panWinBox.skin1 .prizeNameBox{
+  background:url('https://static.2719.cn/Uploads/Picture/202012/5fc75cac29fd0.png');
+  background-size: 496rpx 300rpx;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+}
+
+.panWinBox.skin1 .redeemBtn .txt{
+  color: #ffffff;
+}
+.panWinBox.skin1 .prizeNameBox .prizeTitle{
+  color: #dc1a33;
+}
+
+.detail_container.skin1 .copy_warp .copy_box .copyOnce{
+  color: #dc1a33;
+  border: 1px solid #dc1a33;
+}
+
+.winning.skin1 .winimg .tt{
+  color: #dc1a33;
+}
+.winning.skin1 .windes{
+  color: #dc1a33;
+}
+.winning.skin1 .lotteryCode .code{
+  color: #dc1a33;
+  border-color: #dc1a33;
+}
+.winning.skin1 .winbtn button{
+  background: #dc1a33;
+  color: #ffffff;
+}
+.detail_container.skin1 .seeAllBtn{
+ 
+  background: #fade3d;
+}
+.detail_container.skin1  .setting{
+
+  background: #fade3d;
+}
+
+.snow{
+  display: inline-block; 
+  width: 750rpx; 
+  height:920rpx;
+  position: absolute;
+  left: 0;
+  top: 0rpx;
+}
+
+.musicIcon{
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  left: 30rpx;
+  bottom: 140rpx;
+  z-index: 3;
+  opacity: 0.8;
+
+}
+.musicIcon.play{
+  animation: trans360 5s linear  infinite;
+}
+@keyframes trans360{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+/* skin2 */
+
+.detail_container.skin2{
+  background-color: rgba(0, 0, 46, 1);
+  background-size:100% auto;
+  background-position:0 140rpx;
+  background-repeat: no-repeat;
+}
+.prizeDesBox.skin2{
+  position: relative;
+  background: url('https://static.2719.cn/Uploads/box_2021.png');
+  background-size: 710rpx 574rpx;
+  background-repeat: no-repeat;
+  background-position: center top; 
+  width: 710rpx;
+  margin: 25rpx auto 40rpx;
+  border-radius: 15rpx;
+}
+.prizeDesBox.skin2 .prizeList{
+  background: #faf7ef;
+}
+.prizeDesBox.skin2 .prizeList .prizeItem .prizeDes .tt{
+  color: #dc1a33;
+}
+.prizeDesBox.skin2 .tt {
+  color: #ffffff;
+  line-height: 50rpx;
+}
+
+.winNembers.skin2 .numberBox{
+  background: #3d3a4d;
+}
+
+.detail_container2.skin2{
+  background: rgba(0, 0, 46, 1);
+}
+
+.panWinBox.skin2{
+  background:url('https://static.2719.cn/Uploads/pop_bg_2021.png');
+  background-size: 671rpx 788rpx;
+}
+.panWinBox.skin2 .prizeNameBox{
+  background:url('https://static.2719.cn/Uploads/pop_2021.png');
+  background-size: 496rpx 300rpx;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+}
+
+.panWinBox.skin2 .redeemBtn .txt{
+  color: #ffffff;
+}
+.panWinBox.skin2 .prizeNameBox .prizeTitle{
+  color: #dc1a33;
+}
+
+.detail_container.skin2 .copy_warp .copy_box .copyOnce{
+  color: #dc1a33;
+  border: 1px solid #dc1a33;
+}
+
+.winning.skin2 .winimg .tt{
+  color: #dc1a33;
+}
+.winning.skin2 .windes{
+  color: #dc1a33;
+}
+.winning.skin2 .lotteryCode .code{
+  color: #dc1a33;
+  border-color: #dc1a33;
+}
+.winning.skin2 .winbtn button{
+  background: #dc1a33;
+  color: #ffffff;
+}
+.detail_container.skin2 .seeAllBtn{
+ 
+  background: #fade3d;
+}
+.detail_container.skin2  .setting{
+
+  background: #fade3d;
+}
+
+
+
+
+/* skin3 */
+
+.detail_container.skin3{
+  background-color:  rgba(174, 16, 7, 1);
+  background-size:100% auto;
+  background-position:0 140rpx;
+  background-repeat: no-repeat;
+}
+.prizeDesBox.skin3{
+  position: relative;
+  background: url('https://static.2719.cn/Uploads/box_newyear.png');
+  background-size: 710rpx 574rpx;
+  background-repeat: no-repeat;
+  background-position: center top; 
+  width: 710rpx;
+  margin: 25rpx auto 40rpx;
+  border-radius: 15rpx;
+}
+.prizeDesBox.skin3 .prizeList{
+  background: #f5e4d9;
+  margin-top: 20rpx;
+}
+.prizeDesBox.skin3 .prizeList .prizeItem .prizeDes .tt{
+  color: #dc1a33;
+}
+.prizeDesBox.skin3 .tt {
+  color: #ffffff;
+  line-height: 75rpx;
+}
+
+.winNembers.skin3 .numberBox{
+  background: rgba(0, 0, 46, 0.3);
+}
+
+.detail_container2.skin3{
+  background: rgba(174, 16, 7, 1);
+}
+
+.panWinBox.skin3{
+  background:url('https://static.2719.cn/Uploads/pop_bg_newyear.png');
+  background-size: 671rpx 788rpx;
+}
+.panWinBox.skin3 .prizeNameBox{
+  background:url('https://static.2719.cn/Uploads/pop_newyear.png');
+  background-size: 496rpx 300rpx;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+}
+
+.panWinBox.skin3 .redeemBtn .txt{
+  color: #ffffff;
+}
+.panWinBox.skin3 .prizeNameBox .prizeTitle{
+  color: #dc1a33;
+}
+
+.detail_container.skin3 .copy_warp .copy_box .copyOnce{
+  color: #dc1a33;
+  border: 1px solid #dc1a33;
+}
+
+.winning.skin3 .winimg .tt{
+  color: #dc1a33;
+}
+.winning.skin3 .windes{
+  color: #dc1a33;
+}
+.winning.skin3 .lotteryCode .code{
+  color: #dc1a33;
+  border-color: #dc1a33;
+}
+.winning.skin3 .winbtn button{
+  background: #dc1a33;
+  color: #ffffff;
+}
+.detail_container.skin3 .seeAllBtn{
+ 
+  background: #fade3d;
+}
+.detail_container.skin3  .setting{
+
+  background: #fade3d;
+}
+
+.yanhua{
+  display: inline-block; 
+  width: 750rpx; 
+  height:920rpx;
+  position: absolute;
+  left: 0;
+  top: 0rpx;
+  overflow: hidden;
+}
+
+
+/* skin4 */
+
+.detail_container.skin4{
+  background-color:  rgba(28, 46, 70, 1);
+  background-size:100% auto;
+  background-position:0 140rpx;
+  background-repeat: no-repeat;
+}
+.prizeDesBox.skin4{
+  position: relative;
+  background: url('https://static.2719.cn/Uploads/box_qx.png');
+  background-size: 710rpx 574rpx;
+  background-repeat: no-repeat;
+  background-position: center top; 
+  width: 710rpx;
+  margin: 25rpx auto 40rpx;
+  border-radius: 15rpx;
+}
+.prizeDesBox.skin4 .prizeList{
+  background: #f9f8fd;
+  margin-top: 20rpx;
+}
+.prizeDesBox.skin4 .prizeList .prizeItem .prizeDes .tt{
+  color: #dc1a33;
+}
+.prizeDesBox.skin4 .tt {
+  color: #0c110b;
+  line-height: 75rpx;
+}
+
+.winNembers.skin4 .numberBox{
+  background: rgba(0, 0, 46, 0.3);
+}
+
+.detail_container2.skin4{
+  background: rgba(28, 46, 70, 1);
+}
+
+.panWinBox.skin4{
+  background:url('https://static.2719.cn/Uploads/pop_bg_qx.png');
+  background-size: 671rpx 788rpx;
+}
+.panWinBox.skin4 .prizeNameBox{
+  background:url('https://static.2719.cn/Uploads/pop_qx.png');
+  background-size: 496rpx 300rpx;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+}
+
+.panWinBox.skin4 .redeemBtn .txt{
+  color: #ffffff;
+}
+.panWinBox.skin4 .prizeNameBox .prizeTitle{
+  color: #dc1a33;
+}
+
+.detail_container.skin4 .copy_warp .copy_box .copyOnce{
+  color: #dc1a33;
+  border: 1px solid #dc1a33;
+}
+
+.winning.skin4 .winimg .tt{
+  color: #dc1a33;
+}
+.winning.skin4 .windes{
+  color: #dc1a33;
+}
+.winning.skin4 .lotteryCode .code{
+  color: #dc1a33;
+  border-color: #dc1a33;
+}
+.winning.skin4 .winbtn button{
+  background: #dc1a33;
+  color: #ffffff;
+}
+.detail_container.skin4 .seeAllBtn{
+ 
+  background: #fade3d;
+}
+.detail_container.skin4  .setting{
+
+  background: #fade3d;
+}
+
+
+/* skin5 */
+
+.detail_container.skin5{
+  background-color:#07466f;
+  background-size:100% auto;
+  background-position:0 140rpx;
+  background-repeat: no-repeat;
+}
+.prizeDesBox.skin5{
+  position: relative;
+  background-size: 710rpx 574rpx;
+  background-repeat: no-repeat;
+  background-position: center top; 
+  width: 710rpx;
+  margin: 25rpx auto 40rpx;
+  border-radius: 15rpx;
+}
+.prizeDesBox.skin5 .prizeList{
+  background: #f9f8fd;
+  margin-top: 20rpx;
+}
+.prizeDesBox.skin5 .prizeList .prizeItem .prizeDes .tt{
+  color: #dc1a33;
+}
+.prizeDesBox.skin5 .tt {
+  color: #ffffff;
+  line-height: 65rpx;
+}
+
+.winNembers.skin5 .numberBox{
+  background: #018eb9;
+}
+
+.detail_container2.skin5{
+  background:#07466f;
+}
+
+
+
+
+.panWinBox.skin5 .redeemBtn .txt{
+  color: #ffffff;
+}
+.panWinBox.skin5 .prizeNameBox .prizeTitle{
+  color: #dc1a33;
+}
+
+.detail_container.skin5 .copy_warp .copy_box .copyOnce{
+  color: #dc1a33;
+  border: 1px solid #dc1a33;
+}
+
+.winning.skin5 .winimg .tt{
+  color: #dc1a33;
+}
+.winning.skin5 .windes{
+  color: #dc1a33;
+}
+.winning.skin5 .lotteryCode .code{
+  color: #dc1a33;
+  border-color: #dc1a33;
+}
+.winning.skin5 .winbtn button{
+  background: #dc1a33;
+  color: #ffffff;
+}
+.detail_container.skin5 .seeAllBtn{
+  background: #fade3d;
+}
+.detail_container.skin5  .setting{
+
+  background: #fade3d;
+}
+
+.panWinBox.skin5 .winTit{
+  color: #ff0000;
+  text-shadow: rgba(0, 0, 0, 0.33);
+}
+
+
+/* skin2 */
+
+.detail_container.skin6{
+  background-color: rgba(0, 0, 46, 1);
+  background-size:100% auto;
+  background-position:0 140rpx;
+  background-repeat: no-repeat;
+}
+.prizeDesBox.skin6{
+  position: relative;
+  background: url('https://static.2719.cn/Uploads/box_2021.png');
+  background-size: 710rpx 574rpx;
+  background-repeat: no-repeat;
+  background-position: center top; 
+  width: 710rpx;
+  margin: 25rpx auto 40rpx;
+  border-radius: 15rpx;
+}
+.prizeDesBox.skin6 .prizeList{
+  background: #f9f9fc;
+  margin-top: 20rpx;
+}
+.prizeDesBox.skin6 .prizeList .prizeItem .prizeDes .tt{
+  color: #dc1a33;
+}
+.prizeDesBox.skin6 .tt {
+  color: #ffffff;
+  line-height: 90rpx;
+}
+
+.winNembers.skin6 .numberBox{
+  background: #3d3a4d;
+}
+
+.detail_container2.skin6{
+  background: rgba(0, 0, 46, 1);
+}
+
+.panWinBox.skin6{
+  background:url('https://static.2719.cn/Uploads/pop_bg_2021.png');
+  background-size: 671rpx 788rpx;
+}
+.panWinBox.skin6 .prizeNameBox{
+  background:url('https://static.2719.cn/Uploads/pop_2021.png');
+  background-size: 496rpx 300rpx;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+}
+
+.panWinBox.skin6 .redeemBtn .txt{
+  color: #ffffff;
+}
+.panWinBox.skin6 .prizeNameBox .prizeTitle{
+  color: #dc1a33;
+}
+
+.detail_container.skin6 .copy_warp .copy_box .copyOnce{
+  color: #dc1a33;
+  border: 1px solid #dc1a33;
+}
+
+.winning.skin6 .winimg .tt{
+  color: #dc1a33;
+}
+.winning.skin6 .windes{
+  color: #dc1a33;
+}
+.winning.skin6 .lotteryCode .code{
+  color: #dc1a33;
+  border-color: #dc1a33;
+}
+.winning.skin6 .winbtn button{
+  background: #dc1a33;
+  color: #ffffff;
+}
+.detail_container.skin6 .seeAllBtn{
+ 
+  background: #fade3d;
+}
+.detail_container.skin6  .setting{
+
+  background: #fade3d;
+}
+
+/*skinDiy
+*/
+.detail_container.skinDiy{
+
+  background-size:100% auto;
+  background-position:0 140rpx;
+  background-repeat: no-repeat;
+  background-color:#d80001;
+}
+
+.winNembers.skinDiy .numberBox{
+  background: #4b0202;
+}
+
+.detail_container.skinDiy .prizeList {
+  margin-top: 100rpx;
+  background: #fff6ed;
+}
+
+.detail_container.skinDiy .prizeDesBox .tt {
+  line-height: 220rpx;
+  color: #d80001;
+}
+
+

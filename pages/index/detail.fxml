@@ -1,0 +1,292 @@
+<!--pages/jackpot/detail.wxml-->
+<import src="../../commpents/navBar/navBar.wxml" />
+<template is="navbar" data="{{navBar}}" />
+<!-- container -->
+<view class="container detail_container {{activity_type==2?'Taste':''}} skin{{skin_id}}" wx:if="{{isfetched==true}}" style='background-image: url(https://static.2719.cn/Uploads/lottery/{{skin_id}}/bg.jpg);background-size: 100% auto;background-position:0 140rpx;background-repeat: no-repeat;padding-top:{{navBar.statusBarHeight+100}}rpx;padding-bottom:20rpx;background-position:0rpx {{skin_id!=0?navBar.statusBarHeight+100:100}}rpx'>
+	<view class="zpBox">
+		<view class="snow" wx:if="{{skin_id==1}}">
+			<canvas id="cvs1" type="2d" style="display: inline-block; width: 750rpx; height:920rpx;"></canvas>
+			<image src="../../images/music2.png" class="musicIcon {{musicPlay==true?'play':''}}" bindtap="musicHander"></image>
+		</view>
+    <view class="yanhua" wx:if="{{skin_id==2 || skin_id == 6}}">
+			<canvas id="cvs1" type="2d" style="display: inline-block; width: 750rpx; height:920rpx;"></canvas>
+			<image src="../../images/music2.png" class="musicIcon {{musicPlay==true?'play':''}}" bindtap="musicHander"></image>
+		</view>
+		<view class="yanhua" wx:if="{{skin_id==3}}">
+			<canvas id="cvs1" type="2d" style="display: inline-block; width: 750rpx; height:920rpx;"></canvas>
+			<image src="../../images/music2.png" class="musicIcon {{musicPlay==true?'play':''}}" bindtap="musicHander"></image>
+		</view>
+		<view class="yanhua" wx:if="{{skin_id==4 || skin_id == 5}}">
+			<image src="../../images/music2.png" class="musicIcon {{musicPlay==true?'play':''}}" bindtap="musicHander"></image>
+		</view>
+    <view class="skinTips" bindtap="checkSkinHander">
+				<image src="../../images/skin-f.png"></image> <text>换肤</text>
+		</view>
+
+		<image src="../../images/panpf.png" class="zppf" wx:if="{{skin_id==0}}"></image>
+		<image src="../../images/panfs.png" class="zpfs" wx:if="{{skin_id==0}}"></image>
+		<image src="https://static.2719.cn/Uploads/lottery/{{item.value}}/dial.png" class="zpBg" wx:for="{{skins}}"  wx:if="{{skin_id==item.value}}"></image>
+		<view class="createrInfo"><text wx:if="{{applets.name!=undefined&&applets.name!=''}}">发起方:{{applets.name}}</text> <text wx:else>发起人:{{username}}</text></view>
+		<view class='jackpotjoinBox'>
+			<view class='tt'> 已有
+				<text class=''>{{count}}</text> 人参与
+			</view>
+		</view>
+
+
+
+		<view class="seeAllBtn" bindtap='goAllWin' data-type='{{activity_type}}' data-jackpot="1" wx:if="{{win_num>0}}" wx:if="{{winUser.length>0}}">查看中奖名单</view>
+
+
+		<!-- <canvas 
+      style='width: {{cw}}px; height: {{ch}}px;' 
+      disable-scroll="true" 
+      bindtouchstart="canvasTouchStart" 
+      bindtouchmove="touchMove" 
+      bindtouchend="canvasTouchEnd" 
+      canvas-id="canvas"
+      ></canvas> -->
+		<image src="{{panimagePath}}" style='width: {{cw}}px; height: {{ch}}px' class="panCircle" animation="{{animationCicleData}}"></image>
+		<image src="../../images/panPoint.png" class="panPoint {{pool_open==0?'disable':''}}" bindtap="startPrize" wx:if="{{skin_id==0}}"></image>
+		<image src="https://static.2719.cn/Uploads/needle_christmas.png" class="panPoint {{pool_open==0?'disable':''}}" bindtap="startPrize" wx:elif="{{skin_id==1}}"></image>
+		<image src="https://static.2719.cn/Uploads/needle_2021.png" class="panPoint  {{pool_open==0?'disable':''}}" bindtap="startPrize" wx:elif="{{skin_id==2}}"></image>
+		<image src="https://static.2719.cn/Uploads/needle_newyear.png" class="panPoint {{pool_open==0?'disable':''}}" bindtap="startPrize" wx:elif="{{skin_id==3}}"></image>
+		<image src="https://static.2719.cn/Uploads/needle_qx.png" class="panPoint {{pool_open==0?'disable':''}}" bindtap="startPrize" wx:elif="{{skin_id==4}}"></image>
+
+		<image src="https://static.2719.cn/Uploads/lottery/{{item.value}}/needle.png" 	class="panPoint {{pool_open==0?'disable':''}}" bindtap="startPrize" wx:if="{{skin_id==item.value}}" wx:for="{{skins}}"></image>
+
+
+
+		<view class="canvas-box">
+			<canvas style='width: {{cw}}px; height: {{ch}}px' canvas-id="wheelCanvas" />
+		</view>
+
+	</view>
+
+	<view class="prizeDesBox skin{{skin_id}}" style="background-image: url(https://static.2719.cn/Uploads/lottery/{{skin_id}}/box.png);background-size: 710rpx 574rpx;background-repeat: no-repeat;background-position: center top;width: 710rpx;margin: 25rpx auto 40rpx;border-radius: 15rpx;">
+		<view class="tt">奖项说明</view>
+		<view class="prizeList">
+			<view class="prizeItem" wx:for="{{list}}">
+				<view class="prizeImg">
+					<image src="{{item.img}}" mode="aspectFill"></image>
+				</view>
+				<view class="prizeDes">
+					<view class="tt">{{item.title}}</view>
+					<view class="name">{{item.name}} x {{item.num}}</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<!-- prizeDesBox -->
+	<view class="prizeDesBox skin{{skin_id}}" wx:if="{{createDes.length>0}}" style="background-image: url(https://static.2719.cn/Uploads/lottery/{{skin_id}}/box.png);background-size: 710rpx 574rpx;background-repeat: no-repeat;background-position: center top;width: 710rpx;margin: 25rpx auto 40rpx;border-radius: 15rpx;"> 
+		<view class="tt">活动说明</view>
+		<view class="prizeList">
+			<text>{{createDes}}</text>
+		</view>
+	</view>
+	<!-- prizeDesBox -->
+
+	<!-- winNembers -->
+	<view class="winNembers skin{{skin_id}}" wx:if="{{winUser.length>0}}">
+		<view class="tt">—— 中奖名单 ——</view>
+		<view class="numberBox">
+			<view id="WinUserBox">
+				<swiper class="items" vertical="{{true}}" indicator-dots="{{false}}" autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}" display-multiple-items="{{2}}" circular="{{true}}">
+					<block wx:for="{{winUser}}" wx:key="*this">
+						<swiper-item class="item" catchtouchmove='catchTouchMove'>
+							<view class="swiper-item {{item}}"> <text class="usname">{{item.username}} </text><text>手气爆棚，抽中了{{item.detail_name}}</text></view>
+						</swiper-item>
+					</block>
+				</swiper>
+				<!-- <view class="items"  animation="{{animationData}}">
+                  <view class="item" wx:for="{{winUser}}">
+                      <text class="usname">{{item.username}} </text><text>手气爆棚，抽中了{{item.detail_name}}</text>
+                  </view>
+              </view> -->
+			</view>
+		</view>
+	</view>
+	<!-- winNembers -->
+</view>
+<!-- container -->
+
+<!-- detail_container2 -->
+<view class=" detail_container detail_container2 skin{{skin_id}}">
+
+
+
+
+
+
+
+	<view class='prizeContainer' wx:if="{{prize_desc!=''||prize_img.length!=0}}">
+		<view class='prize_title'>
+			<!-- <view class='icon_t'></view> -->
+			<text>奖品介绍</text>
+		</view>
+		<view>
+			<text>{{prize_desc}}</text>
+		</view>
+		<view class='prizeImglist'>
+			<image src='{{item}}' wx:for="{{prize_img}}" mode='widthFix' bindtap='showCover' data-src="{{item}}"></image>
+		</view>
+	</view>
+
+
+
+
+
+</view>
+
+<!-- detail_container2     -->
+
+<!-- 普通抽奖 -->
+<!-- <view class="submitLottery fixed" style='{{model==1?"padding-bottom:34rpx;":""}};border-radius:0'>
+	<button bindtap="create">
+		发起抽奖
+	</button>
+</view>-->
+
+
+<!-- 中奖弹框 -->
+<!-- 中奖弹窗背景 -->
+<image src='https://static.2719.cn/Uploads/Picture/201909/5d78ba1979267.png' hidden='{{true}}'></image>
+<!-- 中奖名称框  -->
+<image src='https://static.2719.cn/Uploads/Picture/201909/5d75c9d3a4960.png' hidden='{{true}}'></image>
+
+<!-- 未中奖弹窗背景 -->
+<image src='https://static.2719.cn/Uploads/Picture/201909/5d75eb4ee0d49.png' hidden='{{true}}'></image>
+
+
+<view class='mask4' wx:if="{{isShowWin==1&&status==1}}"></view>
+<!-- panWinBox -->
+<view class="panWinBox {{winStatus==2?'active':''}} skin{{skin_id}}" wx:if="{{isShowWin==1&&status==1}}" style="background: url(https://static.2719.cn/Uploads/lottery/{{skin_id}}/pop_bg.png);background-size: 671rpx 788rpx;">
+	<view class="winTit">{{prize=="谢谢参与"?"很遗憾":"恭喜您，抽中了"}}</view>
+	<view class="prizeNameBox" style="background:url(https://static.2719.cn/Uploads/lottery/{{skin_id}}/pop.png);background-size: 496rpx 300rpx;background-position: center top;background-repeat:no-repeat;">
+		<view class="prizeInner">
+			<view class="prizeTitle">{{prize_info.detail_title}}</view>
+			<image class="prizeImg" src="{{prize_info.detail_img==''?'../../images/zpbg.png':prize_info.detail_img}}" mode="aspectFill"></image>
+			<view class="prizeName">{{prize_info.detail_name}}</view>
+		</view>
+	</view>
+
+	<view class="redeemBtn">
+		<image src="https://static.2719.cn/Uploads/lottery/{{skin_id}}/winbtn.png" wx:if="{{skin_id==item.value}}" wx:for="{{skins}}" wx:key="{{item.value}}" ></image>
+		<block wx:if="{{have_address==0}}">
+			<view class="txt" wx:if="{{duijiang==1}}" bindtap="getAddress">确认收货地址</view>
+			<view class="txt" wx:if="{{duijiang==2}}" bindtap="showCreater">联系发起人兑奖</view>
+		</block>
+		<block wx:if="{{have_address==1}}">
+			<view class="txt" wx:if="{{duijiang==1}}" bindtap="getAddress">已填写收货地址</view>
+			<view class="txt" wx:if="{{duijiang==2}}" bindtap="showCreater">联系发起人兑奖</view>
+		</block>
+
+	</view>
+
+	<image src="../../images/close3.png" class="closePanWin" bindtap="closePanWinBox"></image>
+</view>
+<!-- panWinBox -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <image src='{{imagePath}}'  style="width: 682rpx;height: {{HB_height}}rpx;"></image> -->
+<view class="canvas-box">
+	<canvas style="width: 682px;height: {{HB_height}}px;" canvas-id="mycanvas" />
+</view>
+
+<!-- <image src='{{shareImg}}'  style="width: 750rpx;height: 600rpx;"></image> -->
+<view class="canvas-box">
+	<canvas style="width:750px;height: 600px;" canvas-id="mycanvas2" />
+</view>
+
+<my-shareimg my-share="{{imagePath}}" my-height="{{HB_height*0.7}}" />
+
+<my-sharebg id="sharebg" bind:getShareBg="onShareBg" type="{{type}}" lotteryTime="{{lotteryTime}}" prize_num="{{prize_num}}" activity_type="{{activity_type}}" list="{{list}}" count="{{count}}" cover="{{cover}}" prizetitle="{{prizetitle}}" />
+
+<!-- <button class='AuthButton'  open-type='getUserInfo' lang="zh_CN" bindgetuserinfo="getuserinfo" wx:if="{{token==''}}"></button> -->
+
+
+<view class="canvas-box2">
+	<canvas style="width: 634px;height: {{JoinHB_height}}px;" canvas-id="mycanvas3" />
+</view>
+
+<!-- 皮肤选择 -->
+
+	<view class="tipsmask" wx:if="{{showCheckSkin}}"></view>
+	<view class="skinSelectBox" wx:if="{{showCheckSkin}}">
+		<view class="tt">选择皮肤</view>
+		<view class="skins">
+			<view class="skinItem" bindtap="checkSkin" data-skin="{{item.value}}" wx:for="{{skins}}">
+				<image src="https://static.2719.cn/Uploads/lottery/{{item.value}}/skin.jpg"></image>
+				<view class="skinDesc">{{item.name}}</view>
+				<view class="skin_selectMask" wx:if="{{tempSkin==item.value}}"></view>
+				<view class="skin_select" wx:if="{{tempSkin==item.value}}"></view>
+			</view>
+		</view>
+		<view class="skinBtn" bindtap="configSkinHander">确定</view>
+		<view class="skinClose" bindtap="hideSkinHander">
+			<image src="../../images/close2.png"></image>
+		</view>
+	</view>

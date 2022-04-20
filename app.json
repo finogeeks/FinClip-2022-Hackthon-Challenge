@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "抽奖大转盘",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "functionalPages": {
+    "independent": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
