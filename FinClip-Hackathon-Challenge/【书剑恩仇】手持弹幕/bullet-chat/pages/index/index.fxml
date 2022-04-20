@@ -1,0 +1,104 @@
+<!--index.wxml-->
+<scroll-view 
+  style="background-color: {{currentBgColor}};"
+  class="container">
+  <view class="lock-icon" bindtap="handleLockClick">
+    <image mode="scaleToFill" src="{{ lock ? '../../assets/images/miniapps_lock_close.png' : '../../assets/images/miniapps_lock_open.png' }}"></image>
+  </view>
+  <view 
+    wx:for="{{[1,2]}}"
+    wx:key="viewItem"
+    wx:for-item="viewItem"
+    class="text-container {{ currentSpeeds }} {{ speedsReset ? 'reset' : '' }}">
+    <text
+      wx:key="textItem"
+      wx:for-item="textItem"
+      wx:for="{{ text }}"
+      style="color: {{ currentTextColor }};font-size: {{currentSizes + 'rpx'}};min-height: {{currentSizes}}rpx;"
+      class="{{ currentEffects }}">{{ textItem }}</text>
+  </view>
+  <scroll-view wx:if="{{!lock && colorfulVisable}}" scroll-y="true" class="tools-container">
+    <view class="tools-header">
+      <text class="title">弹窗样式配置</text>
+      <button bindtap="handleSave">保存</button>
+    </view>
+    <view class="color-box">
+      <text class="label">字体颜色</text>
+      <scroll-view class="color-box-scroll" scroll-x="true">
+        <view 
+          wx:key="color"
+          data-color='{{color}}'
+          bindtap="handleTextColorClick"
+          class="color-item {{ currentTextColor === color ? 'bd' : '' }}" 
+          style="background-color: {{color}};border: 4rpx solid {{color}}" 
+          wx:for="{{ colors }}" 
+          wx:for-item="color"></view>
+      </scroll-view>
+    </view>
+    <view class="color-box">
+      <text class="label">背景颜色</text>
+      <scroll-view class="color-box-scroll" scroll-x="true">
+        <view 
+          wx:key="color"
+          data-color='{{color}}'
+          class="color-item {{ currentBgColor === color ? 'bd' : '' }}" 
+          bindtap="handleBgColorClick"
+          style="background-color: {{color}};border: 4rpx solid {{color}}" 
+          wx:for="{{ colors }}" 
+          wx:for-item="color"></view>
+      </scroll-view>
+    </view>
+    <view class="color-box">
+      <text class="label">效果</text>
+      <scroll-view class="color-box-scroll" scroll-x="true">
+        <view 
+          data-effect='{{effect.effect}}'
+          wx:key="effect"
+          class="color-item-1 {{ currentEffects === effect.effect ? 'bd' : '' }}" 
+          bindtap="handleEffectClick"
+          wx:for="{{ effects }}" 
+          wx:for-item="effect">
+          {{ effect.title }}
+        </view>
+      </scroll-view>
+    </view>
+    <view class="color-box">
+      <text class="label">速度</text>
+      <scroll-view class="color-box-scroll" scroll-x="true">
+        <view 
+          data-speed='{{speed.speed}}'
+          wx:key="speed"
+          class="color-item-1 {{ currentSpeeds === speed.speed ? 'bd' : '' }} {{ (speedsReset && (oldSpeed === speed.speed)) ? 'bd' : '' }}" 
+          bindtap="handleSpeedClick"
+          wx:for="{{ speeds }}" 
+          wx:for-item="speed">
+          {{ speed.title }}
+        </view>
+      </scroll-view>
+    </view>
+    <view class="color-box">
+      <text class="label">字号</text>
+      <scroll-view class="color-box-scroll" scroll-x="true">
+        <view 
+          data-size='{{size.size}}'
+          wx:key="size"
+          class="color-item-1 {{ currentSizes === size.size ? 'bd' : '' }}" 
+          bindtap="handleSizeClick"
+          wx:for="{{ sizes }}" 
+          wx:for-item="size">
+          {{ size.title }}
+        </view>
+      </scroll-view>
+    </view>
+  </scroll-view>
+  <view wx:if="{{ !lock && !colorfulVisable }}" class="tools">
+    <input 
+      class="tools-input" 
+      placeholder="请输入内容" 
+      value="{{textValue}}" 
+      bindinput="handleInputChange"/>
+    <view bindtap="handleColorfulClick" class="colorful">
+      <image mode="scaleToFill" src="../../assets/images/demo_barrage_beautify@2x.png"></image>
+    </view>
+  </view>
+</scroll-view>
