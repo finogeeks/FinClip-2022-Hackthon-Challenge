@@ -1,0 +1,13 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "useOldBuilder": false
+  },
+  "compileType": "miniprogram",
+  "appid": "62425eb278c1a7000142b1b2",
+  "projectname": "todo-mvc-demo",
+  "isGameTourist": false
+}

@@ -1,0 +1,192 @@
+/**index.wxss**/
+.container{
+  display: flex;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.lock-icon{
+  z-index: 9;
+  width: 88rpx;
+  height: 64rpx;
+  position: absolute;
+  left: 40rpx;
+  top: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(217,217,217,1);
+  border-radius: 10rpx;
+}
+.lock-icon >image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.text-container{
+  box-sizing: border-box;
+  padding-bottom: 300rpx;
+  min-height: 100%;
+  max-height: 500%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.text-container >text{
+  line-height: 100%;
+  transform: rotate(90deg);
+  min-width: 50rpx;
+  min-height: 50rpx;
+}
+@keyframes one{
+  0%{ transform:translateY(0); }
+  100%{ transform:translateY(-100%); }
+}
+@keyframes two{
+  0%{ transform:translateY(0); }
+  100%{ transform:translateY(-100%); }
+}
+@keyframes three{
+  0%{ transform:translateY(0); }
+  100%{ transform:translateY(-100%); }
+}
+@keyframes four{
+  0%{ transform:translateY(0); }
+  100%{ transform:translateY(-100%); }
+}
+.speed-one{
+  animation: one 8s infinite linear;
+}
+.speed-two{
+  animation: two 6s infinite linear;
+}
+.speed-three{
+  animation: three 4s infinite linear normal;
+}
+.speed-four{
+  animation: four 2s infinite linear normal;
+}
+.shodow{
+  text-shadow: -1rpx 1rpx  #1990FF, 1rpx 1rpx 30rpx #1990FF, 1rpx -1rpx 30rpx #1990FF, -1rpx -1rpx 30rpx #1990FF;
+}
+.border{
+  text-shadow: -1rpx 8rpx  #1990FF, 1rpx 8rpx 0 #1990FF, 8rpx -1rpx 0 #1990FF, -1rpx -1rpx 0 #1990FF;
+}
+.tools{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  left: 0;
+  bottom: 92rpx;
+  position: absolute;
+  height: 80rpx;
+}
+.tools .tools-input{
+  padding-left: 30rpx;
+  height: 80rpx;
+  background: #222222;
+  margin-left: 40rpx;
+  margin-right: 20px;
+  border-radius: 8rpx;
+  flex:1;
+  font-size: 32rpx;
+  color: #999999;
+  font-weight: 400;
+}
+.tools .colorful{
+  margin-right: 40rpx;
+  background: #222222;
+  border-radius: 8rpx;
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tools .colorful >image{
+  width: 44rpx;
+  height: 44rpx;
+}
+.tools-container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 32rpx;
+  padding-bottom: 32rpx;
+  padding-left: 40rpx;
+  box-sizing: border-box;
+  z-index: 9;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background: rgba(0,0,0,0.90);
+  width: 100%;
+  height: 68%;
+}
+.tools-container .tools-header{
+  display: flex;
+  align-items: center;
+  height: 65rpx;
+  margin-bottom: 33rpx;
+}
+.tools-container .tools-header .title{
+  font-size: 36rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  font-weight: 400;
+  margin-right: auto;
+}
+.tools-container .tools-header >button{
+  padding: 0;
+  color: #E8AE34;
+  line-height: 65rpx;
+  font-weight: normal;
+  margin: 0 40rpx 0 0 ;
+  text-align: center;
+  background: #000;
+  font-size: 36rpx;
+  width: 130rpx;
+  height: 65rpx;
+  border: 2rpx solid rgba(232,174,52,1);
+  border-radius: 4rpx;
+}
+.tools-container .color-box{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40rpx;
+}
+.tools-container .color-box .label{
+  margin-bottom: 28rpx;
+  font-size: 28rpx;
+  color: #9B9B9B;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.tools-container .color-box .color-box-scroll{
+  white-space: nowrap; 
+  display: flex;
+}
+.tools-container .color-box .color-box-scroll .color-item{
+  display: inline-block;
+  border-radius: 8rpx;
+  margin-right: 20rpx;
+  width: 76rpx;
+  height: 76rpx;
+}
+.tools-container .color-box .color-box-scroll .color-item-1{
+  display: inline-block;
+  border-radius: 8rpx;
+  margin-right: 20rpx;
+  width: 112rpx;
+  height: 76rpx;
+  line-height: 76rpx;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: 400;
+  background: #141414;
+  border: 4rpx solid #141414;
+  border-radius: 8rpx;
+}
+.tools-container .color-box .color-box-scroll .bd{
+  border: 4rpx solid rgba(232,174,52,1) !important;
+}
