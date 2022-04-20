@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<import src="../../commpents/navBar/navBar.wxml" />
+<template is="navbar" data="{{navBar}}" />
+<image src="https://static.2719.cn/lottery/loading.gif" wx:if="{{isFetch==false}}" class="loading"></image>
+<view class="container" style='padding-top:{{navBar.statusBarHeight+100}}rpx;' wx:if="{{isFetch}}">
+	<view class="indexBox" >
+		<image src="../../images/panfs.png" class="fs"></image>
+		<image src="../../images/panpf.png" class="pf"></image>
+		<image src="../../images/panjb.png" class="jb"></image>
+		<image src="../../images/panindex.png" class="panImg" ></image>
+		<view class="goDemoBtn" bindtap="goPublic" wx:if="{{publicList.length>0}}"></view>
+		<view class="goDemoBtn" bindtap="goDemo" wx:else></view>
+		<view class="saoma">扫码即可参与，线上、现场均适用！</view>
+
+
+		<view class="indexBtn" bindtap="goPublic" wx:if="{{publicList.length>0}}">
+			<image src="../../images/indexBtn.png"></image>
+			<image src="../../images/icon_hot.png" class="icon_new"></image>
+			<text class="text_public">公共抽奖</text>
+		</view>
+
+		<view class="indexBtn" bindtap="goDemo" wx:else>
+			<image src="../../images/indexBtn.png"></image>
+			
+			<text>演示案例</text>
+		</view>
+
+		
+		<view class="indexDes">
+		
+			<!-- <text>扫码即可参与，
+            线上、现场抽奖均适用</text> -->
+		</view>
+
+	
+
+		<!-- <view class="mask" style="z-index:100" wx:if="{{showTips}}"></view>
+		<view class="tipsBox"  wx:if="{{showTips}}">
+			<view class="title">尊敬的用户：</view>
+			<view class="des">为满足更多的使用需要和提供更完善的产品服务，「抽奖大转盘」即日起启用新版本！结合广大抽奖发起人的反馈，新版本增加了更多实用功能，包括：VIP服务、中奖概率设置、空奖项设置等。</view>
+      <view class="des">您如果之前已在老版本创建过抽奖且未结束的，可在“我的”页面切换至老版进行操作和查看；您如果需要创建新的抽奖，建议使用新版本操作，老版本将过渡期结束后下线。</view>
+      <view class="des">感谢您一直以来对「抽奖大转盘」的支持，我们会继续完善产品，为您提供更优质的产品服务！</view>
+      <view class="towBtn">
+        <view class="cancel"><navigator url="/pages/user/index">切换至旧版	</navigator></view>
+        <view class="confim" bindtap="closeTips">知道了</view>
+       </view>
+		</view> -->
+   
+
+	</view>
+
+
+</view>
+
+<view class='footer' style='{{model==1?"padding-bottom:34rpx;":""}}'>
+	<view class='item {{index==0?"active":""}}'>
+		<image wx:if="{{index==0}}" src='../../images/home_active@2x.png'></image>
+		<image wx:else src='../../images/home@2x.png'></image>
+		<text>首页</text>
+	</view>
+	<view class='item  {{index==1?"active":""}}' bindtap='create'>
+		<image wx:if="{{index==1}}" src='../../images/add_active@2x.png'></image>
+		<image wx:else src='../../images/add@2x.png'></image>
+		<text>创建</text>
+	</view>
+	<view class='item  {{index==2?"active":""}}' bindtap='goUserInfo'>
+		<image wx:if="{{index==2}}" src='../../images/my_active@2x.png'></image>
+		<image wx:else src='../../images/my@2x.png'></image>
+		<text>我的</text>
+	</view>
+</view>

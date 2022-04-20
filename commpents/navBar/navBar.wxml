@@ -1,0 +1,12 @@
+<template name="navbar" >
+<view class='navbar' style='height:{{navBar.statusBarHeight+100}}rpx;padding-top:{{navBar.statusBarHeight}}rpx;{{navBar.bg=="none"?"background:none":""}};{{navBar.bt=="none"?"border-bottom:none":""}}'>
+    <view class='icon' style='top:{{navBar.statusBarHeight}}rpx;' wx:if="{{navBar.type==2}}" bindtap='goBack'>
+        <image src='/images/icon_back_white.png'  wx:if="{{navBar.color=='white'}}"></image>
+        <image src='/images/icon_back.png' wx:else></image>
+    </view>
+    <view class='icon' style='top:{{navBar.statusBarHeight}}rpx;' wx:if="{{navBar.type==1}}" bindtap='goHome'>
+        <image src='/images/icon_home.png'></image>
+    </view>
+    <view class='title'>{{navBar.title}}</view>
+</view>
+</template>

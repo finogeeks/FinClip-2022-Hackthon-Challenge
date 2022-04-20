@@ -1,0 +1,1399 @@
+/* pages/jackpot/detail.wxss */
+@import '../../newpages/jackpot/share.wxss';
+.submitLottery button {
+  background: #736EFF;
+  box-shadow: 0 4px 10px 0 rgba(63,37,253,0.20);
+  border-radius: 12px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 710rpx;
+  height: 120rpx;
+  color: #fff;
+  font-size: 36rpx;
+  line-height: 120rpx;
+}
+
+.detail_container {
+  min-height:calc(100vh);
+  background-color: #7060ff;
+
+  box-sizing: border-box;
+}
+.detail_container2{
+  background: #f6f6f6;
+  min-height: 200rpx;
+  padding-bottom: 220rpx;
+}
+.gonggao2{
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0 20rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-items: center;
+  align-items: center;
+  background: #ffffff;
+}
+.gonggao2 image{
+  width: 40rpx;
+  height: 40rpx;
+  float: left;
+
+}
+.gonggao2  .ggtxt{
+  width:  655rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  float: left;
+  font-size: 24rpx;
+  overflow: hidden;
+  margin-left: 15rpx;
+  box-sizing: border-box;
+  
+}
+.gonggao2  .ggtxt .innertxt{
+  white-space: nowrap;
+  font-size: 24rpx;
+  color: #fc4f5c;
+}
+.zpBox{
+  width: 750rpx;
+  height: 890rpx;
+  position: relative;
+  padding:195rpx 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* background: #405cf6; */
+}
+
+.zppf{
+  width: 750rpx;
+  height: 566rpx;
+  position: absolute;
+  left: 0;
+  top:110rpx;
+}
+.zpfs{
+  width: 750rpx;
+  height:867rpx;
+  position: absolute;
+  left: 0;
+  top:30rpx;
+}
+.zpBg{
+  width: 604rpx;
+  height: 604rpx;
+  position: absolute;
+  left: 73rpx;
+  margin: 0 auto;
+  top: 165rpx;
+}
+
+.panCircle{
+  position: relative;
+  z-index: 2;
+}
+.panPoint{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 370rpx;
+  width: 202rpx;
+  height: 202rpx;
+  z-index: 2;
+
+}
+.panPoint.disable{
+  
+    filter: grayscale(100%);
+    filter: gray;
+
+
+}
+.createrInfo{
+  top: 80rpx;
+  position: absolute;
+  left: 0;
+  max-width: 550rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #ffffff;
+  text-align:left;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0 30rpx 30rpx 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+
+
+}
+
+.jackpotjoinBox{
+  position: absolute;
+  left: 0;
+  width: 750rpx;
+  height: 50rpx;
+  top:775rpx;
+  line-height: 50rpx;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 28rpx;
+  
+}
+.seeAllBtn{
+   position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 200rpx;
+  height: 50rpx;
+  top:825rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-weight: bold;
+  font-size: 28rpx;
+  background: #fff951;
+  border-radius: 25rpx;
+  color: #405cf6;
+}
+
+.prizeDesBox{
+  position: relative;
+  background: url('https://static.2719.cn/Uploads/Picture/201909/5d72211ddef06.png') #ffffff;
+  background-size: 710rpx 574rpx;
+  background-repeat: no-repeat;
+  background-position: center top; 
+  width: 710rpx;
+  margin: 25rpx auto;
+  padding-bottom: 40rpx;
+  border-radius: 15rpx;
+
+
+}
+.prizeDesBox .tt{
+  text-align: center;
+  color: #7021e8;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+}
+
+.prizeDesBox .prizeList{
+  padding: 20rpx 40rpx;
+
+}
+.prizeDesBox .prizeList .prizeItem{
+  width: 100%;
+  height: 145rpx;
+  line-height: 145rpx;
+  display: flex;
+  align-items: flex-start;
+  min-height: auto;
+
+}
+.prizeDesBox .prizeList .prizeItem .prizeImg{
+  float: left;
+  width: 115rpx;
+  height: 145rpx;
+  line-height: 145rpx;
+}
+.prizeDesBox .prizeList .prizeItem .prizeImg image{
+  width: 115rpx;
+  height: 115rpx;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.prizeDesBox .prizeList .prizeItem .prizeDes{
+  float: right;
+  width: 515rpx;
+  height: 145rpx;
+  margin: 0;
+  padding: 0;
+  padding-left:30rpx;
+  box-sizing: border-box;
+  background: none;
+
+}
+.prizeDesBox .prizeList .prizeItem .prizeDes .tt{
+  text-align: left;
+  color: #ae64ff;
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-top: 30rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+
+}
+.prizeDesBox .prizeList .prizeItem .prizeDes .name{
+  text-align: left;
+  color: #666666;
+  font-size: 26rpx;
+}
+
+.winNembers{
+  width: 710rpx;
+  margin: 30rpx auto;
+
+}
+.winNembers .tt{
+ width: 710rpx;
+ color: #ffffff;
+ font-size: 30rpx;
+ text-align: center;
+ height: 120rpx;
+ line-height: 120rpx;
+}
+
+.winNembers .numberBox{
+   width: 710rpx;
+   padding: 25rpx;
+   background: #5d4edb;
+   border-radius: 10rpx;
+   box-sizing: border-box;
+   margin: 0 auto;
+
+}
+#WinUserBox{
+  height: 110rpx;
+  overflow: hidden;
+}
+.numberBox .items{
+  text-align: center;
+  height: 100%;
+}
+.numberBox .items .item{
+  height: 55rpx;
+  line-height: 55rpx;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #ffffff;
+  font-size: 28rpx;
+}
+.numberBox .items .item .usname{
+  color: #ffe100;
+}
+
+
+
+
+.redeemBtn{
+  width: 425rpx;
+  height: 144rpx;
+  position: relative;
+  margin: 70rpx auto 0;
+
+}
+
+.redeemBtn image{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 425rpx;
+  height: 144rpx;
+  
+}
+
+.redeemBtn .txt{
+  height: 144rpx;
+  line-height: 134rpx;
+  color: #463db6;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.closePanWin{
+  width: 87rpx;
+  height: 87rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -100rpx;
+  margin: 0 auto;
+}
+
+.panLoseBox{
+  width: 599rpx;
+  height: 728rpx;
+  background: url('https://static.2719.cn/Uploads/Picture/201909/5d75eb4ee0d49.png');
+  background-position: center top;
+  background-size: 599rpx 728rpx;
+  position: fixed;
+  left: 0;
+  right:0;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.winUsersBtn{
+  width: 540rpx;
+  height: 75rpx;
+  line-height: 75rpx;
+  margin:  30rpx auto;
+  background: #ec414d;
+  text-align: center;
+  color: #ffffff;
+  font-size: 28rpx;
+  border-radius: 5rpx;
+}
+
+.winning {
+  padding-bottom: 30rpx;
+}
+
+.maskJackpot{
+  z-index: 100;
+  background: url('https://static.2719.cn/Uploads/Picture/20190618/5d0898b59b599.png');
+  background-color: rgba(0, 0, 0, 0.9);
+  background-size: 735rpx auto;
+  background-position: center center;
+  opacity: 1;
+
+}
+.maskJackpot2{
+  z-index: 9;
+  background: url('https://static.2719.cn/Uploads/Picture/20190618/5d0898b59b599.png');
+  background-color: rgba(0, 0, 0, 0.9);
+  background-size: 735rpx auto;
+  background-position: center center;
+}
+.maskJackpot.dong{
+   animation: bgdong 2s ease infinite;
+}
+
+@keyframes bgdong {
+    0%,to {
+         background-size: 735rpx auto;
+    }
+    50% {
+         background-size: 710rpx auto;
+    }
+}
+.maskJackpot2.dong{
+   animation: bgdong 2s ease infinite;
+}
+
+.jackpotBox{
+  width: 750rpx;
+  height: 1334rpx;
+  position: fixed;
+  left: 0;
+  top: 306rpx;
+  z-index: 100;
+}
+.jackpotBox .glassBallBox{
+  width: 661rpx;
+  height: 658rpx;
+  position:absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: 0 auto;
+  background: url('https://static.2719.cn/Uploads/Picture/20190618/5d0899f39c9c7.png');
+  background-size: 661rpx 658rpx; 
+  z-index: 101;
+}
+.glassBallCenter{
+  width: 464rpx;
+  height: 464rpx;
+  position: absolute;
+  left: 0;
+  top: 104rpx;
+  right: 0;
+  margin: 0 auto;
+  z-index: 100;
+  border-radius: 50%;
+}
+.glassBallCenter .noMoveBall{
+  width: 349rpx;
+  height: 111rpx;
+  position:absolute;
+  background: url('https://static.2719.cn/Uploads/Picture/20190618/5d08a5d5cc257.png');
+  background-size: 349rpx 111rpx; 
+  left: 0rpx;
+  right: 0;
+  margin: 0 auto;
+  top: 285rpx;
+  z-index: 99;
+}
+
+.glassBallCenter .egg{
+   position:absolute;
+   z-index: 100;
+   width: 139rpx;
+   height: 139rpx;
+}
+.glassBallCenter .egg.egg_ju{
+  background: url('https://static.2719.cn/Uploads/Picture/20190618/5d08a8c187095.png');
+  background-size:131rpx 131rpx;
+  background-position: center center;
+  background-repeat: no-repeat;
+  left: 11rpx;
+  top: 172rpx;
+}
+.glassBallCenter .egg.egg_huang{
+  background: url('https://static.2719.cn/Uploads/Picture/20190618/5d08a96138fa4.png');
+  background-size:139rpx 139rpx;
+  background-position: center center;
+  background-repeat: no-repeat;
+  left:175rpx;
+  top:151rpx;
+}
+
+
+
+.glassBallCenter .egg.egg_zi{
+  background: url('https://static.2719.cn/Uploads/Picture/20190618/5d08a9e07d898.png');
+  background-size:119rpx 118rpx;
+  background-position: center center;
+  background-repeat: no-repeat;
+  left:249rpx;
+  top:237rpx;
+}
+
+.glassBallCenter .egg.egg_lan{
+  background: url('https://static.2719.cn/Uploads/Picture/20190618/5d08aa731aa1a.png');
+  background-size:127rpx 129rpx;
+  background-position: center center;
+  background-repeat: no-repeat;
+  left:328rpx;
+  top:149rpx;
+
+}
+
+.glassBallCenter .egg.egg_hong{
+  background: url('https://static.2719.cn/Uploads/Picture/20190618/5d08aa89a6ce9.png');
+  background-size:116rpx 116rpx;
+  background-position: center center;
+  background-repeat: no-repeat;
+  left:124rpx;
+  top:246rpx;
+}
+
+.glassBallCenter .egg_jiang{
+  position:absolute;
+  z-index: 99;
+  width: 50rpx;
+  height: 50rpx;
+  background: url('https://static.2719.cn/Uploads/Picture/20190618/5d08ac1ca0195.png');
+  background-size:50rpx 50rpx;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+.glassBallCenter .egg1{
+  left:108rpx;
+  top:270rpx;
+
+}
+.glassBallCenter .egg2{
+  left:132rpx;
+  top:341rpx;
+}
+.glassBallCenter .egg3{
+  left:248rpx;
+  top:329rpx;
+}
+
+
+.jackpotBox .pipeline{
+  width: 74rpx;
+  height: 377rpx;
+  position:absolute;
+  background: url('https://static.2719.cn/Uploads/Picture/20190618/5d089ac8994f0.png');
+  background-size: 74rpx 377rpx; 
+  left: 70rpx;
+  top: 287rpx;
+  z-index: 100;
+}
+
+.jackpotBox .machine{
+  width: 689rpx;
+  height: 323rpx;
+  position:absolute;
+  background: url('https://static.2719.cn/Uploads/Picture/20190619/5d09989babc69.png');
+  background-size: 689rpx 323rpx; 
+  left: 0rpx;
+  top: 528rpx;
+  right: 0rpx;
+  margin: 0 auto;
+  z-index: 100;
+}
+.jackpotBox .machine2{
+  width: 689rpx;
+  height: 323rpx;
+  position:absolute;
+  background: url('https://static.2719.cn/Uploads/Picture/20190619/5d0998aa96abf.png');
+  background-size: 689rpx 323rpx; 
+  left: 0rpx;
+  top: 528rpx;
+  right: 0rpx;
+  margin: 0 auto;
+  z-index: 99;
+}
+.jackpotBox .machine_bot{
+  width: 654rpx;
+  height: 68rpx;
+  position:absolute;
+  background: url('https://static.2719.cn/Uploads/Picture/20190618/5d089c70dcfb2.png');
+  background-size: 654rpx 68rpx; 
+  left: 0rpx;
+  top: 776rpx;
+  right: 0rpx;
+  margin: 0 auto;
+  z-index: 100;
+  text-align: center;
+  font-size: 24rpx;
+  color: #ffffff;
+  line-height: 68rpx;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.jackpotBox .machine_bot text{
+  color: #ffe100;
+  font-size: 28rpx;
+}
+
+.jackpotBox .startbtn{
+  width: 345rpx;
+  height: 109rpx;
+  position:absolute;
+  left:302rpx;
+  top:656rpx;
+  z-index:100;
+}
+.jackpotBox .startbtn image{
+  width: 345rpx;
+  height: 109rpx;
+}
+.jackpotBox .jackpotClose{
+  width: 40rpx;
+  height: 40rpx;
+  position:absolute;
+  background: url('https://static.2719.cn/Uploads/Picture/20190618/5d089ef4909d0.png');
+  background-size: 40rpx 40rpx; 
+  left: 0rpx;
+  top: 912rpx;
+  right: 0rpx;
+  margin: 0 auto;
+  z-index: 101;
+}
+
+.jackpotBox .finger{
+  width: 67rpx;
+  height: 40rpx;
+  position:absolute;
+  background: url('https://static.2719.cn/Uploads/Picture/20190618/5d089f4b5916e.png');
+  background-size: 67rpx 40rpx; 
+  left: 590rpx;
+  top: 675rpx;
+  z-index: 100;
+}
+
+.jackpotBox .jackpotTips{
+  width: 187rpx;
+  height: 64rpx;
+  position:absolute;
+  background: url('https://static.2719.cn/Uploads/Picture/20190618/5d089fb61fa9e.png');
+  background-size: 187rpx 64rpx; 
+  left:383rpx;
+  top:598rpx;
+  z-index:100;
+
+  line-height: 50rpx;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18rpx;
+
+}
+
+
+.glassBallCenter .egg.egg_ju.dong{
+   animation: dong1 3s ease infinite;
+}
+.glassBallCenter .egg.egg_huang.dong{
+   animation: dong2 3s ease infinite;
+}
+.glassBallCenter .egg.egg_lan.dong{
+   animation: dong3 3s ease infinite;
+}
+.glassBallCenter .egg.egg_hong.dong{
+   animation: dong4 3s ease infinite;
+}
+.glassBallCenter .egg.egg_zi.dong{
+   animation: dong5 3s ease infinite;
+}
+
+.glassBallCenter .egg1.dong{
+   animation: dong6 3s ease infinite;
+}
+.glassBallCenter .egg2.dong{
+   animation: dong7 3s ease infinite;
+}
+.glassBallCenter .egg3.dong{
+   animation: dong8 3s ease infinite;
+}
+
+.glassBallCenter .egg.egg_ju.zhuang{
+   animation: zhuang1 1s 0s linear infinite;
+}
+.glassBallCenter .egg.egg_huang.zhuang{
+   animation: zhuang2 1s 0s linear infinite;
+}
+.glassBallCenter .egg.egg_lan.zhuang{
+   animation: zhuang3 1s 0s linear infinite;
+}
+.glassBallCenter .egg.egg_hong.zhuang{
+   animation: zhuang4 1s 0s linear infinite;
+}
+.glassBallCenter .egg.egg_zi.zhuang{
+   animation: zhuang5 1s 0s linear infinite;
+}
+.glassBallCenter .egg1.zhuang{
+   animation: egg_z1 1s 0s linear infinite;
+}
+.glassBallCenter .egg2.zhuang{
+   animation: egg_z2 1s 0s linear infinite;
+}
+.glassBallCenter .egg3.zhuang{
+   animation: egg_z3 1s 0s linear infinite;
+}
+
+.glassBallCenter .egg.egg_ju.stop{
+   animation: stop1 2s 0s ease-out 1;
+}
+.glassBallCenter .egg.egg_huang.stop{
+   animation: stop2 2s 0s ease-out 1;
+}
+.glassBallCenter .egg.egg_lan.stop{
+   animation: stop3 2s 0s ease-out 1;
+}
+.glassBallCenter .egg.egg_hong.stop{
+   animation: stop4 2s 0s ease-out 1;
+}
+.glassBallCenter .egg.egg_zi.stop{
+   animation: stop5 2s 0s ease-out 1;
+}
+.glassBallCenter .egg1.stop{
+   animation: egstop1 2s 0s ease-out 1;
+}
+.glassBallCenter .egg2.stop{
+   animation: egstop2 2s 0s ease-out 1;
+}
+.glassBallCenter .egg3.stop{
+   animation: egstop3 2s 0s ease-out 1;
+}
+.glassBallCenter .egg.prize-ing {
+    left: -25rpx;
+    top: 185;
+    transform: rotate(0deg) scale(.4);
+    animation: outPrize2 2s 0s forwards linear
+}
+
+.jackpotBox .finger.dong{
+   animation: dong1 0.5s ease infinite;
+}
+
+@keyframes outPrize2 {
+    0% {
+        transform: translate(0) scale(.4) rotate(0);
+        z-index: 0;
+        transform-origin: center center
+    }
+
+    25% {
+        transform: translate(-90rpx,47rpx) scale(.4) rotate(-90deg);
+        z-index: 0;
+        transform-origin: center center
+    }
+
+    40% {
+         transform: translate(-90rpx,94rpx) scale(.4) rotate(-180deg);
+        z-index: 0;
+        transform-origin: center center
+    }
+
+    55% {
+        transform: translate(-90rpx,141rpx) scale(.4) rotate(-270deg);
+        z-index: -1;
+        transform-origin: center center
+    }
+
+    65% {
+         transform: translate(-90rpx,188rpx) scale(.4) rotate(-360deg);
+        z-index: -1;
+        transform-origin: center center
+    }
+
+    70% {
+        transform: translate(-90rpx,235rpx) scale(.4) rotate(-450deg);
+        z-index: 10;
+        transform-origin: center center
+    }
+
+    75% {
+         transform: translate(-90rpx,282rpx) scale(.4) rotate(-540deg);
+        z-index: 10;
+        transform-origin: center center
+    }
+
+    80% {
+         transform: translate(-90rpx,320rpx) scale(.4) rotate(-630deg);
+        z-index: 10;
+        transform-origin: center center
+    }
+    85% {
+         transform: translate(70rpx,320rpx) scale(.4) rotate(-720deg);
+        z-index: 10;
+        transform-origin: center center
+    }
+
+    to {
+        transform: translate(80rpx,380rpx) scale(.5) rotate(0deg);
+        z-index: 101;
+        transform-origin: center center
+    }
+}
+
+ /*大球转
+右上角
+ 25% {
+    left: 278rpx;
+    top: 56rpx;
+} 
+底部 
+ 25% { 
+        left: 154rpx; 
+        top: 337rpx;
+       
+    }
+ 左侧   
+ 50% {
+        left: 0rpx;
+        top: 145rpx;
+    }    
+
+*/
+
+/* 奖球
+左上角
+{
+        left: 49rpx;
+        top: 70rpx;
+    } 
+右下角    
+  {
+        left: 397rpx;
+        top: 279rpx;
+    }
+底部    
+{
+        left: 216rpx;
+        top: 428rpx;
+    }
+    */
+@keyframes egg_z1 {
+    0% {
+       left:108rpx;
+        top:270rpx;
+
+    }
+    25% {
+        left: 49rpx;
+        top: 70rpx;
+    }
+
+    50% {
+        left: 397rpx;
+        top: 279rpx;
+    }
+
+    75% {
+        left: 216rpx;
+        top: 428rpx;
+    }
+
+    to {
+      left:108rpx;
+      top:270rpx;
+
+    }
+}
+@keyframes egstop1 {
+    0% {
+       left:108rpx;
+        top:270rpx;
+
+    }
+    25% {
+        left: 49rpx;
+        top: 70rpx;
+    }
+
+    50% {
+        left: 397rpx;
+        top: 279rpx;
+    }
+
+    75% {
+        left: 216rpx;
+        top: 428rpx;
+    }
+
+    to {
+      left:108rpx;
+      top:270rpx;
+
+    }
+}
+@keyframes egg_z2 {
+    0% {
+       left:132rpx;
+        top:341rpx;
+
+    }
+    25% {
+        left: 216rpx;
+        top: 428rpx;
+    }
+
+    50%  {
+        left: 397rpx;
+        top: 279rpx;
+    }
+
+    75% {
+        left: 49rpx;
+        top: 70rpx;
+    } 
+
+    to {
+       left:132rpx;
+       top:341rpx;
+
+    }
+}
+
+@keyframes egstop2 {
+    0% {
+       left:132rpx;
+        top:341rpx;
+
+    }
+    25% {
+        left: 216rpx;
+        top: 428rpx;
+    }
+
+    50%  {
+        left: 397rpx;
+        top: 279rpx;
+    }
+
+    75% {
+        left: 49rpx;
+        top: 70rpx;
+    } 
+
+    to {
+       left:132rpx;
+       top:341rpx;
+
+    }
+}
+@keyframes egg_z3 {
+    0% {
+        left:248rpx;
+        top:329rpx;
+
+    }
+    25%  {
+        left: 397rpx;
+        top: 279rpx;
+    }
+
+    50%{
+        left: 49rpx;
+        top: 70rpx;
+    } 
+
+    75% {
+        left: 216rpx;
+        top: 428rpx;
+    }
+
+    to {
+       left:248rpx;
+       top:329rpx;
+
+    }
+}
+
+@keyframes egstop3 {
+    0% {
+        left:248rpx;
+        top:329rpx;
+
+    }
+    25%  {
+        left: 397rpx;
+        top: 279rpx;
+    }
+
+    50%{
+        left: 49rpx;
+        top: 70rpx;
+    } 
+
+    75% {
+        left: 216rpx;
+        top: 428rpx;
+    }
+
+    to {
+       left:248rpx;
+       top:329rpx;
+
+    }
+}
+
+
+@keyframes zhuang1 {
+    0% {
+        left:11rpx;
+        top:172rpx;
+    }
+    25% {
+        left: 278rpx;
+        top: 56rpx;
+    }
+
+    50% {
+        left: 172rpx;
+        top: 338rpx;
+    }
+
+    75% {
+        left: 25rpx;
+        top: 212rpx;
+    }
+
+    to {
+        left:11rpx;
+        top:172rpx;
+    }
+}
+
+@keyframes stop1 {
+    0% {
+        left:11rpx;
+        top:172rpx;
+    }
+    25% {
+        left: 278rpx;
+        top: 56rpx;
+    }
+
+    50% {
+        left: 172rpx;
+        top: 338rpx;
+    }
+
+    75% {
+        left: 25rpx;
+        top: 212rpx;
+    }
+
+    to {
+        left:11rpx;
+        top:172rpx;
+    }
+}
+
+@keyframes zhuang2 {
+    0% {
+        left:175rpx;
+        top:151rpx;
+
+    }
+
+    25% {
+        left: 0rpx;
+        top: 145rpx;
+    }
+
+    50% {
+        left: 154rpx;
+        top: 337rpx;
+    }
+
+    75% {
+        left: 289rpx;
+        top: 81rpx;
+    }
+
+    to {
+        left:175rpx;
+        top:151rpx;
+
+    }
+}
+
+@keyframes stop2 {
+    0% {
+        left:175rpx;
+        top:151rpx;
+
+    }
+
+    25% {
+        left: 0rpx;
+        top: 145rpx;
+    }
+
+    50% {
+        left: 154rpx;
+        top: 337rpx;
+    }
+
+    75% {
+        left: 289rpx;
+        top: 81rpx;
+    }
+
+    to {
+        left:175rpx;
+        top:151rpx;
+
+    }
+}
+
+@keyframes zhuang3 {
+    0% {
+      left:334rpx;
+      top:149rpx;
+
+    }
+    25% {
+        left: 154rpx; 
+        top: 337rpx;
+       
+    }
+    50% {
+        left: 0rpx;
+        top: 145rpx;
+    }
+
+    75% {
+        left: 289rpx;
+        top: 81rpx;
+    }
+
+    to {
+      left:334rpx;
+      top:149rpx;
+
+    }
+}
+@keyframes stop3 {
+    0% {
+      left:334rpx;
+      top:149rpx;
+
+    }
+    25% {
+        left: 154rpx; 
+        top: 337rpx;
+       
+    }
+    50% {
+        left: 0rpx;
+        top: 145rpx;
+    }
+
+    75% {
+        left: 289rpx;
+        top: 81rpx;
+    }
+
+    to {
+      left:334rpx;
+      top:149rpx;
+
+    }
+}
+@keyframes zhuang4 {
+    0% {
+        left:124rpx;
+        top:246rpx;
+
+    }
+    25% {
+        left: 0rpx;
+        top: 145rpx;       
+    }
+    50% {
+       left: 278rpx;
+       top: 56rpx;
+    }
+
+    75% {
+        left: 154rpx; 
+        top: 337rpx;
+    }
+
+    to {
+        left:124rpx;
+        top:246rpx;
+
+    }
+}
+
+@keyframes stop4 {
+    0% {
+        left:124rpx;
+        top:246rpx;
+
+    }
+    25% {
+        left: 0rpx;
+        top: 145rpx;       
+    }
+    50% {
+       left: 278rpx;
+       top: 56rpx;
+    }
+
+    75% {
+        left: 154rpx; 
+        top: 337rpx;
+    }
+
+    to {
+        left:124rpx;
+        top:246rpx;
+
+    }
+}
+
+@keyframes zhuang5 {
+    0% {
+        left:249rpx;
+        top:237rpx;
+
+
+    }
+    25% {
+        left: 278rpx;
+        top: 56rpx;  
+    }
+    50% {
+        left: 0rpx;
+        top: 145rpx;
+    }
+
+    75% {
+        left: 154rpx; 
+        top: 337rpx;
+    }
+
+    to {
+        left:249rpx;
+        top:237rpx;
+
+
+    }
+}
+
+@keyframes stop5 {
+    0% {
+        left:249rpx;
+        top:237rpx;
+
+
+    }
+    25% {
+        left: 278rpx;
+        top: 56rpx;  
+    }
+    50% {
+        left: 0rpx;
+        top: 145rpx;
+    }
+
+    75% {
+        left: 154rpx; 
+        top: 337rpx;
+    }
+
+    to {
+        left:249rpx;
+        top:237rpx;
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes dong1 {
+    0%,to {
+        transform: translate(0)
+    }
+    50% {
+        transform: translate(30rpx,-25rpx) ;
+    }
+}
+
+
+@keyframes dong2 {
+    0%,to {
+        transform: translate(0)
+    }
+
+    50% {
+        transform: translate(5rpx,-30rpx);
+    }
+}
+
+
+@keyframes dong3 {
+    0%,to {
+        transform: translate(0)
+    }
+
+    50% {
+        transform: translate(-6rpx,-25rpx);
+    }
+}
+
+@keyframes dong4 {
+    0%,to {
+        transform: translate(0)
+    }
+
+    50% {
+        transform: translate(-30rpx,-10rpx);
+    }
+}
+
+@keyframes dong5 {
+    0%,to {
+        transform: translate(0)
+    }
+
+    50% {
+         transform: translate(5rpx,-30rpx);
+    }
+}
+
+
+@keyframes dong6 {
+    0%,to {
+        transform: translate(0)
+    }
+
+    50% {
+         transform: translate(-5rpx,15rpx);
+    }
+}
+
+@keyframes dong7 {
+    0%,to {
+        transform: translate(0)
+    }
+
+    50% {
+         transform: translate(-5rpx,-15rpx);
+    }
+}
+
+@keyframes dong8 {
+    0%,to {
+        transform: translate(0)
+    }
+
+    50% {
+         transform: translate(-5rpx,-15rpx);
+    }
+}
+
+.joinGamebox3.active{
+  animation: small_big 0.5s ease-in-out forwards 0s 1 normal running ;
+}
+.light.active{
+  animation: prizelight 10s linear forwards 1.5s infinite normal running ;
+}
+
+@import '../../newpages/jackpot/skin.wxss';
+
+.skinTips{
+  position: absolute;
+  right: 30rpx;
+  top: 80rpx;
+  padding:10rpx 25rpx;
+  color: #ffffff;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.3);
+  height: 60rpx;
+  line-height: 40rpx;
+  border-radius:30rpx;
+  box-sizing: border-box;
+}
+.skinTips image{
+  width: 32rpx;
+  height: 32rpx;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5rpx;
+}
+.skinTips text{
+  vertical-align: middle;
+}

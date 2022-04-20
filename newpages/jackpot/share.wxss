@@ -1,0 +1,946 @@
+.detail_container {
+  min-height:calc(100vh);
+  background: #f6f6f6;
+  box-sizing: border-box;
+}
+
+
+.detail_container .title .setting{
+  width: 70rpx;
+  height: 60rpx;
+  position: absolute;
+  right: 0;
+  top: 60rpx;
+  z-index: 2
+}
+.detail_container .title .setting image{ width: 100%; height: 100%; display: block}
+
+.detail_container .banner {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.detail_container .banner image {
+  width: 100%;
+  height: 420rpx;
+}
+
+.detail_container .banner .banner_text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 40rpx;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 60rpx;
+  color: #fff;
+}
+
+.detail_container .banner .setting {
+  width: 60rpx;
+  height: 70rpx;
+  background: #333;
+  opacity: 0.5;
+  border-radius: 0 0 30rpx 30rpx;
+  position: absolute;
+  right: 50rpx;
+  top: 22rpx;
+  line-height: 70rpx;
+  text-align: center;
+}
+
+.detail_container .banner .setting image {
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+}
+
+
+.join_warp{ 
+  width: 750rpx; 
+  background: #ffffff;
+  border-radius: 0rpx;
+  margin: 0 auto;
+  padding-bottom: 20rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.awards {
+  width: 710rpx;
+  margin: 0 auto;
+  margin-top: 0rpx;
+ 
+}
+
+.awards .awards_item {
+  margin: 0 20rpx;
+  overflow: hidden;
+  border-bottom: 1px solid #f8f8f8;
+}
+.awards .awards_item:last-child{ border-bottom: none;}
+
+.awards .fl1 {
+  width: 100rpx;
+  height: 120rpx;
+  float: left;
+  text-align: center;
+  line-height: 120rpx;
+}
+
+.awards .fl1 image {
+  width: 60rpx;
+  height: 66rpx;
+  vertical-align: middle;
+}
+.awards2 .fl1 image {
+  width: 80rpx;
+  height: 80rpx;
+  vertical-align: middle;
+  border-radius: 40rpx 40rpx;
+}
+
+
+.awards .fl2 {
+  height: 120rpx;
+  width: 325rpx;
+  overflow: hidden;
+  float: left;
+  padding-left: 10rpx;
+}
+
+.awards .fl2 .tit {
+  height: 60rpx;
+  line-height: 60rpx;
+  display: block;
+  font-size: 32rpx;
+  color: #333;
+  overflow: hidden;
+}
+
+.awards .fl2 .des {
+  height: 40rpx;
+  line-height: 40rpx;
+  display: block;
+  font-size: 24rpx;
+  color: #b3b2bf;
+  overflow: hidden;
+}
+.awards2 .fl2 {
+  height: 80rpx;
+  width: 325rpx;
+  margin: 20rpx 0;
+  overflow: hidden;
+  float: left;
+  padding-left: 10rpx;
+}
+
+.awards2 .fl2 .tit {
+  height: 50rpx;
+  line-height: 50rpx;
+  display: block;
+  font-size: 32rpx;
+  color: #333;
+  overflow: hidden;
+}
+
+.awards2 .fl2 .des {
+  height: 30rpx;
+  line-height: 30rpx;
+  display: block;
+  font-size: 24rpx;
+  color: #b3b2bf;
+  overflow: hidden;
+}
+
+.awards .fl3 {
+  width: 150rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 30rpx;
+  margin-top: 30rpx;
+  float: right;
+  font-size: 24rpx;
+  color: #736eff;
+  border: 1px solid #736eff;
+}
+
+.awards .fl3.have {
+  color: #fff;
+  background: #fc4f5c;
+  border-color: #fc4f5c;
+}
+
+.awards .fl4 {
+  width: 230rpx;
+  height: 80rpx;
+  margin: 20rpx 0;
+  line-height: 60rpx;
+  text-align: left;
+  float: right;
+  font-size: 24rpx;
+  color: #b3b2bf;
+}
+
+.join_list {
+  margin: 0rpx auto;
+  width: 670rpx;
+}
+
+.join_list .title {
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 32rpx;
+  color: #333;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+
+.join_list .title .red {
+  color: #f32144;
+}
+
+.prizeList {
+  width: 710rpx;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 15rpx;
+  padding: 10rpx 20rpx;
+  box-sizing: border-box;
+}
+
+.prizeitem {
+  width: 100%;
+  height: 80rpx;
+  line-height: 20rpx;
+  border-bottom: 1px solid #f8f8f8;
+  padding: 30rpx 0rpx;
+  box-sizing: border-box;
+}
+
+.prizeitem text {
+  height: 20rpx;
+  line-height: 20rpx;
+  text-align: center;
+  border-right: 1rpx solid #f8f8f8;
+  float: left;
+  width: 33%;
+  font-size: 28rpx;
+  color: #3e4a53;
+}
+
+.prizeitem text:last-child {
+  border-right: none;
+}
+
+.prizeitem:last-child {
+  border-bottom: none;
+}
+
+.submitLottery {
+  position: relative;
+  width: 650rpx;
+  height: 100rpx;
+  margin: 40rpx auto;
+  margin-bottom: 40rpx;
+  background: #736eff;
+  border-radius: 50rpx;
+
+}
+.Taste .submitLottery{
+  background: #e2c615;
+}
+
+.submitLottery image {
+  width: 650rpx;
+  height: 100rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.submitLottery button {
+  width: 650rpx;
+  height: 100rpx;
+  background: none;
+  color: #fff;
+  font-size: 36rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border:none;
+}
+
+.submitLottery .btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 650rpx;
+  height: 100rpx;
+  background: none;
+  color: #fff;
+  font-size: 36rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-radius: 50rpx;
+}
+.submitLottery .btn2{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 650rpx;
+  height: 100rpx;
+  background: none;
+  font-size: 36rpx;
+  line-height: 100rpx;
+  text-align: center;
+  background: #f2f2f2;
+  border: 1rpx solid #dddddd;
+  color: #8b8b8b;
+
+}
+.submitLottery .btn3{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 650rpx;
+  height: 100rpx;
+  font-size: 36rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border: 1rpx solid #b4b2fc;
+  color: #736eff;
+  background: #ffffff;
+}
+
+.submitLottery.noimg {
+  color: #736eff;
+  background: #ffffff;
+
+}
+
+.submitLottery.noimg button {
+  color: #736eff;
+  border: none;
+  background: rgb(235,235,255);
+  border-color: rgb(235,235,255);
+
+}
+.Taste .submitLottery.noimg button {
+  color: #e2c615;
+  border: none;
+  background: rgb(246,246,219);
+  border-color: rgb(235,235,255);
+
+}
+.submitLottery button::after{
+  width: 0;
+  height: 0;
+  border: none;
+}
+
+.winbox {
+  width: 710rpx;
+  height: 231rpx;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+
+.winbox image {
+  width: 710rpx;
+  height: 231rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.congratulation {
+  position: absolute;
+  font-size: 36rpx;
+  color: #fc4f5c;
+  text-align: center;
+  width: 100%;
+  vertical-align: middle;
+  left: 0;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.dashang {
+  width: 670rpx;
+  height: 190rpx;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  border: 1rpx solid #ddd;
+  background: #ffffff;
+  margin-bottom: 40rpx;
+}
+
+.dashang .fl {
+  float: left;
+  width: 200rpx;
+  height: 190rpx;
+}
+
+.dashang .fl image {
+  width: 110rpx;
+  height: 110rpx;
+  margin-left: 50rpx;
+  margin-top: 35rpx;
+}
+
+.dashang .fr {
+  width: 470rpx;
+  height: 190rpx;
+  float: left;
+  position: relative;
+}
+
+.dashang .fr .dashang2 {
+  position: absolute;
+  left: 34rpx;
+  top: 35rpx;
+  width: 381rpx;
+  height: 42rpx;
+}
+
+.dashang .fr .dl {
+  font-size: 24rpx;
+  color: #999;
+  position: absolute;
+  width: 381rpx;
+  left: 75rpx;
+  top: 40rpx;
+}
+
+.dashang .fr .btn {
+  position: absolute;
+  width: 200rpx;
+  height: 51rpx;
+  left: 134rpx;
+  top: 94rpx;
+  border: none;
+  border-radius:5rpx;
+  overflow: hidden;
+  background: #e95c61;
+  text-align: center;
+}
+
+.dashang .fr .btn image {
+  position: absolute;
+  width: 200rpx;
+  height: 51rpx;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+
+.dashang .fr .ds {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  font-size: 24rpx;
+  width: 200rpx;
+  height: 51rpx;
+  line-height: 51rpx;
+  text-align: center;
+}
+
+
+.kjbg{ 
+  z-index: 4;
+  position:fixed;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-60%);
+  width: 682rpx;
+  height: 890rpx;
+  margin: 0 auto;
+  }
+.kjbg .close_kj{
+  width: 48rpx;
+  height: 48rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+} 
+.kjbg .close_kj image{
+  width: 100%;
+  height: 100%;
+}
+.kjbg image{
+  width: 682rpx;
+  height: 860rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+}  
+.kjbg .toptips{ 
+  position: absolute;
+  width: 550rpx; 
+  height: 79rpx; 
+  left: 65rpx;
+  top: 145rpx;
+  font-size: 28rpx;
+  color: #fff2b2;
+  line-height: 79rpx;
+  overflow: hidden;
+  word-spacing: -20rpx;
+  text-align: center;
+  }
+.kjbg .toptips text{
+  display: inline-block;
+  max-width:350rpx;
+  height:79rpx;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+.kjbg .kjdetail{
+  position: absolute;
+  width: 573rpx;
+  height: 293rpx;
+  left: 55rpx;
+  top: 320rpx;
+
+}
+.before_kj{
+ width: 573rpx;
+ height: 293rpx;
+ line-height: 293rpx;
+ text-align: center;
+ font-size: 48rpx;
+ color: #ffffff;
+ overflow: hidden;
+ text-overflow:ellipsis;
+ white-space: nowrap;
+
+}
+.on_kj{}
+
+.on_kj .on_kj_title{ font-size: 36rpx; color: #fff2b2; text-align: center; width: 100%; height: 100rpx; line-height: 100rpx;}
+.on_kj .on_kj_title text{width: 100%; height: 100rpx; line-height: 100rpx;font-size: 36rpx; color: #fff2b2; text-align: center;}
+.on_kj .on_kj_des{ font-size: 36rpx; line-height: 50rpx; text-align: center; color: #ffffff; width: 510rpx; height: 100rpx; margin: 0 auto; overflow-y: scroll; }
+.on_kj .on_kj_des text{display: inline-block; vertical-align: middle; width: 33.33%; text-align: center; font-size: 36rpx; height: 50rpx; line-height: 50rpx; overflow: hidden;}
+.on_kj .on_end{ font-size: 24rpx; line-height: 50rpx; color: #dddddd; text-align: center; width: 100%;}
+
+.kjbg .btn{
+  width: 536rpx;
+  height: 141rpx;
+  left: 0rpx;
+  right: 0;
+  margin: 0 auto;
+  top:700rpx;
+  position: absolute;
+}
+.kjbg .btn image{ position: absolute; left: 0; top: 0;width: 536rpx;
+  height: 141rpx;
+  right: 0;}
+.kjbg .btn text{ font-size: 40rpx; color: #de5701; position: absolute;
+  left: 0; top: 0; width: 536rpx;
+  height: 141rpx;
+  line-height: 121rpx;
+  text-align: center;
+}
+.kjbg .csbtn text{ font-size: 40rpx; color: #ffffff; position: absolute;
+  left: 0; top: 0; width: 536rpx;
+  height: 141rpx;
+  line-height: 121rpx;
+  text-align: center;
+}
+
+.mask{
+  background: #000000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.7;
+}
+.zj_tips{ 
+  width: 650rpx;
+  height: auto;
+  position:fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  border-radius: 15rpx;
+  z-index: 2;
+  padding: 50rpx;
+  box-sizing: border-box;
+  }
+.zj_tips .title{
+  text-align: center;
+  font-size: 28rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+} 
+.zj_tips .usersitems{
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  height: auto;
+  max-height: 450rpx;
+  overflow-y: scroll;
+}
+.zj_tips .usersitems .useritem{
+  height: 50rpx; line-height: 50rpx;
+  overflow: hidden;
+  margin: 10rpx 0;
+}
+.zj_tips .usersitems .useritem .fl{
+  float: left;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 25rpx;
+
+  }
+ .zj_tips .usersitems .useritem .fl image{ 
+   width: 100%; height: 100%;display: block;
+    } 
+.zj_tips .usersitems .useritem .fm{ 
+  float: left;
+  width: 220rpx;
+  height: 50rpx;
+
+  }
+.zj_tips .usersitems .useritem .fr{ 
+  float: left;
+   width: 220rpx;
+   height: 50rpx;
+  }
+ .zj_tips .btn{ 
+   width: 60%; margin: 0 auto;
+   height: 70rpx;
+   line-height: 70rpx;
+   color: #ffffff;
+   text-align: center;
+   background:#fc4f5c;
+   margin-top: 20rpx;
+   font-size: 26rpx;
+   border-radius: 15rpx;
+
+ } 
+
+
+
+.adbox{ 
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.JoinHB{
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 101;
+
+}
+.JoinHBMask{
+  z-index: 101
+}
+.saveJoinImg{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 55rpx;
+  color: #736eff;
+  text-align: center;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.lotteryCode{
+  text-align: center;
+  margin: 20rpx auto;
+}
+.lotteryCode .code{
+  margin: 0 auto;
+  text-align: center;
+  padding: 20rpx;
+  line-height: 40rpx;
+  display: inline-block;
+  border: 1px solid #736eff;
+  border-radius: 40rpx;
+  color: #736eff;
+  min-width: 260rpx;
+  font-size: 30rpx;
+}
+.Codebg{
+  width: 576rpx;
+  height: 230rpx;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 30rpx;
+}
+.Codebg .codeimg{
+   width: 576rpx;
+   height: 230rpx;
+   position: absolute;
+   left: 0;
+   top: 30rpx;
+}
+.Codebg .code{
+   width: 576rpx;
+   height: 230rpx;
+   line-height: 180rpx;
+   text-align: center;
+   color: #333333;
+   font-size: 74rpx;
+   position: relative;
+   left: 0;
+   top: 0;
+   border: none;
+   padding: 0;
+   box-sizing: border-box;
+   padding-top: 50rpx;
+
+}
+
+.JoinHB .downLoadBtnBox{
+  background: #ffffff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 750rpx;
+  height: 130rpx;
+  z-index: 101;
+  border-top: 1rpx solid #d5d5d5;
+}
+
+.JoinHB  .cancelBtn{
+  width: 300rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  position: absolute;
+  left: 30rpx;
+  top: 20rpx;
+  border: 1rpx solid #736EFF;
+  border-radius: 10rpx;
+  text-align: center;
+  color: #736EFF;
+  z-index: 101;
+}
+.JoinHB  .downloadBtn{
+  width: 300rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 20rpx;
+  border: 1rpx solid #d5f5f5;
+   background: #736EFF;
+  color: #ffffff;
+  border-radius: 10rpx;
+  text-align: center;
+  z-index: 101;
+}
+
+.tipsCode{
+  color: #736eff;
+  text-align: center;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 28rpx;
+  padding-top: 20rpx;
+
+}
+
+.GZHJoinTips{
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:560rpx;
+    width: 302rpx;
+
+    z-index: 2;
+    padding: 15rpx 20rpx;
+    border-radius: 10rpx;
+    font-size: 26rpx;
+    color: #746cf8;
+    text-align: center;
+
+
+
+}
+.GZHJoinTips .bdtp{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 1rpx;
+  height: 1rpx;
+  border: 15rpx solid #ffffff;
+  top: -26rpx;
+  border-color:transparent transparent  #ffffff  transparent;
+
+}
+
+.maskPayBox{
+  z-index: 10;
+}
+.payBox{
+  width: 660rpx;
+  padding: 60rpx;
+  box-sizing: border-box;
+  background: #ffffff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  z-index:12; 
+  border-radius: 10rpx;
+}
+.payBox .icon-box-img{
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+.payBox  .gzh_title{
+  font-size: 30rpx;
+  text-align: center;
+  color: #000000;
+  line-height: 70rpx;
+
+}
+.payBox .title{
+  font-size: 42rpx;
+  text-align: center;
+  color: #000000;
+  line-height: 70rpx;
+  margin-bottom: 40rpx;
+}
+.payBox .gzh_des{
+  font-size: 28rpx;
+  text-align: left;
+  color: #666666;
+  line-height: 50rpx;
+  padding: 0 25rpx;
+  margin-bottom: 20rpx;
+}
+.payBox .gzh_join_des{
+  font-size: 28rpx;
+  text-align: text;
+  color: #666666;
+  line-height: 50rpx;
+  padding: 0 25rpx;
+  margin-bottom: 10rpx;
+  text-align: center;
+
+}
+.payBox .gzh_join_title{
+  font-size: 26rpx;
+  text-align: left;
+  color: #000000;
+  line-height: 70rpx;
+  font-weight: bold;
+}
+.payBox .gzh_join_title text{
+  background: #736EFF;
+  color: #ffffff;
+  padding: 5rpx 10rpx;
+  margin-right: 10rpx;
+  border-radius: 5rpx;
+
+}
+.payBox .tpImg{
+  width: 95%;
+  margin-left: 5%;
+}
+.payBox .gzh_des text{
+  color: #736EFF;
+}
+
+.payBox .button{
+  background: #736EFF;
+  color: #ffffff;
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 90%;
+  margin: 30rpx auto;
+  border-radius: 10rpx;
+  text-align: center;
+}
+
+.payBox  .saveChecked{ 
+  text-align: center;
+  font-size: 28rpx;
+  color: #666666;
+  line-height: 45rpx;
+
+
+}
+.payBox  .saveChecked switch {
+   transform: scale(0.7);
+   margin-right: 5rpx;
+ }
+
+.payBox .des{
+  font-size: 32rpx;
+  text-align: left;
+  color: #666666;
+  line-height: 70rpx;
+  padding: 0 25rpx;
+}
+.payBox .des image{
+  vertical-align: middle;
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+.payBox .paybtn{
+  width: 550rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #ffffff;
+  background: #746cf8;
+  font-size: 32rpx;
+  border-radius: 10rpx;
+  margin: 20rpx auto;
+}
+.payBox .paybtn.payIOS{
+  background: #f2f2f2;
+  color: #999999;
+}
+.payBox .copyUrl{
+  color: #746cf8;
+  text-align: center;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+}
+.payBox .close{
+  position: absolute;
+  right: 25rpx;
+  top: 25rpx;
+  width: 45rpx;
+  height: 45rpx;
+
+  
+}
+.payBox .close image{
+  width: 45rpx;
+  height: 45rpx;
+}

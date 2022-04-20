@@ -1,0 +1,239 @@
+/**index.wxss**/
+.container{
+  box-sizing: border-box;
+  height: 100vh;
+}
+page{
+  height: 100%;
+}
+.indexBox{
+  background: #776dfe;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+.indexBox .fs{
+  width: 750rpx;
+  height: 867rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -90rpx;
+}
+.indexBox .pf{
+  width: 750rpx;
+  height: 566rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.indexBox .jb{
+   width: 750rpx;
+  height: 617rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.indexBox .panImg{
+  width: 603rpx;
+  height: 603rpx;
+  margin: 70rpx auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+.goDemoBtn{
+  width: 140rpx;
+  height: 140rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 310rpx;
+  z-index: 2;
+}
+.indexBtn{
+  width: 477rpx;
+  height: 154rpx;
+  margin: 0 auto;
+  position: relative;
+
+}
+ .shareFriend{
+  position: absolute;
+  right: 0rpx;
+  top: 20rpx;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #ffffff;
+  font-size: 30rpx;
+  line-height: 64rpx;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 32rpx 0 0 32rpx;
+  padding:0 15rpx;
+
+}
+ .shareFriend::after{
+  width: 0;
+  height: 0;
+}
+ .shareFriend image{
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+}
+.shareFriend text{
+  height: 64rpx;
+  line-height: 64rpx;
+  vertical-align: middle;
+  margin-left: 10rpx;
+}
+.indexBtn image{
+  width: 477rpx;
+  height: 154rpx;
+}
+.indexBtn image.icon_new{
+  position: absolute;
+
+  width: 54rpx;
+  height: 54rpx;
+  left:130rpx;
+  top: 45rpx;
+}
+
+.indexBtn text{
+  width: 477rpx;
+  height: 154rpx;
+  line-height: 144rpx;
+  font-size: 40rpx;
+  color: #776dfe;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+}
+.indexBtn text.text_public{
+  width: 427rpx;
+  height: 154rpx;
+  line-height: 144rpx;
+  font-size: 40rpx;
+  color: #776dfe;
+  text-align: center;
+  position: absolute;
+  left: 50rpx;
+  top: 0;
+}
+.indexDes{
+  width: 712rpx;
+  margin: 0 auto;
+  padding:0rpx;
+  box-sizing: border-box;
+ 
+
+  margin-top: 60rpx;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 120rpx;
+
+
+}
+
+
+
+.tipsBox{
+  background: #ffffff;
+  width: 710rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  border-radius: 10rpx;
+
+  box-sizing: border-box;
+}
+.tipsBox .title{
+  text-align: left;
+  font-size: 40rpx;
+  line-height: 80rpx;
+  padding:30rpx 50rpx 0;
+}
+.tipsBox .des{
+  color: #666;
+  text-align: left;
+  line-height: 55rpx;
+  padding: 10rpx 50rpx;
+}
+.tipsBox .des text{
+  margin-bottom: 10rpx;
+}
+.tipsBox .towBtn{
+  display: flex;
+  border-top: 2rpx solid #f2f2f2;
+  margin-top: 20rpx;
+}
+.tipsBox .towBtn .cancel,.tipsBox .towBtn .confim{
+  width: 50%;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  box-sizing: border-box;
+}
+
+.tipsBox .towBtn .cancel{
+  border-right: 2rpx solid #f2f2f2;
+}
+
+.articleBox{
+  height: 200rpx;
+
+}
+.articleBox .swiper{
+  height: 180rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.articleBox .swiper-item{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 150rpx;
+  background: #6055db;
+  border-radius: 20rpx;
+}
+.saoma{
+  margin:5rpx auto;
+  color: #ffffff;
+  text-align: center;
+  font-size: 24rpx;
+}
+.articleBox .icon_Img{
+  width: 107rpx;
+  height: 107rpx;
+  border-radius: 50%;
+  /* background: #ffffff; */
+  margin-right: 35rpx;
+}
+.articleBox .icon_Img image{
+  width: 107rpx;
+  height: 107rpx;
+  border-radius: 50%;
+  display: block;
+}
+
+wx-button:not([size='mini']) {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
