@@ -1,0 +1,7 @@
+page{
+    padding-bottom: 100rpx;
+  }
+  .x{
+    width:100rpx;
+    height:90rpx;
+  }

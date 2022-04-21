@@ -1,0 +1,22 @@
+<view>
+    
+
+<form>
+	<view class="cu-form-group margin-top">
+		<view class="title">学号</view>
+		<input placeholder="请输入学号"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">密码</view>
+		<input placeholder="请输入密码"></input>
+	</view>
+<view class="cu-form-group margin-top">		
+<view class="title">学期</view>
+		<picker bindchange="PickerChange"  value="{{index}}" range="{{picker}}">
+			<view class="picker">
+			{{index?picker[index]:'学期'}}
+			</view>
+		</picker>
+  </view>
+<button class="cu-btn block bg-blue margin-tb-sm lg"  type="sumbit" bindtap="submit">提交</button>
+</form></view>

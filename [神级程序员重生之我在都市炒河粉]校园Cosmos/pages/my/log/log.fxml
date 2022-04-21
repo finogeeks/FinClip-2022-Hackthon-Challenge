@@ -1,0 +1,24 @@
+
+<view class="cu-timeline">
+  <view class="cu-time">2022</view>
+  <view class="cu-item text-blue">
+    <view class="content bg-gradual-blue shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white">V1.0.0</view>
+        <view class="cu-tag line-white">04-02 6:00</view>
+      </view>
+      <view class="margin-top ">校园小程序的ui初步实现啦</view>
+    </view>
+  </view>
+  </view>
+  <view class="cu-timeline">
+  <view class="cu-item text-blue">
+    <view class="content bg-gradual-blue shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white">V1.0.1</view>
+        <view class="cu-tag line-white">04-19 6:00</view>
+      </view>
+      <view class="margin-top">校园小程序的功能完善啦</view>
+    </view>
+  </view>
+  </view>

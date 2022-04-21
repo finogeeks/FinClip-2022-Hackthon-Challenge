@@ -1,0 +1,20 @@
+.cont{
+    height:620px;
+    width:100%;
+    background-image:url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202007%2F02%2F20200702144755_kucls.thumb.1000_0.jpg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1652900439&t=02f6e2cac3ee45aed560fe0ea1573a76");
+    background-repeat:no-repeat;
+}
+.img{
+margin:0 auto;
+}
+.defl{
+    color: white;
+    background-color: #6079d3;
+}
+.txt{
+    text-align:center;
+    font-size:22px;
+    font-weight:550;
+    padding-top:100px;
+    padding-bottom:100px;
+}

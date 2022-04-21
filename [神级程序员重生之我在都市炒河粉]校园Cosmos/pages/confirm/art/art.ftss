@@ -1,0 +1,21 @@
+.art{
+    text-indent: 30px;
+    margin: 0 auto;
+    width: 90%;
+    font-weight: 540;
+}
+.re{
+    display:flex;justify-content: space-around;
+}
+.re view{
+    flex-direction: column;
+    align-self: flex-end;
+}
+.red{
+    display:flex;
+    align-items: center;
+    
+}
+page{
+    background:white;
+}

@@ -1,0 +1,36 @@
+<swiper class="card-swiper"  mode="card" dotStyle="long" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500"  indicator-color="#8799a3" indicator-active-color="#0081ff">
+  <swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}}">
+    <view class="swiper-item">
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}" bindtap="swiperp" data-url="{{item.url}}"></image>
+    </view>
+  </swiper-item>
+</swiper>
+<view class="VerticalBox">
+	<scroll-view class="VerticalNav nav" scroll-y scroll-with-animation scroll-top="{{scrollTops}}">
+		<view class="cu-item  ax {{tabCur===index?'text-blue cur':''}}" wx:for="{{list}}" wx:key="index" data-index="{{index}}" bindtap="tabNav">{{item.name}}</view>
+	</scroll-view>
+
+
+	<scroll-view class="VerticalMain" scroll-y scroll-with-animation scroll-into-view="scroll-{{rightCur}}" bindscroll="scrollLink" style="height:calc(100vh - 375rpx)">
+
+		<view  class="padding-top padding-lr" wx:for="{{list}}" wx:key="{{index}}" class="right-cont" id="scroll-{{index}}">
+<view class='cu-bar solid-bottom bg-white'>
+        <view class='action'>
+          <text class='cuIcon-title text-blue'></text> {{item.name}} </view>
+      </view>
+            <view class="cu-list menu-avatar" wx:for="{{item.list}}"  wx:key="{{index}}" wx:for-item="items">
+        <view class="cu-item">
+          <view class="cu-avatar round lg bg-grey"><image  class="img round" src="{{items.img}}" /></view>
+          <view class="content">
+            <view class="text-black">{{items.ids}}</view>
+            <view class="text-gray text-sm flex">
+              <text class="text-cut">
+										{{items.num}} 
+              </text>
+            </view>
+          </view>
+        </view>
+        </view>
+		</view>
+	</scroll-view>
+</view>

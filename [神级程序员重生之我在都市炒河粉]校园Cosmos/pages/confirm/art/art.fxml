@@ -1,0 +1,68 @@
+ <view class=" padding-xs flex">
+    <view class="flex-sub">
+      <view class=" text-xl padding">
+        <text class="text-black text-bold">比较是偷走幸福的小偷</text>
+      </view>
+      <view class="padding">        <view class="content flex-sub">
+          <view class="text-grey">Esc</view>
+          <view class="text-gray text-sm flex justify-between">
+            2022/4/24
+            <view class="text-gray text-sm">
+              <text class="cuIcon-attentionfill margin-lr-xs"></text> 23
+              <text class="cuIcon-messagefill margin-lr-xs"></text> 2
+            </view>
+          </view>
+        </view>
+        </view>
+    </view>
+    
+  </view>
+  <view class='art'>
+        我们真的没必要通过和别人做对比 来制造焦虑或者是获得优越感 这样永远都不会快乐的 每个人都有属于自己的人生轨迹 向上看有人在俯视你 向下看也有人在仰望你 和别人做比较只会打乱自己的节奏 在慌乱中迷失自我 我们应该试着去接纳自己 只要今天的自己比昨天有进步 这样就足够了
+    </view>
+    <view class="re padding solid-bottom">
+        <view class='cuIcon-likefill text-orange flex red padding'>
+            已收藏
+        </view>
+        <view class='cuIcon-appreciatefill text-blue flex red padding'>
+            已点赞
+        </view>
+    </view>
+
+    <view class="cu-bar bg-white  margin-top">
+    <view class="action"> 精选留言
+    </view>
+  </view>
+  <view class="cu-list menu-avatar">
+    <view class="cu-item">
+      <view class="cu-avatar round lg" style="background-image:url(https://bydijia.gitee.io/img/myavatar.jpg);"></view>
+      <view class="content">
+        <view class="text-grey">Dijia</view>
+        <view class="text-gray text-sm flex">
+          <text class="text-cut">
+							<text class=" margin-right-xs"></text> 说的对!我们要实现自己!
+          </text>
+        </view>
+      </view>
+      <view class="action">
+        <view class="text-grey text-xs">22:20</view>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="cu-avatar round lg" style="background-image:url(https://cdn.jsdelivr.net/gh/CodeLorin/img@master/20210425/xxx.6b4667utjuc0.jfif);">
+      </view>
+      <view class="content">
+        <view class="text-grey">
+          <text class="text-cut">Lorin</text>
+          <view class="cu-tag round bg-orange sm">铁粉</view>
+        </view>
+        <view class="text-gray text-sm flex">
+          <text class="text-cut">做好自己的事不要管别人</text>
+        </view>
+      </view>
+      <view class="action">
+        <view class="text-grey text-xs">21:20</view>
+      </view>
+    </view>
+    
+  </view>
