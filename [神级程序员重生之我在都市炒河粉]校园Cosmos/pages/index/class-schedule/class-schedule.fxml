@@ -1,0 +1,20 @@
+<view class="cu-form-group margin-top">
+		<view class="title">学院</view>
+		<picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+			<view class="picker">
+				{{index?picker[index]:'学院'}}
+			</view>
+		</picker>
+	</view>
+    	<view class="cu-form-group">
+		<view class="title">班级</view>
+		<picker mode="multiSelector" bindchange="MultiChange" bindcolumnchange="MultiColumnChange" value="{{multiIndex}}"
+		 range="{{multiArray}}">
+			<view class="picker">
+				{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+			</view>
+		</picker>
+	</view>
+    <button class="cu-btn block bg-blue margin-tb-sm lg"  type="sumbit" bindtap="cha_submit">查询课表</button>
+    <button class="cu-btn block bg-blue margin-tb-sm lg"  type="sumbit" bindtap="empty_submit">查询空课表</button>
+	    <button class="cu-btn block bg-blue margin-tb-sm lg"  type="sumbit" bindtap="emptys_submit">生成空课表</button>

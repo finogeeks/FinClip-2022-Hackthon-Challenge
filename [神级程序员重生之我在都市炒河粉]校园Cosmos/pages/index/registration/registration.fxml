@@ -1,0 +1,81 @@
+	<view class="cu-bar bg-white margin-top">
+		<view class="action">
+			封面
+		</view>
+		<view class="action">
+			{{imgList.length}}/4
+		</view>
+	</view>
+    	<view class="cu-form-group">
+		<view class="grid col-4 grid-square flex-sub">
+			<view class="bg-img" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+				<image src='{{imgList[index]}}' mode='aspectFill'></image>
+				<view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}">
+					<text class="cuIcon-close"></text>
+				</view>
+			</view>
+			<view class="solids" bindtap="ChooseImage" wx:if="{{imgList.length<4}}">
+				<text class="cuIcon-cameraadd"></text>
+			</view>
+		</view>
+	</view>
+
+    <view class="cu-form-group margin-top">
+		<textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaAInput" placeholder="填写活动说明"></textarea>
+	</view>
+<view class="cu-form-group">
+		<view class="title">活动名称</view>
+		<input placeholder="请输入活动名称"></input>
+	</view>
+    <view class="cu-form-group">
+		<view class="title">报名开始时间:</view>
+		<picker mode="date" value="{{date}}" start="2022-04-14" end="2023-04-14" bindchange="DateChange">
+			<view class="picker">
+				{{date}}
+			</view>
+		</picker>
+	</view>
+    <view class="cu-form-group">
+		<view class="title">报名截止时间:</view>
+		<picker mode="date" value="{{date1}}" start="2022-04-14" end="2023-04-14" bindchange="EndDateChange">
+			<view class="picker">
+				{{date1}}
+			</view>
+		</picker>
+	</view>
+	<view class="cu-form-group margin-top">
+		<view class="title">活动开始/截止时间</view>
+		<switch></switch></view>
+		<view class="cu-form-group">
+		<view class="title">活动开始时间</view>
+		<picker mode="time" value="{{time}}" start="00:00" end="23:00" bindchange="TimeChange">
+			<view class="picker">
+				{{time}}
+			</view>
+		</picker>
+	</view>
+	<view class="cu-form-group">
+		<view class="time">活动截止时间</view>
+		<picker mode="time" value="{{time1}}" start="00:00" end="23:00" bindchange="EndTimeChange">
+			<view class="picker">
+				{{time1}}
+			</view>
+		</picker>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">每个人提交次数限制</view>
+		<input placeholder="0"></input>
+		<text> 次</text>
+	</view>
+     <view class="cu-form-group margin-top">
+<view class="title">数据查看权限</view>
+		<picker bindchange="PickerChange"  value="{{index}}" range="{{picker}}">
+			<view class="picker">
+			{{index?picker[index]:'选择'}}
+			</view>
+		</picker>
+	</view>
+    <button class="cu-btn block bg-blue margin-tb-sm lg"  type="sumbit" bindtap="submit">提交</button>
+
+
+	

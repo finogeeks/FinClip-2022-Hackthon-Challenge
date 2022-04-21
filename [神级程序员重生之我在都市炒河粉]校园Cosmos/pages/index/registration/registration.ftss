@@ -1,0 +1,4 @@
+.solids{
+    height: 160px!important;
+    width: 100%!important;
+}

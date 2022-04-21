@@ -1,0 +1,31 @@
+<!-- 实现左右联动效果 -->
+<view class="VerticalBox">
+	<!-- 左边 -->
+	<scroll-view class="VerticalNav nav" scroll-y scroll-with-animation scroll-top="{{scrollTops}}">
+		<view class="cu-item  ax {{tabCur===index?'text-blue cur':''}}" wx:for="{{list}}" wx:key="index" data-index="{{index}}" bindtap="tabNav">{{item.name}}</view>
+	</scroll-view>
+
+	<!-- 右边 -->
+	<scroll-view class="VerticalMain" scroll-y scroll-with-animation scroll-into-view="scroll-{{rightCur}}" bindscroll="scrollLink" style="height:calc(100vh - 60rpx)">
+		<!-- 重点： id="scroll-{{index}}"  这个必须要有 不然实现不了左边联动右边的效果-->
+		<view  class="padding-top padding-lr" wx:for="{{list}}" wx:key="{{index}}" class="right-cont" id="scroll-{{index}}">
+<view class='cu-bar solid-bottom bg-white'>
+        <view class='action'>
+          <text class='cuIcon-title text-blue'></text> {{item.name}} </view>
+      </view>
+            <view class="cu-list menu" wx:for="{{item.list}}"  wx:key="{{index}}" wx:for-item="items">
+        <view class="cu-item">
+                                <view class="cuIcon-phone"></view>
+          <view class="content">
+            <view class="text-grey">{{items.ids}}</view>
+            <view class="text-gray text-sm flex">
+              <text class="text-cut">
+										{{items.num}} 
+              </text>
+            </view>
+          </view>
+        </view>
+        </view>
+		</view>
+	</scroll-view>
+</view>

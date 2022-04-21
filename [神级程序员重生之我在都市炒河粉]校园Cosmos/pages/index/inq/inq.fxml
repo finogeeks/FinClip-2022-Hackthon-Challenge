@@ -1,0 +1,16 @@
+<view class='padding-xl radius shadow-warp bg-white margin-top'>
+  <view class='text-center margin-bottom text-lg  text-black'>2021-2022学年 第1学期</view>
+  <view class='text-content solid-bottom' wx:for="{{sclist}}">
+    <view>{{item.name}}</view>
+    <view class='margin-top-sm  '>
+     <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="text-grey">成绩:</text><view class="cu-tag round bg-green light">{{item.num}}</view>
+      </view>
+      <view class="action">
+
+      </view>
+    </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+<form>
+	<view class="cu-form-group margin-top">
+		<view class="title">昵称</view>
+		<input placeholder="请输入昵称"></input>
+	</view>
+		<view class="cu-form-group margin-top">
+		<view class="title">个性签名</view>
+		<input placeholder="请输入个性签名"></input>
+	</view>
+		<view class="cu-form-group margin-top">
+		<view class="title">状态</view>
+		<input placeholder="请输入状态"></input>
+	</view>
+  
+<button class="cu-btn block bg-blue margin-tb-sm lg"  type="sumbit" bindtap="submit">提交修改</button>
+</form>

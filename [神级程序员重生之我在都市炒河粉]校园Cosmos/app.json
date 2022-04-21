@@ -1,0 +1,73 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/confirm/confirm",
+    "pages/my/my",
+    "pages/logs/logs",
+    "pages/community/community",
+    "pages/index/registration/registration",
+    "pages/index/sign-in/sign-in",
+    "pages/index/inquiry/inquiry",
+    "pages/index/class-schedule/class-schedule",
+    "pages/index/Community/Community",
+    "pages/index/random-draw/random-draw",
+    "pages/my/collect/collect",
+    "pages/my/editor/editor",
+    "pages/my/log/log",
+    "pages/my/record/record",
+    "pages/my/school/school",
+    "pages/confirm/freshman/freshman",
+    "pages/confirm/map/map",
+    "pages/confirm/phonetext/phonetext",
+    "pages/confirm/qa/qa",
+    "pages/community/cheat/cheat",
+    "pages/index/activ/activ",
+    "pages/index/inq/inq",
+    "pages/index/sign-in/qiaodao/qiaodao",
+    "pages/index/class-schedule/class/clas",
+    "pages/confirm/art/art",
+    "pages/index/class-schedule/emclass/emclass",
+    "coms/coms",
+    "pages/confirm/edi/edi"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "校园Cosmos",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/shouye.png",
+        "selectedIconPath": "images/shouye_home.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "iconPath": "images/xingqiu.png",
+        "selectedIconPath": "images/xingqiu_planet.png",
+        "text": "社交"
+      },
+      {
+        "pagePath": "pages/confirm/confirm",
+        "iconPath": "images/xuexiao.png",
+        "selectedIconPath": "images/xuexiao_school.png",
+        "text": "学校"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/yonghu.png",
+        "selectedIconPath": "images/yonghu_user.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "movableView": "./coms/coms"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

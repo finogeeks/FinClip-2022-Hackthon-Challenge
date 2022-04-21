@@ -1,0 +1,7 @@
+.gray{
+    color:gray;
+    font-size:12px;
+}
+.text-content{
+    height:2.8em!important;
+}

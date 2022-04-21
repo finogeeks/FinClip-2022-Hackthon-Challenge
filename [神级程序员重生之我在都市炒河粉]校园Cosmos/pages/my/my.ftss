@@ -1,0 +1,21 @@
+image{
+    height:100%;
+    width:100%;
+}
+button{
+    width:130rpx!important;
+    background-color:white;
+    font-size:25rpx;
+    margin:0!important;
+    padding:0;
+    border-radius:20rpx;
+  }
+.cu-itema{
+    background-color:#f3f3f3!important;
+}
+.s{
+    font-size:50rpx;
+}
+.d{
+    margin-right:30rpx!important;
+}
