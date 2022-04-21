@@ -1,0 +1,12 @@
+<view class="bg-white padding-lr" bindtap="sumbit">
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class=" text-xsl padding">
+        <text class=" cuIcon-roundcheckfill text-green"></text>
+      </view>
+
+      <view class="padding">提交成功</view>      
+      <view class="padding text-gray">点击任意键返回</view>
+    </view>
+  </view>
+  </view>

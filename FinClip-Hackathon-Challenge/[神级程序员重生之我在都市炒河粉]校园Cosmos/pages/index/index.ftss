@@ -1,0 +1,8 @@
+/**index.ftss**/
+
+.usermotto {
+  margin-top: 200px;
+}
+.scrollPage {
+  height: 60vh!important;
+}

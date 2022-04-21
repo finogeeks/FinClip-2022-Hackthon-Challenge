@@ -1,0 +1,8 @@
+<view class="cont">
+<view class='img'>
+    <view class='txt'>
+    广园通欢迎您!
+    </view>
+    <button class='defl'   bindtap="defaultTap" hover-class="defaultTap"><navigator url="/pages/index/index" redirect hover-class="">点击进入</navigator>
+</button></view>
+</view>

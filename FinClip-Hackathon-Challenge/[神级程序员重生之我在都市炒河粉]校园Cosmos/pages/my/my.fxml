@@ -1,0 +1,121 @@
+<scroll-view scroll-y class="scrollPage">
+<view class="cu-list menu-avatar margin-top shadow-wrap">
+    <view class="cu-item  padding-top cu-itema">
+      <view class="cu-avatar round lg"><image src="/images/comm-pe/Esc.jpg" /></view>
+      <view class="content">
+        <view class="text-grey">Esc</view>
+        <view class="text-gray text-sm">
+          <text class="cuIcon-search text-green">emo</text> 明知不可为而为之</view>
+      </view>
+     <button>校园卡</button>
+      </view> 
+      </view>
+  <view class="padding flex text-center text-grey bg-white shadow-warp margin-top">
+    <view class="flex flex-sub flex-direction solid-right">
+      <view class="text-xxl text-orange">{{visitTotal}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-attentionfill"></text> 帖子</view>
+    </view>
+    <view class="flex flex-sub flex-direction solid-right">
+      <view class="text-xxl text-blue">{{starCount}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-favorfill"></text> 关注</view>
+    </view>
+    <view class="flex flex-sub flex-direction">
+      <view class="text-xxl text-green">{{forksCount}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-friendaddfill"></text> 粉丝</view>
+    </view>
+  </view>
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/my/school/school" hover-class="none">
+        <text class="cuIcon-global text-green"></text>
+        <text class="text-grey">教务系统</text>
+      </navigator>
+    </view>
+    </view>
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/my/editor/editor" hover-class="none">
+        <text class="cuIcon-post text-blue"></text>
+        <text class="text-grey">编辑资料</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/my/record/record" hover-class="none">
+        <text class="cuIcon-rank text-pink"></text>
+        <text class="text-grey">我的记录</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/my/collect/collect" hover-class="none">
+        <text class="cuIcon-likefill text-red"></text>
+        <text class="text-grey">我的收藏</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+<button class="cu-btn content shadow" bindtap="showModal" data-target="DialogModal1">
+        <text class="cuIcon-apps text-orange"></text>
+        <text class="text-grey">关于我们</text></button>
+    </view>
+<view class="cu-modal {{modalName=='DialogModal1'?'show':''}}">
+  <view class=" padding cu-dialog">
+    <view class=" padding cu-bar bg-white justify-end">
+      <view class="content">关于我们</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    <view class="padding-xl bg-white text-black">
+    队名:神级程序员 重生 之 我在都市 炒河粉
+      队员:d1j1a 10rin 李先生 蓝天下的一员 蕉
+    </view>
+    <view class="cu-bar bg-white justify-end">
+      <view class="action">
+        <button class="cu-btn line-blue text-blue d" bindtap="hideModal">取消</button>
+        <button class="cu-btn bg-blue " bindtap="hideModal">确定</button>
+
+      </view>
+    </view>
+  </view>
+</view>
+        <view class="cu-item arrow">
+      <navigator class="content" url="/pages/my/log/log" hover-class="none">
+        <text class="cuIcon-dianhua text-purple"></text>
+        <text class="text-grey">更新日志</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <button class="cu-btn content" open-type="feedback" bindtap="showModal" data-target="Image">
+        <text class="cuIcon-evaluate_fill text-cyan"></text>
+        <text class="text-grey">意见反馈</text>
+      </button>
+    </view>
+    <view class="cu-modal {{modalName=='Image'?'show':''}}">
+  <view class=" padding cu-dialog">
+<view class="cu-bar bg-white margin-top solid-bottom">
+<text class="center solid-right">意见</text>
+  <view class="action">
+    <textarea placeholder="留下你的宝贵意见吧~"/>
+  </view>
+</view>
+<view class="bg-white padding">
+  <view class="cu-steps">
+    <view class="cu-item {{index>num?'':'text-blue'}}"  bindtap="numSteps" wx:for="{{numList}}" wx:key>
+      <text class="num" data-index="{{index + 1}}"></text> {{item.name}}
+    </view>
+  </view>
+</view>
+    <view class="cu-bar  justify-end">
+      <view class="action">
+        <button class="cu-btn line-blue text-blue d" bindtap="hideModal">取消</button>
+        <button class="cu-btn bg-blue " bindtap="hideModals">确定</button>
+
+      </view>
+    </view>
+  </view>
+</view>
+
+  </view>
+</scroll-view>
