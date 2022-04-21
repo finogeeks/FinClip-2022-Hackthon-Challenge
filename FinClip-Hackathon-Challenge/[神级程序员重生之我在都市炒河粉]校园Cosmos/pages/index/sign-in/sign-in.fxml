@@ -1,0 +1,19 @@
+<view class="cu-card article isCard">
+  <view class="cu-item shadow" wx:for="{{aclist}}" :key="{{index}}">
+  <navigator url="{{item.url}}" redirect hover-class="className">
+    <view class="title">
+      <view class="text-cut">{{item.title}}</view>
+    </view>
+    <view class="content">
+      <image src="{{item.img}}" mode="aspectFill"></image>
+      <view class="desc">
+        <view class="text-content text-black"> 简介:{{item.desc}}</view>
+        <view class="cuIcon-friendfill ">{{item.num}}/{{item.num}}</view>
+        <view>
+          <view class="cu-tag bg-red light sm round">{{item.tip}}</view>
+          <view class="cu-tag bg-green light sm round">{{item.tip1}}</view>
+        </view>
+      </view>
+    </view></navigator>
+  </view>
+</view>

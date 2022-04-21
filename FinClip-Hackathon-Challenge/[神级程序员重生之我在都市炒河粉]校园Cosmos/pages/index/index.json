@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "index":"/pages/index/index",
+    "confirm":"/pages/confirm/confirm",
+    "my":"/pages/my/my",
+    "community":"/pages/community/community"
+  },
+  "navigationBarTitleText": "校园Cosmos"
+}

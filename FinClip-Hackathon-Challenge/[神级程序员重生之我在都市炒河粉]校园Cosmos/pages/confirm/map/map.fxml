@@ -1,0 +1,3 @@
+<view class="map_container">
+<map longitude="113.5685" latitude="23.304068" markers="{{markers}}"></map>
+</view>

@@ -1,0 +1,9 @@
+.text-content{
+    margin: 20rpx 20rpx 20rpx 20rpx;
+    display: flex;
+    line-height: 1.6;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+}

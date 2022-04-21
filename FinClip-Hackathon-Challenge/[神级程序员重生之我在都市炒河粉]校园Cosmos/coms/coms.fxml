@@ -1,0 +1,6 @@
+<movable-area style="pointer-events: none;width:{{x}}px;height:{{y}}px;position:fixed;top:0;right:0;">
+  <movable-view class="move" style="pointer-events: auto;" direction="all">
+  <!-- 刷新 -->
+    <view class='refrash ' bindtap='refrash'>+</view>
+  </movable-view>
+</movable-area>

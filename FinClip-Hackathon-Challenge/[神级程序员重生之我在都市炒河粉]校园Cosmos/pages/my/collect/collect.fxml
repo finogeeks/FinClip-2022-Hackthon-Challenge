@@ -1,0 +1,32 @@
+<view class="cu-card case">
+  <view class="cu-item shadow" wx:for="{{cards}}">
+  <navigator url='/pages/confirm/{{item.url}}/{{item.url}}' hover-class="none">
+      
+    <view class="image">
+      <image  class="img" src="{{item.img}}" ></image>
+      <view class="cu-tag bg-blue">{{item.rank}}</view>
+      <view class="cu-bar bg-shadeBottom">
+        <text class="text-cut">{{item.pic}}</text>
+      </view>
+    </view>
+    <view class="cu-list menu-avatar">
+      <view class="cu-item m" >
+        <view class="cu-avatar round lg "><image src="../{{item.aimg}}" class="round" /></view>
+        <view class="content flex-sub">
+          <view class="text-grey">{{item.aut}}</view>
+          <view class="text-gray text-sm flex justify-between">
+            {{item.time}}
+            <view class="text-gray text-sm">
+              <text class="cuIcon-attentionfill margin-lr-xs"></text> {{item.look}}
+              <text class="cuIcon-appreciatefill margin-lr-xs"></text> {{item.good}}
+              <text class="cuIcon-messagefill margin-lr-xs"></text> {{item.content}}
+            </view>
+          </view>
+        </view>
+      </view>
+     
+    </view> 
+    </navigator>
+  </view>
+
+</view>
