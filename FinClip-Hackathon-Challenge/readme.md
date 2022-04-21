@@ -39,7 +39,7 @@
 
 选择困难症患者的福音，实现随机抽签决定某个时刻
 
-![](simg/1.png)
+<img src="simg/1.png" style="zoom:33%;" />
 
 
 
@@ -51,7 +51,7 @@
 
 
 
-![](simg/2.png)
+<img src="simg/2.png" style="zoom:33%;" />
 
 ## 学校板块
 
@@ -79,7 +79,7 @@
 
 点击悬浮球，发布本人的文章
 
-![](simg/3.png)
+<img src="simg/3.png" style="zoom:33%;" />
 
 
 
@@ -111,4 +111,4 @@
 
 可选择满意度以及提交表单实现意见反馈
 
-![](simg/4.png)
+<img src="simg/4.png" style="zoom:33%;" />
