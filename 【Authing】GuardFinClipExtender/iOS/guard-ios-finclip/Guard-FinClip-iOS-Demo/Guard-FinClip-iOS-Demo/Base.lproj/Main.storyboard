@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iXJ-JC-rNK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="UUd-0O-AAf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iXJ-JC-rNK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VYe-dV-BO4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pKa-CA-MQq" kind="relationship" relationship="rootViewController" id="9Bg-Xe-oFK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="opY-bo-lP9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="60.9375"/>
+        </scene>
+        <!--Guard-FinClip-iOS Demo-->
+        <scene sceneID="uQG-5u-z9P">
+            <objects>
+                <viewController id="pKa-CA-MQq" customClass="ViewController" customModule="Guard_FinClip_iOS_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CGe-lT-wOB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6T-Vu-YxZ">
+                                <rect key="frame" x="117" y="318" width="180" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="Vu6-XZ-eGa"/>
+                                    <constraint firstAttribute="height" constant="60" id="gaC-dF-Uus"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="打开小程序"/>
+                                <connections>
+                                    <action selector="OpenMiniPrograms:" destination="pKa-CA-MQq" eventType="touchUpInside" id="FaF-Am-BbT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xaQ-T3-f3x"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I6T-Vu-YxZ" firstAttribute="centerX" secondItem="CGe-lT-wOB" secondAttribute="centerX" id="QWr-B3-lMO"/>
+                            <constraint firstItem="I6T-Vu-YxZ" firstAttribute="centerY" secondItem="CGe-lT-wOB" secondAttribute="centerY" constant="-100" id="wTX-js-Ml2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Guard-FinClip-iOS Demo" id="upB-3X-e7Y">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="authing_userInfo" style="plain" id="GZD-7R-Sfp">
+                            <connections>
+                                <action selector="rightBarButtonAction:" destination="pKa-CA-MQq" id="jLk-B4-NqB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h3t-H2-qAz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="60.9375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="authing_userInfo" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

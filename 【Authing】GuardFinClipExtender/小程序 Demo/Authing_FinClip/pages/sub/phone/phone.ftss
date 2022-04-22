@@ -1,0 +1,25 @@
+.container {
+    padding: 10px 20px;
+    align-content: center;
+}
+.content {
+    margin: 30px 0px;
+    padding: 10px;
+    border-bottom: 2rpx solid #F5F5F5;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: space-between;
+}
+.input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  
+  background-color: transparent;
+  font-size: inherit;
+  color: inherit;
+  height: 1.41176471em;
+  line-height: 1.41176471
+}
+

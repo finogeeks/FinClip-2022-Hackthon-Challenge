@@ -1,0 +1,6 @@
+platform :ios, '9.0'
+
+target 'Guard-FinClip-iOS-Demo' do
+source 'https://github.com/CocoaPods/Specs.git'
+    pod 'FinApplet'
+end

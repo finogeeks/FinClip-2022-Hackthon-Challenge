@@ -1,0 +1,15 @@
+<!--name.ftml-->
+<view class="container">
+
+    <view class='content'>
+        <view>
+           <input class="input" auto-focus  maxlength="10"
+                 bindinput="bindKeyInput" placeholder="{{name}}"/>
+        </view>
+
+        <view >
+            <button style='background-color:#396aff;margin-top: 50px' type="primary" bindtap="submit">提交</button>
+        </view>
+    </view> 
+
+</view>

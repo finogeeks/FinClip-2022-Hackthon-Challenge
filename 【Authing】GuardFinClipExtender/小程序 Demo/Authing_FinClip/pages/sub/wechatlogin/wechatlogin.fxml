@@ -1,0 +1,13 @@
+<view class="container">
+
+    <view class='content'>
+          <view class='titleView'>
+              <text class='itemText'>{{token}}</text>
+          </view>
+
+        <view >
+            <button style='background-color:#396aff;margin-top: 50px' type="primary" bindtap="login">登录</button>
+        </view>
+    </view> 
+
+</view>

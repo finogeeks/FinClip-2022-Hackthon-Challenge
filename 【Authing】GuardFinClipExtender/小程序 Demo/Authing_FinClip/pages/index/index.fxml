@@ -1,0 +1,6 @@
+<!--index.ftml-->
+<view class="container">
+
+  <web-view src="https://www.authing.cn/"></web-view>
+    
+</view>

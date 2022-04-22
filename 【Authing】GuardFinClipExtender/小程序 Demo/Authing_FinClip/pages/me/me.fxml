@@ -1,0 +1,36 @@
+<!--me.ftml-->
+<view class="container">
+
+  <view class='logoView'>
+    <view class='text-content'>
+      <view class='titleView'><text class='itemText' bindtap="getUserAvatar">头像</text></view>
+      <image class="imageView" src="{{photo}}" mode="aspectFill"></image>
+    </view> 
+  </view> 
+
+
+  <block wx:for-items="{{list}}" wx:key="index">
+    <navigator class = 'navigatorView' url="/pages/sub/{{item.page}}/{{item.page}}?param={{userInfoItems[index]}}">
+      <view class='text-content'>
+          <view class='titleView'>
+              <text class='itemText'>{{item.title}}</text>
+          </view>
+          <view class='itemView'>
+              <text class='itemText'>{{userInfoItems[index]}}</text>
+          </view>
+      </view> 
+    </navigator>
+  </block>
+  <navigator class = 'navigatorView' url="/pages/sub/password/password">
+    <view class='text-content'>
+      <view class='titleView2'><text>修改密码</text></view>
+    </view> 
+  </navigator>
+
+  <navigator class = 'navigatorView' url="/pages/sub/wechatlogin/wechatlogin">
+    <view class='text-content2'>
+      <view class='titleView2'><text>微信登录</text></view>
+    </view> 
+  </navigator>
+
+</view>

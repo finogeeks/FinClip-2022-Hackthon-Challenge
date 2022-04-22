@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/me/me",
+    "pages/sub/email/email",
+    "pages/sub/name/name",
+    "pages/sub/nickname/nickname",
+    "pages/sub/password/password",
+    "pages/sub/phone/phone",
+    "pages/sub/username/username",
+    "pages/sub/wechatlogin/wechatlogin"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Authing-FinClip-SDK",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#396aff",
+    "borderStyle": "black",
+    "backgroundColor": "#F7F7F7",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/home_normal.png",
+        "selectedIconPath": "image/home_selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "image/me_normal.png",
+        "selectedIconPath": "image/me_selected.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
