@@ -1,0 +1,13 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "useOldBuilder": false
+  },
+  "compileType": "miniprogram",
+  "appid": "6244175278c1a7000142b2c5",
+  "projectname": "Authing_FinClip",
+  "isGameTourist": false
+}

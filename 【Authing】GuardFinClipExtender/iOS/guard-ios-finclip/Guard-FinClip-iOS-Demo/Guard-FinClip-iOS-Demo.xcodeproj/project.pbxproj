@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54CC21FC50DD744B5E15A362 /* libPods-Guard-FinClip-iOS-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83D96ADE6A9E4C3DF4AB13D /* libPods-Guard-FinClip-iOS-Demo.a */; };
+		A81122B0280D4B6600D3D916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81122AF280D4B6600D3D916 /* AppDelegate.swift */; };
+		A81122B2280D4B6600D3D916 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81122B1280D4B6600D3D916 /* SceneDelegate.swift */; };
+		A81122B4280D4B6600D3D916 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81122B3280D4B6600D3D916 /* ViewController.swift */; };
+		A81122B7280D4B6600D3D916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A81122B5280D4B6600D3D916 /* Main.storyboard */; };
+		A81122B9280D4B6A00D3D916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A81122B8280D4B6A00D3D916 /* Assets.xcassets */; };
+		A81122BC280D4B6A00D3D916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A81122BA280D4B6A00D3D916 /* LaunchScreen.storyboard */; };
+		A81122C7280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81122C6280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoTests.swift */; };
+		A81122D1280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81122D0280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITests.swift */; };
+		A81122D3280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81122D2280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITestsLaunchTests.swift */; };
+		A8DEAEF8281281A200D5F8D1 /* GuardFinClipExtender in Frameworks */ = {isa = PBXBuildFile; productRef = A8DEAEF7281281A200D5F8D1 /* GuardFinClipExtender */; };
+		A8F8B615281006F900FB9984 /* Guard in Frameworks */ = {isa = PBXBuildFile; productRef = A8F8B614281006F900FB9984 /* Guard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A81122C3280D4B6A00D3D916 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A81122A4280D4B6600D3D916 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A81122AB280D4B6600D3D916;
+			remoteInfo = "Guard-FinClip-iOS-Demo";
+		};
+		A81122CD280D4B6A00D3D916 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A81122A4280D4B6600D3D916 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A81122AB280D4B6600D3D916;
+			remoteInfo = "Guard-FinClip-iOS-Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E9C70A9B66C1DFF0DEDE06 /* Pods-Guard-FinClip-iOS-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guard-FinClip-iOS-Demo.release.xcconfig"; path = "Target Support Files/Pods-Guard-FinClip-iOS-Demo/Pods-Guard-FinClip-iOS-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		1BA038F431B2D34C650F586C /* Pods-Guard-FinClip-iOS-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guard-FinClip-iOS-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Guard-FinClip-iOS-Demo/Pods-Guard-FinClip-iOS-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		A81122AC280D4B6600D3D916 /* Guard-FinClip-iOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guard-FinClip-iOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A81122AF280D4B6600D3D916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A81122B1280D4B6600D3D916 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A81122B3280D4B6600D3D916 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A81122B6280D4B6600D3D916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A81122B8280D4B6A00D3D916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A81122BB280D4B6A00D3D916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A81122BD280D4B6A00D3D916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A81122C2280D4B6A00D3D916 /* Guard-FinClip-iOS-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guard-FinClip-iOS-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A81122C6280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guard_FinClip_iOS_DemoTests.swift; sourceTree = "<group>"; };
+		A81122CC280D4B6A00D3D916 /* Guard-FinClip-iOS-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guard-FinClip-iOS-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A81122D0280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guard_FinClip_iOS_DemoUITests.swift; sourceTree = "<group>"; };
+		A81122D2280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guard_FinClip_iOS_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A81122E5280D4C9100D3D916 /* Guard-FinClip-iOS-Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Guard-FinClip-iOS-Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		A86A861E280E779100313C62 /* GuardFinClipExtender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GuardFinClipExtender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8F8B61928101DDD00FB9984 /* Guard-FinClip-iOS-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Guard-FinClip-iOS-Demo.entitlements"; sourceTree = "<group>"; };
+		B83D96ADE6A9E4C3DF4AB13D /* libPods-Guard-FinClip-iOS-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Guard-FinClip-iOS-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A81122A9280D4B6600D3D916 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8F8B615281006F900FB9984 /* Guard in Frameworks */,
+				54CC21FC50DD744B5E15A362 /* libPods-Guard-FinClip-iOS-Demo.a in Frameworks */,
+				A8DEAEF8281281A200D5F8D1 /* GuardFinClipExtender in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A81122BF280D4B6A00D3D916 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A81122C9280D4B6A00D3D916 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20D2C3EF13E72F6E2DC3FD52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BA038F431B2D34C650F586C /* Pods-Guard-FinClip-iOS-Demo.debug.xcconfig */,
+				00E9C70A9B66C1DFF0DEDE06 /* Pods-Guard-FinClip-iOS-Demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A81122A3280D4B6600D3D916 = {
+			isa = PBXGroup;
+			children = (
+				A81122AE280D4B6600D3D916 /* Guard-FinClip-iOS-Demo */,
+				A81122C5280D4B6A00D3D916 /* Guard-FinClip-iOS-DemoTests */,
+				A81122CF280D4B6A00D3D916 /* Guard-FinClip-iOS-DemoUITests */,
+				A81122AD280D4B6600D3D916 /* Products */,
+				20D2C3EF13E72F6E2DC3FD52 /* Pods */,
+				F920056C4C5F48CFFBF1648D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A81122AD280D4B6600D3D916 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A81122AC280D4B6600D3D916 /* Guard-FinClip-iOS-Demo.app */,
+				A81122C2280D4B6A00D3D916 /* Guard-FinClip-iOS-DemoTests.xctest */,
+				A81122CC280D4B6A00D3D916 /* Guard-FinClip-iOS-DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A81122AE280D4B6600D3D916 /* Guard-FinClip-iOS-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				A8F8B61928101DDD00FB9984 /* Guard-FinClip-iOS-Demo.entitlements */,
+				A81122AF280D4B6600D3D916 /* AppDelegate.swift */,
+				A81122B1280D4B6600D3D916 /* SceneDelegate.swift */,
+				A81122B3280D4B6600D3D916 /* ViewController.swift */,
+				A81122B5280D4B6600D3D916 /* Main.storyboard */,
+				A81122B8280D4B6A00D3D916 /* Assets.xcassets */,
+				A81122BA280D4B6A00D3D916 /* LaunchScreen.storyboard */,
+				A81122BD280D4B6A00D3D916 /* Info.plist */,
+				A81122E5280D4C9100D3D916 /* Guard-FinClip-iOS-Demo-Bridging-Header.h */,
+			);
+			path = "Guard-FinClip-iOS-Demo";
+			sourceTree = "<group>";
+		};
+		A81122C5280D4B6A00D3D916 /* Guard-FinClip-iOS-DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A81122C6280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoTests.swift */,
+			);
+			path = "Guard-FinClip-iOS-DemoTests";
+			sourceTree = "<group>";
+		};
+		A81122CF280D4B6A00D3D916 /* Guard-FinClip-iOS-DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A81122D0280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITests.swift */,
+				A81122D2280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITestsLaunchTests.swift */,
+			);
+			path = "Guard-FinClip-iOS-DemoUITests";
+			sourceTree = "<group>";
+		};
+		F920056C4C5F48CFFBF1648D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A86A861E280E779100313C62 /* GuardFinClipExtender.framework */,
+				B83D96ADE6A9E4C3DF4AB13D /* libPods-Guard-FinClip-iOS-Demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A81122AB280D4B6600D3D916 /* Guard-FinClip-iOS-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A81122D6280D4B6A00D3D916 /* Build configuration list for PBXNativeTarget "Guard-FinClip-iOS-Demo" */;
+			buildPhases = (
+				F7DBCBF68DC376BC0C186AE0 /* [CP] Check Pods Manifest.lock */,
+				A81122A8280D4B6600D3D916 /* Sources */,
+				A81122A9280D4B6600D3D916 /* Frameworks */,
+				A81122AA280D4B6600D3D916 /* Resources */,
+				9311D43AA987D3514D753B6C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Guard-FinClip-iOS-Demo";
+			packageProductDependencies = (
+				A8F8B614281006F900FB9984 /* Guard */,
+				A8DEAEF7281281A200D5F8D1 /* GuardFinClipExtender */,
+			);
+			productName = "Guard-FinClip-iOS-Demo";
+			productReference = A81122AC280D4B6600D3D916 /* Guard-FinClip-iOS-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A81122C1280D4B6A00D3D916 /* Guard-FinClip-iOS-DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A81122D9280D4B6A00D3D916 /* Build configuration list for PBXNativeTarget "Guard-FinClip-iOS-DemoTests" */;
+			buildPhases = (
+				A81122BE280D4B6A00D3D916 /* Sources */,
+				A81122BF280D4B6A00D3D916 /* Frameworks */,
+				A81122C0280D4B6A00D3D916 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A81122C4280D4B6A00D3D916 /* PBXTargetDependency */,
+			);
+			name = "Guard-FinClip-iOS-DemoTests";
+			productName = "Guard-FinClip-iOS-DemoTests";
+			productReference = A81122C2280D4B6A00D3D916 /* Guard-FinClip-iOS-DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A81122CB280D4B6A00D3D916 /* Guard-FinClip-iOS-DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A81122DC280D4B6A00D3D916 /* Build configuration list for PBXNativeTarget "Guard-FinClip-iOS-DemoUITests" */;
+			buildPhases = (
+				A81122C8280D4B6A00D3D916 /* Sources */,
+				A81122C9280D4B6A00D3D916 /* Frameworks */,
+				A81122CA280D4B6A00D3D916 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A81122CE280D4B6A00D3D916 /* PBXTargetDependency */,
+			);
+			name = "Guard-FinClip-iOS-DemoUITests";
+			productName = "Guard-FinClip-iOS-DemoUITests";
+			productReference = A81122CC280D4B6A00D3D916 /* Guard-FinClip-iOS-DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A81122A4280D4B6600D3D916 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A81122AB280D4B6600D3D916 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+					};
+					A81122C1280D4B6A00D3D916 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A81122AB280D4B6600D3D916;
+					};
+					A81122CB280D4B6A00D3D916 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A81122AB280D4B6600D3D916;
+					};
+				};
+			};
+			buildConfigurationList = A81122A7280D4B6600D3D916 /* Build configuration list for PBXProject "Guard-FinClip-iOS-Demo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A81122A3280D4B6600D3D916;
+			packageReferences = (
+				A8F8B613281006F900FB9984 /* XCRemoteSwiftPackageReference "guard-ios" */,
+				A8DEAEF6281281A200D5F8D1 /* XCRemoteSwiftPackageReference "guard-ios-finclip" */,
+			);
+			productRefGroup = A81122AD280D4B6600D3D916 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A81122AB280D4B6600D3D916 /* Guard-FinClip-iOS-Demo */,
+				A81122C1280D4B6A00D3D916 /* Guard-FinClip-iOS-DemoTests */,
+				A81122CB280D4B6A00D3D916 /* Guard-FinClip-iOS-DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A81122AA280D4B6600D3D916 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A81122BC280D4B6A00D3D916 /* LaunchScreen.storyboard in Resources */,
+				A81122B9280D4B6A00D3D916 /* Assets.xcassets in Resources */,
+				A81122B7280D4B6600D3D916 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A81122C0280D4B6A00D3D916 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A81122CA280D4B6A00D3D916 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9311D43AA987D3514D753B6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Guard-FinClip-iOS-Demo/Pods-Guard-FinClip-iOS-Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Guard-FinClip-iOS-Demo/Pods-Guard-FinClip-iOS-Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Guard-FinClip-iOS-Demo/Pods-Guard-FinClip-iOS-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7DBCBF68DC376BC0C186AE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Guard-FinClip-iOS-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A81122A8280D4B6600D3D916 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A81122B4280D4B6600D3D916 /* ViewController.swift in Sources */,
+				A81122B0280D4B6600D3D916 /* AppDelegate.swift in Sources */,
+				A81122B2280D4B6600D3D916 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A81122BE280D4B6A00D3D916 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A81122C7280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A81122C8280D4B6A00D3D916 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A81122D1280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITests.swift in Sources */,
+				A81122D3280D4B6A00D3D916 /* Guard_FinClip_iOS_DemoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A81122C4280D4B6A00D3D916 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A81122AB280D4B6600D3D916 /* Guard-FinClip-iOS-Demo */;
+			targetProxy = A81122C3280D4B6A00D3D916 /* PBXContainerItemProxy */;
+		};
+		A81122CE280D4B6A00D3D916 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A81122AB280D4B6600D3D916 /* Guard-FinClip-iOS-Demo */;
+			targetProxy = A81122CD280D4B6A00D3D916 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A81122B5280D4B6600D3D916 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A81122B6280D4B6600D3D916 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A81122BA280D4B6A00D3D916 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A81122BB280D4B6A00D3D916 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A81122D4280D4B6A00D3D916 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A81122D5280D4B6A00D3D916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A81122D7280D4B6A00D3D916 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BA038F431B2D34C650F586C /* Pods-Guard-FinClip-iOS-Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Guard-FinClip-iOS-Demo/Guard-FinClip-iOS-Demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N7MT678JXL;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/FinApplet",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Guard-FinClip-iOS-Demo/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.authing.GuardDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Guard-FinClip-iOS-Demo/Guard-FinClip-iOS-Demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A81122D8280D4B6A00D3D916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00E9C70A9B66C1DFF0DEDE06 /* Pods-Guard-FinClip-iOS-Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Guard-FinClip-iOS-Demo/Guard-FinClip-iOS-Demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N7MT678JXL;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/FinApplet",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Guard-FinClip-iOS-Demo/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.authing.GuardDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Guard-FinClip-iOS-Demo/Guard-FinClip-iOS-Demo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A81122DA280D4B6A00D3D916 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N7MT678JXL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.authing.Guard-FinClip-iOS-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guard-FinClip-iOS-Demo.app/Guard-FinClip-iOS-Demo";
+			};
+			name = Debug;
+		};
+		A81122DB280D4B6A00D3D916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N7MT678JXL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.authing.Guard-FinClip-iOS-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guard-FinClip-iOS-Demo.app/Guard-FinClip-iOS-Demo";
+			};
+			name = Release;
+		};
+		A81122DD280D4B6A00D3D916 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N7MT678JXL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.authing.Guard-FinClip-iOS-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Guard-FinClip-iOS-Demo";
+			};
+			name = Debug;
+		};
+		A81122DE280D4B6A00D3D916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N7MT678JXL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.authing.Guard-FinClip-iOS-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Guard-FinClip-iOS-Demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A81122A7280D4B6600D3D916 /* Build configuration list for PBXProject "Guard-FinClip-iOS-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A81122D4280D4B6A00D3D916 /* Debug */,
+				A81122D5280D4B6A00D3D916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A81122D6280D4B6A00D3D916 /* Build configuration list for PBXNativeTarget "Guard-FinClip-iOS-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A81122D7280D4B6A00D3D916 /* Debug */,
+				A81122D8280D4B6A00D3D916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A81122D9280D4B6A00D3D916 /* Build configuration list for PBXNativeTarget "Guard-FinClip-iOS-DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A81122DA280D4B6A00D3D916 /* Debug */,
+				A81122DB280D4B6A00D3D916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A81122DC280D4B6A00D3D916 /* Build configuration list for PBXNativeTarget "Guard-FinClip-iOS-DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A81122DD280D4B6A00D3D916 /* Debug */,
+				A81122DE280D4B6A00D3D916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A8DEAEF6281281A200D5F8D1 /* XCRemoteSwiftPackageReference "guard-ios-finclip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Authing/guard-ios-finclip";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		A8F8B613281006F900FB9984 /* XCRemoteSwiftPackageReference "guard-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Authing/guard-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A8DEAEF7281281A200D5F8D1 /* GuardFinClipExtender */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8DEAEF6281281A200D5F8D1 /* XCRemoteSwiftPackageReference "guard-ios-finclip" */;
+			productName = GuardFinClipExtender;
+		};
+		A8F8B614281006F900FB9984 /* Guard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8F8B613281006F900FB9984 /* XCRemoteSwiftPackageReference "guard-ios" */;
+			productName = Guard;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A81122A4280D4B6600D3D916 /* Project object */;
+}

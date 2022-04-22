@@ -1,77 +1,56 @@
-# FinClip邀你来出战｜Hackthon Coding Party 一触即发
-![img](https://www.finclip.com/blog/content/images/size/w2000/2022/02/1600-900-4.png)
+## 项目名称 - GuardFinClipExtender
 
-本届 Hackathon 主题为「码」力集合，与众不「凡」，也是 FinClip 举办的首届 Hackathon ，将在 2022.3.1 正式起航。
+## 团队名称 - Authing
 
-我们用 Hacking 连接更广泛的生态，给予参赛者尽情发挥的想象空间。本届 Hackathon 我们一共包含三大主题赛道（内核组、生态组、创意组），尽可能的让你们可以找到大显身手的机会，参赛者不论是 APP 开发者、小程序开发者、产品经理或者 UI 交互设计师，都可以找到适合的领域，围绕  FinClip 探索无限可能。
+队长：iOS - 贾楠、Android - 钟家惠
 
-![img](https://www.finclip.com/blog/content/images/2022/02/image-14.png)
+队员：Authing 研发团队
 
-↑ 主题赛道详情
+## 项目介绍
 
-FinClip Hackathon 2022 **自 3 月 1 日起正式开启报名，选手可以自行组成 1 - 5 人的参赛队伍，在参赛周期内完成作品，优胜团队将获得奖金、技术和资源上的支持。** 大赛邀请了移动开发领域知名专家、社区技术大咖、知名开源作者代表等超强阵容担当评委，对项目进行全方位点评指导，扫除知识盲点，为赛事体验保驾护航。
+<div align=center><img width="300" src="https://files.authing.co/authing-console/authing-logo-new-20210924.svg"></div>
+<br/>
+<div align="center">
+  <a href="https://docs.authing.cn/v2/" target="_blank"><img src="https://img.shields.io/badge/docs-passing-success"></a>
+  <a href="https://forum.authing.cn/" target="_blank"><img src="https://img.shields.io/badge/chat-on%20forum-blue"></a>
+  <a href="javascript:;"><img src="https://img.shields.io/badge/License-MIT-brightgreen"></a>
+  <a href="javascript:;"><img src="https://img.shields.io/badge/PRs-welcome-green"></a>
+<br/>
+<br>
 
-## 赛事亮点
-#### 1、丰厚奖金
-大赛总奖金池高达 10 万，奖项设置涵盖各个方向，突破单一的评价体系<br>
+GuardFinClipExtender 为你的 FinClip 小程序提供了 Authing - Guard 组件强大的用户认证能力
+<br>
+<br>
+![image](https://github.com/Authing/guard-ios-finclip/blob/dev_README/images-folder/demo.gif?raw=true)
+<br>
+iOS 示例
+<br>
+<br>
+![image](https://github.com/Authing/guard-android-finclip/blob/master/images-folder/demo.gif?raw=true)
+<br>
+安卓示例
 
-![img](https://www.finclip.com/blog/content/images/2022/02/image-12.png)
+</div>
 
-#### 2、高质量交流
-大赛邀请移动开发领域知名专家、大厂研发总监、社区技术大咖等担当评委，对项目进行深入指导让你的实力被更多人看到
+## 项目背景
 
-#### 3、优秀作品深度曝光
-—此次黑客马拉松获奖的作品，FinClip 将在各类开发者社区、自媒体渠道、知名媒体进行全渠道曝光。
+FinClip 小程序同微信小程序相比，不以微信为载体，可以在任意原生 App 中使用并提供多端支持，这是其强大特性。
+但是同时，微信小程序开发者使用 FinClip 需要处理以下：
+1. 复杂的身份认证和用户管理。
+2. wx.login 不再可以一行代码获取授权码（code），需实现微信复杂的授权登录相关接口。
+3. 原生与小程序认证相关复杂的交互。
 
-#### 4、参赛团队专属礼包
-—只要报名参赛，即可获得由 FinClip 送出的程序员大礼包，绝对是开发者心仪的物品
+考虑到以上种种问题，微信小程序开发者会担心庞大的迁移成本。
 
-#### 5、惊喜盲盒
-吃瓜群众为你喜爱的参赛队伍投票打 Call，就能拥有抽取盲盒机会！Macbook 、人体工学椅等好礼你来拿！
+**GuardFinClipExtender** 为开发者解决了以上问题，并且使用方便简单：
+1. 不再需要考虑任何身份认证和用户管理的处理逻辑。
+2. 开发者使用 FinClip 小程序微信登录，只需调用 wx.login 即可一行代码获取到 token。
+3. 原生与小程序认证相关交互都通过 Guard 组件，小程序开发者完全不需要关心。
 
-## 参赛对象
+## SDK 集成
+iOS 参见: https://github.com/Authing/guard-ios-finclip
 
-参赛对象没有限制，零门槛，不管你是创客还是学生，只要你有技术、有想法，都可以报名参赛 SHOW 出你的 Code！
+Android 参见: https://github.com/Authing/guard-android-finclip
 
-#### 参赛保障
+小程序 Demo: https://github.com/Authing/authing-finclip
 
-- 我们为参赛者提供组队支持，尽力争取让每位报名的小伙伴都不落单；
-- 为了保障参赛体验，我们准备了丰富的参考资料和视频（也会根据大家的反馈持续迭代），同时还邀请专业导师在群内定期答疑交流；
-- 你也可以到各个社交平台捕获野生小伙伴进行组队；
-
-## 赛程安排
-
-3月1日—4月22日 组队报名
-
-3月1日—4月22日 确认参赛选题及作品提交
-
-4月25日—5月4日 作品评选及大众投票
-
-5月6日—  公布获奖参赛作品及对获奖作品进行全平台推广
-
-## 你可能还想了解……
-
-#### 1. 我想参赛，可是没有合适的组队小伙伴怎么办？
-
-A：先找找身边的同学好友组队，如果没有合适的伙伴，FinClip 官方会建立选手群让大家自由配对也会促进大家完成组队。 
-
-#### 2. 一个人也可以成队报名吗？
-
-A：当然可以，我们非常欢迎技能值满点的优秀个人参赛者。
-
-#### 3. 报名时间好长，我还\**没想好做什么项目，\**可以观望一下最后“踩点报名”吗？
-
-A：不建议“踩点报名”。可以先报名，然后从学习资料中挑选适合自己基础的模块开始学习，提前准备总没有坏处～说不定在备赛群里和大家交流讨论之后，就能获得选题启发。临近报名截止日期可能不好组队，而且前期准备不充分，到时候参赛作品容易出错哟。
-
-#### 4、代码必须开源吗？
-
-是的，我们鼓励协力合作，为社会贡献，让创意和代码更充分地发挥社会价值。如参赛作品仅能支持部分源代码开放，可以将部分不想开放的代码构建混淆之后，推送到私有的 npm 或者 npm 私有项目，然后通过 npm 包的形式引入
-
-#### 5、参赛作品提交规范？
-
-需要遵守 Apache-2.0 许可协议，同时在项目 Readme 中有针对作品的详细介绍、操作文档等。
-
-探索和突破是人类永恒的追求，期待在代码的世界与你相遇！别犹豫啦，即刻报名吧！
-
-## 其他疑惑
-如果您对此次活动存在疑问，可添加 FinClip 官方小助手微信（ID：fino220）咨询

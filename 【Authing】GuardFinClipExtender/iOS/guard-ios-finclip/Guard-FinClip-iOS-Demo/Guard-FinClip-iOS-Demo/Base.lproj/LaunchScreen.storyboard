@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2eN-wD-IJ2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="CHb-3d-lgv">
+            <objects>
+                <viewController id="2eN-wD-IJ2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="goK-VU-dai">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="lf1-as-2m7">
+                                <rect key="frame" x="9.5" y="304" width="395" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="xoE-L0-R0C"/>
+                                    <constraint firstAttribute="width" constant="395" id="xp9-E5-eQu"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-2" translatesAutoresizingMaskIntoConstraints="NO" id="fx2-nn-6UU">
+                                <rect key="frame" x="9.5" y="513" width="395" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="395" id="KXL-E9-shJ"/>
+                                    <constraint firstAttribute="height" constant="70" id="Pno-jM-FSS"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bvJ-ts-Z8p"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fx2-nn-6UU" firstAttribute="centerY" secondItem="goK-VU-dai" secondAttribute="centerY" constant="100" id="8KR-Yr-vsS"/>
+                            <constraint firstItem="fx2-nn-6UU" firstAttribute="centerX" secondItem="goK-VU-dai" secondAttribute="centerX" id="Dun-Fa-Cr6"/>
+                            <constraint firstItem="lf1-as-2m7" firstAttribute="centerY" secondItem="goK-VU-dai" secondAttribute="centerY" constant="-100" id="bcM-4v-gLW"/>
+                            <constraint firstItem="lf1-as-2m7" firstAttribute="centerX" secondItem="goK-VU-dai" secondAttribute="centerX" id="jgJ-bV-U2Q"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O5f-FT-N5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="574" height="244"/>
+        <image name="logo-2" width="269" height="95"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

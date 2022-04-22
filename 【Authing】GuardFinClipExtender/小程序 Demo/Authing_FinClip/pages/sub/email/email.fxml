@@ -1,0 +1,27 @@
+<!--email.ftml-->
+<view class="container">
+
+    <view class='content'>
+
+        <view wx:if="{{email}}">
+            <view>
+                <input class="input" disabled='true' placeholder="{{email}}"/>
+            </view>
+            <button style='background-color:#396aff;margin-top: 50px' type="primary" bindtap="unbindEmail">解绑</button>
+        </view>
+
+        <view wx:else>
+            <view>
+                <input class="input" auto-focus 
+                        bindinput="bindKeyInput" placeholder="请输入邮箱"/>
+                <button style='background-color:#396aff;margin-top: 40px' type="primary" bindtap="sendResetPasswordEmail">发送验证码</button>
+            </view>
+            <view style='margin-top: 50px'>
+                <input class="input" 
+                        bindinput="bindKeyInput2" placeholder="请输入验证码"/>
+            </view>
+            <button style='background-color:#396aff;margin-top: 50px' type="primary" bindtap="bindEmail">绑定</button>
+        </view>
+    </view> 
+
+</view>
