@@ -49,6 +49,8 @@ FinClip 小程序同微信小程序相比，不以微信为载体，可以在任
 
 ## SDK 集成
 iOS 参见: https://github.com/Authing/guard-ios-finclip
+
 Android 参见: https://github.com/Authing/guard-android-finclip
+
 小程序 Demo: https://github.com/Authing/authing-finclip
 
