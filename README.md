@@ -4,7 +4,7 @@
 
 队长：iOS - 贾楠、Android - 钟家惠
 
-队员：Authing 移动端团队
+队员：Authing 研发团队
 
 ## 项目介绍
 
