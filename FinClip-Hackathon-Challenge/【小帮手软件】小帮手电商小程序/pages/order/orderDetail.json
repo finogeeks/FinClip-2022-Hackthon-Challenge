@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "订单详情",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "contact": "/components/common/contact",
+    "copyright": "/components/common/copyright"
+  }
+}

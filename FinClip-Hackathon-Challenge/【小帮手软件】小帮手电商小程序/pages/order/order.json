@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "我的订单",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "uni-load-more": "/components/uni-load-more/uni-load-more",
+    "contact": "/components/common/contact",
+    "copyright": "/components/common/copyright"
+  }
+}

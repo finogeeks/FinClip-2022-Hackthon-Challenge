@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "支付未到账",
+  "usingComponents": {
+    "copyright": "/components/common/copyright"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "查看物流",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "time-line": "/components/time-line",
+    "copyright": "/components/common/copyright"
+  }
+}

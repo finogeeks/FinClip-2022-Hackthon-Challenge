@@ -1,0 +1,1 @@
+<view class="container"><button data-event-opts="{{[['tap',[['getUserProfile',['$event']]]]]}}" class="button" bindtap="__e"></button><slot></slot></view>

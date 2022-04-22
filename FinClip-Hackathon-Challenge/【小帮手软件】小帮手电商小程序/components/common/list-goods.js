@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["components/common/list-goods"],{"2c44":function(t,n,o){"use strict";o.r(n);var e=o("5cfe"),a=o.n(e);for(var r in e)"default"!==r&&function(t){o.d(n,t,(function(){return e[t]}))}(r);n["default"]=a.a},"4a25":function(t,n,o){"use strict";o.r(n);var e=o("a5b1"),a=o("2c44");for(var r in a)"default"!==r&&function(t){o.d(n,t,(function(){return a[t]}))}(r);o("696b");var u,l=o("f0c5"),f=Object(l["a"])(a["default"],e["b"],e["c"],!1,null,"2e1945eb",null,!1,e["a"],u);n["default"]=f.exports},"5cfe":function(t,n,o){"use strict";(function(t){Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var o={props:{goodsList:{type:Array,default:function(){return[]}},theme:{type:String,default:""}},methods:{navToDetailPage:function(n){t.navigateTo({url:"/pages/product/product?id=".concat(n)})},stopPrevent:function(){}}};n.default=o}).call(this,o("543d")["default"])},"696b":function(t,n,o){"use strict";var e=o("fb7d"),a=o.n(e);a.a},a5b1:function(t,n,o){"use strict";var e;o.d(n,"b",(function(){return a})),o.d(n,"c",(function(){return r})),o.d(n,"a",(function(){return e}));var a=function(){var t=this,n=t.$createElement,o=(t._self._c,t.__map(t.goodsList,(function(n,o){var e=t.__get_orig(n),a=n.flashsale_id>0?t._f("moneyFormat")(n.flashsale_price_low):null,r=n.flashsale_id>0&&n.coupon_par>0?t._f("moneyFormat")(n.flashsale_price_low-n.coupon_par):null,u=n.flashsale_id>0?t._f("moneyFormat")(n.price_low):null,l=n.flashsale_id>0?null:t._f("moneyFormat")(n.price_low),f=!(n.flashsale_id>0)&&n.coupon_par>0?t._f("moneyFormat")(n.price_low-n.coupon_par):null;return{$orig:e,f0:a,f1:r,f2:u,f3:l,f4:f}})));t.$mp.data=Object.assign({},{$root:{l0:o}})},r=[]},fb7d:function(t,n,o){}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'components/common/list-goods-create-component',
+    {
+        'components/common/list-goods-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("4a25"))
+        })
+    },
+    [['components/common/list-goods-create-component']]
+]);
