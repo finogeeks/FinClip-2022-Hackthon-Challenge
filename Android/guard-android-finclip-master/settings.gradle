@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        jcenter()
+        mavenCentral()
+    }
+
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven {
+            url "https://gradle.finogeeks.club/repository/applet/"
+            credentials {
+                username "applet"
+                password "123321"
+            }
+        }
+    }
+
+}
+rootProject.name = "guard-android-finclip"
+include ':app'
+include ':guard-android-finclip-sdk'
