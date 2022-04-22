@@ -1,0 +1,54 @@
+.container{
+  position: relative;
+}
+.calcBox{
+  width: 100%;
+  height: 210rpx;
+  text-align: right;
+  font-size: 70rpx;
+  line-height: 210rpx;
+  background: #ffb307;
+  color: #333;
+  word-break: break-all;
+}
+.zoomOut{
+  line-height: 100rpx !important;
+  font-size: 54rpx !important;
+}
+.expand{
+  line-height: 210rpx !important;
+  font-size: 70rpx !important;
+}
+.buttons{
+  width: 100%;
+  bottom: 0
+}
+.btnGroup{
+  height: 20%;
+}
+.item{
+  box-sizing: border-box;
+  border: 0.5px solid #f0f0f0;
+  width: 25%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  line-height: 200rpx;
+  font-size: 64rpx;
+  color: #333 !important;
+}
+.symbolBtn{
+  background: #fffcf4;
+  color: #ffb307 !important;
+  font-size: 72rpx;
+}
+.height{
+  position: absolute;
+  bottom: 0rpx;
+  right: 0;
+  background:#ffb307;
+  color:#fff !important;
+}
+.width{
+  width: 50%;
+}
