@@ -21,17 +21,25 @@
 ## 详细说明
 
 本项目为小帮手电商小程序SaaS普及版的演示项目，已在微信小程序上线，微信小程序名称为：乐趣多玩具。
+
 ![img](https://static.xbsrj.cn/finclip/wxqrcode.jpg)
+
 兼容性说明：
-因FinClip需要由APP实现接入微信登录，故在小程序端用户身份采用了生成随机用户码，自动注册登录。当清除缓存时，会生成另一个用户身份。
-因FinClip需要由APP实现接入微信支付，故在小程序端屏蔽了支付流程。
+
+因FinClip需要由APP实现接入微信登录，故在小程序端用户身份采用了生成随机用户码，自动注册登录。当清除缓存时，会生成另一个用户身份；
+
+因FinClip需要由APP实现接入微信支付，故在小程序端屏蔽了支付流程；
+
 因FinClip有部分API暂不支持，故在小程序端屏蔽了相关操作。
 
 
 ## 应用场景
 
 ![img](https://static.xbsrj.cn/finclip/product01.jpg)
+
 ![img](https://static.xbsrj.cn/finclip/product02.jpg)
+
 ![img](https://static.xbsrj.cn/finclip/product03.jpg)
+
 ![img](https://static.xbsrj.cn/finclip/product04.jpg)
 
