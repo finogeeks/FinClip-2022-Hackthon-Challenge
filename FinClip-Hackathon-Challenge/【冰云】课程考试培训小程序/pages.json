@@ -1,0 +1,160 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/mine/us",
+			"style": {
+				"navigationBarTitleText": "关于我们"
+			}
+		},
+		{
+			"path": "pages/tool/video",
+			"style": {
+				"navigationBarTitleText": "视频播放"
+			}
+		},
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/exam/result",
+			"style": {
+				"navigationBarTitleText": "考试结果"
+			}
+		},
+		{
+			"path": "pages/exam/exam",
+			"style": {
+				"navigationBarTitleText": "在线考试"
+			}
+		},
+		{
+			"path": "pages/exam/recentList",
+			"style": {
+				"navigationBarTitleText": "最近考试"
+			}
+		},
+		{
+			"path": "pages/exam/info",
+			"style": {
+				"navigationBarTitleText": "考试详情"
+			}
+		},
+		{
+			"path": "pages/course/info",
+			"style": {
+				"navigationBarTitleText": "课程详情"
+			}
+		},
+		{
+			"path": "pages/course/courseware",
+			"style": {
+				"navigationBarTitleText": "课件详情"
+			}
+		},
+		{
+			"path": "pages/score/list",
+			"style": {
+				"navigationBarTitleText": "学分明细"
+			}
+		},
+		{
+			"path": "pages/certificate/list",
+			"style": {
+				"navigationBarTitleText": "我的证书"
+			}
+		},
+
+		{
+			"path": "pages/course/learn",
+			"style": {
+				"navigationBarTitleText": "最近学习"
+			}
+		},
+		{
+			"path": "pages/knowledge/list",
+			"style": {
+				"navigationBarTitleText": "知识百科"
+			}
+		},
+		{
+			"path": "pages/knowledge/info",
+			"style": {
+				"navigationBarTitleText": "知识百科详情"
+			}
+		},
+		{
+			"path": "pages/exam/list",
+			"style": {
+				"navigationBarTitleText": "在线考试"
+			}
+		},
+		{
+			"path": "pages/course/list",
+			"style": {
+				"navigationBarTitleText": "在线学习"
+			}
+		},
+		{
+			"path": "pages/ranking/list",
+			"style": {
+				"navigationBarTitleText": "排行榜"
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+            "path" : "pages/course_list/course_list",
+            "style" : {
+                "enablePullDownRefresh": true,
+                "navigationBarTitleText": "uni-app"
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	    "color": "#7A7E83",
+	    "selectedColor": "#000000",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/image/tabBar/home.png",
+				"selectedIconPath": "static/image/tabBar/home-hover.png",
+				"text": "首页"
+			}, 
+			// {
+			// 	"pagePath": "pages/ranking/list",
+			// 	"iconPath": "static/image/tabBar/ranking.png",
+			// 	"selectedIconPath": "static/image/tabBar/ranking-hover.png",
+			// 	"text": "排行榜"
+			// }, 
+			{
+				"pagePath": "pages/mine/index",
+				"iconPath": "static/image/tabBar/my.png",
+				"selectedIconPath": "static/image/tabBar/my-active.png",
+				"text": "我的"
+			}
+		]
+	}
+}

@@ -1,0 +1,11 @@
+
+.demo-uni-col{
+	text-align: center;
+	padding: 10px;
+	color: #333333;
+}
+.light{
+	color: #1261d0;
+	border-bottom: 2px solid #1261d0;
+}
+

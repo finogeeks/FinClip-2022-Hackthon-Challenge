@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "在线考试",
+  "usingComponents": {
+    "uni-row": "/uni_modules/uni-row/components/uni-row/uni-row",
+    "uni-col": "/uni_modules/uni-row/components/uni-col/uni-col",
+    "uni-popup": "/uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "uni-popup-dialog": "/uni_modules/uni-popup/components/uni-popup-dialog/uni-popup-dialog",
+    "remaining-time": "/components/remaining-time"
+  }
+}

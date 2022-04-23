@@ -1,0 +1,1 @@
+<view><view class="content"><image class="head_portrait" src="https://img1.baidu.com/it/u=2716398045,2043787292&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=800" mode></image><view class="name">{{name}}</view></view></view>

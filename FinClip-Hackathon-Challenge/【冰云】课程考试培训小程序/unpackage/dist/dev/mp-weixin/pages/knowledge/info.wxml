@@ -1,0 +1,1 @@
+<view><view class="detail-wrap"><view class="title _h3">{{info.title}}</view><rich-text class="content-intro" nodes="{{info.intro}}"></rich-text></view></view>

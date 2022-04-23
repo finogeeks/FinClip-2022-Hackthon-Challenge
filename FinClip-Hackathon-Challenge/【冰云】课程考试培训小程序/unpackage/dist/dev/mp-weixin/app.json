@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/us",
+    "pages/tool/video",
+    "pages/login/index",
+    "pages/exam/result",
+    "pages/exam/exam",
+    "pages/exam/recentList",
+    "pages/exam/info",
+    "pages/course/info",
+    "pages/course/courseware",
+    "pages/score/list",
+    "pages/certificate/list",
+    "pages/course/learn",
+    "pages/knowledge/list",
+    "pages/knowledge/info",
+    "pages/exam/list",
+    "pages/course/list",
+    "pages/ranking/list",
+    "pages/mine/index",
+    "pages/course_list/course_list"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/image/tabBar/home.png",
+        "selectedIconPath": "static/image/tabBar/home-hover.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "iconPath": "static/image/tabBar/my.png",
+        "selectedIconPath": "static/image/tabBar/my-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

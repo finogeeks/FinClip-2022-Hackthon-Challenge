@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "o-grid": "/uni_modules/o-grid/components/o-grid/o-grid",
+    "o-grid-item": "/uni_modules/o-grid/components/o-grid-item/o-grid-item",
+    "uni-list": "/uni_modules/uni-list/components/uni-list/uni-list",
+    "uni-list-item": "/uni_modules/uni-list/components/uni-list-item/uni-list-item",
+    "carousel": "/components/vear-carousel/vear-carousel",
+    "gljy-line-menu": "/components/gljy-line-menu/gljy-line-menu"
+  }
+}

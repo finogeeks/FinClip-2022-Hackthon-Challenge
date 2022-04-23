@@ -1,0 +1,51 @@
+
+.content{
+	background-color: gainsboro;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 80rpx 0;
+	background: linear-gradient(-125deg, #57bdbf, #2f9de2);
+}
+.name{
+	padding-top: 10rpx;
+	font-weight: bolder;
+	color: white;
+}
+.head_portrait{
+	width: 150rpx;
+	height: 150rpx;
+	border-radius: 150rpx;
+}
+.tap-wrap{
+	background-color: #a3cce6b3;
+	display:list-item;
+	flex-direction:inherit;
+	align-items: center;
+	text-align: center;
+	background: linear-gradient(-1115deg, #57bdbf, #2f9de2);
+}
+.tap-block{
+	height: 100%;
+	display: inline-block;
+	background-color: white;
+	border-radius: 20rpx;
+	padding: 0 25rpx;
+	top: -20rpx;
+	position: relative;
+}
+.tap{
+	display: inline-block;
+	padding: 18rpx;
+}
+.tap-top{
+	font-size:26rpx;
+	color: gray;
+}
+.tap-bottpm{
+	font-size: 34rpx;
+	font-weight: bolder;
+	color: #ff8100;
+}
+

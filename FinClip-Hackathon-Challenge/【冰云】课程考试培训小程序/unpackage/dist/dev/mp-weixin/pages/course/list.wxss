@@ -1,0 +1,18 @@
+
+.tap{
+	padding: 20rpx;
+	border-bottom: 2px solid #98cdff;
+	text-align: center;
+}
+.top-hover{
+	background-color: #007AFF;
+	color: #F7F7F7;
+}
+#tap-list{
+	padding: 20rpx;
+	display: flex;
+}
+.course-list{
+	width: 100%;
+}
+
