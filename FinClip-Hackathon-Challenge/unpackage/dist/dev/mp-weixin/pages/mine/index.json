@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的",
+  "usingComponents": {
+    "qz-head-portrait-card": "/uni_modules/qz-head-portrait-card/components/qz-head-portrait-card/qz-head-portrait-card",
+    "carousel": "/components/vear-carousel/vear-carousel",
+    "gljy-line-menu": "/components/gljy-line-menu/gljy-line-menu"
+  }
+}

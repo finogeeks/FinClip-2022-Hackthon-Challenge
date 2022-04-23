@@ -1,0 +1,127 @@
+
+.img-a {
+	width: 100%;
+}
+.img-b {
+	width: 100%;
+	height: 45px;
+	bottom: 0;
+	position: absolute;
+}
+.login-bg {
+	height: 100vh;
+	background: linear-gradient(to bottom, #b2cdff, #2dccdc);
+}
+.t-login {
+	width: 580rpx;
+	padding: 55rpx;
+	margin: 0 auto;
+	font-size: 28rpx;
+	background-color: #ffffff;
+	border-radius: 20rpx;
+	position: relative;
+	margin-top: -300rpx;
+	box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.15);
+	z-index: 9;
+}
+.t-login button {
+	font-size: 28rpx;
+	color: #fff;
+	height: 90rpx;
+	line-height: 90rpx;
+	border-radius: 50rpx;
+}
+.t-login .b-l{
+	background: linear-gradient(to right, #83cbff, #1cb8e6);
+}
+.t-login .b-r{    
+	background: linear-gradient(to right, #83ffee, #1ce6d3)
+}
+.t-login input {
+	padding: 0 20rpx 0 120rpx;
+	height: 90rpx;
+	line-height: 90rpx;
+	margin-bottom: 50rpx;
+	background: #f6f6f6;
+	border: 1px solid #f6f6f6;
+	font-size: 28rpx;
+	border-radius: 50rpx;
+}
+.t-login .t-a {
+	position: relative;
+}
+.t-login .t-a image {
+	width: 40rpx;
+	height: 40rpx;
+	position: absolute;
+	left: 40rpx;
+	top: 28rpx;
+	padding-right: 20rpx;
+}
+.t-login .t-b {
+	text-align: left;
+	font-size: 46rpx;
+	color: #91d3e6;
+	font-weight: bold;
+	margin: 0 0 50rpx 20rpx;
+}
+.t-login .t-r {
+	text-align: left;
+	font-size: 46rpx;
+	color: #91e6bb;
+	font-weight: bold;
+	margin: 0 0 50rpx 20rpx;
+}
+.t-login .t-d {
+	text-align: center;
+	color: #999;
+	margin: 80rpx 0;
+}
+.t-login .t-c {
+	text-align: right;
+	color: #c0c0c0;
+	margin: -20rpx 30rpx 40rpx 0;
+}
+.t-login .t-f {
+	text-align: center;
+	margin: 200rpx 0 0 0;
+	color: #666;
+}
+.t-login .t-f text {
+	margin-left: 20rpx;
+	color: #aaaaaa;
+	font-size: 27rpx;
+}
+.t-login .uni-input-placeholder {
+	color: #aeaeae;
+}
+.cl {
+	zoom: 1;
+}
+.cl:after {
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0;
+	content: '\20';
+}
+.cardBox {
+	flex-direction: row;
+	align-items: center;
+	padding: 5px;
+	background: #ffffff;
+	opacity: 0.9;
+	border-radius: 0 0 20rpx 20rpx;
+	height: 70rpx;
+	width: 600rpx;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	line-height: 70rpx;
+	color: #aaa;
+	font-size: 28rpx;
+}
+.cardBox .txt {
+	color: #fe519f;
+}
+

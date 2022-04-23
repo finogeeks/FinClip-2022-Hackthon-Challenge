@@ -1,0 +1,1 @@
+<view class="content"><qz-head-portrait-card class="head" vue-id="2efac497-1" name="{{userName}}" bind:__l="__l"></qz-head-portrait-card><gljy-line-menu class="menu" vue-id="2efac497-2" menu="{{menu}}" data-event-opts="{{[['^menuOnClick',[['menuOnClick']]]]}}" bind:menuOnClick="__e" bind:__l="__l"></gljy-line-menu></view>

@@ -1,0 +1,9 @@
+{
+    "id": "gljy-line-menu",
+    "name": "列表行菜单",
+    "version": "1.0.0",
+    "description": "比较简单的菜单行,可以自己定义左侧图标和右侧图标",
+    "keywords": [
+        "点击菜单"
+    ]
+}
