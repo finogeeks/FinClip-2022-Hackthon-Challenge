@@ -1,0 +1,21 @@
+<cu-custom bgColor="bg-gradual-green" isCustom="{true}">
+  <view slot="content">最近播放</view>
+</cu-custom>
+
+<view class="cu-timeline" wx:for="{{list}}" wx:key="index" >
+  <view class="cu-time">{{item.date}}</view>
+  <!-- <view wx:for="{{item.articles}}" wx:key="index" > -->
+  <!-- todo 收藏过的区分下 改下数据接口 -->
+    <view  class="cu-item text-grey" wx:for="{{item.articles}}" wx:key="index" >
+      <view class="content bg-grey shadow-blur" bindtap="goToPlay" data-id="{{item.id}}">
+        <text>{{item.publishTime}}</text> {{item.title}}
+      </view>
+    </view>
+  <!-- </view> -->
+
+  <!-- <view class="cu-item text-red  cuIcon-evaluate_fill">
+    <view class="content bg-red shadow-blur">
+      <text>22:22</text> 【这是第一次，我家的铲屎官走了这么久。
+    </view>
+  </view> -->
+</view>

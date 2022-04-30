@@ -1,15 +1,22 @@
 {
   "pages": [
+
     "pages/index/index",
     "pages/play/play",
+    "pages/search/index",
+    "pages/me/index",
+    "pages/me/collect",
+    "pages/me/history",
+    "pages/feed/index",
+    "pages/discovery/index",
     "pages/web/web"
   ],
   "requiredBackgroundModes": ["audio"],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "听文",
-    "navigationBarTextStyle": "black"
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+      "cu-custom":"/ditiui/components/cu-custom"
   },
   "sitemapLocation": "sitemap.json"
 }

@@ -1,5 +1,7 @@
 /**app.wxss**/
-@import "styles/weui.wxss";
+@import "./styles/weui.wxss";
+@import "./ditiui/main.wxss";
+@import "./ditiui/icon.wxss";
 
 page {
   height: 100%;

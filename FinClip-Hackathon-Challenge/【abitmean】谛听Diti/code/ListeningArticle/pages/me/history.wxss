@@ -1,0 +1,8 @@
+/* pages/me/history.wxss */
+.cu-timeline {
+  background-color: var(--weui-BG-0);
+}
+
+.cu-timeline>.cu-item::before {
+  background-color: var(--weui-BG-0);
+}

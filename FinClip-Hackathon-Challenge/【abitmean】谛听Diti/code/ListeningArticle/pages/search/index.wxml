@@ -1,0 +1,27 @@
+<cu-custom bgColor="bg-gradual-green" isBack="{{false}}">
+      <view slot="content">谛听Diti</view>
+</cu-custom>
+
+<!-- logo -->
+<view class="diti-logo" >
+<image src="../../images/diti-logo.png"></image>
+</view>
+
+<!-- 搜索框 -->
+<view class="weui-search-bar weui-search-bar_focusing {{showMore? 'la-search-bar-more': 'la-search-bar'}}">
+    <form class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+            <i class="{{parseOK?'weui-icon-wechat-mp':'weui-icon-search'}}"></i>
+            <input type="text" class="weui-search-bar__input" focus="{{inputFocus}}" value="{{inputValue}}"
+                bindinput="searchInput" maxlength="49" cursor="{{inputCursor}}"/>
+            
+            <label class="search-button" bindtap="handleSearch">
+                <span class="search-button-text">谛听</span>
+            </label>
+        </view>
+    </form>
+</view>
+
+<view style="margin-top:10px" bindtap="handleMore" class="{{showMore? 'la-more-hide': ''}}">
+    <i class="weui-icon-arrow la-more"></i>
+</view>

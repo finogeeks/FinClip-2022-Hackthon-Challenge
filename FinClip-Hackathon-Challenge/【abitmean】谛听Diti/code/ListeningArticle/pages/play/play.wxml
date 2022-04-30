@@ -1,17 +1,16 @@
 <view class="page">
+<!-- todo 做单独的组件内嵌？ -->
   <view class="header">
-
+    <cu-custom bgColor="bg-gradual-green" isCustom="{true}">
+      <view slot="content">谛听Diti</view>
+    </cu-custom>
   </view>
   <view class="body">
-    <view bindtap="clickBack" class="weapp-title">
-      <!-- <i class="weui-icon-forward"></i> -->
-      <text class="weapp-title-text">听文</text>
-    </view>
     <view class="la-brief">
       <text bindtap="clickLink" class="la-name">{{playData.title}}</text>
     </view>
     <view class="la-cover-show">
-      <image class="coverImg {{isPlay?'play':''}}" mode="aspectFill" src="{{playData.cover}}"></image>
+      <image class="coverImg {{isPlay?'play':''}}" mode="aspectFit" src="{{playData.cover}}"></image>
     </view>
   </view>
 
@@ -25,7 +24,30 @@
         <button class="share-button" hoverClass="hover-class" openType="share"></button>
       </view>
     </view>
-    
+
+    <!-- todo 设置页面 -->
+    <view class="cu-modal {{showSetting?'show':''}}" bindtap="hideModal">
+    <view class="cu-dialog" catchtap>
+
+      <view class="cu-form-group">
+        <view class="title">语言选择：</view>
+        <picker bindchange="voiceLanguageChange" value="{{index}}" range="{{voiceLanguages}}" range-key="name">
+          <view class="picker">
+            {{voiceLanguages[index].name}}
+          </view>
+        </picker>
+      </view>
+      <view class="cu-form-group">
+        <view class="title">音色选择：</view>
+        <picker bindchange="voiceNameChange" value="{{index}}" range="{{voiceNames}}" range-key="name">
+          <view class="picker">
+            {{voiceNames[index].name}}
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+
     <view class="slider-view">
       <text class="audio-current-time">{{currentTime}}</text>
       <slider activeColor="#07C160" backgroundColor="#FFFFFF" bindchange="onSliderChange"

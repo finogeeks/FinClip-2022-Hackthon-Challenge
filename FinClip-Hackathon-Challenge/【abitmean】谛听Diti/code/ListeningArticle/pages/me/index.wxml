@@ -1,0 +1,53 @@
+<!-- todo 待完善 增加vip等功能 -->
+<cu-custom bgColor="bg-gradual-green" isBack="{{false}}">
+      <view slot="content">谛听Diti</view>
+</cu-custom>
+<scroll-view scroll-y class="scrollPage">
+	<view class="UCenter-bg">
+		<!-- <open-data type="userAvatarUrl" style="width:64px;height:64px;"></open-data>
+		<open-data wx:if="{{!user||!user.nickname}}" type="userNickName" class="text-xl text-black"></open-data> -->
+    <image wx:if="{{user.avatar}}" src="{{user.avatar}}" style="width:64px;height:64px;"></image>
+		<view wx:if="{{user.nickname}}" class="text-xl  text-black">{{user.nickname}}</view>
+
+		<view class="margin-top-sm text-black">
+			<button wx:if="{{!user||!user.nickname}}" class="cu-btn round line-black text-black" bindtap="userComplete">完善资料</button>
+			<!-- <button wx:else="{{user.type}}" class="cu-btn round line-black text-black">会员等级：{{user.type}}</button> -->
+		</view>
+
+		<image src="/images/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+	</view>
+
+	<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+		<!-- <view class="cu-item arrow" wx:if="{{user}}">
+			<view class="content" data-user-no="{{user.no}}" bindtap="goToDetail">
+				<text class="cuIcon-myfill text-blue"></text>
+				<text class="text-grey">会员详情</text>
+			</view>
+		</view> -->
+    <view class="cu-item arrow">
+			<view class="content" bindtap="goToHistory">
+				<text class="cuIcon-calendar text-blue"></text>
+				<text class="text-grey">最近播放</text>
+			</view>
+		</view>
+    <view class="cu-item arrow">
+			<view class="content" bindtap="goToCollect">
+				<text class="cuIcon-selection text-green"></text>
+				<text class="text-grey">收藏列表</text>
+			</view>
+		</view>
+		<!-- <view class="cu-item arrow">
+			<view class="content" bindtap="showQrcode">
+				<text class="cuIcon-appreciatefill text-red"></text>
+				<text class="text-grey">赞赏支持</text>
+			</view>
+		</view> -->
+		<view class="cu-item arrow">
+			<button class="cu-btn content" open-type="feedback">
+				<text class="cuIcon-writefill text-cyan"></text>
+				<text class="text-grey">意见反馈</text>
+			</button>
+		</view>
+	</view>
+	<view class="cu-tabbar-height"></view>
+</scroll-view>

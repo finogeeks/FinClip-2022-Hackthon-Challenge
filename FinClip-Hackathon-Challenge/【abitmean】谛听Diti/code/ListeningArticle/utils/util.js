@@ -63,10 +63,37 @@ const compareVersion = (r, e) => {
   return 0;
 }
 
+const getNowDate = () =>{
+  const date = new Date().getTime()		
+  var d = new Date(date);
+  var year = d.getFullYear();
+  var month = d.getMonth() + 1;
+  String(month).length < 2 ? (month = '0' + month):month;
+  var day = d.getDate();
+  String(day).length < 2 ? (day = '0' + day):day;
+  var datetime = year + "-" + month + "-" + day;
+  return datetime;
+}
+
+const uuid = () =>{
+    var s = [];
+    var hexDigits = "0123456789abcdef";
+    for (var i = 0; i < 36; i++) {
+        s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1);
+    }
+    s[14] = "4";  // bits 12-15 of the time_hi_and_version field to 0010
+    s[19] = hexDigits.substr((s[19] & 0x3) | 0x8, 1);  // bits 6-7 of the clock_seq_hi_and_reserved to 01
+    s[8] = s[13] = s[18] = s[23] = "-";
+    var uuid = s.join("");
+    return uuid;
+}
+
 module.exports ={
   formatTime: formatTime,
   formatSecondTime: formatSecondTime,
   formatSecondTime: formatSecondTime,
   isEmpty: isEmpty,
   compareVersion: compareVersion,
+  getNowDate: getNowDate,
+  uuid: uuid
 }

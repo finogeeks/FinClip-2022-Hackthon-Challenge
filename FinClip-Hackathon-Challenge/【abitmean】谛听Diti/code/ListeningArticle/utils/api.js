@@ -12,8 +12,8 @@ const request = (url, data) => {
       data: data,
       header: {
           Accept: "application/json",
-          "Content-Type": "application/json"
-          // Authorization: wx.getStorageSync("la_session")
+          "Content-Type": "application/json",
+          token: wx.getStorageSync("token")
       },
       success(res) {
         if(res.statusCode != 200){
@@ -36,7 +36,6 @@ const request = (url, data) => {
   });
 }
 
-
 module.exports ={
   listenText:(data) =>{
     return request('/api/listenText',data)
@@ -53,10 +52,28 @@ module.exports ={
   login:(data)=>{
     return request('/api/user/login',data)
   },
-  collect:(data)=>{
+  userGet:(data)=>{
+    return request('/api/user/get',data)
+  },
+  userUpdate:(data)=>{
+    return request('/api/user/update',data)
+  },
+  recent:(data)=>{
+    return request('/api/user/recent',data)
+  },
+  collectGet:(data)=>{
+    return request('/api/like/get',data)
+  },
+  collectList:(data)=>{
     return request('/api/like/list',data)
   },
-  login:(data)=>{
-    return request('/api/user/login',data)
+  collect:(data)=>{
+    return request('/api/like/collect',data)
+  },
+  uncollect:(data)=>{
+    return request('/api/like/uncollect',data)
+  },
+  discovery:(data)=>{
+    return request('/api/discovery/list',data)
   }
 }
