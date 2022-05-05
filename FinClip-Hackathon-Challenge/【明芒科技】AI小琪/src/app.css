@@ -1,0 +1,52 @@
+page {
+  height: 100%;
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.width-full {
+  width: 100%;
+}
+.font-0 {
+  font-size: 0;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+.mt-4 {
+  margin-top: 4px;
+}
+
+.z-index-0 {
+  z-index: 0;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-2 {
+  z-index: 2;
+}
+
+.z-index-10 {
+  z-index: 10;
+}
