@@ -1,0 +1,22 @@
+<template name="finclip-dialog">
+  <view class="finclip-dialog {{ finclipDialog.show ? 'finclip-dialog--show' : '' }}">
+    <view class="finclip-dialog--mask"></view>
+    <view class="finclip-dialog--container">
+      <view
+        wx:if="{{ finclipDialog.title }}"
+        class="finclip-dialog__header">{{ finclipDialog.title }}</view>
+      <view
+        class="finclip-dialog__content {{ finclipDialog.title ? 'finclip-dialog__content--title' : '' }}">{{ finclipDialog.content }}</view>
+      <view
+        class="finclip-dialog__footer {{ finclipDialog.buttonsShowVertical ? 'finclip-dialog__footer--vertical' : 'finclip-dialog__footer--horizon' }}">
+        <block wx:for="{{ finclipDialog.buttons }}" wx:key="{{ item.text }}-{{ item.type }}">
+          <button
+            class="finclip-dialog__button finclip-btn"
+            data-type="{{ item.type }}"
+            catchtap="_handleFinclipDialogButtonClick"
+            style="color: {{ item.color || '#333' }}">{{ item.text }}</button>
+        </block>
+      </view>
+    </view>
+  </view>
+</template>

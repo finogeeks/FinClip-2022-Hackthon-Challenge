@@ -1,0 +1,58 @@
+@import '../cell/index';
+
+.finclip-field {
+  padding: 7px 15px;
+  color: #333;
+}
+
+.finclip-field--wrapped {
+  margin: 0 15px;
+  background-color: #fff;
+
+  &::after {
+    left: 0;
+    border-width: 1px;
+    border-radius: 4px;
+  }
+}
+
+/* 圆角输入框，强制展示边框 */
+.finclip-field.finclip-field--wrapped::after {
+  display: block;
+}
+
+.finclip-field--wrapped + .finclip-field--wrapped {
+  margin-top: 10px;
+}
+
+.finclip-field--error {
+  color: #f40;
+}
+
+/* 圆角输入框出现错误时，将边框也置红 */
+.finclip-field--wrapped.finclip-field--error::after {
+  border-color: #f40;
+}
+
+.finclip-field__title {
+  color: #333;
+  min-width: 65px;
+  padding-right: 10px;
+}
+
+.finclip-field__input {
+  flex: 1;
+  line-height: 1.6;
+  padding: 4px 0;
+  min-height: 22px;
+  height: auto;
+  font-size: 14px;
+}
+
+.finclip-field__placeholder {
+  font-size: 14px;
+}
+
+.finclip-field__input--right {
+  text-align: right;
+}

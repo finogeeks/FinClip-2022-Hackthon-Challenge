@@ -1,0 +1,35 @@
+{
+  "name": "finclip-ui",
+  "version": "1.0.0",
+  "description": "finclip小程序的独有插件库",
+  "main": "app.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "components": "node scripts/build-components.js --color",
+    "dev": "node scripts/build-dev.js --color",
+    "build": "node scripts/build-pro.js"
+  },
+  "author": "ankang",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "fs-extra": "^4.0.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.8",
+    "node-watch": "^0.5.5",
+    "postcss-calc": "^6.0.1",
+    "postcss-easy-import": "^3.0.0",
+    "precss": "^2.0.0",
+    "shelljs": "^0.7.8"
+  },
+  "dependencies": {
+    "gh-pages": "^1.1.0"
+  }
+}

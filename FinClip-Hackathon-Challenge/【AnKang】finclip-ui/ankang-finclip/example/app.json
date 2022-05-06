@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/dashboard/index",
+    "pages/actionsheet/index",
+    "pages/btn/index",
+    "pages/badge/index",
+    "pages/dialog/index",
+    "pages/field/index",
+    "pages/loadmore/index",
+    "pages/stepper/index",
+    "pages/steps/index",
+    "pages/switch/index",
+    "pages/tab/index",
+    "pages/toast/index",
+    "pages/select/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FAFAFA",
+    "navigationBarTitleText": "finclip-ui",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#f9f9f9"
+  },
+  "debug": true
+}

@@ -1,0 +1,16 @@
+<import src="/dist/switch/index.wxml" />
+
+<view class="container">
+
+  <view class="finclip-panel-title">开关</view>
+  <view class="finclip-panel">
+    <template is="finclip-switch" data="{{ ...sync, componentId: 'sync' }}" />
+  </view>
+
+  <view class="finclip-panel-title">开关不可用</view>
+  <view class="finclip-panel">
+    <template is="finclip-switch" data="{{ checked: false, disabled: true, componentId: 'switch3' }}" />
+    <template is="finclip-switch" data="{{ checked: true, disabled: true, componentId: 'switch4' }}" />
+  </view>
+
+</view>

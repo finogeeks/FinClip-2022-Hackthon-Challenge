@@ -1,0 +1,33 @@
+<template name="finclip-field">
+  <view class="finclip-cell finclip-field {{ error ? 'finclip-field--error' : '' }} {{ mode === 'wrapped' ? 'finclip-field--wrapped' : '' }}">
+    <view
+      wx:if="{{ title }}"
+      class="finclip-cell__hd finclip-field__title">{{ title }}</view>
+    <textarea
+      wx:if="{{ type === 'textarea' }}"
+      auto-height
+      name="{{ name || componentId || '' }}"
+      value="{{ value }}"
+      focus="{{ focus }}"
+      placeholder="{{ placeholder }}"
+      class="finclip-field__input finclip-cell__bd {{ right ? 'finclip-field__input--right' : '' }}"
+      placeholder-class="finclip-field__placeholder"
+      bindinput="_handleFinclipFieldChange"
+      bindfocus="_handleFinclipFieldFocus"
+      bindblur="_handleFinclipFieldBlur"
+      data-component-id="{{ componentId || '' }}"></textarea>
+    <input
+      wx:else
+      type="{{ inputType || 'text' }}"
+      name="{{ name || componentId || '' }}"
+      value="{{ value }}"
+      focus="{{ focus }}"
+      placeholder="{{ placeholder }}"
+      class="finclip-field__input finclip-cell__bd {{ right ? 'finclip-field__input--right' : '' }}"
+      placeholder-class="finclip-field__placeholder"
+      bindinput="_handleFinclipFieldChange"
+      bindfocus="_handleFinclipFieldFocus"
+      bindblur="_handleFinclipFieldBlur"
+      data-component-id="{{ componentId || '' }}"/>
+  </view>
+</template>

@@ -1,0 +1,15 @@
+<template name="finclip-switch">
+  <view
+    class="finclip-switch finclip-switch--{{ checked ? 'on' : 'off' }} {{ disabled ? 'finclip-swtich--disabled' : '' }}"
+    data-checked="{{ checked }}"
+    data-loading="{{ loading }}"
+    data-disabled="{{ disabled }}"
+    data-component-id="{{ componentId }}"
+    bindtap="_handleFinclipSwitchChange"
+  >
+    <view class="finclip-switch__circle">
+      <view hidden="{{ !loading }}" class="finclip-switch__loading"></view>
+    </view>
+    <view class="finclip-switch__bg"></view>
+  </view>
+</template>

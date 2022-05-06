@@ -1,0 +1,77 @@
+@import "../common/_mixins";
+
+.finclip-cell {
+  position: relative;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.finclip-cell::after {
+  @mixin hairline;
+  border-bottom-width: 1px;
+  left: 15px;
+  right: 0;
+}
+
+.finclip-cell__icon {
+  margin-right: 5px;
+}
+.finclip-cell__bd {
+  flex: 1;
+}
+.finclip-cell__text {
+  line-height: 24px;
+  font-size: 14px;
+}
+.finclip-cell__desc {
+  line-height: 1.2;
+  font-size: 12px;
+  color: #666;
+}
+.finclip-cell__ft {
+  position: relative;
+  text-align: right;
+  color: #666;
+}
+.finclip-cell__no-pading{
+  padding: 0;
+}
+.finclip-cell__no-pading .finclip-cell__bd_padding {
+  padding: 12px 0 12px 15px;
+}
+.finclip-cell__no-pading .finclip-cell__bd_padding .finclip-form__input{
+  height: 26px;
+}
+.finclip-cell__no-pading .finclip-cell__ft_padding {
+  padding: 12px 15px 12px 0;
+}
+
+.finclip-cell--last-child::after,
+.finclip-cell:last-child::after {
+  display: none;
+}
+
+.finclip-cell--access .finclip-cell__ft {
+  padding-right: 13px;
+}
+
+.finclip-cell--access .finclip-cell__ft::after {
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  content: " ";
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-width: 2px 2px 0 0;
+  border-color: #c8c8c8;
+  border-style: solid;
+  transform: translateY(-50%) matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}
+.finclip-cell--switch {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}

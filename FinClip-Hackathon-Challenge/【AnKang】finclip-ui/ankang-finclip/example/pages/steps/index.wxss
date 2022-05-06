@@ -1,0 +1,6 @@
+.my-class {
+  padding: 10px;
+}
+.my-class .finclip-steps__step--done {
+  color: #f44;
+}

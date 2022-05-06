@@ -1,0 +1,5 @@
+<view>
+  <button class="finclip-btn {{type && 'finclip-btn--' + type}} {{size && 'finclip-btn--' + size}} {{loading && 'finclip-btn--loading'}} {{plain && 'finclip-btn--plain'}} {{disabled && 'finclip-btn--disabled'}}">
+    <slot></slot>
+  </button>
+</view>

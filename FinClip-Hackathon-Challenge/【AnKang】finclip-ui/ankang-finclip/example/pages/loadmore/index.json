@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Loadmore 加载",
+  "usingComponents": {
+    "finclip-loadmore":"/dist/loadmore/index"
+  }
+}

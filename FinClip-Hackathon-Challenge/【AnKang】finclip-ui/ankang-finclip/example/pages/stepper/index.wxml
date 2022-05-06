@@ -1,0 +1,16 @@
+<view class="container">
+
+  <view style="padding: 40px 15px">
+    <finclip-stepper stepper="{{stepper1.stepper}}" min="{{stepper1.min}}" max="{{stepper1.max}}"></finclip-stepper>
+  </view>
+
+  <!-- 当最大值等于最小值时，组件不可用 -->
+  <view style="padding: 40px 15px ">
+    <finclip-stepper stepper="{{stepper2.stepper}}" min="{{stepper2.min}}" max="{{stepper2.max}}"></finclip-stepper>
+  </view>
+
+  <!-- small size -->
+  <view style="padding: 40px 15px ">
+    <finclip-stepper size="small" stepper="{{stepper3.stepper}}" min="{{stepper3.min}}" max="{{stepper3.max}}"></finclip-stepper>
+  </view>
+</view>

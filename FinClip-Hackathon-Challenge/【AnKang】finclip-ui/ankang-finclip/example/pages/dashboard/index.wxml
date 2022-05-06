@@ -1,0 +1,15 @@
+<view class="container">
+
+  <image class="logo" src="https://www.finclip.com/img/finclip_nav_logo_color.9eb24c8b.png"></image>
+
+  <block wx:for="{{ list }}" wx:for-item="group" wx:key="title">
+    <view class="finclip-title">{{ group.title }}</view>
+    <view class="finclip-con">
+      <navigator wx:for="{{ group.content }}" wx:key="name" class="finclip-cell" url="{{ item.path }}">
+        <view class="finclip-cell__bd">{{ item.name }}</view>
+        <view class="finclip-cell__ft">></view>
+      </navigator>
+    </view>
+  </block>
+  
+</view>

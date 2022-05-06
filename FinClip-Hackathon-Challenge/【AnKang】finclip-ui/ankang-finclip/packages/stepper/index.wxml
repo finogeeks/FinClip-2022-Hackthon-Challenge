@@ -1,0 +1,25 @@
+<view>
+  <view class="finclip-stepper {{ size === 'small' ? 'finclip-stepper--small' : '' }}">
+    <view
+      class="finclip-stepper__minus {{ stepper <= min ? 'finclip-stepper--disabled' : '' }}"
+      data-stepper="{{ stepper }}"
+      data-disabled="{{ stepper <= min }}"
+      bindtap="_handleFinclipStepperMinus"
+    >-</view>
+    <input
+      class="finclip-stepper__text {{ min >= max ? 'finclip-stepper--disabled' : '' }}"
+      type="number"
+      data-min="{{ min }}"
+      data-max="{{ max }}"
+      value="{{ stepper }}"
+      disabled="{{ min >= max }}"
+      bindblur="_handleFinclipStepperBlur"
+    ></input>
+    <view
+      class="finclip-stepper__plus {{ stepper >= max ? 'finclip-stepper--disabled' : '' }}"
+      data-stepper="{{ stepper }}"
+      data-disabled="{{ stepper >= max }}"
+      bindtap="_handleFinclipStepperPlus"
+    >+</view>
+  </view>
+</view>

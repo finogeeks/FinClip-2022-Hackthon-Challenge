@@ -1,0 +1,43 @@
+<view class="container">
+
+  <finclip-button>
+    默认按钮
+  </finclip-button>
+
+  <finclip-button type="primary">
+    主要按钮
+  </finclip-button>
+
+  <finclip-button type="danger">
+    危险按钮
+  </finclip-button>
+
+  <finclip-button type="warn">
+    危险按钮
+  </finclip-button>
+
+  <finclip-button size="large">
+    大型按钮
+  </finclip-button>
+
+  <finclip-button size="small">
+    小型按钮
+  </finclip-button>
+
+  <finclip-button size="mini">
+    超小按钮
+  </finclip-button>
+
+  <finclip-button disabled="{{true}}">
+    禁用按钮
+  </finclip-button>
+
+  <finclip-button loading="{{true}}">
+    加载按钮
+  </finclip-button>
+
+  <finclip-button plain="{{true}}">
+    镂空按钮
+  </finclip-button>
+
+</view>

@@ -1,0 +1,76 @@
+<view class="container">
+
+  <view class="finclip-panel">
+    <view class="finclip-cell">
+      <view class="finclip-cell__bd">
+        <view class="finclip-pull-right">finclip-pull-right: 往右靠</view>
+      </view>
+    </view>
+
+    <view class="finclip-cell">
+      <view class="finclip-cell__bd">
+        <view class="finclip-text-deleted">finclip-text-deleted：被删除的效果</view>
+      </view>
+    </view>
+
+    <view class="finclip-cell">
+      <view class="finclip-cell__bd">
+        <view>
+          <view class="finclip-font-12">finclip-font-12：字号12</view>
+          <view class="finclip-font-12 finclip-font-bold">finclip-font-bold：再来个加粗</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="finclip-cell">
+      <view class="finclip-cell__bd">
+        <view>
+          <view class="finclip-font-16">finclip-font-16：字号16</view>
+          <view class="finclip-font-16 finclip-font-bold">finclip-font-bold：再来个加粗</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="finclip-cell">
+      <view class="finclip-cell__bd">
+        <view class="">
+          <view>字体颜色</view>
+          <view class="finclip-c-red">finclip-c-red: 红色</view>
+          <view class="finclip-c-gray">finclip-c-gray: 灰色</view>
+          <view class="finclip-c-gray-dark">finclip-c-gray-dark: 再灰一点点</view>
+          <view class="finclip-c-gray-darker">finclip-c-gray-darker: 更深的灰色</view>
+          <view class="finclip-c-black">finclip-c-black: 黑色</view>
+          <view class="finclip-c-blue">finclip-c-blue: 蓝色</view>
+          <view class="finclip-c-green">finclip-c-green: 绿色</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="finclip-cell">
+      <view class="finclip-cell__bd">
+        <view>finclip-arrow：箭头</view>
+        <view class="finclip-arrow"></view>
+      </view>
+    </view>
+
+    <view class="finclip-cell">
+      <view class="finclip-cell__bd">
+        <view class="finclip-ellipsis" style="width: 300px;">
+          finclip-ellipsis：单行点点点
+          ->我是占位的字符我是占位的字符我是占位的字符我是占位的字符我是占位的字符我是占位的字符
+        </view>
+      </view>
+    </view>
+
+    <view class="finclip-cell finclip-cell--last-child">
+      <view class="finclip-cell__bd">
+        <view class="finclip-ellipsis--l2">
+          finclip-ellipsis--l2：单行点点点
+          ->我是占位的字符我是占位的字符我是占位的字符我是占位的字符我是占位的字符我是占位的字符
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+</view>

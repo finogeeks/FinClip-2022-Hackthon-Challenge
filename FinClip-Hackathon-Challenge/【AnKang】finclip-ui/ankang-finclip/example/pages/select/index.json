@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Select 选择",
+  "usingComponents": {
+    "finclip-button":"/dist/btn/index"
+  }
+}

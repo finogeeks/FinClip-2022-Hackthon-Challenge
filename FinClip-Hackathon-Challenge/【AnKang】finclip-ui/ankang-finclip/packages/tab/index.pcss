@@ -1,0 +1,50 @@
+.finclip-tab {
+  height: 45px;
+}
+.finclip-tab__bd {
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #e5e5e5;
+  background: #fff;
+}
+.finclip-tab__bd--fixed {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+.finclip-tab__item {
+  flex: 1;
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+}
+
+.finclip-tab__title {
+  display: inline-block;
+  max-width: 100%;
+  height: 44px;
+  line-height: 44px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  word-break: keep-all;
+  font-size: 14px;
+  color: #666;
+}
+
+.finclip-tab__item--selected .finclip-tab__title {
+  color: #409EFF;
+  border-bottom: 2px solid #409EFF;
+}
+
+.finclip-tab__bd--scroll {
+  display: block;
+  white-space: nowrap;
+}
+.finclip-tab__bd--scroll .finclip-tab__item {
+  min-width: 80px;
+}

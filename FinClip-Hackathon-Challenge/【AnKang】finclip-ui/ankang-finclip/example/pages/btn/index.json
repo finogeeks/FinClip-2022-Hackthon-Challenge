@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Button 按钮",
+  "usingComponents": {
+    "finclip-button":"/dist/btn/index"
+  }
+}

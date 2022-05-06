@@ -1,0 +1,20 @@
+<import src="/dist/toast/index.wxml" />
+
+<view class="container">
+
+  <view class="finclip-btns" style="margin-top: 15vh;">
+    <button class="finclip-btn" bindtap="showToast">
+      显示toast
+    </button>
+
+    <button class="finclip-btn" bindtap="showImageToast">
+      自定义图片作为图标的toast
+    </button>
+
+    <button class="finclip-btn" bindtap="showLoading">
+      显示 Loading
+    </button>
+  </view>
+</view>
+
+<template is="finclip-toast" data="{{ finclipToast }}"></template>

@@ -1,0 +1,10 @@
+<import src="/dist/tab/index.wxml" />
+
+<view class="container">
+
+  <view style="margin: 20px 0">
+    <template
+      is="finclip-tab"
+      data="{{ ...tab1, componentId: 'tab1' }}"></template>
+  </view>
+</view>

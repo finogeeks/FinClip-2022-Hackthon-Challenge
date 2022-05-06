@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Stepper 计数器",
+  "usingComponents": {
+    "finclip-stepper":"/dist/stepper/index"
+  }
+}

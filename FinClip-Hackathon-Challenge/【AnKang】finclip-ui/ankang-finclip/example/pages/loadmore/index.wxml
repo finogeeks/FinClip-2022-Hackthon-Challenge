@@ -1,0 +1,9 @@
+<view class="container">
+  <finclip-loadmore></finclip-loadmore>
+
+  <finclip-loadmore text="文案自定义哦"></finclip-loadmore>
+
+  <finclip-loadmore type="nodata"></finclip-loadmore>
+
+  <finclip-loadmore type="nodata" text="没有东西哦"></finclip-loadmore>
+</view>

@@ -1,0 +1,16 @@
+<import src="/dist/dialog/index.wxml" />
+
+<view class="container">
+
+  <view class="finclip-btns" style="margin-top: 30vh;">
+    <button class="finclip-btn" bindtap="toggleBaseDialog">
+      基础 Dialog
+    </button>
+    <button class="finclip-btn" bindtap="toggleWithoutTitleDialog">
+      Dialog - 无标题
+    </button>
+  </view>
+
+</view>
+
+<template is="finclip-dialog" data="{{ finclipDialog }}"></template>

@@ -1,0 +1,20 @@
+<import src="/dist/select/index.wxml" />
+
+<view>
+  <view class="finclip-panel-title">select应用</view>
+  <form bindsubmit="formSubmit">
+    <view class="finclip-panel">
+      <view>
+        <template
+          is="finclip-select"
+          data="{{ items, checkedValue: checked.form, name: 'formtest', componentId: 'form' }}" ></template>
+      </view>
+    </view>
+
+    <view class="finclip-btns" style="margin-top: 20px;">
+      <finclip-button
+        type="primary"
+        formType="submit">提交数据</finclip-button>
+    </view>
+  </form>
+</view>

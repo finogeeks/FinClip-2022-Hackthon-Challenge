@@ -1,0 +1,14 @@
+<view>
+  <view wx:if="{{type === 'nodata'}}">
+    <view class="finclip-loadmore finclip-loadmore--nodata">
+      <view class="finclip-loadmore__tips">{{ text || '暂无数据' }}</view>
+    </view>
+  </view>
+
+  <view wx:elif="{{type === 'loading'}}">
+    <view class="finclip-loadmore">
+      <view class="finclip-loading"></view>
+      <view class="finclip-loadmore__tips">{{ text || '加载中...' }}</view>
+    </view>
+  </view>
+</view>

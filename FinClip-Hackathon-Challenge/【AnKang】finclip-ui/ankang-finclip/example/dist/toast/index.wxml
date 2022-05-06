@@ -1,0 +1,31 @@
+<template name="finclip-toast">
+  <view
+    class="finclip-toast {{ !finclipToast.title ? 'finclip-toast--notitle' : '' }}"
+    wx:if="{{ finclipToast.show }}"
+    bindtap="clearFinclipToast"
+  >
+    <!-- icon 展示 -->
+    <block
+      wx:if="{{ finclipToast.icon || finclipToast.image }}"
+    >
+      <view
+        wx:if="{{ finclipToast.image }}"
+        class="finclip-toast__icon finclip-toast__icon-image"
+        style="background-image: url({{ finclipToast.image }});"
+      ></view>
+      <view
+        wx:elif="{{ finclipToast.icon === 'loading' }}"
+        class="finclip-toast__icon finclip-toast__icon-loading"
+      >
+        <view class="finclip-loading"></view>
+      </view>
+      <view
+        wx:else
+        class="finclip-toast__icon finclip-icon finclip-icon-{{ finclipToast.icon }}"
+      ></view>
+    </block>
+
+    <!-- 文案展示 -->
+    <view wx:if="{{ finclipToast.title }}">{{ finclipToast.title }}</view>
+  </view>
+</template>

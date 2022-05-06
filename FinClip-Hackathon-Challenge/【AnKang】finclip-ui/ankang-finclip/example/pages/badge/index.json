@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Badge 徽章",
+  "usingComponents": {
+    "finclip-badge":"/dist/badge/index"
+  }
+}

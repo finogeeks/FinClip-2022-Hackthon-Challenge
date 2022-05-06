@@ -1,0 +1,30 @@
+.container {
+  background: #ffffff;
+}
+
+.logo {
+  display: block;
+  margin: 10px auto 30px auto;
+  width: 125px;
+  height: 24px;
+}
+
+.finclip-title {
+  width: 100%;
+  background: #eeeeee;
+  text-align: center;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.finclip-con {
+  font-size: 16px;
+  width: 100%;
+}
+
+.finclip-cell {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

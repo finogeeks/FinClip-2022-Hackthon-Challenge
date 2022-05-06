@@ -1,0 +1,15 @@
+<template name="finclip-steps">
+  <view class="finclip-steps finclip-steps--{{ type == 'vertical' ? 'vsteps' : 'steps' }} finclip-steps--{{ steps.length }} {{ className }}">
+    <view
+      wx:for="{{ steps }}" wx:for-item="step" wx:key="unique" wx:for-index="index"
+      class="finclip-steps__step {{ hasDesc ? 'finclip-steps__step--db-title' : '' }} {{ index == 0 ? 'finclip-steps__step--first-child' : '' }} {{ index == steps.length - 1 ? 'finclip-steps__step--last-child' : '' }} {{ step.done ? 'finclip-steps__step--done' : '' }} {{ step.current ? 'finclip-steps__step--cur' : '' }}"
+    >
+      <view class="finclip-steps__title">{{ step.text }}</view>
+      <view wx:if="{{ hasDesc && step.desc }}" class="finclip-steps__title finclip-steps__title--desc">{{ step.desc }}</view>
+      <view class="finclip-steps__icons">
+        <view class="finclip-steps__circle"></view>
+      </view>
+      <view class="finclip-steps__line"></view>
+    </view>
+  </view>
+</template>

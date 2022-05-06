@@ -1,0 +1,37 @@
+<template name="finclip-tab">
+  <view class="finclip-tab">
+    <block wx:if="{{ tab.scroll || scroll }}">
+      <scroll-view
+        class="finclip-tab__bd finclip-tab__bd--scroll {{ fixed ? 'finclip-tab__bd--fixed' : '' }}"
+        scroll-x="true"
+        style="height: {{ tab.height || height ? ((tab.height || height) + 'px') : 'auto' }}"
+      >
+        <template
+          is="finclip-tab-list"
+          data="{{ list: tab.list || list, selectedId: tab.selectedId || selectedId, componentId }}">
+        </template>
+      </scroll-view>
+    </block>
+    <block wx:else>
+      <view class="finclip-tab__bd {{ fixed ? 'finclip-tab__bd--fixed' : '' }}">
+        <template
+          is="finclip-tab-list"
+          data="{{ list: tab.list || list, selectedId: tab.selectedId || selectedId, componentId }}">
+        </template>
+      </view>
+    </block>
+  </view>
+</template>
+
+<template name="finclip-tab-list">
+  <view
+    wx:for="{{ list }}"
+    wx:key="id"
+    class="finclip-tab__item {{ selectedId == item.id ? 'finclip-tab__item--selected' : '' }}"
+    data-component-id="{{ componentId }}"
+    data-item-id="{{ item.id }}"
+    bindtap="_handleFinclipTabChange"
+  >
+    <view class="finclip-tab__title">{{ item.title }}</view>
+  </view>
+</template>

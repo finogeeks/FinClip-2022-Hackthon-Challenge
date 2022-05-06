@@ -1,0 +1,38 @@
+<import src="/dist/field/index.wxml" />
+
+<view class="container">
+  <!-- Field 基础用法 -->
+  <view class="finclip-panel-title">基础用法</view>
+  <view class="finclip-panel">
+    <template
+      is="finclip-field"
+      data="{{ ...config.base.name, value }}"></template>
+    <template
+      is="finclip-field"
+      data="{{ ...config.base.tel }}"></template>
+    <template
+      is="finclip-field"
+      data="{{ ...config.base.address }}"></template>
+  </view>
+
+  <!-- 去除标题后的输入框样式 -->
+  <view class="finclip-panel-title">无标题输入框</view>
+  <view class="finclip-panel">
+    <template
+      is="finclip-field"
+      data="{{ ...config.notitle, value: textareaValue }}"></template>
+  </view>
+
+  <!-- 使用 Field 圆角样式 -->
+  <view class="finclip-panel-title field__title--radius">圆角输入框</view>
+  <template
+    is="finclip-field"
+    data="{{ ...config.radius.totalPrice }}"></template>
+  <template
+    is="finclip-field"
+    data="{{ ...config.radius.excludePrice }}"></template>
+  <template
+    is="finclip-field"
+    data="{{ ...config.radius.notitle }}"></template>
+
+</view>

@@ -1,0 +1,24 @@
+<view class="container">
+  <view class="demo">
+    <view class="demo__item">
+      <view class="demo__icon">
+        <finclip-badge>1</finclip-badge>
+      </view>
+    </view>
+    <view class="demo__item">
+      <view class="demo__icon">
+        <finclip-badge>2</finclip-badge>
+      </view>
+    </view>
+    <view class="demo__item">
+      <view class="demo__icon">
+        <finclip-badge>3</finclip-badge>
+      </view>
+    </view>
+    <view class="demo__item">
+      <view class="demo__icon">
+        <finclip-badge>4</finclip-badge>
+      </view>
+    </view>
+  </view>
+</view>

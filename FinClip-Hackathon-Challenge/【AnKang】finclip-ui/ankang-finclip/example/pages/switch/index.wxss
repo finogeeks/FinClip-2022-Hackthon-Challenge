@@ -1,0 +1,6 @@
+.finclip-panel {
+  padding: 10px;
+}
+.finclip-switch {
+  margin-right: 8px;
+}

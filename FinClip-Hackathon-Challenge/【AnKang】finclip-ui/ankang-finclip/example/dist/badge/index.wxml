@@ -1,0 +1,7 @@
+<view>
+  <view class="badge-container finclip-badge">
+    <view class="finclip-badge__count">
+      <slot></slot>
+    </view>
+  </view>
+</view>

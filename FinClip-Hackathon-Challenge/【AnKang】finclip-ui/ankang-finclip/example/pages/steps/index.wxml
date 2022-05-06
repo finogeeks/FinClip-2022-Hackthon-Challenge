@@ -1,0 +1,25 @@
+<import src="/dist/steps/index.wxml" />
+
+<view class="container">
+
+  <view class="finclip-panel">
+    <view class="finclip-cell">
+      <view class="finclip-cell__bd">
+        <template is="finclip-steps" data="{{ type: 'horizon', steps: steps }}"></template>
+      </view>
+    </view>
+
+    <view class="finclip-cell">
+      <view class="finclip-cell__bd">
+        <template is="finclip-steps" data="{{ type: 'horizon', steps: steps2 }}"></template>
+      </view>
+    </view>
+
+    <view class="finclip-cell finclip-cell--last-child">
+      <view class="finclip-cell__bd">
+        <template is="finclip-steps" data="{{ type: 'horizon', steps: steps3 }}"></template>
+      </view>
+    </view>
+  </view>
+
+</view>
