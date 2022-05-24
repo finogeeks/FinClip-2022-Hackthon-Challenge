@@ -1,0 +1,689 @@
+<view class="jpage">
+
+<!-- <van-sticky> -->
+  <view class="gdd" style="height:{{navHeight}}px">
+    <navbar navTitle="顶部导航demo" style="width:200rpx;" isWhite="{{aisWhite}}"></navbar>
+        
+      <view class="nav_footer" style="margin-top:{{bnavHeight}}px;" wx:if="{{!aisWhite}}">
+        <!-- <image  src="https://www.mlito.com/wp-content/uploads/lite-back-50-50.svg" class="nav_footer_goback"></image> -->
+
+        <!-- <view class="nav_footer_title">{{navTitle}}</view> -->
+
+        <!-- <image   mode="heightFix" src="https://www.mlito.com/wp-content/uploads/lite-back-50-50.svg" class="nav_footer_left"></image> -->
+
+        <image lazy-load='true'  mode="heightFix" bindtap="toliebiao" data-id="{{item.link}}"src="{{jdata.top.ysj.nr}}" class="nav_footer_right"></image>
+        
+        <view class="nav_footer_rt" >
+          <span  wx:for="{{jdata.top.lj}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">{{item.nr}}</span>
+        </view>
+        
+      </view>
+  </view>
+<!-- </van-sticky> -->
+
+<!-- style="margin-top:{{navHeight}}px;" -->
+<div class="zdy" >
+
+<view class="banner" bindtap="tovip" data-id="2">
+
+  
+
+
+  <!-- <image class="pic2"  src="{{banners[0].picUrl}}" mode="widthFix" /> -->
+
+
+<image class="pic2" bindtap="tapBanner" data-url="https://www.mlito.com/wp-content/uploads/mlito-lite-index-lf.gif" src="https://www.mlito.com/wp-content/uploads/mlito-lite-index-lf.gif" style="height: 750rpx;opacity: 1;" />
+
+
+<!-- 
+  <image class="pic" wx:for="{{banners}}" wx:key="id" mode="widthFix" bindtap="tapBanner" data-url="{{item.linkUrl}}" src="{{item.picUrl}}" animation="{{num==index?showpic:hidepic}}" data-index="{{index}}"/> -->
+
+  
+</view>
+
+
+  <!-- <view class="swiper-container" >
+    <swiper class="swiper1" 	easing-function="easeInOutCubic" interval="500">
+      <swiper-item wx:for="{{banners}}" wx:key="id">
+        <image lazy-load='true'  mode="aspectFill" bindtap="tapBanner" data-url="{{item.linkUrl}}" src="{{item.picUrl}}" />
+      </swiper-item>
+    </swiper>
+  </view>
+ -->
+
+
+<!-- 楼层1 -->
+  <view class="tt" bindtap="zhankai" data-id="" data-zhf="{{jdata.lc1.zh.zhf}}" data-zht="{{jdata.lc1.zh.zht}}" data-zh="{{jdata.lc1.zh.zh}}" data-bh="1">
+    {{jdata.lc1.db.nr}}
+  </view>
+
+  <view class="jtag">
+          <span  wx:for="{{jdata.lc1.lj}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" data-nr="{{item.nr}}" data-zhf="{{item.zhf}}" data-zht="{{item.zht}}" data-zh="{{item.zh}}" data-bh="1">{{item.nr}}</span>
+  </view>
+
+
+
+  <view class="jp scroll_box">
+
+	<scroll-view scroll-x>
+
+    <block wx:if="{{lc1}}">
+        <view class="jpb item_list" wx:for="{{lc1}}" bindtap="{{item.income?'toliebiao':'toxiangqing'}}" data-vip="{{item.audio?item.audio:''}}" data-id="{{item.income?item.income:item.id}}" wx:key="index" >
+          <p class="{{item.income?'ysvg':'wsvg'}} {{item.abk=='a'?'ybk':'wbk'}}">
+          <image lazy-load='true'  mode="{{item.income?'widthFix':'heightFix'}}" src="{{item.pic}}" />
+          </p>
+          <span wx:if="{{!item.income}}">{{item.title}}</span>
+        </view>
+    </block>
+
+    <view class="qb qb2 item_list" bindtap="toliebiao"  data-id="{{lc1gd}}">
+      <view class="jzz"  wx:if="{{lc1==''}}">
+        <image lazy-load='true'  mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+        <em>文章加载中</em>
+      </view>
+      <p>阅读全部</p>
+      <span>{{jdata.lc1.shuliang}}</span>
+    </view>
+
+    <view class="ff ff2 item_list">
+      <em>{{lc1a.zht}}</em>
+      <p><span  wx:for="{{lc1a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">{{item.nr}}</span></p>
+      <i>{{lc1a.zhf}}</i>
+    </view>
+    <view class="kdd item_list">
+    </view>
+  	</scroll-view>
+
+  </view>
+
+
+<!-- 广告 -->
+  <div class="gg">
+    <image lazy-load='true'  mode="heightFix"  wx:for="{{jdata.gg}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" />
+  </div>
+
+
+
+<!-- 楼层2 -->
+  <view class="tt" bindtap="zhankai" data-id="" data-nr="{{item.lc2.db.nr}}"  data-zhf="{{jdata.lc2.zh.zhf}}" data-zht="{{jdata.lc2.zh.zht}}" data-zh="{{jdata.lc2.zh.zh}}" data-bh="2">
+    {{jdata.lc2.db.nr}}
+  </view>
+
+  <!-- tag -->
+  <view class="jtag ">
+    <span wx:for="{{jdata.lc2.lj}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" data-nr="{{item.nr}}" data-bh="2" data-zhf="{{item.zhf}}" data-zht="{{item.zht}}" data-zh="{{item.zh}}" >{{item.nr}}</span>
+  </view>
+
+  <view class="hy scroll_box">
+
+
+
+	<scroll-view scroll-x>
+      <!-- 文章 -->
+      <block wx:if="{{lc2}}">
+          <p class="hyp">
+            <em class="{{lc2[0].income?'ysvg2':'wsvg2'}} {{lc2[0].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  mode="{{lc2[0].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[0].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[0].audio?lc2[0].audio:''}}"  data-id="{{lc2[0].income?lc2[0].income:lc2[0].id}}" src="{{lc2[0].pic}}" />
+            </em>
+            <em class="{{lc2[1].income?'ysvg2':'wsvg2'}} {{lc2[1].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc2[1]}}"  mode="{{lc2[1].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[1].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[1].audio?lc2[1].audio:''}}" data-id="{{lc2[1].income?lc2[1].income:lc2[1].id}}" src="{{lc2[1].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc2[2]}}"><em class="{{lc2[2].income?'ysvg2':'wsvg2'}} {{lc2[2].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc2[2].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[2].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[2].audio?lc2[2].audio:''}}" data-id="{{lc2[2].income?lc2[2].income:lc2[2].id}}" src="{{lc2[2].pic}}" /></em><em class="{{lc2[3].income?'ysvg2':'wsvg2'}} {{lc2[3].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc2[3]}}"  mode="{{lc2[3].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[3].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[3].audio?lc2[3].audio:''}}" data-id="{{lc2[3].income?lc2[3].income:lc2[3].id}}" src="{{lc2[3].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc2[4]}}"><em class="{{lc2[4].income?'ysvg2':'wsvg2'}} {{lc2[4].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc2[4].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[4].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[4].audio?lc2[4].audio:''}}" data-id="{{lc2[4].income?lc2[4].income:lc2[4].id}}" src="{{lc2[4].pic}}" /></em><em class="{{lc2[0].income?'ysvg2':'wsvg2'}} {{lc2[0].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc2[5]}}"  mode="{{lc2[5].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[5].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc2[5].audio?lc2[5].audio:''}}" data-id="{{lc2[5].income?lc2[5].income:lc2[5].id}}" src="{{lc2[5].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc2[6]}}"><em class="{{lc2[6].income?'ysvg2':'wsvg2'}} {{lc2[6].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc2[6].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[6].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[6].audio?lc2[6].audio:''}}" data-id="{{lc2[6].income?lc2[6].income:lc2[6].id}}" src="{{lc2[6].pic}}" /></em><em class="{{lc2[7].income?'ysvg2':'wsvg2'}} {{lc2[7].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc2[7]}}"  mode="{{lc2[7].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[7].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[7].audio?lc2[7].audio:''}}"  data-id="{{lc2[7].income?lc2[7].income:lc2[7].id}}" src="{{lc2[7].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc2[8]}}"><em class="{{lc2[8].income?'ysvg2':'wsvg2'}} {{lc2[8].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc2[8].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[8].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[8].audio?lc2[8].audio:''}}"  data-id="{{lc2[8].income?lc2[8].income:lc2[8].id}}" src="{{lc2[8].pic}}" /></em><em class="{{lc2[9].income?'ysvg2':'wsvg2'}} {{lc2[9].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc2[9]}}"  mode="{{lc2[9].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[9].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[9].audio?lc2[9].audio:''}}"  data-id="{{lc2[9].income?lc2[9].income:lc2[9].id}}" src="{{lc2[9].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc2[10]}}"><em class="{{lc2[10].income?'ysvg2':'wsvg2'}} {{lc2[10].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc2[10].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[10].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[10].audio?lc2[10].audio:''}}" data-id="{{lc2[10].income?lc2[10].income:lc2[10].id}}" src="{{lc2[10].pic}}" /></em><em class="{{lc2[11].income?'ysvg2':'wsvg2'}} {{lc2[11].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc2[11]}}"  mode="{{lc2[11].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[11].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc2[11].audio?lc2[11].audio:''}}" data-id="{{lc2[11].income?lc2[11].income:lc2[11].id}}" src="{{lc2[11].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc2[12]}}"><em class="{{lc2[12].income?'ysvg2':'wsvg2'}} {{lc2[12].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc2[12].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[12].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc2[12].audio?lc2[12].audio:''}}" data-id="{{lc2[12].income?lc2[12].income:lc2[12].id}}" src="{{lc2[12].pic}}" /></em><em class="{{lc2[13].income?'ysvg2':'wsvg2'}} {{lc2[13].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc2[13]}}"  mode="{{lc2[13].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[13].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc2[13].audio?lc2[13].audio:''}}"  data-id="{{lc2[13].income?lc2[13].income:lc2[13].id}}" src="{{lc2[13].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc2[14]}}"><em class="{{lc2[14].income?'ysvg2':'wsvg2'}} {{lc2[14].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc2[14].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[14].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc2[14].audio?lc2[14].audio:''}}" data-id="{{lc2[14].income?lc2[14].income:lc2[14].id}}"src="{{lc2[14].pic}}" /></em>
+            
+            
+            <em class="{{lc2[15].income?'ysvg2':'wsvg2'}} {{lc2[15].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc2[15]}}"  mode="{{lc2[15].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[15].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[15].audio?lc2[15].audio:''}}"  data-id="{{lc2[15].income?lc2[15].income:lc2[15].id}}" src="{{lc2[15].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc2[16]}}"><em class="{{lc2[16].income?'ysvg2':'wsvg2'}} {{lc2[16].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc2[16].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[16].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[16].audio?lc2[16].audio:''}}" data-id="{{lc2[16].income?lc2[16].income:lc2[16].id}}" src="{{lc2[16].pic}}" /></em>
+            
+            <em class="{{lc2[17].income?'ysvg2':'wsvg2'}} {{lc2[17].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   wx:if="{{lc2[17]}}" mode="{{lc2[17].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[17].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[17].audio?lc2[17].audio:''}}" data-id="{{lc2[17].income?lc2[17].income:lc2[17].id}}" src="{{lc2[17].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc2[18]}}"><em class="{{lc2[18].income?'ysvg2':'wsvg2'}} {{lc2[18].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc2[18].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[18].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[18].audio?lc2[18].audio:''}}" data-id="{{lc2[18].income?lc2[18].income:lc2[18].id}}" src="{{lc2[18].pic}}" /></em>
+            
+            <em class="{{lc2[19].income?'ysvg2':'wsvg2'}} {{lc2[19].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   wx:if="{{lc2[19]}}" mode="{{lc2[19].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[19].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc2[19].audio?lc2[19].audio:''}}" data-id="{{lc2[19].income?lc2[19].income:lc2[19].id}}" src="{{lc2[19].pic}}" /></em>
+          </p>
+          
+      </block> 
+
+      <!-- 更多 -->
+      <view class="qb qb2"  bindtap="toliebiao"  data-id="{{lc2gd}}">
+        <view class="jzz"  wx:if="{{lc2==''}}">
+          <image lazy-load='true'  mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+          <em>文章加载中</em>
+        </view>
+        <p>阅读全部</p>
+        <span>{{jdata.lc2.shuliang}}</span>
+      </view>
+      <!-- tag -->
+      <view class="ff ff2">
+        <em>{{lc2a.zht}}</em>
+        <p><span  wx:for="{{lc2a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">{{item.nr}}</span></p>
+        <i>{{lc2a.zhf}}</i>
+      </view>
+<!-- 
+      <view class="kdd">
+      </view> -->
+      	</scroll-view>
+  </view>
+<!-- /楼层2 -->
+
+
+<!-- 会员 -->
+  <view class="jtag jtag2">
+    <span  wx:for="{{jdata.lc3.db}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">{{item.nr}}</span>
+  </view>
+
+  <div class="gg">
+    <image lazy-load='true'  mode="heightFix"  wx:for="{{jdata.lc3.lj}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" />
+  </div>
+
+  <div class="gg gg2">
+    <image lazy-load='true'  mode="heightFix"  wx:for="{{jdata.lc3.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" />
+  </div>
+<!-- /会员 -->
+
+
+
+
+
+
+
+<!-- 楼层4 -->
+  <view class="tt" bindtap="zhankai" data-id=""  data-zhf="{{jdata.lc4.zh.zhf}}" data-zht="{{jdata.lc4.zh.zht}}" data-zh="{{jdata.lc4.zh.zh}}" data-bh="4">
+    {{jdata.lc4.db.nr}}
+  </view>
+
+  <!-- tag -->
+  <view class="jtag ">
+    <span wx:for="{{jdata.lc4.lj}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" data-nr="{{item.nr}}" data-bh="4" data-zhf="{{item.zhf}}" data-zht="{{item.zht}}" data-zh="{{item.zh}}" >{{item.nr}}</span>
+  </view>
+
+
+  <view class="hy scroll_box">
+
+
+
+	<scroll-view scroll-x>
+
+
+
+    <!-- <view class="syy">
+      <image lazy-load='true'  mode="top" src="https://dcdn.it120.cc/2020/04/09/9fa0368e-960b-4313-ac17-0263ab08e0ac.jpeg" />
+    </view>
+
+
+    <p><image lazy-load='true'  mode="center" src="https://dcdn.it120.cc/2020/04/09/9fa0368e-960b-4313-ac17-0263ab08e0ac.jpeg" /><image lazy-load='true'  mode="center" src="https://dcdn.it120.cc/2020/04/09/9fa0368e-960b-4313-ac17-0263ab08e0ac.jpeg" /></p> -->
+
+      <!-- 文章 -->
+      <block wx:if="{{lc4}}">
+          <p class="hyp">
+            <em class="{{lc4[0].income?'ysvg2':'wsvg2'}} {{lc4[0].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  mode="{{lc4[0].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[0].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[0].audio?lc4[0].audio:''}}"  data-id="{{lc4[0].income?lc4[0].income:lc4[0].id}}" src="{{lc4[0].pic}}" />
+            </em>
+            <em class="{{lc4[1].income?'ysvg2':'wsvg2'}} {{lc4[1].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc4[1]}}"  mode="{{lc4[1].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[1].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[1].audio?lc4[1].audio:''}}" data-id="{{lc4[1].income?lc4[1].income:lc4[1].id}}" src="{{lc4[1].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc4[2]}}"><em class="{{lc4[2].income?'ysvg2':'wsvg2'}} {{lc4[2].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc4[2].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[2].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[2].audio?lc4[2].audio:''}}" data-id="{{lc4[2].income?lc4[2].income:lc4[2].id}}" src="{{lc4[2].pic}}" /></em><em class="{{lc4[3].income?'ysvg2':'wsvg2'}} {{lc4[3].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc4[3]}}"  mode="{{lc4[3].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[3].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[3].audio?lc4[3].audio:''}}" data-id="{{lc4[3].income?lc4[3].income:lc4[3].id}}" src="{{lc4[3].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc4[4]}}"><em class="{{lc4[4].income?'ysvg2':'wsvg2'}} {{lc4[4].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc4[4].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[4].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[4].audio?lc4[4].audio:''}}" data-id="{{lc4[4].income?lc4[4].income:lc4[4].id}}" src="{{lc4[4].pic}}" /></em><em class="{{lc4[0].income?'ysvg2':'wsvg2'}} {{lc4[0].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc4[5]}}"  mode="{{lc4[5].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[5].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc4[5].audio?lc4[5].audio:''}}" data-id="{{lc4[5].income?lc4[5].income:lc4[5].id}}" src="{{lc4[5].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc4[6]}}"><em class="{{lc4[6].income?'ysvg2':'wsvg2'}} {{lc4[6].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc4[6].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[6].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[6].audio?lc4[6].audio:''}}" data-id="{{lc4[6].income?lc4[6].income:lc4[6].id}}" src="{{lc4[6].pic}}" /></em><em class="{{lc4[7].income?'ysvg2':'wsvg2'}} {{lc4[7].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc4[7]}}"  mode="{{lc4[7].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[7].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[7].audio?lc4[7].audio:''}}"  data-id="{{lc4[7].income?lc4[7].income:lc4[7].id}}" src="{{lc4[7].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc4[8]}}"><em class="{{lc4[8].income?'ysvg2':'wsvg2'}} {{lc4[8].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc4[8].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[8].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[8].audio?lc4[8].audio:''}}"  data-id="{{lc4[8].income?lc4[8].income:lc4[8].id}}" src="{{lc4[8].pic}}" /></em><em class="{{lc4[9].income?'ysvg2':'wsvg2'}} {{lc4[9].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc4[9]}}"  mode="{{lc4[9].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[9].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[9].audio?lc4[9].audio:''}}"  data-id="{{lc4[9].income?lc4[9].income:lc4[9].id}}" src="{{lc4[9].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc4[10]}}"><em class="{{lc4[10].income?'ysvg2':'wsvg2'}} {{lc4[10].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc4[10].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[10].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[10].audio?lc4[10].audio:''}}" data-id="{{lc4[10].income?lc4[10].income:lc4[10].id}}" src="{{lc4[10].pic}}" /></em><em class="{{lc4[11].income?'ysvg2':'wsvg2'}} {{lc4[11].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc4[11]}}"  mode="{{lc4[11].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[11].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc4[11].audio?lc4[11].audio:''}}" data-id="{{lc4[11].income?lc4[11].income:lc4[11].id}}" src="{{lc4[11].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc4[12]}}"><em class="{{lc4[12].income?'ysvg2':'wsvg2'}} {{lc4[12].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc4[12].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[12].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc4[12].audio?lc4[12].audio:''}}" data-id="{{lc4[12].income?lc4[12].income:lc4[12].id}}" src="{{lc4[12].pic}}" /></em><em class="{{lc4[13].income?'ysvg2':'wsvg2'}} {{lc4[13].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc4[13]}}"  mode="{{lc4[13].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[13].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc4[13].audio?lc4[13].audio:''}}"  data-id="{{lc4[13].income?lc4[13].income:lc4[13].id}}" src="{{lc4[13].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc4[14]}}"><em class="{{lc4[14].income?'ysvg2':'wsvg2'}} {{lc4[14].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc4[14].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[14].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc4[14].audio?lc4[14].audio:''}}" data-id="{{lc4[14].income?lc4[14].income:lc4[14].id}}"src="{{lc4[14].pic}}" /></em>
+            
+            
+            <em class="{{lc4[15].income?'ysvg2':'wsvg2'}} {{lc4[15].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc4[15]}}"  mode="{{lc4[15].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[15].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[15].audio?lc4[15].audio:''}}"  data-id="{{lc4[15].income?lc4[15].income:lc4[15].id}}" src="{{lc4[15].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc4[16]}}"><em class="{{lc4[16].income?'ysvg2':'wsvg2'}} {{lc4[16].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc4[16].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[16].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[16].audio?lc4[16].audio:''}}" data-id="{{lc4[16].income?lc4[16].income:lc4[16].id}}" src="{{lc4[16].pic}}" /></em>
+            
+            <em class="{{lc4[17].income?'ysvg2':'wsvg2'}} {{lc4[17].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   wx:if="{{lc4[17]}}" mode="{{lc4[17].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[17].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[17].audio?lc4[17].audio:''}}" data-id="{{lc4[17].income?lc4[17].income:lc4[17].id}}" src="{{lc4[17].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc4[18]}}"><em class="{{lc4[18].income?'ysvg2':'wsvg2'}} {{lc4[18].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc4[18].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[18].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[18].audio?lc4[18].audio:''}}" data-id="{{lc4[18].income?lc4[18].income:lc4[18].id}}" src="{{lc4[18].pic}}" /></em>
+            
+            <em class="{{lc4[19].income?'ysvg2':'wsvg2'}} {{lc4[19].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   wx:if="{{lc4[19]}}" mode="{{lc4[19].income?'widthFix':'aspectFill'}}"  bindtap="{{lc4[19].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc4[19].audio?lc4[19].audio:''}}" data-id="{{lc4[19].income?lc4[19].income:lc4[19].id}}" src="{{lc4[19].pic}}" /></em>
+          </p>
+          
+      </block> <view class="qb qb2" bindtap="toliebiao"  data-id="{{lc4gd}}">
+        <view class="jzz"  wx:if="{{lc4==''}}">
+          <image lazy-load='true'  mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+          <em>文章加载中</em>
+        </view>
+      <p>阅读全部</p>
+      <span>{{jdata.lc4.shuliang}}</span>
+    </view>
+
+      <!-- tag -->
+      <view class="ff ff2">
+        <em>{{lc4a.zht}}</em>
+        <p><span  wx:for="{{lc4a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">{{item.nr}}</span></p>
+        <i>{{lc4a.zhf}}</i>
+      </view>
+
+      <!-- <view class="kdd">
+      </view> -->
+</scroll-view>
+  </view>
+<!-- /楼层4 -->
+
+
+
+
+
+
+<!-- 楼层5 -->
+  <view class="tt" bindtap="zhankai" data-id=""  data-zhf="{{jdata.lc5.zh.zhf}}" data-zht="{{jdata.lc5.zh.zht}}" data-zh="{{jdata.lc5.zh.zh}}" data-bh="5">
+    {{jdata.lc5.db.nr}}
+  </view>
+
+  <!-- tag -->
+  <view class="jtag ">
+    <span wx:for="{{jdata.lc5.lj}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" data-nr="{{item.nr}}" data-bh="5" data-zhf="{{item.zhf}}" data-zht="{{item.zht}}" data-zh="{{item.zh}}" >{{item.nr}}</span>
+  </view>
+
+
+  <view class="hy scroll_box">
+
+
+
+	<scroll-view scroll-x>
+       <block wx:if="{{lc5}}">
+          <p class="hyp">
+            <em class="{{lc5[0].income?'ysvg2':'wsvg2'}} {{lc5[0].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  mode="{{lc5[0].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[0].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[0].audio?lc5[0].audio:''}}"  data-id="{{lc5[0].income?lc5[0].income:lc5[0].id}}" src="{{lc5[0].pic}}" />
+            </em>
+            <em class="{{lc5[1].income?'ysvg2':'wsvg2'}} {{lc5[1].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc5[1]}}"  mode="{{lc5[1].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[1].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[1].audio?lc5[1].audio:''}}" data-id="{{lc5[1].income?lc5[1].income:lc5[1].id}}" src="{{lc5[1].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc5[2]}}"><em class="{{lc5[2].income?'ysvg2':'wsvg2'}} {{lc5[2].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc5[2].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[2].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[2].audio?lc5[2].audio:''}}" data-id="{{lc5[2].income?lc5[2].income:lc5[2].id}}" src="{{lc5[2].pic}}" /></em><em class="{{lc5[3].income?'ysvg2':'wsvg2'}} {{lc5[3].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc5[3]}}"  mode="{{lc5[3].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[3].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[3].audio?lc5[3].audio:''}}" data-id="{{lc5[3].income?lc5[3].income:lc5[3].id}}" src="{{lc5[3].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc5[4]}}"><em class="{{lc5[4].income?'ysvg2':'wsvg2'}} {{lc5[4].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc5[4].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[4].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[4].audio?lc5[4].audio:''}}" data-id="{{lc5[4].income?lc5[4].income:lc5[4].id}}" src="{{lc5[4].pic}}" /></em><em class="{{lc5[0].income?'ysvg2':'wsvg2'}} {{lc5[0].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc5[5]}}"  mode="{{lc5[5].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[5].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc5[5].audio?lc5[5].audio:''}}" data-id="{{lc5[5].income?lc5[5].income:lc5[5].id}}" src="{{lc5[5].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc5[6]}}"><em class="{{lc5[6].income?'ysvg2':'wsvg2'}} {{lc5[6].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc5[6].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[6].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[6].audio?lc5[6].audio:''}}" data-id="{{lc5[6].income?lc5[6].income:lc5[6].id}}" src="{{lc5[6].pic}}" /></em><em class="{{lc5[7].income?'ysvg2':'wsvg2'}} {{lc5[7].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc5[7]}}"  mode="{{lc5[7].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[7].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[7].audio?lc5[7].audio:''}}"  data-id="{{lc5[7].income?lc5[7].income:lc5[7].id}}" src="{{lc5[7].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc5[8]}}"><em class="{{lc5[8].income?'ysvg2':'wsvg2'}} {{lc5[8].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc5[8].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[8].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[8].audio?lc5[8].audio:''}}"  data-id="{{lc5[8].income?lc5[8].income:lc5[8].id}}" src="{{lc5[8].pic}}" /></em><em class="{{lc5[9].income?'ysvg2':'wsvg2'}} {{lc5[9].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc5[9]}}"  mode="{{lc5[9].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[9].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[9].audio?lc5[9].audio:''}}"  data-id="{{lc5[9].income?lc5[9].income:lc5[9].id}}" src="{{lc5[9].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc5[10]}}"><em class="{{lc5[10].income?'ysvg2':'wsvg2'}} {{lc5[10].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc5[10].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[10].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[10].audio?lc5[10].audio:''}}" data-id="{{lc5[10].income?lc5[10].income:lc5[10].id}}" src="{{lc5[10].pic}}" /></em><em class="{{lc5[11].income?'ysvg2':'wsvg2'}} {{lc5[11].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc5[11]}}"  mode="{{lc5[11].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[11].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc5[11].audio?lc5[11].audio:''}}" data-id="{{lc5[11].income?lc5[11].income:lc5[11].id}}" src="{{lc5[11].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc5[12]}}"><em class="{{lc5[12].income?'ysvg2':'wsvg2'}} {{lc5[12].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc5[12].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[12].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc5[12].audio?lc5[12].audio:''}}" data-id="{{lc5[12].income?lc5[12].income:lc5[12].id}}" src="{{lc5[12].pic}}" /></em><em class="{{lc5[13].income?'ysvg2':'wsvg2'}} {{lc5[13].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc5[13]}}"  mode="{{lc5[13].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[13].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc5[13].audio?lc5[13].audio:''}}"  data-id="{{lc5[13].income?lc5[13].income:lc5[13].id}}" src="{{lc5[13].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc5[14]}}"><em class="{{lc5[14].income?'ysvg2':'wsvg2'}} {{lc5[14].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc5[14].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[14].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc5[14].audio?lc5[14].audio:''}}" data-id="{{lc5[14].income?lc5[14].income:lc5[14].id}}"src="{{lc5[14].pic}}" /></em>
+            
+            
+            <em class="{{lc5[15].income?'ysvg2':'wsvg2'}} {{lc5[15].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc5[15]}}"  mode="{{lc5[15].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[15].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[15].audio?lc5[15].audio:''}}"  data-id="{{lc5[15].income?lc5[15].income:lc5[15].id}}" src="{{lc5[15].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc5[16]}}"><em class="{{lc5[16].income?'ysvg2':'wsvg2'}} {{lc5[16].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc5[16].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[16].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[16].audio?lc5[16].audio:''}}" data-id="{{lc5[16].income?lc5[16].income:lc5[16].id}}" src="{{lc5[16].pic}}" /></em>
+            
+            <em class="{{lc5[17].income?'ysvg2':'wsvg2'}} {{lc5[17].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   wx:if="{{lc5[17]}}" mode="{{lc5[17].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[17].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[17].audio?lc5[17].audio:''}}" data-id="{{lc5[17].income?lc5[17].income:lc5[17].id}}" src="{{lc5[17].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc5[18]}}"><em class="{{lc5[18].income?'ysvg2':'wsvg2'}} {{lc5[18].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc5[18].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[18].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[18].audio?lc5[18].audio:''}}" data-id="{{lc5[18].income?lc5[18].income:lc5[18].id}}" src="{{lc5[18].pic}}" /></em>
+            
+            <em class="{{lc5[19].income?'ysvg2':'wsvg2'}} {{lc5[19].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   wx:if="{{lc5[19]}}" mode="{{lc5[19].income?'widthFix':'aspectFill'}}"  bindtap="{{lc5[19].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc5[19].audio?lc5[19].audio:''}}" data-id="{{lc5[19].income?lc5[19].income:lc5[19].id}}" src="{{lc5[19].pic}}" /></em>
+          </p>
+          
+      </block> <view class="qb qb2"  bindtap="toliebiao"  data-id="{{lc5gd}}">
+      <view class="jzz"  wx:if="{{lc5==''}}">
+          <image lazy-load='true'  mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+          <em>文章加载中</em>
+        </view>
+      <p>阅读全部</p>
+      <span>{{jdata.lc5.shuliang}}</span>
+    </view>
+
+      <!-- tag -->
+      <view class="ff ff2">
+        <em>{{lc5a.zht}}</em>
+        <p><span  wx:for="{{lc5a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">{{item.nr}}</span></p>
+        <i>{{lc5a.zhf}}</i>
+      </view>
+
+      <!-- <view class="kdd">
+      </view> -->
+</scroll-view>
+  </view>
+<!-- /楼层5 -->
+
+
+
+
+<!-- 楼层6 -->
+   <view class="tt" bindtap="zhankai" data-id=""  data-zhf="{{jdata.lc6.zh.zhf}}" data-zht="{{jdata.lc6.zh.zht}}" data-zh="{{jdata.lc6.zh.zh}}" data-bh="6">
+    {{jdata.lc6.db.nr}}
+  </view>
+
+  <!-- tag -->
+  <view class="jtag ">
+    <span wx:for="{{jdata.lc6.lj}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" data-nr="{{item.nr}}" data-bh="6" data-zhf="{{item.zhf}}" data-zht="{{item.zht}}" data-zh="{{item.zh}}" >{{item.nr}}</span>
+  </view>
+
+
+  <view class="hy scroll_box">
+
+
+
+	<scroll-view scroll-x>
+      <!-- 文章 -->
+       <block wx:if="{{lc6}}">
+          <p class="hyp">
+            <em class="{{lc6[0].income?'ysvg2':'wsvg2'}} {{lc6[0].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  mode="{{lc6[0].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[0].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[0].audio?lc6[0].audio:''}}"  data-id="{{lc6[0].income?lc6[0].income:lc6[0].id}}" src="{{lc6[0].pic}}" />
+            </em>
+            <em class="{{lc6[1].income?'ysvg2':'wsvg2'}} {{lc6[1].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc6[1]}}"  mode="{{lc6[1].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[1].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[1].audio?lc6[1].audio:''}}" data-id="{{lc6[1].income?lc6[1].income:lc6[1].id}}" src="{{lc6[1].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc6[2]}}"><em class="{{lc6[2].income?'ysvg2':'wsvg2'}} {{lc6[2].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc6[2].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[2].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[2].audio?lc6[2].audio:''}}" data-id="{{lc6[2].income?lc6[2].income:lc6[2].id}}" src="{{lc6[2].pic}}" /></em><em class="{{lc6[3].income?'ysvg2':'wsvg2'}} {{lc6[3].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc6[3]}}"  mode="{{lc6[3].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[3].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[3].audio?lc6[3].audio:''}}" data-id="{{lc6[3].income?lc6[3].income:lc6[3].id}}" src="{{lc6[3].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc6[4]}}"><em class="{{lc6[4].income?'ysvg2':'wsvg2'}} {{lc6[4].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc6[4].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[4].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[4].audio?lc6[4].audio:''}}" data-id="{{lc6[4].income?lc6[4].income:lc6[4].id}}" src="{{lc6[4].pic}}" /></em><em class="{{lc6[0].income?'ysvg2':'wsvg2'}} {{lc6[0].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc6[5]}}"  mode="{{lc6[5].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[5].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc6[5].audio?lc6[5].audio:''}}" data-id="{{lc6[5].income?lc6[5].income:lc6[5].id}}" src="{{lc6[5].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc6[6]}}"><em class="{{lc6[6].income?'ysvg2':'wsvg2'}} {{lc6[6].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc6[6].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[6].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[6].audio?lc6[6].audio:''}}" data-id="{{lc6[6].income?lc6[6].income:lc6[6].id}}" src="{{lc6[6].pic}}" /></em><em class="{{lc6[7].income?'ysvg2':'wsvg2'}} {{lc6[7].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc6[7]}}"  mode="{{lc6[7].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[7].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[7].audio?lc6[7].audio:''}}"  data-id="{{lc6[7].income?lc6[7].income:lc6[7].id}}" src="{{lc6[7].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc6[8]}}"><em class="{{lc6[8].income?'ysvg2':'wsvg2'}} {{lc6[8].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc6[8].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[8].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[8].audio?lc6[8].audio:''}}"  data-id="{{lc6[8].income?lc6[8].income:lc6[8].id}}" src="{{lc6[8].pic}}" /></em><em class="{{lc6[9].income?'ysvg2':'wsvg2'}} {{lc6[9].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc6[9]}}"  mode="{{lc6[9].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[9].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[9].audio?lc6[9].audio:''}}"  data-id="{{lc6[9].income?lc6[9].income:lc6[9].id}}" src="{{lc6[9].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc6[10]}}"><em class="{{lc6[10].income?'ysvg2':'wsvg2'}} {{lc6[10].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc6[10].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[10].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[10].audio?lc6[10].audio:''}}" data-id="{{lc6[10].income?lc6[10].income:lc6[10].id}}" src="{{lc6[10].pic}}" /></em><em class="{{lc6[11].income?'ysvg2':'wsvg2'}} {{lc6[11].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc6[11]}}"  mode="{{lc6[11].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[11].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc6[11].audio?lc6[11].audio:''}}" data-id="{{lc6[11].income?lc6[11].income:lc6[11].id}}" src="{{lc6[11].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc6[12]}}"><em class="{{lc6[12].income?'ysvg2':'wsvg2'}} {{lc6[12].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc6[12].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[12].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc6[12].audio?lc6[12].audio:''}}" data-id="{{lc6[12].income?lc6[12].income:lc6[12].id}}" src="{{lc6[12].pic}}" /></em><em class="{{lc6[13].income?'ysvg2':'wsvg2'}} {{lc6[13].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc6[13]}}"  mode="{{lc6[13].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[13].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc6[13].audio?lc6[13].audio:''}}"  data-id="{{lc6[13].income?lc6[13].income:lc6[13].id}}" src="{{lc6[13].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc6[14]}}"><em class="{{lc6[14].income?'ysvg2':'wsvg2'}} {{lc6[14].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc6[14].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[14].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc6[14].audio?lc6[14].audio:''}}" data-id="{{lc6[14].income?lc6[14].income:lc6[14].id}}"src="{{lc6[14].pic}}" /></em>
+            
+            
+            <em class="{{lc6[15].income?'ysvg2':'wsvg2'}} {{lc6[15].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc6[15]}}"  mode="{{lc6[15].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[15].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[15].audio?lc6[15].audio:''}}"  data-id="{{lc6[15].income?lc6[15].income:lc6[15].id}}" src="{{lc6[15].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc6[16]}}"><em class="{{lc6[16].income?'ysvg2':'wsvg2'}} {{lc6[16].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc6[16].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[16].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[16].audio?lc6[16].audio:''}}" data-id="{{lc6[16].income?lc6[16].income:lc6[16].id}}" src="{{lc6[16].pic}}" /></em>
+            
+            <em class="{{lc6[17].income?'ysvg2':'wsvg2'}} {{lc6[17].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   wx:if="{{lc6[17]}}" mode="{{lc6[17].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[17].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[17].audio?lc6[17].audio:''}}" data-id="{{lc6[17].income?lc6[17].income:lc6[17].id}}" src="{{lc6[17].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc6[18]}}"><em class="{{lc6[18].income?'ysvg2':'wsvg2'}} {{lc6[18].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc6[18].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[18].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[18].audio?lc6[18].audio:''}}" data-id="{{lc6[18].income?lc6[18].income:lc6[18].id}}" src="{{lc6[18].pic}}" /></em>
+            
+            <em class="{{lc6[19].income?'ysvg2':'wsvg2'}} {{lc6[19].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   wx:if="{{lc6[19]}}" mode="{{lc6[19].income?'widthFix':'aspectFill'}}"  bindtap="{{lc6[19].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc6[19].audio?lc6[19].audio:''}}" data-id="{{lc6[19].income?lc6[19].income:lc6[19].id}}" src="{{lc6[19].pic}}" /></em>
+          </p>
+          
+      </block> <view class="qb qb2"  bindtap="toliebiao"  data-id="{{lc6gd}}">
+      <view class="jzz"  wx:if="{{lc6==''}}">
+          <image lazy-load='true'  mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+          <em>文章加载中</em>
+        </view>
+      <p>阅读全部</p>
+      <span>{{jdata.lc6.shuliang}}</span>
+    </view>
+
+      <!-- tag -->
+      <view class="ff ff2">
+        <em>{{lc6a.zht}}</em>
+        <p><span  wx:for="{{lc6a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">{{item.nr}}</span></p>
+        <i>{{lc6a.zhf}}</i>
+      </view>
+
+      <!-- <view class="kdd">
+      </view> -->
+</scroll-view>
+  </view>
+<!-- /楼层6 -->
+
+
+<!-- 广告 -->
+  <div class="ht"bindtap="toliebiao" data-id="{{jdata.lc6.dbxq.link}}" >
+    {{jdata.lc6.dbxq.nr}}</div>
+
+  <div class="gg gg3">
+    <image lazy-load='true'  mode="heightFix" wx:for="{{jdata.lc6.xq}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" />
+  </div>
+<!-- /广告 -->
+
+
+<!-- 楼层7 -->
+   <view class="tt" bindtap="zhankai" data-id=""  data-zhf="{{jdata.lc7.zh.zhf}}" data-zht="{{jdata.lc7.zh.zht}}" data-zh="{{jdata.lc7.zh.zh}}" data-bh="7">
+    {{jdata.lc7.db.nr}}
+  </view>
+
+  <!-- tag -->
+  <view class="jtag ">
+    <span wx:for="{{jdata.lc7.lj}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" data-nr="{{item.nr}}" data-bh="7" data-zhf="{{item.zhf}}" data-zht="{{item.zht}}" data-zh="{{item.zh}}" >{{item.nr}}</span>
+  </view>
+
+  <view class="hy scroll_box">
+
+
+
+	<scroll-view scroll-x>
+      <!-- 文章 -->
+      <block wx:if="{{lc7}}">
+          <p class="hyp">
+            <em class="{{lc7[0].income?'ysvg2':'wsvg2'}} {{lc7[0].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  mode="{{lc7[0].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[0].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[0].audio?lc7[0].audio:''}}"  data-id="{{lc7[0].income?lc7[0].income:lc7[0].id}}" src="{{lc7[0].pic}}" />
+            </em>
+            <em class="{{lc7[1].income?'ysvg2':'wsvg2'}} {{lc7[1].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc7[1]}}"  mode="{{lc7[1].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[1].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[1].audio?lc7[1].audio:''}}" data-id="{{lc7[1].income?lc7[1].income:lc7[1].id}}" src="{{lc7[1].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc7[2]}}"><em class="{{lc7[2].income?'ysvg2':'wsvg2'}} {{lc7[2].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc7[2].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[2].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[2].audio?lc7[2].audio:''}}" data-id="{{lc7[2].income?lc7[2].income:lc7[2].id}}" src="{{lc7[2].pic}}" /></em><em class="{{lc7[3].income?'ysvg2':'wsvg2'}} {{lc7[3].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc7[3]}}"  mode="{{lc7[3].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[3].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[3].audio?lc7[3].audio:''}}" data-id="{{lc7[3].income?lc7[3].income:lc7[3].id}}" src="{{lc7[3].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc7[4]}}"><em class="{{lc7[4].income?'ysvg2':'wsvg2'}} {{lc7[4].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc7[4].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[4].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[4].audio?lc7[4].audio:''}}" data-id="{{lc7[4].income?lc7[4].income:lc7[4].id}}" src="{{lc7[4].pic}}" /></em><em class="{{lc7[0].income?'ysvg2':'wsvg2'}} {{lc7[0].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc7[5]}}"  mode="{{lc7[5].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[5].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc7[5].audio?lc7[5].audio:''}}" data-id="{{lc7[5].income?lc7[5].income:lc7[5].id}}" src="{{lc7[5].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc7[6]}}"><em class="{{lc7[6].income?'ysvg2':'wsvg2'}} {{lc7[6].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc7[6].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[6].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[6].audio?lc7[6].audio:''}}" data-id="{{lc7[6].income?lc7[6].income:lc7[6].id}}" src="{{lc7[6].pic}}" /></em><em class="{{lc7[7].income?'ysvg2':'wsvg2'}} {{lc7[7].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc7[7]}}"  mode="{{lc7[7].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[7].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[7].audio?lc7[7].audio:''}}"  data-id="{{lc7[7].income?lc7[7].income:lc7[7].id}}" src="{{lc7[7].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc7[8]}}"><em class="{{lc7[8].income?'ysvg2':'wsvg2'}} {{lc7[8].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc7[8].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[8].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[8].audio?lc7[8].audio:''}}"  data-id="{{lc7[8].income?lc7[8].income:lc7[8].id}}" src="{{lc7[8].pic}}" /></em><em class="{{lc7[9].income?'ysvg2':'wsvg2'}} {{lc7[9].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc7[9]}}"  mode="{{lc7[9].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[9].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[9].audio?lc7[9].audio:''}}"  data-id="{{lc7[9].income?lc7[9].income:lc7[9].id}}" src="{{lc7[9].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc7[10]}}"><em class="{{lc7[10].income?'ysvg2':'wsvg2'}} {{lc7[10].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc7[10].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[10].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[10].audio?lc7[10].audio:''}}" data-id="{{lc7[10].income?lc7[10].income:lc7[10].id}}" src="{{lc7[10].pic}}" /></em><em class="{{lc7[11].income?'ysvg2':'wsvg2'}} {{lc7[11].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc7[11]}}"  mode="{{lc7[11].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[11].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc7[11].audio?lc7[11].audio:''}}" data-id="{{lc7[11].income?lc7[11].income:lc7[11].id}}" src="{{lc7[11].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc7[12]}}"><em class="{{lc7[12].income?'ysvg2':'wsvg2'}} {{lc7[12].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc7[12].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[12].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc7[12].audio?lc7[12].audio:''}}" data-id="{{lc7[12].income?lc7[12].income:lc7[12].id}}" src="{{lc7[12].pic}}" /></em><em class="{{lc7[13].income?'ysvg2':'wsvg2'}} {{lc7[13].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc7[13]}}"  mode="{{lc7[13].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[13].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc7[13].audio?lc7[13].audio:''}}"  data-id="{{lc7[13].income?lc7[13].income:lc7[13].id}}" src="{{lc7[13].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc7[14]}}"><em class="{{lc7[14].income?'ysvg2':'wsvg2'}} {{lc7[14].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc7[14].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[14].income?'toliebiao':'toxiangqing'}}"  data-vip="{{lc7[14].audio?lc7[14].audio:''}}" data-id="{{lc7[14].income?lc7[14].income:lc7[14].id}}"src="{{lc7[14].pic}}" /></em>
+            
+            
+            <em class="{{lc7[15].income?'ysvg2':'wsvg2'}} {{lc7[15].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'  wx:if="{{lc7[15]}}"  mode="{{lc7[15].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[15].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[15].audio?lc7[15].audio:''}}"  data-id="{{lc7[15].income?lc7[15].income:lc7[15].id}}" src="{{lc7[15].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc7[16]}}"><em class="{{lc7[16].income?'ysvg2':'wsvg2'}} {{lc7[16].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc7[16].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[16].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[16].audio?lc7[16].audio:''}}" data-id="{{lc7[16].income?lc7[16].income:lc7[16].id}}" src="{{lc7[16].pic}}" /></em>
+            
+            <em class="{{lc7[17].income?'ysvg2':'wsvg2'}} {{lc7[17].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   wx:if="{{lc7[17]}}" mode="{{lc7[17].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[17].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[17].audio?lc7[17].audio:''}}" data-id="{{lc7[17].income?lc7[17].income:lc7[17].id}}" src="{{lc7[17].pic}}" /></em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc7[18]}}"><em class="{{lc7[18].income?'ysvg2':'wsvg2'}} {{lc7[18].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   mode="{{lc7[18].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[18].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[18].audio?lc7[18].audio:''}}" data-id="{{lc7[18].income?lc7[18].income:lc7[18].id}}" src="{{lc7[18].pic}}" /></em>
+            
+            <em class="{{lc7[19].income?'ysvg2':'wsvg2'}} {{lc7[19].abk=='a'?'ybk2':'wbk2'}}">
+            <image lazy-load='true'   wx:if="{{lc7[19]}}" mode="{{lc7[19].income?'widthFix':'aspectFill'}}"  bindtap="{{lc7[19].income?'toliebiao':'toxiangqing'}}" data-vip="{{lc7[19].audio?lc7[19].audio:''}}" data-id="{{lc7[19].income?lc7[19].income:lc7[19].id}}" src="{{lc7[19].pic}}" /></em>
+          </p>
+          
+      </block> <view class="qb qb2" bindtap="toliebiao"  data-id="{{lc7gd}}">
+      <view class="jzz"  wx:if="{{lc7==''}}">
+          <image lazy-load='true'  mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+          <em>文章加载中</em>
+        </view>
+      <p>阅读全部</p>
+      <span>{{jdata.lc7.shuliang}}</span>
+    </view>
+
+      <!-- tag -->
+      <view class="ff ff2">
+        <em>{{lc7a.zht}}</em>
+        <p><span  wx:for="{{lc7a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">{{item.nr}}</span></p>
+        <i>{{lc7a.zhf}}</i>
+      </view>
+
+      <!-- <view class="kdd">
+      </view> -->
+</scroll-view>
+  </view>
+<!-- /楼层7 -->
+
+
+  <div class="ht ht2" data-id="{{jdata.lc7.dbxq.link}}" >
+    {{jdata.lc7.dbxq.nr}}</div>
+
+
+   <div class="gg">
+    <image lazy-load='true'  mode="heightFix" wx:for="{{jdata.lc7.xq}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" />
+  </div>
+
+   <image lazy-load='true' bindtap="jdbgg" class="jdbgg"  mode="widthFix" src="https://www.mlito.com/wp-content/uploads/mlito-lite-di-info.svg" />
+
+</div>
+
+
+
+ 
+
+<cover-view class="tab-bar {{isIphoneX?'isIPX':''}}">
+
+  <cover-view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+    <cover-image class="ytp {{selected === index ? 'xz' : 'bxz'}}" src="{{selected === index ? item.selectedIconPath : item.iconPath}}"></cover-image>
+    <!-- <cover-view style="color: {{selected === index ? selectedColor : color}}" class="wzz">{{item.text}}</cover-view> -->
+  </cover-view>
+
+  <cover-image src="https://www.mlito.com/wp-content/uploads/lite-di-5nav.png" class="tab-bar-bj"></cover-image>
+</cover-view>
+</view>
+
+<view class="vtt" wx:if="{{vtt}}"></view>

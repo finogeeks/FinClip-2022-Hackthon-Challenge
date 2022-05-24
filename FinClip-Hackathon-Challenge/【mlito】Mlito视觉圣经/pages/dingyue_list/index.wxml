@@ -1,0 +1,167 @@
+<view class="jpage">
+  <van-sticky>
+    <navbar></navbar>
+    <view class="nav_footer" style="margin-top:{{bnavHeight}}px;">
+      <image src="https://www.mlito.com/wp-content/uploads/lite-back-50-50.svg" bindtap="fanhui" class="nav_footer_goback"></image>
+      <!-- <view class="nav_footer_title">{{navTitle}}</view> -->
+
+      <image lazy-load='true'  mode="heightFix" bindtap="toliebiao" src="{{jdata.top.ysj.nr}}" class="nav_footer_right"></image>
+
+      <image mode="heightFix" src="{{jdata.top.zsj.nr}}" class="nav_footer_left"></image>
+      
+      <view class="nav_footer_rt">
+        <!-- <span bindtap="toliebiao">
+          我的订阅
+        </span>
+
+        <span bindtap="toliebiao">
+          我的收藏
+        </span> -->
+      </view>
+    </view>
+  </van-sticky>
+
+  <div class="zdy" style="margin-top:{{navHeight}}px;">
+
+    <!-- <view class="swiper-container">
+      <swiper class="swiper1" indicator-dots="true" indicator-active-color="#fff" circular>
+        <swiper-item wx:for="{{banners}}" wx:key="id">
+          <image mode="aspectFill" bindtap="tapBanner" data-url="{{item.linkUrl}}" src="{{item.picUrl}}" />
+        </swiper-item>
+      </swiper>
+    </view> -->
+
+    <view class="dy">
+      
+  </view>
+
+<!-- 楼层一 -->
+  <view class="dy1">
+    <image mode="aspectFill" class="dy1a" wx:for="{{lc1a}}" wx:key="id" bindtap="tapBanner" data-url="{{item.nr}}" src="{{item.link}}" />
+  </view>
+
+
+
+
+<!-- 楼层2 -->
+  <view class="tt" bindtap="zhankai" data-id="" data-nr="{{item.lc2.db.nr}}"  data-zhf="{{jdata.lc2.zh.zhf}}" data-zht="{{jdata.lc2.zh.zht}}" data-zh="{{jdata.lc2.zh.zh}}" data-bh="2">
+    {{jdata.lc2.db.nr}}
+  </view>
+
+  <!-- tag -->
+  <view class="jtag ">
+    <span wx:for="{{jdata.lc2.zh}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" data-nr="{{item.nr}}" data-bh="2" data-zhf="{{item.zhf}}" data-zht="{{item.zht}}" data-zh="{{item.zh}}" >{{item.nr}}</span>
+  </view>
+
+
+    <!-- 楼层 -->
+      <view class="hy">
+        <!-- 文章 -->
+        <block wx:if="{{lc2}}">
+
+          <p class="hyp" wx:for="{{lc2}}" bindtap="toxiangqing" wx:key="index" data-id="{{item.link}}">
+            <em class="{{lc2[0].income?'ysvg2':'wsvg2'}} {{lc2[0].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc2[0].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[0].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[0].income?lc2[0].income:lc2[0].id}}" src="{{lc2[0].pic}}" />
+            </em>
+            <em class="{{lc2[1].income?'ysvg2':'wsvg2'}} {{lc2[1].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc2[1]}}" mode="{{lc2[1].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[1].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[1].income?lc2[1].income:lc2[1].id}}" src="{{lc2[1].pic}}" />
+            </em>
+            <span></span>
+
+          </p>
+
+          <p class="hyp" wx:if="{{lc2[2]}}">
+            <em class="{{lc2[2].income?'ysvg2':'wsvg2'}} {{lc2[2].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc2[2].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[2].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[2].income?lc2[2].income:lc2[2].id}}" src="{{lc2[2].pic}}" />
+            </em>
+            <em class="{{lc2[3].income?'ysvg2':'wsvg2'}} {{lc2[3].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc2[3]}}" mode="{{lc2[3].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[3].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[3].income?lc2[0].income:lc2[3].id}}" src="{{lc2[3].pic}}" />
+            </em>
+          </p>
+
+          <p class="hyp" wx:if="{{lc2[4]}}">
+            <em class="{{lc2[4].income?'ysvg2':'wsvg2'}} {{lc2[4].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc2[4].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[4].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[4].income?lc2[4].income:lc2[4].id}}" src="{{lc2[4].pic}}" />
+            </em>
+            <em class="{{lc2[5].income?'ysvg2':'wsvg2'}} {{lc2[5].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc2[5]}}" mode="{{lc2[5].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[5].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[5].income?lc2[5].income:lc2[5].id}}" src="{{lc2[5].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc2[6]}}">
+            <em class="{{lc2[6].income?'ysvg2':'wsvg2'}} {{lc2[6].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc2[6].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[6].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[6].income?lc2[6].income:lc2[6].id}}" src="{{lc2[6].pic}}" />
+            </em>
+            <em class="{{lc2[7].income?'ysvg2':'wsvg2'}} {{lc2[7].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc2[7]}}" mode="{{lc2[7].income?'widthFix':'aspectFill'}}"  bindtap="{{lc2[7].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[7].income?lc2[7].income:lc2[7].id}}" src="{{lc2[7].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc2[8]}}">
+            <em class="{{lc2[8].income?'ysvg2':'wsvg2'}} {{lc2[8].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc2[8].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[8].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[8].income?lc2[8].income:lc2[8].id}}" src="{{lc2[8].pic}}" />
+            </em>
+            <em class="{{lc2[9].income?'ysvg2':'wsvg2'}} {{lc2[9].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc2[9]}}" mode="{{lc2[9].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[9].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[9].income?lc2[9].income:lc2[9].id}}" src="{{lc2[9].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc2[10]}}">
+            <em class="{{lc2[10].income?'ysvg2':'wsvg2'}} {{lc2[10].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc2[10].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[10].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[10].income?lc2[10].income:lc2[10].id}}" src="{{lc2[10].pic}}" />
+            </em>
+            <em class="{{lc2[11].income?'ysvg2':'wsvg2'}} {{lc2[11].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc2[11]}}" mode="{{lc2[11].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[11].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[11].income?lc2[11].income:lc2[11].id}}"  src="{{lc2[11].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc2[12]}}">
+            <em class="{{lc2[12].income?'ysvg2':'wsvg2'}} {{lc2[12].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc2[12].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[12].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[12].income?lc2[12].income:lc2[12].id}}"  src="{{lc2[12].pic}}" />
+            </em>
+            <em class="{{lc2[13].income?'ysvg2':'wsvg2'}} {{lc2[13].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc2[13]}}" mode="{{lc2[13].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[12].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[13].income?lc2[13].income:lc2[13].id}}"  src="{{lc2[13].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc2[14]}}">
+            <em class="{{lc2[14].income?'ysvg2':'wsvg2'}} {{lc2[14].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc2[14].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[14].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[14].income?lc2[14].income:lc2[14].id}}"  src="{{lc2[14].pic}}" />
+            </em>
+            <em class="{{lc2[15].income?'ysvg2':'wsvg2'}} {{lc2[15].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc2[15]}}" mode="{{lc2[15].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[15].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[15].income?lc2[15].income:lc2[15].id}}"  src="{{lc2[15].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc2[16]}}">
+            <em class="{{lc2[16].income?'ysvg2':'wsvg2'}} {{lc2[16].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc2[16].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[16].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[16].income?lc2[16].income:lc2[16].id}}"  src="{{lc2[16].pic}}" />
+            </em>
+            <em class="{{lc2[17].income?'ysvg2':'wsvg2'}} {{lc2[17].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc2[17]}}" mode="{{lc2[17].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[17].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[17].income?lc2[17].income:lc2[17].id}}"  src="{{lc2[17].pic}}" />
+            </em>
+          </p>
+          <p class="hyp" wx:if="{{lc2[18]}}">
+            <em class="{{lc2[18].income?'ysvg2':'wsvg2'}} {{lc2[18].abk=='a'?'ybk2':'wbk2'}}">
+              <image mode="{{lc2[18].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[18].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[18].income?lc2[18].income:lc2[18].id}}"  src="{{lc2[18].pic}}" />
+            </em>
+            <em class="{{lc2[19].income?'ysvg2':'wsvg2'}} {{lc2[19].abk=='a'?'ybk2':'wbk2'}}">
+              <image wx:if="{{lc2[19]}}" mode="{{lc2[19].income?'widthFix':'aspectFill'}}" bindtap="{{lc2[19].income?'toliebiao':'toxiangqing'}}" data-id="{{lc2[19].income?lc2[19].income:lc2[19].id}}"  src="{{lc2[19].pic}}" />
+            </em>
+          </p>
+        </block>
+      </view>
+    <!-- /楼层 -->
+
+
+
+  </div>
+</view>
+
+
+
+<!-- miniprogram/custom-tab-bar/index.wxml -->
+
+<!-- <cover-view class="tab-bar {{isIphoneX?'isIPX':''}}">
+  <cover-view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+    <cover-image class="ytp {{selected === index ? 'xz' : 'bxz'}}" src="{{selected === index ? item.selectedIconPath : item.iconPath}}"></cover-image>
+    <cover-view style="color: {{selected === index ? selectedColor : color}}" class="wzz">
+      {{item.text}}
+    </cover-view>
+  </cover-view>
+
+</cover-view> -->

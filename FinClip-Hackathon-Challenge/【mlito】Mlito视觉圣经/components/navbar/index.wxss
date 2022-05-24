@@ -1,0 +1,59 @@
+/* navbar.wxss */
+/*自定义导航栏*/
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+ 
+}
+
+.nav-bar-white {
+  /* background-color: #fff; */
+}
+
+.navbar-title {
+  position: absolute;
+  height: 32px;
+  line-height: 32px;
+  /* width: 100%; */
+  width: 320rpx;
+  text-align: center;
+
+  font-size: 16px;
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  left: 28%;
+}
+
+.navbar-icon-wrap {
+  position: absolute;
+  left: 9px;
+  width: 44px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-icon {
+  width: 44px;
+  height: 32px;
+}
+
+.navbar-scan {
+  width: 28px;
+  height: 28px;
+}
+
+.nav_top{ width: 100%; height: auto; display: block; float: left; border-bottom: 1rpx solid #d4d4d4; padding-bottom: 25rpx; background: #fff; }
+.nav_top_logo{ width: auto; height: 50rpx; display: block; float: left; margin-right: 25rpx; margin-left: 20rpx; margin-top: 10rpx;}
+.nav_top_nav{ width: auto; height: 50rpx; display: block; float: left;margin-right: 25rpx;margin-top: 10rpx}
+.nav_top_search{ width: auto; height: 50rpx; display: block; float: left;margin-top: 10rpx}
+
+.nav-bar-white{ background: none !important;}
+
+.nav-bar-white .nav_top { background: none !important; border-bottom:none !important}

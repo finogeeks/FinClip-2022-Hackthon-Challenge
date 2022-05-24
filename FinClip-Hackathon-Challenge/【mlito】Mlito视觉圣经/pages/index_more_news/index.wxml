@@ -1,0 +1,518 @@
+<view class="jpage">
+  <van-sticky>
+    <navbar></navbar>
+    <view class="nav_footer" style="margin-top:{{bnavHeight}}px;">
+      <!-- <image src="https://www.mlito.com/wp-content/uploads/lite-back-50-50.svg" bindtap="fanhui" class="nav_footer_goback"></image> -->
+      <!-- <view class="nav_footer_title">{{navTitle}}</view> -->
+      <image mode="heightFix" bindtap="toliebiao" data-id="{{item.link}}" src="{{jdata.top.zsj.nr}}" class="nav_footer_left"></image>
+      <!-- <image mode="heightFix" src="https://www.mlito.com/wp-content/uploads/lite-topic-50-50.income" class="nav_footer_right"></image> -->
+      <view class="nav_footer_rt">
+        <span wx:for="{{jdata.top.lj}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">
+          {{item.nr}}
+        </span>
+      </view>
+    </view>
+  </van-sticky>
+  <div class="zdy" style="margin-top:{{navHeight}}px;">
+    <view class="swiper-container">
+      <!-- autoplay -->
+      <swiper class="swiper1" indicator-dots="true" indicator-active-color="#fff" circular>
+        <swiper-item wx:for="{{banners}}" wx:key="id">
+          <image mode="aspectFill" bindtap="tapBanner" data-url="{{item.linkUrl}}" src="{{item.picUrl}}" />
+        </swiper-item>
+      </swiper>
+    </view>
+
+    <!-- 楼层 -->
+    <block wx:if="{{jdata.lc1}}">
+      <view class="tt" data-id="" data-zhf="{{jdata.lc1.zh.zhf}}" data-zht="{{jdata.lc1.zh.zht}}" data-zh="{{jdata.lc1.zh.zh}}" data-bh="1">
+        <image style="border:none" mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.lc1.db.link}}" src="{{jdata.lc1.db.nr}}" />
+      </view>
+
+      <view class="jp scroll_box scroll_box2">
+
+        <scroll-view scroll-x>
+
+          <block wx:if="{{lc1}}">
+              <view class="jpb item_list item_list2" wx:for="{{lc1}}" bindtap="{{item.income?'toliebiao':'toxiangqing'}}" data-vip="{{item.audio?item.audio:''}}" data-id="{{item.income?item.income:item.id}}" wx:key="index" >
+                <p class="{{item.income?'ysvg':'wsvg'}} {{item.abk=='a'?'ybk':'wbk'}}">
+                  <image lazy-load='true'  mode="{{item.income?'widthFix':'heightFix'}}" src="{{item.pic}}" />
+                </p>
+                <span>{{item.title}}</span>
+                <em>{{item.descript}}</em>
+              </view>
+          </block>
+
+          <view class="qb qb2 item_list" bindtap="toliebiao"  data-id="{{lc2gd}}">
+            <view class="jzz"  wx:if="{{lc1==''}}">
+              <image lazy-load='true'  mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+              <em>文章加载中</em>
+            </view>
+            <p>阅读全部</p>
+            <span>{{jdata.lc1.shuliang}}</span>
+          </view>
+
+          <view class="ff ff2 item_list">
+            <em>{{lc1a.zht}}</em>
+            <p><span wx:for="{{lc1a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">{{item.nr}}</span></p>
+            <i>{{lc1a.zhf}}</i>
+          </view>
+          <view class="kdd item_list">
+          </view>
+          </scroll-view>
+
+        </view>
+
+      
+      <div class="gg">
+        <image mode="widthFix" wx:for="{{jdata.lc1.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="1" data-nr="{{item.link}}" />
+      </div>
+    </block>
+    <!-- /楼层 -->
+
+
+        <!-- 楼层 -->
+    <block wx:if="{{jdata.lc2}}">
+      <view class="tt" data-id="" data-zhf="{{jdata.lc2.zh.zhf}}" data-zht="{{jdata.lc2.zh.zht}}" data-zh="{{jdata.lc2.zh.zh}}" data-bh="2">
+        <image style="border:none" mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.lc2.db.link}}" src="{{jdata.lc2.db.nr}}" />
+      </view>
+
+      <view class="jp scroll_box scroll_box2">
+
+        <scroll-view scroll-x>
+
+          <block wx:if="{{lc2}}">
+              <view class="jpb item_list item_list2" wx:for="{{lc2}}" bindtap="{{item.income?'toliebiao':'toxiangqing'}}" data-vip="{{item.audio?item.audio:''}}" data-id="{{item.income?item.income:item.id}}" wx:key="index" >
+                <p class="{{item.income?'ysvg':'wsvg'}} {{item.abk=='a'?'ybk':'wbk'}}">
+                  <image lazy-load='true'  mode="{{item.income?'widthFix':'heightFix'}}" src="{{item.pic}}" />
+                </p>
+                <span>{{item.title}}</span>
+                <em>{{item.descript}}</em>
+              </view>
+          </block>
+
+          <view class="qb qb2 item_list" bindtap="toliebiao"  data-id="{{lc2gd}}">
+            <view class="jzz"  wx:if="{{lc2==''}}">
+              <image lazy-load='true'  mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+              <em>文章加载中</em>
+            </view>
+            <p>阅读全部</p>
+            <span>{{jdata.lc2.shuliang}}</span>
+          </view>
+
+          <view class="ff ff2 item_list">
+            <em>{{lc2a.zht}}</em>
+            <p><span wx:for="{{lc2a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">{{item.nr}}</span></p>
+            <i>{{lc2a.zhf}}</i>
+          </view>
+          <view class="kdd item_list">
+          </view>
+          </scroll-view>
+
+        </view>
+
+      
+      <div class="gg">
+        <image mode="widthFix" wx:for="{{jdata.lc2.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="2" data-nr="{{item.link}}" />
+      </div>
+    </block>
+    <!-- /楼层 -->
+
+        <!-- 楼层 -->
+    <block wx:if="{{jdata.lc3}}">
+      <view class="tt" data-id="" data-zhf="{{jdata.lc3.zh.zhf}}" data-zht="{{jdata.lc3.zh.zht}}" data-zh="{{jdata.lc3.zh.zh}}" data-bh="3">
+        <image style="border:none" mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.lc3.db.link}}" src="{{jdata.lc3.db.nr}}" />
+      </view>
+
+      <view class="jp scroll_box scroll_box2">
+
+        <scroll-view scroll-x>
+
+          <block wx:if="{{lc3}}">
+              <view class="jpb item_list item_list2" wx:for="{{lc3}}" bindtap="{{item.income?'toliebiao':'toxiangqing'}}" data-vip="{{item.audio?item.audio:''}}" data-id="{{item.income?item.income:item.id}}" wx:key="index" >
+                <p class="{{item.income?'ysvg':'wsvg'}} {{item.abk=='a'?'ybk':'wbk'}}">
+                  <image lazy-load='true'  mode="{{item.income?'widthFix':'heightFix'}}" src="{{item.pic}}" />
+                </p>
+                <span>{{item.title}}</span>
+                <em>{{item.descript}}</em>
+              </view>
+          </block>
+
+          <view class="qb qb2 item_list" bindtap="toliebiao"  data-id="{{lc3gd}}">
+            <view class="jzz"  wx:if="{{lc3==''}}">
+              <image lazy-load='true'  mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+              <em>文章加载中</em>
+            </view>
+            <p>阅读全部</p>
+            <span>{{jdata.lc3.shuliang}}</span>
+          </view>
+
+          <view class="ff ff2 item_list">
+            <em>{{lc3a.zht}}</em>
+            <p><span wx:for="{{lc3a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">{{item.nr}}</span></p>
+            <i>{{lc3a.zhf}}</i>
+          </view>
+          <view class="kdd item_list">
+          </view>
+          </scroll-view>
+
+        </view>
+
+      
+      <div class="gg">
+        <image mode="widthFix" wx:for="{{jdata.lc3.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="3" data-nr="{{item.link}}" />
+      </div>
+    </block>
+    <!-- /楼层 -->
+
+
+        <!-- 楼层 -->
+    <block wx:if="{{jdata.lc4}}">
+      <view class="tt" data-id="" data-zhf="{{jdata.lc4.zh.zhf}}" data-zht="{{jdata.lc4.zh.zht}}" data-zh="{{jdata.lc4.zh.zh}}" data-bh="4">
+        <image style="border:none" mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.lc4.db.link}}" src="{{jdata.lc4.db.nr}}" />
+      </view>
+
+      <view class="jp scroll_box scroll_box2">
+
+        <scroll-view scroll-x>
+
+          <block wx:if="{{lc4}}">
+              <view class="jpb item_list item_list2" wx:for="{{lc4}}" bindtap="{{item.income?'toliebiao':'toxiangqing'}}" data-vip="{{item.audio?item.audio:''}}" data-id="{{item.income?item.income:item.id}}" wx:key="index" >
+                <p class="{{item.income?'ysvg':'wsvg'}} {{item.abk=='a'?'ybk':'wbk'}}">
+                  <image lazy-load='true'  mode="{{item.income?'widthFix':'heightFix'}}" src="{{item.pic}}" />
+                </p>
+                <span>{{item.title}}</span>
+                <em>{{item.descript}}</em>
+              </view>
+          </block>
+
+          <view class="qb qb2 item_list" bindtap="toliebiao"  data-id="{{lc4gd}}">
+            <view class="jzz"  wx:if="{{lc4==''}}">
+              <image lazy-load='true'  mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+              <em>文章加载中</em>
+            </view>
+            <p>阅读全部</p>
+            <span>{{jdata.lc4.shuliang}}</span>
+          </view>
+
+          <view class="ff ff2 item_list">
+            <em>{{lc4a.zht}}</em>
+            <p><span wx:for="{{lc4a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">{{item.nr}}</span></p>
+            <i>{{lc4a.zhf}}</i>
+          </view>
+          <view class="kdd item_list">
+          </view>
+          </scroll-view>
+
+        </view>
+
+      
+      <div class="gg">
+        <image mode="widthFix" wx:for="{{jdata.lc4.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="4" data-nr="{{item.link}}" />
+      </div>
+    </block>
+    <!-- /楼层 -->
+
+
+        <!-- 楼层 -->
+    <block wx:if="{{jdata.lc5}}">
+      <view class="tt" data-id="" data-zhf="{{jdata.lc5.zh.zhf}}" data-zht="{{jdata.lc5.zh.zht}}" data-zh="{{jdata.lc5.zh.zh}}" data-bh="5">
+        <image style="border:none" mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.lc5.db.link}}" src="{{jdata.lc5.db.nr}}" />
+      </view>
+
+      <view class="jp scroll_box scroll_box2">
+
+        <scroll-view scroll-x>
+
+          <block wx:if="{{lc5}}">
+              <view class="jpb item_list item_list2" wx:for="{{lc5}}" bindtap="{{item.income?'toliebiao':'toxiangqing'}}" data-vip="{{item.audio?item.audio:''}}" data-id="{{item.income?item.income:item.id}}" wx:key="index" >
+                <p class="{{item.income?'ysvg':'wsvg'}} {{item.abk=='a'?'ybk':'wbk'}}">
+                  <image lazy-load='true'  mode="{{item.income?'widthFix':'heightFix'}}" src="{{item.pic}}" />
+                </p>
+                <span>{{item.title}}</span>
+                <em>{{item.descript}}</em>
+              </view>
+          </block>
+
+          <view class="qb qb2 item_list" bindtap="toliebiao"  data-id="{{lc5gd}}">
+            <view class="jzz"  wx:if="{{lc5==''}}">
+              <image lazy-load='true'  mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+              <em>文章加载中</em>
+            </view>
+            <p>阅读全部</p>
+            <span>{{jdata.lc5.shuliang}}</span>
+          </view>
+
+          <view class="ff ff2 item_list">
+            <em>{{lc5a.zht}}</em>
+            <p><span wx:for="{{lc5a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">{{item.nr}}</span></p>
+            <i>{{lc5a.zhf}}</i>
+          </view>
+          <view class="kdd item_list">
+          </view>
+          </scroll-view>
+
+        </view>
+
+      
+      <div class="gg">
+        <image mode="widthFix" wx:for="{{jdata.lc5.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="5" data-nr="{{item.link}}" />
+      </div>
+    </block>
+    <!-- /楼层 -->
+
+
+        <!-- 楼层 -->
+    <block wx:if="{{jdata.lc6}}">
+      <view class="tt" data-id="" data-zhf="{{jdata.lc6.zh.zhf}}" data-zht="{{jdata.lc6.zh.zht}}" data-zh="{{jdata.lc6.zh.zh}}" data-bh="6">
+        <image style="border:none" mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.lc6.db.link}}" src="{{jdata.lc6.db.nr}}" />
+      </view>
+
+      <view class="jp scroll_box scroll_box2">
+
+        <scroll-view scroll-x>
+
+          <block wx:if="{{lc6}}">
+              <view class="jpb item_list item_list2" wx:for="{{lc6}}" bindtap="{{item.income?'toliebiao':'toxiangqing'}}" data-vip="{{item.audio?item.audio:''}}" data-id="{{item.income?item.income:item.id}}" wx:key="index" >
+                <p class="{{item.income?'ysvg':'wsvg'}} {{item.abk=='a'?'ybk':'wbk'}}">
+                  <image lazy-load='true'  mode="{{item.income?'widthFix':'heightFix'}}" src="{{item.pic}}" />
+                </p>
+                <span>{{item.title}}</span>
+                <em>{{item.descript}}</em>
+              </view>
+          </block>
+
+          <view class="qb qb2 item_list" bindtap="toliebiao"  data-id="{{lc6gd}}">
+            <view class="jzz"  wx:if="{{lc6==''}}">
+              <image lazy-load='true'  mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+              <em>文章加载中</em>
+            </view>
+            <p>阅读全部</p>
+            <span>{{jdata.lc6.shuliang}}</span>
+          </view>
+
+          <view class="ff ff2 item_list">
+            <em>{{lc6a.zht}}</em>
+            <p><span wx:for="{{lc6a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">{{item.nr}}</span></p>
+            <i>{{lc6a.zhf}}</i>
+          </view>
+          <view class="kdd item_list">
+          </view>
+          </scroll-view>
+
+        </view>
+
+      
+      <div class="gg">
+        <image mode="widthFix" wx:for="{{jdata.lc6.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="6" data-nr="{{item.link}}" />
+      </div>
+    </block>
+    <!-- /楼层 -->
+
+
+        <!-- 楼层 -->
+    <block wx:if="{{jdata.lc7}}">
+      <view class="tt" data-id="" data-zhf="{{jdata.lc7.zh.zhf}}" data-zht="{{jdata.lc7.zh.zht}}" data-zh="{{jdata.lc7.zh.zh}}" data-bh="7">
+        <image style="border:none" mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.lc7.db.link}}" src="{{jdata.lc7.db.nr}}" />
+      </view>
+
+      <view class="jp scroll_box scroll_box2">
+
+        <scroll-view scroll-x>
+
+          <block wx:if="{{lc7}}">
+              <view class="jpb item_list item_list2" wx:for="{{lc7}}" bindtap="{{item.income?'toliebiao':'toxiangqing'}}" data-vip="{{item.audio?item.audio:''}}" data-id="{{item.income?item.income:item.id}}" wx:key="index" >
+                <p class="{{item.income?'ysvg':'wsvg'}} {{item.abk=='a'?'ybk':'wbk'}}">
+                  <image lazy-load='true'  mode="{{item.income?'widthFix':'heightFix'}}" src="{{item.pic}}" />
+                </p>
+                <span>{{item.title}}</span>
+                <em>{{item.descript}}</em>
+              </view>
+          </block>
+
+          <view class="qb qb2 item_list" bindtap="toliebiao"  data-id="{{lc7gd}}">
+            <view class="jzz"  wx:if="{{lc7==''}}">
+              <image lazy-load='true'  mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+              <em>文章加载中</em>
+            </view>
+            <p>阅读全部</p>
+            <span>{{jdata.lc7.shuliang}}</span>
+          </view>
+
+          <view class="ff ff2 item_list">
+            <em>{{lc7a.zht}}</em>
+            <p><span wx:for="{{lc7a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">{{item.nr}}</span></p>
+            <i>{{lc7a.zhf}}</i>
+          </view>
+          <view class="kdd item_list">
+          </view>
+          </scroll-view>
+
+        </view>
+
+      
+      <div class="gg">
+        <image mode="widthFix" wx:for="{{jdata.lc7.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="7" data-nr="{{item.link}}" />
+      </div>
+    </block>
+    <!-- /楼层 -->
+
+
+
+        <!-- 楼层 -->
+    <block wx:if="{{jdata.lc8}}">
+      <view class="tt" data-id="" data-zhf="{{jdata.lc8.zh.zhf}}" data-zht="{{jdata.lc8.zh.zht}}" data-zh="{{jdata.lc8.zh.zh}}" data-bh="8">
+        <image style="border:none" mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.lc8.db.link}}" src="{{jdata.lc8.db.nr}}" />
+      </view>
+
+      <view class="jp scroll_box scroll_box2">
+
+        <scroll-view scroll-x>
+
+          <block wx:if="{{lc8}}">
+              <view class="jpb item_list item_list2" wx:for="{{lc8}}" bindtap="{{item.income?'toliebiao':'toxiangqing'}}" data-vip="{{item.audio?item.audio:''}}" data-id="{{item.income?item.income:item.id}}" wx:key="index" >
+                <p class="{{item.income?'ysvg':'wsvg'}} {{item.abk=='a'?'ybk':'wbk'}}">
+                  <image lazy-load='true'  mode="{{item.income?'widthFix':'heightFix'}}" src="{{item.pic}}" />
+                </p>
+                <span>{{item.title}}</span>
+                <em>{{item.descript}}</em>
+              </view>
+          </block>
+
+          <view class="qb qb2 item_list" bindtap="toliebiao"  data-id="{{lc8gd}}">
+            <view class="jzz"  wx:if="{{lc8==''}}">
+              <image lazy-load='true'  mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+              <em>文章加载中</em>
+            </view>
+            <p>阅读全部</p>
+            <span>{{jdata.lc8.shuliang}}</span>
+          </view>
+
+          <view class="ff ff2 item_list">
+            <em>{{lc8a.zht}}</em>
+            <p><span wx:for="{{lc8a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">{{item.nr}}</span></p>
+            <i>{{lc8a.zhf}}</i>
+          </view>
+          <view class="kdd item_list">
+          </view>
+          </scroll-view>
+
+        </view>
+
+      
+      <div class="gg">
+        <image mode="widthFix" wx:for="{{jdata.lc8.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="8" data-nr="{{item.link}}" />
+      </div>
+    </block>
+    <!-- /楼层 -->
+
+
+        <!-- 楼层 -->
+    <block wx:if="{{jdata.lc9}}">
+      <view class="tt" data-id="" data-zhf="{{jdata.lc9.zh.zhf}}" data-zht="{{jdata.lc9.zh.zht}}" data-zh="{{jdata.lc9.zh.zh}}" data-bh="9">
+        <image style="border:none" mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.lc9.db.link}}" src="{{jdata.lc9.db.nr}}" />
+      </view>
+
+      <view class="jp scroll_box scroll_box2">
+
+        <scroll-view scroll-x>
+
+          <block wx:if="{{lc9}}">
+              <view class="jpb item_list item_list2" wx:for="{{lc9}}" bindtap="{{item.income?'toliebiao':'toxiangqing'}}" data-vip="{{item.audio?item.audio:''}}" data-id="{{item.income?item.income:item.id}}" wx:key="index" >
+                <p class="{{item.income?'ysvg':'wsvg'}} {{item.abk=='a'?'ybk':'wbk'}}">
+                  <image lazy-load='true'  mode="{{item.income?'widthFix':'heightFix'}}" src="{{item.pic}}" />
+                </p>
+                <span>{{item.title}}</span>
+                <em>{{item.descript}}</em>
+              </view>
+          </block>
+
+          <view class="qb qb2 item_list" bindtap="toliebiao"  data-id="{{lc9gd}}">
+            <view class="jzz"  wx:if="{{lc9==''}}">
+              <image lazy-load='true'  mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+              <em>文章加载中</em>
+            </view>
+            <p>阅读全部</p>
+            <span>{{jdata.lc9.shuliang}}</span>
+          </view>
+
+          <view class="ff ff2 item_list">
+            <em>{{lc9a.zht}}</em>
+            <p><span wx:for="{{lc9a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">{{item.nr}}</span></p>
+            <i>{{lc9a.zhf}}</i>
+          </view>
+          <view class="kdd item_list">
+          </view>
+          </scroll-view>
+
+        </view>
+
+      
+      <div class="gg">
+        <image mode="widthFix" wx:for="{{jdata.lc9.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="9" data-nr="{{item.link}}" />
+      </div>
+    </block>
+    <!-- /楼层 -->
+
+
+        <!-- 楼层 -->
+    <block wx:if="{{jdata.lc10}}">
+      <view class="tt" data-id="" data-zhf="{{jdata.lc10.zh.zhf}}" data-zht="{{jdata.lc10.zh.zht}}" data-zh="{{jdata.lc10.zh.zh}}" data-bh="10">
+        <image style="border:none" mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.lc10.db.link}}" src="{{jdata.lc10.db.nr}}" />
+      </view>
+
+      <view class="jp scroll_box scroll_box2">
+
+        <scroll-view scroll-x>
+
+          <block wx:if="{{lc10}}">
+              <view class="jpb item_list item_list2" wx:for="{{lc10}}" bindtap="{{item.income?'toliebiao':'toxiangqing'}}" data-vip="{{item.audio?item.audio:''}}" data-id="{{item.income?item.income:item.id}}" wx:key="index" >
+                <p class="{{item.income?'ysvg':'wsvg'}} {{item.abk=='a'?'ybk':'wbk'}}">
+                  <image lazy-load='true'  mode="{{item.income?'widthFix':'heightFix'}}" src="{{item.pic}}" />
+                </p>
+                <span>{{item.title}}</span>
+                <em>{{item.descript}}</em>
+              </view>
+          </block>
+
+          <view class="qb qb2 item_list" bindtap="toliebiao"  data-id="{{lc10gd}}">
+            <view class="jzz"  wx:if="{{lc10==''}}">
+              <image lazy-load='true'  mode="widthFix" src="https://www.mlito.com/wp-content/uploads/donghua.gif" />
+              <em>文章加载中</em>
+            </view>
+            <p>阅读全部</p>
+            <span>{{jdata.lc10.shuliang}}</span>
+          </view>
+
+          <view class="ff ff2 item_list">
+            <em>{{lc10a.zht}}</em>
+            <p><span wx:for="{{lc10a.zh}}" bindtap="toliebiao" wx:key="index" data-id="{{item.link}}">{{item.nr}}</span></p>
+            <i>{{lc10a.zhf}}</i>
+          </view>
+          <view class="kdd item_list">
+          </view>
+          </scroll-view>
+
+        </view>
+
+      
+      <div class="gg">
+        <image mode="widthFix" wx:for="{{jdata.lc10.gg}}" bindtap="zhankai" wx:key="index" data-id="{{item.link}}" src="{{item.nr}}" data-bh="10" data-nr="{{item.link}}" />
+      </div>
+    </block>
+    <!-- /楼层 -->
+
+
+
+</div>
+</view>
+<!-- miniprogram/custom-tab-bar/index.wxml -->
+<cover-view class="tab-bar {{isIphoneX?'isIPX':''}}">
+  <cover-view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+    <cover-image class="ytp {{selected === index ? 'xz' : 'bxz'}}" src="{{selected === index ? item.selectedIconPath : item.iconPath}}"></cover-image>
+    <cover-view style="color: {{selected === index ? selectedColor : color}}" class="wzz">
+      {{item.text}}
+    </cover-view>
+  </cover-view>
+  <!-- <cover-image src="https://www.mlito.com/wp-content/uploads/lite-di-5nav.png" class="tab-bar-bj"></cover-image> -->
+</cover-view>

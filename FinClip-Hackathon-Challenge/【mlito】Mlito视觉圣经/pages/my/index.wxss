@@ -1,0 +1,255 @@
+.header-box {
+  padding: 32rpx;
+  padding-bottom: 64rpx;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+.header-box .avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+.header-box .btn {
+  margin-left: 32rpx;
+}
+.header-box .r {
+  margin-left: 32rpx;
+  font-size: 28rpx;
+}
+
+page,view,image,input {
+  display: block;
+  box-sizing: border-box;
+}
+
+.container{
+  min-height: 100%;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
+.asset {
+  width: 100vw;
+  display: flex;
+  border-top: 1px solid #eee;
+  padding-top:20rpx;
+  padding-bottom:20rpx;
+}
+.asset .item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 24rpx;
+  line-height: 20px;
+  color:#666;
+}
+.asset .item .amount {
+  color:#333;
+  font-size: 32rpx;
+  padding-bottom: 12rpx;
+}
+.asset .right {
+  border-left: 1px solid #eee;
+}
+
+.version {
+  width:100vw;
+	font-size: 24rpx;
+	text-align: center;
+  padding: 32rpx;
+}
+.to-authorize{
+  padding: 0rpx;
+  margin: 0rpx;
+  background: none;
+  border: none;
+  height: auto;
+  line-height: auto;
+}
+/* 绑定手机号 */
+.bind-phone-number{
+  margin: 20rpx;
+  width: 100%;
+}
+/* flex重新构建菜单 */
+.menu-item {
+  width: 100vw;
+  height: 104rpx;
+  padding: 0 32rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-item .l {
+  font-size:34rpx;
+  color:#333;
+  line-height:104rpx;
+}
+.menu-item .r {
+  font-size:32rpx;
+  color:#999;
+  line-height:104rpx;
+}
+.menu-item .next {
+  width: 40rpx;
+  height: 40rpx;
+}
+.menu-item button {
+  margin: 0;
+}
+.space {
+  width: 100vw;
+  height: 2rpx;
+  background: #F4F5F9;
+}
+.line {
+  width:718px;
+  height:1px;
+  background:#EEEEEE;
+  margin-left: 32rpx;
+}
+.login-box{
+  width: 750rpx;
+  height: 1200rpx;
+  display: block;
+   float: left;
+  margin: 0 0;
+}
+
+
+
+.login-box .logo {
+  width: 750rpx;
+  height: auto;
+  display: block;
+   float: left;
+  margin: 0 0;
+}
+
+.login-box .line {
+  height: 2rpx;
+  width: 686rpx;
+  background-color: #ebedf0;
+  margin: 0 32rpx;
+}
+.login-box .title {
+  margin: 64rpx 0 0 32rpx;
+  color: #333;
+  font-size: 36rpx;
+}
+.login-box .profile {
+  margin: 32rpx 0 0 32rpx;
+  color: #999;
+  font-size: 28rpx;
+}
+
+
+.login-box .btn {
+  width: 80%;
+  height: 1200rpx;
+  display: block;
+  float: left;
+  margin: 0 10%;
+}
+
+
+/* 登录 */
+
+ .page-container{
+  background-image: url(https://mlito.com/ss/register/register_files/sso-bg-mobile.b54cc437.jpg);
+  background-position: top;
+  background-size: 750rpx auto;position: relative;    min-height: 100vh;
+  height: auto;    background-repeat: no-repeat;
+  background-color: #000;
+}
+
+.page-container .content {
+  position: absolute;
+  top: 160rpx;
+  left: 50%;
+  width: 480rpx;
+  min-height: 430rpx;
+  border-radius: 4rpx;
+  background: #fff;
+
+
+    top: 242rpx;
+    left: 15rpx;
+    right: 15rpx;
+    width: auto;
+
+    min-height: 306rpx;
+    height: auto;
+    margin-bottom: 15rpx;
+    background: none;
+    width: 80%;
+    margin-left: 6%;
+}
+
+
+.tts {
+  font-size: 12rpx;
+  color: #000;
+  color: #121212;
+  margin: -10rpx 0 15rpx;
+}
+
+.form-item-wrapper {
+  position: relative;
+  margin-bottom: 20rpx;
+}
+
+.sso-input {
+  display: inline-block;
+  border: 1px solid #dadada;
+  border-radius: 4rpx;
+  font-size: 14rpx;
+  height: 40rpx;
+  padding-left: 10rpx;
+  outline: none;
+  transition: all 0.5s ease;
+  vertical-align: top;
+  width: 320rpx;-webkit-appearance: none;
+  height: 50rpx;
+  width: 100%;
+}
+
+.login-panel .action-row {
+  margin-top: 20rpx;
+}
+
+.form-item-wrapper .form-item-error-message {
+  margin-top: 8rpx;
+  color: #ca0000;
+  font-size: 12rpx;
+}
+
+.form-item-wrapper .form-item-error-message {
+  margin-top: 8rpx;
+  color: #ca0000;
+  font-size: 12rpx;
+}
+
+.sso-btn {
+  display: inline-block;
+  /* border: 1px solid #dadada; */
+  border: none;
+  border-radius: 4rpx;
+  font-size: 14rpx;
+  height: 40rpx;
+  padding-left: 10rpx;
+  outline: none;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  /* width: 100rpx; */
+  width: 100%;
+  background: #cc5748;
+  color: #fff;
+  height: 50rpx;
+  width: 100%;
+  font-size: 16rpx;
+  float: none;
+}

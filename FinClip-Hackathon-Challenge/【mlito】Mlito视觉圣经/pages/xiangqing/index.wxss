@@ -1,0 +1,444 @@
+.jpage{  width: 100%; height: 100%; display: block; float: left; overflow: scroll}
+page{
+  height: 100%;
+}
+
+
+/* .nav-bar-white {
+  border-bottom: 1rpx solid #d4d4d4;
+} */
+
+.nav_footer_rt{width: 620rpx; }
+.nav_footer_rt2{width: 300rpx; }
+/* 底部 */
+
+.tab-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200rpx;
+  /* background: url("../images/ju/Bars-bg@2x.png") no-repeat;
+  background-size: 100%; */
+  display: flex;
+  padding-bottom: env(safe-area-inset-bottom);
+  z-index: 99;
+  overflow: visible; 
+  }
+  
+  .tab-bar.isIPX {
+    margin-bottom: -70rpx;
+  }
+  
+  
+  .tab-bar-bj {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:200rpx;
+  z-index: 1;
+  }
+  
+  
+  
+  
+  .tab-bar-item {
+      flex: 1;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      overflow: visible;
+      position: relative;
+      z-index: 99999999;
+  }
+  
+  /* .tab-bar-item image {
+      width: 27px;
+      height: 27px;
+  } */
+  
+  .tab-bar-item .wzz {
+      font-size: 24rpx;
+      
+  }
+  
+  .tab-bar-item .ytp.xz {
+    width: 150rpx;
+    height: 200rpx;
+    /* margin-top: -40rpx; */
+  }
+  
+  
+  .tab-bar-item .ytp.yy {
+    width:54rpx;
+    height: 6rpx;
+    /* margin-top: -40rpx; */
+  }
+  
+  .zdy{ width: 710rpx; margin-left: 20rpx; height: auto; display: block; float: left; padding-bottom: 50rpx;}
+  
+  
+  /* 
+  .tab-bar-item .ytp.bxz {
+    width: 80rpx;
+    height: 80rpx;
+  } */
+
+  /* 底部 */
+
+
+
+.tt{ width: 715rpx; height: 90rpx; display: block; float: left; margin: 0 17.5rpx; border-bottom: 1px solid #d4d4d4; line-height: 90rpx; color: #000; font-size: 40rpx; text-align: center;}
+.tt em{transform:uppercase;}
+.jtag{
+    width: 715rpx;
+    height: 100rpx;
+    display: block;
+    float: right;
+    margin: 0 0 0 17rpx;
+    line-height: 100rpx;
+    font-size: 33rpx;
+    color: #000;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+}
+
+.jtag2{
+  width: 715rpx;
+  height: 100rpx;
+  display: block;
+  float: right;
+  margin: 0 0 0 17rpx;
+  line-height: 100rpx;
+  font-size: 33rpx;
+  color: #000;
+  overflow-y: auto;
+  align-items: center;
+  display: block;
+  text-align: center;
+}
+
+.kongdi{ width: 100%; height: 1px; display: block; float: left; margin-bottom: 150rpx;}
+
+.jtag span {
+  flex-shrink: 0;
+  margin-right: 30rpx;
+}
+
+.jp{ width: 732rpx; display: block; float: right; height: auto;     overflow-y: auto;
+  display: flex;
+  align-items: center;}
+/* .jpb:nth-child(2n){ margin-right: 0;} */
+.jpb{ width: 345rpx; overflow: hidden; height: 345rpx; display: inline-block; float: none; margin: 0 20rpx 20rpx 0;  flex-shrink: 0; position: relative;}
+
+
+.jpb image{ width: auto; display: block; float: left; height: 300rpx;}
+.jpb span{ width: 100%; display: block; float: left; height: 50rpx; overflow: hidden; line-height: 25rpx; font-size:20rpx; color: #000000; position: absolute; bottom: 0; left: 0;}
+
+.gg{  width: 730rpx; display: block; float: right; height: auto;     overflow-y: auto;
+  display: flex;
+  align-items: center; margin-right: -20rpx; margin-top: 20rpx;}
+
+
+.gg2{  margin: 10rpx 0 0 0;}
+
+.gg .span1{ width: 600rpx; height: 315rpx; overflow: hidden; display: block; float: left; margin: 0 20rpx 20rpx 0;  flex-shrink: 0; position: relative;}
+.gg .span2{ width: 400rpx; height: 315rpx; overflow: hidden; display: block; float: left; margin: 0 20rpx 20rpx 0;  flex-shrink: 0; position: relative;}
+.gg .span3{ width: 250rpx; height: 150rpx; overflow: hidden; display: block; float: left; margin: 0 20rpx 20rpx 0;  flex-shrink: 0; position: relative;}
+.gg .span4{ width: 250rpx; height: 150rpx; overflow: hidden; display: block; float: left; margin: 0 20rpx 0 0;  flex-shrink: 0; position: relative;}
+
+
+.gg image{ display: block; float: left; flex-shrink: 0; position: relative;}
+.gg .span1 image{ width: 600rpx;height: auto;  display: block; float: left;}
+.gg .span2 image{ width: 400rpx;height: auto;  display: block; float: left;}
+.gg .span3 image{ width: 250rpx;height: auto;  display: block; float: left;}
+.gg .span4 image{ width: 250rpx;height: auto;  display: block; float: left;}
+.gg p{ display: block; float: left; height: 315rpx; margin-top: -10rpx;}
+/* .gg image.xt{width: auto; height: 153rpx; display: block; float: left; margin: 0 10rpx 10rpx 0; }
+.gg image.xt:first-child{ margin-top: -5rpx;} */
+/* .gg image.xt:nth-child(even){ margin-bottom: 0;}
+.gg image.xt:nth-child(odd){ margin-top: -153rpx;} */
+
+
+/* .gg a{overflow: hidden;}
+.gg a:nth-child(1){ width: 600px; height:315px; display: block; float: left;}
+.gg a:nth-child(2){ width:400px; height:315px; display: block; float: left;margin: 0 15px 0 15px; }
+.gg a:nth-child(3){ width:250px; height:150px; display: block; float: left; margin: 0 0 15px 0; }
+.gg a:nth-child(4){ width:250px; height:150px; display: block; float: left;} */
+
+
+
+.gg2 image{  width: 357rpx;}
+.hy{
+  width: 732rpx; display: block; float: right; height: auto;     overflow-y: auto;
+  display: flex;
+  align-items: center;
+}
+.hy image{
+  width: 233rpx;
+  height: 233rpx;
+  display: block;
+  float:left;
+   margin: 0 0 10rpx 0;
+}
+.hy p{
+  width: 233rpx;
+  height: auto;
+  display: block;
+  float:left; margin: 0 10rpx 0 0;
+}
+.qb{ width: 260rpx; height: 476rpx; display: block; margin: 0 10rpx 0 0; text-align: center; border: 1px solid #d4d4d4; box-sizing: border-box; margin-top: -9rpx;}
+.qb p{ width: 260rpx; height: auto; display: block; text-align: center; font-size: 30rpx; color: #000; margin: 190rpx 0 0;}
+.qb span{ width: 260rpx; height: auto; display: block; text-align: center; font-size: 22rpx; color: #000; margin: 20rpx 0 0;}
+.ff{ width: 366rpx; height: 476rpx; display: block; margin: 0 10rpx 0 0;border: 1px solid #d4d4d4;box-sizing: border-box;margin-top: -9rpx; position: relative;}
+
+.ff em{ width: 300rpx; height: auto; margin: 20rpx 0 0 22rpx; font-size: 22rpx; color: #000000; float: left;}
+.ff i{ width: 300rpx; height: auto; position: absolute; bottom: 14rpx; right: 27rpx; font-size: 17rpx; color: #898989;}
+
+.ff p{width: 330rpx; height: auto; display: block; margin: 20rpx 20rpx 20rpx 25rpx;}
+
+.ff p span{
+  width: 100rpx;
+  height: 50rpx;
+  box-sizing:border-box;
+  border: 1px solid #d4d4d4;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 20rpx;
+  color: #202020;
+  margin: 0 10rpx 10rpx 0;
+  text-align: right;
+  display: block;
+  float: left;
+  text-align: center;
+}
+.ff p span:nth-child(3n){
+  margin: 0 0 10rpx 0;
+}
+
+.syy{ width: 260rpx; height: 476rpx; display: block; margin: 0 10rpx 0 0;  box-sizing: border-box; margin-top: -9rpx; margin: -9rpx 10rpx 0 0;}
+.syy image{width: 260rpx; height: 476rpx;}
+
+.ht{
+  width: 100%;
+  height: auto;
+  display: block;
+  float: left;
+  margin: 20rpx 0 20rpx;
+  font-size: 22rpx;
+  color: #000;
+   text-align: center;
+}
+.gg3{ margin-bottom: 30rpx;}
+
+.ht2{ text-align: left; padding-left: 20rpx; box-sizing: border-box;}
+
+
+
+.xx_bt{ width: 100%; height: auto; display: block; float: left; text-align: right; font-size:38rpx; line-height: 45rpx; padding: 20rpx;box-sizing: border-box;}
+
+.xx{ width: 100%; height: auto; display: block;display: block; float: left;padding: 0;box-sizing: border-box;    font-size: 38rpx;
+  line-height: 50rpx;}
+.xx img { width: auto; height: auto; max-width: 100%; margin: 20rpx 0; display: block; float: left;}
+.xx p{ width: 100%; height: auto; display: block; float: left; margin: 30rpx 0;}
+
+.cnxx{ width: 100%; height: auto; display: block; float: left; padding:  20rpx 0 10rpx; font-size: 30rpx; display: block; float: left; box-sizing: border-box; border-top: 1rpx solid #d4d4d4; margin-top: 20rpx;}
+
+.cnxx_b{ width: 100%;height: auto;  display: block; float: left; padding:  20rpx 0 0; box-sizing: border-box; margin-bottom: 10rpx;}
+/* .cnxx_b image{ width: 345rpx; height: 345rpx; min-height: 345rpx; display: block; float: left; margin: 0 0 0 0; }
+.cnxx_b image:nth-child(2n){ margin-right: 0;} */
+
+.jf{
+  width: 100%;
+   height: auto;
+   background: #ffffff;
+   border-top: 1px solid #d4d4d4;
+   position: fixed;
+		z-index: 99999999;
+		left: 0;
+		bottom: 0;
+		font-size: 24rpx;
+		padding: 15rpx 50rpx 70rpx;
+    box-sizing: border-box;
+		padding-bottom: env(safe-area-inset-bottom);
+}
+
+.jff{ width: 100%; height: auto; display: block; float: left; font-size: 35rpx; color: #231815; text-align: right; line-height: 35rpx; margin-bottom: 20rpx; line-height: 50rpx;}
+
+.jft{ width: 100%; height: auto; display: block; float: left; font-size: 30rpx; color: #888888;  text-align: right; overflow-x: auto; white-space:nowrap; margin: 15rpx 0 25rpx;
+}
+
+.jft span{ margin-left: 40rpx; display: inline;}
+
+
+.cnxx_xgcp{width: 100%; height: auto; display: block; float: left; font-size: 28rpx; color: #404040;  text-align: left; overflow-x: auto; white-space:nowrap; margin: 10rpx 0;
+}
+
+.xgcp{
+  width: 310rpx;
+  height: 450rpx;
+  display: inline-block;
+  border:1px solid #d4d4d4;
+  box-sizing: border-box;
+  margin: 0 20rpx 0 0;
+}
+
+.xgcp image{ width: 310rpx; height: 310rpx; display: block; float: left;}
+.xgcp p{width: 100%; padding: 20rpx 20rpx; box-sizing: border-box; height: 80rpx; line-height: 30rpx; font-size: 25rpx; display: block; float: left; white-space:normal; overflow: hidden; }
+.xgcp span{width: 100%; padding: 0 20rpx; box-sizing: border-box; height: 40rpx; display: block; float: left; color: #000000; font-size: 25rpx; font-weight: bold;}
+
+
+
+
+
+
+
+
+
+/* 底部有文字滑动 */
+.jp{ width: 710rpx; display: block; float: right; height: auto;     overflow-y: auto;
+  display: flex;
+  align-items: center; padding-bottom: 20rpx; margin-right: 0rpx; margin-left: 0; padding-right: 0; }
+.scroll_box .jpb{ width: auto; height: 476rpx; display: inline-block ; margin: 0 10rpx 0 0;  flex-shrink: 0; position: relative; float: none;}
+
+
+
+      .scroll_box .qb{ width: 260rpx; height: 476rpx; display: block; position: relative; margin: 0 10rpx 0 0; text-align: center; border: 1px solid #d4d4d4; box-sizing: border-box; margin-top: 0rpx;}
+      .scroll_box .qb p{ width: 260rpx; height: auto; display: block; text-align: center; float: left; font-size: 30rpx; color: #000; margin: 0 0 0; position: absolute; bottom: 100rpx;}
+      .scroll_box .qb span{ width: 260rpx; height: auto; display: block; text-align: center; font-size: 22rpx; color: #000; margin: 20rpx 0 0; float: left; position: absolute; bottom: 50rpx;}
+      
+      
+      .scroll_box .ff{ width: 366rpx; height: 503rpx; display: inline-block; float: none; margin: 0 20rpx 7rpx 0;border: 1px solid #d4d4d4;box-sizing: border-box;margin-top: 0rpx; position: relative;}
+      
+      .scroll_box{
+        /* width: 100%; */
+        height: 476rpx;
+        overflow: hidden;
+        padding: 0;
+        background: #fff;
+        white-space: nowrap;
+        }
+        .scroll_box scroll-view{
+          height: 100%;
+          width: auto;
+          overflow:hidden;
+        }
+      
+        .scroll_box  .qb2{ width: 260rpx; height: 503rpx; display: inline-block; float: none; margin: 0 10rpx 7rpx 0; text-align: center; border: 1px solid #d4d4d4; box-sizing: border-box; margin-top:0rpx;}
+      
+      .ysvg{ width: 473rpx; height: 473rpx; display: block; float: left; overflow: hidden;}
+      .ysvg image { width: 473rpx; height: auto;display: block; float: left;}
+      
+      .scroll_box  .item_list2 { height: 510rpx; }
+      
+      .scroll_box2{  height: 512rpx; }
+
+
+
+
+
+
+    
+.item_list2 .ysvg {
+width: 420rpx;
+height: 420rpx;
+display: block;
+float: left;
+overflow: hidden;
+}
+
+.item_list2 .ysvg image {
+width: 420rpx;
+height: auto;
+display: block;
+float: left;
+}
+
+.item_list2 image {
+width: auto;
+display: block;
+float: left;
+height: 420rpx;
+}
+
+.item_list2 span {
+/* position: relative; */
+bottom:50rpx;
+font-weight: bold;
+left: auto;  text-align: left;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+overflow: hidden;
+height: 30rpx; overflow: hidden; line-height:30rpx; font-size:24rpx;
+}
+
+
+
+.item_list2 em{
+width: 100%; display: block; float: left; height: 30rpx; overflow: hidden; line-height:30rpx; font-size:20rpx; color: #000000; position: absolute;  bottom: 10rpx; left: 0; display: block;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+
+text-overflow: -o-ellipsis-lastline;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+line-clamp: 2;
+-webkit-box-orient: vertical;
+border-bottom: 2rpx solid #000;
+padding-bottom: 7rpx;
+}
+
+
+.qrcode-button {
+  padding: 30rpx;
+  margin-top: 50rpx;
+}
+
+.qrcode {
+  width: 300rpx;
+  height: 300rpx;
+  margin-top: 50rpx;
+}
+
+
+
+.posterImg-box {
+  position: absolute;
+  top:254rpx;
+  left: 32rpx;
+  width: 686rpx;
+  margin-bottom: 100rpx;
+  z-index: 999999;
+}
+
+.posterImg {
+  width: 100%;
+}
+
+.poster-btn { width: 100%; height: auto; display: block; float: left;}
+.poster-btn1{width: 100%; height: 70rpx; line-height: 70rpx; background: #000; color: #fff; font-size: 30rpx; display: block; float: left;}
+
+.poster-btn2{width: 100%; height: 70rpx; line-height: 70rpx; background: #fff; color: #000; font-size: 30rpx; display: block; float: left;}
+
+.btn-create {
+  margin: 32rpx;
+  margin-bottom: 0;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #e64340;
+  color: #fff;
+  text-align: center;
+  border-radius: 8rpx;
+}

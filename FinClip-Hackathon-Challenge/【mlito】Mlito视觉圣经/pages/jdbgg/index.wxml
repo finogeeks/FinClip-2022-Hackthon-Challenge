@@ -1,0 +1,69 @@
+<view class="jpage">
+  <van-sticky>
+    <navbar></navbar>
+    <view class="nav_footer" style="margin-top:{{bnavHeight}}px;">
+      <image src="https://www.mlito.com/wp-content/uploads/lite-back-50-50.svg" bindtap="fanhui" class="nav_footer_goback"></image>
+      <!-- <view class="nav_footer_title">{{navTitle}}</view> -->
+      <!-- <image mode="heightFix" src="https://www.mlito.com/wp-content/uploads/lite-vip-tl.svg" class="nav_footer_left" ></image>
+      <image mode="heightFix" src="https://www.mlito.com/wp-content/uploads/lite-vip-tr.svg" class="nav_footer_right"></image> -->
+      <view class="nav_footer_rt">
+        <!-- <span>开发定制</span> -->
+      
+      </view>
+    </view>
+  </van-sticky>
+  <div class="zdy" style="margin-top:{{navHeight}}px;">
+
+
+
+
+
+
+<image class="jd_t" mode="widthFix" bindtap="toxiangqing" data-id="{{jdata.ac1.db.link}}" src="https://www.mlito.com/wp-content/uploads/mlito-lite-kf-top-info.svg" />
+
+<view class="jd_d">
+<image class="jd_ds" mode="widthFix" bindtap="vip_bt" data-id="1" src="{{vip_id==1?'https://www.mlito.com/wp-content/uploads/mlito-lite-kf-lm-1.svg':'https://www.mlito.com/wp-content/uploads/mlito-lite-kf-lm-1-2.svg'}}" />
+<image class="jd_ds" mode="widthFix" bindtap="vip_bt" data-id="2" src="{{vip_id==2?'https://www.mlito.com/wp-content/uploads/mlito-lite-kf-lm-2.svg':'https://www.mlito.com/wp-content/uploads/mlito-lite-kf-lm-2-2.svg'}}" />
+<image class="jd_ds" mode="widthFix" bindtap="vip_bt" data-id="3" src="{{vip_id==3?'https://www.mlito.com/wp-content/uploads/mlito-lite-kf-lm-3.svg':'https://www.mlito.com/wp-content/uploads/mlito-lite-kf-lm-3-2.svg'}}" />
+</view>
+
+<image class="jd_dt" mode="widthFix" src="{{vip_id==1?'https://www.mlito.com/wp-content/uploads/mlito-lite-kf-fw-1.svg':''}}{{vip_id==2?'https://www.mlito.com/wp-content/uploads/mlito-lite-kf-fw-2.svg':''}}{{vip_id==3?'https://www.mlito.com/wp-content/uploads/mlito-lite-kf-fw-3.svg':''}}" />
+
+<view class="tt">
+  填写对接人信息
+</view>
+
+
+<div class="tx">
+
+  <input type='text'  placeholder="请输入电话"   value='{{name1}}' bindinput='inputVal1' />
+  <input type='text'  placeholder="请输入邮箱"   value='{{name2}}' bindinput='inputVal2' />
+  <input type='text'  placeholder="请输入微信号"   value='{{name3}}' bindinput='inputVal3' />
+
+</div>
+
+
+
+
+  <!-- 顶部按钮 -->
+  <view class="vip {{vip_id==1?'vip1':''}} {{vip_id==2?'vip2':''}} {{vip_id==3?'vip3':''}}">
+    <view class="vip_zf" bindtap="vip_zf" data-id="{{vip_id}}"></view>
+  </view>
+<div class="tx2">付款不退，请谨慎选择付款</div>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+  </div>
+</view>
+<!-- miniprogram/custom-tab-bar/index.wxml -->

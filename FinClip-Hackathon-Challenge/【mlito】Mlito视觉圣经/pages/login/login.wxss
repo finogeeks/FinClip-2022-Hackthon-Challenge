@@ -1,0 +1,30 @@
+.order-login-container button {
+    width: 580rpx;
+    height: 100rpx;
+    line-height: 94rpx;
+    margin-bottom: 32rpx;
+    text-align: center;
+    display: block;
+}
+
+.button-auto-login {
+    width: 100%;
+    margin-top: 50rpx;
+    background-color: #07c160;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 10rpx;
+}
+
+.login-tip {
+    font-size: 28rpx;
+    margin-top: 90rpx;
+    text-align: center;
+}
+
+.logo{ width: 200rpx; height: auto; display: block; float: none; margin: 50rpx auto 50rpx;}
+.in{ width: 600rpx; height: 80rpx; display: block; float: left; line-height: 80rpx; font-size: 30rpx; border-bottom: 1px solid #e4e4e4; margin:0 75rpx 58rpx; }
+.inl{ width: 130rpx; height: 80rpx; display: block; float: left; line-height: 80rpx; font-size: 30rpx;color: #161616;}
+.inr{ width: 470rpx; height: 80rpx; display: block; float: left; line-height: 80rpx; font-size: 30rpx;color: #161616;}
+
+.bt{ width: 600rpx; height: 90rpx; display: block; float: left; line-height: 90rpx; font-size: 30rpx; color: #ffffff;  background: #d65335; margin:0 75rpx 88rpx; text-align: center; border-radius: 5rpx; }

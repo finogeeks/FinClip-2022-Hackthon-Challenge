@@ -1,0 +1,88 @@
+.jpage{  width: 100%; height: 100%; display: block; float: left; overflow: scroll}
+.indexa{  background-repeat: no-repeat; background-size: 100% auto; background-position: top center;}
+.nav-bar,.nav_top  { background: none !important;}
+.nav_top { border: none;background: none;}
+
+
+page{
+  height: 100%;
+}
+.nav_footer{ background: #fff;}
+
+
+
+
+
+  .zdy{ width: 100%; 
+    /* height: 100%;  */
+    display: block; float: left;
+    z-index: 99999999999;
+    position:relative;
+/* 
+    position: relative;
+    z-index: 9999999; */
+     /* padding-bottom: 250rpx; */
+    }
+  
+  
+
+
+  .swiperClass {
+    margin: 0;
+    height: 1000rpx;
+    /* margin-top: 10px; */
+  }
+  
+  .slide-image {
+    width: 100%; 
+    height: auto;
+    border-radius: 0;
+    margin-top: 30rpx;
+    position: relative;
+  }
+  
+.active {
+    transform: none;
+    transition: all 0.2s ease-in 0s;
+  } 
+  
+.quiet {
+    transform: scale(0.8);
+    transition: all 0.2s ease-in 0s;
+  }
+
+
+
+  .wz{ width: 100%; height: auto; display: block; float: left; margin: 10rpx 0 0 ;}
+  .wz span{ width: 19%; margin: 0 1.25% 10rpx 0; border: 1px solid #b8b8b8; box-sizing: border-box; text-align: center; line-height: 70rpx; height: 70rpx; text-align: center; font-size: 30rpx; color: #333333; display: block; float: left;}
+  .wz span:nth-child(5n){ margin-right: 0;}
+
+  .jswiper-item{ width: 100%; height: auto; display: block; float: left;}
+  .jswiper-itemb{width: 100%; height: auto; display: block; float: left;}
+
+  .fwz{ width: 100%; height: auto; display: block; float: left; margin: 50rpx 0 10rpx 0; position: fixed; left: 0; bottom: 250rpx; z-index: 9999;}
+  .fwz span{ width: 20%; height: auto; display: block; float: left; text-align: center; font-size: 25rpx; color: #4c4c4c;}
+  .fwz span:nth-child(3){font-size: 35rpx; color: #000; margin-top: -15rpx;}
+  .slide-image1{ height: 100rpx;}
+  .slide-image2{ height: 400rpx;}
+
+
+  .gb{width:150rpx; height: 50rpx; background: url("https://www.mlito.com/wp-content/uploads/mlito-lite-xiala-nav-150-50-off.svg") no-repeat; background-size: 150rpx 50rpx; display: block; float: right; margin: 5rpx 25rpx  25rpx 0;}
+
+  .xl{ width: 700rpx; height: auto; display: block; float: left; margin: 0 25rpx 0;}
+  .xl image{ width: 230rpx; height: 100rpx; display: block; float: left; margin: 0 0 25rpx 5rpx;}
+  .xl image:nth-child(3n){margin-left: 0;}
+
+  .xl_c{width: 700rpx; height: auto; display: block; float: left; margin: 100rpx 0 0;}
+  .xl_c image{ width: 230; height: 230; display: block; float: left; margin: 0 5rpx  5rpx 0;}
+  .xl_c image:nth-child(3n){margin-right: 0;}
+
+.xl_top{ width: 100%; height: auto; display: block; float: left;}
+  .xl_d{width: 700rpx; height: auto; display: block; float: left; margin: 0rpx 0 0;}
+  .xl_d image{ width: 170; height: 50; display: block; float: left; margin: 0 5rpx  5rpx 0;}
+  .xl_d image:nth-child(4n){margin-right: 0;}
+
+
+  .xl_ad{width: 750rpx; height: auto; display: block; float: left; margin: 10rpx 0 0;}
+  .xl_ad image{ width: 750rpx; height: auto; display: block; float: left; margin: 0 0  5rpx 0;}
+

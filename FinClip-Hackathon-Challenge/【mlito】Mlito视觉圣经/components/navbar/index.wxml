@@ -1,0 +1,29 @@
+<!--navbar.wxml-->
+<view>
+
+  <view class="nav-bar {{isWhite=='true'?'nav-bar-white':''}}" style="height: {{navHeight}}px;background:{{navColor?navColor:'#ffffff'}};" catchtap="toTop">
+
+    <view class="nav_top" style="padding-top:{{navTitleTop}}px;background:{{navColor?navColor:'#ffffff'}}; border-color:{{navColor?'rgba(0,0,0,0)':'#d4d4d4'}};">
+        <image src="{{isWhite=='true'?'https://www.mlito.com/wp-content/uploads/lite-logo-140-50-white.svg':'https://www.mlito.com/wp-content/uploads/lite-logo-140-50.svg'}}" class="nav_top_logo" catchtap="shouye" mode="heightFix" ></image>
+        <image src="{{isWhite=='true'?'https://www.mlito.com/wp-content/uploads/lite-nav-50-50-white.svg':'https://www.mlito.com/wp-content/uploads/lite-nav-50-50.svg'}}" class="nav_top_nav" catchtap="nav" mode="heightFix" ></image>
+        <image src="{{isWhite=='true'?'https://www.mlito.com/wp-content/uploads/lite-so-50-50-white.svg':'https://www.mlito.com/wp-content/uploads/lite-so-50-50.svg'}}" class="nav_top_search" catchtap="search" mode="heightFix" ></image>
+    </view>
+
+    
+
+    <!-- <text class="navbar-title" style="top:{{navTitleTop}}px;color:{{navTitleColor}};">{{navTitle}}</text>
+
+    <view wx:if="{{noArrow=='false'&&isArrowWhite=='false'&&isNavHome=='false'}}" catchtap="navBack" class="navbar-icon-wrap" style="top:{{navTitleTop}}px;">
+      <image class="navbar-icon" src="https://www.mlito.com/wp-content/uploads/lite-nav-50-50.svg"></image>
+    </view>
+
+
+    <view wx:if="{{isNavHome=='true'&&isArrowWhite=='false'&&noArrow=='false'}}" catchtap="navHome" class="navbar-icon-wrap" style="top:{{navTitleTop}}px;">
+      <image src="https://www.mlito.com/wp-content/uploads/lite-nav-50-50.svg" class="navbar-icon"></image>
+    </view> -->
+
+
+  </view>
+
+
+</view>

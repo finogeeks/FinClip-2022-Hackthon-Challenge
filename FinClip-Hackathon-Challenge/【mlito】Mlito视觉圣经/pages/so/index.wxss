@@ -1,0 +1,202 @@
+.jpage{  width: 100%; height: auto; display: block; float: left; overflow: scroll}
+.indexa{  background-repeat: no-repeat; background-size: 100% auto; background-position: top center;}
+.nav-bar,.nav_top  { background: none !important;}
+.nav_top { border: none;background: none;}
+
+
+page{
+  height: 100%;
+}
+.nav_footer{ background: #fff;}
+
+
+
+
+
+  .zdy{ width: 100%; 
+    /* height: 100%;  */
+    display: block; float: left;
+    /* z-index: 999; */
+    position:relative;
+/* 
+    position: relative;
+    z-index: 9999999; */
+     /* padding-bottom: 250rpx; */
+    }
+  
+
+  
+
+
+  .swiperClass {
+    margin: 0;
+    height: 1000rpx;
+    /* margin-top: .625rem; */
+  }
+  
+  .slide-image {
+    width: 100%; 
+    height: auto;
+    border-radius: 0;
+    margin-top: 30rpx;
+    position: relative;
+  }
+  
+.active {
+    transform: none;
+    transition: all 0.2s ease-in 0s;
+  } 
+  
+.quiet {
+    transform: scale(0.8);
+    transition: all 0.2s ease-in 0s;
+  }
+
+
+
+  .wz{ width: 100%; height: auto; display: block; float: left; margin: 10rpx 0 0 ;}
+  .wz span{ width: 19%; margin: 0 1.25% 10rpx 0; border: .0625rem solid #b8b8b8; box-sizing: border-box; text-align: center; line-height: 70rpx; height: 70rpx; text-align: center; font-size: 30rpx; color: #352b2b; display: block; float: left;}
+  .wz span:nth-child(5n){ margin-right: 0;}
+
+  .jswiper-item{ width: 100%; height: auto; display: block; float: left;}
+  .jswiper-itemb{width: 100%; height: auto; display: block; float: left;}
+
+  .fwz{ width: 100%; height: auto; display: block; float: left; margin: 50rpx 0 10rpx 0; position: fixed; left: 0; bottom: 250rpx; z-index: 9999;}
+  .fwz span{ width: 20%; height: auto; display: block; float: left; text-align: center; font-size: 25rpx; color: #4c4c4c;}
+  .fwz span:nth-child(3){font-size: 35rpx; color: #000; margin-top: -15rpx;}
+  .slide-image1{ height: 100rpx;}
+  .slide-image2{ height: 400rpx;}
+
+
+  .gb{width:150rpx; height: 50rpx; background: url("https://www.mlito.com/wp-content/uploads/mlito-lite-xiala-nav-150-50-off.svg") no-repeat; background-size: 150rpx 50rpx; display: block; float: right; margin: 15rpx 25rpx  25rpx 0; position: relative; z-index: 99;}
+  .gb2{width:150rpx; height: 50rpx; background: url("https://www.mlito.com/wp-content/uploads/mlito-lite-xiala-nav-150-50-off-w.svg") no-repeat; background-size: 150rpx 50rpx; display: block; float: right; margin: 15rpx 25rpx  25rpx 0; position: relative; z-index: 99;}
+
+  .so_box{ width: 610rpx; height: 80rpx; background: #ffffff; display: block; float: left; margin: 30rpx 70rpx 30rpx;}
+  .xl image{ width: 230rpx; height: 100rpx; display: block; float: left; margin: 0 5rpx  25rpx 0;}
+  .xl image:nth-child(3n){margin-right: 0;}
+
+  .xl_c{width: 640rpx; height: auto; display: block; float: left; margin: 30rpx 0 30rpx 70rpx;}
+  .xl_c image{ width: 110rpx; height: 110rpx; display: block; float: left; margin: 0 15rpx  5rpx 0;}
+
+
+  .xl_d{width: 700rpx; height: auto; display: block; float: left; margin: 0rpx 25rpx 0;}
+  .xl_d image{ width: 170; height: 50; display: block; float: left; margin: 0 5rpx  5rpx 0;}
+  .xl_d image:nth-child(4n){margin-right: 0;}
+
+.so{width: 750rpx; height: auto; display: block; float: left; margin: 0rpx 0 0;}
+  .so_box{width: 610rpx; height: 80rpx; display: block; float: left; margin: 0rpx 70rpx 0;}
+
+  .so_box input{ width: 500rpx; height: 80rpx; line-height: 80rpx; display: block; float: left; padding: 0; margin: 0 0 0 25rpx; font-size: 30rpx; color: #000;}
+
+  .so_box image { height: 50rpx; height: 50rpx; display: block; float: right; margin: 15rpx 20rpx 0 0;}
+
+
+  .xl_ad{width: 750rpx; height: auto; display: block; float: left; margin: 10rpx 0 0;}
+  .xl_ad image{ width: 750rpx; height: auto; display: block; float: left; margin: 0 0  5rpx 0;}
+
+.wu_t{ width: 100%; height: 45rpx; text-align: center; color: #000; display: block; float: left; margin: 50rpx 0;}
+.wu_ti{ width: 700rpx; height: auto; display: block; float: left; margin: 25rpx; position: relative; }
+.wu_ti .lxkf{ position: absolute; top: 0; left: 0; z-index: 99; opacity: 0; width: 100%; height: 100%;}
+.wu_ti span{ width: auto; height: auto; display: block; float: left; font-size:20rpx; color: #000;}
+.wu_ti em{ width: auto; height: auto; display: block; float: right; font-size:18rpx; color: #9e9e9f;}
+.wu_b{ width: 100%; height: auto; display: block; float: left; }
+.wu_bt{  width: 700rpx; height: auto; display: block; float: left; background: #f7f7f7; margin: 25rpx 25rpx 0;}
+
+.wu_bt .wu_ti{ width: 650rpx;}
+.wu{ width: 100%; height: auto; display: block; float: left;}
+.wu_bc{ width: 725rpx; height:350rpx ; padding: 0 0 20rpx; display: block; float: right; overflow-x: auto; overflow-y: hidden ;/*可滑动*/ white-space: nowrap;/*文本不会换行，文本会在在同一行上继续*/}
+.soad,.soad image{ width: 750rpx; height: auto; display: block; float: left; position: relative;}
+.lxkf{ position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
+.wu_bc::-webkit-scrollbar{
+  display: none;
+}
+
+.wu_bca{ width: auto; height: 340rpx; display: inline-block; margin-right: 15rpx; position: relative;}
+.wu_bca image{ width: auto; height: 340rpx;display: block; float: left;}
+.wu_bcb{ width: 340rpx; border: .0625rem solid #404040; height: 340rpx; display: inline-block; margin-right: 25rpx; }
+.wu_bcb span{ width: 340rpx; height: 140rpx; line-height: 140rpx; margin: 200rpx 0 0; display: block; float: left; text-align: center; }
+
+.wu_b2{ margin-top: 30rpx;}
+
+.wu_bca p{ width: 100%; height: auto; text-align: left;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;font-size:20rpx; color: #9e9e9f; position: absolute; left: 0; bottom: 10rpx;}
+.wu_bcb22{height: 380rpx;}
+.wu_bcb3 span{ margin-top: 330rpx;}
+
+
+.wu_bcb22 span{ margin-top: 240rpx;}
+  .wu_bc2,.wu_bc2 .wu_bca{ height: 380rpx;}
+  .wu_bc2 .wu_bca{ border-bottom: .0625rem solid #000;}
+
+  .wu_bc3,.wu_bc3 .wu_bcb { height: 470rpx;}
+
+
+  
+.splbs{ width:349rpx; height:948rpx; display: inline-block;
+  float: none;}
+.splb{ width:339rpx; height:464rpx; display: block;  margin: 0 10rpx 10rpx 0; position: relative; display: inline-block;}
+
+.splbt{ width:339rpx; height:339rpx; display: block; float: left; margin: 0  0; position: relative;}
+.splbf{ width:339rpx; height:125rpx; display: block; float: left; margin: 0  0; position: relative; border: .0625rem solid #e5e5e5; box-sizing: border-box; border-top: 0; }
+
+
+
+.spbt{ width:309rpx; height: 48rpx; display: block; float: left; margin: 25rpx 15rpx 10rpx; font-size: 20rpx; line-height: 23rpx; color: #101010; word-break:break-all;white-space: pre-wrap; overflow: hidden;  }
+.spjg{ width:309rpx; height: auto; display: block; float: left; margin: 0 15rpx;}
+.spjgl{width:auto; height: auto; display: block; float: left; }
+.spjgl span{ width:auto; height: auto; display: block; float: left; margin: 0 8rpx 0 0; font-size: 25rpx; color: #000000;}
+.spjgl em{ width:auto; height: auto; display: block; float: left; margin: 5rpx 5rpx 0 0; font-size: 20rpx; color: #989898; text-decoration:line-through}
+
+.spjgr{ width:auto; height: auto; display: block; float: right; }
+.spjgr span{ width:15rpx; height: 15rpx; border-radius: 15rpx; margin: 10rpx 0 0 0; display: block; float: right; }
+.spjgr i{ width:15rpx; height: 15rpx; background: url(https://www.mlito.com/wp-content/uploads/15-15-jt.svg) no-repeat; background-size: 15rpx 15rpx;  margin: 10rpx 0 0 0; display: block; float: right; }
+
+
+
+
+
+.splb_bj{  width:339rpx; height:339rpx; display: block; float: left; position: absolute; top: 0; left: 0; z-index: 0;}
+.splb_l{ width: auto; height: 37rpx; display: block; position: absolute; left: 12rpx; bottom: 12rpx; z-index: 2;}
+.splb_l span{ width: auto; height: auto; background: #000;  padding:.1875rem .3125rem;  color: #fff; font-size: 18rpx;}
+.splb_l em{ width: auto; height: auto;border: .0625rem solid #000; box-sizing: border-box;  padding:.125rem .3125rem; color: #000; font-size: 18rpx;}
+.splb_lt{ width:300rpx; height: 55rpx; padding:.125rem 0; color: #000; font-size: 18rpx;display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;-webkit-line-clamp: 2;
+}
+
+.splb_r{ width: auto;height: 37rpx; display: block; position: absolute; right: 12rpx; bottom: 12rpx; z-index: 2;}
+.splb_r span{     width: auto;
+  height: auto;
+  background: #cccccc;
+  padding: .1875rem .3125rem;
+  color: #fff;
+  font-size: 18rpx;
+}
+
+.splb_r span:nth-child(1){ background: #4d4d4d;}
+.splb_r span:nth-child(2){ background: #808080;}
+.splb_r span:nth-child(3){ background: #b3b3b3;}
+.splb_r span:nth-child(4){ background: #cccccc;}
+.splb_r span:nth-child(5){ background: #cccccc;}
+
+
+.wu_bca .ysvg{ width: 340rpx; height: 340rpx; display: block; float: left; overflow: hidden; background: #fff;}
+.wu_bca .ysvg image { width: 340rpx; height: auto;display: block; float: left;}
+
+.wu_bca .wsvg{  height: 340rpx; display: block; float: left; overflow: hidden;background: #fff;}
+
+.sst{ width:660rpx; height: auto; display: block; float: left; margin: 5rpx 25rpx 25rpx; position: relative;}
+.sst1,.sst2 { width: 320rpx; height: auto;display: block; float: left; margin: 0 20rpx 20rpx 0;}
+.sst2{ margin-right: 0;}
+.sst p{ width: 100%; height: auto; display: block; float: left ; font-size: 20rpx; line-height: 35rpx; color: #0f0f0f; margin: 20rpx 0;}
+.lxkf2{ width: 50%; height: 100rpx; display: block; position: absolute; top: 0; right:0}
+
+.wu_b1{ background: #f7f7f7;}
+
+

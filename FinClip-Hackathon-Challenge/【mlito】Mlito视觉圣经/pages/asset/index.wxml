@@ -1,0 +1,49 @@
+<import src="/template/login/index.wxml" />
+
+<view class="asset">
+  <view class='item'>
+    <view>可用余额(元)</view>
+    <view>{{balance}}</view>
+  </view>
+  <view class='item'>
+    <view>冻结金额(元)</view>
+    <view>{{freeze}}</view>
+  </view>
+  <view class='item right'>
+    <view>累计消费(元)</view>
+    <view>{{totleConsumed}}</view>
+  </view>
+</view>
+<view class='btn-view'>
+  <form bindsubmit="recharge" report-submit="true">
+    <button class="btn" type="default" size="mini" form-type="submit" hover-class="btn-hover" plain="true">
+      充值
+    </button>
+  </form>
+  <form bindsubmit="payDeposit" report-submit="true">
+    <button class='btn' type="default" size="mini" form-type="submit" hover-class="btn-hover" plain="true">
+      押金
+    </button>
+  </form>
+  <form bindsubmit="withdraw" report-submit="true">
+    <button class='btn' type="default" size="mini" form-type="submit" hover-class="btn-hover" plain="true">
+      提现
+    </button>
+  </form>
+</view>
+<van-tabs active="{{ active }}" bind:change="tabClick">
+  <van-tab wx:for="{{tabs}}" wx:key="*this" title="{{item}}" />
+</van-tabs>
+<van-cell-group wx:if="{{activeIndex == 0}}">
+  <van-empty wx:if="{{!cashlogs}}" description="暂无资金明细" />
+  <van-cell wx:for="{{cashlogs}}" wx:key="index" title="{{ item.typeStr }}" label="{{ item.dateAdd }}" value="{{ item.amount }}" />
+</van-cell-group>
+<van-cell-group wx:if="{{activeIndex == 1}}">
+  <van-empty wx:if="{{!withDrawlogs}}" description="暂无提现记录" />
+  <van-cell wx:for="{{withDrawlogs}}" wx:key="index" title="{{ item.statusStr }}" label="{{ item.dateAdd }}" value="{{ item.money }}" />
+</van-cell-group>
+<van-cell-group wx:if="{{activeIndex == 2}}">
+  <van-empty wx:if="{{!depositlogs}}" description="暂无押金记录" />
+  <van-cell wx:for="{{depositlogs}}" wx:key="index" title="{{ item.statusStr }}" label="{{ item.dateAdd }}" value="{{ item.amount }}" />
+</van-cell-group>
+

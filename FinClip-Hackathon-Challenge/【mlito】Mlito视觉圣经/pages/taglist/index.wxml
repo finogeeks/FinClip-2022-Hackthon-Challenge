@@ -1,0 +1,163 @@
+<view class="jpage">
+
+
+<van-sticky style="background-color: #fff;" >
+  <view  style="background-color: #fff;">
+
+  
+   <navbar style="width:200rpx;background-color: #fff;"></navbar>
+       
+    <view class="nav_footer" style="margin-top:{{bnavHeight}}px;">
+      <!-- 返回按钮 -->
+      <image src="https://www.mlito.com/wp-content/uploads/lite-back-50-50.svg" bindtap="fanhui" class="nav_footer_goback"></image>
+
+      
+      <!-- <view class="nav_footer_title">{{navTitle}}</view> -->
+      
+      <!-- bindtap="toliebiao" data-id="{{tagxx.info.title}}" -->
+      <image mode="heightFix"  src="{{tagxx.extJson['topimg']}}" bindtap="tooliebiao" data-id="{{tagxx.extJson['topimga']?tagxx.extJson['topimga']:mrid}}" class="nav_footer_left"></image>
+
+      <!-- <image mode="heightFix" bindtap="toliebiao" data-id="{{item.link}}"src="{{jdata.top.ysj.nr}}" class="nav_footer_right"></image> -->
+      
+      <!-- <view class="nav_footer_rt">
+        <span  wx:for="{{top}}" bindtap="tooliebiao" wx:key="index" data-type="d1" data-id="{{item}}"  data-index="{{index}}">{{item}}</span>
+      </view> -->
+
+      <image mode="heightFix" bindtap="drawSharePic" src="https://www.mlito.com/wp-content/uploads/mlito-lite-xqy-sc.svg" class="nav_footer_right"></image>
+
+
+      
+    </view>
+  </view>
+</van-sticky>
+
+
+
+
+
+
+<div class="zdy" style="margin-top:{{navHeight-5}}px;">
+<!-- <div class="ddhx"></div> -->
+<!-- <view class="f2" style="height:{{f2hh}}px;">
+  <view class="f2a" wx:for="{{r}}" bindtap="tooliebiao" wx:key="index" data-type="d2"  data-id="{{item}}"  data-index="{{index}}">{{item}}</view>
+</view> -->
+
+
+
+<!-- 楼层 -->
+
+
+  <view class="hy" style="height:{{f2hh}}px;">
+
+    <block>
+
+<!-- 在页面上放一个隐藏区域，并用image组件去加载一个或多个图片资源 -->
+<view style="display:none">
+<image wx:for="{{images}}" wx:key="id" id="{{item.id}}" src="{{item.pic}}" bindload="onImageLoad"></image>
+</view>
+
+
+      <scroll-view scroll-y="true" style="height:{{f2hh}}px" bindscrolltolower="loadImages"  lower-threshold="200">
+
+        <view style="width:100%" wx:if="{{lc1}}" >
+
+          <view class="img_item">
+            <view wx:for="{{col1}}" wx:key="index" class="jpb item_list item_list111" bindtap="{{item.income?'toliebiao':'toxiangqing'}}"  data-vip="{{item.audio?item.audio:''}}" data-id="{{item.income?item.income:item.id}}"  data-ids="{{item.income?item.income:item.ids}}" >
+              <p class="{{item.income?'ysvg':'wsvg'}} {{item.abk=='a'?'ybk':'wbk'}}">
+                <image lazy-load='true' mode="{{item.income?'widthFix':'widthFix'}}" src="{{item.pic}}" style="width:100%;height:{{item.height}}px"/>
+              </p>
+              <span wx:if="{{!item.income}}">{{item.title}}</span>
+            </view>
+          </view>
+
+          <view class="img_item">
+            <view wx:for="{{col2}}" wx:key="index" class="jpb item_list item_list222" bindtap="{{item.income?'toliebiao':'toxiangqing'}}"  data-vip="{{item.audio?item.audio:''}}" data-id="{{item.income?item.income:item.id}}" data-ids="{{item.income?item.income:item.ids}}">
+              <p class="{{item.income?'ysvg':'wsvg'}} {{item.abk=='a'?'ybk':'wbk'}}">
+                  <image lazy-load='true' mode="{{item.income?'widthFix':'widthFix'}}" src="{{item.pic}}" style="width:100%;height:{{item.height}}px"/>
+                </p>
+                <span wx:if="{{!item.income}}">{{item.title}}</span>
+            </view>
+          </view>
+          
+        </view>
+        
+        <block wx:if="{{listfoota}}">
+          <image src="https://www.mlito.com/wp-content/uploads/mlito-lite-di-99-info.svg" wx:if="{{listfoota==1}}" data-id="1" bindtap="tovip" class="ddl" mode="widthFix"></image>
+          <image src="https://www.mlito.com/wp-content/uploads/mlito-lite-di-299-info.svg" wx:if="{{listfoota==2}}" data-id="2" bindtap="tovip" class="ddl" mode="widthFix"></image>
+          <image src="https://www.mlito.com/wp-content/uploads/mlito-lite-di-699-info.svg" wx:if="{{listfoota==3}}" data-id="3" bindtap="tovip" class="ddl" mode="widthFix"></image>
+        </block>
+      
+
+      <image src="https://www.mlito.com/wp-content/uploads/mlito-lite-di-daodile.svg" wx:if="{{ddl && !listfoota}}" class="ddl" mode="widthFix"></image>
+
+      <image src="https://www.mlito.com/wp-content/uploads/mlito-lite-di-zanwushuju.svg" wx:if="{{my && !listfoota}}"  class="my  {{my && !d2? 'myoucl' : ''}}" mode="widthFix"></image>
+
+      </scroll-view>
+
+    
+
+
+      <!-- 文章 -->
+        <!-- <view class="jpb item_list" wx:for="{{lc1}}" bindtap="{{item.income?'toliebiao':'toxiangqing'}}" data-id="{{item.income?item.income:item.id}}" wx:key="index" >
+          <p class="{{item.income?'ysvg':'wsvg'}} {{item.abk=='a'?'ybk':'wbk'}}">
+          <image lazy-load='true' mode="{{item.income?'widthFix':'heightFix'}}" src="{{item.pic}}" />
+          </p>
+          <span wx:if="{{!item.income}}">{{item.title}}</span>
+        </view> -->
+
+    </block>
+
+  </view>
+
+<!-- /楼层 -->
+
+
+
+
+</div>
+
+
+  <view class="jf">
+    <view class="jft"> <span class="f2a {{tag2 == item?'active':'' }}" wx:for="{{r}}" bindtap="tooliebiao" wx:key="index" data-type="d2"  data-id="{{item}}"  data-index="{{index}}">{{item}}</span></view>
+    <view class="jff"><span  wx:for="{{top}}" class="{{tag1 == item?'active':'' }}" bindtap="tooliebiao" wx:key="index" data-type="d1" data-id="{{item}}"  data-index="{{index}}">{{item}}</span></view>
+  </view>
+
+
+</view>
+
+<view class="vtt" wx:if="{{vtt}}"></view>
+
+
+
+<!-- <cover-view class="tab-bar {{isIphoneX?'isIPX':''}}">
+
+  <cover-view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+    <cover-image class="ytp {{selected === index ? 'xz' : 'bxz'}}" src="{{selected === index ? item.selectedIconPath : item.iconPath}}"></cover-image>
+    <cover-view style="color: {{selected === index ? selectedColor : color}}" class="wzz">{{item.text}}</cover-view>
+  </cover-view>
+
+
+</cover-view> -->
+
+
+
+
+
+
+<block wx:if="{{posterShow}}">
+  <view class="poster-mask"></view>
+  <view class="poster">
+    <canvas class="canvas" style="{{canvasstyle}}" canvas-id="firstCanvas"></canvas>
+  </view>
+  <view class="poster-btn">
+    <button type="primary" class="poster-btn1" size="mini" bindtap='_saveToMobile'> 保存图片 </button>
+    <button type="warn"  class="poster-btn2" size="mini" bindtap='closePop'> 关闭 </button>
+  </view>
+</block>
+
+<poster id="poster" config="{{posterConfig}}" bind:success="onPosterSuccess" bind:fail="onPosterFail"></poster>
+<view wx:if="{{showposterImg}}" class="popup-mask"></view>
+<view wx:if="{{showposterImg}}" class="posterImg-box">
+  <image mode="widthFix" class="posterImg" src="{{posterImg}}"></image>
+  <view class="btn-create" bindtap="savePosterPic">保存到相册</view>
+</view>

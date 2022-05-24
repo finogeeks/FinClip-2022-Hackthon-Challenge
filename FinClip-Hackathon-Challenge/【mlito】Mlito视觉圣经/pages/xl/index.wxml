@@ -1,0 +1,57 @@
+<view class="jpage indexa" style="background-image: url({{topbj.topbj}});">
+
+
+<van-sticky style="background: none">
+   <navbar style="background: none" navColor="none"></navbar>
+   <view class="nav_footer" style="background: none;margin-top:{{bnavHeight}}px;"></view>
+</van-sticky>
+
+
+
+<view class="zdy" style="margin-top:{{bnavHeight}}px;">
+  <view class="gb" bindtap="fanhui"></view>
+  <view class="xl">
+
+    <view class="xl_top">
+      <block wx:for="{{top91}}" wx:key="index">
+         <image src="{{item}}" bindtap="feilei" data-id="{{index}}" class="xl_topbt" mode="widthFix"></image>
+      </block>
+    </view>
+
+    <view class="xl_c">
+
+       <block wx:for="{{topbj.main}}" wx:key="index">
+       <image src="{{item.img}}" bindtap="toliebiao" data-id="{{item.id}}" class="xl_cb" mode="widthFix"></image>
+       </block>
+
+    </view>
+
+    <view class="xl_d">
+      
+       <block wx:for="{{topbj.footermain}}" wx:key="index">
+       <image src="{{item.img}}" bindtap="toliebiao" data-id="{{item.id}}" class="xl_db" mode="widthFix"></image>
+       </block>
+
+    </view>
+
+    
+    
+
+
+
+  </view>
+  <view class="xl_ad">
+      
+       <block wx:for="{{topbj.admain}}" wx:key="index">
+       <image src="{{item.img}}" bindtap="toliebiao" data-id="{{item.id}}" class="xl_adb" mode="widthFix"></image>
+       </block>
+
+    </view>
+
+
+</view>
+
+
+
+
+</view>

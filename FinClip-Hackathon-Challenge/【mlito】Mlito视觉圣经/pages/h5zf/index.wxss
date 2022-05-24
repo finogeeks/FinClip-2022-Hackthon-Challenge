@@ -1,0 +1,11 @@
+.btn {
+  margin-top: 32rpx;
+}
+
+.van-field__control {
+text-align: right;
+}
+
+input{
+  text-align: right !important;
+}
