@@ -1,0 +1,35 @@
+<view class="container" style='height: {{view.Height}};'>
+  <view class="calcBox {{warp?'zoomOut':'expand'}}" style="height:{{(view.Height)*2-(view.Width)*0.25*5*2}}rpx;line-height:{{view.Height*2-(view.Width)*0.25*5*2}}rpx;">
+    {{showNum}}
+  </view>
+  <view class='buttons' style="height:{{(view.Width)*0.25*5*2}}rpx;">
+    <view class="btnGroup">
+      <view class='item symbolBtn' data-code="C" bindtap='clickBtn'>C</view>
+      <view class='item symbolBtn' data-code="÷" bindtap='clickBtn'>÷</view>
+      <view class='item symbolBtn' data-code="×" bindtap='clickBtn'>×</view>
+      <view class='item symbolBtn' data-code="←" bindtap='clickBtn'>←</view>
+    </view>
+    <view class="btnGroup">
+      <view class='item' data-code="7" bindtap='clickBtn'>7</view>
+      <view class='item' data-code="8" bindtap='clickBtn'>8</view>
+      <view class='item' data-code="9" bindtap='clickBtn'>9</view>
+      <view class='item symbolBtn' data-code="-" bindtap='clickBtn'>-</view>
+    </view>
+    <view class="btnGroup">
+      <view class='item' data-code="4" bindtap='clickBtn'>4</view>
+      <view class='item' data-code="5" bindtap='clickBtn'>5</view>
+      <view class='item' data-code="6" bindtap='clickBtn'>6</view>
+      <view class='item symbolBtn' data-code="+" bindtap='clickBtn'>+</view>
+    </view>
+    <view class="btnGroup">
+      <view class='item' data-code="1" bindtap='clickBtn'>1</view>
+      <view class='item' data-code="2" bindtap='clickBtn'>2</view>
+      <view class='item' data-code="3" bindtap='clickBtn'>3</view>
+    </view>
+    <view class="btnGroup">
+      <view class='item width' data-code="0" bindtap='clickBtn'>0</view>
+      <view class='item' data-code="." bindtap='clickBtn'>.</view>
+      <view class='item height' data-code="=" bindtap='clickBtn' style="height:{{(view.Width)*0.25*2*2}}rpx;line-height:{{(view.Width)*0.25*2*2}}rpx;">=</view>
+    </view>
+  </view>
+</view>
