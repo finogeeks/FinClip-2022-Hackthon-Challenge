@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "支付失败",
+  "usingComponents": {
+    "copyright": "/components/common/copyright"
+  }
+}

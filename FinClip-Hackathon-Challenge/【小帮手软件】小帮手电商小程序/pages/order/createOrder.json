@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "创建订单",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "uni-data-checkbox": "/uni_modules/uni-data-checkbox/components/uni-data-checkbox/uni-data-checkbox",
+    "copyright": "/components/common/copyright",
+    "point-password": "/components/common/point-password-input"
+  }
+}

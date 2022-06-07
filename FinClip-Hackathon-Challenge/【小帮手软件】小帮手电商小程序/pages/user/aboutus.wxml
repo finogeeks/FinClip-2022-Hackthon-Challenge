@@ -1,0 +1,1 @@
+<view class="{{['content','theme-'+theme]}}"><view class="detail-desc"><rich-text nodes="{{contentHtml}}"></rich-text></view><copyright vue-id="e6f0aa34-1" bind:__l="__l"></copyright></view>

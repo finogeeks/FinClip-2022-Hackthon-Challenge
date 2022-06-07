@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "搜索",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "uni-load-more": "/components/uni-load-more/uni-load-more",
+    "m-search": "/components/mehaotian-search-revision/mehaotian-search-revision",
+    "copyright": "/components/common/copyright",
+    "list-goods": "/components/common/list-goods"
+  }
+}

@@ -1,0 +1,1 @@
+<view class="container"><button class="button" open-type="getUserInfo" data-event-opts="{{[['getuserinfo',[['getUserInfo',['$event']]]]]}}" bindgetuserinfo="__e"></button><slot></slot></view>

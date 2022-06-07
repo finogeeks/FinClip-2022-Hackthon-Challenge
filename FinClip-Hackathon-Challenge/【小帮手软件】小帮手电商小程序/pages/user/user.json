@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "list-cell": "/components/mix-list-cell",
+    "copyright": "/components/common/copyright",
+    "contact": "/components/common/contact",
+    "share": "/components/common/share",
+    "user-info": "/components/common/user-info",
+    "user-profile": "/components/common/user-profile",
+    "user-phone": "/components/common/user-phone"
+  }
+}

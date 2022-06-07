@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "uni-number-box": "/components/uni-number-box",
+    "copyright": "/components/common/copyright"
+  }
+}

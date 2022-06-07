@@ -1,0 +1,1 @@
+<view class="container"><button class="button" open-type="share"></button><slot></slot></view>

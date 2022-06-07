@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "详情展示",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "uni-number-box": "/components/uni-number-box",
+    "share": "/components/common/share",
+    "copyright": "/components/common/copyright",
+    "contact": "/components/common/contact"
+  }
+}

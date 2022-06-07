@@ -1,0 +1,1 @@
+<view class="container"><button class="button" open-type="contact" session-from="mp" data-event-opts="{{[['contact',[['handleContact',['$event']]]]]}}" bindcontact="__e"></button><slot></slot></view>
