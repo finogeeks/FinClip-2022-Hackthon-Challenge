@@ -1,0 +1,4 @@
+<image mode="aspectFit" src="{{posterUrl}}" class="image"/>
+<view class="save-button-container" wx:if="{{posterUrl}}">
+  <view class="save-button" bindtap="onSavePosterClick">保存到本地</view>
+</view>

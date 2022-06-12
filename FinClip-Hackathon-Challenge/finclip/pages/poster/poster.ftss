@@ -1,0 +1,19 @@
+.image{
+    width:100vw;
+    height:100vh;
+}
+
+.save-button-container{
+    position:absolute;
+    bottom:10px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+  }
+  
+  .save-button{
+    color: #fff!important;
+    background-color: #409eff!important;
+    padding:6px 12px;
+    font-size:80%
+  }
