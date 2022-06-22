@@ -1,0 +1,12 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "useOldBuilder": false
+  },
+  "compileType": "miniprogram",
+  "projectname": "原生",
+  "isGameTourist": false
+}

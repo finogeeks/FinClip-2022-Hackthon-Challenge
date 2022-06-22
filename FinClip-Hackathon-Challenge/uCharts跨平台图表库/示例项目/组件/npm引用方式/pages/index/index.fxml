@@ -1,0 +1,4 @@
+<!--index.fxml-->
+<view class="charts">
+  <qiun-ft-ucharts type="column" canvas2d="{{true}}" opts="{{opts}}" chartData="{{chartData}}" bindcomplete="complete"/>
+</view>

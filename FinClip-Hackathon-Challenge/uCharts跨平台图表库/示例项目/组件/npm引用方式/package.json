@@ -1,0 +1,15 @@
+{
+  "name": "qiun-ft-ucharts",
+  "version": "1.0.0",
+  "description": "uCharts跨平台图表库，全端全平台支持的图表库，开箱即用。支持PC、H5、微信小程序、支付宝小程序、百度小程序、头条小程序、QQ小程序、360小程序、快手小程序、Vue、Taro等更多支持canvas的框架，体积小巧、调用简单方便、性能及体验极佳。",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "秋云",
+  "license": "Apache",
+  "homepage": "https://www.ucharts.cn",
+  "dependencies": {
+    "@qiun/ft-ucharts": "^2.3.8-20220325"
+  }
+}
