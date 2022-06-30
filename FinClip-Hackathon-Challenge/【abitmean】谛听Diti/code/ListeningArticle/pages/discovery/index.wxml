@@ -1,0 +1,48 @@
+<cu-custom bgColor="bg-gradual-green" isBack="{{false}}">
+      <view slot="content">谛听Diti</view>
+</cu-custom>
+
+<!-- todo 滚屏海报 -->
+<!-- <swiper class="screen-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:for="{{4}}" wx:key>
+    <image src="https://image.weilanwl.com/img/4x3-{{index+1}}.jpg" mode='aspectFill'></image>
+  </swiper-item>
+</swiper> -->
+
+<!-- style="height:calc(100vh - 375rpx)" -->
+<view class="VerticalBox">
+  <scroll-view class="VerticalNav nav" scroll-y scroll-with-animation scroll-top="{{VerticalNavTop}}" style="height:100vh">
+    <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{list}}" wx:key="index" bindtap='tabSelect' data-id="{{index}}">
+      {{item.date}}
+    </view>
+  </scroll-view>
+
+  <scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:100vh" scroll-into-view="main-{{MainCur}}" bindscroll="VerticalMain">
+
+    <view class="padding-top padding-lr" wx:for="{{list}}" wx:key="index" id="main-{{index}}">
+      <view class='cu-bar solid-bottom bg-white'>
+        <view class='action'>
+          <text class='cuIcon-title text-green'></text> {{item.date}} </view>
+      </view>
+
+      <view class="cu-list menu-avatar" wx:for="{{item.articles}}" wx:key="index">
+        <view class="cu-item" bindtap="goToPlay" data-id="{{item.id}}">
+          <view class="cu-avatar radius lg" style="background-image:url({{item.cover}});"></view>
+          <view class="content">
+            <view class="text-green">
+              <text class="text-cut">{{item.author}}</text>
+            </view>
+            <view class="text-gray text-sm flex">
+              <text class="text-cut">{{item.title}}</text>
+            </view>
+          </view>
+          <view class="action">
+            <!-- <view class="text-grey text-xs">{{item.publishTime}}</view> -->
+            <view class="cu-tag round bg-black sm">{{item.viewCount?item.viewCount:0}}</view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,33 @@
+<scroll-view scroll-y="{{modalName==null}}" class="page {{modalName!=null?'show':''}}">
+  <cu-custom bgColor="bg-gradual-green" isBack="{{false}}">
+        <view slot="content">谛听Diti</view>
+  </cu-custom>
+  <form>
+  	<view class="cu-form-group margin-top">
+      <!-- <view class="title">订阅</view> -->
+      <input placeholder="输入RSS链接"></input>
+      <button class="cuIcon-check cu-btn bg-green shadow"> 订阅</button>
+    </view>
+  </form>
+
+  <view class="cu-list menu margin-top">
+    <view class="cu-item {{modalName=='move-box-'+ index?'move-cur':''}}" wx:for="{{4}}" wx:key bindtouchstart="ListTouchStart" bindtouchmove="ListTouchMove" bindtouchend="ListTouchEnd" data-target="move-box-{{index}}">
+      <view class="content padding-tb-sm">
+        <view>
+          <text class="cuIcon-magic text-grey margin-right-xs"></text> rss://xxxxxxx.com
+        </view>
+        <view class="text-gray text-sm">
+          <text class="cuIcon-infofill margin-right-xs"></text> 左滑操作
+        </view>
+      </view>
+      <view class="action">
+        <view class="cu-tag round bg-green light">23</view>
+      </view>
+      <view class="move">
+        <view class="bg-grey">置顶</view>
+        <view class="bg-red">删除</view>
+      </view>
+    </view>
+  </view>
+  
+</scroll-view>

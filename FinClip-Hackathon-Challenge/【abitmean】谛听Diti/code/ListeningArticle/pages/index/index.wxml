@@ -1,0 +1,34 @@
+
+<search wx:if="{{PageCur=='search'}}"></search>
+<feed wx:if="{{PageCur=='feed'}}"></feed>
+<discovery wx:if="{{PageCur=='discovery'}}"></discovery>
+<me wx:if="{{PageCur=='me'}}"></me>
+<view class="cu-bar tabbar bg-white shadow foot">
+  <view class="action" bindtap="NavChange" data-cur="search">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/search{{PageCur=='search'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='search'?'text-green':'text-gray'}}">搜索</view>
+  </view>
+
+  <view class="action" bindtap="NavChange" data-cur="feed">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/feed{{PageCur=='feed'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='component'?'text-green':'text-gray'}}">订阅</view>
+  </view>
+
+  <view class="action" bindtap="NavChange" data-cur="discovery">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/discovery{{PageCur=='discovery'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='discovery'?'text-green':'text-gray'}}">发现</view>
+  </view>
+
+  <view class="action" bindtap="NavChange" data-cur="me">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/me{{PageCur=='me'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='me'?'text-green':'text-gray'}}">我的</view>
+  </view>
+</view>

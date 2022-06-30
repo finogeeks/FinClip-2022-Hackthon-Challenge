@@ -1,0 +1,32 @@
+<cu-custom bgColor="bg-gradual-green" isCustom="{true}">
+  <view slot="content">收藏列表</view>
+</cu-custom>
+<view class="cu-card case" wx:for="{{list}}" wx:key="id">
+
+  <view class="cu-item shadow" bindtap="goToPlay" data-id="{{item.id}}">
+    <view class="image">
+      <image src="{{item.cover}}" mode="widthFix"></image>
+      <!-- <view class="cu-tag bg-blue">tag</view> -->
+      <view class="cu-bar bg-shadeBottom">
+        <text class="text-cut">{{item.title}}</text>
+      </view>
+    </view>
+    <view class="cu-list menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url({{item.cover}});"></view>
+        <view class="content flex-sub">
+          <view class="text-grey">{{item.author}}</view>
+          <view class="text-gray text-sm flex justify-between">
+            {{item.publishTime}}
+            <view class="text-gray text-sm">
+              <text class="cuIcon-attentionfill margin-lr-xs"></text> {{item.viewCount}}
+              <text class="cuIcon-appreciatefill margin-lr-xs"></text> {{item.likeCount}}
+              <!-- <text class="cuIcon-messagefill margin-lr-xs"></text> 30 -->
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

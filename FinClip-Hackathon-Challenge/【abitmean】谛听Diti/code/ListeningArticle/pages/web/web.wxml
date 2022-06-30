@@ -1,0 +1,4 @@
+<cu-custom bgColor="bg-gradual-green" isCustom="{true}">
+  <view slot="content">谛听Diti</view>
+</cu-custom>
+<web-view src="{{url}}"></web-view>

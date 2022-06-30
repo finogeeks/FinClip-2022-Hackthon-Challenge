@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "search": "/pages/search/index",
+    "feed": "/pages/feed/index",
+    "me": "/pages/me/index",
+    "discovery": "/pages/discovery/index"
+  }
+}
